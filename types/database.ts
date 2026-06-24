@@ -6,22 +6,44 @@
 export type ResearchType = 'exploratory' | 'explanatory' | 'descriptive'
 export type ProjectStatus = 'active' | 'archived'
 
+export interface ClarificationQuestion {
+  id: string
+  prompt: string
+  options: { value: string; title: string; description: string }[]
+}
+
+export interface BriefExtraction {
+  topic: string
+  research_question: string
+  research_type: ResearchType
+  constraints: string[]
+  degree_level: string
+  discipline: string
+}
+
+export interface SocraticGate1Response {
+  completed: boolean
+  responses: Record<string, string>
+}
+
+export interface ReadingListItem {
+  raw_ref: string
+  matched_theory_id: string | null
+  match_type: 'in_list' | 'beyond_list' | 'missed' | 'unverified'
+  doi: string | null
+}
+
+export type CitationStatus = 'verified' | 'unverified' | 'outdated'
+
 // research_context is the central versioned JSON for a project.
 // Every sprint reads from and writes to this object.
 export interface ResearchContext {
   version: number
-  brief?: {
-    raw_text: string
-    topic: string
-    research_question: string
-    research_type: ResearchType
-    constraints: string[]
-    degree_level: string
-    discipline: string
-  }
+  brief?: BriefExtraction
   socratic_gate_1?: {
     completed: boolean
     responses: Record<string, string>
+    questions?: ClarificationQuestion[]
   }
   theories?: {
     selected_ids: string[]
@@ -35,7 +57,6 @@ export interface ResearchContext {
     layout_preset: 'hierarchy' | 'hub-and-spoke' | 'linear'
     relationship_labels: Record<string, string>
     narrative: string
-    // Map of theory_id → OpenAlex DOI verification result
     citation_verification: Record<string, CitationStatus>
   }
   methodology?: {
@@ -47,18 +68,8 @@ export interface ResearchContext {
     narrative: string
     alternative?: string
   }
-  // Blocks marked outdated when an upstream change invalidates them
   outdated_blocks: string[]
 }
-
-export interface ReadingListItem {
-  raw_ref: string
-  matched_theory_id: string | null
-  match_type: 'in_list' | 'beyond_list' | 'missed' | 'unverified'
-  doi: string | null
-}
-
-export type CitationStatus = 'verified' | 'unverified' | 'outdated'
 
 // --- DB row types ---
 
@@ -93,24 +104,4 @@ export interface ResearchContextVersion {
   context_snapshot: ResearchContext
   changed_block: string
   created_at: string
-}
-
-export interface ClarificationQuestion {
-  id: string
-  prompt: string
-  options: { value: string; title: string; description: string }[]
-}
-
-export interface BriefExtraction {
-  topic: string
-  research_question: string
-  research_type: ResearchType
-  constraints: string[]
-  degree_level: string
-  discipline: string
-}
-
-export interface SocraticGate1Response {
-  completed: boolean
-  responses: Record<string, string>
 }

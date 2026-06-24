@@ -22,6 +22,14 @@ export default async function ProjectPage({ params }: { params: { id: string } }
 
   const p = project as Project
 
+  // Route to active step
+  if (!p.research_context?.brief) {
+    redirect(`/project/${params.id}/brief`)
+  }
+  if (!p.research_context?.socratic_gate_1?.completed) {
+    redirect(`/project/${params.id}/gate1`)
+  }
+
   return (
     <main style={styles.page}>
       <div style={styles.container}>
