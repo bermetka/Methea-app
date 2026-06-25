@@ -43,11 +43,11 @@ export default function Gate1Form({ projectId, questions, brief }: Props) {
 
   return (
     <div style={s.container}>
-      {/* AI confirmation banner */}
+      {/* AI confirmation card — starts from what student brought */}
       <div style={s.banner}>
+        <p style={s.bannerEyebrow}>Based on your brief</p>
         <p style={s.bannerText}>
-          Based on your brief, your question seems to be about{' '}
-          <strong>{brief.topic}</strong>. Let&apos;s sharpen it together.
+          Your question seems to be about <strong style={{ color: 'var(--ink)' }}>{brief.topic}</strong>. Let&apos;s sharpen it together.
         </p>
       </div>
 
@@ -113,8 +113,9 @@ export default function Gate1Form({ projectId, questions, brief }: Props) {
 
 const s: Record<string, React.CSSProperties> = {
   container:    { display: 'flex', flexDirection: 'column', gap: '1.5rem' },
-  banner:       { padding: '1rem 1.25rem', background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)' },
-  bannerText:   { fontSize: '0.9375rem', color: 'var(--graphite)', lineHeight: 1.6 },
+  banner:       { padding: '1.25rem 1.5rem', background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', display: 'flex', flexDirection: 'column', gap: '0.375rem' },
+  bannerEyebrow:{ fontSize: '0.6875rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' as const, color: 'var(--pencil)' },
+  bannerText:   { fontSize: '1.0625rem', color: 'var(--graphite)', lineHeight: 1.5, fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400 },
   progressRow:  { display: 'flex', alignItems: 'center', gap: '0.75rem' },
   dots:         { display: 'flex', alignItems: 'center' },
   dotItem:      { display: 'flex', alignItems: 'center' },

@@ -37,101 +37,175 @@ export default async function ProjectPage({ params }: { params: { id: string } }
     redirect(`/project/${params.id}/framework`)
   }
 
-  const brief = p.research_context.brief!
-  const selectedIds = p.research_context.theories!.selected_ids
+  const brief     = p.research_context.brief!
+  const ctx       = p.research_context
+  const selectedIds = ctx.theories!.selected_ids
 
-  // Fetch selected theories for display
   const { data: theories } = await supabase
     .from('theories')
-    .select('id, name, author, year, concepts')
+    .select('id, name, author, year')
     .in('id', selectedIds)
 
-  const selectedTheories = (theories ?? []) as Pick<Theory, 'id' | 'name' | 'author' | 'year' | 'concepts'>[]
+  const selectedTheories = (theories ?? []) as Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]
+
+  const frameworkDone     = !!ctx.framework?.edges?.length
+  const frameworkOutdated = false // Sprint 4: wire up soft-invalidation
+
+  // Determine "Next" step
+  const nextStep = !frameworkDone
+    ? { label: 'Build your framework', href: `/project/${params.id}/framework`, cta: 'Build framework →' }
+    : { label: 'Derive your methodology', href: `/project/${params.id}/methodology`, cta: 'Start methodology →' }
+
+  // Truncate question for preview
+  const questionPreview = brief.research_question.length > 60
+    ? brief.research_question.slice(0, 58) + '…'
+    : brief.research_question
 
   return (
-    <main style={styles.page}>
-      <div style={styles.container}>
-        <Logo size="sm" />
-
-        {/* Research question */}
-        <div style={styles.card}>
-          <p style={styles.cardLabel}>Your research question</p>
-          <h2 style={styles.question}>{brief.research_question}</h2>
-          <div style={styles.meta}>
-            <span style={styles.tag}>{brief.degree_level}</span>
-            <span style={styles.tag}>{brief.discipline}</span>
-            <span style={{ ...styles.tag, background: 'var(--sky)', color: 'var(--ink-blue)' }}>
-              {brief.research_type}
-            </span>
-          </div>
+    <main style={s.page}>
+      <div style={s.container}>
+        {/* Header row */}
+        <div style={s.headerRow}>
+          <Logo size="sm" />
+          <span style={s.projectName}>My Project ▾</span>
         </div>
 
-        {/* Selected theories */}
-        <div style={styles.card}>
-          <div style={styles.cardLabelRow}>
-            <p style={styles.cardLabel}>Theoretical framework</p>
-            <span style={styles.doneChip}>✓ {selectedTheories.length} theories selected</span>
+        {/* Dark "Next" banner */}
+        <div style={s.banner}>
+          <div style={{ flex: 1 }}>
+            <p style={s.bannerLabel}>Next</p>
+            <p style={s.bannerText}>{nextStep.label}</p>
           </div>
-          <div style={styles.theoryList}>
-            {selectedTheories.map(t => (
-              <div key={t.id} style={styles.theoryRow}>
-                <div style={styles.theoryInfo}>
-                  <span style={styles.theoryName}>{t.name}</span>
-                  <span style={styles.theoryMeta}>{t.author}{t.year ? `, ${t.year}` : ''}</span>
-                </div>
-                <div style={styles.conceptTags}>
-                  {t.concepts.slice(0, 2).map(c => (
-                    <span key={c} style={styles.conceptTag}>{c}</span>
-                  ))}
-                </div>
+          <a href={nextStep.href} style={s.bannerBtn}>{nextStep.cta}</a>
+        </div>
+
+        {/* Plan section */}
+        <div>
+          <p style={s.sectionLabel}>Plan</p>
+          <div style={s.statusList}>
+            {/* Research question */}
+            <div style={s.statusRow}>
+              <span style={{ ...s.ico, ...s.icoOk }}>✓</span>
+              <div style={s.statusBody}>
+                <p style={s.statusTitle}>Research question</p>
+                <p style={s.statusMeta}>&ldquo;{questionPreview}&rdquo;</p>
               </div>
-            ))}
+              <a href={`/project/${params.id}/brief`} style={s.quietBtn}>Open →</a>
+            </div>
+
+            {/* Theories */}
+            <div style={s.statusRow}>
+              <span style={{ ...s.ico, ...s.icoOk }}>✓</span>
+              <div style={s.statusBody}>
+                <p style={s.statusTitle}>Theories</p>
+                <p style={s.statusMeta}>
+                  {selectedTheories.map(t => t.name).join(' · ')}
+                </p>
+              </div>
+              <a href={`/project/${params.id}/theories`} style={s.quietBtn}>Open →</a>
+            </div>
+
+            {/* Framework */}
+            <div style={{
+              ...s.statusRow,
+              ...(frameworkOutdated ? s.statusRowOutdated : {}),
+            }}>
+              <span style={{ ...s.ico, ...(frameworkOutdated ? s.icoWarn : s.icoOk) }}>
+                {frameworkOutdated ? '⚠' : '✓'}
+              </span>
+              <div style={s.statusBody}>
+                <p style={s.statusTitle}>
+                  Framework
+                  {frameworkOutdated && <span style={s.versionBadge}> · outdated</span>}
+                </p>
+                <p style={s.statusMeta}>
+                  {ctx.framework?.edges?.length
+                    ? `${selectedTheories.length} theories mapped`
+                    : 'Not started'}
+                </p>
+              </div>
+              <a href={`/project/${params.id}/framework`} style={s.quietBtn}>
+                {frameworkOutdated ? 'Review →' : 'Open →'}
+              </a>
+            </div>
+
+            {/* Methodology — locked */}
+            <div style={{ ...s.statusRow, opacity: 0.6 }}>
+              <span style={{ ...s.ico, ...s.icoEmpty }}>○</span>
+              <div style={s.statusBody}>
+                <p style={s.statusTitle}>Methodology</p>
+                <p style={s.statusMeta}>Not started — needs framework first</p>
+              </div>
+              <span style={s.lockLabel}>🔒 Locked</span>
+            </div>
           </div>
         </div>
 
-        {/* Constraints */}
-        {brief.constraints.length > 0 && (
-          <div style={styles.card}>
-            <p style={styles.cardLabel}>Constraints identified</p>
-            <ul style={styles.list}>
-              {brief.constraints.map((c, i) => (
-                <li key={i} style={styles.listItem}>{c}</li>
-              ))}
-            </ul>
+        {/* Collect section */}
+        <div>
+          <p style={s.sectionLabel}>Collect</p>
+          <div style={s.statusList}>
+            <div style={{ ...s.statusRow, opacity: 0.5 }}>
+              <span style={{ ...s.ico, ...s.icoEmpty }}>🔒</span>
+              <div style={s.statusBody}>
+                <p style={s.statusTitle}>Interview guide</p>
+                <p style={s.statusMeta}>Available in v1.1</p>
+              </div>
+            </div>
           </div>
-        )}
+        </div>
 
-        {/* Up next */}
-        <div style={styles.nextCard}>
-          <p style={styles.nextLabel}>Up next — Sprint 4</p>
-          <p style={styles.nextText}>Methodology chain: derive your paradigm, methodology, data collection approach, and analysis method from your framework.</p>
+        {/* Analyse section */}
+        <div>
+          <p style={s.sectionLabel}>Analyse</p>
+          <div style={s.statusList}>
+            <div style={{ ...s.statusRow, opacity: 0.5 }}>
+              <span style={{ ...s.ico, ...s.icoEmpty }}>🔒</span>
+              <div style={s.statusBody}>
+                <p style={s.statusTitle}>Findings</p>
+                <p style={s.statusMeta}>Available in v2</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
   )
 }
 
-const styles: Record<string, React.CSSProperties> = {
-  page:          { minHeight: '100vh', padding: '3rem 1rem', background: 'var(--paper)' },
-  container:     { width: '100%', maxWidth: '720px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' },
-  wordmark:      { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.25rem', fontWeight: 600, letterSpacing: '-0.045em', color: 'var(--ink)' },
-  card:          { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' },
-  cardLabel:     { fontSize: '0.75rem', fontWeight: 600, color: 'var(--pencil)', textTransform: 'uppercase' as const, letterSpacing: '0.06em' },
-  cardLabelRow:  { display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
-  doneChip:      { fontSize: '0.75rem', fontWeight: 600, color: 'var(--moss)', background: 'var(--mint)', padding: '2px 8px', borderRadius: 'var(--radius-sm)' },
-  question:      { fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1.35 },
-  meta:          { display: 'flex', gap: '0.5rem', flexWrap: 'wrap' as const },
-  tag:           { display: 'inline-block', padding: '3px 10px', background: 'var(--paper-deep)', color: 'var(--graphite)', borderRadius: 'var(--radius-sm)', fontSize: '0.8125rem', fontWeight: 500 },
-  theoryList:    { display: 'flex', flexDirection: 'column', gap: '0.75rem' },
-  theoryRow:     { display: 'flex', flexDirection: 'column', gap: '0.375rem', paddingBottom: '0.75rem', borderBottom: '1px solid var(--stone-soft)' },
-  theoryInfo:    { display: 'flex', alignItems: 'baseline', gap: '0.5rem', flexWrap: 'wrap' as const },
-  theoryName:    { fontWeight: 600, fontSize: '0.9375rem', color: 'var(--ink)' },
-  theoryMeta:    { fontSize: '0.8125rem', color: 'var(--pencil)' },
-  conceptTags:   { display: 'flex', gap: '0.375rem', flexWrap: 'wrap' as const },
-  conceptTag:    { padding: '2px 8px', background: 'var(--paper-deep)', color: 'var(--graphite)', borderRadius: 'var(--radius-sm)', fontSize: '0.75rem' },
-  list:          { paddingLeft: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.375rem' },
-  listItem:      { fontSize: '0.9375rem', color: 'var(--graphite)', lineHeight: 1.5 },
-  nextCard:      { padding: '1rem 1.25rem', background: 'var(--paper-deep)', border: '1px dashed var(--stone)', borderRadius: 'var(--radius)', display: 'flex', flexDirection: 'column', gap: '0.25rem' },
-  nextLabel:     { fontSize: '0.75rem', fontWeight: 600, color: 'var(--pencil)', textTransform: 'uppercase' as const, letterSpacing: '0.06em' },
-  nextText:      { fontSize: '0.9375rem', color: 'var(--graphite)' },
+const s: Record<string, React.CSSProperties> = {
+  page:        { minHeight: '100vh', padding: '2.5rem 1rem', background: 'var(--paper)' },
+  container:   { width: '100%', maxWidth: '720px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' },
+
+  // Header
+  headerRow:   { display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
+  projectName: { fontSize: '0.8125rem', fontWeight: 500, color: 'var(--graphite)', cursor: 'pointer' },
+
+  // Banner
+  banner:      { display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.25rem 1.5rem', background: 'var(--ink)', borderRadius: 'var(--radius-lg)', flexWrap: 'wrap' as const },
+  bannerLabel: { fontSize: '0.6875rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' as const, color: 'rgba(251,249,243,0.6)', marginBottom: '0.25rem' },
+  bannerText:  { fontSize: '0.9375rem', color: 'var(--sheet)', lineHeight: 1.4 },
+  bannerBtn:   { flexShrink: 0, padding: '0.625rem 1.125rem', background: 'var(--marker-lime)', color: 'var(--ink)', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontWeight: 600, textDecoration: 'none', fontFamily: 'inherit', whiteSpace: 'nowrap' as const },
+
+  // Section
+  sectionLabel:{ fontSize: '0.6875rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' as const, color: 'var(--pencil)', marginBottom: '0.5rem' },
+  statusList:  { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' },
+  statusRow:   { display: 'flex', alignItems: 'center', gap: '0.875rem', padding: '0.875rem 1.125rem', borderBottom: '1px solid var(--stone-soft)' },
+  statusRowOutdated: { background: 'rgba(255,230,109,0.08)' },
+
+  // Status icons
+  ico:         { flexShrink: 0, width: '24px', height: '24px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.6875rem', fontWeight: 700 },
+  icoOk:       { background: 'var(--mint)', color: 'var(--moss)' },
+  icoWarn:     { background: 'var(--marker-yellow)', color: 'var(--warn-text)' },
+  icoEmpty:    { background: 'var(--paper-deep)', color: 'var(--pencil)', border: '1.5px solid var(--stone)', fontSize: '0.75rem' },
+
+  // Status body
+  statusBody:  { flex: 1, minWidth: 0 },
+  statusTitle: { fontSize: '0.875rem', fontWeight: 600, color: 'var(--ink)' },
+  statusMeta:  { fontSize: '0.75rem', color: 'var(--pencil)', marginTop: '0.125rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' as const },
+  versionBadge:{ fontSize: '0.6875rem', fontWeight: 400, color: 'var(--warn-text)' },
+
+  // Actions
+  quietBtn:    { flexShrink: 0, fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none', padding: '0.25rem 0' },
+  lockLabel:   { flexShrink: 0, fontSize: '0.75rem', color: 'var(--pencil)' },
 }

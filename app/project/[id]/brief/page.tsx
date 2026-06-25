@@ -35,9 +35,11 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Logo size="sm" />
-        <h2 style={styles.heading}>Tell me what you&apos;re researching</h2>
-        <p style={styles.sub}>A sentence or two is enough to start.</p>
+        <div style={styles.header}>
+          <Logo size="sm" />
+          <h2 style={styles.heading}>Tell me what you&apos;re researching</h2>
+          <p style={styles.sub}>A sentence or two is enough to start.</p>
+        </div>
         <BriefForm projectId={params.id} />
       </div>
     </main>
@@ -45,9 +47,9 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  page:      { minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem 1rem' },
-  container: { width: '100%', maxWidth: '600px', display: 'flex', flexDirection: 'column', gap: '1rem' },
-  wordmark:  { fontFamily: 'Playfair Display, Georgia, serif', fontSize: '1.25rem', fontWeight: 600, letterSpacing: '-0.045em', color: 'var(--ink)' },
-  heading:   { marginTop: '0.25rem' },
+  page:      { minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem 1rem', background: 'var(--paper)' },
+  container: { width: '100%', maxWidth: '600px', display: 'flex', flexDirection: 'column', gap: '1.5rem' },
+  header:    { display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '0.5rem' },
+  heading:   { fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: 400, letterSpacing: '-0.015em', color: 'var(--ink)', lineHeight: 1.2 },
   sub:       { fontSize: '0.9375rem', color: 'var(--pencil)' },
 }
