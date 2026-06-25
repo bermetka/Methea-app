@@ -29,6 +29,9 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   if (!p.research_context?.socratic_gate_1?.completed) {
     redirect(`/project/${params.id}/gate1`)
   }
+  if (!p.research_context?.theories?.selected_ids?.length) {
+    redirect(`/project/${params.id}/theories`)
+  }
 
   const brief = p.research_context.brief!
 
