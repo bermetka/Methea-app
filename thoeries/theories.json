@@ -1,0 +1,706 @@
+[
+  {
+    "name": "Effectuation theory",
+    "author": "Sarasvathy",
+    "year": 2001,
+    "doi": "10.5465/amr.2001.4378020",
+    "plain_summary": "Explains how entrepreneurs make decisions when the future is uncertain — instead of starting from a fixed goal and finding the means to reach it, they start from the means they already have and let the goal emerge.",
+    "key_concepts": [
+      "Bird-in-hand (start with available means)",
+      "Affordable loss (risk what you can afford, not what you might gain)",
+      "Crazy quilt (build partnerships rather than competitive analysis)",
+      "Lemonade principle (leverage surprises instead of avoiding them)"
+    ],
+    "disciplines": ["business", "entrepreneurship", "management"],
+    "fits_when": "Research question is about how entrepreneurs or founders actually make decisions under uncertainty (not how they should, normatively) — especially in resource-constrained, early-stage, or emerging-market contexts. Does not fit if the research question assumes a fixed, pre-defined goal driving the process (that's causation logic, the contrast case).",
+    "common_methodologies": ["case study", "narrative inquiry", "grounded theory"],
+    "verified_source_check": "Confirmed via the publisher (journals.aom.org): Sarasvathy, S.D. (2001). 'Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency.' Academy of Management Review, 26(2), 243-263. Current AOM-assigned DOI is 10.5465/amr.2001.4378020 (an older JSTOR mirror DOI, 10.2307/259121, also resolves to the same article)."
+  },
+  {
+    "name": "Institutional theory",
+    "author": "North (foundational); Welter (entrepreneurship application)",
+    "year": "1990 / 2011",
+    "doi": "10.1017/CBO9780511808678",
+    "plain_summary": "Argues that the 'rules of the game' — formal laws and informal norms, and how reliably they're enforced — shape what people and organisations can and can't do, often more than individual choices or resources do.",
+    "key_concepts": [
+      "Formal institutions (laws, regulations, property rights)",
+      "Informal institutions (norms, customs, conventions)",
+      "Institutional enforcement / transaction costs",
+      "Institutional context (Welter's extension for entrepreneurship research)"
+    ],
+    "disciplines": ["business", "entrepreneurship", "management", "development studies", "sociology"],
+    "fits_when": "Research question asks how the regulatory, cultural, or normative environment enables or constrains a venture, organisation, or behaviour — e.g. comparing entrepreneurship across countries or regions with different institutional conditions. Does not fit if the question is purely about internal firm strategy with no environmental/contextual comparison.",
+    "common_methodologies": ["comparative case study", "cross-country survey", "mixed methods"],
+    "verified_source_check": "North, D.C. (1990). Institutions, Institutional Change and Economic Performance. Cambridge University Press. Book DOI 10.1017/CBO9780511808678 confirmed via Cambridge Core. Welter, F. (2011). 'Contextualizing Entrepreneurship — Conceptual Challenges and Ways Forward.' Entrepreneurship Theory and Practice, 35(1), 165-184, DOI 10.1111/j.1540-6520.2010.00427.x, confirmed via SAGE Journals."
+  },
+  {
+    "name": "Resource-based view",
+    "author": "Barney",
+    "year": 1991,
+    "doi": "10.1177/014920639101700108",
+    "plain_summary": "Argues that a company's lasting competitive edge comes less from its market position and more from internal resources and capabilities that are valuable, rare, hard to copy, and hard to replace with something else.",
+    "key_concepts": [
+      "VRIN (valuable, rare, inimitable, non-substitutable)",
+      "Heterogeneous resource distribution across firms",
+      "Resource immobility",
+      "Sustained competitive advantage"
+    ],
+    "disciplines": ["business", "management", "strategy"],
+    "fits_when": "Research question asks why some firms (or ventures) outperform similar competitors over time, with a focus on internal resources/capabilities rather than external market structure. Does not fit if the question is about industry-level competitive dynamics (that's a Porter-style external view) or about firms with no comparison point.",
+    "common_methodologies": ["case study", "comparative case study", "survey"],
+    "verified_source_check": "Confirmed via SAGE Journals (publisher): Barney, J. (1991). 'Firm Resources and Sustained Competitive Advantage.' Journal of Management, 17(1), 99-120. DOI 10.1177/014920639101700108. Also independently located on OpenAlex (work ID W3124536214)."
+  },
+  {
+    "name": "Social capital theory",
+    "author": "Bourdieu (foundational); Putnam (applied/civic extension)",
+    "year": "1986 / 2000",
+    "doi": null,
+    "plain_summary": "Argues that the relationships, networks, and connections people have are themselves a kind of resource — convertible, under the right conditions, into other advantages like information, opportunity, or economic gain.",
+    "key_concepts": [
+      "Networks and obligations (Bourdieu)",
+      "Convertibility into other capital forms",
+      "Bonding vs. bridging social capital (Putnam)",
+      "Civic/associational trust (Putnam)"
+    ],
+    "disciplines": ["sociology", "business", "entrepreneurship", "development studies"],
+    "fits_when": "Research question asks how a person's or group's networks and relationships shape access to opportunity, resources, or support — e.g. how founders use networks to access funding, or how community ties affect collective outcomes. Does not fit if the question is really about economic or cultural capital alone with no network/relational dimension.",
+    "common_methodologies": ["case study", "social network analysis", "mixed methods"],
+    "verified_source_check": "Bourdieu, P. (1986). 'The Forms of Capital.' In J.G. Richardson (Ed.), Handbook of Theory and Research for the Sociology of Education (pp. 241-258). Greenwood Press. Cross-confirmed across multiple academic citation databases (SciRP, original PDF scans). No DOI exists — pre-DOI-era book chapter; cite by publisher/page range. Putnam, R.D. (2000). Bowling Alone: The Collapse and Revival of American Community. Simon & Schuster — also no DOI (trade/academic book); confirmed via publisher listing."
+  },
+  {
+    "name": "Stakeholder theory",
+    "author": "Freeman",
+    "year": 1984,
+    "doi": null,
+    "plain_summary": "Argues that a business should be managed for the benefit of everyone affected by or able to affect it — employees, customers, suppliers, communities — not just shareholders.",
+    "key_concepts": [
+      "Stakeholder (any group/individual who affects or is affected by the firm)",
+      "Stakeholder mapping",
+      "Balancing competing stakeholder interests",
+      "Shareholder primacy as the contrast case"
+    ],
+    "disciplines": ["business", "management", "ethics"],
+    "fits_when": "Research question asks how an organisation identifies, prioritises, or balances the competing interests of different groups affected by its decisions (e.g. CSR, governance, sustainability strategy). Does not fit if the research is narrowly about shareholder financial returns with no other stakeholder group in scope.",
+    "common_methodologies": ["case study", "qualitative interviews", "content analysis"],
+    "verified_source_check": "Freeman, R.E. (1984). Strategic Management: A Stakeholder Approach. Boston: Pitman. Confirmed via Cambridge University Press listing (cambridge.org/9780521151740) and multiple academic reference databases. No DOI for the original 1984 Pitman edition (pre-DOI era); the 2010 Cambridge University Press reissue exists but its DOI was not independently confirmed in this session, so it is omitted rather than guessed."
+  },
+  {
+    "name": "Dynamic capabilities",
+    "author": "Teece, Pisano & Shuen",
+    "year": 1997,
+    "doi": "10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z",
+    "plain_summary": "Extends the resource-based view by asking not just what resources a firm has, but how good it is at reconfiguring those resources as its environment changes — that ability to adapt is itself a source of advantage.",
+    "key_concepts": [
+      "Sensing, seizing, and reconfiguring (the three capability clusters)",
+      "Path dependency",
+      "Resource reconfiguration",
+      "Fit with environmental change"
+    ],
+    "disciplines": ["business", "management", "strategy"],
+    "fits_when": "Research question is about how a firm adapts its capabilities or resource base in response to a changing market, technology, or competitive environment over time. Does not fit if the research is a static snapshot of resources with no change/adaptation dimension — use plain resource-based view instead.",
+    "common_methodologies": ["longitudinal case study", "process research", "comparative case study"],
+    "verified_source_check": "Confirmed via Wiley Online Library (publisher): Teece, D.J., Pisano, G., & Shuen, A. (1997). 'Dynamic Capabilities and Strategic Management.' Strategic Management Journal, 18(7), 509-533. DOI 10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z."
+  },
+  {
+    "name": "Transaction cost economics",
+    "author": "Williamson",
+    "year": 1981,
+    "doi": "10.1086/227496",
+    "plain_summary": "Argues that organisations choose between doing something themselves (in-house) or buying it from the market based on which option has lower transaction costs — the costs of negotiating, monitoring, and enforcing an agreement, not just the price of the good itself.",
+    "key_concepts": [
+      "Transaction as the unit of analysis",
+      "Bounded rationality",
+      "Opportunism",
+      "Asset specificity",
+      "Make-vs-buy / vertical integration"
+    ],
+    "disciplines": ["business", "management", "economics"],
+    "fits_when": "Research question asks why an organisation chooses to do something internally versus outsourcing or contracting it externally, or how contractual/governance structures are designed to manage risk. Does not fit if the question is about resource advantage or capability-building rather than governance/boundary-of-the-firm decisions.",
+    "common_methodologies": ["case study", "comparative case study", "archival/document analysis"],
+    "verified_source_check": "Confirmed via the publisher (journals.uchicago.edu): Williamson, O.E. (1981). 'The Economics of Organization: The Transaction Cost Approach.' American Journal of Sociology, 87(3), 548-577. DOI 10.1086/227496."
+  },
+  {
+    "name": "Knowledge-based view of the firm",
+    "author": "Grant",
+    "year": 1996,
+    "doi": "10.1002/smj.4250171110",
+    "plain_summary": "Argues that a firm's most important resource is the specialised knowledge held by its members, and that the firm's real job is finding ways to coordinate and integrate that scattered knowledge effectively.",
+    "key_concepts": [
+      "Knowledge as the firm's primary strategic resource",
+      "Knowledge integration mechanisms",
+      "Tacit vs. explicit knowledge",
+      "Coordination without full knowledge-sharing"
+    ],
+    "disciplines": ["business", "management", "strategy"],
+    "fits_when": "Research question is about how an organisation creates, shares, or integrates specialist or tacit knowledge across individuals or teams to build advantage. Does not fit if the research is about physical/financial resources with no knowledge or expertise dimension — use resource-based view instead.",
+    "common_methodologies": ["case study", "qualitative interviews", "survey"],
+    "verified_source_check": "Confirmed via Wiley Online Library (publisher): Grant, R.M. (1996). 'Toward a Knowledge-Based Theory of the Firm.' Strategic Management Journal, 17(Winter Special Issue), 109-122. DOI 10.1002/smj.4250171110."
+  },
+  {
+    "name": "Social constructionism",
+    "author": "Berger & Luckmann",
+    "year": 1966,
+    "doi": null,
+    "plain_summary": "Argues that much of what we treat as objective reality — categories, roles, even 'facts' about social life — is actually built and maintained through everyday human interaction and shared meaning-making, not given by nature.",
+    "key_concepts": [
+      "Reality as socially constructed",
+      "Habitualization and institutionalization",
+      "Internalization (objective reality becomes subjective belief)",
+      "Legitimation (justifying the social order)"
+    ],
+    "disciplines": ["sociology", "education", "psychology"],
+    "fits_when": "Research question asks how a concept, identity, role, or 'taken-for-granted' practice came to be understood as natural or normal within a particular social group — e.g. how a profession defines expertise, or how a community constructs a shared norm. Does not fit if the research assumes the phenomenon is objectively fixed and is only measuring its effects.",
+    "common_methodologies": ["grounded theory", "ethnography", "discourse analysis"],
+    "verified_source_check": "Confirmed across multiple academic citation databases: Berger, P.L. & Luckmann, T. (1966). The Social Construction of Reality: A Treatise in the Sociology of Knowledge. Doubleday & Company, New York. No DOI — pre-DOI-era book."
+  },
+  {
+    "name": "Capability approach",
+    "author": "Sen",
+    "year": 1999,
+    "doi": null,
+    "plain_summary": "Argues that development and wellbeing should be measured not by income alone but by the real freedoms and opportunities ('capabilities') people actually have to live the kind of life they value.",
+    "key_concepts": [
+      "Capabilities (real opportunities/freedoms)",
+      "Functionings (achieved states of being and doing)",
+      "Agency vs. wellbeing",
+      "Substantive freedom as the goal of development"
+    ],
+    "disciplines": ["development studies", "sociology", "economics", "education"],
+    "fits_when": "Research question evaluates wellbeing, poverty, or development outcomes in terms of freedom/opportunity rather than income or resources alone — e.g. assessing whether an intervention expanded what people are actually able to do and be. Does not fit if the research is purely about income/GDP-based measures with no opportunity/freedom dimension.",
+    "common_methodologies": ["mixed methods", "case study", "participatory research"],
+    "verified_source_check": "Confirmed across multiple academic and publisher sources: Sen, A. (1999). Development as Freedom. Alfred A. Knopf, New York / Oxford University Press. No DOI — pre-DOI-era book. Note: the capability approach itself originates in Sen's earlier work (e.g. 'Equality of What?', 1979; Commodities and Capabilities, 1985) — this 1999 synthesis is the most commonly cited entry point and matches the plan's working citation."
+  },
+  {
+    "name": "Structuration theory",
+    "author": "Giddens",
+    "year": 1984,
+    "doi": null,
+    "plain_summary": "Argues that social structures (rules, resources, institutions) and individual human action constantly shape each other — structure isn't just a constraint on people, and people aren't free of structure; each produces and reproduces the other.",
+    "key_concepts": [
+      "Duality of structure",
+      "Agency and structure as mutually constituting",
+      "Recursiveness of social practices",
+      "Routinization"
+    ],
+    "disciplines": ["sociology", "education", "business"],
+    "fits_when": "Research question examines how individual or organisational action both shapes and is shaped by existing rules, norms, or systems over time — e.g. how employees' daily practices reproduce or quietly change an organisation's structure. Does not fit if the research treats structure and agency as separate, independent variables rather than mutually constituting.",
+    "common_methodologies": ["ethnography", "longitudinal case study", "qualitative interviews"],
+    "verified_source_check": "Confirmed across multiple academic citation databases: Giddens, A. (1984). The Constitution of Society: Outline of the Theory of Structuration. Polity Press, Cambridge (UK) / University of California Press (US edition). No DOI — pre-DOI-era book."
+  },
+  {
+    "name": "Gender and entrepreneurship (gendered pathways)",
+    "author": "Brush, de Bruin & Welter",
+    "year": 2009,
+    "doi": "10.1108/17566260910942318",
+    "plain_summary": "Argues that entrepreneurship is shaped by gendered structures and assumptions — from access to capital to who 'counts' as a credible founder — so studying entrepreneurship without accounting for gender risks generalising from a male default.",
+    "key_concepts": [
+      "Gender-aware framework",
+      "Access to finance/networks as gendered",
+      "Embeddedness in gendered institutions",
+      "Women's entrepreneurship as a distinct field, not a deficient version of men's"
+    ],
+    "disciplines": ["business", "entrepreneurship", "sociology", "development studies"],
+    "fits_when": "Research question examines how gender shapes entrepreneurial opportunity, access to resources, or venture outcomes — e.g. comparing financing experiences of women- vs. men-led startups. Does not fit if gender is not a variable of interest in the research question at all.",
+    "common_methodologies": ["case study", "survey", "comparative qualitative interviews"],
+    "verified_source_check": "FLAG FOR HUMAN REVIEW: the plan's working citation 'Brush et al., 2009' is ambiguous — Candida Brush has multiple 2009-era co-authored pieces on women's entrepreneurship. The closest verified match found via publisher search is Brush, C.G., de Bruin, A., & Welter, F. (2009). 'A Gender-Aware Framework for Women's Entrepreneurship.' International Journal of Gender and Entrepreneurship, 1(1), 8-24. DOI 10.1108/17566260910942318, confirmed via Emerald Insight. This is a different author trio than the Diana Project team (Carter/Gatewood/Greene/Hart) also associated with Brush's body of work on this topic — confirm this is the intended source before shipping."
+  },
+  {
+    "name": "Postcolonial theory (research applications)",
+    "author": "Said; Spivak",
+    "year": "1978 / 1988",
+    "doi": null,
+    "plain_summary": "Argues that Western knowledge about non-Western societies has often been produced through, and shaped by, colonial power relations — and that marginalised voices from colonised contexts are frequently misrepresented or filtered out of how their own experience gets told.",
+    "key_concepts": [
+      "Orientalism (the West's constructed image of 'the East')",
+      "Subalternity (those without a voice in dominant narratives)",
+      "Othering",
+      "Epistemic violence"
+    ],
+    "disciplines": ["sociology", "development studies", "education"],
+    "fits_when": "Research question examines how power, representation, or knowledge production is shaped by (post)colonial relationships — e.g. whose voices get included in development narratives, or how a curriculum represents non-Western cultures. Does not fit if the research has no power/representation/voice dimension tied to colonial history or global inequality.",
+    "common_methodologies": ["discourse analysis", "critical ethnography", "narrative inquiry"],
+    "verified_source_check": "Confirmed across multiple academic and publisher sources: Said, E.W. (1978). Orientalism. Routledge & Kegan Paul (UK) / Pantheon Books (US). Spivak, G.C. (1988). 'Can the Subaltern Speak?' In C. Nelson & L. Grossberg (Eds.), Marxism and the Interpretation of Culture (pp. 271-313). University of Illinois Press. No DOI for either — pre-DOI-era book/chapter."
+  },
+  {
+    "name": "Social exchange theory",
+    "author": "Blau",
+    "year": 1964,
+    "doi": null,
+    "plain_summary": "Argues that social relationships and behaviour can be understood as an exchange of costs and benefits — people stay in relationships, roles, or groups as long as the perceived rewards outweigh the costs, similar to (but not identical to) an economic transaction.",
+    "key_concepts": [
+      "Reciprocity",
+      "Cost-benefit calculation in relationships",
+      "Power as resource dependence",
+      "Social vs. economic exchange"
+    ],
+    "disciplines": ["sociology", "psychology", "business"],
+    "fits_when": "Research question examines why people maintain, invest in, or exit a relationship, role, or organisational membership based on perceived reciprocity or fairness — e.g. employee-employer relationships, mentor-mentee dynamics. Does not fit if the relationship or behaviour in question has no exchange or reciprocity element at all.",
+    "common_methodologies": ["survey", "qualitative interviews", "case study"],
+    "verified_source_check": "Confirmed across multiple academic citation databases: Blau, P.M. (1964). Exchange and Power in Social Life. John Wiley & Sons, New York. No DOI — pre-DOI-era book."
+  },
+  {
+    "name": "Feminist standpoint theory",
+    "author": "Harding",
+    "year": 1991,
+    "doi": null,
+    "plain_summary": "Argues that knowledge is shaped by the social position of the knower, and that starting research from the lived experience of women and other marginalised groups — rather than treating a dominant group's perspective as neutral — produces a more complete and accurate picture.",
+    "key_concepts": [
+      "Situated knowledge",
+      "Strong objectivity",
+      "Standpoint as epistemic starting point, not just identity",
+      "Critique of value-neutral 'view from nowhere' science"
+    ],
+    "disciplines": ["sociology", "education", "development studies", "psychology"],
+    "fits_when": "Research question centers the lived experience of a marginalised group as a deliberate epistemic starting point, and/or critiques how dominant research methods have excluded or distorted that experience. Does not fit if the research question is not about whose perspective shapes what counts as knowledge.",
+    "common_methodologies": ["qualitative interviews", "participatory action research", "narrative inquiry"],
+    "verified_source_check": "Confirmed across multiple academic and publisher sources: Harding, S. (1991). Whose Science? Whose Knowledge? Thinking from Women's Lives. Cornell University Press, Ithaca, NY. No DOI — pre-DOI-era book."
+  },
+  {
+    "name": "Dependency theory",
+    "author": "Frank; Wallerstein",
+    "year": "1967 / 1974",
+    "doi": null,
+    "plain_summary": "Argues that poorer ('peripheral') countries' underdevelopment isn't a natural stage they haven't reached yet — it's actively produced by their economic relationship with wealthier ('core') countries, which extract resources and value from them.",
+    "key_concepts": [
+      "Core-periphery relationship",
+      "Development of underdevelopment (Frank)",
+      "World-systems: core, periphery, semi-periphery (Wallerstein)",
+      "Unequal exchange"
+    ],
+    "disciplines": ["development studies", "sociology", "economics"],
+    "fits_when": "Research question examines how a country's or region's economic position is shaped by its structural relationship to more dominant economies, historically or currently — e.g. trade dependency or resource-extraction patterns. Does not fit if the research explains underdevelopment purely through internal/domestic factors with no reference to external structural relationships.",
+    "common_methodologies": ["comparative historical analysis", "case study", "mixed methods"],
+    "verified_source_check": "Confirmed across multiple academic and publisher sources: Frank, A.G. (1967). Capitalism and Underdevelopment in Latin America: Historical Studies of Chile and Brazil. Monthly Review Press, New York. Wallerstein, I. (1974). The Modern World-System: Capitalist Agriculture and the Origins of the European World-Economy in the Sixteenth Century. Academic Press, New York. No DOI for either original — pre-DOI-era books."
+  },
+  {
+    "name": "Constructivist learning theory",
+    "author": "Vygotsky; Piaget",
+    "year": "1978 (Vygotsky, posthumous trans.) / 1936 (Piaget, orig.)",
+    "doi": null,
+    "plain_summary": "People build their own understanding of the world through experience and social interaction rather than absorbing knowledge passively — Piaget focused on how individuals construct knowledge as they move through stages of cognitive development, while Vygotsky emphasised that learning happens through social interaction and guided support from more knowledgeable others.",
+    "key_concepts": [
+      "Scaffolding",
+      "Zone of proximal development",
+      "Schema (cognitive structures)",
+      "Assimilation and accommodation",
+      "Social mediation of learning"
+    ],
+    "disciplines": ["education", "psychology", "developmental psychology"],
+    "fits_when": "Research question is about how learners build understanding through experience, social interaction, or guided support — e.g. classroom dialogue, peer learning, scaffolding by teachers or mentors, or developmental stages of reasoning. Does not fit if the research treats knowledge as transmitted directly and unchanged from teacher/text to learner.",
+    "common_methodologies": ["classroom observation", "case study", "design-based research", "microgenetic analysis"],
+    "verified_source_check": "FLAG: this is a synthesis entry spanning two distinct theorists, not a single verified paper — carries more attribution risk than single-source entries; recommend the product UI attribute claims to 'Piaget' and 'Vygotsky' separately rather than blending as one claim. Vygotsky: Mind in Society: The Development of Higher Psychological Processes (Cambridge, MA: Harvard University Press, 1978) — posthumous English compilation of Vygotsky's 1930s work (he died 1934); confirmed via Harvard University Press catalog (hup.harvard.edu/books/9780674576292). No DOI (pre-DOI book). Piaget's constructivist account spans multiple texts; most commonly cited originating source is The Origins of Intelligence in Children (1936 French; 1952 English trans., International Universities Press) — no single paper anchors 'Piagetian constructivism', confirmed via cross-referenced academic sources."
+  },
+  {
+    "name": "Self-determination theory",
+    "author": "Deci & Ryan",
+    "year": 1985,
+    "doi": "10.1007/978-1-4899-2271-7",
+    "plain_summary": "People are most motivated and satisfied when three basic psychological needs are met: feeling capable (competence), feeling in control of their own choices (autonomy), and feeling connected to others (relatedness) — motivation driven by genuine interest works better and lasts longer than motivation driven by rewards or pressure.",
+    "key_concepts": [
+      "Autonomy",
+      "Competence",
+      "Relatedness",
+      "Intrinsic vs. extrinsic motivation",
+      "Self-regulation"
+    ],
+    "disciplines": ["psychology", "education", "organizational behaviour"],
+    "fits_when": "Research question is about what drives sustained motivation, engagement, or wellbeing — e.g. student motivation, employee engagement, behaviour change, or why external rewards sometimes undermine intrinsic interest. Does not fit if motivation isn't a variable of interest at all.",
+    "common_methodologies": ["survey/questionnaire", "experimental design", "longitudinal study"],
+    "verified_source_check": "Confirmed via Springer Nature Link (link.springer.com/book/10.1007/978-1-4899-2271-7) — Deci, E.L., & Ryan, R.M. (1985). Intrinsic Motivation and Self-Determination in Human Behavior. New York: Plenum Press (Perspectives in Social Psychology series). DOI 10.1007/978-1-4899-2271-7 is the registered DOI via Springer, which now holds the Plenum catalogue. Cross-referenced against Scientific Research Publishing reference database and original publisher listing (ISBN 9780306420221)."
+  },
+  {
+    "name": "Communities of practice",
+    "author": "Lave & Wenger",
+    "year": 1991,
+    "doi": "10.1017/CBO9780511815355",
+    "plain_summary": "People learn best not by sitting in classrooms but by participating in the everyday activities of a group of practitioners — newcomers start on the edges doing simple tasks and gradually become full members as they pick up the group's skills, language, and identity.",
+    "key_concepts": [
+      "Legitimate peripheral participation",
+      "Situated learning",
+      "Community of practice",
+      "Newcomer-oldtimer relations",
+      "Identity formation through practice"
+    ],
+    "disciplines": ["education", "sociology", "organizational studies"],
+    "fits_when": "Research question is about how people learn through participation in a group or workplace setting, professional identity formation, apprenticeship-style learning, or knowledge-sharing within informal or professional communities. Does not fit if learning is studied in isolation from any social/practice context.",
+    "common_methodologies": ["ethnography", "participant observation", "case study", "narrative inquiry"],
+    "verified_source_check": "Confirmed via Cambridge University Press DOI registry — Lave, J., & Wenger, E. (1991). Situated Learning: Legitimate Peripheral Participation. Cambridge: Cambridge University Press. DOI: 10.1017/CBO9780511815355 (Cambridge Books Online edition). Cross-checked against Scientific Research Publishing and Semantic Scholar listings; ISBN 9780521423748 confirmed via publisher/Amazon record."
+  },
+  {
+    "name": "Threshold concepts",
+    "author": "Meyer & Land",
+    "year": 2003,
+    "doi": null,
+    "plain_summary": "Every discipline has a handful of 'gateway' ideas that are hard to grasp but, once understood, transform how a student sees the whole subject — these ideas are often troublesome, hard to un-learn once grasped, and connect previously separate pieces of knowledge.",
+    "key_concepts": [
+      "Threshold concept",
+      "Troublesome knowledge",
+      "Liminal space",
+      "Irreversibility",
+      "Transformative understanding"
+    ],
+    "disciplines": ["education", "higher education", "pedagogy"],
+    "fits_when": "Research question is about identifying or teaching around a specific 'hard to grasp but transformative' concept within a discipline, curriculum design challenges, or why students get conceptually stuck at a particular point in learning. Does not fit if the research is about general study skills unrelated to a specific disciplinary concept.",
+    "common_methodologies": ["qualitative interviews with students/staff", "curriculum analysis", "phenomenography", "case study"],
+    "verified_source_check": "Confirmed via University of Edinburgh Research Explorer and multiple academic indexes (Semantic Scholar, ResearchGate) — Meyer, J.H.F., & Land, R. (2003). 'Threshold concepts and troublesome knowledge: linkages to ways of thinking and practising within the disciplines.' Occasional paper arising from the ESRC/TLRP 'Enhancing Teaching-Learning Environments in Undergraduate Courses' (ETL) Project, presented at the 10th Improving Student Learning Conference (Oxford Brookes University, 2003); later published in C. Rust (ed.), Improving Student Learning — Ten Years On (Oxford: OCSLD). As a conference/occasional paper, no DOI was assigned. Note: a related, easily-confused follow-up journal article, Meyer & Land (2005), 'Threshold concepts and troublesome knowledge (2)...', Higher Education, does carry DOI 10.1007/s10734-004-6779-5 — but the 2003 original (matching the plan's citation year) is the occasional paper without one."
+  },
+  {
+    "name": "Transformative learning theory",
+    "author": "Mezirow",
+    "year": 1991,
+    "doi": null,
+    "plain_summary": "Adults learn most deeply when an experience challenges their existing assumptions strongly enough to trigger a 'disorienting dilemma' — through critical reflection and dialogue with others, they can revise the underlying beliefs that shape how they interpret the world, not just add new facts to old beliefs.",
+    "key_concepts": [
+      "Disorienting dilemma",
+      "Critical reflection",
+      "Frame of reference",
+      "Perspective transformation",
+      "Rational discourse"
+    ],
+    "disciplines": ["education", "adult learning", "psychology"],
+    "fits_when": "Research question is about how adults change deeply held beliefs or worldviews through a significant experience, professional development that reshapes practitioner identity, or learning that follows a crisis, career change, or cross-cultural encounter. Does not fit if the learning in question is purely additive (new facts onto unchanged beliefs).",
+    "common_methodologies": ["narrative inquiry", "in-depth interviews", "autoethnography", "longitudinal case study"],
+    "verified_source_check": "Confirmed via Wiley publisher page, Internet Archive catalog record, and SAGE Journals book review (journals.sagepub.com/doi/10.1177/074171369204200309) — Mezirow, J. (1991). Transformative Dimensions of Adult Learning. San Francisco: Jossey-Bass (Jossey-Bass Higher and Adult Education Series), ISBN 978-1-555-42339-1. Pre-DOI-era book; no DOI exists for the original edition."
+  },
+  {
+    "name": "Experiential learning theory",
+    "author": "Kolb",
+    "year": 1984,
+    "doi": null,
+    "plain_summary": "Learning works best as a cycle: you have a concrete experience, reflect on what happened, draw out a general lesson or theory from it, and then test that lesson by trying it out in a new situation — and round again.",
+    "key_concepts": [
+      "Concrete experience",
+      "Reflective observation",
+      "Abstract conceptualisation",
+      "Active experimentation",
+      "Learning styles"
+    ],
+    "disciplines": ["education", "organizational behaviour", "psychology"],
+    "fits_when": "Research question is about how people learn from direct experience — e.g. workplace training, internships, reflective practice, or evaluating a hands-on/experiential learning programme. Does not fit if learning is purely from instruction or reading with no experiential component.",
+    "common_methodologies": ["reflective journals/diaries", "action research", "mixed methods", "pre/post intervention study"],
+    "verified_source_check": "Confirmed via Scientific Research Publishing reference database, UW-Madison Libraries catalog record, and a Wiley Online Library book review (Journal of Organizational Behavior, 1987, DOI 10.1002/job.4030080408 — that DOI belongs to the review, not the book) — Kolb, D.A. (1984). Experiential Learning: Experience as the Source of Learning and Development. Englewood Cliffs, NJ: Prentice-Hall. Confirmed no DOI exists for the original 1984 book; pre-DOI-era publication."
+  },
+  {
+    "name": "Bronfenbrenner's ecological systems theory",
+    "author": "Bronfenbrenner",
+    "year": 1979,
+    "doi": "10.4159/9780674028845",
+    "plain_summary": "A person's development is shaped by nested layers of environment around them — from immediate relationships like family, out to school and community, out to broader cultural and societal forces — and these layers interact with each other over time.",
+    "key_concepts": [
+      "Microsystem",
+      "Mesosystem",
+      "Exosystem",
+      "Macrosystem",
+      "Chronosystem (added in later work)"
+    ],
+    "disciplines": ["psychology", "developmental psychology", "education", "sociology"],
+    "fits_when": "Research question is about how multiple layers of context (family, school, community, culture, policy) shape an individual's development or outcomes, or requires mapping how different environmental levels interact. Does not fit if the research focuses on a single isolated variable with no contextual-layers framing.",
+    "common_methodologies": ["mixed methods", "longitudinal study", "multi-level case study", "naturalistic observation"],
+    "verified_source_check": "Confirmed via Harvard University Press catalog (hup.harvard.edu/books/9780674224575) and the De Gruyter/Harvard UP DOI registry (degruyterbrill.com/document/doi/10.4159/9780674028845) — Bronfenbrenner, U. (1979). The Ecology of Human Development: Experiments by Nature and Design. Cambridge, MA: Harvard University Press. DOI 10.4159/9780674028845 is the publisher-registered identifier for the digital edition of this work; the original 1979 print edition predates the DOI system."
+  },
+  {
+    "name": "Critical pedagogy",
+    "author": "Freire",
+    "year": "1968 (orig.) / 1970 (English trans.)",
+    "doi": null,
+    "plain_summary": "Education is never neutral — traditional teaching that treats students as empty containers to be filled with facts ('banking education') reinforces existing power structures, while education that treats students as active co-investigators of their own reality can help them recognise and challenge oppression.",
+    "key_concepts": [
+      "Banking education",
+      "Conscientização (critical consciousness)",
+      "Dialogic education",
+      "Praxis",
+      "Problem-posing education"
+    ],
+    "disciplines": ["education", "sociology", "development studies"],
+    "fits_when": "Research question is about power, voice, or oppression within educational or learning contexts, participatory or dialogic teaching methods, or how marginalised groups develop critical awareness of their social conditions through education. Does not fit if education is treated as a neutral, apolitical process in the research framing.",
+    "common_methodologies": ["participatory action research", "critical ethnography", "case study", "discourse analysis"],
+    "verified_source_check": "Confirmed via Wikipedia cross-checked against JSTOR Daily retrospective and WorldCat catalog record — Freire, P. Pedagogia do Oprimido, written 1967-68; English translation by Myra Bergman Ramos published 1970 (Herder & Herder, later reissued by Continuum/Seabury Press), ISBN varies by edition (30th anniv. ed. 9780826412768). Pre-DOI-era book. Note: the original Portuguese-language edition was not published in Brazil itself until 1974, due to Freire's political exile — the plan's citation year (1968) refers to the original manuscript/first translated publication, not the 1970 English edition most commonly read by Methea's target students. Documented here so the product shows a consistent citation year."
+  },
+  {
+    "name": "Social identity theory",
+    "author": "Tajfel & Turner",
+    "year": 1979,
+    "doi": null,
+    "plain_summary": "People naturally divide the world into 'us' and 'them' groups, and part of their self-worth comes from believing their own group is good — which is why people often favour their in-group and view outsiders less favourably, even when the groups themselves are fairly arbitrary.",
+    "key_concepts": [
+      "Social categorization",
+      "Social identification",
+      "Social comparison (in-group vs. out-group)",
+      "In-group favoritism",
+      "Positive distinctiveness"
+    ],
+    "disciplines": ["psychology", "sociology"],
+    "fits_when": "Research question is about group membership, in-group/out-group dynamics, intergroup conflict, or how identity tied to a group shapes attitudes or behaviour. Does not fit if the research is about purely individual-level traits with no group or identity dimension.",
+    "common_methodologies": ["experimental design", "survey", "case study"],
+    "verified_source_check": "Confirmed across multiple academic citation databases (Scientific Research Publishing, Semantic Scholar) — Tajfel, H., & Turner, J.C. (1979). 'An Integrative Theory of Intergroup Conflict.' In W.G. Austin & S. Worchel (Eds.), The Social Psychology of Intergroup Relations (pp. 33-37). Monterey, CA: Brooks/Cole. Book chapter, pre-DOI era — no DOI exists."
+  },
+  {
+    "name": "Self-efficacy theory",
+    "author": "Bandura",
+    "year": 1977,
+    "doi": "10.1037/0033-295X.84.2.191",
+    "plain_summary": "People's belief in their own ability to succeed at a specific task strongly shapes whether they'll attempt it, how much effort they'll put in, and how long they'll keep trying when it gets hard — regardless of their actual skill level.",
+    "key_concepts": [
+      "Self-efficacy beliefs",
+      "Mastery experiences",
+      "Vicarious experience (modeling)",
+      "Verbal persuasion",
+      "Physiological/emotional states"
+    ],
+    "disciplines": ["psychology", "education", "organizational behaviour"],
+    "fits_when": "Research question is about confidence in one's ability to perform a specific task or behaviour, and how that belief affects effort, persistence, or performance. Does not fit if the research is about general self-esteem unrelated to a specific task domain.",
+    "common_methodologies": ["survey/questionnaire", "experimental design", "longitudinal study"],
+    "verified_source_check": "Confirmed via PubMed (pubmed.ncbi.nlm.nih.gov/847061) and cross-referenced academic citation databases — Bandura, A. (1977). 'Self-efficacy: Toward a unifying theory of behavioral change.' Psychological Review, 84(2), 191-215. DOI 10.1037/0033-295X.84.2.191."
+  },
+  {
+    "name": "Theory of planned behaviour",
+    "author": "Ajzen",
+    "year": 1991,
+    "doi": "10.1016/0749-5978(91)90020-T",
+    "plain_summary": "Whether someone actually does something comes down to three things: their attitude toward the behaviour, whether people who matter to them approve of it, and whether they feel capable of actually doing it — together these shape intention, and intention drives the behaviour.",
+    "key_concepts": [
+      "Attitude toward the behaviour",
+      "Subjective norms",
+      "Perceived behavioural control",
+      "Behavioural intention"
+    ],
+    "disciplines": ["psychology", "business", "education"],
+    "fits_when": "Research question is about predicting or explaining a specific, deliberate behaviour (e.g. health choices, consumer decisions, voting) from attitudes, social pressure, and perceived control. Does not fit if the behaviour in question is habitual or automatic rather than deliberate.",
+    "common_methodologies": ["survey/questionnaire", "structural equation modeling", "experimental design"],
+    "verified_source_check": "Confirmed via Scientific Research Publishing and the original publisher PDF (sietmanagement.fr) — Ajzen, I. (1991). 'The Theory of Planned Behavior.' Organizational Behavior and Human Decision Processes, 50(2), 179-211. DOI 10.1016/0749-5978(91)90020-T."
+  },
+  {
+    "name": "Attachment theory (research applications)",
+    "author": "Bowlby; Ainsworth",
+    "year": "1969 / 1978",
+    "doi": null,
+    "plain_summary": "The emotional bond formed between an infant and their primary caregiver shapes how secure that child feels exploring the world, and sets a pattern for how they'll approach close relationships later in life — Bowlby described the bond itself, while Ainsworth identified distinct patterns ('attachment styles') in how children respond to separation from their caregiver.",
+    "key_concepts": [
+      "Attachment behavioural system",
+      "Secure base",
+      "Strange Situation procedure (Ainsworth)",
+      "Attachment styles (secure, anxious, avoidant)",
+      "Internal working models"
+    ],
+    "disciplines": ["psychology", "education", "developmental psychology"],
+    "fits_when": "Research question is about how early caregiving relationships shape emotional security, behaviour, or later relationship patterns — e.g. parent-child bonding, classroom behaviour linked to attachment style, or adult relationship patterns traced to early attachment. Does not fit if the research has no caregiving, bonding, or close-relationship dimension.",
+    "common_methodologies": ["observational study", "longitudinal study", "case study", "structured interview (e.g. Adult Attachment Interview)"],
+    "verified_source_check": "Confirmed across multiple academic citation databases — Bowlby, J. (1969). Attachment and Loss, Vol. 1: Attachment. New York: Basic Books (also published by Hogarth Press/Institute of Psycho-Analysis, London). Ainsworth, M.D.S., Blehar, M.C., Waters, E., & Wall, S. (1978). Patterns of Attachment: A Psychological Study of the Strange Situation. Hillsdale, NJ: Erlbaum. No DOI for either — pre-DOI-era books."
+  },
+  {
+    "name": "Cognitive dissonance theory",
+    "author": "Festinger",
+    "year": 1957,
+    "doi": null,
+    "plain_summary": "When someone holds two conflicting beliefs, or their behaviour contradicts their beliefs, it creates an uncomfortable mental tension — and people are motivated to reduce that discomfort, often by changing their beliefs or rationalising their behaviour, rather than by simply changing what they do.",
+    "key_concepts": [
+      "Cognitive dissonance",
+      "Dissonance reduction",
+      "Belief-behaviour inconsistency",
+      "Rationalization",
+      "Selective exposure"
+    ],
+    "disciplines": ["psychology", "business", "education"],
+    "fits_when": "Research question is about how people resolve internal conflict between beliefs and actions, attitude change following a decision, or rationalisation after taking action that contradicts a prior belief. Does not fit if there's no belief-behaviour conflict involved.",
+    "common_methodologies": ["experimental design", "survey", "case study"],
+    "verified_source_check": "Confirmed via Stanford University Press (sup.org/books/sociology/theory-cognitive-dissonance) and Scientific Research Publishing — Festinger, L. (1957). A Theory of Cognitive Dissonance. Stanford, CA: Stanford University Press (originally published by Row, Peterson and Company in 1957; reissued by Stanford UP in 1962). Note: a digital edition carries DOI 10.1515/9781503620766 (De Gruyter/Stanford UP reissue) — the original 1957 print predates the DOI system, so doi is set to null here per the plan's convention of citing the originating work rather than a later digital reissue."
+  },
+  {
+    "name": "Self-categorization theory",
+    "author": "Turner, Hogg, Oakes, Reicher & Wetherell",
+    "year": 1987,
+    "doi": null,
+    "plain_summary": "Extends social identity theory by explaining exactly how and when people shift from thinking of themselves as individuals to thinking of themselves as members of a group — the more salient a group identity becomes in a given context, the more a person's perceptions and behaviour shift to match the group's norms.",
+    "key_concepts": [
+      "Self-categorization",
+      "Depersonalization",
+      "Salience of group membership",
+      "Prototypicality",
+      "Intragroup vs. intergroup context"
+    ],
+    "disciplines": ["psychology", "sociology"],
+    "fits_when": "Research question is about when and why group identity becomes psychologically salient and shifts individual behaviour toward group norms, or distinguishes interpersonal from intergroup behaviour in a given context. Does not fit if the question is really about static group membership rather than the psychological process of shifting categorization.",
+    "common_methodologies": ["experimental design", "survey", "case study"],
+    "verified_source_check": "Confirmed via Scientific Research Publishing and University of Chicago Press journal listing (journals.uchicago.edu/doi/abs/10.1086/229205, a book review of the work) — Turner, J.C., Hogg, M.A., Oakes, P.J., Reicher, S.D., & Wetherell, M.S. (1987). Rediscovering the Social Group: A Self-Categorization Theory. Oxford: Basil Blackwell. No DOI for the original book — pre-DOI era; the DOI surfaced in search belongs to a journal book review, not the work itself."
+  },
+  {
+    "name": "Job demands-resources model",
+    "author": "Demerouti, Bakker, Nachreiner & Schaufeli",
+    "year": 2001,
+    "doi": "10.1037/0021-9010.86.3.499",
+    "plain_summary": "Every job has two kinds of features: demands (aspects that cost effort and can exhaust people, like workload or time pressure) and resources (aspects that help people cope and stay engaged, like support or autonomy) — burnout happens when demands are high and resources are too low to offset them.",
+    "key_concepts": [
+      "Job demands",
+      "Job resources",
+      "Exhaustion",
+      "Disengagement",
+      "Demands-resources balance"
+    ],
+    "disciplines": ["psychology", "business", "organizational behaviour"],
+    "fits_when": "Research question is about workplace burnout, engagement, or wellbeing as a function of job characteristics — e.g. comparing high-demand/low-resource roles, or evaluating an intervention that adds job resources. Does not fit if the research is about job performance/outcomes with no wellbeing or strain dimension.",
+    "common_methodologies": ["survey/questionnaire", "structural equation modeling", "longitudinal study"],
+    "verified_source_check": "Confirmed via Utrecht University research portal and cross-referenced academic citation databases — Demerouti, E., Bakker, A.B., Nachreiner, F., & Schaufeli, W.B. (2001). 'The Job Demands-Resources Model of Burnout.' Journal of Applied Psychology, 86(3), 499-512. DOI 10.1037/0021-9010.86.3.499. (Author order varies slightly across reference lists — publisher-confirmed order used here is Demerouti, Bakker, Nachreiner, Schaufeli.)"
+  },
+  {
+    "name": "Health belief model",
+    "author": "Rosenstock",
+    "year": 1966,
+    "doi": null,
+    "plain_summary": "Whether someone takes a preventive health action (like getting a vaccine or going for a screening) depends on how they weigh it up: how serious they think the health threat is, how at-risk they feel personally, whether the action's benefits outweigh its costs or hassle, and whether something is prompting them to act now.",
+    "key_concepts": [
+      "Perceived susceptibility",
+      "Perceived severity",
+      "Perceived benefits",
+      "Perceived barriers",
+      "Cues to action"
+    ],
+    "disciplines": ["psychology", "education", "development studies"],
+    "fits_when": "Research question is about why people do or don't take a preventive health action, or designing/evaluating a health communication intervention around perceived risk and benefit. Does not fit if the behaviour in question isn't health-related or preventive in nature.",
+    "common_methodologies": ["survey/questionnaire", "structured interviews", "mixed methods"],
+    "verified_source_check": "Confirmed via SAGE Journals retrospective (Rosenstock, 1974, 'Historical Origins of the Health Belief Model') and Wiley Online Library — Rosenstock, I.M. (1966). 'Why People Use Health Services.' Milbank Memorial Fund Quarterly, 44(3), Part 2, 94-127. The DOI 10.1111/j.1468-0009.2005.00425.x found in search results belongs to a 2005 Milbank Quarterly reprint of the article, not the 1966 original — original predates the DOI system, so doi is set to null here to avoid misattributing a reprint's identifier to the originating 1966 publication."
+  },
+  {
+    "name": "Sensemaking theory",
+    "author": "Weick",
+    "year": 1995,
+    "doi": null,
+    "plain_summary": "When people face an ambiguous or surprising situation, they don't just perceive 'what happened' — they actively construct a plausible story about what's going on, often retrospectively and by talking it through with others, and that constructed story then shapes what they do next.",
+    "key_concepts": [
+      "Retrospective sensemaking",
+      "Plausibility over accuracy",
+      "Enactment",
+      "Social/collective sensemaking",
+      "Identity construction through sensemaking"
+    ],
+    "disciplines": ["business", "organizational behaviour", "sociology"],
+    "fits_when": "Research question is about how people or organisations interpret an ambiguous, novel, or crisis situation and construct meaning from it — e.g. how a team made sense of an unexpected failure, or how an organisation's identity shifted during change. Does not fit if the situation in question has a single objective interpretation with no ambiguity to resolve.",
+    "common_methodologies": ["case study", "narrative inquiry", "qualitative interviews", "ethnography"],
+    "verified_source_check": "Confirmed via SAGE Publications (us.sagepub.com/en-us/nam/sensemaking-in-organizations/book4988) and Scientific Research Publishing — Weick, K.E. (1995). Sensemaking in Organizations. Thousand Oaks, CA: Sage Publications (Foundations for Organizational Science series), ISBN 978-0803971776. No DOI — pre-DOI-era book."
+  },
+  {
+    "name": "Diffusion of innovations",
+    "author": "Rogers",
+    "year": 1962,
+    "doi": null,
+    "plain_summary": "New ideas, products, or practices spread through a population in a predictable pattern over time — a small group of innovators adopt first, then early adopters, then the majority follows in waves, with the speed of adoption depending on how the innovation is perceived (its relative advantage, complexity, and compatibility with existing norms).",
+    "key_concepts": [
+      "Innovators, early adopters, early/late majority, laggards",
+      "Relative advantage",
+      "Compatibility",
+      "Complexity",
+      "Diffusion S-curve"
+    ],
+    "disciplines": ["business", "sociology", "education", "development studies"],
+    "fits_when": "Research question is about how and why a new idea, technology, or practice spreads (or fails to spread) through a population or organisation over time. Does not fit if the research is about a single static adoption decision with no diffusion-over-time element.",
+    "common_methodologies": ["survey", "case study", "mixed methods", "social network analysis"],
+    "verified_source_check": "Confirmed across multiple academic citation databases and a contemporaneous Journal of Pharmaceutical Sciences review (onlinelibrary.wiley.com/doi/abs/10.1002/jps.2600520633) — Rogers, E.M. (1962). Diffusion of Innovations (1st ed.). New York: Free Press of Glencoe. No DOI — pre-DOI-era book. Note: per the plan's citation, this entry refers to the original 1962 edition; Rogers revised the book across five editions through 2003, and later editions are not interchangeable citations for this originating work."
+  },
+  {
+    "name": "Actor-network theory",
+    "author": "Latour",
+    "year": 2005,
+    "doi": "10.1093/oso/9780199256044.001.0001",
+    "plain_summary": "Society isn't just made of people — it's made of networks where humans and non-human things (technologies, documents, organisms, infrastructure) all act and shape outcomes together; to understand how something happened, you have to trace the whole network of actors involved, not just the human ones.",
+    "key_concepts": [
+      "Actor-network",
+      "Non-human agency",
+      "Translation",
+      "Symmetry between human and non-human actors",
+      "Tracing associations"
+    ],
+    "disciplines": ["sociology", "business", "education"],
+    "fits_when": "Research question is about how a network of human and non-human elements (technology, objects, infrastructure) together produce an outcome, or requires tracing how an idea, practice, or technology gets stabilised through a network of actors. Does not fit if the research assumes only human intentions and decisions matter, with no role for objects or technology.",
+    "common_methodologies": ["ethnography", "case study", "document/artifact analysis"],
+    "verified_source_check": "Confirmed via Oxford Academic (academic.oup.com/book/52349) and Oxford University Press global catalog (global.oup.com/academic/product/reassembling-the-social-9780199256051) — Latour, B. (2005). Reassembling the Social: An Introduction to Actor-Network-Theory. Oxford: Oxford University Press. DOI 10.1093/oso/9780199256044.001.0001 (Oxford Scholarship Online edition)."
+  },
+  {
+    "name": "Technology acceptance model",
+    "author": "Davis",
+    "year": 1989,
+    "doi": "10.2307/249008",
+    "plain_summary": "Whether someone actually starts using a new piece of technology comes down to two beliefs: whether they think it will be useful (perceived usefulness) and whether they think it will be easy to use (perceived ease of use) — both shape their attitude toward the technology and, in turn, whether they adopt it.",
+    "key_concepts": [
+      "Perceived usefulness",
+      "Perceived ease of use",
+      "Attitude toward use",
+      "Behavioural intention to use",
+      "Actual system use"
+    ],
+    "disciplines": ["business", "education", "psychology"],
+    "fits_when": "Research question is about why people do or don't adopt a specific technology or system, or evaluating what drives uptake of a digital tool/platform. Does not fit if the research is about technology design itself rather than user adoption/acceptance.",
+    "common_methodologies": ["survey/questionnaire", "structural equation modeling", "experimental design"],
+    "verified_source_check": "Confirmed via ACM Digital Library (dl.acm.org/doi/10.2307/249008) and MIS Quarterly's own archive (misq.umn.edu) — Davis, F.D. (1989). 'Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology.' MIS Quarterly, 13(3), 319-340. DOI 10.2307/249008."
+  },
+  {
+    "name": "Stakeholder salience theory",
+    "author": "Mitchell, Agle & Wood",
+    "year": 1997,
+    "doi": "10.5465/amr.1997.9711022105",
+    "plain_summary": "Not all stakeholders matter equally to a manager's attention — how much priority a stakeholder gets depends on three things: how much power they have, how legitimate their claim is, and how urgent their claim is right now; stakeholders with all three get the most attention.",
+    "key_concepts": [
+      "Power",
+      "Legitimacy",
+      "Urgency",
+      "Stakeholder salience",
+      "Latent, expectant, and definitive stakeholders"
+    ],
+    "disciplines": ["business", "management", "ethics"],
+    "fits_when": "Research question is about how an organisation prioritises among multiple, competing stakeholder claims, or classifies stakeholders by influence and urgency. Does not fit if stakeholders in the research are treated as a single undifferentiated group with no prioritisation question.",
+    "common_methodologies": ["case study", "qualitative interviews", "stakeholder mapping/content analysis"],
+    "verified_source_check": "Confirmed via JSTOR (jstor.org/stable/259247) and Scientific Research Publishing — Mitchell, R.K., Agle, B.R., & Wood, D.J. (1997). 'Toward a Theory of Stakeholder Identification and Salience: Defining the Principle of Who and What Really Counts.' Academy of Management Review, 22(4), 853-886. DOI 10.5465/AMR.1997.9711022105."
+  },
+  {
+    "name": "Practice theory",
+    "author": "Bourdieu; Schatzki",
+    "year": "1990 / 2002",
+    "doi": null,
+    "plain_summary": "Argues that the basic unit of social life isn't an individual's beliefs or a society's formal structures, but everyday, embodied 'practices' — routine, often unspoken ways of doing things — which people learn through their bodies and habits and which connect individual action to wider social patterns.",
+    "key_concepts": [
+      "Habitus",
+      "Field",
+      "Embodied practical knowledge",
+      "Practice as the unit of analysis (Schatzki)",
+      "Site of the social"
+    ],
+    "disciplines": ["sociology", "business", "education"],
+    "fits_when": "Research question is about how everyday, routine, often taken-for-granted activities (rather than explicit beliefs or formal structures) shape and reproduce social or organisational life. Does not fit if the research is about explicit, conscious decision-making with no routine or habitual practice dimension.",
+    "common_methodologies": ["ethnography", "participant observation", "video/practice-based observation", "case study"],
+    "verified_source_check": "FLAG: this is a two-theorist synthesis entry (Bourdieu's foundational habitus/field concepts plus Schatzki's later 'site of the social' framing) rather than a single paper — same attribution caveat as the 'Constructivist learning theory' entry applies; recommend attributing claims to each theorist separately. Confirmed via Stanford University Press (sup.org/books/sociology/logic-practice) — Bourdieu, P. (1990). The Logic of Practice (R. Nice, Trans.). Stanford, CA: Stanford University Press (translation of Le Sens Pratique, 1980). Schatzki, T.R. (2002). The Site of the Social: A Philosophical Account of the Constitution of Social Life and Change. University Park, PA: Pennsylvania State University Press. No DOI for either — pre-DOI-era books."
+  },
+  {
+    "name": "Grounded theory (as theoretical lens)",
+    "author": "Glaser & Strauss",
+    "year": 1967,
+    "doi": null,
+    "plain_summary": "Rather than starting research with a theory to test, grounded theory builds theory directly from the data itself — through careful, iterative coding and comparison of cases, patterns and concepts emerge from the data rather than being imposed on it beforehand.",
+    "key_concepts": [
+      "Constant comparative method",
+      "Open, axial, and selective coding",
+      "Theoretical sampling",
+      "Theoretical saturation",
+      "Theory emergence from data"
+    ],
+    "disciplines": ["sociology", "education", "business", "psychology"],
+    "fits_when": "Research question is exploratory, where existing theory doesn't adequately explain the phenomenon, and the researcher wants to build new theoretical understanding directly from qualitative data. Does not fit if the research is testing an existing, well-specified theory or hypothesis (deductive design) rather than building one inductively.",
+    "common_methodologies": ["grounded theory (as method)", "qualitative interviews", "constant comparative analysis"],
+    "verified_source_check": "FLAG: this entry treats grounded theory as a theoretical lens (theory built from data) rather than purely a methodology — Glaser & Strauss's name otherwise also appears under 'common_methodologies' elsewhere in this library; recommend the product UI clarify this dual role so students aren't confused about whether it's a 'theory' or a 'method' option. Confirmed across multiple academic citation databases (Scientific Research Publishing, Oxford Academic book review) — Glaser, B.G., & Strauss, A.L. (1967). The Discovery of Grounded Theory: Strategies for Qualitative Research. Chicago: Aldine Publishing Company. No DOI — pre-DOI-era book."
+  },
+  {
+    "name": "Critical realism",
+    "author": "Bhaskar",
+    "year": 1975,
+    "doi": null,
+    "plain_summary": "Argues that reality exists independently of our knowledge of it, but our knowledge of that reality is always shaped by our concepts, theories, and social context — so good research needs to look past surface-level observable events to the deeper structures and mechanisms that generate them.",
+    "key_concepts": [
+      "Stratified reality (empirical, actual, real)",
+      "Generative mechanisms",
+      "Epistemic fallacy (critique of)",
+      "Transcendental realism",
+      "Ontology vs. epistemology distinction"
+    ],
+    "disciplines": ["sociology", "business", "development studies", "education"],
+    "fits_when": "Research question seeks to explain underlying causal mechanisms or structures behind observed events, not just describe correlations or surface patterns — e.g. why a policy intervention worked in one context but not another. Does not fit if the research is purely descriptive and doesn't aim to explain causal mechanisms.",
+    "common_methodologies": ["case study", "process tracing", "mixed methods", "retroduction"],
+    "verified_source_check": "Confirmed across multiple academic citation databases and Verso Books/Routledge publisher listings — Bhaskar, R. (1975). A Realist Theory of Science. Leeds: Leeds Books. No DOI — pre-DOI-era book; later reissues by Verso (1997) and Routledge (2008) also carry no DOI for this philosophical text."
+  }
+]

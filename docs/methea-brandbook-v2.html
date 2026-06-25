@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methea Design System v2</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap');
+:root {
+  --paper:#F6F2E8; --sheet:#FBF9F3; --paper-deep:#EDE7D8;
+  --stone:#DDD8C6; --stone-soft:#E9E4D6;
+  --ink:#1C1C1C; --graphite:#4A4A47; --pencil:#8C8A82;
+  --ink-blue:#11425D; --ink-blue-deep:#002233;
+  --marker-yellow:#FFE66D; --marker-lime:#DDFF55; --marker-green:#B7F171;
+  --sky:#C0D6EA; --verified-text:#2E7D4F; --warn-text:#6B5500;
+  --error:#B3413B; --error-bg:#F4E3E0;
+  --radius-sm:6px; --radius:10px; --radius-lg:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Schibsted Grotesk','Inter',system-ui,sans-serif;background:var(--sheet);color:var(--ink);font-size:14px;line-height:1.6;}
+.layout{display:flex;min-height:100vh;}
+nav{width:200px;flex-shrink:0;background:var(--sheet);border-right:1px solid var(--stone-soft);padding:20px 0;position:sticky;top:0;height:100vh;overflow-y:auto;}
+.nav-logo{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:600;letter-spacing:-0.045em;color:var(--ink);padding:0 20px 16px;border-bottom:1px solid var(--stone-soft);margin-bottom:12px;}
+.nav-logo span{display:inline-block;border-bottom:2px solid var(--marker-lime);line-height:1.1;}
+nav a{display:block;padding:6px 20px;font-size:12px;color:var(--graphite);text-decoration:none;transition:color 0.1s;cursor:pointer;}
+nav a:hover,nav a.active{color:var(--ink-blue);font-weight:600;}
+nav a.active{background:var(--paper-deep);}
+.nav-section{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--pencil);padding:12px 20px 4px;}
+main{flex:1;padding:40px 48px;max-width:900px;}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:400;letter-spacing:-0.025em;color:var(--ink);margin-bottom:6px;}
+h2{font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:400;letter-spacing:-0.015em;color:var(--ink);margin-bottom:4px;}
+.section{display:none;animation:fadein 0.2s ease;}
+.section.active{display:block;}
+@keyframes fadein{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.subtitle{font-size:13px;color:var(--pencil);margin-bottom:28px;}
+.divider{height:1px;background:var(--stone-soft);margin:32px 0;}
+.swatch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-bottom:16px;}
+.swatch{border-radius:8px;overflow:hidden;border:1px solid var(--stone-soft);}
+.swatch-color{height:52px;}
+.swatch-info{padding:6px 8px;background:var(--sheet);}
+.swatch-name{font-size:11px;font-weight:600;color:var(--ink);}
+.swatch-hex{font-size:10px;color:var(--pencil);font-family:monospace;}
+.type-row{padding:20px;background:var(--sheet);border:1px solid var(--stone-soft);border-radius:var(--radius);margin-bottom:8px;}
+.type-meta{font-size:10px;color:var(--pencil);font-family:monospace;margin-top:4px;}
+.demo-area{background:var(--paper-deep);border-radius:var(--radius-lg);padding:24px;margin-bottom:12px;}
+.demo-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--pencil);margin-bottom:12px;}
+.btn{display:inline-flex;align-items:center;padding:9px 18px;border:none;border-radius:var(--radius);font-family:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:opacity 0.1s;}
+.btn-primary{background:var(--ink-blue);color:var(--sheet);}
+.btn-primary:hover{opacity:0.9;}
+.btn-ghost{background:none;border:1px solid var(--stone);color:var(--ink-blue);padding:8px 17px;}
+.btn-ghost:hover{border-color:var(--ink-blue);}
+.btn-disabled{background:var(--paper-deep);color:var(--pencil);cursor:default;}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+.card{background:var(--sheet);border:1px solid var(--stone-soft);border-radius:var(--radius-lg);padding:20px;margin-bottom:8px;}
+.radio-card{display:flex;align-items:flex-start;gap:12px;padding:14px 18px;background:var(--sheet);border:1px solid var(--stone-soft);border-radius:var(--radius);cursor:pointer;margin-bottom:6px;transition:border-color 0.1s;}
+.radio-card.selected{border-color:var(--ink-blue);}
+.radio-dot{flex-shrink:0;width:16px;height:16px;border-radius:50%;border:2px solid var(--stone);margin-top:2px;}
+.radio-dot.selected{border-color:var(--ink-blue);background:var(--ink-blue);box-shadow:inset 0 0 0 3px var(--sheet);}
+.tag{display:inline-block;padding:3px 10px;background:var(--paper-deep);color:var(--graphite);border-radius:var(--radius-sm);font-size:12px;font-weight:500;}
+.tag-sky{background:var(--sky);color:var(--ink-blue);}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:2px 8px;border-radius:var(--radius-sm);font-size:11px;font-weight:500;}
+.chip-verified{background:var(--marker-green);color:var(--verified-text);}
+.chip-unverified{background:var(--stone-soft);color:var(--pencil);}
+.chip-outdated{background:var(--marker-yellow);color:var(--warn-text);}
+.chip-reading{background:var(--sky);color:var(--ink-blue);}
+.banner{padding:14px 18px;background:var(--sheet);border:1px solid var(--stone-soft);border-radius:var(--radius);}
+.theory-card{background:var(--sheet);border:1px solid var(--stone-soft);border-radius:var(--radius);padding:16px;position:relative;cursor:pointer;transition:border-color 0.1s;margin-bottom:8px;}
+.theory-card.selected{border-color:var(--ink-blue);}
+.theory-check{position:absolute;top:12px;right:12px;width:20px;height:20px;border-radius:50%;background:var(--ink-blue);color:var(--sheet);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+.dot{width:12px;height:12px;border-radius:50%;border:2px solid var(--stone);flex-shrink:0;}
+.dot.filled{background:var(--ink-blue);border-color:var(--ink-blue);}
+.prog-line{width:32px;height:2px;}
+.prog-line.done{background:var(--marker-lime);}
+.prog-line.todo{background:var(--stone-soft);}
+.input{width:100%;padding:10px 14px;border:1px solid var(--stone);border-radius:var(--radius);font-family:inherit;font-size:14px;color:var(--ink);background:var(--sheet);}
+.input:focus{outline:2px solid var(--ink-blue);outline-offset:2px;border-color:transparent;}
+.space-row{display:flex;align-items:center;gap:12px;margin-bottom:4px;}
+.space-bar{background:var(--ink-blue);opacity:0.3;height:12px;border-radius:2px;}
+.space-label{font-size:11px;color:var(--pencil);font-family:monospace;width:50px;flex-shrink:0;}
+.copy-pair{padding:12px 16px;background:var(--sheet);border:1px solid var(--stone-soft);border-radius:var(--radius);margin-bottom:8px;}
+.copy-bad{font-size:13px;color:var(--error);text-decoration:line-through;margin-bottom:4px;}
+.copy-good{font-size:13px;color:var(--verified-text);font-weight:500;}
+.copy-rule{font-size:11px;color:var(--pencil);margin-top:4px;}
+.rule-box{padding:10px 14px;border-left:3px solid var(--ink-blue);background:var(--sheet);border-radius:0 var(--radius) var(--radius) 0;margin-bottom:8px;}
+.rule-box p{font-size:13px;color:var(--graphite);}
+.rule-box.warn{border-left-color:var(--marker-yellow);}
+.rule-box.ok{border-left-color:var(--marker-green);}
+.rule-box.err{border-left-color:var(--error);}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav>
+  <div class="nav-logo"><span>Methea</span></div>
+  <div class="nav-section">Brand</div>
+  <a href="#" onclick="show('identity');return false;" id="nav-identity" class="active">Identity</a>
+  <a href="#" onclick="show('color');return false;" id="nav-color">Colour</a>
+  <a href="#" onclick="show('type');return false;" id="nav-type">Typography</a>
+  <a href="#" onclick="show('space');return false;" id="nav-space">Spacing</a>
+  <div class="nav-section">Components</div>
+  <a href="#" onclick="show('buttons');return false;" id="nav-buttons">Buttons</a>
+  <a href="#" onclick="show('cards');return false;" id="nav-cards">Cards</a>
+  <a href="#" onclick="show('chips');return false;" id="nav-chips">Chips &amp; Tags</a>
+  <a href="#" onclick="show('inputs');return false;" id="nav-inputs">Inputs</a>
+  <a href="#" onclick="show('patterns');return false;" id="nav-patterns">Patterns</a>
+  <div class="nav-section">Voice</div>
+  <a href="#" onclick="show('copy');return false;" id="nav-copy">Copy rules</a>
+  <a href="#" onclick="show('tone');return false;" id="nav-tone">Tone</a>
+</nav>
+<main>
+
+<div class="section active" id="identity">
+  <h1>Methea Design System</h1>
+  <p class="subtitle">Brand identity, component library, and copy rules — the single source of truth for all screens.</p>
+
+  <h2>Wordmark</h2>
+  <p class="subtitle">Playfair Display · weight 400 · tracking −4.5% · diagonal marker swipe (multiply blend, lime #DDFF55)</p>
+
+  <!-- Logo grid: 4 variants -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;">
+
+    <!-- Classic on paper -->
+    <div style="background:var(--paper);border:1px solid var(--stone-soft);border-radius:var(--radius-lg);padding:32px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;">
+      <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--pencil);">Classic · on paper</span>
+      <div style="position:relative;display:inline-block;line-height:1;">
+        <!-- Swipe BEHIND text -->
+        <svg viewBox="0 0 500 58" width="107%" height="24" style="position:absolute;left:-3.5%;bottom:0px;z-index:1;pointer-events:none;" preserveAspectRatio="none">
+          <path d="M8 44 Q4 40 10 36 L478 4 Q492 3 494 12 L498 30 Q499 40 486 42 L24 56 Q10 57 8 44 Z" fill="#DDFF55" opacity="0.92"/>
+          <path d="M30 40 L460 12 L462 24 L36 50 Z" fill="#DDFF55" opacity="0.5"/>
+        </svg>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:400;letter-spacing:-0.045em;color:var(--ink);position:relative;z-index:2;">Methea</span>
+      </div>
+      <span style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--graphite);">Your research, methodically</span>
+    </div>
+
+    <!-- On ink (dark) -->
+    <div style="background:var(--ink);border-radius:var(--radius-lg);padding:32px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;">
+      <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#8C8A82;">On ink · dark bg</span>
+      <div style="position:relative;display:inline-block;line-height:1;">
+        <svg viewBox="0 0 500 58" width="107%" height="24" style="position:absolute;left:-3.5%;bottom:0px;z-index:1;pointer-events:none;" preserveAspectRatio="none">
+          <path d="M8 44 Q4 40 10 36 L478 4 Q492 3 494 12 L498 30 Q499 40 486 42 L24 56 Q10 57 8 44 Z" fill="#DDFF55" opacity="0.92"/>
+          <path d="M30 40 L460 12 L462 24 L36 50 Z" fill="#DDFF55" opacity="0.5"/>
+        </svg>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-size:38px;font-weight:400;letter-spacing:-0.045em;color:#FBF9F3;position:relative;z-index:2;">Methea</span>
+      </div>
+      <span style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#8C8A82;">Your research, methodically</span>
+    </div>
+
+    <!-- Favicon black -->
+    <div style="background:var(--paper);border:1px solid var(--stone-soft);border-radius:var(--radius-lg);padding:28px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;">
+      <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--pencil);">Favicon · black</span>
+      <div style="width:56px;height:56px;border-radius:13px;background:var(--ink);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+        <!-- Swipe behind M — same vertical proportion as classic logo -->
+        <svg viewBox="0 0 500 58" width="62" height="14" style="position:absolute;left:-3px;bottom:10px;z-index:1;pointer-events:none;" preserveAspectRatio="none">
+          <path d="M8 44 Q4 40 10 36 L478 4 Q492 3 494 12 L498 30 Q499 40 486 42 L24 56 Q10 57 8 44 Z" fill="#DDFF55" opacity="0.92"/>
+          <path d="M30 40 L460 12 L462 24 L36 50 Z" fill="#DDFF55" opacity="0.5"/>
+        </svg>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-size:34px;font-weight:400;letter-spacing:-0.045em;color:#FBF9F3;position:relative;z-index:2;line-height:1;">M</span>
+      </div>
+      <span style="font-size:10px;color:var(--pencil);text-align:center;">Below 24px height — "M" only<br>Never stroke without wordmark</span>
+    </div>
+
+    <!-- Button / badge lockup -->
+    <div style="background:var(--paper);border:1px solid var(--stone-soft);border-radius:var(--radius-lg);padding:28px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;">
+      <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--pencil);">Button lockup · badge</span>
+      <div style="background:var(--ink);border-radius:12px;padding:12px 24px;display:inline-flex;align-items:center;position:relative;overflow:hidden;">
+        <!-- Swipe behind text — same vertical proportion as classic logo -->
+        <svg viewBox="0 0 500 58" width="107%" height="16" style="position:absolute;left:-3.5%;bottom:10px;z-index:1;pointer-events:none;" preserveAspectRatio="none">
+          <path d="M8 44 Q4 40 10 36 L478 4 Q492 3 494 12 L498 30 Q499 40 486 42 L24 56 Q10 57 8 44 Z" fill="#DDFF55" opacity="0.92"/>
+          <path d="M30 40 L460 12 L462 24 L36 50 Z" fill="#DDFF55" opacity="0.5"/>
+        </svg>
+        <span style="font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:400;letter-spacing:-0.045em;color:#FBF9F3;position:relative;z-index:2;">Methea</span>
+      </div>
+      <span style="font-size:10px;color:var(--pencil);text-align:center;">Use on landing page hero or<br>co-branded partner placements</span>
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+  <h2>The swipe — construction rules</h2>
+  <p class="subtitle">The diagonal marker stroke is a separate SVG layer sitting at multiply blend mode over the letterforms. Ink always reads through.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;">
+    <div class="rule-box ok"><p><strong>Do:</strong> lime #DDFF55 at 80–90% opacity, multiply blend · diagonal swipe through lower half of word · draw-on animation ~400ms on landing page · clear space = height of "M" on all sides</p></div>
+    <div class="rule-box err"><p><strong>Never:</strong> recolour the stroke · rotate the wordmark · use stroke without the word (except favicon M) · place on photos without a paper-colour card behind · use yellow or green variants for the stroke</p></div>
+  </div>
+</div>
+
+<div class="section" id="color">
+  <h1>Colour</h1>
+  <p class="subtitle">~70% paper · ~25% ink · ~5% marker — ratios are locked.</p>
+  <h2>Paper — backgrounds only</h2>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#F6F2E8;"></div><div class="swatch-info"><div class="swatch-name">--paper</div><div class="swatch-hex">#F6F2E8</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#FBF9F3;"></div><div class="swatch-info"><div class="swatch-name">--sheet</div><div class="swatch-hex">#FBF9F3</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#EDE7D8;"></div><div class="swatch-info"><div class="swatch-name">--paper-deep</div><div class="swatch-hex">#EDE7D8</div></div></div>
+  </div>
+  <h2>Stone — borders</h2>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#DDD8C6;"></div><div class="swatch-info"><div class="swatch-name">--stone</div><div class="swatch-hex">#DDD8C6</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#E9E4D6;"></div><div class="swatch-info"><div class="swatch-name">--stone-soft</div><div class="swatch-hex">#E9E4D6</div></div></div>
+  </div>
+  <h2>Ink — text &amp; interactive</h2>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#1C1C1C;"></div><div class="swatch-info"><div class="swatch-name">--ink</div><div class="swatch-hex">#1C1C1C</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#4A4A47;"></div><div class="swatch-info"><div class="swatch-name">--graphite</div><div class="swatch-hex">#4A4A47</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#8C8A82;"></div><div class="swatch-info"><div class="swatch-name">--pencil</div><div class="swatch-hex">#8C8A82</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#11425D;"></div><div class="swatch-info"><div class="swatch-name">--ink-blue</div><div class="swatch-hex">#11425D</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#002233;"></div><div class="swatch-info"><div class="swatch-name">--ink-blue-deep</div><div class="swatch-hex">#002233</div></div></div>
+  </div>
+  <h2>Marker — 5% highlights only</h2>
+  <div class="rule-box warn"><p>Never use as button fills, large card fills, or backgrounds. Highlights and small chips only.</p></div>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#FFE66D;"></div><div class="swatch-info"><div class="swatch-name">--marker-yellow</div><div class="swatch-hex">#FFE66D</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#DDFF55;"></div><div class="swatch-info"><div class="swatch-name">--marker-lime</div><div class="swatch-hex">#DDFF55</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#B7F171;"></div><div class="swatch-info"><div class="swatch-name">--marker-green</div><div class="swatch-hex">#B7F171</div></div></div>
+  </div>
+  <h2>Semantic</h2>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="swatch-color" style="background:#C0D6EA;"></div><div class="swatch-info"><div class="swatch-name">--sky</div><div class="swatch-hex">#C0D6EA</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#B3413B;"></div><div class="swatch-info"><div class="swatch-name">--error</div><div class="swatch-hex">#B3413B</div></div></div>
+    <div class="swatch"><div class="swatch-color" style="background:#F4E3E0;"></div><div class="swatch-info"><div class="swatch-name">--error-bg</div><div class="swatch-hex">#F4E3E0</div></div></div>
+  </div>
+</div>
+
+<div class="section" id="type">
+  <h1>Typography</h1>
+  <p class="subtitle">Three typefaces — each with one job.</p>
+  <div class="type-row">
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:36px;font-weight:600;letter-spacing:-0.045em;">Playfair Display</div>
+    <div class="type-meta">wordmark, h1, h2 · 400/600 · tracking −4.5% wordmark, −2.5% display, −1.5% headings</div>
+    <div style="margin-top:10px;display:flex;flex-direction:column;gap:6px;">
+      <span style="font-family:'Playfair Display',Georgia,serif;font-size:32px;font-weight:400;letter-spacing:-0.025em;">h1 — 32px / 400 / −2.5%</span>
+      <span style="font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:400;letter-spacing:-0.015em;">h2 — 20px / 400 / −1.5%</span>
+    </div>
+  </div>
+  <div class="type-row">
+    <div style="font-size:24px;font-weight:400;">Schibsted Grotesk</div>
+    <div class="type-meta">all UI text, labels, buttons, body — default font on body</div>
+    <div style="margin-top:10px;display:flex;flex-direction:column;gap:4px;">
+      <span style="font-size:18px;font-weight:600;">h3 / card title — 18px / 600</span>
+      <span style="font-size:15px;">Body — 15px / 400</span>
+      <span style="font-size:13px;color:var(--graphite);">Secondary — 13px / 400 / graphite</span>
+      <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--pencil);">LABEL — 11px / 700 / UPPERCASE / +8%</span>
+      <span style="font-size:11px;color:var(--pencil);">Caption — 11px / 400 / pencil</span>
+    </div>
+  </div>
+  <div class="type-row">
+    <div style="font-family:'Source Serif 4',Georgia,serif;font-size:22px;font-style:italic;color:var(--graphite);">Source Serif 4</div>
+    <div class="type-meta">long-form reading only — AI rationale, "why it fits" explanations</div>
+    <div style="margin-top:10px;"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:14px;font-style:italic;color:var(--graphite);line-height:1.65;">"Fits your question about competitive advantage — RBV explains why firms with unique resources outperform others."</span></div>
+  </div>
+</div>
+
+<div class="section" id="space">
+  <h1>Spacing</h1>
+  <p class="subtitle">4px base unit — all spacing is a multiple of 4.</p>
+  <div class="space-row"><div class="space-label">4px</div><div class="space-bar" style="width:4px;"></div></div>
+  <div class="space-row"><div class="space-label">8px</div><div class="space-bar" style="width:8px;"></div></div>
+  <div class="space-row"><div class="space-label">12px</div><div class="space-bar" style="width:12px;"></div></div>
+  <div class="space-row"><div class="space-label">16px</div><div class="space-bar" style="width:16px;"></div></div>
+  <div class="space-row"><div class="space-label">20px</div><div class="space-bar" style="width:20px;"></div></div>
+  <div class="space-row"><div class="space-label">24px</div><div class="space-bar" style="width:24px;"></div></div>
+  <div class="space-row"><div class="space-label">32px</div><div class="space-bar" style="width:32px;"></div></div>
+  <div class="space-row"><div class="space-label">48px</div><div class="space-bar" style="width:48px;"></div></div>
+  <div class="divider"></div>
+  <h2>Border radius</h2>
+  <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;background:var(--ink-blue);border-radius:6px;"></div><span style="font-size:10px;color:var(--pencil);text-align:center;">--radius-sm<br>6px · chips</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;background:var(--ink-blue);border-radius:10px;"></div><span style="font-size:10px;color:var(--pencil);text-align:center;">--radius<br>10px · buttons</span></div>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:6px;"><div style="width:48px;height:48px;background:var(--ink-blue);border-radius:14px;"></div><span style="font-size:10px;color:var(--pencil);text-align:center;">--radius-lg<br>14px · cards</span></div>
+  </div>
+</div>
+
+<div class="section" id="buttons">
+  <h1>Buttons</h1>
+  <p class="subtitle">Schibsted Grotesk 600 · sentence case · active voice · arrow suffix on progression CTAs.</p>
+  <div class="demo-area"><div class="demo-label">Primary</div><div class="btn-row"><button class="btn btn-primary">Continue →</button><button class="btn btn-primary">Build my framework →</button><button class="btn btn-primary">Finish →</button></div><p style="font-size:11px;color:var(--pencil);margin-top:8px;">bg: --ink-blue · text: --sheet · radius: --radius · hover: opacity 0.9</p></div>
+  <div class="demo-area"><div class="demo-label">Ghost</div><div class="btn-row"><button class="btn btn-ghost">← Back</button><button class="btn btn-ghost">Browse library</button></div></div>
+  <div class="demo-area"><div class="demo-label">Disabled</div><div class="btn-row"><button class="btn btn-disabled" disabled>Build my framework →</button></div><p style="font-size:11px;color:var(--pencil);margin-top:8px;">bg: --paper-deep · text: --pencil · cursor: default</p></div>
+  <div class="rule-box err"><p>Never use marker colours as button backgrounds. Never uppercase. Never icon-only without aria-label.</p></div>
+</div>
+
+<div class="section" id="cards">
+  <h1>Cards</h1>
+  <p class="subtitle">Three variants — all share sheet/stone-soft/radius base.</p>
+  <div class="demo-label">Page card (--radius-lg)</div>
+  <div class="card"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--pencil);margin-bottom:6px;">Your research question</div><div style="font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:400;letter-spacing:-0.015em;margin-bottom:10px;">How do founders in Central Asia validate product-market fit?</div><div class="tag-row"><span class="tag">Master's</span><span class="tag">Business &amp; Management</span><span class="tag tag-sky">qualitative</span></div></div>
+  <div class="demo-label" style="margin-top:16px;">RadioCard (--radius, selected)</div>
+  <div class="radio-card selected"><div class="radio-dot selected"></div><div><p style="font-weight:600;font-size:14px;margin-bottom:3px;">Interviews</p><p style="font-size:13px;color:var(--graphite);line-height:1.5;">In-depth conversations reveal lived experiences and decision logic.</p></div></div>
+  <div class="radio-card"><div class="radio-dot"></div><div><p style="font-weight:600;font-size:14px;margin-bottom:3px;">Surveys</p><p style="font-size:13px;color:var(--graphite);line-height:1.5;">Reach many respondents quickly across distributed geographies.</p></div></div>
+  <div class="demo-label" style="margin-top:16px;">Theory card (multi-select, 2–4)</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+    <div class="theory-card selected"><div class="theory-check">✓</div><div style="font-weight:600;font-size:14px;">Social Cognitive Theory</div><div style="font-size:11px;color:var(--pencil);margin-top:2px;">Bandura, 1986</div><div style="font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--graphite);line-height:1.55;margin:8px 0;">"Explains how founders learn from peers in your regional context."</div><div class="tag-row" style="margin-bottom:8px;"><span class="tag" style="font-size:10px;padding:1px 6px;">self-efficacy</span></div><div style="display:flex;gap:4px;flex-wrap:wrap;"><span class="chip chip-verified">✓ Verified · Classic</span><span class="chip chip-reading">+ In your list</span></div></div>
+    <div class="theory-card"><div style="font-weight:600;font-size:14px;">Resource-Based View</div><div style="font-size:11px;color:var(--pencil);margin-top:2px;">Barney, 1991</div><div style="font-family:'Source Serif 4',Georgia,serif;font-size:12px;font-style:italic;color:var(--graphite);line-height:1.55;margin:8px 0;">"Maps unique resources to competitive advantage — central to your PMF analysis."</div><div class="tag-row" style="margin-bottom:8px;"><span class="tag" style="font-size:10px;padding:1px 6px;">VRIN</span></div><div style="display:flex;gap:4px;"><span class="chip chip-verified">✓ Verified · DOI</span></div></div>
+  </div>
+</div>
+
+<div class="section" id="chips">
+  <h1>Chips &amp; Tags</h1>
+  <p class="subtitle">Single visual vocabulary for verification state — never invent a fourth state.</p>
+  <div class="demo-area"><div class="demo-label">Verification (StatusChip component)</div><div style="display:flex;gap:8px;flex-wrap:wrap;"><span class="chip chip-verified">✓ Verified · DOI found</span><span class="chip chip-verified">✓ Verified · Classic text</span><span class="chip chip-unverified">? Unverified — check manually</span><span class="chip chip-outdated">⚠ Outdated — review changes</span></div></div>
+  <div class="demo-area"><div class="demo-label">Contextual</div><div style="display:flex;gap:8px;"><span class="chip chip-reading">+ In your reading list</span></div></div>
+  <div class="demo-area"><div class="demo-label">Meta tags</div><div class="tag-row"><span class="tag">Master's</span><span class="tag tag-sky">qualitative</span></div></div>
+</div>
+
+<div class="section" id="inputs">
+  <h1>Inputs</h1>
+  <p class="subtitle">--sheet bg · --stone border · --radius · 14–15px text.</p>
+  <div class="demo-area"><div class="demo-label">Default</div><input class="input" placeholder="e.g. How do founders validate product-market fit?"></div>
+  <div class="demo-area"><div class="demo-label">Error</div><input class="input" style="border-color:var(--error);outline:none;" value="too short"><p style="font-size:12px;color:var(--error);margin-top:4px;">Add a bit more — a research topic needs at least a sentence to work with.</p></div>
+  <div class="demo-area"><div class="demo-label">AI confirmation banner</div><div class="banner"><p style="font-size:15px;color:var(--graphite);line-height:1.6;">Based on your brief, your question seems to be about <strong>product-market fit by Central Asian founders</strong>. Let's sharpen it together.</p></div></div>
+</div>
+
+<div class="section" id="patterns">
+  <h1>Patterns</h1>
+  <p class="subtitle">Screen-level patterns — reuse these, don't reinvent.</p>
+  <h2>Progress dots</h2>
+  <div class="demo-area"><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><div class="dot filled"></div><div class="prog-line done"></div><div class="dot filled"></div><div class="prog-line done"></div><div class="dot filled"></div><div class="prog-line todo"></div><div class="dot"></div><span style="font-size:12px;color:var(--pencil);margin-left:8px;">Question 3 of 4</span></div></div>
+  <h2 style="margin-top:20px;">Disclosure ▸</h2>
+  <div class="demo-area"><details><summary style="font-size:14px;color:var(--ink-blue);font-weight:500;list-style:none;cursor:pointer;">▸ Have a reading list? Paste it here</summary><div style="margin-top:10px;"><textarea class="input" rows="3" style="resize:vertical;" placeholder="Paste your reading list..."></textarea></div></details></div>
+  <h2 style="margin-top:20px;">Layout rule</h2>
+  <div class="rule-box"><p>720px max-width · centered · 3rem top padding · single column · wordmark top of each screen · no sidebars in MVP.</p></div>
+</div>
+
+<div class="section" id="copy">
+  <h1>Copy rules</h1>
+  <p class="subtitle">Plain verbs · sentence case · active voice · student's side of the screen.</p>
+  <div class="copy-pair"><div class="copy-bad">Submit your research brief</div><div class="copy-good">Save and continue →</div><div class="copy-rule">Active verbs. Never "submit" — implies form bureaucracy.</div></div>
+  <div class="copy-pair"><div class="copy-bad">Error: Research question field is required.</div><div class="copy-good">Add a bit more — a research topic needs at least a sentence to work with.</div><div class="copy-rule">Errors are guidance. Start with action ("Add"), never "Error:".</div></div>
+  <div class="copy-pair"><div class="copy-bad">Select 2-4 theories to proceed</div><div class="copy-good">Pick 2–4 theories to see how they relate.</div><div class="copy-rule">Explain the why. Tell them what picking achieves.</div></div>
+  <div class="copy-pair"><div class="copy-bad">Here are 5 relevant theories for your research.</div><div class="copy-good">Based on your question about [topic], these theories tend to fit well. Pick 2–4 to build on.</div><div class="copy-rule">Start from what the student brought. "Tend to" = suggestion, not prescription.</div></div>
+  <div class="copy-pair"><div class="copy-bad">Select Methodology Type</div><div class="copy-good">How will you collect your data?</div><div class="copy-rule">Write from the student's side. Plain language over academic jargon.</div></div>
+  <div class="copy-pair"><div class="copy-bad">SAVE DRAFT</div><div class="copy-good">Save draft</div><div class="copy-rule">Sentence case everywhere. No all-caps in buttons.</div></div>
+</div>
+
+<div class="section" id="tone">
+  <h1>Tone</h1>
+  <p class="subtitle">Co-constructive · precise · reasoned · calm under deadline.</p>
+  <div class="divider"></div>
+  <h2>The Socratic gate rule</h2>
+  <div class="rule-box ok"><p>Every gate starts from <strong>what the student already brought</strong> — never from zero.<br>Pattern: <em>"Based on your [thing they gave], [acknowledgement]. Let's [what we do together]."</em></p></div>
+  <div class="rule-box err"><p>Never interrogate. AI co-constructs — it doesn't evaluate.</p></div>
+  <div class="divider"></div>
+  <h2>AI ships with its why</h2>
+  <div class="rule-box"><p>Every AI suggestion includes a plain-language explanation tied to <em>this specific research question</em>. Generic praise is not a why.</p></div>
+  <div class="divider"></div>
+  <h2>The line we never cross</h2>
+  <div class="rule-box err"><p>Methea scaffolds thinking — it never writes the student's discussion, conclusion, or report. No feature generates submittable prose.</p></div>
+</div>
+
+</main>
+</div>
+<script>
+function show(id){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.getElementById('nav-'+id).classList.add('active');
+}
+</script>
+</body>
+</html>

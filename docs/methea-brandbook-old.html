@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methea — Brandbook v2</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.6.0/tabler-icons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Schibsted+Grotesk:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* PAPER */
+  --paper:#F6F2E8; --paper-card:#FBF9F3; --paper-deep:#EDE7D8;
+  --stone:#DDD8C6; --stone-soft:#E9E4D6;
+  /* INK */
+  --ink:#1C1C1C; --graphite:#4A4A47; --pencil:#8C8A82;
+  --ink-blue:#11425D; --ink-blue-deep:#002233;
+  /* MARKER */
+  --marker-yellow:#FFE66D; --marker-lime:#DDFF55; --marker-green:#B7F171; --sky:#C0D6EA;
+  /* SEMANTIC */
+  --verified:#2E7D4F; --warn-ink:#6B5500; --unver-bg:#E9E4D6; --unver-ink:#6B6A63;
+  --r-sm:6px; --r-md:10px; --r-lg:14px;
+  /* TYPE TRACKING — tightened per brand decision */
+  --track-logo:-0.045em;   /* wordmark */
+  --track-display:-0.025em;/* H1 display */
+  --track-head:-0.015em;   /* H2 headings */
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Schibsted Grotesk',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;padding:60px 24px}
+.book{max-width:860px;margin:0 auto}
+.page{background:var(--paper-card);border:1px solid var(--stone-soft);border-radius:var(--r-lg);padding:48px 52px;margin-bottom:28px;box-shadow:0 1px 0 var(--stone)}
+.page-num{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:var(--pencil);text-align:right;margin-bottom:8px}
+.kicker{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--pencil);margin-bottom:14px;font-weight:500}
+h1{font-family:'Playfair Display',serif;font-weight:400;font-size:54px;line-height:1.1;letter-spacing:var(--track-display);margin-bottom:10px}
+h2{font-family:'Playfair Display',serif;font-weight:400;font-size:32px;letter-spacing:var(--track-head);margin-bottom:18px}
+h3{font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--graphite);margin:28px 0 12px}
+p.lede{font-family:'Source Serif 4',serif;font-size:19px;color:var(--graphite);max-width:560px}
+p.body-text{font-family:'Source Serif 4',serif;font-size:16px;color:var(--graphite);max-width:620px;margin-bottom:10px}
+.hl{background:linear-gradient(transparent 55%, var(--marker-yellow) 55%, var(--marker-yellow) 92%, transparent 92%);padding:0 2px}
+.hl-lime{background:linear-gradient(transparent 55%, var(--marker-lime) 55%, var(--marker-lime) 92%, transparent 92%);padding:0 2px}
+
+/* ===== LOGO ===== */
+.logo{position:relative;display:inline-block;line-height:1}
+.logo .word{font-family:'Playfair Display',serif;font-weight:400;letter-spacing:var(--track-logo);position:relative;z-index:1;color:var(--ink)}
+.logo svg{position:absolute;z-index:2;mix-blend-mode:multiply;pointer-events:none}
+.logo-hero .word{font-size:104px}
+.logo-tag{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--graphite);margin-top:14px}
+.logo-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:8px}
+.logo-cell{background:var(--paper);border:1px solid var(--stone-soft);border-radius:var(--r-md);padding:26px 18px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.logo-cell.dark{background:var(--ink)}
+.logo-cell .cap{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--pencil)}
+.logo-cell.dark .cap{color:#8C8A82}
+.logo-sm .word{font-size:32px}
+.logo-cell.dark .word{color:var(--paper)}
+.fav{width:48px;height:48px;border-radius:11px;background:var(--paper-card);border:1px solid var(--stone);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.fav .m{font-family:'Playfair Display',serif;font-size:29px;position:relative;z-index:1}
+.fav svg{position:absolute;z-index:2;mix-blend-mode:multiply}
+.clear-note{display:flex;gap:10px;align-items:flex-start;background:var(--paper);border:1px solid var(--stone-soft);border-radius:var(--r-md);padding:13px 16px;font-size:13px;color:var(--graphite);margin-top:14px}
+
+/* ===== COLORS ===== */
+.swatch-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:6px}
+.swatch{border-radius:var(--r-md);border:1px solid var(--stone-soft);overflow:hidden}
+.sw-color{height:74px}
+.sw-info{padding:9px 11px;background:#fff}
+.sw-name{font-size:12px;font-weight:600}
+.sw-hex{font-size:11px;color:var(--pencil);font-family:ui-monospace,monospace}
+.sw-role{font-size:10.5px;color:var(--graphite);margin-top:2px;line-height:1.4}
+.ratio-note{font-size:11.5px;color:var(--pencil);margin-top:12px;display:flex;align-items:center;gap:6px}
+
+/* ===== TYPE ===== */
+.type-row{display:flex;gap:24px;align-items:baseline;border-bottom:1px solid var(--stone-soft);padding:18px 0}
+.type-label{width:185px;flex-shrink:0;font-size:11px;color:var(--pencil);letter-spacing:1px;text-transform:uppercase;line-height:1.6}
+.t-display{font-family:'Playfair Display',serif;font-weight:400;font-size:40px;letter-spacing:var(--track-display)}
+.t-h2{font-family:'Playfair Display',serif;font-weight:400;font-size:26px;letter-spacing:var(--track-head)}
+.t-ui{font-size:15px;font-weight:500}
+.t-body{font-family:'Source Serif 4',serif;font-size:16.5px}
+.t-caption{font-size:12px;color:var(--pencil)}
+.t-mono{font-family:ui-monospace,'SF Mono',monospace;font-size:13px;background:var(--paper-deep);padding:2px 7px;border-radius:4px}
+
+/* ===== TONE ===== */
+.tone-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tone-card{background:var(--paper);border:1px solid var(--stone-soft);border-radius:var(--r-md);padding:16px 18px}
+.tone-title{font-family:'Playfair Display',serif;font-size:18px;letter-spacing:var(--track-head);margin-bottom:5px}
+.tone-desc{font-size:13px;color:var(--graphite)}
+.micro-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.micro{border-radius:var(--r-md);padding:13px 15px;font-family:'Source Serif 4',serif;font-size:14px;line-height:1.55}
+.micro.no{background:#F3E9E4;color:#7A4030}
+.micro.yes{background:#EBF5E2;color:#2E5A35}
+.micro b{font-family:'Schibsted Grotesk';font-size:10px;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:5px;font-weight:600}
+
+/* ===== UI ===== */
+.comp-section{background:var(--paper);border:1px solid var(--stone-soft);border-radius:var(--r-md);padding:22px;margin-bottom:14px}
+.comp-label{font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--pencil);margin-bottom:14px;font-weight:500}
+.btn-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{font-family:'Schibsted Grotesk';font-size:14px;font-weight:500;padding:10px 22px;border-radius:var(--r-md);cursor:pointer;border:none;display:inline-flex;align-items:center;gap:7px;transition:all .15s}
+.btn-primary{background:var(--ink-blue);color:#fff}
+.btn-primary:hover{background:var(--ink-blue-deep);box-shadow:0 0 0 3px var(--marker-lime)}
+.btn-secondary{background:transparent;color:var(--ink);border:1px solid var(--stone)}
+.btn-secondary:hover{border-color:var(--graphite)}
+.btn-ghost{background:transparent;color:var(--ink-blue);padding:10px 8px}
+.btn-ghost:hover{text-decoration:underline}
+.chip{font-size:12px;font-weight:500;padding:4px 12px;border-radius:20px;display:inline-flex;align-items:center;gap:5px}
+.chip-verified{background:var(--marker-green);color:var(--verified)}
+.chip-unverified{background:var(--unver-bg);color:var(--unver-ink)}
+.chip-outdated{background:var(--marker-yellow);color:var(--warn-ink)}
+.chip-info{background:var(--sky);color:var(--ink-blue)}
+.demo-card{background:var(--paper-card);border:1px solid var(--stone-soft);border-radius:var(--r-lg);padding:22px 24px;max-width:520px}
+.demo-type{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--verified);font-weight:600;margin-bottom:6px}
+.demo-title{font-family:'Playfair Display',serif;font-size:23px;letter-spacing:var(--track-head);margin-bottom:2px}
+.demo-author{font-size:12.5px;color:var(--pencil);margin-bottom:12px}
+.demo-why{font-family:'Source Serif 4',serif;font-style:italic;font-size:14.5px;color:var(--graphite);line-height:1.6;margin-bottom:14px;padding-left:14px;border-left:3px solid var(--marker-yellow)}
+.demo-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.demo-tag{font-size:11.5px;padding:3px 11px;border-radius:16px;background:var(--paper-deep);color:var(--graphite)}
+.demo-foot{display:flex;align-items:center;justify-content:space-between}
+.narr-demo{font-family:'Source Serif 4',serif;font-size:16px;line-height:1.85;color:var(--ink);max-width:560px}
+.cite-chip{background:var(--marker-green);border-radius:4px;padding:0 6px;font-size:14.5px;color:var(--verified);white-space:nowrap;cursor:pointer}
+.cite-chip i{font-size:11px}
+.cite-chip.q{background:var(--unver-bg);color:var(--unver-ink)}
+.gate{background:var(--paper-card);border:1px solid var(--stone-soft);border-left:4px solid var(--marker-yellow);border-radius:var(--r-md);padding:18px 20px;max-width:560px}
+.gate-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--warn-ink);font-weight:600;margin-bottom:8px;display:flex;align-items:center;gap:5px}
+.gate-q{font-family:'Source Serif 4',serif;font-size:17px;line-height:1.55}
+.dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dd{border-radius:var(--r-md);padding:16px 18px;font-size:13px}
+.dd.do{background:#EBF5E2}.dd.dont{background:#F3E9E4}
+.dd b{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;display:block;margin-bottom:8px}
+.dd.do b{color:#2E5A35}.dd.dont b{color:#7A4030}
+.dd ul{padding-left:16px}.dd li{margin-bottom:5px;line-height:1.5}
+.footer-note{font-family:'Playfair Display',serif;font-style:italic;text-align:center;color:var(--pencil);font-size:14px;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="book">
+
+<!-- ============ PAGE 1: COVER ============ -->
+<div class="page">
+  <div class="page-num">i.</div>
+  <div class="kicker">Brandbook · v2 · June 2026</div>
+
+  <div style="margin:34px 0 30px">
+    <div class="logo logo-hero">
+      <span class="word">Methea</span>
+      <svg width="115%" height="62" viewBox="0 0 500 58" style="left:-7%;bottom:-4px" preserveAspectRatio="none">
+        <path d="M8 44 Q4 40 10 36 L478 4 Q492 3 494 12 L498 30 Q499 40 486 42 L24 56 Q10 57 8 44 Z" fill="#DDFF55" opacity="0.82"/>
+        <path d="M30 40 L460 12 L462 24 L36 50 Z" fill="#DDFF55" opacity="0.45"/>
+      </svg>
+    </div>
+    <div class="logo-tag">Your research, methodically</div>
+  </div>
+
+  <p class="lede">Methea guides graduate students from <span class="hl">assignment brief</span> to <span class="hl">structured findings</span> — building the framework, methodology and instruments with them, never for them.</p>
+
+  <h3>The brand idea — ink on paper, marker in hand</h3>
+  <p class="body-text">Every screen feels like a well-kept page in a smart student's favourite book: cream paper, confident serif ink, and the occasional <span class="hl-lime">swipe of a highlighter</span> marking what matters. Technology disappears; the craft of research remains.</p>
+</div>
+
+<!-- ============ PAGE 2: LOGO ============ -->
+<div class="page">
+  <div class="page-num">ii.</div>
+  <div class="kicker">Logo</div>
+  <h2>The Swipe</h2>
+  <p class="body-text" style="margin-bottom:24px">Playfair Display 400, sentence case, tracking −4.5% — letters sit close, like a word written in one breath. One confident diagonal marker stroke through the lower half: the moment a student finds what matters. Stroke is a separate SVG layer (#DDFF55 at 80–90%, multiply blend) so ink always reads through, and it can draw itself in ~400ms on the landing.</p>
+
+  <div class="logo-grid">
+    <div class="logo-cell"><span class="cap">Small · header</span>
+      <div class="logo logo-sm"><span class="word">Methea</span>
+        <svg width="115%" height="20" viewBox="0 0 500 58" style="left:-7%;bottom:-2px" preserveAspectRatio="none"><path d="M8 44 Q4 40 10 36 L478 4 Q492 3 494 12 L498 30 Q499 40 486 42 L24 56 Q10 57 8 44 Z" fill="#DDFF55" opacity="0.82"/></svg>
+      </div>
+    </div>
+    <div class="logo-cell dark"><span class="cap">On ink</span>
+      <div class="logo logo-sm"><span class="word">Methea</span>
+        <svg width="115%" height="20" viewBox="0 0 500 58" style="left:-7%;bottom:-2px;mix-blend-mode:normal" preserveAspectRatio="none"><path d="M8 44 Q4 40 10 36 L478 4 Q492 3 494 12 L498 30 Q499 40 486 42 L24 56 Q10 57 8 44 Z" fill="#DDFF55" opacity="0.9"/></svg>
+      </div>
+    </div>
+    <div class="logo-cell"><span class="cap">Favicon · app icon</span>
+      <div class="fav"><span class="m">M</span>
+        <svg width="42" height="14" viewBox="0 0 100 30" style="left:3px;bottom:7px" preserveAspectRatio="none"><path d="M4 22 L92 6 Q98 5 98 12 L98 18 Q98 24 90 25 L8 29 Q2 29 4 22 Z" fill="#DDFF55" opacity="0.85"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear-note"><i class="ti ti-ruler" style="font-size:16px;flex-shrink:0;margin-top:1px"></i>
+    <span><b>Rules:</b> clear space = height of the "M" on all sides · minimum size 24px height (below that, use the favicon "M") · never recolour the stroke, never rotate the wordmark, never use the stroke without the word (except favicon) · on photos: place on a paper-colour card, never directly on imagery.</span>
+  </div>
+</div>
+
+<!-- ============ PAGE 3: COLOR ============ -->
+<div class="page">
+  <div class="page-num">iii.</div>
+  <div class="kicker">Colour</div>
+  <h2>Paper, ink, marker</h2>
+  <p class="body-text" style="margin-bottom:22px">Three families with strict roles. Paper is the world. Ink is the voice. Marker is <span class="hl">used like a real highlighter</span> — thin swipes on what matters, never as wall paint.</p>
+
+  <h3>Paper — backgrounds</h3>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="sw-color" style="background:#F6F2E8"></div><div class="sw-info"><div class="sw-name">Paper</div><div class="sw-hex">#F6F2E8</div><div class="sw-role">Main canvas</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#FBF9F3"></div><div class="sw-info"><div class="sw-name">Sheet</div><div class="sw-hex">#FBF9F3</div><div class="sw-role">Cards, modals</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#EDE7D8"></div><div class="sw-info"><div class="sw-name">Paper deep</div><div class="sw-hex">#EDE7D8</div><div class="sw-role">Hover, wells, code</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#DDD8C6"></div><div class="sw-info"><div class="sw-name">Stone</div><div class="sw-hex">#DDD8C6</div><div class="sw-role">Borders, dividers</div></div></div>
+  </div>
+
+  <h3>Ink — text & logo</h3>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="sw-color" style="background:#1C1C1C"></div><div class="sw-info"><div class="sw-name">Ink</div><div class="sw-hex">#1C1C1C</div><div class="sw-role">Headings, logo, primary text</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#4A4A47"></div><div class="sw-info"><div class="sw-name">Graphite</div><div class="sw-hex">#4A4A47</div><div class="sw-role">Body, secondary</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#8C8A82"></div><div class="sw-info"><div class="sw-name">Pencil</div><div class="sw-hex">#8C8A82</div><div class="sw-role">Captions, placeholders</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#11425D"></div><div class="sw-info"><div class="sw-name">Ink blue</div><div class="sw-hex">#11425D</div><div class="sw-role">Links, primary buttons</div></div></div>
+  </div>
+
+  <h3>Marker — highlights only</h3>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="sw-color" style="background:#FFE66D"></div><div class="sw-info"><div class="sw-name">Marker yellow</div><div class="sw-hex">#FFE66D</div><div class="sw-role">Key insight, selection, ⚠ outdated</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#DDFF55"></div><div class="sw-info"><div class="sw-name">Marker lime</div><div class="sw-hex">#DDFF55</div><div class="sw-role">Logo stroke, CTA glow, progress</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#B7F171"></div><div class="sw-info"><div class="sw-name">Marker green</div><div class="sw-hex">#B7F171</div><div class="sw-role">✓ verified, success</div></div></div>
+    <div class="swatch"><div class="sw-color" style="background:#C0D6EA"></div><div class="sw-info"><div class="sw-name">Sky</div><div class="sw-hex">#C0D6EA</div><div class="sw-role">Info chips, calm notices</div></div></div>
+  </div>
+
+  <div class="ratio-note"><i class="ti ti-eye"></i> Ink on Paper = 14.9:1 · Ink blue on Paper = 8.7:1 — all text combinations pass WCAG AA.</div>
+  <div class="ratio-note"><i class="ti ti-scale"></i> Proportion rule: ~70% paper · ~25% ink · ~5% marker. If a screen feels yellow — the marker took over; pull it back.</div>
+</div>
+
+<!-- ============ PAGE 4: TYPOGRAPHY ============ -->
+<div class="page">
+  <div class="page-num">iv.</div>
+  <div class="kicker">Typography</div>
+  <h2>Three voices, tightly set</h2>
+  <p class="body-text" style="margin-bottom:8px">Playfair = the scholar (moments of meaning). Schibsted Grotesk = the assistant (controls, never decorates). Source Serif = the reading voice (anything longer than two sentences).</p>
+  <p class="body-text" style="margin-bottom:14px"><b style="font-size:13px">Tracking is part of the brand:</b> display type is set tight — wordmark −4.5%, display −2.5%, headings −1.5%. Words hold together like handwriting, not like a banner. UI and body text stay at default tracking for legibility.</p>
+
+  <div class="type-row">
+    <div class="type-label">Display<br>Playfair Display 400<br>40–64px · tracking −2.5%</div>
+    <div class="t-display">Your analytical framework</div>
+  </div>
+  <div class="type-row">
+    <div class="type-label">Heading<br>Playfair Display 400<br>22–32px · tracking −1.5%</div>
+    <div class="t-h2">Theories that fit your research</div>
+  </div>
+  <div class="type-row">
+    <div class="type-label">UI<br>Schibsted Grotesk 400–600<br>12–15px · tracking 0</div>
+    <div class="t-ui">Continue to methodology &nbsp;·&nbsp; Export PNG &nbsp;·&nbsp; Swap theory</div>
+  </div>
+  <div class="type-row">
+    <div class="type-label">Long-form<br>Source Serif 4 · 16–17px / 1.8</div>
+    <div class="t-body">This study draws on effectuation theory to explain entrepreneurial decision-making logic, situated within the institutional context of Central Asia.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-label">Caption<br>Schibsted Grotesk 400 · 11–12px</div>
+    <div class="t-caption">All citations verified · Last edited 2 days ago</div>
+  </div>
+  <div class="type-row" style="border-bottom:none">
+    <div class="type-label">Data / DOI · Mono 13px</div>
+    <div><span class="t-mono">doi.org/10.2307/259121</span></div>
+  </div>
+
+  <p class="body-text" style="margin-top:16px">Playfair never below 18px. Schibsted's characterful a / g give the UI quiet personality without costing legibility — it replaces the generic SaaS sans on purpose.</p>
+</div>
+
+<!-- ============ PAGE 5: TONE ============ -->
+<div class="page">
+  <div class="page-num">v.</div>
+  <div class="kicker">Tone of voice</div>
+  <h2>A brilliant supervisor with time for you</h2>
+
+  <div class="tone-grid">
+    <div class="tone-card"><div class="tone-title">Co-constructive, not interrogative</div><div class="tone-desc">Always start from what the student brought. Confirm, refine, build on — never quiz from zero.</div></div>
+    <div class="tone-card"><div class="tone-title">Precise, not cold</div><div class="tone-desc">Academic accuracy with human warmth. We say "let's check" not "error detected".</div></div>
+    <div class="tone-card"><div class="tone-title">Reasoned, always</div><div class="tone-desc">Every suggestion carries its why. No oracle answers — show the logic chain.</div></div>
+    <div class="tone-card"><div class="tone-title">Calm under deadline</div><div class="tone-desc">Our user is anxious at 2am. We are the steady voice: one step, then the next.</div></div>
+  </div>
+
+  <h3>Microcopy in practice</h3>
+  <div class="micro-row">
+    <div class="micro no"><b>Don't</b>"Enter your research question."</div>
+    <div class="micro yes"><b>Do</b>"Based on your brief, your question seems to be about X — does this capture it?"</div>
+  </div>
+  <div class="micro-row">
+    <div class="micro no"><b>Don't</b>"Invalid input. Theory selection required."</div>
+    <div class="micro yes"><b>Do</b>"Pick 2–4 theories to build on — or browse the full library if none of these feel right."</div>
+  </div>
+  <div class="micro-row">
+    <div class="micro no"><b>Don't</b>"AI has generated your methodology."</div>
+    <div class="micro yes"><b>Do</b>"Here's the methodology your framework points to — and why each choice follows."</div>
+  </div>
+</div>
+
+<!-- ============ PAGE 6: UI ============ -->
+<div class="page">
+  <div class="page-num">vi.</div>
+  <div class="kicker">UI direction</div>
+  <h2>Components on paper</h2>
+
+  <div class="comp-section">
+    <div class="comp-label">Buttons — ink blue, lime glow on hover</div>
+    <div class="btn-row">
+      <button class="btn btn-primary">Continue to methodology <i class="ti ti-arrow-right" style="font-size:15px"></i></button>
+      <button class="btn btn-secondary"><i class="ti ti-download" style="font-size:15px"></i> Export PNG</button>
+      <button class="btn btn-ghost">Browse full library →</button>
+    </div>
+  </div>
+
+  <div class="comp-section">
+    <div class="comp-label">Verified-state chips — single vocabulary, everywhere</div>
+    <div class="btn-row">
+      <span class="chip chip-verified"><i class="ti ti-check" style="font-size:12px"></i> Verified · DOI found</span>
+      <span class="chip chip-unverified"><i class="ti ti-help" style="font-size:12px"></i> Unverified — check manually</span>
+      <span class="chip chip-outdated"><i class="ti ti-alert-triangle" style="font-size:12px"></i> Outdated — framework changed</span>
+      <span class="chip chip-info"><i class="ti ti-book" style="font-size:12px"></i> In your reading list</span>
+    </div>
+  </div>
+
+  <div class="comp-section">
+    <div class="comp-label">Theory card — Playfair name, marker-edged why, reasoned suggestion</div>
+    <div class="demo-card">
+      <div class="demo-type">Suggested for your research</div>
+      <div class="demo-title">Effectuation theory</div>
+      <div class="demo-author">Sarasvathy, 2001 · <span style="color:var(--verified)">✓ DOI verified</span></div>
+      <div class="demo-why">Your question is about how entrepreneurs decide under uncertainty — effectuation explains exactly that decision logic, especially when resources are scarce.</div>
+      <div class="demo-tags">
+        <span class="demo-tag">Bird-in-hand</span><span class="demo-tag">Affordable loss</span><span class="demo-tag">Lemonade principle</span>
+      </div>
+      <div class="demo-foot">
+        <span class="chip chip-info"><i class="ti ti-book" style="font-size:12px"></i> In your reading list</span>
+        <button class="btn btn-primary" style="padding:8px 18px;font-size:13px">Add to framework</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="comp-section">
+    <div class="comp-label">Narrative with inline verified citations — marker on the proof</div>
+    <p class="narr-demo">This study draws on effectuation theory <span class="cite-chip">Sarasvathy, 2001 <i class="ti ti-check"></i></span> situated within institutional theory <span class="cite-chip">Welter, 2011 <i class="ti ti-check"></i></span>, with gender as a moderating lens <span class="cite-chip q">Brush et al., 2009 ?</span>.</p>
+  </div>
+
+  <div class="comp-section">
+    <div class="comp-label">Socratic gate — yellow marker edge = "pause and think here"</div>
+    <div class="gate">
+      <div class="gate-label"><i class="ti ti-bulb" style="font-size:13px"></i> A moment to check</div>
+      <div class="gate-q">Your brief mentions a 3-month timeline and 15 interviews. Are you comparing across regions, or going deep on one context?</div>
+    </div>
+  </div>
+
+  <h3>Layout rules</h3>
+  <p class="body-text">Single column, max 720px — a page, not a dashboard. Radius 6/10/14px. Spacing in 8px steps. Borders 1px Stone, shadows almost none (paper sits flat). Marker yellow strip on the left edge = Socratic gates only. Every screen answers: <span class="hl">what did I bring, what does Methea suggest, why, what's next.</span></p>
+
+  <h3>Do / Don't</h3>
+  <div class="dd-grid">
+    <div class="dd do"><b>Do</b><ul><li>Highlight 3–7 words max, mid-sentence, like a real marker</li><li>Playfair for meaning, Schibsted for mechanics</li><li>Lime as glow/stroke (logo, hover) — never as fill for areas</li><li>Show the why beside every AI output</li><li>Keep display type tight (−1.5% to −4.5%), UI/body at default</li></ul></div>
+    <div class="dd dont"><b>Don't</b><ul><li>No pure white #FFF backgrounds — always warm paper</li><li>No marker colours as button fills or full backgrounds</li><li>No Playfair below 18px, no tight tracking on body text</li><li>No "AI-generated ✨" sparkle clichés — we are ink, not magic</li></ul></div>
+  </div>
+
+  <div class="footer-note">Methea · ink on paper, marker in hand · brandbook v2</div>
+</div>
+
+</div>
+</body>
+</html>
