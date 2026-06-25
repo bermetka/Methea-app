@@ -33,6 +33,9 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   if (!p.research_context?.theories?.selected_ids?.length) {
     redirect(`/project/${params.id}/theories`)
   }
+  if (!p.research_context?.framework?.edges?.length) {
+    redirect(`/project/${params.id}/framework`)
+  }
 
   const brief = p.research_context.brief!
   const selectedIds = p.research_context.theories!.selected_ids
@@ -100,8 +103,8 @@ export default async function ProjectPage({ params }: { params: { id: string } }
 
         {/* Up next */}
         <div style={styles.nextCard}>
-          <p style={styles.nextLabel}>Up next — Sprint 3</p>
-          <p style={styles.nextText}>Framework builder: map how your selected theories connect and generate a visual research framework.</p>
+          <p style={styles.nextLabel}>Up next — Sprint 4</p>
+          <p style={styles.nextText}>Methodology chain: derive your paradigm, methodology, data collection approach, and analysis method from your framework.</p>
         </div>
       </div>
     </main>
