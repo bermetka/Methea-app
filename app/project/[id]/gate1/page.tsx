@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import Gate1Form from './Gate1Form'
 import type { Project } from '@/types/database'
@@ -36,7 +37,7 @@ export default async function Gate1Page({ params }: { params: { id: string } }) 
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <span style={styles.wordmark}>Methea</span>
+        <Logo size="sm" />
         <Gate1Form
           projectId={params.id}
           questions={questions}

@@ -1,4 +1,5 @@
 import { notFound, redirect } from 'next/navigation'
+import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import type { Project, Theory } from '@/types/database'
 
@@ -47,7 +48,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <span style={styles.wordmark}>Methea</span>
+        <Logo size="sm" />
 
         {/* Research question */}
         <div style={styles.card}>

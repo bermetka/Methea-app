@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import LoginForm from './LoginForm'
+import Logo from '@/components/ui/Logo'
 
 export const metadata = { title: 'Sign in — Methea' }
 
@@ -13,7 +14,7 @@ export default async function LoginPage() {
     <main style={styles.page}>
       <div style={styles.container}>
         <div style={styles.header}>
-          <span style={styles.wordmark}>Methea</span>
+          <Logo size="md" />
           <p style={styles.tagline}>Your research, methodically.</p>
         </div>
         <LoginForm />
@@ -43,13 +44,6 @@ const styles: Record<string, React.CSSProperties> = {
   },
   header: {
     textAlign: 'center',
-  },
-  wordmark: {
-    fontFamily: 'Playfair Display, Georgia, serif',
-    fontSize: '2rem',
-    fontWeight: 600,
-    letterSpacing: '-0.045em',
-    color: 'var(--ink)',
   },
   tagline: {
     marginTop: '0.25rem',

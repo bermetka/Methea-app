@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import { suggestTheories } from '@/lib/prompts/theories'
 import { verifyTheory, isInReadingList } from '@/lib/openalex'
@@ -67,7 +68,7 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <span style={styles.wordmark}>Methea</span>
+        <Logo size="sm" />
         <TheoryCards
           projectId={params.id}
           topic={ctx.brief?.topic ?? 'your research topic'}
