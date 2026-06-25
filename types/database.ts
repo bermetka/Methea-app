@@ -19,6 +19,13 @@ export interface BriefExtraction {
   constraints: string[]
   degree_level: string
   discipline: string
+  reading_list_raw?: string
+}
+
+export interface TheorySuggestion {
+  theory_id: string
+  why_it_fits: string
+  fit_score: number
 }
 
 export interface SocraticGate1Response {

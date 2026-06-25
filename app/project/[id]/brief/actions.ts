@@ -39,6 +39,7 @@ export async function submitBrief(formData: FormData) {
     readingList ?? undefined,
     fileText
   )
+  if (readingList) briefExtraction.reading_list_raw = readingList
 
   // 2. Generate 4 Socratic questions via Claude
   const questions = await generateSocraticQuestions(briefExtraction)
