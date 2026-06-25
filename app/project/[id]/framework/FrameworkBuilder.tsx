@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import { Document, Paragraph, TextRun, HeadingLevel, Packer } from 'docx'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
 import { saveFramework } from './actions'
 import type { FrameworkEdge, FrameworkCitation } from '@/types/database'
@@ -41,6 +42,37 @@ export default function FrameworkBuilder({
     fd.append('citations', JSON.stringify(citations))
     fd.append('citationStatuses', JSON.stringify(citationStatuses))
     await saveFramework(fd)
+  }
+
+  async function handleExportWord() {
+    const doc = new Document({
+      sections: [{
+        children: [
+          new Paragraph({ text: 'Theoretical Framework', heading: HeadingLevel.HEADING_1 }),
+          new Paragraph({
+            children: [new TextRun({ text: narrative, size: 24 })],
+            spacing: { after: 200 },
+          }),
+          new Paragraph({ text: 'References', heading: HeadingLevel.HEADING_2 }),
+          ...citations.map(c =>
+            new Paragraph({
+              children: [
+                new TextRun({
+                  text: `${c.author} (${c.year}). ${c.title}.${c.doi ? ` https://doi.org/${c.doi}` : ''}`,
+                  size: 22,
+                }),
+              ],
+              spacing: { after: 120 },
+            })
+          ),
+        ],
+      }],
+    })
+    const blob = await Packer.toBlob(doc)
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob)
+    a.download = 'methea-framework.docx'
+    a.click()
   }
 
   function handleExportPNG() {
@@ -130,6 +162,9 @@ export default function FrameworkBuilder({
       <div style={s.actions}>
         <button type="button" onClick={handleExportPNG} style={s.secondaryBtn}>
           Export PNG
+        </button>
+        <button type="button" onClick={handleExportWord} style={s.secondaryBtn}>
+          Export Word
         </button>
         <button
           type="button"
