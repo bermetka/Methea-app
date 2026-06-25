@@ -42,6 +42,19 @@ export interface ReadingListItem {
 
 export type CitationStatus = 'verified' | 'unverified' | 'outdated'
 
+export interface FrameworkEdge {
+  from: string
+  to: string
+  label: string
+}
+
+export interface FrameworkCitation {
+  author: string
+  year: number
+  title: string
+  doi?: string
+}
+
 // research_context is the central versioned JSON for a project.
 // Every sprint reads from and writes to this object.
 export interface ResearchContext {
@@ -62,9 +75,10 @@ export interface ResearchContext {
   }
   framework?: {
     layout_preset: 'hierarchy' | 'hub-and-spoke' | 'linear'
-    relationship_labels: Record<string, string>
+    edges: FrameworkEdge[]
     narrative: string
-    citation_verification: Record<string, CitationStatus>
+    citations: FrameworkCitation[]
+    citation_statuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'>
   }
   methodology?: {
     paradigm: string
