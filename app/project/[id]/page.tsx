@@ -51,10 +51,14 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   const frameworkDone     = !!ctx.framework?.edges?.length
   const frameworkOutdated = false // Sprint 4: wire up soft-invalidation
 
+  const methodologyDone = !!ctx.methodology?.narrative
+
   // Determine "Next" step
   const nextStep = !frameworkDone
     ? { label: 'Build your framework', href: `/project/${params.id}/framework`, cta: 'Build framework →' }
-    : { label: 'Derive your methodology', href: `/project/${params.id}/methodology`, cta: 'Start methodology →' }
+    : !methodologyDone
+    ? { label: 'Derive your methodology', href: `/project/${params.id}/methodology`, cta: 'Start methodology →' }
+    : { label: 'All steps complete', href: `/project/${params.id}`, cta: 'View project' }
 
   // Truncate question for preview
   const questionPreview = brief.research_question.length > 60
@@ -129,15 +133,35 @@ export default async function ProjectPage({ params }: { params: { id: string } }
               </a>
             </div>
 
-            {/* Methodology — locked */}
-            <div style={{ ...s.statusRow, opacity: 0.6 }}>
-              <span style={{ ...s.ico, ...s.icoEmpty }}>○</span>
-              <div style={s.statusBody}>
-                <p style={s.statusTitle}>Methodology</p>
-                <p style={s.statusMeta}>Not started — needs framework first</p>
+            {/* Methodology */}
+            {ctx.methodology?.narrative ? (
+              <div style={s.statusRow}>
+                <span style={{ ...s.ico, ...s.icoOk }}>✓</span>
+                <div style={s.statusBody}>
+                  <p style={s.statusTitle}>Methodology</p>
+                  <p style={s.statusMeta}>{ctx.methodology.paradigm} · {ctx.methodology.methodology}</p>
+                </div>
+                <a href={`/project/${params.id}/methodology`} style={s.quietBtn}>Open →</a>
               </div>
-              <span style={s.lockLabel}>🔒 Locked</span>
-            </div>
+            ) : frameworkDone ? (
+              <div style={s.statusRow}>
+                <span style={{ ...s.ico, ...s.icoEmpty }}>○</span>
+                <div style={s.statusBody}>
+                  <p style={s.statusTitle}>Methodology</p>
+                  <p style={s.statusMeta}>Not started</p>
+                </div>
+                <a href={`/project/${params.id}/methodology`} style={s.quietBtn}>Start →</a>
+              </div>
+            ) : (
+              <div style={{ ...s.statusRow, opacity: 0.6 }}>
+                <span style={{ ...s.ico, ...s.icoEmpty }}>○</span>
+                <div style={s.statusBody}>
+                  <p style={s.statusTitle}>Methodology</p>
+                  <p style={s.statusMeta}>Needs framework first</p>
+                </div>
+                <span style={s.lockLabel}>Locked</span>
+              </div>
+            )}
           </div>
         </div>
 
