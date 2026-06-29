@@ -108,7 +108,7 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete 
     id, name: theoryMap[id]?.name ?? id, author: theoryMap[id]?.author ?? '', year: theoryMap[id]?.year ?? null,
   }))
 
-  const allConcepts = [...new Set(questions.map(q => q.concept))]
+  const allConcepts = Array.from(new Set(questions.map(q => q.concept)))
 
   // ── Card definitions (status drives spine dot color) ──────────────────────────
   type CardStatus = 'done' | 'outdated' | 'locked' | 'empty'
