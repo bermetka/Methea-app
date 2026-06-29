@@ -26,7 +26,6 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   const ctx = p.research_context
 
   if (!ctx?.socratic_gate_1?.completed) redirect(`/project/${params.id}/gate1`)
-  if (ctx?.theories?.selected_ids?.length) redirect(`/project/${params.id}`)
 
   const { data: allTheories } = await supabase
     .from('theories')
@@ -37,7 +36,10 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
     redirect(`/project/${params.id}`)
   }
 
-  const suggestions = await suggestTheories(ctx, allTheories as Theory[])
+  // Use saved selection if available, otherwise ask Claude to suggest
+  const suggestions = ctx?.theories?.selected_ids?.length
+    ? ctx.theories.selected_ids.map(id => ({ theory_id: id, why_it_fits: '', fit_score: 1 }))
+    : await suggestTheories(ctx, allTheories as Theory[])
 
   const theoriesById = new Map((allTheories as Theory[]).map(t => [t.id, t]))
   const readingListRaw = ctx.brief?.reading_list_raw ?? ''
@@ -73,6 +75,8 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
           projectId={params.id}
           topic={ctx.brief?.topic ?? 'your research topic'}
           cards={sortedCards}
+          initialSelected={ctx.theories?.selected_ids}
+          readOnly={!!ctx.theories?.selected_ids?.length}
         />
       </div>
     </main>

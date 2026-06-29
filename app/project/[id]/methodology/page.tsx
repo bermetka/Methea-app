@@ -27,9 +27,6 @@ export default async function MethodologyPage({ params }: { params: { id: string
   // Guard: must have framework before methodology
   if (!ctx?.framework?.edges?.length) redirect(`/project/${params.id}/framework`)
 
-  // Already done → dashboard
-  if (ctx.methodology?.narrative) redirect(`/project/${params.id}`)
-
   // Load selected theories
   const { data: theories } = await supabase
     .from('theories')
@@ -38,8 +35,10 @@ export default async function MethodologyPage({ params }: { params: { id: string
 
   const selectedTheories = (theories ?? []) as Theory[]
 
-  // Generate methodology chain from Claude
-  const chain = await generateMethodologyChain(ctx, selectedTheories)
+  // Use saved chain if available, otherwise generate
+  const chain = ctx.methodology?.narrative
+    ? ctx.methodology as unknown as import('@/lib/prompts/methodology').MethodologyChain
+    : await generateMethodologyChain(ctx, selectedTheories)
 
   return (
     <main style={styles.page}>

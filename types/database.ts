@@ -42,6 +42,13 @@ export interface ReadingListItem {
 
 export type CitationStatus = 'verified' | 'unverified' | 'outdated'
 
+export interface InterviewQuestion {
+  id: string
+  question: string
+  concept: string
+  theory_id: string
+}
+
 export interface FrameworkEdge {
   from: string
   to: string
@@ -57,6 +64,24 @@ export interface FrameworkCitation {
 
 // research_context is the central versioned JSON for a project.
 // Every sprint reads from and writes to this object.
+export interface CodedSegment {
+  quote: string        // verbatim excerpt from transcript
+  concept: string      // framework concept it maps to
+  theory_id: string    // which theory the concept belongs to
+  code_type: 'deductive' | 'inductive'  // deductive = from framework; inductive = emergent
+  inductive_label?: string   // only for inductive codes
+}
+
+export interface AnalysisTheme {
+  id: string
+  label: string          // short theme name
+  summary: string        // 1-2 sentence synthesis
+  concepts: string[]     // which framework concepts feed this theme
+  quotes: CodedSegment[] // supporting evidence
+  frequency: number      // how many segments support it
+  confirmed: boolean     // student confirmed in Gate 3
+}
+
 export interface ResearchContext {
   version: number
   brief?: BriefExtraction
@@ -82,12 +107,25 @@ export interface ResearchContext {
   }
   methodology?: {
     paradigm: string
+    paradigm_why: string
     methodology: string
+    methodology_why: string
     data_collection: string
+    data_collection_why: string
     sample: string
+    sample_why: string
     analysis_method: string
+    analysis_method_why: string
     narrative: string
-    alternative?: string
+  }
+  interview_guide?: {
+    questions: InterviewQuestion[]
+  }
+  findings?: {
+    transcript_text: string
+    coded_segments: CodedSegment[]
+    themes: AnalysisTheme[]
+    gate3_completed: boolean
   }
   outdated_blocks: string[]
 }

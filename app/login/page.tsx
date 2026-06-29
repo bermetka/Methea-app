@@ -8,7 +8,7 @@ export const metadata = { title: 'Sign in — Methea' }
 export default async function LoginPage() {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (user) redirect('/onboarding')
+  if (user) redirect('/projects')
 
   return (
     <main style={styles.page}>

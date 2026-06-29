@@ -9,16 +9,8 @@ export default async function OnboardingPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
-  // If user already has a project, go straight there
-  const { data: projects } = await supabase
-    .from('projects')
-    .select('id')
-    .eq('user_id', user.id)
-    .limit(1)
-
-  if (projects && projects.length > 0) {
-    redirect(`/project/${projects[0].id}`)
-  }
+  // Onboarding is now handled by /projects
+  redirect('/projects')
 
   return (
     <main style={styles.page}>

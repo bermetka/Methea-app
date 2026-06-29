@@ -2,6 +2,8 @@
 
 import { useRef, useState } from 'react'
 import { submitBrief } from './actions'
+import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
+import { glossaryTerm } from '@/lib/glossary'
 
 const DEGREE_LEVELS = [
   { value: 'bachelor',    label: "Bachelor's" },
@@ -80,6 +82,10 @@ export default function BriefForm({ projectId }: Props) {
           disabled={status === 'submitting'}
         />
         {errors.topic && <p style={s.errorText}>{errors.topic}</p>}
+        <p style={s.hint}>
+          Works with qualitative, quantitative, or mixed methods research.
+          <GlossaryTooltip term={glossaryTerm('qual-vs-quant')} />
+        </p>
       </div>
 
       {/* Degree + Discipline */}
@@ -266,4 +272,5 @@ const s: Record<string, React.CSSProperties> = {
   btnDisabled: { background: 'var(--paper-deep)', color: 'var(--pencil)', cursor: 'default' },
   btnLoading:  { background: 'var(--ink-blue)', cursor: 'wait' },
   errorText: { fontSize: '0.8125rem', color: 'var(--error)', marginTop: '0.375rem', lineHeight: 1.4 },
+  hint:      { fontSize: '0.8125rem', color: 'var(--pencil)', marginTop: '0.375rem', display: 'flex', alignItems: 'center', gap: '0.25rem' },
 }

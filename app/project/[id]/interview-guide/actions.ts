@@ -3,14 +3,15 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
+import type { InterviewQuestion } from '@/types/database'
 
-export async function saveMethodology(formData: FormData) {
+export async function saveInterviewGuide(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
   const projectId = formData.get('projectId') as string
-  const chain     = JSON.parse(formData.get('chain') as string)
+  const questions: InterviewQuestion[] = JSON.parse(formData.get('questions') as string)
 
   const { data: project } = await supabase
     .from('projects')
@@ -19,12 +20,12 @@ export async function saveMethodology(formData: FormData) {
     .single()
 
   const outdatedBlocks = (project?.research_context?.outdated_blocks ?? [] as string[])
-    .filter((b: string) => b !== 'methodology')
+    .filter((b: string) => b !== 'interview_guide')
 
   await updateResearchContext(
     projectId,
-    'methodology',
-    { methodology: chain, outdated_blocks: outdatedBlocks },
+    'interview_guide',
+    { interview_guide: { questions }, outdated_blocks: outdatedBlocks },
     supabase
   )
 

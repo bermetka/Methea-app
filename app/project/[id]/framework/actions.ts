@@ -19,17 +19,21 @@ export async function saveFramework(formData: FormData) {
 
   const { data: project } = await supabase
     .from('projects')
-    .select('id')
+    .select('id, research_context')
     .eq('id', projectId)
     .eq('user_id', user.id)
     .single()
 
   if (!project) redirect('/onboarding')
 
+  const outdatedBlocks = (project.research_context?.outdated_blocks ?? [] as string[])
+    .filter((b: string) => b !== 'framework')
+
   await updateResearchContext(
     projectId,
     'framework',
     {
+      outdated_blocks: outdatedBlocks,
       framework: {
         layout_preset: layout,
         edges,

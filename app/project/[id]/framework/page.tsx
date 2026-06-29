@@ -25,7 +25,6 @@ export default async function FrameworkPage({ params }: { params: { id: string }
   const ctx = p.research_context
 
   if (!ctx?.theories?.selected_ids?.length) redirect(`/project/${params.id}/theories`)
-  if (ctx?.framework?.edges?.length) redirect(`/project/${params.id}`)
 
   const selectedIds = ctx.theories!.selected_ids
 
@@ -38,36 +37,45 @@ export default async function FrameworkPage({ params }: { params: { id: string }
 
   const theories = theoriesData as Theory[]
 
-  // Sequential: narrative needs the edges
-  const edges = await generateRelationshipLabels(ctx, theories)
-  const narrativeResult = await generateFrameworkNarrative(ctx, theories, edges)
+  // Use saved framework if available, otherwise generate
+  let edges = ctx.framework?.edges ?? []
+  let narrativeResult = {
+    narrative: ctx.framework?.narrative ?? '',
+    citations: ctx.framework?.citations ?? [],
+  }
+  let citationStatuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'> =
+    ctx.framework?.citation_statuses ?? {}
 
-  // Verify citations via OpenAlex in parallel
-  const citationStatuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'> = {}
-  await Promise.all(
-    narrativeResult.citations.map(async (c) => {
-      const key = `${c.author}, ${c.year}`
-      if (c.doi) {
-        try {
-          const res = await fetch(
-            `https://api.openalex.org/works/doi:${encodeURIComponent(c.doi)}?mailto=bermet.ak@gmail.com`,
-            { next: { revalidate: 86400 } }
-          )
-          const data = await res.json()
-          citationStatuses[key] = data?.doi ? 'doi_verified' : 'unverified'
-        } catch {
+  if (!edges.length) {
+    edges = await generateRelationshipLabels(ctx, theories)
+    narrativeResult = await generateFrameworkNarrative(ctx, theories, edges)
+
+    await Promise.all(
+      narrativeResult.citations.map(async (c) => {
+        const key = `${c.author}, ${c.year}`
+        if (c.doi) {
+          try {
+            const res = await fetch(
+              `https://api.openalex.org/works/doi:${encodeURIComponent(c.doi)}?mailto=bermet.ak@gmail.com`,
+              { next: { revalidate: 86400 } }
+            )
+            const data = await res.json()
+            citationStatuses[key] = data?.doi ? 'doi_verified' : 'unverified'
+          } catch {
+            citationStatuses[key] = 'unverified'
+          }
+        } else if (c.year < 1995) {
+          citationStatuses[key] = 'classic_verified'
+        } else {
           citationStatuses[key] = 'unverified'
         }
-      } else if (c.year < 1995) {
-        citationStatuses[key] = 'classic_verified'
-      } else {
-        citationStatuses[key] = 'unverified'
-      }
-    })
-  )
+      })
+    )
+  }
 
   const defaultLayout: 'linear' | 'hub-and-spoke' =
-    theories.length === 2 ? 'linear' : 'hub-and-spoke'
+    (ctx.framework?.layout_preset as 'linear' | 'hub-and-spoke') ??
+    (theories.length === 2 ? 'linear' : 'hub-and-spoke')
 
   const diagramTheories = theories.map(t => ({
     id: t.id,

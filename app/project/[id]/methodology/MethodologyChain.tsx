@@ -2,14 +2,16 @@
 
 import { useState } from 'react'
 import { saveMethodology } from './actions'
+import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
+import { glossaryTerm } from '@/lib/glossary'
 import type { MethodologyChain } from '@/lib/prompts/methodology'
 
-const CHAIN_KEYS: { key: keyof MethodologyChain; label: string }[] = [
-  { key: 'paradigm',       label: 'Paradigm' },
-  { key: 'methodology',    label: 'Methodology' },
+const CHAIN_KEYS: { key: keyof MethodologyChain; label: string; glossaryId?: string }[] = [
+  { key: 'paradigm',        label: 'Paradigm',       glossaryId: 'paradigm' },
+  { key: 'methodology',     label: 'Methodology',    glossaryId: 'methodology-vs-method' },
   { key: 'data_collection', label: 'Data collection' },
-  { key: 'sample',         label: 'Sample' },
-  { key: 'analysis_method', label: 'Analysis method' },
+  { key: 'sample',          label: 'Sample',         glossaryId: 'sampling-types' },
+  { key: 'analysis_method', label: 'Analysis method', glossaryId: 'analysis-methods' },
 ]
 
 const WHY_KEYS: Record<string, keyof MethodologyChain> = {
@@ -33,12 +35,7 @@ export default function MethodologyChainView({ projectId, chain }: Props) {
     setSaving(true)
     const fd = new FormData()
     fd.append('projectId', projectId)
-    fd.append('paradigm',        chain.paradigm)
-    fd.append('methodology',     chain.methodology)
-    fd.append('data_collection', chain.data_collection)
-    fd.append('sample',          chain.sample)
-    fd.append('analysis_method', chain.analysis_method)
-    fd.append('narrative',       chain.narrative)
+    fd.append('chain', JSON.stringify(chain))
     await saveMethodology(fd)
   }
 
@@ -59,9 +56,9 @@ export default function MethodologyChainView({ projectId, chain }: Props) {
 
   return (
     <div style={s.wrapper}>
-      {/* Chain cards */}
+      {/* Chain cards — hide "why" if empty (old saves) */}
       <div style={s.chain}>
-        {CHAIN_KEYS.map(({ key, label }, i) => {
+        {CHAIN_KEYS.map(({ key, label, glossaryId }, i) => {
           const value = chain[key] as string
           const why   = chain[WHY_KEYS[key]!] as string
           return (
@@ -69,11 +66,14 @@ export default function MethodologyChainView({ projectId, chain }: Props) {
               <div style={s.card}>
                 <div style={s.cardTop}>
                   <div>
-                    <p style={s.eyebrow}>◆ {label}</p>
+                    <p style={s.eyebrow}>
+                      ◆ {label}
+                      {glossaryId && <GlossaryTooltip term={glossaryTerm(glossaryId)} />}
+                    </p>
                     <h3 style={s.cardTitle}>{value}</h3>
                   </div>
                 </div>
-                <p style={s.why}>{why}</p>
+                {why && <p style={s.why}>{why}</p>}
               </div>
               {i < CHAIN_KEYS.length - 1 && (
                 <div style={s.connector}>
@@ -94,6 +94,7 @@ export default function MethodologyChainView({ projectId, chain }: Props) {
 
       {/* Actions */}
       <div style={s.actions}>
+        <a href={`/project/${projectId}`} style={{ ...s.ghostBtn, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>← Project</a>
         <button type="button" onClick={handleCopy} style={s.ghostBtn}>
           {copied ? '✓ Copied' : '⧉ Copy'}
         </button>

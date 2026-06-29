@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import RadioCard from '@/components/ui/RadioCard'
+import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
+import { glossaryTerm } from '@/lib/glossary'
 import { submitGate1 } from './actions'
 import type { ClarificationQuestion, BriefExtraction } from '@/types/database'
 
@@ -47,7 +49,10 @@ export default function Gate1Form({ projectId, questions, brief }: Props) {
       <div style={s.banner}>
         <p style={s.bannerEyebrow}>Based on your brief</p>
         <p style={s.bannerText}>
-          Your question seems to be about <strong style={{ color: 'var(--ink)' }}>{brief.topic}</strong>. Let&apos;s sharpen it together.
+          Your question seems to be about <strong style={{ color: 'var(--ink)' }}>{brief.topic}</strong>.
+          {' '}It looks <strong style={{ color: 'var(--ink)' }}>{brief.research_type}</strong>
+          <GlossaryTooltip term={glossaryTerm('exploratory-vs-explanatory')} />.
+          {' '}Let&apos;s sharpen it together.
         </p>
       </div>
 
@@ -87,6 +92,12 @@ export default function Gate1Form({ projectId, questions, brief }: Props) {
           />
         ))}
       </div>
+
+      {/* Contextual note about research approach */}
+      <p style={s.approachNote}>
+        These questions help identify whether your approach is deductive, inductive, or abductive.
+        <GlossaryTooltip term={glossaryTerm('deductive-vs-inductive')} />
+      </p>
 
       {/* Navigation */}
       <div style={s.nav}>
@@ -129,4 +140,5 @@ const s: Record<string, React.CSSProperties> = {
   backBtn:      { background: 'none', border: 'none', padding: 0, fontSize: '0.9375rem', fontFamily: 'inherit', color: 'var(--ink-blue)', cursor: 'pointer' },
   continueBtn:  { padding: '0.625rem 1.25rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
   continueBtnDisabled: { background: 'var(--paper-deep)', color: 'var(--pencil)', cursor: 'default' },
+  approachNote: { fontSize: '0.8125rem', color: 'var(--pencil)', lineHeight: 1.5, display: 'flex', alignItems: 'center', gap: '0.25rem' },
 }

@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import StatusChip, { type VerificationStatus } from '@/components/ui/StatusChip'
+import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
+import { glossaryTerm } from '@/lib/glossary'
 import { saveTheorySelection } from './actions'
 
 export interface TheoryCardData {
@@ -20,13 +22,15 @@ interface Props {
   projectId: string
   topic: string
   cards: TheoryCardData[]
+  initialSelected?: string[]
+  readOnly?: boolean
 }
 
 const MIN_SELECT = 2
 const MAX_SELECT = 4
 
-export default function TheoryCards({ projectId, topic, cards }: Props) {
-  const [selected, setSelected] = useState<Set<string>>(new Set())
+export default function TheoryCards({ projectId, topic, cards, initialSelected, readOnly }: Props) {
+  const [selected, setSelected] = useState<Set<string>>(new Set(initialSelected ?? []))
   const [submitting, setSubmitting] = useState(false)
 
   function toggle(id: string) {
@@ -64,7 +68,8 @@ export default function TheoryCards({ projectId, topic, cards }: Props) {
       <div style={s.banner}>
         <p style={s.bannerText}>
           Based on your question about <strong style={{ color: 'var(--ink)' }}>{topic}</strong>,
-          {' '}these theories tend to fit well. Pick 2–4 to build on.
+          {' '}these theories tend to fit well. Pick 2–4 to build your theoretical framework
+          <GlossaryTooltip term={glossaryTerm('theoretical-vs-conceptual')} /> on.
         </p>
       </div>
 
@@ -112,18 +117,24 @@ export default function TheoryCards({ projectId, topic, cards }: Props) {
 
       {/* Helper text + CTA */}
       <div style={s.footer}>
-        {helperText && <p style={s.helperText}>{helperText}</p>}
-        <button
-          type="button"
-          onClick={handleBuild}
-          disabled={!canSubmit || submitting}
-          style={{
-            ...s.buildBtn,
-            ...(!canSubmit || submitting ? s.buildBtnDisabled : {}),
-          }}
-        >
-          {submitting ? 'Saving…' : 'Build my framework →'}
-        </button>
+        {readOnly ? (
+          <a href={`/project/${projectId}`} style={{ fontSize: '0.875rem', color: 'var(--ink-blue)', textDecoration: 'none', fontWeight: 500 }}>← Back to project</a>
+        ) : (
+          <>
+            {helperText && <p style={s.helperText}>{helperText}</p>}
+            <button
+              type="button"
+              onClick={handleBuild}
+              disabled={!canSubmit || submitting}
+              style={{
+                ...s.buildBtn,
+                ...(!canSubmit || submitting ? s.buildBtnDisabled : {}),
+              }}
+            >
+              {submitting ? 'Saving…' : 'Build my framework →'}
+            </button>
+          </>
+        )}
       </div>
 
       <style>{`

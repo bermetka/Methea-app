@@ -26,12 +26,19 @@ export async function submitBrief(formData: FormData) {
   // Verify project belongs to this user
   const { data: project } = await supabase
     .from('projects')
-    .select('id')
+    .select('id, research_context')
     .eq('id', projectId)
     .eq('user_id', user.id)
     .single()
 
   if (!project) redirect('/onboarding')
+
+  // Re-submitting brief invalidates downstream blocks if theories already selected
+  const existingCtx = project.research_context
+  const currentOutdated: string[] = existingCtx?.outdated_blocks ?? []
+  const outdatedBlocks = existingCtx?.theories?.selected_ids?.length
+    ? [...new Set([...currentOutdated, 'framework', 'methodology', 'interview_guide'])]
+    : currentOutdated
 
   // 1. Extract structured brief via Claude
   const briefExtraction = await extractBrief(
@@ -55,6 +62,7 @@ export async function submitBrief(formData: FormData) {
         responses: {},
         questions,
       },
+      outdated_blocks: outdatedBlocks,
     },
     supabase
   )

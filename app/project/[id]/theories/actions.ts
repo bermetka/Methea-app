@@ -22,7 +22,14 @@ export async function saveTheorySelection(formData: FormData) {
 
   if (!project) redirect('/onboarding')
 
-  const readingListRaw: string = project.research_context?.brief?.reading_list_raw ?? ''
+  const ctx = project.research_context
+  const readingListRaw: string = ctx?.brief?.reading_list_raw ?? ''
+
+  // If framework already exists, changing theories invalidates downstream blocks
+  const currentOutdated: string[] = ctx?.outdated_blocks ?? []
+  const outdatedBlocks = ctx?.framework?.edges?.length
+    ? [...new Set([...currentOutdated, 'framework', 'methodology', 'interview_guide'])]
+    : currentOutdated
 
   const { data: theories } = await supabase
     .from('theories')
@@ -47,6 +54,7 @@ export async function saveTheorySelection(formData: FormData) {
         selected_ids: selectedIds,
         reading_list_items: readingListItems,
       },
+      outdated_blocks: outdatedBlocks,
     },
     supabase
   )
