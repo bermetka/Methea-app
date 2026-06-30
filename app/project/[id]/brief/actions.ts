@@ -37,7 +37,7 @@ export async function submitBrief(formData: FormData) {
   const existingCtx = project.research_context
   const currentOutdated: string[] = existingCtx?.outdated_blocks ?? []
   const outdatedBlocks = existingCtx?.theories?.selected_ids?.length
-    ? [...new Set([...currentOutdated, 'framework', 'methodology', 'interview_guide'])]
+    ? Array.from(new Set([...currentOutdated, 'framework', 'methodology', 'interview_guide']))
     : currentOutdated
 
   // 1. Extract structured brief via Claude

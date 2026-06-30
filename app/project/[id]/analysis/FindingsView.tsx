@@ -33,7 +33,7 @@ export default function FindingsView({ projectId, themes, gate3Completed }: Prop
     setSubmitting(true)
     const fd = new FormData()
     fd.append('projectId', projectId)
-    fd.append('confirmedIds', JSON.stringify([...selected]))
+    fd.append('confirmedIds', JSON.stringify(Array.from(selected)))
     await confirmThemes(fd)
   }
 

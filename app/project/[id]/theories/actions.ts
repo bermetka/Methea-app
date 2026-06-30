@@ -28,7 +28,7 @@ export async function saveTheorySelection(formData: FormData) {
   // If framework already exists, changing theories invalidates downstream blocks
   const currentOutdated: string[] = ctx?.outdated_blocks ?? []
   const outdatedBlocks = ctx?.framework?.edges?.length
-    ? [...new Set([...currentOutdated, 'framework', 'methodology', 'interview_guide'])]
+    ? Array.from(new Set([...currentOutdated, 'framework', 'methodology', 'interview_guide']))
     : currentOutdated
 
   const { data: theories } = await supabase

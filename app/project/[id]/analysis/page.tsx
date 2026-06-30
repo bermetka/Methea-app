@@ -56,7 +56,7 @@ export default async function AnalysisPage({ params }: { params: { id: string } 
             <p style={s.sub}>
               {findings.themes.length} themes surfaced from your transcript, coded against your
               framework. {findings.gate3_completed
-                ? `You confirmed ${findings.themes.filter(t => t.confirmed).length} of them.`
+                ? `You confirmed ${findings.themes.filter((t: { confirmed: boolean }) => t.confirmed).length} of them.`
                 : 'Review and confirm the ones that ring true.'}
             </p>
             <FindingsView
