@@ -3,6 +3,7 @@ import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import { generateInterviewGuide } from '@/lib/prompts/interview'
 import InterviewGuideView from './InterviewGuide'
+import EthicsCheckpoint from './EthicsCheckpoint'
 import type { Project, Theory } from '@/types/database'
 
 export const metadata = { title: 'Interview guide — Methea' }
@@ -27,6 +28,18 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
   // Guard: must have methodology before interview guide
   if (!ctx?.methodology?.narrative) redirect(`/project/${params.id}/methodology`)
 
+  // Ethics checkpoint — must confirm before generating guide
+  if (!ctx.ethics_confirmed) {
+    return (
+      <main style={styles.page}>
+        <div style={styles.container}>
+          <Logo size="sm" />
+          <EthicsCheckpoint projectId={params.id} />
+        </div>
+      </main>
+    )
+  }
+
   const { data: theories } = await supabase
     .from('theories')
     .select('*')
@@ -39,12 +52,16 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
     ? ctx.interview_guide.questions
     : await generateInterviewGuide(ctx, selectedTheories)
 
+  // Show ethics confirmed chip alongside heading
   return (
     <main style={styles.page}>
       <div style={styles.container}>
         <Logo size="sm" />
         <div style={styles.header}>
-          <h2 style={styles.heading}>Your interview guide</h2>
+          <div style={styles.headingRow}>
+            <h2 style={styles.heading}>Your interview guide</h2>
+            <span style={styles.ethicsChip}>✓ Ethics confirmed</span>
+          </div>
           <p style={styles.sub}>
             {questions.length} questions, each anchored to your framework.
           </p>
@@ -60,9 +77,11 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  page:      { minHeight: '100vh', padding: '2.5rem 1rem', background: 'var(--paper)' },
-  container: { width: '100%', maxWidth: '720px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.75rem' },
-  header:    { display: 'flex', flexDirection: 'column', gap: '0.375rem' },
-  heading:   { fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.25rem, 3vw, 1.75rem)', fontWeight: 400, letterSpacing: '-0.015em', color: 'var(--ink)', lineHeight: 1.2 },
-  sub:       { fontSize: '0.9375rem', color: 'var(--pencil)' },
+  page:        { minHeight: '100vh', padding: '2.5rem 1rem', background: 'var(--paper)' },
+  container:   { width: '100%', maxWidth: '720px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.75rem' },
+  header:      { display: 'flex', flexDirection: 'column', gap: '0.375rem' },
+  headingRow:  { display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' as const },
+  heading:     { fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.25rem, 3vw, 1.75rem)', fontWeight: 400, letterSpacing: '-0.015em', color: 'var(--ink)', lineHeight: 1.2 },
+  ethicsChip:  { fontSize: '0.6875rem', fontWeight: 700, padding: '2px 8px', borderRadius: 'var(--radius-sm)', background: 'var(--mint)', color: 'var(--moss)', whiteSpace: 'nowrap' as const },
+  sub:         { fontSize: '0.9375rem', color: 'var(--pencil)' },
 }

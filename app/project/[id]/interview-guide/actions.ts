@@ -5,6 +5,17 @@ import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
 import type { InterviewQuestion } from '@/types/database'
 
+export async function confirmEthics(formData: FormData) {
+  const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) redirect('/login')
+
+  const projectId = formData.get('projectId') as string
+
+  await updateResearchContext(projectId, 'ethics', { ethics_confirmed: true }, supabase)
+  // No redirect — caller refreshes page
+}
+
 export async function saveInterviewGuide(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()

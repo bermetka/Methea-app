@@ -42,8 +42,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   },
   {
     id: 'analysis-methods',
-    trigger: 'thematic analysis',
-    shortExplain: "Thematic Analysis: find patterns across your data — flexible, the most widely used method. Grounded Theory: build new theory directly from your data, used when no existing framework fits well. Framework Analysis: structured comparison across multiple cases using a matrix — common in policy and health research.",
+    trigger: 'codebook thematic analysis',
+    shortExplain: "Codebook thematic analysis uses a pre-defined code structure derived from your research questions and framework. This differs from reflexive thematic analysis (Braun & Clarke, 2019), which develops codes inductively from the data. Grounded Theory: build new theory directly from data when no existing framework fits. Framework Analysis: structured comparison across cases using a matrix — common in policy and health research.",
   },
   {
     id: 'interview-structure',

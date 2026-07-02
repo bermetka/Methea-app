@@ -118,6 +118,7 @@ export interface ResearchContext {
     analysis_method_why: string
     narrative: string
   }
+  ethics_confirmed?: boolean
   interview_guide?: {
     questions: InterviewQuestion[]
   }
