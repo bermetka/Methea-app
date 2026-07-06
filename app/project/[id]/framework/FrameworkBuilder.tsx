@@ -137,21 +137,22 @@ export default function FrameworkBuilder({
         <p style={s.narrativeText}>{narrative}</p>
         <div style={s.citationChips}>
           {citations.map((c, i) => {
-            const key    = `${c.author}, ${c.year}`
-            const status = citationStatuses[key] ?? 'unverified'
+            const key      = `${c.author}, ${c.year}`
+            const status   = citationStatuses[key] ?? 'unverified'
             const verified = status !== 'unverified'
             return (
-              <span
-                key={i}
-                title={c.doi ? `DOI: ${c.doi}` : 'No DOI found'}
-                style={{
-                  ...s.citationChip,
+              <span key={i} style={s.citationItem} title={c.doi ? `DOI: ${c.doi}` : 'No DOI found — verify manually'}>
+                {/* state chip: icon only */}
+                <span style={{
+                  ...s.stateChip,
                   background: verified ? 'var(--mint)'       : 'var(--paper-deep)',
                   color:      verified ? 'var(--moss)'       : 'var(--pencil)',
                   border:     `1px solid ${verified ? 'var(--marker-green)' : 'var(--stone)'}`,
-                }}
-              >
-                {verified ? '✓' : '?'} {c.author}, {c.year}
+                }}>
+                  {verified ? '✓' : '?'}
+                </span>
+                {/* provenance label: text only, no icon */}
+                <span style={s.citationLabel}>{c.author}, {c.year}</span>
               </span>
             )
           })}
@@ -190,8 +191,10 @@ const s: Record<string, React.CSSProperties> = {
   narrativeCard:      { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' },
   narrativeLabel:     { fontSize: '0.75rem', fontWeight: 600, color: 'var(--pencil)', textTransform: 'uppercase' as const, letterSpacing: '0.06em' },
   narrativeText:      { fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.9375rem', lineHeight: 1.7, color: 'var(--graphite)' },
-  citationChips:      { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem' },
-  citationChip:       { padding: '2px 8px', borderRadius: 'var(--radius-sm)', fontSize: '0.75rem', fontWeight: 500 },
+  citationChips:  { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem' },
+  citationItem:   { display: 'inline-flex', alignItems: 'center', gap: '0.3rem', cursor: 'help' },
+  stateChip:      { display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '18px', height: '18px', borderRadius: '50%', fontSize: '0.6875rem', fontWeight: 700, flexShrink: 0 },
+  citationLabel:  { fontSize: '0.8125rem', fontWeight: 500, color: 'var(--graphite)' },
   actions:            { display: 'flex', justifyContent: 'flex-end', gap: '0.75rem' },
   secondaryBtn:       { padding: '0.625rem 1.25rem', border: '1px solid var(--stone)', borderRadius: 'var(--radius)', background: 'var(--sheet)', color: 'var(--graphite)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
   primaryBtn:         { padding: '0.75rem 1.5rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
