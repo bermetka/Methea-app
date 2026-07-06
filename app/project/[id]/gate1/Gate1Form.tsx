@@ -106,17 +106,35 @@ export default function Gate1Form({ projectId, questions, brief }: Props) {
         ) : (
           <button type="button" onClick={goBack} style={s.backBtn}>← Back</button>
         )}
-        <button
-          type="button"
-          onClick={goForward}
-          disabled={!selected || submitting}
-          style={{
-            ...s.continueBtn,
-            ...(!selected || submitting ? s.continueBtnDisabled : {}),
-          }}
-        >
-          {submitting ? 'Saving...' : isLast ? 'Finish →' : 'Continue →'}
-        </button>
+        <div style={s.navRight}>
+          {/* Escape hatch — always available after the first question is shown */}
+          <button
+            type="button"
+            disabled={submitting}
+            onClick={async () => {
+              setSubmitting(true)
+              const formData = new FormData()
+              formData.append('projectId', projectId)
+              // Submit current answers (partial is fine — student is skipping)
+              formData.append('answers', JSON.stringify(answers))
+              await submitGate1(formData)
+            }}
+            style={{ ...s.skipBtn, ...(submitting ? s.skipBtnDisabled : {}) }}
+          >
+            Keep my current answer →
+          </button>
+          <button
+            type="button"
+            onClick={goForward}
+            disabled={!selected || submitting}
+            style={{
+              ...s.continueBtn,
+              ...(!selected || submitting ? s.continueBtnDisabled : {}),
+            }}
+          >
+            {submitting ? 'Saving...' : isLast ? 'Finish →' : 'Continue →'}
+          </button>
+        </div>
       </div>
     </div>
   )
@@ -138,6 +156,9 @@ const s: Record<string, React.CSSProperties> = {
   nav:          { display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '0.5rem' },
   backLink:     { fontSize: '0.9375rem', color: 'var(--ink-blue)', textDecoration: 'none' },
   backBtn:      { background: 'none', border: 'none', padding: 0, fontSize: '0.9375rem', fontFamily: 'inherit', color: 'var(--ink-blue)', cursor: 'pointer' },
+  navRight:     { display: 'flex', alignItems: 'center', gap: '0.75rem' },
+  skipBtn:      { background: 'none', border: 'none', padding: 0, fontSize: '0.875rem', fontFamily: 'inherit', color: 'var(--pencil)', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: '3px' },
+  skipBtnDisabled: { opacity: 0.4, cursor: 'default' },
   continueBtn:  { padding: '0.625rem 1.25rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
   continueBtnDisabled: { background: 'var(--paper-deep)', color: 'var(--pencil)', cursor: 'default' },
   approachNote: { fontSize: '0.8125rem', color: 'var(--pencil)', lineHeight: 1.5, display: 'flex', alignItems: 'center', gap: '0.25rem' },

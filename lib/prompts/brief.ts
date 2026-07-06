@@ -42,7 +42,7 @@ Be concise. The research_question should be one sentence. constraints may be emp
   return generateJSON<BriefExtraction>(EXTRACT_BRIEF_SYSTEM, userPrompt, 512)
 }
 
-const GATE1_SYSTEM = `You are a research methodology assistant. Your job is to ask 4 targeted clarifying questions that help sharpen a student's research question and confirm the right methodology direction.
+const GATE1_SYSTEM = `You are a research methodology assistant. Your job is to ask up to 3 targeted clarifying questions that help sharpen a student's research question and confirm the right methodology direction.
 Generate questions that are specific to their topic — never generic.
 Each question has exactly 3 options. Options must be clearly distinct.
 Respond with a single valid JSON array — no markdown, no explanation, just the JSON.`
@@ -57,13 +57,12 @@ Research type: ${brief.research_type}
 Discipline: ${brief.discipline}
 Degree level: ${brief.degree_level}
 
-Generate exactly 4 clarifying questions to sharpen this research question. The questions should address:
+Generate exactly 3 clarifying questions to sharpen this research question. The questions should address:
 1. Whether the focus is understanding WHY vs. measuring HOW MUCH (methodology direction)
 2. The scope — who/what is being studied and at what scale
 3. The student's access to data/participants
-4. Any key assumption in the research question worth surfacing
 
-Return a JSON array with exactly 4 items, each matching this shape:
+Return a JSON array with exactly 3 items, each matching this shape:
 [
   {
     "id": "q1",
@@ -76,7 +75,7 @@ Return a JSON array with exactly 4 items, each matching this shape:
   }
 ]
 
-IDs must be "q1", "q2", "q3", "q4". Option values must be unique within each question.
+IDs must be "q1", "q2", "q3". Option values must be unique within each question.
 Questions must feel co-constructive ("Is this more about X or Y?"), never interrogative.`
 
   return generateJSON<ClarificationQuestion[]>(GATE1_SYSTEM, userPrompt, 1024)

@@ -48,8 +48,8 @@ export async function submitBrief(formData: FormData) {
   )
   if (readingList) briefExtraction.reading_list_raw = readingList
 
-  // 2. Generate 4 Socratic questions via Claude
-  const questions = await generateSocraticQuestions(briefExtraction)
+  // 2. Generate Socratic questions via Claude — hard cap at 3 regardless of prompt output
+  const questions = (await generateSocraticQuestions(briefExtraction)).slice(0, 3)
 
   // 3. Save both to research_context in one update
   await updateResearchContext(
