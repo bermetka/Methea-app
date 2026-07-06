@@ -4,18 +4,25 @@ import { useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer, AlignmentType } from 'docx'
 import Logo from '@/components/ui/Logo'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
+import { incrementExportCount } from './actions'
 import type { ResearchContext, Theory } from '@/types/database'
+
+const FREE_EXPORT_LIMIT = 1
 
 interface Props {
   projectId: string
   ctx: ResearchContext
   theories: Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]
+  exportCount: number
 }
 
-export default function ExportView({ projectId, ctx, theories }: Props) {
+export default function ExportView({ projectId, ctx, theories, exportCount }: Props) {
   const [copiedSection, setCopiedSection] = useState<string | null>(null)
   const [showPolishedModal, setShowPolishedModal] = useState(false)
   const [polishedAcknowledged, setPolishedAcknowledged] = useState(false)
+  const [localExportCount, setLocalExportCount] = useState(exportCount)
+
+  const isFreeLimitReached = localExportCount >= FREE_EXPORT_LIMIT
 
   const theoryMap   = Object.fromEntries(theories.map(t => [t.id, t]))
   const brief       = ctx.brief!
@@ -46,6 +53,12 @@ export default function ExportView({ projectId, ctx, theories }: Props) {
 
   async function exportScaffold() {
     const children: Paragraph[] = [
+      // Free-tier watermark — always present on free tier
+      new Paragraph({
+        children: [new TextRun({ text: 'Created with Methea · methea.app — Free plan (1 export)', italics: true, color: 'AAAAAA', size: 16 })],
+        alignment: AlignmentType.CENTER,
+        spacing: { after: 200 },
+      }),
       new Paragraph({ text: 'Research Proposal Scaffold', heading: HeadingLevel.HEADING_1 }),
       annotation('Complete each section below in your own words. The AI has structured the framework — the interpretation and writing are yours.'),
       new Paragraph({ text: '' }),
@@ -117,6 +130,12 @@ export default function ExportView({ projectId, ctx, theories }: Props) {
     a.href     = URL.createObjectURL(blob)
     a.download = 'methea-research-scaffold.docx'
     a.click()
+
+    // Track export count (fire-and-forget — don't block the download)
+    const fd = new FormData()
+    fd.append('projectId', projectId)
+    incrementExportCount(fd).catch(() => {})
+    setLocalExportCount(c => c + 1)
   }
 
   async function exportPolishedDraft() {
@@ -191,14 +210,24 @@ export default function ExportView({ projectId, ctx, theories }: Props) {
             <button type="button" onClick={() => setShowPolishedModal(true)} style={s.ghostBtn}>
               Generate polished draft →
             </button>
-            <button type="button" onClick={exportScaffold} style={s.exportBtn}>
-              Export scaffold (Word)
-            </button>
+            {isFreeLimitReached ? (
+              <span style={s.upgradeBadge}>
+                Upgrade to export again →
+              </span>
+            ) : (
+              <button type="button" onClick={exportScaffold} style={s.exportBtn}>
+                Export scaffold (Word)
+              </button>
+            )}
           </div>
         </div>
 
         <h1 style={s.pageTitle}>Research Proposal</h1>
-        <p style={s.pageSubtitle}>Export your research scaffold — then fill in your own analysis and interpretation.</p>
+        <p style={s.pageSubtitle}>
+          {isFreeLimitReached
+            ? 'Free plan — 1 export used. Upgrade to export again.'
+            : 'Export your research scaffold — then fill in your own analysis and interpretation.'}
+        </p>
 
         {/* Polished draft modal */}
         {showPolishedModal && (
@@ -413,7 +442,8 @@ const s: Record<string, React.CSSProperties> = {
   header:      { display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
   headerActions:{ display: 'flex', alignItems: 'center', gap: '1rem' },
   backLink:    { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
-  exportBtn:   { padding: '0.5rem 1rem', background: 'var(--ink-blue)', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
+  exportBtn:    { padding: '0.5rem 1rem', background: 'var(--ink-blue)', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
+  upgradeBadge: { padding: '0.5rem 1rem', background: 'var(--marker-yellow)', color: 'var(--warn-text)', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontWeight: 700, cursor: 'pointer', whiteSpace: 'nowrap' as const },
 
   modalBackdrop:     { position: 'fixed' as const, inset: 0, background: 'rgba(28,28,28,0.45)', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' },
   modal:             { background: 'var(--sheet)', borderRadius: 'var(--radius-lg)', padding: '2rem', maxWidth: '480px', width: '100%', display: 'flex', flexDirection: 'column' as const, gap: '1rem', boxShadow: '0 8px 32px rgba(0,0,0,0.18)' },

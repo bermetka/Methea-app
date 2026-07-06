@@ -119,6 +119,7 @@ export interface ResearchContext {
     narrative: string
   }
   ethics_confirmed?: boolean
+  export_count?: number        // free tier: 1 scaffold export allowed (watermarked)
   interview_guide?: {
     questions: InterviewQuestion[]
   }

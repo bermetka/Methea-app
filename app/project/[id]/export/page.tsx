@@ -38,6 +38,7 @@ export default async function ExportPage({ params }: { params: { id: string } })
       projectId={params.id}
       ctx={ctx}
       theories={(theories ?? []) as Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]}
+      exportCount={ctx.export_count ?? 0}
     />
   )
 }
