@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Document, Paragraph, TextRun, HeadingLevel, Packer } from 'docx'
+import { Document, Paragraph, TextRun, HeadingLevel, Packer, AlignmentType } from 'docx'
 import Logo from '@/components/ui/Logo'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
 import type { ResearchContext, Theory } from '@/types/database'
@@ -14,6 +14,8 @@ interface Props {
 
 export default function ExportView({ projectId, ctx, theories }: Props) {
   const [copiedSection, setCopiedSection] = useState<string | null>(null)
+  const [showPolishedModal, setShowPolishedModal] = useState(false)
+  const [polishedAcknowledged, setPolishedAcknowledged] = useState(false)
 
   const theoryMap   = Object.fromEntries(theories.map(t => [t.id, t]))
   const brief       = ctx.brief!
@@ -35,8 +37,100 @@ export default function ExportView({ projectId, ctx, theories }: Props) {
     setTimeout(() => setCopiedSection(null), 2000)
   }
 
-  async function exportFull() {
+  function annotation(text: string): Paragraph {
+    return new Paragraph({
+      children: [new TextRun({ text, italics: true, color: '7A6F5A', size: 18 })],
+      spacing: { after: 160 },
+    })
+  }
+
+  async function exportScaffold() {
     const children: Paragraph[] = [
+      new Paragraph({ text: 'Research Proposal Scaffold', heading: HeadingLevel.HEADING_1 }),
+      annotation('Complete each section below in your own words. The AI has structured the framework — the interpretation and writing are yours.'),
+      new Paragraph({ text: '' }),
+
+      new Paragraph({ text: 'Research Question', heading: HeadingLevel.HEADING_2 }),
+      new Paragraph({ children: [new TextRun({ text: brief.research_question, italics: true, size: 24 })], spacing: { after: 120 } }),
+      new Paragraph({ children: [new TextRun({ text: 'Topic: ', bold: true }), new TextRun(brief.topic)] }),
+      new Paragraph({ children: [new TextRun({ text: 'Degree: ', bold: true }), new TextRun(brief.degree_level)] }),
+      new Paragraph({ children: [new TextRun({ text: 'Discipline: ', bold: true }), new TextRun(brief.discipline)], spacing: { after: 300 } }),
+    ]
+
+    if (selectedIds.length) {
+      children.push(
+        new Paragraph({ text: 'Theoretical Framework', heading: HeadingLevel.HEADING_2 }),
+        annotation('The following theories were selected as the basis for your framework. Explain in your own words why each is relevant to your research question.'),
+      )
+      selectedIds.forEach(id => {
+        const t = theoryMap[id]
+        if (!t) return
+        children.push(
+          new Paragraph({ children: [new TextRun({ text: `${t.name} (${t.author}, ${t.year})`, bold: true })], spacing: { after: 60 } }),
+          annotation(`[Write 2–3 sentences explaining how ${t.name} applies to your research context.]`),
+        )
+      })
+      if (framework?.edges?.length) {
+        children.push(annotation('Key relationships your framework identified: ' + framework.edges.map(e => `${e.from} → ${e.to} (${e.label})`).join('; ') + '. Describe what these connections mean for your study.'))
+      }
+      children.push(new Paragraph({ text: '' }))
+    }
+
+    if (method) {
+      children.push(
+        new Paragraph({ text: 'Methodology', heading: HeadingLevel.HEADING_2 }),
+        annotation('Your methodology chain is set out below. For each choice, the AI has provided the reasoning — restate it in your own voice and connect it to your specific study.'),
+      )
+      const chain = [
+        { label: 'Research paradigm',  value: method.paradigm,        why: method.paradigm_why },
+        { label: 'Methodology',        value: method.methodology,     why: method.methodology_why },
+        { label: 'Data collection',    value: method.data_collection, why: method.data_collection_why },
+        { label: 'Sample strategy',    value: method.sample,          why: method.sample_why },
+        { label: 'Analysis method',    value: method.analysis_method, why: method.analysis_method_why },
+      ]
+      chain.forEach(item => {
+        children.push(
+          new Paragraph({ children: [new TextRun({ text: `${item.label}: `, bold: true }), new TextRun(item.value)], spacing: { after: 60 } }),
+          annotation(`Rationale: ${item.why} — [Rewrite this in your own words.]`),
+        )
+      })
+      children.push(annotation('[Write your methods paragraph here (120–160 words), integrating the five choices above into a coherent justification.]'))
+      children.push(new Paragraph({ text: '' }))
+    }
+
+    if (questions.length) {
+      children.push(
+        new Paragraph({ text: 'Interview Guide', heading: HeadingLevel.HEADING_2 }),
+        annotation('These questions were generated from your framework concepts. Review each one — adapt the wording to suit your participants and context.'),
+      )
+      questions.forEach((q, i) => {
+        children.push(
+          new Paragraph({ children: [new TextRun({ text: `${i + 1}. `, bold: true }), new TextRun(q.question)], spacing: { after: 60 } }),
+          new Paragraph({ children: [new TextRun({ text: `Framework concept: ${q.concept} · ${theoryMap[q.theory_id]?.name ?? q.theory_id}`, italics: true, size: 18, color: '7A6F5A' })], spacing: { after: 160 } }),
+        )
+      })
+    }
+
+    const doc  = new Document({ sections: [{ children }] })
+    const blob = await Packer.toBlob(doc)
+    const a    = document.createElement('a')
+    a.href     = URL.createObjectURL(blob)
+    a.download = 'methea-research-scaffold.docx'
+    a.click()
+  }
+
+  async function exportPolishedDraft() {
+    const children: Paragraph[] = [
+      new Paragraph({
+        children: [new TextRun({ text: '⚠ AI-GENERATED DRAFT — REWRITE BEFORE SUBMISSION', bold: true, color: 'B45309', size: 20 })],
+        alignment: AlignmentType.CENTER,
+        spacing: { after: 80 },
+      }),
+      new Paragraph({
+        children: [new TextRun({ text: 'This document was generated by AI. You must substantially rewrite it in your own voice before submitting it as your work.', italics: true, color: '7A6F5A', size: 18 })],
+        alignment: AlignmentType.CENTER,
+        spacing: { after: 400 },
+      }),
       new Paragraph({ text: 'Research Proposal', heading: HeadingLevel.HEADING_1 }),
       new Paragraph({ text: '' }),
       new Paragraph({ text: 'Research Question', heading: HeadingLevel.HEADING_2 }),
@@ -79,8 +173,10 @@ export default function ExportView({ projectId, ctx, theories }: Props) {
     const blob = await Packer.toBlob(doc)
     const a    = document.createElement('a')
     a.href     = URL.createObjectURL(blob)
-    a.download = 'methea-full-proposal.docx'
+    a.download = 'methea-polished-draft.docx'
     a.click()
+    setShowPolishedModal(false)
+    setPolishedAcknowledged(false)
   }
 
   return (
@@ -92,14 +188,60 @@ export default function ExportView({ projectId, ctx, theories }: Props) {
           <Logo size="sm" />
           <div style={s.headerActions}>
             <a href={`/project/${projectId}`} style={s.backLink}>← Back to project</a>
-            <button type="button" onClick={exportFull} style={s.exportBtn}>
-              Export full proposal (Word)
+            <button type="button" onClick={() => setShowPolishedModal(true)} style={s.ghostBtn}>
+              Generate polished draft →
+            </button>
+            <button type="button" onClick={exportScaffold} style={s.exportBtn}>
+              Export scaffold (Word)
             </button>
           </div>
         </div>
 
         <h1 style={s.pageTitle}>Research Proposal</h1>
-        <p style={s.pageSubtitle}>Full export — all sections expanded</p>
+        <p style={s.pageSubtitle}>Export your research scaffold — then fill in your own analysis and interpretation.</p>
+
+        {/* Polished draft modal */}
+        {showPolishedModal && (
+          <div style={s.modalBackdrop}>
+            <div style={s.modal}>
+              <p style={s.modalEyebrow}>Before you export</p>
+              <h2 style={s.modalHeading}>This is AI-generated text</h2>
+              <p style={s.modalBody}>
+                The polished draft contains AI-written narrative paragraphs. You must substantially
+                rewrite them in your own voice before submitting this as your work. Every exported
+                file will include a visible warning header.
+              </p>
+              <label style={s.modalCheckRow}>
+                <input
+                  type="checkbox"
+                  checked={polishedAcknowledged}
+                  onChange={e => setPolishedAcknowledged(e.target.checked)}
+                  style={s.modalCheckbox}
+                />
+                <span style={s.modalCheckLabel}>
+                  I understand this is AI-generated text and I will rewrite it before submission.
+                </span>
+              </label>
+              <div style={s.modalActions}>
+                <button
+                  type="button"
+                  onClick={() => { setShowPolishedModal(false); setPolishedAcknowledged(false) }}
+                  style={s.modalCancelBtn}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  onClick={exportPolishedDraft}
+                  disabled={!polishedAcknowledged}
+                  style={{ ...s.modalConfirmBtn, ...(!polishedAcknowledged ? s.modalConfirmDisabled : {}) }}
+                >
+                  Download draft
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
         <div style={s.doc}>
 
@@ -272,6 +414,19 @@ const s: Record<string, React.CSSProperties> = {
   headerActions:{ display: 'flex', alignItems: 'center', gap: '1rem' },
   backLink:    { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
   exportBtn:   { padding: '0.5rem 1rem', background: 'var(--ink-blue)', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
+
+  modalBackdrop:     { position: 'fixed' as const, inset: 0, background: 'rgba(28,28,28,0.45)', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' },
+  modal:             { background: 'var(--sheet)', borderRadius: 'var(--radius-lg)', padding: '2rem', maxWidth: '480px', width: '100%', display: 'flex', flexDirection: 'column' as const, gap: '1rem', boxShadow: '0 8px 32px rgba(0,0,0,0.18)' },
+  modalEyebrow:      { fontSize: '0.625rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' as const, color: 'var(--pencil)' },
+  modalHeading:      { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.25rem', fontWeight: 600, color: 'var(--ink)', lineHeight: 1.25 },
+  modalBody:         { fontSize: '0.9375rem', lineHeight: 1.65, color: 'var(--graphite)' },
+  modalCheckRow:     { display: 'flex', gap: '0.75rem', alignItems: 'flex-start', padding: '0.875rem', background: 'var(--paper-deep)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', cursor: 'pointer' },
+  modalCheckbox:     { flexShrink: 0, width: 18, height: 18, marginTop: '0.1rem', accentColor: 'var(--moss)', cursor: 'pointer' },
+  modalCheckLabel:   { fontSize: '0.875rem', color: 'var(--ink)', lineHeight: 1.55 },
+  modalActions:      { display: 'flex', gap: '0.75rem', justifyContent: 'flex-end', marginTop: '0.25rem' },
+  modalCancelBtn:    { padding: '0.5rem 1rem', background: 'transparent', border: '1px solid var(--stone)', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, color: 'var(--graphite)', cursor: 'pointer' },
+  modalConfirmBtn:   { padding: '0.5rem 1.25rem', background: 'var(--ink)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
+  modalConfirmDisabled: { opacity: 0.4, cursor: 'not-allowed' },
 
   pageTitle:   { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.75rem', fontWeight: 400, color: 'var(--ink)', letterSpacing: '-0.02em', margin: 0 },
   pageSubtitle:{ fontSize: '0.875rem', color: 'var(--pencil)', marginTop: '0.25rem' },
