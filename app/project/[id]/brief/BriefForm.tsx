@@ -20,6 +20,14 @@ const DISCIPLINES = [
 
 interface Props { projectId: string }
 
+const MAX_FILE_BYTES = 10 * 1024 * 1024
+const ALLOWED_EXTENSIONS = ['.pdf', '.doc', '.docx']
+
+const SUBMIT_ERROR_MESSAGES: Record<string, string> = {
+  FILE_PARSE_FAILED: "We couldn't read that file — it may be corrupted. Try a different file, or continue without it.",
+  DEFAULT: 'Something went wrong — please try again.',
+}
+
 export default function BriefForm({ projectId }: Props) {
   const [topic, setTopic]             = useState('')
   const [degree, setDegree]           = useState('')
@@ -30,9 +38,31 @@ export default function BriefForm({ projectId }: Props) {
   const [file, setFile]               = useState<File | null>(null)
   const [status, setStatus]           = useState<'idle' | 'submitting' | 'error'>('idle')
   const [errors, setErrors]           = useState<Record<string, string>>({})
+  const [submitError, setSubmitError] = useState('')
   const fileRef = useRef<HTMLInputElement>(null)
 
   const isValid = topic.trim().length >= 10 && degree !== '' && discipline !== ''
+
+  function validateFile(f: File): string | null {
+    const ext = '.' + f.name.split('.').pop()?.toLowerCase()
+    if (!ALLOWED_EXTENSIONS.includes(ext)) {
+      return 'Please upload a PDF or Word document (.pdf, .doc, .docx).'
+    }
+    if (f.size > MAX_FILE_BYTES) {
+      return 'That file is larger than 10 MB — try a smaller file.'
+    }
+    return null
+  }
+
+  function acceptFile(f: File) {
+    const fileError = validateFile(f)
+    if (fileError) {
+      setErrors(p => ({ ...p, file: fileError }))
+      return
+    }
+    setErrors(p => ({ ...p, file: '' }))
+    setFile(f)
+  }
 
   function validate(): boolean {
     const e: Record<string, string> = {}
@@ -42,6 +72,10 @@ export default function BriefForm({ projectId }: Props) {
       e.degree = 'Please select your degree level so I can tailor the methodology guidance.'
     if (!discipline)
       e.discipline = 'Knowing your discipline helps match the right theoretical traditions.'
+    if (file) {
+      const fileError = validateFile(file)
+      if (fileError) e.file = fileError
+    }
     setErrors(e)
     return Object.keys(e).length === 0
   }
@@ -50,6 +84,7 @@ export default function BriefForm({ projectId }: Props) {
     e.preventDefault()
     if (!validate()) return
     setStatus('submitting')
+    setSubmitError('')
 
     const formData = new FormData()
     formData.append('projectId', projectId)
@@ -60,8 +95,13 @@ export default function BriefForm({ projectId }: Props) {
     if (file) formData.append('file', file)
 
     try {
-      await submitBrief(formData)
+      const result = await submitBrief(formData)
+      if (result?.error) {
+        setSubmitError(SUBMIT_ERROR_MESSAGES[result.error] ?? SUBMIT_ERROR_MESSAGES.DEFAULT)
+        setStatus('error')
+      }
     } catch {
+      setSubmitError(SUBMIT_ERROR_MESSAGES.DEFAULT)
       setStatus('error')
     }
   }
@@ -144,13 +184,13 @@ export default function BriefForm({ projectId }: Props) {
         </button>
         {showUpload && (
           <div
-            style={s.dropzone}
+            style={{ ...s.dropzone, ...(errors.file ? s.inputError : {}) }}
             onClick={() => fileRef.current?.click()}
             onDragOver={e => e.preventDefault()}
             onDrop={e => {
               e.preventDefault()
               const f = e.dataTransfer.files[0]
-              if (f) setFile(f)
+              if (f) acceptFile(f)
             }}
           >
             {file
@@ -162,14 +202,19 @@ export default function BriefForm({ projectId }: Props) {
               type="file"
               accept=".pdf,.doc,.docx"
               style={{ display: 'none' }}
-              onChange={e => e.target.files?.[0] && setFile(e.target.files[0])}
+              onChange={e => {
+                const f = e.target.files?.[0]
+                if (f) acceptFile(f)
+                e.target.value = ''
+              }}
             />
           </div>
         )}
+        {errors.file && <p style={s.errorText}>{errors.file}</p>}
       </div>
 
       {status === 'error' && (
-        <p style={s.errorText}>Something went wrong — please try again.</p>
+        <p style={s.errorText}>{submitError || SUBMIT_ERROR_MESSAGES.DEFAULT}</p>
       )}
 
       {/* Submit */}

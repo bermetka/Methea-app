@@ -5,7 +5,7 @@ import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
 import { extractBrief, generateSocraticQuestions } from '@/lib/prompts/brief'
 
-export async function submitBrief(formData: FormData) {
+export async function submitBrief(formData: FormData): Promise<{ error: string } | void> {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
@@ -16,11 +16,21 @@ export async function submitBrief(formData: FormData) {
   const discipline  = formData.get('discipline') as string
   const readingList = formData.get('readingList') as string | null
 
-  // Parse uploaded file if present
+  // Parse uploaded file if present — never fail the whole submission over a bad file
   let fileText: string | undefined
+  let fileExtractionEmpty = false
   const file = formData.get('file') as File | null
   if (file && file.size > 0) {
-    fileText = await parseUploadedFile(file)
+    try {
+      const parsed = await parseUploadedFile(file)
+      fileText = parsed.text
+      fileExtractionEmpty = parsed.empty
+    } catch (err) {
+      if (err instanceof FileParseError) {
+        return { error: 'FILE_PARSE_FAILED' }
+      }
+      throw err
+    }
   }
 
   // Verify project belongs to this user
@@ -63,6 +73,7 @@ export async function submitBrief(formData: FormData) {
         questions,
       },
       outdated_blocks: outdatedBlocks,
+      file_extraction_empty: fileExtractionEmpty,
     },
     supabase
   )
@@ -70,24 +81,38 @@ export async function submitBrief(formData: FormData) {
   redirect(`/project/${projectId}/gate1`)
 }
 
-async function parseUploadedFile(file: File): Promise<string> {
+class FileParseError extends Error {
+  code = 'FILE_PARSE_FAILED' as const
+  constructor(cause: unknown) {
+    super('Failed to parse uploaded file')
+    this.cause = cause
+  }
+}
+
+async function parseUploadedFile(file: File): Promise<{ text: string; empty: boolean }> {
   const buffer = Buffer.from(await file.arrayBuffer())
   const name = file.name.toLowerCase()
 
-  if (name.endsWith('.docx') || name.endsWith('.doc')) {
-    const mammoth = await import('mammoth')
-    const result = await mammoth.extractRawText({ buffer })
-    return result.value.slice(0, 8000)
+  try {
+    if (name.endsWith('.docx') || name.endsWith('.doc')) {
+      const mammoth = await import('mammoth')
+      const result = await mammoth.extractRawText({ buffer })
+      const text = result.value.slice(0, 8000)
+      return { text, empty: text.trim().length === 0 }
+    }
+
+    if (name.endsWith('.pdf')) {
+      const { PDFParse } = await import('pdf-parse')
+      const parser = new PDFParse({ data: buffer })
+      // pageJoiner defaults to inserting "-- N of M --" per page, which would
+      // make an image-only/scanned PDF look non-empty after trimming
+      const result = await parser.getText({ pageJoiner: '' })
+      const text = (result.text ?? '').slice(0, 8000)
+      return { text, empty: text.trim().length === 0 }
+    }
+  } catch (err) {
+    throw new FileParseError(err)
   }
 
-  if (name.endsWith('.pdf')) {
-    // pdf-parse exports differently depending on module resolution
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const pdfModule = await import('pdf-parse') as any
-    const pdfParse = pdfModule.default ?? pdfModule
-    const data = await pdfParse(buffer)
-    return data.text.slice(0, 8000)
-  }
-
-  return ''
+  return { text: '', empty: true }
 }

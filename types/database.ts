@@ -130,6 +130,7 @@ export interface ResearchContext {
     gate3_completed: boolean
   }
   outdated_blocks: string[]
+  file_extraction_empty?: boolean
 }
 
 // --- DB row types ---
