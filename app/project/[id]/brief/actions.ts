@@ -102,13 +102,11 @@ async function parseUploadedFile(file: File): Promise<{ text: string; empty: boo
     }
 
     if (name.endsWith('.pdf')) {
-      const { PDFParse } = await import('pdf-parse')
-      const parser = new PDFParse({ data: buffer })
-      // pageJoiner defaults to inserting "-- N of M --" per page, which would
-      // make an image-only/scanned PDF look non-empty after trimming
-      const result = await parser.getText({ pageJoiner: '' })
-      const text = (result.text ?? '').slice(0, 8000)
-      return { text, empty: text.trim().length === 0 }
+      const { extractText, getDocumentProxy } = await import('unpdf')
+      const pdf = await getDocumentProxy(new Uint8Array(buffer))
+      const { text } = await extractText(pdf, { mergePages: true })
+      const trimmed = (text ?? '').slice(0, 8000)
+      return { text: trimmed, empty: trimmed.trim().length === 0 }
     }
   } catch (err) {
     throw new FileParseError(err)

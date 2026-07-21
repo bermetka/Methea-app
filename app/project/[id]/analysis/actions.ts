@@ -26,11 +26,10 @@ export async function runTranscriptAnalysis(formData: FormData) {
     const result = await mammoth.extractRawText({ buffer })
     transcriptText = result.value
   } else if (name.endsWith('.pdf')) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const pdfModule = await import('pdf-parse') as any
-    const pdfParse = pdfModule.default ?? pdfModule
-    const data = await pdfParse(buffer)
-    transcriptText = data.text
+    const { extractText, getDocumentProxy } = await import('unpdf')
+    const pdf = await getDocumentProxy(new Uint8Array(buffer))
+    const { text } = await extractText(pdf, { mergePages: true })
+    transcriptText = text ?? ''
   } else {
     // .txt or plain text
     transcriptText = buffer.toString('utf-8')
