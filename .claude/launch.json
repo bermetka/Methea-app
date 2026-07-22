@@ -13,6 +13,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "3333", "--directory", "docs"],
       "port": 3333
+    },
+    {
+      "name": "methea-landing",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd '/Users/bermetkoshoeva/CLAUDE Methea/methea-landing' && npm run dev -- -p 3210"],
+      "port": 3210
     }
   ]
 }
