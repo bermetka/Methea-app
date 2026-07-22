@@ -108,14 +108,14 @@ export default async function LandingPage() {
                 color: 'var(--marker-lime)',
                 title: 'Plan',
                 desc: 'Upload your brief. Methea suggests theories, builds your conceptual framework, and derives a complete methodology chain — each step with a plain-English "why."',
-                items: ['Theory discovery (40-theory library)', 'Framework builder', 'Methodology chain', 'Socratic clarification gates'],
+                items: ['Theory discovery (40-theory library)', 'Framework builder', 'Methodology chain', 'Socratic clarification gate'],
               },
               {
                 num: '02',
                 color: 'var(--marker-yellow)',
                 title: 'Collect',
                 desc: 'Generate an interview guide anchored to your exact framework concepts. Every question is tagged to the theory it probes.',
-                items: ['10–15 interview questions', 'Ethics confirmation gate', 'Each question tagged to framework', 'Export to Word'],
+                items: ['10–15 interview questions', 'Each question tagged to framework', 'Export to Word'],
               },
               {
                 num: '03',
@@ -184,7 +184,7 @@ export default async function LandingPage() {
           <div style={s.pricingGrid}>
             <div style={s.pricingCard}>
               <p style={s.planName}>Free</p>
-              <p style={s.planPrice}>£0</p>
+              <p style={s.planPrice}>$0</p>
               <p style={s.planNote}>Always free</p>
               <ul style={s.planItems}>
                 {['1 project', 'Full framework builder', 'Methodology chain', 'Education layer (all glossary + reasoning)', 'View everything in-app'].map(i => (

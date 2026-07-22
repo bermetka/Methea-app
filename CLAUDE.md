@@ -14,9 +14,10 @@ the same underlying infrastructure (Next.js, Supabase, Claude API, Whisper).
 
 ## Current status
 
-Pre-build. Running a 14-day validation sprint (Reddit, Threads, o-nion async
-interviews, Erasmus network) before writing Sprint 0 code. Do not generate
-production scaffolding until told validation gate is passed.
+Active build. Sprints 0–6 shipped (Plan + Analyse layers), Sprint 7 in progress
+(pitch-critical fixes C1/C2/C3 + hardening H-series — see vault
+projects/methea/claude-code-prompts-sprint7.md). Demo project seeded in Supabase.
+Validation (custdev) runs in parallel and does not gate the build.
 
 Landing page already live (Next.js + Supabase waitlist) at
 methea-landing-git-main-bermet-koshoevas-projects.vercel.app — repo:
