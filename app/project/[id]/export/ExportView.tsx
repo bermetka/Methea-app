@@ -7,7 +7,7 @@ import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkD
 import { incrementExportCount } from './actions'
 import type { ResearchContext, Theory } from '@/types/database'
 
-const FREE_EXPORT_LIMIT = 1
+const FREE_EXPORT_LIMIT = Number(process.env.NEXT_PUBLIC_FREE_EXPORT_LIMIT ?? 1)
 
 interface Props {
   projectId: string
