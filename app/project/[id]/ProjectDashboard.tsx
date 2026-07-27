@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer } from 'docx'
 import Logo from '@/components/ui/Logo'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
+import UnlockButton from '@/components/paywall/UnlockButton'
 import type { ResearchContext, Theory } from '@/types/database'
 
 // ── Accent palette per section ────────────────────────────────────────────────
@@ -24,9 +25,10 @@ interface Props {
   ctx: ResearchContext
   theories: Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]
   isComplete: boolean
+  paid: boolean
 }
 
-export default function ProjectDashboard({ projectId, ctx, theories, isComplete }: Props) {
+export default function ProjectDashboard({ projectId, ctx, theories, isComplete, paid }: Props) {
   const [open, setOpen]               = useState<Record<string, boolean>>({})
   const [copiedSection, setCopiedSection] = useState<string | null>(null)
   const [tooltipId, setTooltipId]     = useState<string | null>(null)
@@ -111,13 +113,17 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete 
   const allConcepts = Array.from(new Set(questions.map(q => q.concept)))
 
   // ── Card definitions (status drives spine dot color) ──────────────────────────
-  type CardStatus = 'done' | 'outdated' | 'locked' | 'empty'
+  type CardStatus = 'done' | 'outdated' | 'locked' | 'empty' | 'paywalled'
   const outdated = new Set(ctx.outdated_blocks ?? [])
   const qStatus:  CardStatus = 'done'
-  const fwStatus: CardStatus = frameworkDone   ? (outdated.has('framework')   ? 'outdated' : 'done') : 'empty'
-  const mStatus:  CardStatus = methodologyDone ? (outdated.has('methodology') ? 'outdated' : 'done') : frameworkDone   ? 'empty' : 'locked'
-  const igStatus: CardStatus = interviewDone   ? (outdated.has('interview_guide') ? 'outdated' : 'done') : methodologyDone ? 'empty' : 'locked'
-  const anStatus: CardStatus = findingsDone ? 'done' : interviewDone ? 'empty' : 'locked'
+  const fwStatus: CardStatus = !paid && frameworkDone ? 'paywalled'
+    : frameworkDone ? (outdated.has('framework') ? 'outdated' : 'done') : 'empty'
+  const mStatus:  CardStatus = !paid && frameworkDone ? 'paywalled'
+    : methodologyDone ? (outdated.has('methodology') ? 'outdated' : 'done') : frameworkDone ? 'empty' : 'locked'
+  const igStatus: CardStatus = !paid && methodologyDone ? 'paywalled'
+    : interviewDone ? (outdated.has('interview_guide') ? 'outdated' : 'done') : methodologyDone ? 'empty' : 'locked'
+  const anStatus: CardStatus = !paid && interviewDone ? 'paywalled'
+    : findingsDone ? 'done' : interviewDone ? 'empty' : 'locked'
 
   const CONNECTORS = [
     { id: 'c1', label: 'shapes which theories fit' },
@@ -141,8 +147,16 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete 
           </div>
         </div>
 
-        {/* Banner */}
-        {nextHref && (
+        {/* Banner — unlock takes priority over "next step" once theories are selected */}
+        {!paid && frameworkDone ? (
+          <div style={s.banner}>
+            <div>
+              <p style={s.bannerEyebrow}>Unlock this project</p>
+              <p style={s.bannerText}>Get the full framework narrative, methodology, interview guide, and analysis.</p>
+            </div>
+            <UnlockButton projectId={projectId} label="Unlock — $49 →" />
+          </div>
+        ) : nextHref && (
           <div style={s.banner}>
             <div>
               <p style={s.bannerEyebrow}>Next step</p>
@@ -199,7 +213,17 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete 
 
             {/* Framework */}
             <SpineRow status={fwStatus}>
-              {frameworkDone ? (
+              {fwStatus === 'paywalled' ? (
+                <LockedCard
+                  accent={ACCENT.framework}
+                  kicker="Conceptual framework"
+                  title="Preview available"
+                  status="paywalled"
+                  href={`/project/${projectId}/framework`}
+                  ctaLabel="Preview & unlock →"
+                  lockedReason="Your framework diagram is ready — unlock this project to see the full verified narrative."
+                />
+              ) : frameworkDone ? (
                 <SectionCard
                   id="framework"
                   accent={ACCENT.framework}
@@ -307,6 +331,15 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete 
                   </div>
                   <p style={s.narrative}>{method!.narrative}</p>
                 </SectionCard>
+              ) : mStatus === 'paywalled' ? (
+                <LockedCard
+                  accent={ACCENT.methodology}
+                  kicker="Methodology"
+                  title="Methodology chain"
+                  status="paywalled"
+                  lockedReason="Unlock this project to get your full paradigm-to-analysis methodology chain."
+                  unlockSlot={<UnlockButton projectId={projectId} />}
+                />
               ) : (
                 <LockedCard
                   accent={ACCENT.methodology}
@@ -367,6 +400,15 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete 
                     </div>
                   ))}
                 </SectionCard>
+              ) : igStatus === 'paywalled' ? (
+                <LockedCard
+                  accent={ACCENT.guide}
+                  kicker="Interview guide"
+                  title="Interview guide"
+                  status="paywalled"
+                  lockedReason="Unlock this project to get your full interview guide."
+                  unlockSlot={<UnlockButton projectId={projectId} />}
+                />
               ) : (
                 <LockedCard
                   accent={ACCENT.guide}
@@ -419,6 +461,15 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete 
                     ))}
                   </div>
                 </SectionCard>
+              ) : anStatus === 'paywalled' ? (
+                <LockedCard
+                  accent={ACCENT.analysis}
+                  kicker="Findings analysis"
+                  title="Findings analysis"
+                  status="paywalled"
+                  lockedReason="Unlock this project to upload transcripts and get your full findings analysis."
+                  unlockSlot={<UnlockButton projectId={projectId} />}
+                />
               ) : (
                 <LockedCard
                   accent={ACCENT.analysis}
@@ -447,7 +498,7 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete 
 // Renders the continuous vertical line + dots. Positioned absolutely over the
 // left margin area. Heights are managed by the SpineRow/SpineConnector rows.
 
-function SpineRail({ dots }: { dots: Array<'done' | 'outdated' | 'locked' | 'empty'> }) {
+function SpineRail({ dots }: { dots: Array<'done' | 'outdated' | 'locked' | 'empty' | 'paywalled'> }) {
   // The rail is decorative only — dots are actually rendered inside SpineRow
   // This component renders nothing; dots live in SpineRow
   return null
@@ -456,14 +507,15 @@ function SpineRail({ dots }: { dots: Array<'done' | 'outdated' | 'locked' | 'emp
 // ── SpineRow ──────────────────────────────────────────────────────────────────
 
 function SpineRow({ status, children }: {
-  status: 'done' | 'outdated' | 'locked' | 'empty'
+  status: 'done' | 'outdated' | 'locked' | 'empty' | 'paywalled'
   children: React.ReactNode
 }) {
   const dotCfg = {
-    done:     { bg: 'var(--marker-green)',  border: 'none',                      glyph: '✓', glyphColor: 'var(--moss)' },
-    outdated: { bg: 'var(--marker-yellow)', border: 'none',                      glyph: '⚠', glyphColor: 'var(--warn-text)' },
-    locked:   { bg: 'transparent',          border: '2px solid var(--stone)',    glyph: '○', glyphColor: 'var(--pencil)' },
-    empty:    { bg: 'transparent',          border: '2px dashed var(--stone)',   glyph: '',  glyphColor: 'var(--pencil)' },
+    done:      { bg: 'var(--marker-green)',  border: 'none',                      glyph: '✓', glyphColor: 'var(--moss)' },
+    outdated:  { bg: 'var(--marker-yellow)', border: 'none',                      glyph: '⚠', glyphColor: 'var(--warn-text)' },
+    locked:    { bg: 'transparent',          border: '2px solid var(--stone)',    glyph: '○', glyphColor: 'var(--pencil)' },
+    empty:     { bg: 'transparent',          border: '2px dashed var(--stone)',   glyph: '',  glyphColor: 'var(--pencil)' },
+    paywalled: { bg: 'transparent',          border: '2px solid var(--ink)',      glyph: '$', glyphColor: 'var(--ink)' },
   }[status]
 
   return (
@@ -582,10 +634,11 @@ function SectionCard({
 
 // ── LockedCard ────────────────────────────────────────────────────────────────
 
-function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReason, locked, derivedFrom }: {
-  accent: string; kicker: string; title: string; status?: 'done' | 'outdated' | 'locked' | 'empty'
+function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReason, locked, derivedFrom, unlockSlot }: {
+  accent: string; kicker: string; title: string; status?: 'done' | 'outdated' | 'locked' | 'empty' | 'paywalled'
   href?: string; ctaLabel?: string; lockedReason?: string; locked?: boolean
   derivedFrom?: { label: string; sourceCardId: string }
+  unlockSlot?: React.ReactNode
 }) {
   return (
     <div style={{ ...s.card, borderLeftColor: accent, opacity: locked ? 0.55 : 1 }}>
@@ -597,6 +650,8 @@ function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReaso
         <div style={s.cardHeaderRight}>
           {locked
             ? <span style={s.lockBadge}>🔒 v2</span>
+            : status === 'paywalled'
+            ? <StatusBadge status="paywalled" label="$49 to unlock" />
             : status === 'empty'
             ? <StatusBadge status="locked" label="Not started" />
             : <StatusBadge status="locked" />
@@ -611,6 +666,7 @@ function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReaso
           <span style={s.derivedValue}>{derivedFrom.label}</span>
         </div>
       )}
+      {unlockSlot && <div style={s.cardActions}>{unlockSlot}</div>}
       {href && ctaLabel && (
         <div style={s.cardActions}>
           <a href={href} style={{ ...s.actionBtnPrimary, background: accent, borderColor: accent }}>{ctaLabel}</a>
@@ -622,11 +678,12 @@ function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReaso
 
 // ── StatusBadge ───────────────────────────────────────────────────────────────
 
-function StatusBadge({ status, label }: { status: 'done' | 'outdated' | 'locked'; label?: string }) {
+function StatusBadge({ status, label }: { status: 'done' | 'outdated' | 'locked' | 'paywalled'; label?: string }) {
   const cfg = {
-    done:     { bg: 'var(--mint)',          color: 'var(--moss)',      text: label ?? '✓ Done' },
-    outdated: { bg: 'var(--marker-yellow)', color: 'var(--warn-text)', text: label ?? '⚠ Outdated' },
-    locked:   { bg: 'var(--paper-deep)',    color: 'var(--pencil)',    text: label ?? '○ Locked' },
+    done:      { bg: 'var(--mint)',          color: 'var(--moss)',      text: label ?? '✓ Done' },
+    outdated:  { bg: 'var(--marker-yellow)', color: 'var(--warn-text)', text: label ?? '⚠ Outdated' },
+    locked:    { bg: 'var(--paper-deep)',    color: 'var(--pencil)',    text: label ?? '○ Locked' },
+    paywalled: { bg: 'var(--ink)',           color: 'var(--sheet)',     text: label ?? '$ Unlock' },
   }[status]
   return <span style={{ ...s.badge, background: cfg.bg, color: cfg.color }}>{cfg.text}</span>
 }
