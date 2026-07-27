@@ -89,11 +89,6 @@ export default function ExportView({ projectId, ctx, theories, paid }: Props) {
 
   async function exportScaffold() {
     const children: Paragraph[] = [
-      new Paragraph({
-        children: [new TextRun({ text: 'Created with Methea · methea.app', italics: true, color: 'AAAAAA', size: 16 })],
-        alignment: AlignmentType.CENTER,
-        spacing: { after: 200 },
-      }),
       new Paragraph({ text: 'Research Proposal Scaffold', heading: HeadingLevel.HEADING_1 }),
       annotation('Complete each section below in your own words. The AI has structured the framework — the interpretation and writing are yours.'),
       new Paragraph({ text: '' }),
