@@ -17,6 +17,10 @@ create table public.projects (
     "outdated_blocks": []
   }'::jsonb,
   context_version   integer not null default 1,
+  -- Paddle entitlement — set by the webhook when a $49 one-time payment is
+  -- verified for this project. NULL = free/unpaid.
+  paid_at              timestamptz null,
+  paddle_transaction_id text null,
   created_at        timestamptz not null default now(),
   updated_at        timestamptz not null default now()
 );
@@ -28,6 +32,9 @@ create policy "Users can manage their own projects"
   for all
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
+
+-- Same transaction can never be recorded against two different projects.
+create unique index on public.projects (paddle_transaction_id) where paddle_transaction_id is not null;
 
 -- ─── research_context_versions (audit trail / ripple-effect diffing) ──────────
 create table public.research_context_versions (
