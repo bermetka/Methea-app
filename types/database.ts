@@ -142,6 +142,8 @@ export interface Project {
   status: ProjectStatus
   research_context: ResearchContext
   context_version: number
+  paid_at: string | null
+  paddle_transaction_id: string | null
   created_at: string
   updated_at: string
 }
