@@ -2,6 +2,8 @@ import { redirect } from 'next/navigation'
 import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import { generateInterviewGuide } from '@/lib/prompts/interview'
+import { isProjectPaid } from '@/lib/entitlement'
+import PaywallLock from '@/components/paywall/PaywallLock'
 import InterviewGuideView from './InterviewGuide'
 import EthicsCheckpoint from './EthicsCheckpoint'
 import type { Project, Theory } from '@/types/database'
@@ -27,6 +29,18 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
 
   // Guard: must have methodology before interview guide
   if (!ctx?.methodology?.narrative) redirect(`/project/${params.id}/methodology`)
+
+  // Paid-only step — checked before the ethics checkpoint so unpaid users
+  // don't see a checkpoint for a feature they can't use yet
+  if (!isProjectPaid(p)) {
+    return (
+      <PaywallLock
+        projectId={params.id}
+        title="Your interview guide is ready to build"
+        description="Unlock this project to generate 10-15 interview questions, each tagged to a framework concept, plus transcript analysis."
+      />
+    )
+  }
 
   // Ethics checkpoint — must confirm before generating guide
   if (!ctx.ethics_confirmed) {
