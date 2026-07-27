@@ -74,12 +74,11 @@ export default async function FrameworkPage({ params }: { params: { id: string }
   // Narrative + citations are paid-only. Not generated, not fetched, not sent
   // to the client at all when unpaid — a blurred placeholder is not enough,
   // the real text must never leave the server for an unpaid project.
-  let narrativeResult = {
-    narrative: ctx.framework?.narrative ?? '',
-    citations: ctx.framework?.citations ?? [],
-  }
+  let narrativeResult = paid
+    ? { narrative: ctx.framework?.narrative ?? '', citations: ctx.framework?.citations ?? [] }
+    : { narrative: '', citations: [] }
   let citationStatuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'> =
-    ctx.framework?.citation_statuses ?? {}
+    paid ? (ctx.framework?.citation_statuses ?? {}) : {}
 
   if (paid && !narrativeResult.narrative) {
     narrativeResult = await generateFrameworkNarrative(ctx, theories, edges)
