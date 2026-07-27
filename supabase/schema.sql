@@ -36,6 +36,21 @@ create policy "Users can manage their own projects"
 -- Same transaction can never be recorded against two different projects.
 create unique index on public.projects (paddle_transaction_id) where paddle_transaction_id is not null;
 
+-- paid_at/paddle_transaction_id must only ever be written by the service-role
+-- Paddle webhook (which bypasses grants/RLS entirely), never by the
+-- session-scoped anon/authenticated client the app uses everywhere else.
+-- RLS's row-ownership check alone does NOT restrict which columns an UPDATE
+-- can touch, so this must be enforced at the column-grant level too. A
+-- column-level REVOKE alone is not sufficient here — Postgres does not let a
+-- column-level REVOKE narrow an already-existing table-level GRANT, so the
+-- table-level UPDATE grant must be revoked first, then re-granted only on the
+-- exact columns the app's session-scoped client legitimately writes. Verified
+-- on prod via has_column_privilege() before and after.
+revoke update on public.projects from authenticated, anon;
+
+grant update (title, status, research_context, context_version, updated_at)
+  on public.projects to authenticated, anon;
+
 -- ─── research_context_versions (audit trail / ripple-effect diffing) ──────────
 create table public.research_context_versions (
   id                uuid primary key default gen_random_uuid(),
