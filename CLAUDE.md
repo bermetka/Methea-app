@@ -131,7 +131,7 @@ Verification:  OpenAlex + CrossRef APIs
 Transcription: Whisper API (reuse o-nion) — v1.1
 File parsing:  Mammoth.js (docx), pdf-parse (PDF)
 Export:        SVG→PNG, docx npm (Word), jsPDF (PDF)
-Payments:      Lemon Squeezy (decided over Paddle for simpler $19/$49 SKUs)
+Payments:      Paddle (merchant-of-record — handles VAT/tax/refunds; connected). Launch = $49/project one-time; $19/mo deferred
 Hosting:       Vercel
 ```
 

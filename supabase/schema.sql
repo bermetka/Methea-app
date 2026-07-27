@@ -53,11 +53,18 @@ create policy "Users can view versions of their own projects"
     )
   );
 
--- Only the server (service role) inserts versions — no insert policy for anon/user
-create policy "Service role can insert versions"
+-- Users may insert versions only for projects they own (mirrors the SELECT policy).
+-- Fixed 21.07.2026 — was `with check (true)`, a cross-tenant write hole.
+create policy "Users can insert versions of their own projects"
   on public.research_context_versions
   for insert
-  with check (true);  -- restricted at application layer via service key
+  with check (
+    exists (
+      select 1 from public.projects
+      where projects.id = research_context_versions.project_id
+        and projects.user_id = auth.uid()
+    )
+  );
 
 -- ─── theories (closed, curated library — AI never invents entries here) ───────
 create table public.theories (
