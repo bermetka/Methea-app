@@ -120,9 +120,9 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
     : frameworkDone ? (outdated.has('framework') ? 'outdated' : 'done') : 'empty'
   const mStatus:  CardStatus = !paid && frameworkDone ? 'paywalled'
     : methodologyDone ? (outdated.has('methodology') ? 'outdated' : 'done') : frameworkDone ? 'empty' : 'locked'
-  const igStatus: CardStatus = !paid && methodologyDone ? 'paywalled'
+  const igStatus: CardStatus = !paid && frameworkDone ? 'paywalled'
     : interviewDone ? (outdated.has('interview_guide') ? 'outdated' : 'done') : methodologyDone ? 'empty' : 'locked'
-  const anStatus: CardStatus = !paid && interviewDone ? 'paywalled'
+  const anStatus: CardStatus = !paid && frameworkDone ? 'paywalled'
     : findingsDone ? 'done' : interviewDone ? 'empty' : 'locked'
 
   const CONNECTORS = [
