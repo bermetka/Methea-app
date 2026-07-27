@@ -1,11 +1,35 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { generateRelationshipLabels, generateFrameworkNarrative } from '@/lib/prompts/framework'
+import { updateResearchContext } from '@/lib/research-context'
+import { isProjectPaid } from '@/lib/entitlement'
 import Logo from '@/components/ui/Logo'
 import FrameworkBuilder from './FrameworkBuilder'
 import type { Project, Theory } from '@/types/database'
 
 export const metadata = { title: 'Your framework — Methea' }
+
+async function saveFrameworkEdgesOnly(
+  projectId: string,
+  edges: import('@/types/database').FrameworkEdge[],
+  ctx: import('@/types/database').ResearchContext
+) {
+  const supabase = createClient()
+  await updateResearchContext(
+    projectId,
+    'framework',
+    {
+      framework: {
+        layout_preset: ctx.framework?.layout_preset ?? 'hub-and-spoke',
+        edges,
+        narrative: ctx.framework?.narrative ?? '',
+        citations: ctx.framework?.citations ?? [],
+        citation_statuses: ctx.framework?.citation_statuses ?? {},
+      },
+    },
+    supabase
+  )
+}
 
 export default async function FrameworkPage({ params }: { params: { id: string } }) {
   const supabase = createClient()
@@ -37,8 +61,19 @@ export default async function FrameworkPage({ params }: { params: { id: string }
 
   const theories = theoriesData as Theory[]
 
-  // Use saved framework if available, otherwise generate
+  const paid = isProjectPaid(p)
+
+  // Diagram (edges) is the free teaser — always generate/keep it.
   let edges = ctx.framework?.edges ?? []
+  if (!edges.length) {
+    edges = await generateRelationshipLabels(ctx, theories)
+    // Persist the diagram immediately so it's not regenerated on every free view.
+    await saveFrameworkEdgesOnly(params.id, edges, ctx)
+  }
+
+  // Narrative + citations are paid-only. Not generated, not fetched, not sent
+  // to the client at all when unpaid — a blurred placeholder is not enough,
+  // the real text must never leave the server for an unpaid project.
   let narrativeResult = {
     narrative: ctx.framework?.narrative ?? '',
     citations: ctx.framework?.citations ?? [],
@@ -46,8 +81,7 @@ export default async function FrameworkPage({ params }: { params: { id: string }
   let citationStatuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'> =
     ctx.framework?.citation_statuses ?? {}
 
-  if (!edges.length) {
-    edges = await generateRelationshipLabels(ctx, theories)
+  if (paid && !narrativeResult.narrative) {
     narrativeResult = await generateFrameworkNarrative(ctx, theories, edges)
 
     await Promise.all(
@@ -70,6 +104,22 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           citationStatuses[key] = 'unverified'
         }
       })
+    )
+
+    // Persist narrative + citations now that they've been generated for a paid project.
+    await updateResearchContext(
+      params.id,
+      'framework',
+      {
+        framework: {
+          layout_preset: ctx.framework?.layout_preset ?? (theories.length === 2 ? 'linear' : 'hub-and-spoke'),
+          edges,
+          narrative: narrativeResult.narrative,
+          citations: narrativeResult.citations,
+          citation_statuses: citationStatuses,
+        },
+      },
+      supabase
     )
   }
 
@@ -100,6 +150,7 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           citations={narrativeResult.citations}
           citationStatuses={citationStatuses}
           defaultLayout={defaultLayout}
+          locked={!paid}
         />
       </div>
     </main>
