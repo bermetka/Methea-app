@@ -2,6 +2,8 @@ import { redirect } from 'next/navigation'
 import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import { generateMethodologyChain } from '@/lib/prompts/methodology'
+import { isProjectPaid } from '@/lib/entitlement'
+import PaywallLock from '@/components/paywall/PaywallLock'
 import MethodologyChainView from './MethodologyChain'
 import type { Project, Theory } from '@/types/database'
 
@@ -26,6 +28,17 @@ export default async function MethodologyPage({ params }: { params: { id: string
 
   // Guard: must have framework before methodology
   if (!ctx?.framework?.edges?.length) redirect(`/project/${params.id}/framework`)
+
+  // Paid-only step — no generation happens for unpaid projects
+  if (!isProjectPaid(p)) {
+    return (
+      <PaywallLock
+        projectId={params.id}
+        title="Your methodology chain is ready to build"
+        description="Unlock this project to get your full paradigm-to-analysis methodology chain, each choice explained, plus the interview guide and transcript analysis that follow it."
+      />
+    )
+  }
 
   // Load selected theories
   const { data: theories } = await supabase
