@@ -1,4 +1,15 @@
-import { Webhooks, type EventEntity } from '@paddle/paddle-node-sdk'
+import { NodeRuntime, Webhooks, type EventEntity } from '@paddle/paddle-node-sdk'
+
+/**
+ * `Webhooks`' signature check delegates to a crypto provider that is only
+ * ever registered by the `Paddle` client's constructor. Since this route
+ * uses the standalone `Webhooks` class (no API key needed for signature
+ * verification) and never constructs `Paddle`, that provider would
+ * otherwise stay unset — `isValidSignature` then short-circuits to `false`
+ * for every request, regardless of secret or timestamp. Registering it
+ * directly here is what the SDK's own constructor does under the hood.
+ */
+NodeRuntime.initialize()
 
 /**
  * Verifies a Paddle webhook signature and returns the parsed event.
