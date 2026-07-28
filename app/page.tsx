@@ -240,6 +240,11 @@ export default async function LandingPage() {
           <p style={s.footerNote}>
             Methea is a thinking tool, not a writing tool. Students remain the authors of their own research.
           </p>
+          <div style={s.footerLinks}>
+            <a href="/privacy" style={s.footerLink}>Privacy</a>
+            <span style={s.footerDot}>·</span>
+            <a href="/terms" style={s.footerLink}>Terms</a>
+          </div>
         </div>
       </footer>
 
@@ -341,4 +346,7 @@ const s: Record<string, React.CSSProperties> = {
   footerWordmark:{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.125rem', fontWeight: 600, letterSpacing: '-0.045em', color: 'var(--sheet)' },
   footerTagline:{ fontSize: '0.875rem', color: '#B0ADA6' },
   footerNote: { fontSize: '0.8125rem', color: '#706D66', maxWidth: '480px', lineHeight: 1.6, marginTop: '0.5rem' },
+  footerLinks:{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.75rem' },
+  footerLink: { fontSize: '0.8125rem', color: '#B0ADA6' },
+  footerDot:  { fontSize: '0.8125rem', color: '#706D66' },
 }
