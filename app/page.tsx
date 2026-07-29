@@ -26,13 +26,15 @@ export default async function LandingPage() {
         <div style={s.heroInner}>
           <div style={s.heroBadge}>For Masters &amp; PhD students</div>
           <h1 style={s.heroHeading}>
-            From assignment brief<br />
-            to research proposal —<br />
-            <span style={s.heroAccent}>methodically.</span>
+            Fix the question<br />
+            before it&apos;s<br />
+            <span style={s.heroAccent}>asked.</span>
           </h1>
           <p style={s.heroSub}>
-            Methea scaffolds your framework, methodology, and analysis.
-            You bring the thinking. Methea brings the structure.
+            Methea sharpens your research question with Socratic gates, then
+            builds the framework and methodology around it — so your research
+            survives interrogation, before two years are sunk into the wrong
+            question. You bring the thinking. Methea asks the right questions.
           </p>
           <div style={s.heroCtas}>
             <a href="/login" style={s.primaryCta}>Try it free →</a>
@@ -43,6 +45,49 @@ export default async function LandingPage() {
 
         {/* Decorative marker underline */}
         <div style={s.heroMarker} />
+      </section>
+
+      {/* ── The Socratic gate (moat) ── */}
+      <section style={s.gate}>
+        <div style={s.gateInner}>
+          <div style={s.gateHead}>
+            <p style={s.sectionEyebrow}>The Socratic gate</p>
+            <h2 style={s.sectionHeading}>The tool that asks<br />instead of answers</h2>
+            <p style={s.sectionSub}>
+              Methea never hands you an answer. At key moments it asks a sharp
+              question drawn from your own brief — with reasoned options, each
+              tied to a method. You choose, and you stay the author. This is the
+              engine competitors can&apos;t copy.
+            </p>
+          </div>
+
+          <div style={s.gateCard}>
+            <p style={s.gateEyebrow}>Based on your brief</p>
+            <p style={s.gateQuestion}>
+              Your question asks <em>how</em> policies get translated — do you
+              want to interpret the meaning, or trace the changes over time?
+            </p>
+            <div style={s.gateOptions}>
+              {[
+                { label: 'Meaning & logic', why: '→ interpretive methods · discourse analysis' },
+                { label: 'Trace the changes', why: '→ historical-comparative · document analysis' },
+                { label: 'Both mechanisms and meaning', why: '→ mixed design · documents + elite interviews' },
+              ].map(o => (
+                <div key={o.label} style={s.gateOption}>
+                  <span style={s.gateOptionBar} />
+                  <div>
+                    <p style={s.gateOptionLabel}>{o.label}</p>
+                    <p style={s.gateOptionWhy}>{o.why}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p style={s.gateFooter}>
+              Methea surfaces the question.{' '}
+              <span style={s.gateFooterAccent}>You decide — and stay the author.</span>
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* ── The line we never cross ── */}
@@ -274,6 +319,21 @@ const s: Record<string, React.CSSProperties> = {
   secondaryCta:{ display: 'inline-block', padding: '0.75rem 1.25rem', color: 'var(--graphite)', fontSize: '0.9375rem', fontWeight: 500, textDecoration: 'none', borderBottom: '1px solid var(--stone)' },
   heroNote:   { fontSize: '0.8125rem', color: 'var(--pencil)' },
   heroMarker: { position: 'absolute' as const, bottom: '2rem', right: '2rem', width: '180px', height: '8px', background: 'var(--marker-lime)', borderRadius: '4px', opacity: 0.6 },
+
+  // Socratic gate
+  gate:        { padding: '4rem 1.5rem 5rem', maxWidth: '1000px', margin: '0 auto' },
+  gateInner:   { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', alignItems: 'start' },
+  gateHead:    { display: 'flex', flexDirection: 'column' as const, gap: '1rem' },
+  gateCard:    { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', padding: '1.75rem', display: 'flex', flexDirection: 'column' as const, gap: '1.125rem' },
+  gateEyebrow: { fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' as const, color: 'var(--moss)' },
+  gateQuestion:{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.0625rem, 2.4vw, 1.3125rem)', fontWeight: 400, color: 'var(--ink)', lineHeight: 1.35 },
+  gateOptions: { display: 'flex', flexDirection: 'column' as const, gap: '0.625rem' },
+  gateOption:  { position: 'relative' as const, display: 'flex', background: 'var(--paper)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '0.75rem 1rem 0.75rem 1.125rem', overflow: 'hidden' },
+  gateOptionBar:{ position: 'absolute' as const, left: 0, top: 0, bottom: 0, width: '4px', background: 'var(--marker-lime)' },
+  gateOptionLabel:{ fontSize: '0.9375rem', fontWeight: 600, color: 'var(--ink)', marginBottom: '0.125rem' },
+  gateOptionWhy:{ fontSize: '0.8125rem', color: 'var(--moss)', lineHeight: 1.4 },
+  gateFooter:  { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '0.9375rem', color: 'var(--graphite)', borderTop: '1px solid var(--stone-soft)', paddingTop: '1rem', lineHeight: 1.5 },
+  gateFooterAccent:{ color: 'var(--moss)', fontStyle: 'italic' },
 
   // Line section
   lineSection:{ background: 'var(--sheet)', borderTop: '1px solid var(--stone-soft)', borderBottom: '1px solid var(--stone-soft)', padding: '3.5rem 1.5rem' },
