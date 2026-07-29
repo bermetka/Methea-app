@@ -23,42 +23,25 @@ export default async function LandingPage() {
 
       {/* ── Hero ── */}
       <section style={s.hero}>
-        <div style={s.heroInner}>
-          <div style={s.heroBadge}>For Masters &amp; PhD students</div>
-          <h1 style={s.heroHeading}>
-            Fix the question<br />
-            before it&apos;s<br />
-            <span style={s.heroAccent}>asked.</span>
-          </h1>
-          <p style={s.heroSub}>
-            Methea sharpens your research question with Socratic gates, then
-            builds the framework and methodology around it — so your research
-            survives interrogation, before two years are sunk into the wrong
-            question. You bring the thinking. Methea asks the right questions.
-          </p>
-          <div style={s.heroCtas}>
-            <a href="/login" style={s.primaryCta}>Try it free →</a>
-            <a href="#how-it-works" style={s.secondaryCta}>See how it works</a>
-          </div>
-          <p style={s.heroNote}>Free to start · No credit card required</p>
-        </div>
-
-        {/* Decorative marker underline */}
-        <div style={s.heroMarker} />
-      </section>
-
-      {/* ── The Socratic gate (moat) ── */}
-      <section style={s.gate}>
-        <div style={s.gateInner}>
-          <div style={s.gateHead}>
-            <p style={s.sectionEyebrow}>The Socratic gate</p>
-            <h2 style={s.sectionHeading}>The tool that asks<br />instead of answers</h2>
-            <p style={s.sectionSub}>
-              Methea never hands you an answer. At key moments it asks a sharp
-              question drawn from your own brief — with reasoned options, each
-              tied to a method. You choose, and you stay the author. This is the
-              engine competitors can&apos;t copy.
+        <div style={s.heroGrid}>
+          <div style={s.heroInner}>
+            <div style={s.heroBadge}>For Masters &amp; PhD students</div>
+            <h1 style={s.heroHeading}>
+              Fix the question<br />
+              before it&apos;s<br />
+              <span style={s.heroAccent}>asked.</span>
+            </h1>
+            <p style={s.heroSub}>
+              Methea sharpens your research question with Socratic gates, then
+              builds the framework and methodology around it — so your research
+              survives interrogation, before two years are sunk into the wrong
+              question. You bring the thinking. Methea asks the right questions.
             </p>
+            <div style={s.heroCtas}>
+              <a href="/login" style={s.primaryCta}>Try it free →</a>
+              <a href="#how-it-works" style={s.secondaryCta}>See how it works</a>
+            </div>
+            <p style={s.heroNote}>Free to start · No credit card required</p>
           </div>
 
           <div style={s.gateCard}>
@@ -87,6 +70,20 @@ export default async function LandingPage() {
               <span style={s.gateFooterAccent}>You decide — and stay the author.</span>
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ── The Socratic gate (moat statement) ── */}
+      <section style={s.gate}>
+        <div style={s.gateBand}>
+          <p style={s.sectionEyebrow}>The Socratic gate</p>
+          <h2 style={s.sectionHeading}>The tool that asks instead of answers</h2>
+          <p style={s.gateBandSub}>
+            Methea never hands you an answer. At key moments it asks a sharp
+            question drawn from your own brief — with reasoned options, each
+            tied to a method. You choose, and you stay the author. This is the
+            engine competitors can&apos;t copy.
+          </p>
         </div>
       </section>
 
@@ -308,8 +305,9 @@ const s: Record<string, React.CSSProperties> = {
   navCta: { fontSize: '0.9375rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
 
   // Hero
-  hero:       { padding: '4rem 1.5rem 5rem', maxWidth: '1000px', margin: '0 auto', position: 'relative' as const },
-  heroInner:  { maxWidth: '680px' },
+  hero:       { padding: '3.5rem 1.5rem 4rem', maxWidth: '1000px', margin: '0 auto', position: 'relative' as const },
+  heroGrid:   { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' },
+  heroInner:  { maxWidth: '520px' },
   heroBadge:  { display: 'inline-block', padding: '3px 12px', background: 'var(--marker-lime)', color: 'var(--ink)', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase' as const, borderRadius: 'var(--radius-sm)', marginBottom: '1.5rem' },
   heroHeading:{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(2.25rem, 6vw, 3.75rem)', fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.025em', color: 'var(--ink)', marginBottom: '1.25rem' },
   heroAccent: { color: 'var(--ink-blue)' },
@@ -321,9 +319,9 @@ const s: Record<string, React.CSSProperties> = {
   heroMarker: { position: 'absolute' as const, bottom: '2rem', right: '2rem', width: '180px', height: '8px', background: 'var(--marker-lime)', borderRadius: '4px', opacity: 0.6 },
 
   // Socratic gate
-  gate:        { padding: '4rem 1.5rem 5rem', maxWidth: '1000px', margin: '0 auto' },
-  gateInner:   { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', alignItems: 'start' },
-  gateHead:    { display: 'flex', flexDirection: 'column' as const, gap: '1rem' },
+  gate:        { padding: '3.5rem 1.5rem 4rem', maxWidth: '1000px', margin: '0 auto' },
+  gateBand:    { maxWidth: '680px', margin: '0 auto', textAlign: 'center' as const, display: 'flex', flexDirection: 'column' as const, alignItems: 'center', gap: '1rem' },
+  gateBandSub: { fontSize: '1.0625rem', color: 'var(--graphite)', lineHeight: 1.7, maxWidth: '600px' },
   gateCard:    { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', padding: '1.75rem', display: 'flex', flexDirection: 'column' as const, gap: '1.125rem' },
   gateEyebrow: { fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' as const, color: 'var(--moss)' },
   gateQuestion:{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.0625rem, 2.4vw, 1.3125rem)', fontWeight: 400, color: 'var(--ink)', lineHeight: 1.35 },
