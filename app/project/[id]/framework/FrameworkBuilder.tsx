@@ -17,6 +17,7 @@ interface Props {
   citations: FrameworkCitation[]
   citationStatuses: Record<string, CitStatus>
   defaultLayout: Layout
+  outdated?: boolean
 }
 
 const LAYOUT_LABELS: Record<Layout, string> = {
@@ -26,7 +27,7 @@ const LAYOUT_LABELS: Record<Layout, string> = {
 }
 
 export default function FrameworkBuilder({
-  projectId, theories, edges, narrative, citations, citationStatuses, defaultLayout,
+  projectId, theories, edges, narrative, citations, citationStatuses, defaultLayout, outdated,
 }: Props) {
   const [layout, setLayout] = useState<Layout>(defaultLayout)
   const [saving, setSaving] = useState(false)
@@ -104,6 +105,17 @@ export default function FrameworkBuilder({
 
   return (
     <div style={s.wrapper}>
+      {/* Review-changes banner — shown when an upstream change regenerated this framework */}
+      {outdated && (
+        <div style={s.reviewBanner}>
+          <span style={s.reviewBadge}>⚠ Review changes</span>
+          <p style={s.reviewText}>
+            Your theories or research question changed, so we&apos;ve regenerated this framework.
+            Review the diagram and narrative, then <strong>save</strong> to confirm.
+          </p>
+        </div>
+      )}
+
       {/* Layout switcher */}
       <div style={s.layoutRow}>
         <span style={s.layoutLabel}>Layout</span>
@@ -182,6 +194,9 @@ export default function FrameworkBuilder({
 
 const s: Record<string, React.CSSProperties> = {
   wrapper:            { display: 'flex', flexDirection: 'column', gap: '1.5rem' },
+  reviewBanner:       { display: 'flex', flexDirection: 'column', gap: '0.375rem', padding: '0.875rem 1.125rem', background: 'var(--marker-yellow)', borderRadius: 'var(--radius)' },
+  reviewBadge:        { fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase' as const, color: 'var(--warn-text)' },
+  reviewText:         { fontSize: '0.875rem', color: 'var(--warn-text)', lineHeight: 1.5 },
   layoutRow:          { display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' as const },
   layoutLabel:        { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--pencil)', textTransform: 'uppercase' as const, letterSpacing: '0.06em' },
   layoutBtns:         { display: 'flex', gap: '0.375rem' },

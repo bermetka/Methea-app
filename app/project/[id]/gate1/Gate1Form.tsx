@@ -11,11 +11,19 @@ interface Props {
   projectId: string
   questions: ClarificationQuestion[]
   brief: BriefExtraction
+  initialAnswers?: Record<string, string>
+  initialContextNote?: string
+  completed?: boolean
 }
 
-export default function Gate1Form({ projectId, questions, brief }: Props) {
-  const [step, setStep]           = useState(0)
-  const [answers, setAnswers]     = useState<Record<string, string>>({})
+export default function Gate1Form({
+  projectId, questions, brief, initialAnswers, initialContextNote, completed,
+}: Props) {
+  // A completed gate opens in review mode; editing reveals the wizard.
+  const [editing, setEditing]       = useState(!completed)
+  const [step, setStep]             = useState(0)
+  const [answers, setAnswers]       = useState<Record<string, string>>(initialAnswers ?? {})
+  const [contextNote, setContextNote] = useState(initialContextNote ?? '')
   const [submitting, setSubmitting] = useState(false)
 
   const current  = questions[step]
@@ -30,19 +38,58 @@ export default function Gate1Form({ projectId, questions, brief }: Props) {
     setStep(s => s - 1)
   }
 
+  async function submit() {
+    setSubmitting(true)
+    const formData = new FormData()
+    formData.append('projectId', projectId)
+    formData.append('answers', JSON.stringify(answers))
+    formData.append('contextNote', contextNote)
+    await submitGate1(formData)
+  }
+
   async function goForward() {
     if (!selected) return
     if (!isLast) {
       setStep(s => s + 1)
       return
     }
-    setSubmitting(true)
-    const formData = new FormData()
-    formData.append('projectId', projectId)
-    formData.append('answers', JSON.stringify(answers))
-    await submitGate1(formData)
+    await submit()
   }
 
+  // ── Review mode (completed gate, not yet editing) ───────────────────────────
+  if (!editing) {
+    return (
+      <div style={s.container}>
+        <div style={s.reviewCard}>
+          <p style={s.reviewHeading}>Research question refined</p>
+          <p style={s.reviewSub}>Your answers to these questions shaped your final research question.</p>
+          <div style={s.divider} />
+          {questions.map(q => (
+            <div key={q.id} style={s.qaRow}>
+              <p style={s.qLabel}>{q.prompt}</p>
+              <p style={s.aText}>
+                {q.options.find(o => o.value === answers[q.id])?.title ?? answers[q.id] ?? '—'}
+              </p>
+            </div>
+          ))}
+          {contextNote.trim() && (
+            <div style={s.qaRow}>
+              <p style={s.qLabel}>Added context</p>
+              <p style={s.aText}>{contextNote}</p>
+            </div>
+          )}
+        </div>
+        <div style={s.reviewActions}>
+          <a href={`/project/${projectId}`} style={s.backLink}>← Back to project</a>
+          <button type="button" onClick={() => { setEditing(true); setStep(0) }} style={s.editBtn}>
+            Edit answers
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  // ── Edit / first-pass wizard ────────────────────────────────────────────────
   return (
     <div style={s.container}>
       {/* AI confirmation card — starts from what student brought */}
@@ -99,29 +146,46 @@ export default function Gate1Form({ projectId, questions, brief }: Props) {
         <GlossaryTooltip term={glossaryTerm('deductive-vs-inductive')} />
       </p>
 
+      {/* Optional free-text context — structured single-select above, one nuance field here.
+          Shown on the final step so it reads as "anything else we should weigh." */}
+      {isLast && (
+        <div style={s.contextBlock}>
+          <label htmlFor="ctx-note" style={s.contextLabel}>Add context (optional)</label>
+          <p style={s.contextHint}>
+            Anything specific about your case, sample, or constraints? We&apos;ll fold it into what we suggest next.
+          </p>
+          <textarea
+            id="ctx-note"
+            value={contextNote}
+            onChange={e => setContextNote(e.target.value)}
+            rows={3}
+            maxLength={600}
+            placeholder="e.g. My sample is SMEs in a post-conflict economy, so generalisable models may not transfer."
+            style={s.contextTextarea}
+          />
+        </div>
+      )}
+
       {/* Navigation */}
       <div style={s.nav}>
         {step === 0 ? (
-          <a href={`/project/${projectId}/brief`} style={s.backLink}>← Back</a>
+          completed ? (
+            <button type="button" onClick={() => setEditing(false)} style={s.backBtn}>← Cancel</button>
+          ) : (
+            <a href={`/project/${projectId}/brief`} style={s.backLink}>← Back</a>
+          )
         ) : (
           <button type="button" onClick={goBack} style={s.backBtn}>← Back</button>
         )}
         <div style={s.navRight}>
-          {/* Escape hatch — always available after the first question is shown */}
+          {/* Escape hatch — always available */}
           <button
             type="button"
             disabled={submitting}
-            onClick={async () => {
-              setSubmitting(true)
-              const formData = new FormData()
-              formData.append('projectId', projectId)
-              // Submit current answers (partial is fine — student is skipping)
-              formData.append('answers', JSON.stringify(answers))
-              await submitGate1(formData)
-            }}
+            onClick={submit}
             style={{ ...s.skipBtn, ...(submitting ? s.skipBtnDisabled : {}) }}
           >
-            Keep my current answer →
+            {completed ? 'Save changes →' : 'Keep my current answer →'}
           </button>
           <button
             type="button"
@@ -162,4 +226,21 @@ const s: Record<string, React.CSSProperties> = {
   continueBtn:  { padding: '0.625rem 1.25rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
   continueBtnDisabled: { background: 'var(--paper-deep)', color: 'var(--pencil)', cursor: 'default' },
   approachNote: { fontSize: '0.8125rem', color: 'var(--pencil)', lineHeight: 1.5, display: 'flex', alignItems: 'center', gap: '0.25rem' },
+
+  // Optional context field
+  contextBlock:   { display: 'flex', flexDirection: 'column', gap: '0.375rem' },
+  contextLabel:   { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink)' },
+  contextHint:    { fontSize: '0.8125rem', color: 'var(--pencil)', lineHeight: 1.5 },
+  contextTextarea:{ width: '100%', padding: '0.75rem', background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', color: 'var(--ink)', lineHeight: 1.6, resize: 'vertical' as const },
+
+  // Review mode
+  reviewCard:    { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem' },
+  reviewHeading: { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.125rem', fontWeight: 400, color: 'var(--ink)' },
+  reviewSub:     { fontSize: '0.875rem', color: 'var(--pencil)', marginTop: '-0.5rem' },
+  divider:       { borderTop: '1px solid var(--stone-soft)' },
+  qaRow:         { display: 'flex', flexDirection: 'column' as const, gap: '0.25rem' },
+  qLabel:        { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--pencil)' },
+  aText:         { fontSize: '0.9375rem', color: 'var(--ink)' },
+  reviewActions: { display: 'flex', justifyContent: 'space-between', alignItems: 'center' },
+  editBtn:       { padding: '0.5rem 1.125rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
 }

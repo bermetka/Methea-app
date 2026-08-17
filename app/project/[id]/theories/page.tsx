@@ -36,36 +36,67 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
     redirect(`/project/${params.id}`)
   }
 
-  // Use saved selection if available, otherwise ask Claude to suggest
-  const suggestions = ctx?.theories?.selected_ids?.length
-    ? ctx.theories.selected_ids.map(id => ({ theory_id: id, why_it_fits: '', fit_score: 1 }))
+  const selectedIds = ctx?.theories?.selected_ids ?? []
+  const isOutdated  = (ctx.outdated_blocks ?? []).includes('theories')
+
+  // Reuse cached AI suggestions so revisiting keeps the "why it fits" reasoning without
+  // re-calling Claude. Recompute when upstream (gate 1) changed and marked us outdated.
+  const cachedSuggestions = ctx?.theories?.suggestions
+  const suggestions = (!isOutdated && cachedSuggestions?.length)
+    ? cachedSuggestions
     : await suggestTheories(ctx, allTheories as Theory[])
 
-  const theoriesById = new Map((allTheories as Theory[]).map(t => [t.id, t]))
+  const theoriesById   = new Map((allTheories as Theory[]).map(t => [t.id, t]))
   const readingListRaw = ctx.brief?.reading_list_raw ?? ''
 
-  const cards: TheoryCardData[] = await Promise.all(
-    suggestions.map(async (s) => {
-      const theory = theoriesById.get(s.theory_id)!
+  // Render the suggested theories, plus any already-selected library theory that isn't in
+  // the suggestion set (e.g. picked via browse), so an edited selection never disappears.
+  const suggestionIds = suggestions.map(s => s.theory_id)
+  const extraSelectedIds = selectedIds.filter(
+    id => !id.startsWith('custom:') && !suggestionIds.includes(id) && theoriesById.has(id)
+  )
+  const whyById   = new Map(suggestions.map(s => [s.theory_id, s.why_it_fits]))
+  const scoreById = new Map(suggestions.map(s => [s.theory_id, s.fit_score]))
+  const libraryCardIds = [...suggestionIds, ...extraSelectedIds]
+
+  const libraryCards = await Promise.all(
+    libraryCardIds.map(async (id) => {
+      const theory = theoriesById.get(id)!
       const verification = await verifyTheory(theory)
       return {
-        id: theory.id,
-        name: theory.name,
-        author: theory.author,
-        year: theory.year,
-        summary: theory.summary,
-        concepts: theory.concepts,
-        why_it_fits: s.why_it_fits,
-        verification,
-        in_reading_list: isInReadingList(theory, readingListRaw),
+        card: {
+          id: theory.id,
+          name: theory.name,
+          author: theory.author,
+          year: theory.year,
+          summary: theory.summary,
+          concepts: theory.concepts,
+          why_it_fits: whyById.get(id) ?? '',
+          verification,
+          in_reading_list: isInReadingList(theory, readingListRaw),
+        } as TheoryCardData,
+        score: scoreById.get(id) ?? 0,
       }
     })
   )
+  libraryCards.sort((a, b) => b.score - a.score)
 
-  // Sort by fit_score descending
-  const scored = suggestions.map((s, i) => ({ i, score: s.fit_score }))
-  scored.sort((a, b) => b.score - a.score)
-  const sortedCards = scored.map(({ i }) => cards[i])
+  // Bring-your-own theories: render from stored verification result — no OpenAlex re-hit.
+  const customCards: TheoryCardData[] = (ctx.theories?.custom_theories ?? []).map(c => ({
+    id: c.id,
+    name: c.name,
+    author: c.author,
+    year: c.year,
+    summary: c.summary,
+    concepts: c.concepts,
+    why_it_fits: '',
+    verification: c.verification === 'doi_verified'
+      ? { kind: 'doi_verified', doi: c.doi ?? '' }
+      : { kind: 'unverified' },
+    in_reading_list: false,
+  }))
+
+  const cards: TheoryCardData[] = [...libraryCards.map(c => c.card), ...customCards]
 
   return (
     <main style={styles.page}>
@@ -74,9 +105,9 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
         <TheoryCards
           projectId={params.id}
           topic={ctx.brief?.topic ?? 'your research topic'}
-          cards={sortedCards}
-          initialSelected={ctx.theories?.selected_ids}
-          readOnly={!!ctx.theories?.selected_ids?.length}
+          cards={cards}
+          initialSelected={selectedIds}
+          suggestions={suggestions}
         />
       </div>
     </main>

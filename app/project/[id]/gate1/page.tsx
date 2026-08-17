@@ -32,34 +32,8 @@ export default async function Gate1Page({ params }: { params: { id: string } }) 
   // Edge case: questions weren't generated — send back to brief
   if (questions.length === 0) redirect(`/project/${params.id}/brief`)
 
-  // Read-only view when gate1 is already completed
-  if (gate1?.completed) {
-    const responses = gate1.responses ?? {}
-    return (
-      <main style={styles.page}>
-        <div style={styles.container}>
-          <Logo size="sm" />
-          <div style={styles.reviewCard}>
-            <p style={styles.reviewHeading}>Research question refined</p>
-            <p style={styles.reviewSub}>Your answers to these questions shaped your final research question.</p>
-            <div style={styles.divider} />
-            {questions.map(q => (
-              <div key={q.id} style={styles.qaRow}>
-                <p style={styles.qText}>{q.prompt}</p>
-                <p style={styles.aText}>
-                  {q.options.find(o => o.value === responses[q.id])?.title ?? responses[q.id] ?? '—'}
-                </p>
-              </div>
-            ))}
-          </div>
-          <div style={styles.backRow}>
-            <a href={`/project/${params.id}`} style={styles.backLink}>← Back to project</a>
-          </div>
-        </div>
-      </main>
-    )
-  }
-
+  // Editable at every visit: a completed gate opens in review mode inside the form,
+  // with an "Edit answers" affordance. No hard read-only lock.
   return (
     <main style={styles.page}>
       <div style={styles.container}>
@@ -68,6 +42,9 @@ export default async function Gate1Page({ params }: { params: { id: string } }) 
           projectId={params.id}
           questions={questions}
           brief={ctx.brief}
+          initialAnswers={gate1?.responses ?? {}}
+          initialContextNote={gate1?.context_note ?? ''}
+          completed={!!gate1?.completed}
         />
       </div>
     </main>
@@ -77,13 +54,4 @@ export default async function Gate1Page({ params }: { params: { id: string } }) 
 const styles: Record<string, React.CSSProperties> = {
   page:          { minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem 1rem', background: 'var(--paper)' },
   container:     { width: '100%', maxWidth: '720px', display: 'flex', flexDirection: 'column', gap: '1.5rem' },
-  reviewCard:    { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem' },
-  reviewHeading: { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.125rem', fontWeight: 400, color: 'var(--ink)' },
-  reviewSub:     { fontSize: '0.875rem', color: 'var(--pencil)', marginTop: '-0.5rem' },
-  divider:       { borderTop: '1px solid var(--stone-soft)' },
-  qaRow:         { display: 'flex', flexDirection: 'column' as const, gap: '0.25rem' },
-  qText:         { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--pencil)' },
-  aText:         { fontSize: '0.9375rem', color: 'var(--ink)' },
-  backRow:       { display: 'flex' },
-  backLink:      { fontSize: '0.875rem', color: 'var(--ink-blue)', textDecoration: 'none', fontWeight: 500 },
 }

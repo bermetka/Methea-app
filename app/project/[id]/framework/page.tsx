@@ -1,9 +1,10 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { generateRelationshipLabels, generateFrameworkNarrative } from '@/lib/prompts/framework'
+import { resolveProjectTheories } from '@/lib/project-theories'
 import Logo from '@/components/ui/Logo'
 import FrameworkBuilder from './FrameworkBuilder'
-import type { Project, Theory } from '@/types/database'
+import type { Project } from '@/types/database'
 
 export const metadata = { title: 'Your framework — Methea' }
 
@@ -28,23 +29,25 @@ export default async function FrameworkPage({ params }: { params: { id: string }
 
   const selectedIds = ctx.theories!.selected_ids
 
-  const { data: theoriesData } = await supabase
-    .from('theories')
-    .select('*')
-    .in('id', selectedIds)
+  // Merge library theories + the student's own (custom) theories into one set, so
+  // bring-your-own theories are first-class in the generated framework, not just stored.
+  const theories = await resolveProjectTheories(ctx, selectedIds, supabase)
 
-  if (!theoriesData?.length) redirect(`/project/${params.id}`)
+  if (!theories.length) redirect(`/project/${params.id}`)
 
-  const theories = theoriesData as Theory[]
+  // Soft-invalidation: when an upstream change marked the framework ⚠ outdated, discard the
+  // stale saved framework and regenerate from the current theories. Saving clears the flag.
+  const isOutdated = (ctx.outdated_blocks ?? []).includes('framework')
 
-  // Use saved framework if available, otherwise generate
-  let edges = ctx.framework?.edges ?? []
-  let narrativeResult = {
-    narrative: ctx.framework?.narrative ?? '',
-    citations: ctx.framework?.citations ?? [],
-  }
+  let edges = isOutdated ? [] : (ctx.framework?.edges ?? [])
+  let narrativeResult = isOutdated
+    ? { narrative: '', citations: [] }
+    : {
+        narrative: ctx.framework?.narrative ?? '',
+        citations: ctx.framework?.citations ?? [],
+      }
   let citationStatuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'> =
-    ctx.framework?.citation_statuses ?? {}
+    isOutdated ? {} : (ctx.framework?.citation_statuses ?? {})
 
   if (!edges.length) {
     edges = await generateRelationshipLabels(ctx, theories)
@@ -100,6 +103,7 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           citations={narrativeResult.citations}
           citationStatuses={citationStatuses}
           defaultLayout={defaultLayout}
+          outdated={isOutdated}
         />
       </div>
     </main>

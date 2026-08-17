@@ -5,6 +5,7 @@ import StatusChip, { type VerificationStatus } from '@/components/ui/StatusChip'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
 import { glossaryTerm } from '@/lib/glossary'
 import { saveTheorySelection } from './actions'
+import type { TheorySuggestion } from '@/types/database'
 
 export interface TheoryCardData {
   id: string
@@ -23,13 +24,14 @@ interface Props {
   topic: string
   cards: TheoryCardData[]
   initialSelected?: string[]
+  suggestions?: TheorySuggestion[]
   readOnly?: boolean
 }
 
 const MIN_SELECT = 2
 const MAX_SELECT = 4
 
-export default function TheoryCards({ projectId, topic, cards, initialSelected, readOnly }: Props) {
+export default function TheoryCards({ projectId, topic, cards, initialSelected, suggestions, readOnly }: Props) {
   const [selected, setSelected] = useState<Set<string>>(new Set(initialSelected ?? []))
   const [submitting, setSubmitting] = useState(false)
 
@@ -59,6 +61,7 @@ export default function TheoryCards({ projectId, topic, cards, initialSelected, 
     const formData = new FormData()
     formData.append('projectId', projectId)
     formData.append('selectedIds', JSON.stringify(Array.from(selected)))
+    if (suggestions?.length) formData.append('suggestions', JSON.stringify(suggestions))
     await saveTheorySelection(formData)
   }
 
