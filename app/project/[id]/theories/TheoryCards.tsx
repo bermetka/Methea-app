@@ -4,7 +4,7 @@ import { useState } from 'react'
 import StatusChip, { type VerificationStatus } from '@/components/ui/StatusChip'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
 import { glossaryTerm } from '@/lib/glossary'
-import { saveTheorySelection } from './actions'
+import { saveTheorySelection, addCustomTheory } from './actions'
 import type { TheorySuggestion } from '@/types/database'
 
 export interface TheoryCardData {
@@ -131,16 +131,21 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
                 <p style={s.theoryMeta}>{card.author}{card.year ? `, ${card.year}` : ''}</p>
               </div>
 
-              <p style={s.whyItFits}>{card.why_it_fits}</p>
+              {card.why_it_fits && <p style={s.whyItFits}>{card.why_it_fits}</p>}
 
-              <div style={s.tags}>
-                {card.concepts.slice(0, 4).map(c => (
-                  <span key={c} style={s.tag}>{c}</span>
-                ))}
-              </div>
+              {card.concepts.length > 0 && (
+                <div style={s.tags}>
+                  {card.concepts.slice(0, 4).map(c => (
+                    <span key={c} style={s.tag}>{c}</span>
+                  ))}
+                </div>
+              )}
 
               <div style={s.chips}>
                 <StatusChip status={card.verification} />
+                {card.verification.kind === 'unverified' && (
+                  <span style={s.unverifiedLabel}>Unverified — verify manually</span>
+                )}
                 {card.in_reading_list && (
                   <span style={s.readingListChip}>+ In your reading list</span>
                 )}
@@ -149,6 +154,26 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
           )
         })}
       </div>
+
+      {/* Add your own theory — verified via OpenAlex, stored per-project */}
+      <details style={s.addPanel}>
+        <summary style={s.addSummary}>+ Add your own theory</summary>
+        <form action={addCustomTheory} style={s.addForm}>
+          <input type="hidden" name="projectId" value={projectId} />
+          <p style={s.addHint}>
+            Paste a DOI or a citation. We&apos;ll check it against OpenAlex — verified sources get a
+            ✓; anything we can&apos;t find is kept with a ? so you can verify it yourself. We never
+            present an unverified source as fact.
+          </p>
+          <label style={s.addLabel} htmlFor="byo-doi">DOI (best match)</label>
+          <input id="byo-doi" name="doi" placeholder="10.2307/2095101" style={s.addInput} />
+          <label style={s.addLabel} htmlFor="byo-citation">or citation / title</label>
+          <input id="byo-citation" name="citation" placeholder="Author (Year). Title of the work." style={s.addInput} />
+          <label style={s.addLabel} htmlFor="byo-name">Display name (optional)</label>
+          <input id="byo-name" name="name" placeholder="e.g. Institutional Logics" style={s.addInput} />
+          <button type="submit" style={s.addBtn}>Verify &amp; add</button>
+        </form>
+      </details>
 
       {/* Helper text + CTA */}
       <div style={s.footer}>
@@ -242,7 +267,15 @@ const s: Record<string, React.CSSProperties> = {
   },
   tags:  { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem' },
   tag:   { padding: '2px 8px', background: 'var(--paper-deep)', color: 'var(--graphite)', borderRadius: 'var(--radius-sm)', fontSize: '0.75rem' },
-  chips: { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem', marginTop: 'auto' },
+  chips: { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem', marginTop: 'auto', alignItems: 'center' },
+  unverifiedLabel: { fontSize: '0.6875rem', color: 'var(--pencil)', fontStyle: 'italic' as const },
+  addPanel:   { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '0.875rem 1.125rem' },
+  addSummary: { fontSize: '0.875rem', fontWeight: 600, color: 'var(--ink-blue)', cursor: 'pointer' },
+  addForm:    { display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.875rem' },
+  addHint:    { fontSize: '0.8125rem', color: 'var(--pencil)', lineHeight: 1.55 },
+  addLabel:   { fontSize: '0.75rem', fontWeight: 600, color: 'var(--pencil)', marginTop: '0.25rem' },
+  addInput:   { width: '100%', padding: '0.5rem 0.625rem', background: 'var(--paper)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-sm)', fontSize: '0.875rem', fontFamily: 'inherit', color: 'var(--ink)' },
+  addBtn:     { alignSelf: 'flex-start', marginTop: '0.5rem', padding: '0.5rem 1.125rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
   readingListChip: {
     display: 'inline-flex',
     alignItems: 'center',

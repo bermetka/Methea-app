@@ -1,7 +1,8 @@
 import { notFound, redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { resolveProjectTheories } from '@/lib/project-theories'
 import ProjectDashboard from './ProjectDashboard'
-import type { Project, Theory } from '@/types/database'
+import type { Project } from '@/types/database'
 
 export async function generateMetadata() {
   return { title: 'Project — Methea' }
@@ -32,12 +33,8 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   const ctx         = p.research_context
   const selectedIds = ctx.theories!.selected_ids
 
-  const { data: theories } = await supabase
-    .from('theories')
-    .select('id, name, author, year')
-    .in('id', selectedIds)
-
-  const selectedTheories = (theories ?? []) as Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]
+  // Library + custom theories merged for the dashboard's theory map.
+  const selectedTheories = await resolveProjectTheories(ctx, selectedIds, supabase)
 
   const isComplete =
     !!ctx.methodology?.narrative &&

@@ -3,7 +3,8 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
-import { isCustomId } from '@/lib/project-theories'
+import { isCustomId, newCustomTheoryId } from '@/lib/project-theories'
+import { verifyCitation } from '@/lib/openalex'
 import type { ReadingListItem, TheorySuggestion, CustomTheory } from '@/types/database'
 
 export async function saveTheorySelection(formData: FormData) {
@@ -80,4 +81,68 @@ export async function saveTheorySelection(formData: FormData) {
   )
 
   redirect(`/project/${projectId}`)
+}
+
+/**
+ * Add a student's own theory by DOI or citation text. Runs it through OpenAlex
+ * verification and stores the result PER-PROJECT in research_context.theories.custom_theories
+ * (namespaced id, never the global `theories` table — the AI suggestion pool stays curated).
+ * Verified → stored as 'doi_verified' (✓). Not found → 'unverified' (?), shown not hidden,
+ * never presented as fact.
+ */
+export async function addCustomTheory(formData: FormData) {
+  const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) redirect('/login')
+
+  const projectId = formData.get('projectId') as string
+  const doi  = ((formData.get('doi') as string) ?? '').trim()
+  const text = ((formData.get('citation') as string) ?? '').trim()
+  const name = ((formData.get('name') as string) ?? '').trim()
+
+  // Nothing to verify — bounce back without writing.
+  if (!doi && !text && !name) redirect(`/project/${projectId}/theories`)
+
+  const { data: project } = await supabase
+    .from('projects')
+    .select('research_context')
+    .eq('id', projectId)
+    .eq('user_id', user.id)
+    .single()
+
+  if (!project) redirect('/onboarding')
+
+  const lookup = await verifyCitation({ doi, text })
+  const m = lookup.meta
+
+  const custom: CustomTheory = {
+    id: newCustomTheoryId(),
+    name: m?.name || name || text || 'Untitled theory',
+    author: m?.author || 'Unknown',
+    year: m?.year ?? null,
+    summary: '',
+    concepts: [],
+    disciplines: [],
+    doi: m?.doi ?? (doi || null),
+    verification: lookup.verified ? 'doi_verified' : 'unverified',
+    added_by_user: true,
+    source_citation: text || doi || name,
+  }
+
+  const ctx = project.research_context
+  const existing: CustomTheory[] = ctx?.theories?.custom_theories ?? []
+
+  await updateResearchContext(
+    projectId,
+    'theories',
+    {
+      theories: {
+        ...(ctx?.theories ?? { selected_ids: [], reading_list_items: [] }),
+        custom_theories: [...existing, custom],
+      },
+    },
+    supabase
+  )
+
+  redirect(`/project/${projectId}/theories`)
 }

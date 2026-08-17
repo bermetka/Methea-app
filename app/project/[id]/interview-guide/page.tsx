@@ -2,9 +2,10 @@ import { redirect } from 'next/navigation'
 import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import { generateInterviewGuide } from '@/lib/prompts/interview'
+import { resolveProjectTheories } from '@/lib/project-theories'
 import InterviewGuideView from './InterviewGuide'
 import EthicsCheckpoint from './EthicsCheckpoint'
-import type { Project, Theory } from '@/types/database'
+import type { Project } from '@/types/database'
 
 export const metadata = { title: 'Interview guide — Methea' }
 
@@ -40,12 +41,7 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
     )
   }
 
-  const { data: theories } = await supabase
-    .from('theories')
-    .select('*')
-    .in('id', ctx.theories!.selected_ids)
-
-  const selectedTheories = (theories ?? []) as Theory[]
+  const selectedTheories = await resolveProjectTheories(ctx, ctx.theories!.selected_ids, supabase)
 
   // Use saved questions if they exist, otherwise generate
   const questions = ctx.interview_guide?.questions?.length

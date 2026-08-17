@@ -1,7 +1,8 @@
 import { notFound, redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { resolveProjectTheories } from '@/lib/project-theories'
 import ExportView from './ExportView'
-import type { Project, Theory } from '@/types/database'
+import type { Project } from '@/types/database'
 
 export async function generateMetadata() {
   return { title: 'Export proposal — Methea' }
@@ -28,16 +29,14 @@ export default async function ExportPage({ params }: { params: { id: string } })
 
   const selectedIds = ctx.theories?.selected_ids ?? []
 
-  const { data: theories } = await supabase
-    .from('theories')
-    .select('id, name, author, year')
-    .in('id', selectedIds.length ? selectedIds : ['__none__'])
+  // Library + custom theories merged, so a student's own theory appears in the export too.
+  const theories = await resolveProjectTheories(ctx, selectedIds, supabase)
 
   return (
     <ExportView
       projectId={params.id}
       ctx={ctx}
-      theories={(theories ?? []) as Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]}
+      theories={theories}
       exportCount={ctx.export_count ?? 0}
     />
   )

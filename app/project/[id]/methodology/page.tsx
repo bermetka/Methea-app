@@ -2,8 +2,9 @@ import { redirect } from 'next/navigation'
 import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import { generateMethodologyChain } from '@/lib/prompts/methodology'
+import { resolveProjectTheories } from '@/lib/project-theories'
 import MethodologyChainView from './MethodologyChain'
-import type { Project, Theory } from '@/types/database'
+import type { Project } from '@/types/database'
 
 export const metadata = { title: 'Your methodology — Methea' }
 
@@ -27,13 +28,8 @@ export default async function MethodologyPage({ params }: { params: { id: string
   // Guard: must have framework before methodology
   if (!ctx?.framework?.edges?.length) redirect(`/project/${params.id}/framework`)
 
-  // Load selected theories
-  const { data: theories } = await supabase
-    .from('theories')
-    .select('*')
-    .in('id', ctx.theories!.selected_ids)
-
-  const selectedTheories = (theories ?? []) as Theory[]
+  // Load selected theories — library + the student's own (custom) theories, merged.
+  const selectedTheories = await resolveProjectTheories(ctx, ctx.theories!.selected_ids, supabase)
 
   // Use saved chain if available, otherwise generate
   const chain = ctx.methodology?.narrative

@@ -3,8 +3,8 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
+import { resolveProjectTheories } from '@/lib/project-theories'
 import { codeTranscript } from '@/lib/prompts/analysis'
-import type { Theory } from '@/types/database'
 
 export async function runTranscriptAnalysis(formData: FormData) {
   const supabase = createClient()
@@ -51,13 +51,11 @@ export async function runTranscriptAnalysis(formData: FormData) {
   const selectedIds: string[] = ctx?.theories?.selected_ids ?? []
   const researchQuestion = ctx?.brief?.research_question ?? ''
 
-  // Load theory names + concepts
-  const { data: theories } = await supabase
-    .from('theories')
-    .select('id, name, concepts')
-    .in('id', selectedIds) as { data: Pick<Theory, 'id' | 'name' | 'concepts'>[] | null }
+  // Load theory names + concepts — library + custom theories merged, so coding runs against
+  // the student's own theories too.
+  const theories = await resolveProjectTheories(ctx, selectedIds, supabase)
 
-  const conceptRefs = (theories ?? []).flatMap(t =>
+  const conceptRefs = theories.flatMap(t =>
     (t.concepts ?? []).map((c: string) => ({ concept: c, theory_id: t.id, theory_name: t.name }))
   )
 
