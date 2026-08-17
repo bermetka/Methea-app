@@ -43,8 +43,10 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
 
   const selectedTheories = await resolveProjectTheories(ctx, ctx.theories!.selected_ids, supabase)
 
-  // Use saved questions if they exist, otherwise generate
-  const questions = ctx.interview_guide?.questions?.length
+  // Soft-invalidation: regenerate when marked ⚠ outdated by an upstream change, otherwise
+  // reuse the saved questions. Saving clears the flag (interview-guide/actions.ts).
+  const isOutdated = (ctx.outdated_blocks ?? []).includes('interview_guide')
+  const questions = (!isOutdated && ctx.interview_guide?.questions?.length)
     ? ctx.interview_guide.questions
     : await generateInterviewGuide(ctx, selectedTheories)
 
@@ -53,6 +55,14 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
     <main style={styles.page}>
       <div style={styles.container}>
         <Logo size="sm" />
+        {isOutdated && (
+          <div style={styles.reviewBanner}>
+            <span style={styles.reviewBadge}>⚠ Review changes</span>
+            <p style={styles.reviewText}>
+              Your framework or methodology changed, so we&apos;ve regenerated these questions. Review them, then <strong>save</strong> to confirm.
+            </p>
+          </div>
+        )}
         <div style={styles.header}>
           <div style={styles.headingRow}>
             <h2 style={styles.heading}>Your interview guide</h2>
@@ -80,4 +90,7 @@ const styles: Record<string, React.CSSProperties> = {
   heading:     { fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.25rem, 3vw, 1.75rem)', fontWeight: 400, letterSpacing: '-0.015em', color: 'var(--ink)', lineHeight: 1.2 },
   ethicsChip:  { fontSize: '0.6875rem', fontWeight: 700, padding: '2px 8px', borderRadius: 'var(--radius-sm)', background: 'var(--mint)', color: 'var(--moss)', whiteSpace: 'nowrap' as const },
   sub:         { fontSize: '0.9375rem', color: 'var(--pencil)' },
+  reviewBanner:{ display: 'flex', flexDirection: 'column', gap: '0.375rem', padding: '0.875rem 1.125rem', background: 'var(--marker-yellow)', borderRadius: 'var(--radius)' },
+  reviewBadge: { fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase' as const, color: 'var(--warn-text)' },
+  reviewText:  { fontSize: '0.875rem', color: 'var(--warn-text)', lineHeight: 1.5 },
 }
