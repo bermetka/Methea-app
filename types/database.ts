@@ -28,6 +28,24 @@ export interface TheorySuggestion {
   fit_score: number
 }
 
+// A theory a student added themselves (bring-your-own). Stored per-project inside
+// research_context.theories.custom_theories — NEVER written to the global `theories`
+// table, so the AI suggestion pool stays curated. Its OpenAlex verification result is
+// stored here so the chip is stable and we don't re-hit OpenAlex on every render.
+export interface CustomTheory {
+  id: string                 // "custom:<uuid>"
+  name: string
+  author: string
+  year: number | null
+  summary: string
+  concepts: string[]
+  disciplines: string[]
+  doi: string | null
+  verification: 'doi_verified' | 'unverified'   // BYO is never 'classic_verified'
+  added_by_user: true
+  source_citation: string    // raw text/DOI the student pasted — shown, never as fact when unverified
+}
+
 export interface SocraticGate1Response {
   completed: boolean
   responses: Record<string, string>
@@ -89,10 +107,13 @@ export interface ResearchContext {
     completed: boolean
     responses: Record<string, string>
     questions?: ClarificationQuestion[]
+    context_note?: string              // optional free-text nuance folded into downstream generation
   }
   theories?: {
     selected_ids: string[]
     reading_list_items: ReadingListItem[]
+    custom_theories?: CustomTheory[]   // bring-your-own theories (per-project, off the global table)
+    suggestions?: TheorySuggestion[]   // cached so re-entry keeps AI reasons without re-calling Claude
   }
   socratic_gate_2?: {
     completed: boolean
