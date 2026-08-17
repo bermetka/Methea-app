@@ -23,6 +23,7 @@ interface Props {
   projectId: string
   topic: string
   cards: TheoryCardData[]
+  libraryCards?: TheoryCardData[]
   initialSelected?: string[]
   suggestions?: TheorySuggestion[]
   readOnly?: boolean
@@ -31,9 +32,15 @@ interface Props {
 const MIN_SELECT = 2
 const MAX_SELECT = 4
 
-export default function TheoryCards({ projectId, topic, cards, initialSelected, suggestions, readOnly }: Props) {
+type View = 'suggested' | 'browse'
+
+export default function TheoryCards({ projectId, topic, cards, libraryCards, initialSelected, suggestions, readOnly }: Props) {
   const [selected, setSelected] = useState<Set<string>>(new Set(initialSelected ?? []))
   const [submitting, setSubmitting] = useState(false)
+  const [view, setView] = useState<View>('suggested')
+
+  const hasLibrary = !!libraryCards?.length
+  const visibleCards = view === 'browse' && libraryCards ? libraryCards : cards
 
   function toggle(id: string) {
     setSelected(prev => {
@@ -76,9 +83,34 @@ export default function TheoryCards({ projectId, topic, cards, initialSelected, 
         </p>
       </div>
 
+      {/* View toggle — suggested-first, browse-second */}
+      {hasLibrary && (
+        <div style={s.viewRow}>
+          <div style={s.viewBtns}>
+            <button
+              type="button"
+              onClick={() => setView('suggested')}
+              style={{ ...s.viewBtn, ...(view === 'suggested' ? s.viewBtnActive : {}) }}
+            >
+              Suggested for you
+            </button>
+            <button
+              type="button"
+              onClick={() => setView('browse')}
+              style={{ ...s.viewBtn, ...(view === 'browse' ? s.viewBtnActive : {}) }}
+            >
+              Browse full library
+            </button>
+          </div>
+          {view === 'browse' && (
+            <span style={s.viewHint}>Pick any theory from the curated library.</span>
+          )}
+        </div>
+      )}
+
       {/* Card grid */}
       <div style={s.grid}>
-        {cards.map(card => {
+        {visibleCards.map(card => {
           const isSelected = selected.has(card.id)
           return (
             <button
@@ -158,6 +190,11 @@ export default function TheoryCards({ projectId, topic, cards, initialSelected, 
 
 const s: Record<string, React.CSSProperties> = {
   wrapper:    { display: 'flex', flexDirection: 'column', gap: '1.5rem' },
+  viewRow:    { display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' as const },
+  viewBtns:   { display: 'flex', gap: '0.375rem' },
+  viewBtn:    { padding: '4px 12px', border: '1px solid var(--stone)', borderRadius: 'var(--radius-sm)', background: 'var(--sheet)', color: 'var(--graphite)', fontSize: '0.8125rem', fontFamily: 'inherit', cursor: 'pointer' },
+  viewBtnActive: { background: 'var(--ink-blue)', color: 'var(--sheet)', borderColor: 'var(--ink-blue)' },
+  viewHint:   { fontSize: '0.8125rem', color: 'var(--pencil)' },
   banner:     { padding: '1rem 1.25rem', background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)' },
   bannerText: { fontSize: '0.9375rem', color: 'var(--graphite)', lineHeight: 1.6 },
   grid: {
