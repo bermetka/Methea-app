@@ -26,6 +26,7 @@ Discipline: ${brief.discipline}
 Degree level: ${brief.degree_level}
 ${brief.constraints?.length ? `Constraints: ${brief.constraints.join('; ')}` : ''}
 ${gate1?.responses ? `Clarification answers: ${JSON.stringify(gate1.responses)}` : ''}
+${gate1?.context_note ? `Student's added context (weight this nuance in your reasoning): ${gate1.context_note}` : ''}
 
 Available theory library (you MUST only suggest IDs from this list):
 ${libraryListing}
