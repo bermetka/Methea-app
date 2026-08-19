@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useFormState, useFormStatus } from 'react-dom'
 import StatusChip, { type VerificationStatus } from '@/components/ui/StatusChip'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
@@ -53,9 +53,15 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
   const [view, setView] = useState<View>('suggested')
   const [showAdd, setShowAdd] = useState(false)
   const [addState, addAction] = useFormState<AddCustomState, FormData>(addCustomTheory, null)
+  const [note, setNote] = useState<{ text: string; tone: 'ok' | 'warn' | 'muted' } | null>(null)
 
   const hasLibrary = !!libraryCards?.length
   const visibleCards = view === 'browse' && libraryCards ? libraryCards : cards
+
+  // Read latest `selected` inside the add-effect without making it a dep (which would re-run
+  // the effect on every toggle).
+  const selectedRef = useRef(selected)
+  selectedRef.current = selected
 
   function toggle(id: string) {
     setSelected(prev => {
@@ -68,6 +74,35 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
       return next
     })
   }
+
+  // After a custom theory is added (or matched a duplicate), auto-select it so it's checked and
+  // flows into "Build my framework", and confirm the outcome. Runs once per server response.
+  useEffect(() => {
+    if (!addState) return
+    const id = addState.theoryId
+    if (!id) {
+      setNote({ text: addState.message, tone: addState.outcome === 'unverified' ? 'warn' : 'muted' })
+      return
+    }
+    const cur = selectedRef.current
+    const alreadyIn = cur.has(id)
+    const hasRoom = alreadyIn || cur.size < MAX_SELECT
+    if (hasRoom && !alreadyIn) {
+      setSelected(prev => {
+        const next = new Set(prev)
+        next.add(id)
+        return next
+      })
+    }
+    if (addState.outcome === 'duplicate') {
+      setNote({ text: `${addState.message} It's selected and shown at the top.`, tone: 'muted' })
+    } else if (!hasRoom) {
+      setNote({ text: `${addState.message} You already have ${MAX_SELECT} theories selected — deselect one to include it.`, tone: 'warn' })
+    } else {
+      const tone = addState.outcome === 'unverified' ? 'warn' : 'ok'
+      setNote({ text: `${addState.message} Added and selected — it's in your framework.`, tone })
+    }
+  }, [addState])
 
   const count = selected.size
   const canSubmit = count >= MIN_SELECT && count <= MAX_SELECT
@@ -150,7 +185,11 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
                   <p style={s.theoryMeta}>{card.author}{card.year ? `, ${card.year}` : ''}</p>
                 </div>
 
-                {card.why_it_fits && <p style={s.whyItFits}>{card.why_it_fits}</p>}
+                {card.why_it_fits
+                  ? <p style={s.whyItFits}>{card.why_it_fits}</p>
+                  : card.summary
+                    ? <p style={s.summary}>{card.summary}</p>
+                    : null}
 
                 {card.concepts.length > 0 && (
                   <div style={s.tags}>
@@ -212,14 +251,14 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
             <input id="byo-name" name="name" placeholder="e.g. Institutional Logics" style={s.addInput} />
             <AddSubmitButton />
           </form>
-          {addState && (
+          {note && (
             <p style={{
               ...s.addOutcome,
-              ...(addState.outcome === 'verified' ? s.addOutcomeOk
-                : addState.outcome === 'unverified' ? s.addOutcomeWarn
+              ...(note.tone === 'ok' ? s.addOutcomeOk
+                : note.tone === 'warn' ? s.addOutcomeWarn
                 : s.addOutcomeMuted),
             }}>
-              {addState.message}
+              {note.text}
             </p>
           )}
         </div>
@@ -319,6 +358,12 @@ const s: Record<string, React.CSSProperties> = {
     fontStyle: 'italic',
     color: 'var(--graphite)',
     lineHeight: 1.65,
+  },
+  summary: {
+    fontFamily: "'Source Serif 4', Georgia, serif",
+    fontSize: '0.875rem',
+    color: 'var(--graphite)',
+    lineHeight: 1.6,
   },
   tags:  { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem' },
   tag:   { padding: '2px 8px', background: 'var(--paper-deep)', color: 'var(--graphite)', borderRadius: 'var(--radius-sm)', fontSize: '0.75rem' },

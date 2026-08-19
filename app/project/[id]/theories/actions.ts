@@ -95,6 +95,7 @@ export type AddCustomState = {
   ok: boolean
   outcome: 'verified' | 'unverified' | 'duplicate' | 'empty' | 'error'
   message: string
+  theoryId?: string   // id of the added (or already-existing) custom theory, so the client can select it
 } | null
 
 /**
@@ -143,7 +144,7 @@ export async function addCustomTheory(
     (!dupeKeyDoi && normText(c.source_citation || c.name) === dupeKeyText)
   )
   if (preDupe) {
-    return { ok: false, outcome: 'duplicate', message: `"${preDupe.name}" is already in your theories.` }
+    return { ok: false, outcome: 'duplicate', message: `"${preDupe.name}" is already in your theories.`, theoryId: preDupe.id }
   }
 
   const lookup = await verifyCitation({ doi, text })
@@ -168,7 +169,7 @@ export async function addCustomTheory(
     ? existing.find(c => c.doi && normDoi(c.doi) === normDoi(custom.doi!))
     : undefined
   if (postDupe) {
-    return { ok: false, outcome: 'duplicate', message: `"${postDupe.name}" is already in your theories.` }
+    return { ok: false, outcome: 'duplicate', message: `"${postDupe.name}" is already in your theories.`, theoryId: postDupe.id }
   }
 
   await updateResearchContext(
@@ -186,8 +187,8 @@ export async function addCustomTheory(
   revalidatePath(`/project/${projectId}/theories`)
 
   return custom.verification === 'doi_verified'
-    ? { ok: true, outcome: 'verified', message: `✓ Added "${custom.name}" — verified via OpenAlex.` }
-    : { ok: true, outcome: 'unverified', message: `Added "${custom.name}" with a ? — we couldn't verify it, so check the source yourself.` }
+    ? { ok: true, outcome: 'verified', message: `✓ Added "${custom.name}" — verified via OpenAlex.`, theoryId: custom.id }
+    : { ok: true, outcome: 'unverified', message: `Added "${custom.name}" with a ? — verify the source yourself.`, theoryId: custom.id }
 }
 
 /**

@@ -85,7 +85,9 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
     .map(c => c.card)
 
   // Bring-your-own theories: render from stored verification result — no OpenAlex re-hit.
-  const customCards: TheoryCardData[] = (ctx.theories?.custom_theories ?? []).map(c => ({
+  // Newest-first so a just-added theory lands at the top of the grid, and pinned into BOTH
+  // views so it's never hidden by whichever tab the student added it from.
+  const customCards: TheoryCardData[] = (ctx.theories?.custom_theories ?? []).map((c): TheoryCardData => ({
     id: c.id,
     name: c.name,
     author: c.author,
@@ -98,12 +100,12 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
       : { kind: 'unverified' },
     in_reading_list: false,
     isCustom: true,
-  }))
+  })).reverse()
 
-  const cards: TheoryCardData[] = [...suggestedCards, ...customCards]
+  const cards: TheoryCardData[] = [...customCards, ...suggestedCards]
 
-  // Browse view: the full curated library (already ordered by name).
-  const libraryCards: TheoryCardData[] = (allTheories as Theory[]).map(toCard)
+  // Browse view: the student's own theories first, then the full curated library (ordered by name).
+  const libraryCards: TheoryCardData[] = [...customCards, ...(allTheories as Theory[]).map(toCard)]
 
   return (
     <main style={styles.page}>
