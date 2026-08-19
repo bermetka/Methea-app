@@ -1,10 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { useFormState, useFormStatus } from 'react-dom'
 import StatusChip, { type VerificationStatus } from '@/components/ui/StatusChip'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
 import { glossaryTerm } from '@/lib/glossary'
-import { saveTheorySelection, addCustomTheory } from './actions'
+import { saveTheorySelection, addCustomTheory, removeCustomTheory, type AddCustomState } from './actions'
 import type { TheorySuggestion } from '@/types/database'
 
 export interface TheoryCardData {
@@ -17,6 +18,18 @@ export interface TheoryCardData {
   why_it_fits: string
   verification: VerificationStatus
   in_reading_list: boolean
+  isCustom?: boolean
+}
+
+// Submit button for the add-your-own form — reads the form's pending state so the user
+// sees "Verifying…" and can't double-submit.
+function AddSubmitButton() {
+  const { pending } = useFormStatus()
+  return (
+    <button type="submit" disabled={pending} style={{ ...s.addBtn, ...(pending ? s.addBtnDisabled : {}) }}>
+      {pending ? 'Verifying…' : 'Verify & add'}
+    </button>
+  )
 }
 
 interface Props {
@@ -38,6 +51,8 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
   const [selected, setSelected] = useState<Set<string>>(new Set(initialSelected ?? []))
   const [submitting, setSubmitting] = useState(false)
   const [view, setView] = useState<View>('suggested')
+  const [showAdd, setShowAdd] = useState(false)
+  const [addState, addAction] = useFormState<AddCustomState, FormData>(addCustomTheory, null)
 
   const hasLibrary = !!libraryCards?.length
   const visibleCards = view === 'browse' && libraryCards ? libraryCards : cards
@@ -83,21 +98,25 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
         </p>
       </div>
 
-      {/* View toggle — suggested-first, browse-second */}
+      {/* View toggle — segmented control, suggested-first / browse-second */}
       {hasLibrary && (
         <div style={s.viewRow}>
-          <div style={s.viewBtns}>
+          <div style={s.segmented} role="tablist" aria-label="Theory view">
             <button
               type="button"
+              role="tab"
+              aria-selected={view === 'suggested'}
               onClick={() => setView('suggested')}
-              style={{ ...s.viewBtn, ...(view === 'suggested' ? s.viewBtnActive : {}) }}
+              style={{ ...s.segBtn, ...(view === 'suggested' ? s.segBtnActive : {}) }}
             >
               Suggested for you
             </button>
             <button
               type="button"
+              role="tab"
+              aria-selected={view === 'browse'}
               onClick={() => setView('browse')}
-              style={{ ...s.viewBtn, ...(view === 'browse' ? s.viewBtnActive : {}) }}
+              style={{ ...s.segBtn, borderLeft: '1px solid var(--stone)', ...(view === 'browse' ? s.segBtnActive : {}) }}
             >
               Browse full library
             </button>
@@ -113,67 +132,98 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
         {visibleCards.map(card => {
           const isSelected = selected.has(card.id)
           return (
-            <button
-              key={card.id}
-              type="button"
-              onClick={() => toggle(card.id)}
-              aria-pressed={isSelected}
-              aria-label={`${card.name} — ${isSelected ? 'selected' : 'not selected'}`}
-              style={{
-                ...s.card,
-                borderColor: isSelected ? 'var(--ink-blue)' : 'var(--stone-soft)',
-              }}
-            >
-              {isSelected && <span style={s.checkmark} aria-hidden="true">✓</span>}
+            <div key={card.id} style={s.cardWrap}>
+              <button
+                type="button"
+                onClick={() => toggle(card.id)}
+                aria-pressed={isSelected}
+                aria-label={`${card.name} — ${isSelected ? 'selected' : 'not selected'}`}
+                style={{
+                  ...s.card,
+                  borderColor: isSelected ? 'var(--ink-blue)' : 'var(--stone-soft)',
+                }}
+              >
+                {isSelected && <span style={s.checkmark} aria-hidden="true">✓</span>}
 
-              <div style={s.cardHeader}>
-                <p style={s.theoryName}>{card.name}</p>
-                <p style={s.theoryMeta}>{card.author}{card.year ? `, ${card.year}` : ''}</p>
-              </div>
-
-              {card.why_it_fits && <p style={s.whyItFits}>{card.why_it_fits}</p>}
-
-              {card.concepts.length > 0 && (
-                <div style={s.tags}>
-                  {card.concepts.slice(0, 4).map(c => (
-                    <span key={c} style={s.tag}>{c}</span>
-                  ))}
+                <div style={s.cardHeader}>
+                  <p style={s.theoryName}>{card.name}</p>
+                  <p style={s.theoryMeta}>{card.author}{card.year ? `, ${card.year}` : ''}</p>
                 </div>
-              )}
 
-              <div style={s.chips}>
-                <StatusChip status={card.verification} />
-                {card.verification.kind === 'unverified' && (
-                  <span style={s.unverifiedLabel}>Unverified — verify manually</span>
+                {card.why_it_fits && <p style={s.whyItFits}>{card.why_it_fits}</p>}
+
+                {card.concepts.length > 0 && (
+                  <div style={s.tags}>
+                    {card.concepts.slice(0, 4).map(c => (
+                      <span key={c} style={s.tag}>{c}</span>
+                    ))}
+                  </div>
                 )}
-                {card.in_reading_list && (
-                  <span style={s.readingListChip}>+ In your reading list</span>
-                )}
-              </div>
-            </button>
+
+                <div style={s.chips}>
+                  <StatusChip status={card.verification} />
+                  {card.verification.kind === 'unverified' && (
+                    <span style={s.unverifiedLabel}>Unverified — verify manually</span>
+                  )}
+                  {card.isCustom && <span style={s.yourTheoryTag}>Your theory</span>}
+                  {card.in_reading_list && (
+                    <span style={s.readingListChip}>+ In your reading list</span>
+                  )}
+                </div>
+              </button>
+
+              {card.isCustom && (
+                <form action={removeCustomTheory} style={s.removeRow}>
+                  <input type="hidden" name="projectId" value={projectId} />
+                  <input type="hidden" name="customId" value={card.id} />
+                  <button type="submit" style={s.removeBtn} aria-label={`Remove ${card.name}`}>
+                    Remove
+                  </button>
+                </form>
+              )}
+            </div>
           )
         })}
       </div>
 
       {/* Add your own theory — verified via OpenAlex, stored per-project */}
-      <details style={s.addPanel}>
-        <summary style={s.addSummary}>+ Add your own theory</summary>
-        <form action={addCustomTheory} style={s.addForm}>
-          <input type="hidden" name="projectId" value={projectId} />
-          <p style={s.addHint}>
-            Paste a DOI or a citation. We&apos;ll check it against OpenAlex — verified sources get a
-            ✓; anything we can&apos;t find is kept with a ? so you can verify it yourself. We never
-            present an unverified source as fact.
-          </p>
-          <label style={s.addLabel} htmlFor="byo-doi">DOI (best match)</label>
-          <input id="byo-doi" name="doi" placeholder="10.2307/2095101" style={s.addInput} />
-          <label style={s.addLabel} htmlFor="byo-citation">or citation / title</label>
-          <input id="byo-citation" name="citation" placeholder="Author (Year). Title of the work." style={s.addInput} />
-          <label style={s.addLabel} htmlFor="byo-name">Display name (optional)</label>
-          <input id="byo-name" name="name" placeholder="e.g. Institutional Logics" style={s.addInput} />
-          <button type="submit" style={s.addBtn}>Verify &amp; add</button>
-        </form>
-      </details>
+      {!showAdd ? (
+        <button type="button" onClick={() => setShowAdd(true)} style={s.addToggleBtn}>
+          + Add your own theory
+        </button>
+      ) : (
+        <div style={s.addPanel}>
+          <div style={s.addPanelHead}>
+            <p style={s.addPanelTitle}>Add your own theory</p>
+            <button type="button" onClick={() => setShowAdd(false)} style={s.addCloseBtn}>Cancel</button>
+          </div>
+          <form action={addAction} style={s.addForm}>
+            <input type="hidden" name="projectId" value={projectId} />
+            <p style={s.addHint}>
+              Paste a DOI or a citation. We&apos;ll check it against OpenAlex — verified sources get a
+              ✓; anything we can&apos;t find is kept with a ? so you can verify it yourself. We never
+              present an unverified source as fact.
+            </p>
+            <label style={s.addLabel} htmlFor="byo-doi">DOI (best match)</label>
+            <input id="byo-doi" name="doi" placeholder="10.2307/2095101" style={s.addInput} />
+            <label style={s.addLabel} htmlFor="byo-citation">or citation / title</label>
+            <input id="byo-citation" name="citation" placeholder="Author (Year). Title of the work." style={s.addInput} />
+            <label style={s.addLabel} htmlFor="byo-name">Display name (optional)</label>
+            <input id="byo-name" name="name" placeholder="e.g. Institutional Logics" style={s.addInput} />
+            <AddSubmitButton />
+          </form>
+          {addState && (
+            <p style={{
+              ...s.addOutcome,
+              ...(addState.outcome === 'verified' ? s.addOutcomeOk
+                : addState.outcome === 'unverified' ? s.addOutcomeWarn
+                : s.addOutcomeMuted),
+            }}>
+              {addState.message}
+            </p>
+          )}
+        </div>
+      )}
 
       {/* Helper text + CTA */}
       <div style={s.footer}>
@@ -216,9 +266,9 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
 const s: Record<string, React.CSSProperties> = {
   wrapper:    { display: 'flex', flexDirection: 'column', gap: '1.5rem' },
   viewRow:    { display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' as const },
-  viewBtns:   { display: 'flex', gap: '0.375rem' },
-  viewBtn:    { padding: '4px 12px', border: '1px solid var(--stone)', borderRadius: 'var(--radius-sm)', background: 'var(--sheet)', color: 'var(--graphite)', fontSize: '0.8125rem', fontFamily: 'inherit', cursor: 'pointer' },
-  viewBtnActive: { background: 'var(--ink-blue)', color: 'var(--sheet)', borderColor: 'var(--ink-blue)' },
+  segmented:  { display: 'inline-flex', border: '1px solid var(--stone)', borderRadius: 'var(--radius)', overflow: 'hidden', background: 'var(--sheet)' },
+  segBtn:     { padding: '0.5rem 1rem', border: 'none', background: 'transparent', color: 'var(--graphite)', fontSize: '0.875rem', fontWeight: 600, fontFamily: 'inherit', cursor: 'pointer' },
+  segBtnActive: { background: 'var(--ink-blue)', color: 'var(--sheet)' },
   viewHint:   { fontSize: '0.8125rem', color: 'var(--pencil)' },
   banner:     { padding: '1rem 1.25rem', background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)' },
   bannerText: { fontSize: '0.9375rem', color: 'var(--graphite)', lineHeight: 1.6 },
@@ -227,9 +277,11 @@ const s: Record<string, React.CSSProperties> = {
     gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
     gap: '1rem',
   },
+  cardWrap: { display: 'flex', flexDirection: 'column' },
   card: {
     position: 'relative',
     display: 'flex',
+    flex: 1,
     flexDirection: 'column',
     gap: '0.75rem',
     padding: '1.25rem',
@@ -240,6 +292,9 @@ const s: Record<string, React.CSSProperties> = {
     textAlign: 'left',
     transition: 'border-color 0.1s',
   },
+  removeRow: { display: 'flex', justifyContent: 'flex-end', marginTop: '0.375rem' },
+  removeBtn: { background: 'none', border: 'none', padding: '0.125rem 0.25rem', fontSize: '0.75rem', fontFamily: 'inherit', color: 'var(--pencil)', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: '2px' },
+  yourTheoryTag: { padding: '2px 8px', background: 'var(--paper-deep)', color: 'var(--graphite)', borderRadius: 'var(--radius-sm)', fontSize: '0.6875rem', fontWeight: 600 },
   checkmark: {
     position: 'absolute',
     top: '0.75rem',
@@ -269,13 +324,21 @@ const s: Record<string, React.CSSProperties> = {
   tag:   { padding: '2px 8px', background: 'var(--paper-deep)', color: 'var(--graphite)', borderRadius: 'var(--radius-sm)', fontSize: '0.75rem' },
   chips: { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem', marginTop: 'auto', alignItems: 'center' },
   unverifiedLabel: { fontSize: '0.6875rem', color: 'var(--pencil)', fontStyle: 'italic' as const },
-  addPanel:   { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '0.875rem 1.125rem' },
-  addSummary: { fontSize: '0.875rem', fontWeight: 600, color: 'var(--ink-blue)', cursor: 'pointer' },
-  addForm:    { display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: '0.875rem' },
+  addToggleBtn: { alignSelf: 'flex-start', padding: '0.625rem 1.25rem', background: 'var(--sheet)', color: 'var(--ink-blue)', border: '1.5px solid var(--ink-blue)', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
+  addPanel:   { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '1.125rem 1.25rem' },
+  addPanelHead: { display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' },
+  addPanelTitle: { fontSize: '0.9375rem', fontWeight: 600, color: 'var(--ink)' },
+  addCloseBtn: { background: 'none', border: 'none', padding: 0, fontSize: '0.8125rem', fontFamily: 'inherit', color: 'var(--pencil)', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: '2px' },
+  addForm:    { display: 'flex', flexDirection: 'column', gap: '0.5rem' },
   addHint:    { fontSize: '0.8125rem', color: 'var(--pencil)', lineHeight: 1.55 },
   addLabel:   { fontSize: '0.75rem', fontWeight: 600, color: 'var(--pencil)', marginTop: '0.25rem' },
   addInput:   { width: '100%', padding: '0.5rem 0.625rem', background: 'var(--paper)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-sm)', fontSize: '0.875rem', fontFamily: 'inherit', color: 'var(--ink)' },
   addBtn:     { alignSelf: 'flex-start', marginTop: '0.5rem', padding: '0.5rem 1.125rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
+  addBtnDisabled: { background: 'var(--paper-deep)', color: 'var(--pencil)', cursor: 'default' },
+  addOutcome:     { marginTop: '0.75rem', fontSize: '0.8125rem', lineHeight: 1.5, padding: '0.5rem 0.75rem', borderRadius: 'var(--radius-sm)' },
+  addOutcomeOk:   { background: 'var(--mint)', color: 'var(--moss)' },
+  addOutcomeWarn: { background: 'var(--marker-yellow)', color: 'var(--warn-text)' },
+  addOutcomeMuted:{ background: 'var(--paper-deep)', color: 'var(--pencil)' },
   readingListChip: {
     display: 'inline-flex',
     alignItems: 'center',

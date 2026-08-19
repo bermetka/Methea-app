@@ -1,11 +1,19 @@
 'use server'
 
 import { redirect } from 'next/navigation'
+import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
 import { isCustomId, newCustomTheoryId } from '@/lib/project-theories'
 import { verifyCitation } from '@/lib/openalex'
 import type { ReadingListItem, TheorySuggestion, CustomTheory } from '@/types/database'
+
+function normDoi(raw: string): string {
+  return raw.trim().replace(/^https?:\/\/(dx\.)?doi\.org\//i, '').replace(/^doi:/i, '').toLowerCase()
+}
+function normText(raw: string): string {
+  return raw.trim().toLowerCase().replace(/\s+/g, ' ')
+}
 
 export async function saveTheorySelection(formData: FormData) {
   const supabase = createClient()
@@ -83,25 +91,37 @@ export async function saveTheorySelection(formData: FormData) {
   redirect(`/project/${projectId}`)
 }
 
+export type AddCustomState = {
+  ok: boolean
+  outcome: 'verified' | 'unverified' | 'duplicate' | 'empty' | 'error'
+  message: string
+} | null
+
 /**
  * Add a student's own theory by DOI or citation text. Runs it through OpenAlex
  * verification and stores the result PER-PROJECT in research_context.theories.custom_theories
  * (namespaced id, never the global `theories` table — the AI suggestion pool stays curated).
  * Verified → stored as 'doi_verified' (✓). Not found → 'unverified' (?), shown not hidden,
- * never presented as fact.
+ * never presented as fact. Deduplicates on DOI (or normalized citation) so a double-submit
+ * can't add the same theory twice. Returns a state object for useFormState — no redirect;
+ * revalidatePath refreshes the card grid in place.
  */
-export async function addCustomTheory(formData: FormData) {
+export async function addCustomTheory(
+  _prev: AddCustomState,
+  formData: FormData
+): Promise<AddCustomState> {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user) return { ok: false, outcome: 'error', message: 'Please sign in again.' }
 
   const projectId = formData.get('projectId') as string
   const doi  = ((formData.get('doi') as string) ?? '').trim()
   const text = ((formData.get('citation') as string) ?? '').trim()
   const name = ((formData.get('name') as string) ?? '').trim()
 
-  // Nothing to verify — bounce back without writing.
-  if (!doi && !text && !name) redirect(`/project/${projectId}/theories`)
+  if (!doi && !text && !name) {
+    return { ok: false, outcome: 'empty', message: 'Enter a DOI or citation to add a theory.' }
+  }
 
   const { data: project } = await supabase
     .from('projects')
@@ -110,7 +130,21 @@ export async function addCustomTheory(formData: FormData) {
     .eq('user_id', user.id)
     .single()
 
-  if (!project) redirect('/onboarding')
+  if (!project) return { ok: false, outcome: 'error', message: 'Project not found.' }
+
+  const ctx = project.research_context
+  const existing: CustomTheory[] = ctx?.theories?.custom_theories ?? []
+
+  // Dedup BEFORE the network call when we already have an exact DOI/citation match.
+  const dupeKeyDoi  = doi ? normDoi(doi) : ''
+  const dupeKeyText = normText(text || name)
+  const preDupe = existing.find(c =>
+    (dupeKeyDoi && c.doi && normDoi(c.doi) === dupeKeyDoi) ||
+    (!dupeKeyDoi && normText(c.source_citation || c.name) === dupeKeyText)
+  )
+  if (preDupe) {
+    return { ok: false, outcome: 'duplicate', message: `"${preDupe.name}" is already in your theories.` }
+  }
 
   const lookup = await verifyCitation({ doi, text })
   const m = lookup.meta
@@ -129,8 +163,13 @@ export async function addCustomTheory(formData: FormData) {
     source_citation: text || doi || name,
   }
 
-  const ctx = project.research_context
-  const existing: CustomTheory[] = ctx?.theories?.custom_theories ?? []
+  // Re-check dedup against the resolved DOI (OpenAlex may return a DOI for a text lookup).
+  const postDupe = custom.doi
+    ? existing.find(c => c.doi && normDoi(c.doi) === normDoi(custom.doi!))
+    : undefined
+  if (postDupe) {
+    return { ok: false, outcome: 'duplicate', message: `"${postDupe.name}" is already in your theories.` }
+  }
 
   await updateResearchContext(
     projectId,
@@ -144,5 +183,64 @@ export async function addCustomTheory(formData: FormData) {
     supabase
   )
 
-  redirect(`/project/${projectId}/theories`)
+  revalidatePath(`/project/${projectId}/theories`)
+
+  return custom.verification === 'doi_verified'
+    ? { ok: true, outcome: 'verified', message: `✓ Added "${custom.name}" — verified via OpenAlex.` }
+    : { ok: true, outcome: 'unverified', message: `Added "${custom.name}" with a ? — we couldn't verify it, so check the source yourself.` }
+}
+
+/**
+ * Remove a student's own (custom) theory — undoes a mistake or duplicate. Drops it from
+ * custom_theories, from the selection, and from reading-list items. If it was a selected
+ * theory and a framework already exists, the change ripples downstream (⚠ outdated).
+ */
+export async function removeCustomTheory(formData: FormData) {
+  const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user) redirect('/login')
+
+  const projectId = formData.get('projectId') as string
+  const customId  = formData.get('customId') as string
+
+  const { data: project } = await supabase
+    .from('projects')
+    .select('research_context')
+    .eq('id', projectId)
+    .eq('user_id', user.id)
+    .single()
+
+  if (!project) redirect('/onboarding')
+
+  const ctx = project.research_context
+  const theories = ctx?.theories ?? { selected_ids: [], reading_list_items: [] }
+  const wasSelected = (theories.selected_ids ?? []).includes(customId)
+
+  const nextCustom = (theories.custom_theories ?? []).filter((c: CustomTheory) => c.id !== customId)
+  const nextSelected = (theories.selected_ids ?? []).filter((id: string) => id !== customId)
+  const nextReading = (theories.reading_list_items ?? []).filter(
+    (r: ReadingListItem) => r.matched_theory_id !== customId
+  )
+
+  const currentOutdated: string[] = ctx?.outdated_blocks ?? []
+  const outdatedBlocks = wasSelected && ctx?.framework?.edges?.length
+    ? Array.from(new Set([...currentOutdated, 'framework', 'methodology', 'interview_guide']))
+    : currentOutdated
+
+  await updateResearchContext(
+    projectId,
+    'theories',
+    {
+      theories: {
+        ...theories,
+        selected_ids: nextSelected,
+        reading_list_items: nextReading,
+        custom_theories: nextCustom,
+      },
+      outdated_blocks: outdatedBlocks,
+    },
+    supabase
+  )
+
+  revalidatePath(`/project/${projectId}/theories`)
 }

@@ -97,6 +97,7 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
       ? { kind: 'doi_verified', doi: c.doi ?? '' }
       : { kind: 'unverified' },
     in_reading_list: false,
+    isCustom: true,
   }))
 
   const cards: TheoryCardData[] = [...suggestedCards, ...customCards]
