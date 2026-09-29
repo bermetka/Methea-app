@@ -14,7 +14,7 @@ const DEGREE_LEVELS = [
 
 const DISCIPLINES = [
   'Business & Management', 'Economics', 'Education', 'Engineering',
-  'Health Sciences', 'Information Systems', 'Law', 'Political Science',
+  'Health Sciences', 'Information Systems', 'Law', 'Media & Communication', 'Political Science',
   'Psychology', 'Public Administration', 'Sociology', 'Other',
 ]
 
