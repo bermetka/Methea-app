@@ -15,6 +15,7 @@ export default async function ProjectsPage() {
     .from('projects')
     .select('id, title, created_at, research_context')
     .eq('user_id', user.id)
+    .eq('status', 'active')
     .order('created_at', { ascending: false })
 
   const list = (projects ?? []) as Project[]
