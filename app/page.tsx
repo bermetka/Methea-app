@@ -240,6 +240,7 @@ export default async function LandingPage() {
             <div style={{ ...s.pricingCard, ...s.pricingCardFeatured }}>
               <p style={s.planBadge}>Most popular</p>
               <p style={s.planName}>Project</p>
+              {/* TODO(prompt-2): hardcoded price — use the price variant (NEXT_PUBLIC_PRICE_LABEL_A/_B) */}
               <p style={s.planPrice}>$49</p>
               <p style={s.planNote}>One-time · valid until you're done</p>
               <ul style={s.planItems}>

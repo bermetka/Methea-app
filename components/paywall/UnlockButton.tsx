@@ -14,6 +14,8 @@ interface Props {
 // token/config) so the button never sits in a clickable-but-silently-broken state.
 type Status = 'loading' | 'idle' | 'opening' | 'finalizing' | 'error'
 
+// TODO(prompt-2): price is hardcoded — take it from the user's price variant
+// (NEXT_PUBLIC_PRICE_LABEL_A/_B) instead of '$49'.
 export default function UnlockButton({ projectId, label = 'Unlock this project — $49 →' }: Props) {
   const paddleRef = useRef<Paddle | undefined>(undefined)
   const [status, setStatus] = useState<Status>('loading')

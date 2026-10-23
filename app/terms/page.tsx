@@ -55,6 +55,8 @@ export default function TermsPage() {
 
       <section style={prose.section}>
         <h2 style={prose.h2}>4. Purchases and payments</h2>
+        {/* TODO(prompt-2): hardcoded price in legal copy — must not contradict the price
+            variant a user sees (NEXT_PUBLIC_PRICE_LABEL_A/_B). Decide wording with the A/B test. */}
         <p style={prose.p}>
           Methea&apos;s paid plan is <strong style={prose.strong}>$49 per project, one-time</strong>,
           covering that project until it&apos;s complete. Other plans, if and when offered, will be

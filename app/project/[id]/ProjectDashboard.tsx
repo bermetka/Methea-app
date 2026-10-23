@@ -154,6 +154,7 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
               <p style={s.bannerEyebrow}>Unlock this project</p>
               <p style={s.bannerText}>Get the full framework narrative, methodology, interview guide, and analysis.</p>
             </div>
+            {/* TODO(prompt-2): hardcoded price — use the price variant (NEXT_PUBLIC_PRICE_LABEL_A/_B) */}
             <UnlockButton projectId={projectId} label="Unlock — $49 →" />
           </div>
         ) : nextHref && (
@@ -651,6 +652,7 @@ function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReaso
           {locked
             ? <span style={s.lockBadge}>🔒 v2</span>
             : status === 'paywalled'
+            // TODO(prompt-2): hardcoded price — use the price variant (NEXT_PUBLIC_PRICE_LABEL_A/_B)
             ? <StatusBadge status="paywalled" label="$49 to unlock" />
             : status === 'empty'
             ? <StatusBadge status="locked" label="Not started" />
