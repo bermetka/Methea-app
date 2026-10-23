@@ -125,7 +125,9 @@ export interface ResearchContext {
     narrative: string
     citations: FrameworkCitation[]
     citation_statuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'>
+    diagram_theory_key?: string  // sorted selected_ids the diagram (edges) was generated from
   }
+  free_diagram_refreshes?: number  // unpaid diagram regenerations after a theory change (soft cap)
   methodology?: {
     paradigm: string
     paradigm_why: string

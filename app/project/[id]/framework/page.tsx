@@ -10,10 +10,16 @@ import type { Project } from '@/types/database'
 
 export const metadata = { title: 'Your framework — Methea' }
 
+// Free diagram redraws per project after the student changes theories, before
+// the unlock prompt. Soft cap: the counter lives in research_context.
+const FREE_DIAGRAM_REFRESHES = 5
+
 async function saveFrameworkEdgesOnly(
   projectId: string,
   edges: import('@/types/database').FrameworkEdge[],
-  ctx: import('@/types/database').ResearchContext
+  ctx: import('@/types/database').ResearchContext,
+  diagramTheoryKey: string,
+  freeDiagramRefreshes?: number
 ) {
   const supabase = createClient()
   await updateResearchContext(
@@ -26,7 +32,9 @@ async function saveFrameworkEdgesOnly(
         narrative: ctx.framework?.narrative ?? '',
         citations: ctx.framework?.citations ?? [],
         citation_statuses: ctx.framework?.citation_statuses ?? {},
+        diagram_theory_key: diagramTheoryKey,
       },
+      ...(freeDiagramRefreshes !== undefined && { free_diagram_refreshes: freeDiagramRefreshes }),
     },
     supabase
   )
@@ -70,12 +78,25 @@ export default async function FrameworkPage({ params }: { params: { id: string }
   const resetForReview = paid && isOutdated
 
   // Diagram (edges) is the free teaser — always generate/keep it.
+  const diagramTheoryKey = [...selectedIds].sort().join(',')
   let edges = resetForReview ? [] : (ctx.framework?.edges ?? [])
+  let diagramRefreshCapReached = false
   if (!edges.length) {
     edges = await generateRelationshipLabels(ctx, theories)
     // Persist the diagram immediately so it's not regenerated on every free view.
     // Not during a review reset — there the student's Save commits it.
-    if (!resetForReview) await saveFrameworkEdgesOnly(params.id, edges, ctx)
+    if (!resetForReview) await saveFrameworkEdgesOnly(params.id, edges, ctx, diagramTheoryKey)
+  } else if (!paid && isOutdated && ctx.framework?.diagram_theory_key !== diagramTheoryKey) {
+    // Unpaid student changed theories: redraw the diagram only (never the narrative), so the
+    // free diagram never shows theories they've removed. The 'framework' outdated flag stays
+    // set, so paying still runs the full review above.
+    const refreshesUsed = ctx.free_diagram_refreshes ?? 0
+    if (refreshesUsed < FREE_DIAGRAM_REFRESHES) {
+      edges = await generateRelationshipLabels(ctx, theories)
+      await saveFrameworkEdgesOnly(params.id, edges, ctx, diagramTheoryKey, refreshesUsed + 1)
+    } else {
+      diagramRefreshCapReached = true
+    }
   }
 
   // Narrative + citations are paid-only. Not generated, not fetched, not sent
@@ -159,6 +180,7 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           defaultLayout={defaultLayout}
           outdated={resetForReview}
           locked={!paid}
+          diagramRefreshCapReached={diagramRefreshCapReached}
         />
       </div>
     </main>

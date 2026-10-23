@@ -20,6 +20,7 @@ interface Props {
   defaultLayout: Layout
   outdated?: boolean
   locked: boolean
+  diagramRefreshCapReached?: boolean
 }
 
 const LAYOUT_LABELS: Record<Layout, string> = {
@@ -30,6 +31,7 @@ const LAYOUT_LABELS: Record<Layout, string> = {
 
 export default function FrameworkBuilder({
   projectId, theories, edges, narrative, citations, citationStatuses, defaultLayout, outdated, locked,
+  diagramRefreshCapReached,
 }: Props) {
   const [layout, setLayout] = useState<Layout>(defaultLayout)
   const [saving, setSaving] = useState(false)
@@ -115,6 +117,19 @@ export default function FrameworkBuilder({
             Your theories or research question changed, so we&apos;ve regenerated this framework.
             Review the diagram and narrative, then <strong>save</strong> to confirm.
           </p>
+        </div>
+      )}
+
+      {/* Free diagram redraws used up — the saved diagram predates the theory change */}
+      {diagramRefreshCapReached && (
+        <div style={s.reviewBanner}>
+          <span style={s.reviewBadge}>⚠ Diagram outdated</span>
+          <p style={s.reviewText}>
+            This diagram still shows your previous theories. You&apos;ve used the free diagram
+            redraws for this project. Unlock it to redraw the diagram with your current theories
+            and get the full verified narrative.
+          </p>
+          <UnlockButton projectId={projectId} />
         </div>
       )}
 
