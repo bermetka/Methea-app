@@ -140,6 +140,8 @@ export interface ResearchContext {
     narrative: string
   }
   ethics_confirmed?: boolean
+  // TODO(post-launch): dead since the Paddle paywall — nothing reads or writes it (the
+  // incrementExportCount action was removed). Remove the field and clean up after launch.
   export_count?: number        // free tier: 1 scaffold export allowed (watermarked)
   interview_guide?: {
     questions: InterviewQuestion[]
@@ -163,6 +165,8 @@ export interface Project {
   status: ProjectStatus
   research_context: ResearchContext
   context_version: number
+  paid_at: string | null
+  paddle_transaction_id: string | null
   created_at: string
   updated_at: string
 }

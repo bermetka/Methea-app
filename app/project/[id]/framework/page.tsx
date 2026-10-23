@@ -2,11 +2,35 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { generateRelationshipLabels, generateFrameworkNarrative } from '@/lib/prompts/framework'
 import { resolveProjectTheories } from '@/lib/project-theories'
+import { updateResearchContext } from '@/lib/research-context'
+import { isProjectPaid } from '@/lib/entitlement'
 import Logo from '@/components/ui/Logo'
 import FrameworkBuilder from './FrameworkBuilder'
 import type { Project } from '@/types/database'
 
 export const metadata = { title: 'Your framework — Methea' }
+
+async function saveFrameworkEdgesOnly(
+  projectId: string,
+  edges: import('@/types/database').FrameworkEdge[],
+  ctx: import('@/types/database').ResearchContext
+) {
+  const supabase = createClient()
+  await updateResearchContext(
+    projectId,
+    'framework',
+    {
+      framework: {
+        layout_preset: ctx.framework?.layout_preset ?? 'hub-and-spoke',
+        edges,
+        narrative: ctx.framework?.narrative ?? '',
+        citations: ctx.framework?.citations ?? [],
+        citation_statuses: ctx.framework?.citation_statuses ?? {},
+      },
+    },
+    supabase
+  )
+}
 
 export default async function FrameworkPage({ params }: { params: { id: string } }) {
   const supabase = createClient()
@@ -35,22 +59,35 @@ export default async function FrameworkPage({ params }: { params: { id: string }
 
   if (!theories.length) redirect(`/project/${params.id}`)
 
+  const paid = isProjectPaid(p)
+
   // Soft-invalidation: when an upstream change marked the framework ⚠ outdated, discard the
   // stale saved framework and regenerate from the current theories. Saving clears the flag.
+  // Paid only: an unpaid project can't save (saveFramework rejects it), so a reset would
+  // regenerate on every visit, and the narrative is paid-only anyway. Unpaid keeps the
+  // saved diagram and never resets.
   const isOutdated = (ctx.outdated_blocks ?? []).includes('framework')
+  const resetForReview = paid && isOutdated
 
-  let edges = isOutdated ? [] : (ctx.framework?.edges ?? [])
-  let narrativeResult = isOutdated
-    ? { narrative: '', citations: [] }
-    : {
-        narrative: ctx.framework?.narrative ?? '',
-        citations: ctx.framework?.citations ?? [],
-      }
-  let citationStatuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'> =
-    isOutdated ? {} : (ctx.framework?.citation_statuses ?? {})
-
+  // Diagram (edges) is the free teaser — always generate/keep it.
+  let edges = resetForReview ? [] : (ctx.framework?.edges ?? [])
   if (!edges.length) {
     edges = await generateRelationshipLabels(ctx, theories)
+    // Persist the diagram immediately so it's not regenerated on every free view.
+    // Not during a review reset — there the student's Save commits it.
+    if (!resetForReview) await saveFrameworkEdgesOnly(params.id, edges, ctx)
+  }
+
+  // Narrative + citations are paid-only. Not generated, not fetched, not sent
+  // to the client at all when unpaid — a blurred placeholder is not enough,
+  // the real text must never leave the server for an unpaid project.
+  let narrativeResult = paid && !resetForReview
+    ? { narrative: ctx.framework?.narrative ?? '', citations: ctx.framework?.citations ?? [] }
+    : { narrative: '', citations: [] }
+  let citationStatuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'> =
+    paid && !resetForReview ? (ctx.framework?.citation_statuses ?? {}) : {}
+
+  if (paid && !narrativeResult.narrative) {
     narrativeResult = await generateFrameworkNarrative(ctx, theories, edges)
 
     await Promise.all(
@@ -73,6 +110,23 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           citationStatuses[key] = 'unverified'
         }
       })
+    )
+
+    // Persist narrative + citations now that they've been generated for a paid project.
+    // Not during a review reset — the student reviews the regenerated version and saves.
+    if (!resetForReview) await updateResearchContext(
+      params.id,
+      'framework',
+      {
+        framework: {
+          layout_preset: ctx.framework?.layout_preset ?? (theories.length === 2 ? 'linear' : 'hub-and-spoke'),
+          edges,
+          narrative: narrativeResult.narrative,
+          citations: narrativeResult.citations,
+          citation_statuses: citationStatuses,
+        },
+      },
+      supabase
     )
   }
 
@@ -103,7 +157,8 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           citations={narrativeResult.citations}
           citationStatuses={citationStatuses}
           defaultLayout={defaultLayout}
-          outdated={isOutdated}
+          outdated={resetForReview}
+          locked={!paid}
         />
       </div>
     </main>

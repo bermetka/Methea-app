@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer } from 'docx'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
+import UnlockButton from '@/components/paywall/UnlockButton'
 import { saveFramework } from './actions'
 import type { FrameworkEdge, FrameworkCitation } from '@/types/database'
 
@@ -18,6 +19,7 @@ interface Props {
   citationStatuses: Record<string, CitStatus>
   defaultLayout: Layout
   outdated?: boolean
+  locked: boolean
 }
 
 const LAYOUT_LABELS: Record<Layout, string> = {
@@ -27,7 +29,7 @@ const LAYOUT_LABELS: Record<Layout, string> = {
 }
 
 export default function FrameworkBuilder({
-  projectId, theories, edges, narrative, citations, citationStatuses, defaultLayout, outdated,
+  projectId, theories, edges, narrative, citations, citationStatuses, defaultLayout, outdated, locked,
 }: Props) {
   const [layout, setLayout] = useState<Layout>(defaultLayout)
   const [saving, setSaving] = useState(false)
@@ -143,51 +145,66 @@ export default function FrameworkBuilder({
         />
       </div>
 
-      {/* Narrative */}
-      <div style={s.narrativeCard}>
-        <p style={s.narrativeLabel}>Framework narrative</p>
-        <p style={s.narrativeText}>{narrative}</p>
-        <div style={s.citationChips}>
-          {citations.map((c, i) => {
-            const key      = `${c.author}, ${c.year}`
-            const status   = citationStatuses[key] ?? 'unverified'
-            const verified = status !== 'unverified'
-            return (
-              <span key={i} style={s.citationItem} title={c.doi ? `DOI: ${c.doi}` : 'No DOI found — verify manually'}>
-                {/* state chip: icon only */}
-                <span style={{
-                  ...s.stateChip,
-                  background: verified ? 'var(--mint)'       : 'var(--paper-deep)',
-                  color:      verified ? 'var(--moss)'       : 'var(--pencil)',
-                  border:     `1px solid ${verified ? 'var(--marker-green)' : 'var(--stone)'}`,
-                }}>
-                  {verified ? '✓' : '?'}
-                </span>
-                {/* provenance label: text only, no icon */}
-                <span style={s.citationLabel}>{c.author}, {c.year}</span>
-              </span>
-            )
-          })}
+      {/* Narrative — paid only. The unpaid branch never receives real narrative/
+          citation text as props (page.tsx only generates them when paid), so
+          there is nothing here to leak even if this branch were inspected. */}
+      {locked ? (
+        <div style={s.narrativeCard}>
+          <p style={s.narrativeLabel}>Framework narrative</p>
+          <p style={s.lockedPlaceholder}>
+            Unlock this project to see the full verified narrative — how your theories connect,
+            with citations checked against OpenAlex/CrossRef.
+          </p>
+          <UnlockButton projectId={projectId} />
         </div>
-      </div>
+      ) : (
+        <div style={s.narrativeCard}>
+          <p style={s.narrativeLabel}>Framework narrative</p>
+          <p style={s.narrativeText}>{narrative}</p>
+          <div style={s.citationChips}>
+            {citations.map((c, i) => {
+              const key      = `${c.author}, ${c.year}`
+              const status   = citationStatuses[key] ?? 'unverified'
+              const verified = status !== 'unverified'
+              return (
+                <span key={i} style={s.citationItem} title={c.doi ? `DOI: ${c.doi}` : 'No DOI found — verify manually'}>
+                  {/* state chip: icon only */}
+                  <span style={{
+                    ...s.stateChip,
+                    background: verified ? 'var(--mint)'       : 'var(--paper-deep)',
+                    color:      verified ? 'var(--moss)'       : 'var(--pencil)',
+                    border:     `1px solid ${verified ? 'var(--marker-green)' : 'var(--stone)'}`,
+                  }}>
+                    {verified ? '✓' : '?'}
+                  </span>
+                  {/* provenance label: text only, no icon */}
+                  <span style={s.citationLabel}>{c.author}, {c.year}</span>
+                </span>
+              )
+            })}
+          </div>
+        </div>
+      )}
 
-      {/* Actions */}
-      <div style={s.actions}>
-        <button type="button" onClick={handleExportPNG} style={s.secondaryBtn}>
-          Export PNG
-        </button>
-        <button type="button" onClick={handleExportWord} style={s.secondaryBtn}>
-          Export Word
-        </button>
-        <button
-          type="button"
-          onClick={handleSave}
-          disabled={saving}
-          style={{ ...s.primaryBtn, ...(saving ? s.primaryBtnDisabled : {}) }}
-        >
-          {saving ? 'Saving…' : 'Save framework →'}
-        </button>
-      </div>
+      {/* Actions — save/export are paid-only actions */}
+      {!locked && (
+        <div style={s.actions}>
+          <button type="button" onClick={handleExportPNG} style={s.secondaryBtn}>
+            Export PNG
+          </button>
+          <button type="button" onClick={handleExportWord} style={s.secondaryBtn}>
+            Export Word
+          </button>
+          <button
+            type="button"
+            onClick={handleSave}
+            disabled={saving}
+            style={{ ...s.primaryBtn, ...(saving ? s.primaryBtnDisabled : {}) }}
+          >
+            {saving ? 'Saving…' : 'Save framework →'}
+          </button>
+        </div>
+      )}
     </div>
   )
 }
@@ -206,6 +223,7 @@ const s: Record<string, React.CSSProperties> = {
   narrativeCard:      { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' },
   narrativeLabel:     { fontSize: '0.75rem', fontWeight: 600, color: 'var(--pencil)', textTransform: 'uppercase' as const, letterSpacing: '0.06em' },
   narrativeText:      { fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.9375rem', lineHeight: 1.7, color: 'var(--graphite)' },
+  lockedPlaceholder:  { fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.9375rem', lineHeight: 1.7, color: 'var(--pencil)', fontStyle: 'italic' },
   citationChips:  { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem' },
   citationItem:   { display: 'inline-flex', alignItems: 'center', gap: '0.3rem', cursor: 'help' },
   stateChip:      { display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '18px', height: '18px', borderRadius: '50%', fontSize: '0.6875rem', fontWeight: 700, flexShrink: 0 },

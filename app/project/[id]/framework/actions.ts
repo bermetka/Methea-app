@@ -3,6 +3,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
+import { isProjectPaid } from '@/lib/entitlement'
 import type { FrameworkEdge, FrameworkCitation } from '@/types/database'
 
 export async function saveFramework(formData: FormData) {
@@ -19,12 +20,20 @@ export async function saveFramework(formData: FormData) {
 
   const { data: project } = await supabase
     .from('projects')
-    .select('id, research_context')
+    .select('id, research_context, paid_at')
     .eq('id', projectId)
     .eq('user_id', user.id)
     .single()
 
   if (!project) redirect('/onboarding')
+
+  // Saving/editing the framework narrative is a paid action — the UI already
+  // hides this button when unpaid, but the server action itself must also
+  // reject direct calls, since research_context stays writable at the DB
+  // grant level for legitimate free-tier writes (e.g. diagram persistence).
+  if (!isProjectPaid(project)) {
+    redirect(`/project/${projectId}/framework`)
+  }
 
   const outdatedBlocks = (project.research_context?.outdated_blocks ?? [] as string[])
     .filter((b: string) => b !== 'framework')

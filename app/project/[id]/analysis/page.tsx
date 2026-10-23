@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Logo from '@/components/ui/Logo'
+import { isProjectPaid } from '@/lib/entitlement'
+import PaywallLock from '@/components/paywall/PaywallLock'
 import UploadForm from './UploadForm'
 import FindingsView from './FindingsView'
 
@@ -13,12 +15,22 @@ export default async function AnalysisPage({ params }: { params: { id: string } 
 
   const { data: project } = await supabase
     .from('projects')
-    .select('id, title, research_context')
+    .select('id, title, research_context, paid_at')
     .eq('id', params.id)
     .eq('user_id', user.id)
     .single()
 
   if (!project) redirect('/projects')
+
+  if (!isProjectPaid(project)) {
+    return (
+      <PaywallLock
+        projectId={params.id}
+        title="Transcript analysis is ready to unlock"
+        description="Unlock this project to upload interview transcripts — Methea codes them against your framework and surfaces themes with supporting quotes."
+      />
+    )
+  }
 
   const ctx = project.research_context
   const findings = ctx?.findings

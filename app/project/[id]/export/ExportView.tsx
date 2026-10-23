@@ -4,25 +4,20 @@ import { useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer, AlignmentType } from 'docx'
 import Logo from '@/components/ui/Logo'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
-import { incrementExportCount } from './actions'
+import UnlockButton from '@/components/paywall/UnlockButton'
 import type { ResearchContext, Theory } from '@/types/database'
-
-const FREE_EXPORT_LIMIT = Number(process.env.NEXT_PUBLIC_FREE_EXPORT_LIMIT ?? 1)
 
 interface Props {
   projectId: string
   ctx: ResearchContext
   theories: Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]
-  exportCount: number
+  paid: boolean
 }
 
-export default function ExportView({ projectId, ctx, theories, exportCount }: Props) {
+export default function ExportView({ projectId, ctx, theories, paid }: Props) {
   const [copiedSection, setCopiedSection] = useState<string | null>(null)
   const [showPolishedModal, setShowPolishedModal] = useState(false)
   const [polishedAcknowledged, setPolishedAcknowledged] = useState(false)
-  const [localExportCount, setLocalExportCount] = useState(exportCount)
-
-  const isFreeLimitReached = localExportCount >= FREE_EXPORT_LIMIT
 
   const theoryMap   = Object.fromEntries(theories.map(t => [t.id, t]))
   const brief       = ctx.brief!
@@ -51,14 +46,49 @@ export default function ExportView({ projectId, ctx, theories, exportCount }: Pr
     })
   }
 
-  async function exportScaffold() {
+  async function exportDiagramOnly() {
     const children: Paragraph[] = [
-      // Free-tier watermark — always present on free tier
       new Paragraph({
-        children: [new TextRun({ text: 'Created with Methea · methea.app — Free plan (1 export)', italics: true, color: 'AAAAAA', size: 16 })],
+        children: [new TextRun({ text: 'Created with Methea · methea.app', italics: true, color: 'AAAAAA', size: 16 })],
         alignment: AlignmentType.CENTER,
         spacing: { after: 200 },
       }),
+      new Paragraph({ text: 'Research Framework', heading: HeadingLevel.HEADING_1 }),
+      new Paragraph({ text: '' }),
+      new Paragraph({ text: 'Research Question', heading: HeadingLevel.HEADING_2 }),
+      new Paragraph({ children: [new TextRun({ text: brief.research_question, italics: true, size: 24 })], spacing: { after: 120 } }),
+      new Paragraph({ children: [new TextRun({ text: 'Topic: ', bold: true }), new TextRun(brief.topic)] }),
+      new Paragraph({ children: [new TextRun({ text: 'Degree: ', bold: true }), new TextRun(brief.degree_level)] }),
+      new Paragraph({ children: [new TextRun({ text: 'Discipline: ', bold: true }), new TextRun(brief.discipline)], spacing: { after: 300 } }),
+    ]
+
+    if (selectedIds.length) {
+      children.push(new Paragraph({ text: 'Theoretical Framework', heading: HeadingLevel.HEADING_2 }))
+      selectedIds.forEach(id => {
+        const t = theoryMap[id]
+        if (!t) return
+        children.push(
+          new Paragraph({ children: [new TextRun({ text: `${t.name} (${t.author}, ${t.year})`, bold: true })], spacing: { after: 60 } }),
+        )
+      })
+      if (framework?.edges?.length) {
+        children.push(new Paragraph({
+          children: [new TextRun({ text: 'Key relationships: ' + framework.edges.map(e => `${e.from} → ${e.to} (${e.label})`).join('; '), italics: true, color: '7A6F5A', size: 18 })],
+          spacing: { after: 160 },
+        }))
+      }
+    }
+
+    const doc  = new Document({ sections: [{ children }] })
+    const blob = await Packer.toBlob(doc)
+    const a    = document.createElement('a')
+    a.href     = URL.createObjectURL(blob)
+    a.download = 'methea-framework-diagram.docx'
+    a.click()
+  }
+
+  async function exportScaffold() {
+    const children: Paragraph[] = [
       new Paragraph({ text: 'Research Proposal Scaffold', heading: HeadingLevel.HEADING_1 }),
       annotation('Complete each section below in your own words. The AI has structured the framework — the interpretation and writing are yours.'),
       new Paragraph({ text: '' }),
@@ -130,12 +160,6 @@ export default function ExportView({ projectId, ctx, theories, exportCount }: Pr
     a.href     = URL.createObjectURL(blob)
     a.download = 'methea-research-scaffold.docx'
     a.click()
-
-    // Track export count (fire-and-forget — don't block the download)
-    const fd = new FormData()
-    fd.append('projectId', projectId)
-    incrementExportCount(fd).catch(() => {})
-    setLocalExportCount(c => c + 1)
   }
 
   async function exportPolishedDraft() {
@@ -207,27 +231,37 @@ export default function ExportView({ projectId, ctx, theories, exportCount }: Pr
           <Logo size="sm" />
           <div style={s.headerActions}>
             <a href={`/project/${projectId}`} style={s.backLink}>← Back to project</a>
-            <button type="button" onClick={() => setShowPolishedModal(true)} style={s.ghostBtn}>
-              Generate polished draft →
-            </button>
-            {isFreeLimitReached ? (
-              <span style={s.upgradeBadge}>
-                Upgrade to export again →
-              </span>
-            ) : (
+            {paid && (
+              <button type="button" onClick={() => setShowPolishedModal(true)} style={s.ghostBtn}>
+                Generate polished draft →
+              </button>
+            )}
+            {paid ? (
               <button type="button" onClick={exportScaffold} style={s.exportBtn}>
                 Export scaffold (Word)
+              </button>
+            ) : (
+              <button type="button" onClick={exportDiagramOnly} style={s.exportBtn}>
+                Export framework diagram (Word)
               </button>
             )}
           </div>
         </div>
 
-        <h1 style={s.pageTitle}>Research Proposal</h1>
+        <h1 style={s.pageTitle}>{paid ? 'Research Proposal' : 'Research Framework'}</h1>
         <p style={s.pageSubtitle}>
-          {isFreeLimitReached
-            ? 'Free plan — 1 export used. Upgrade to export again.'
-            : 'Export your research scaffold — then fill in your own analysis and interpretation.'}
+          {paid
+            ? 'Export your research scaffold — then fill in your own analysis and interpretation.'
+            : 'Free export includes your research question, theories, and framework diagram, watermarked. Unlock this project for the full proposal scaffold.'}
         </p>
+        {!paid && (
+          <div style={s.unlockBanner}>
+            <p style={s.unlockBannerText}>
+              Unlock this project to export the full scaffold — framework narrative, methodology, interview guide, and analysis.
+            </p>
+            <UnlockButton projectId={projectId} />
+          </div>
+        )}
 
         {/* Polished draft modal */}
         {showPolishedModal && (
@@ -306,25 +340,25 @@ export default function ExportView({ projectId, ctx, theories, exportCount }: Pr
             </div>
           </Section>
 
-          {/* Framework */}
-          {framework?.narrative && (
+          {/* Framework — diagram is free, narrative is paid-only */}
+          {framework?.edges && framework.edges.length > 0 && (
             <>
               <HR />
               <Section label="Conceptual framework">
-                {framework.edges?.length > 0 && (
-                  <FrameworkDiagram
-                    theories={diagramTheories}
-                    edges={framework.edges}
-                    layout="linear"
-                  />
+                <FrameworkDiagram
+                  theories={diagramTheories}
+                  edges={framework.edges}
+                  layout="linear"
+                />
+                {paid && framework.narrative && (
+                  <p style={s.narrative}>{framework.narrative}</p>
                 )}
-                <p style={s.narrative}>{framework.narrative}</p>
               </Section>
             </>
           )}
 
-          {/* Methodology */}
-          {method?.narrative && (
+          {/* Methodology — paid only */}
+          {paid && method?.narrative && (
             <>
               <HR />
               <Section label="Methodology" actions={
@@ -368,8 +402,8 @@ export default function ExportView({ projectId, ctx, theories, exportCount }: Pr
             </>
           )}
 
-          {/* Interview guide */}
-          {questions.length > 0 && (
+          {/* Interview guide — paid only */}
+          {paid && questions.length > 0 && (
             <>
               <HR />
               <Section label={`Interview guide · ${questions.length} questions`} actions={
@@ -443,7 +477,8 @@ const s: Record<string, React.CSSProperties> = {
   headerActions:{ display: 'flex', alignItems: 'center', gap: '1rem' },
   backLink:    { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
   exportBtn:    { padding: '0.5rem 1rem', background: 'var(--ink-blue)', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
-  upgradeBadge: { padding: '0.5rem 1rem', background: 'var(--marker-yellow)', color: 'var(--warn-text)', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontWeight: 700, cursor: 'pointer', whiteSpace: 'nowrap' as const },
+  unlockBanner:     { display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', padding: '1rem 1.25rem', background: 'var(--ink)', borderRadius: 'var(--radius-lg)', flexWrap: 'wrap' as const },
+  unlockBannerText: { fontSize: '0.875rem', color: 'var(--sheet)', lineHeight: 1.5, flex: 1, minWidth: '200px' },
 
   modalBackdrop:     { position: 'fixed' as const, inset: 0, background: 'rgba(28,28,28,0.45)', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' },
   modal:             { background: 'var(--sheet)', borderRadius: 'var(--radius-lg)', padding: '2rem', maxWidth: '480px', width: '100%', display: 'flex', flexDirection: 'column' as const, gap: '1rem', boxShadow: '0 8px 32px rgba(0,0,0,0.18)' },

@@ -34,6 +34,9 @@ yarn-error.log*
 # editor-local Claude Code settings
 .claude/settings.local.json
 
+# subagent-driven-development scratch state
+.superpowers/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
