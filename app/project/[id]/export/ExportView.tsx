@@ -73,7 +73,7 @@ export default function ExportView({ projectId, ctx, theories, exportCount }: Pr
     if (selectedIds.length) {
       children.push(
         new Paragraph({ text: 'Theoretical Framework', heading: HeadingLevel.HEADING_2 }),
-        annotation('The following theories were selected as the basis for your framework. Explain in your own words why each is relevant to your research question.'),
+        annotation('The following theories are the lens for your analysis: they tell you what to look for in your data. They are not your literature review, where recent studies on your topic belong. Explain in your own words why each is relevant to your research question.'),
       )
       selectedIds.forEach(id => {
         const t = theoryMap[id]
@@ -291,7 +291,7 @@ export default function ExportView({ projectId, ctx, theories, exportCount }: Pr
           <HR />
 
           {/* Theories */}
-          <Section label="Theories">
+          <Section label="Theoretical framework · your lens">
             <div style={s.theoryGrid}>
               {selectedIds.map(id => {
                 const t = theoryMap[id]
@@ -299,7 +299,7 @@ export default function ExportView({ projectId, ctx, theories, exportCount }: Pr
                 return (
                   <div key={id} style={s.theoryCard}>
                     <p style={s.theoryName}>{t.name}</p>
-                    <p style={s.theoryMeta}>{t.author}, {t.year}</p>
+                    <p style={s.theoryMeta}>Foundational work: {t.author} ({t.year})</p>
                   </div>
                 )
               })}

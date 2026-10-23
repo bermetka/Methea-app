@@ -131,6 +131,11 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
           {' '}these theories tend to fit well. Pick 2–4 to build your theoretical framework
           <GlossaryTooltip term={glossaryTerm('theoretical-vs-conceptual')} /> on.
         </p>
+        <p style={s.bannerText}>
+          Each theory is a lens for your analysis, not a source for your literature review
+          <GlossaryTooltip term={glossaryTerm('theory-vs-literature')} />. The year shows when
+          the lens was first set out, so older usually means well tested.
+        </p>
       </div>
 
       {/* View toggle — segmented control, suggested-first / browse-second */}
@@ -182,7 +187,11 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
 
                 <div style={s.cardHeader}>
                   <p style={s.theoryName}>{card.name}</p>
-                  <p style={s.theoryMeta}>{card.author}{card.year ? `, ${card.year}` : ''}</p>
+                  <p style={s.theoryMeta}>
+                    {card.isCustom
+                      ? `${card.author}${card.year ? `, ${card.year}` : ''}`
+                      : `Foundational work: ${card.author}${card.year ? ` (${card.year})` : ''}`}
+                  </p>
                 </div>
 
                 {card.why_it_fits
@@ -206,7 +215,7 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
                   )}
                   {card.isCustom && <span style={s.yourTheoryTag}>Your theory</span>}
                   {card.in_reading_list && (
-                    <span style={s.readingListChip}>+ In your reading list</span>
+                    <span style={s.readingListChip}>+ Also in your reading list</span>
                   )}
                 </div>
               </button>

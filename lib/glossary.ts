@@ -26,6 +26,11 @@ export const glossaryTerms: GlossaryTerm[] = [
     shortExplain: "Theoretical framework = the existing theories you borrow from other researchers. Conceptual framework = YOUR map of how those theories' concepts connect to explain YOUR specific topic. You'll build the theoretical framework first, then we'll help you build your conceptual framework from it.",
   },
   {
+    id: 'theory-vs-literature',
+    trigger: 'lens, not literature',
+    shortExplain: "A theory is the lens you look through: it tells you which concepts to look for in your data. That is why its foundational work is often decades old — the lens has been tested many times. A literature review does a different job: it maps what recent studies have found on your topic and where the gap is. Recent sources belong in your literature review; the theory stays the same.",
+  },
+  {
     id: 'paradigm',
     trigger: 'paradigm',
     shortExplain: "A paradigm is your basic stance on what counts as knowledge. Interpretivism: reality is socially constructed, multiple valid perspectives exist. Positivism: reality is objective and measurable, one truth to discover. Most qualitative research uses interpretivism.",
