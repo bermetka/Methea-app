@@ -6,6 +6,7 @@ import { updateResearchContext } from '@/lib/research-context'
 import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import Logo from '@/components/ui/Logo'
+import GenerationError from '@/components/ui/GenerationError'
 import FrameworkBuilder from './FrameworkBuilder'
 import type { Project } from '@/types/database'
 
@@ -83,22 +84,30 @@ export default async function FrameworkPage({ params }: { params: { id: string }
   const diagramTheoryKey = [...selectedIds].sort().join(',')
   let edges = resetForReview ? [] : (ctx.framework?.edges ?? [])
   let diagramRefreshCapReached = false
-  if (!edges.length) {
-    edges = await generateRelationshipLabels(ctx, theories)
-    // Persist the diagram immediately so it's not regenerated on every free view.
-    // Not during a review reset — there the student's Save commits it.
-    if (!resetForReview) await saveFrameworkEdgesOnly(params.id, edges, ctx, diagramTheoryKey)
-  } else if (!paid && isOutdated && ctx.framework?.diagram_theory_key !== diagramTheoryKey) {
-    // Unpaid student changed theories: redraw the diagram only (never the narrative), so the
-    // free diagram never shows theories they've removed. The 'framework' outdated flag stays
-    // set, so paying still runs the full review above.
-    const refreshesUsed = ctx.free_diagram_refreshes ?? 0
-    if (refreshesUsed < FREE_DIAGRAM_REFRESHES) {
+  try {
+    if (!edges.length) {
       edges = await generateRelationshipLabels(ctx, theories)
-      await saveFrameworkEdgesOnly(params.id, edges, ctx, diagramTheoryKey, refreshesUsed + 1)
-    } else {
-      diagramRefreshCapReached = true
+      // Persist the diagram immediately so it's not regenerated on every free view.
+      // Not during a review reset — there the student's Save commits it.
+      if (!resetForReview) await saveFrameworkEdgesOnly(params.id, edges, ctx, diagramTheoryKey)
+    } else if (!paid && isOutdated && ctx.framework?.diagram_theory_key !== diagramTheoryKey) {
+      // Unpaid student changed theories: redraw the diagram only (never the narrative), so the
+      // free diagram never shows theories they've removed. The 'framework' outdated flag stays
+      // set, so paying still runs the full review above.
+      const refreshesUsed = ctx.free_diagram_refreshes ?? 0
+      if (refreshesUsed < FREE_DIAGRAM_REFRESHES) {
+        edges = await generateRelationshipLabels(ctx, theories)
+        await saveFrameworkEdgesOnly(params.id, edges, ctx, diagramTheoryKey, refreshesUsed + 1)
+      } else {
+        diagramRefreshCapReached = true
+      }
     }
+  } catch (err) {
+    // generateJSON already retried once — a genuine failure. Nothing was persisted (the
+    // save calls above only run after a successful generation), so it's safe to just show
+    // the fallback and let a retry re-run this from scratch.
+    console.error(`[framework] generateRelationshipLabels failed for project ${params.id}:`, err)
+    return <GenerationError projectId={params.id} stepLabel="framework diagram" retryHref={`/project/${params.id}/framework`} />
   }
 
   // Narrative + citations: generating them is paid-only. A narrative that was
@@ -110,7 +119,19 @@ export default async function FrameworkPage({ params }: { params: { id: string }
     !resetForReview ? (ctx.framework?.citation_statuses ?? {}) : {}
 
   if (paid && !narrativeResult.narrative) {
-    narrativeResult = await generateFrameworkNarrative(ctx, theories, edges)
+    try {
+      const result = await generateFrameworkNarrative(ctx, theories, edges)
+      // generateFrameworkNarrative (unlike the other prompt functions) returns Claude's
+      // parsed object as-is with no shape check — guard narrative/citations here so a
+      // malformed-but-valid-JSON reply can't throw downstream in the citation loop below.
+      narrativeResult = {
+        narrative: typeof result?.narrative === 'string' ? result.narrative : '',
+        citations: Array.isArray(result?.citations) ? result.citations : [],
+      }
+    } catch (err) {
+      console.error(`[framework] generateFrameworkNarrative failed for project ${params.id}:`, err)
+      return <GenerationError projectId={params.id} stepLabel="framework narrative" retryHref={`/project/${params.id}/framework`} />
+    }
 
     await Promise.all(
       narrativeResult.citations.map(async (c) => {

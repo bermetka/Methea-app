@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation'
 import Logo from '@/components/ui/Logo'
+import GenerationError from '@/components/ui/GenerationError'
 import { createClient } from '@/lib/supabase/server'
 import { generateMethodologyChain } from '@/lib/prompts/methodology'
 import { resolveProjectTheories } from '@/lib/project-theories'
@@ -72,9 +73,33 @@ export default async function MethodologyPage({ params }: { params: { id: string
   // Soft-invalidation: regenerate when marked ⚠ outdated by an upstream change, otherwise
   // reuse the saved chain. Saving clears the flag (methodology/actions.ts).
   const isOutdated = (ctx.outdated_blocks ?? []).includes('methodology')
-  const chain = (!isOutdated && ctx.methodology?.narrative)
-    ? ctx.methodology as unknown as import('@/lib/prompts/methodology').MethodologyChain
-    : await generateMethodologyChain(ctx, selectedTheories)
+  let chain: import('@/lib/prompts/methodology').MethodologyChain
+  if (!isOutdated && ctx.methodology?.narrative) {
+    chain = ctx.methodology as unknown as import('@/lib/prompts/methodology').MethodologyChain
+  } else {
+    try {
+      const result = await generateMethodologyChain(ctx, selectedTheories)
+      // generateMethodologyChain returns Claude's parsed object as-is with no shape check —
+      // default every field to '' so a missing key renders as blank, never the literal
+      // string "undefined", in MethodologyChainView.
+      chain = {
+        paradigm: result?.paradigm ?? '',
+        paradigm_why: result?.paradigm_why ?? '',
+        methodology: result?.methodology ?? '',
+        methodology_why: result?.methodology_why ?? '',
+        data_collection: result?.data_collection ?? '',
+        data_collection_why: result?.data_collection_why ?? '',
+        sample: result?.sample ?? '',
+        sample_why: result?.sample_why ?? '',
+        analysis_method: result?.analysis_method ?? '',
+        analysis_method_why: result?.analysis_method_why ?? '',
+        narrative: result?.narrative ?? '',
+      }
+    } catch (err) {
+      console.error(`[methodology] generateMethodologyChain failed for project ${params.id}:`, err)
+      return <GenerationError projectId={params.id} stepLabel="methodology recommendation" retryHref={`/project/${params.id}/methodology`} />
+    }
+  }
 
   return (
     <main style={styles.page}>

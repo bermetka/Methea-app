@@ -62,7 +62,15 @@ export async function runTranscriptAnalysis(formData: FormData) {
     (t.concepts ?? []).map((c: string) => ({ concept: c, theory_id: t.id, theory_name: t.name }))
   )
 
+  // codeTranscript throws (via generateJSON, which already retried once) on a genuine
+  // parse failure — that propagates to UploadForm.tsx's try/catch, which already shows
+  // a friendly inline message with a way back (the student stays on the upload page).
+  // What it can't catch is a reply that parsed fine but has the wrong shape (e.g. a
+  // missing `themes` array) — guard that here so a malformed-but-valid-JSON reply can't
+  // save `undefined` into research_context and crash the next page that reads it.
   const result = await codeTranscript(transcriptText, conceptRefs, researchQuestion)
+  const codedSegments = Array.isArray(result?.coded_segments) ? result.coded_segments : []
+  const themes = Array.isArray(result?.themes) ? result.themes : []
 
   await updateResearchContext(
     projectId,
@@ -70,8 +78,8 @@ export async function runTranscriptAnalysis(formData: FormData) {
     {
       findings: {
         transcript_text: transcriptText.slice(0, 20000),
-        coded_segments: result.coded_segments,
-        themes: result.themes,
+        coded_segments: codedSegments,
+        themes,
         gate3_completed: false,
       },
     },

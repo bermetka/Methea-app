@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation'
 import Logo from '@/components/ui/Logo'
+import GenerationError from '@/components/ui/GenerationError'
 import { createClient } from '@/lib/supabase/server'
 import { generateInterviewGuide } from '@/lib/prompts/interview'
 import { resolveProjectTheories } from '@/lib/project-theories'
@@ -9,7 +10,7 @@ import PaywallLock from '@/components/paywall/PaywallLock'
 import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
 import InterviewGuideView from './InterviewGuide'
 import EthicsCheckpoint from './EthicsCheckpoint'
-import type { Project } from '@/types/database'
+import type { Project, InterviewQuestion } from '@/types/database'
 
 export const metadata = { title: 'Interview guide — Methea' }
 
@@ -88,9 +89,17 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
   // Soft-invalidation: regenerate when marked ⚠ outdated by an upstream change, otherwise
   // reuse the saved questions. Saving clears the flag (interview-guide/actions.ts).
   const isOutdated = (ctx.outdated_blocks ?? []).includes('interview_guide')
-  const questions = (!isOutdated && ctx.interview_guide?.questions?.length)
-    ? ctx.interview_guide.questions
-    : await generateInterviewGuide(ctx, selectedTheories)
+  let questions: InterviewQuestion[]
+  if (!isOutdated && ctx.interview_guide?.questions?.length) {
+    questions = ctx.interview_guide.questions
+  } else {
+    try {
+      questions = await generateInterviewGuide(ctx, selectedTheories)
+    } catch (err) {
+      console.error(`[interview-guide] generateInterviewGuide failed for project ${params.id}:`, err)
+      return <GenerationError projectId={params.id} stepLabel="interview guide" retryHref={`/project/${params.id}/interview-guide`} />
+    }
+  }
 
   // Show ethics confirmed chip alongside heading
   return (

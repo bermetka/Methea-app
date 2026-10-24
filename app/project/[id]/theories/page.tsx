@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation'
 import Logo from '@/components/ui/Logo'
+import GenerationError from '@/components/ui/GenerationError'
 import { createClient } from '@/lib/supabase/server'
 import { suggestTheories } from '@/lib/prompts/theories'
 import { verifyTheory, isInReadingList } from '@/lib/openalex'
@@ -45,14 +46,24 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   // changed and marked us outdated. `fits` is the presence check — unlike `suggestions`,
   // an empty cached array is a valid result (no-fit) and must not trigger a recompute.
   const hasCachedFit = ctx?.theories?.fits !== undefined
-  const fitResult: TheoryFitResult = (!isOutdated && hasCachedFit)
-    ? {
-        fits: ctx.theories!.fits!,
-        reason: ctx.theories!.fit_reason ?? '',
-        theories: ctx.theories!.suggestions ?? [],
-        suggested_custom_theories: ctx.theories!.suggested_custom_theories ?? [],
-      }
-    : await suggestTheories(ctx, allTheories as Theory[])
+  let fitResult: TheoryFitResult
+  if (!isOutdated && hasCachedFit) {
+    fitResult = {
+      fits: ctx.theories!.fits!,
+      reason: ctx.theories!.fit_reason ?? '',
+      theories: ctx.theories!.suggestions ?? [],
+      suggested_custom_theories: ctx.theories!.suggested_custom_theories ?? [],
+    }
+  } else {
+    try {
+      fitResult = await suggestTheories(ctx, allTheories as Theory[])
+    } catch (err) {
+      // generateJSON already retried once — this is a genuine failure (API error, or
+      // Claude's reply still wasn't valid JSON). Never let it crash the page.
+      console.error(`[theories] suggestTheories failed for project ${params.id}:`, err)
+      return <GenerationError projectId={params.id} stepLabel="theory suggestions" retryHref={`/project/${params.id}/theories`} />
+    }
+  }
 
   const { fits, reason: fitReason, theories: suggestions, suggested_custom_theories: suggestedCustomTheories } = fitResult
 

@@ -25,6 +25,7 @@ const ALLOWED_EXTENSIONS = ['.pdf', '.doc', '.docx']
 
 const SUBMIT_ERROR_MESSAGES: Record<string, string> = {
   FILE_PARSE_FAILED: "We couldn't read that file — it may be corrupted. Try a different file, or continue without it.",
+  AI_GENERATION_FAILED: "We couldn't process your brief just now — nothing was lost. Please try submitting again.",
   DEFAULT: 'Something went wrong — please try again.',
 }
 

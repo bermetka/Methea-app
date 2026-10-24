@@ -50,16 +50,24 @@ export async function submitBrief(formData: FormData): Promise<{ error: string }
     ? Array.from(new Set([...currentOutdated, 'framework', 'methodology', 'interview_guide']))
     : currentOutdated
 
-  // 1. Extract structured brief via Claude
-  const briefExtraction = await extractBrief(
-    topic, degreeLevel, discipline,
-    readingList ?? undefined,
-    fileText
-  )
+  // 1. Extract structured brief via Claude, 2. generate Socratic questions via Claude
+  // (hard cap at 3 regardless of prompt output). generateJSON already retried once
+  // internally — a throw here is a genuine failure. BriefForm's catch-all would show the
+  // generic DEFAULT message either way, but a dedicated code gives a clearer one.
+  let briefExtraction: Awaited<ReturnType<typeof extractBrief>>
+  let questions: Awaited<ReturnType<typeof generateSocraticQuestions>>
+  try {
+    briefExtraction = await extractBrief(
+      topic, degreeLevel, discipline,
+      readingList ?? undefined,
+      fileText
+    )
+    questions = (await generateSocraticQuestions(briefExtraction)).slice(0, 3)
+  } catch (err) {
+    console.error(`[brief] extractBrief/generateSocraticQuestions failed for project ${projectId}:`, err)
+    return { error: 'AI_GENERATION_FAILED' }
+  }
   if (readingList) briefExtraction.reading_list_raw = readingList
-
-  // 2. Generate Socratic questions via Claude — hard cap at 3 regardless of prompt output
-  const questions = (await generateSocraticQuestions(briefExtraction)).slice(0, 3)
 
   // 3. Save both to research_context in one update
   await updateResearchContext(
