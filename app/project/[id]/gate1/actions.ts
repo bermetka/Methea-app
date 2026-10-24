@@ -1,6 +1,7 @@
 'use server'
 
 import { redirect } from 'next/navigation'
+import { trackEvent } from '@/lib/funnel'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
 
@@ -52,5 +53,6 @@ export async function submitGate1(formData: FormData) {
     supabase
   )
 
+  await trackEvent('gate1_done', { once: projectId })
   redirect(`/project/${projectId}`)
 }

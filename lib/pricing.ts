@@ -60,6 +60,4 @@ export interface CheckoutContext {
 }
 
 /** What to show where an unlock button would go. */
-export type UnlockInfo =
-  | ({ kind: 'checkout' } & CheckoutContext)
-  | { kind: 'expired'; endedOn: string }
+export type UnlockInfo = { kind: 'checkout' } & CheckoutContext

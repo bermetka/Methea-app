@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 import Logo from '@/components/ui/Logo'
 import GenerationError from '@/components/ui/GenerationError'
+import { trackEvent } from '@/lib/funnel'
 import { createClient } from '@/lib/supabase/server'
 import { suggestTheories } from '@/lib/prompts/theories'
 import { verifyTheory, isInReadingList } from '@/lib/openalex'
@@ -66,6 +67,7 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   }
 
   const { fits, reason: fitReason, theories: suggestions, suggested_custom_theories: suggestedCustomTheories } = fitResult
+  if (!fits) await trackEvent('theories_no_fit', { props: { reason: fitReason }, once: params.id })
 
   const theoriesById   = new Map((allTheories as Theory[]).map(t => [t.id, t]))
   const readingListRaw = ctx.brief?.reading_list_raw ?? ''

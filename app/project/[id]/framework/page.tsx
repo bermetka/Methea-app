@@ -8,6 +8,7 @@ import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import Logo from '@/components/ui/Logo'
 import GenerationError from '@/components/ui/GenerationError'
+import { trackEvent } from '@/lib/funnel'
 import FrameworkBuilder from './FrameworkBuilder'
 import type { Project } from '@/types/database'
 
@@ -110,6 +111,9 @@ export default async function FrameworkPage({ params }: { params: { id: string }
     console.error(`[framework] generateRelationshipLabels failed for project ${params.id}:`, err)
     return <GenerationError projectId={params.id} stepLabel="framework diagram" retryHref={`/project/${params.id}/framework`} />
   }
+
+  // The paywall moment: the student sees their diagram.
+  if (edges.length) await trackEvent('framework_diagram_viewed', { once: params.id })
 
   // Narrative + citations: generating them is paid-only. A narrative that was
   // already generated (e.g. before the paywall started) stays viewable, read-only.

@@ -4,6 +4,7 @@ import { verifyPaddleWebhook } from '@/lib/paddle/verify-webhook'
 import { createServiceRoleClient } from '@/lib/supabase/service-role'
 import { metheaVariantOf, paymentRecordFromTransaction } from '@/lib/paddle/payment-record'
 import { isProjectPaid } from '@/lib/entitlement'
+import { trackServerEvent } from '@/lib/funnel'
 
 /**
  * Paddle webhook receiver. This route — and ONLY this route — writes
@@ -55,7 +56,7 @@ export async function POST(request: Request) {
     const supabase = createServiceRoleClient()
     const { data: project, error: readError } = await supabase
       .from('projects')
-      .select('paid_at, paddle_transaction_id')
+      .select('user_id, paid_at, paddle_transaction_id')
       .eq('id', projectId)
       .maybeSingle()
 
@@ -77,9 +78,10 @@ export async function POST(request: Request) {
       return NextResponse.json({ received: true, warning: 'project already paid' })
     }
 
+    const payment = paymentRecordFromTransaction(event.data)
     const update = supabase
       .from('projects')
-      .update({ paid_at: new Date().toISOString(), ...paymentRecordFromTransaction(event.data) })
+      .update({ paid_at: new Date().toISOString(), ...payment })
       .eq('id', projectId)
     // Only apply if paid_at is unchanged since the read (concurrent deliveries).
     const { error } = await (project.paid_at ? update.eq('paid_at', project.paid_at) : update.is('paid_at', null))
@@ -91,6 +93,17 @@ export async function POST(request: Request) {
       }
       return NextResponse.json({ error: error.message }, { status: 500 })
     }
+
+    await trackServerEvent('purchase', project.user_id, {
+      props: {
+        project_id: projectId,
+        amount: payment.amount_paid,
+        currency: payment.currency,
+        price_variant: payment.paid_price_variant,
+        discount_code: payment.discount_code,
+      },
+      once: payment.paddle_transaction_id,
+    })
   }
 
   return NextResponse.json({ received: true })

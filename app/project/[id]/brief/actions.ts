@@ -1,6 +1,7 @@
 'use server'
 
 import { redirect } from 'next/navigation'
+import { trackEvent } from '@/lib/funnel'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
 import { extractBrief, generateSocraticQuestions } from '@/lib/prompts/brief'
@@ -86,6 +87,7 @@ export async function submitBrief(formData: FormData): Promise<{ error: string }
     supabase
   )
 
+  await trackEvent('brief_submitted', { once: projectId })
   redirect(`/project/${projectId}/gate1`)
 }
 

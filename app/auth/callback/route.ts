@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 import { ensureProfile } from '@/lib/checkout'
+import { linkAnonEvents, readAttribution, trackServerEvent } from '@/lib/funnel'
 
 export async function GET(request: Request) {
   const { searchParams, origin } = new URL(request.url)
@@ -30,7 +31,15 @@ export async function GET(request: Request) {
       // Assign the price variant once, at signup (no-op for returning users).
       // Never block login on it — getUserPriceVariant creates it lazily too.
       try {
-        await ensureProfile(data.user.id)
+        const { variant, created } = await ensureProfile(data.user.id)
+        if (created) {
+          // Service role: the new session cookie isn't readable within this request yet.
+          await trackServerEvent('signup', data.user.id, {
+            props: { ...readAttribution(), price_variant: variant },
+            once: data.user.id,
+          })
+        }
+        await linkAnonEvents(data.user.id)
       } catch (e) {
         console.error('Profile creation failed:', e)
       }

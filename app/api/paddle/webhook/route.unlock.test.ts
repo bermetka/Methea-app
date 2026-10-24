@@ -8,7 +8,8 @@ import { EventName } from '@paddle/paddle-node-sdk'
  * idempotency, first payment, re-buy after expiry, and no-op inside the window.
  */
 
-let storedProject: { paid_at: string | null; paddle_transaction_id: string | null } | null
+let storedProject: { user_id?: string; paid_at: string | null; paddle_transaction_id: string | null } | null
+let funnelInserts: Record<string, unknown>[]
 let updates: { values: Record<string, unknown>; filters: [string, string, unknown][] }[]
 let serviceRoleConstructed: boolean
 
@@ -20,7 +21,9 @@ vi.mock('@/lib/supabase/service-role', () => ({
   createServiceRoleClient: () => {
     serviceRoleConstructed = true
     return {
-      from: () => ({
+      from: (table: string) => table === 'funnel_events' ? {
+        insert: async (row: Record<string, unknown>) => { funnelInserts.push(row); return { error: null } },
+      } : ({
         select: () => ({ eq: () => ({ maybeSingle: async () => ({ data: storedProject, error: null }) }) }),
         update: (values: Record<string, unknown>) => {
           const record = { values, filters: [] as [string, string, unknown][] }
@@ -65,7 +68,8 @@ beforeEach(() => {
   process.env.PADDLE_WEBHOOK_SECRET = 'test'
   process.env.PADDLE_PRICE_ID_A = 'pri_a'
   process.env.PADDLE_PRICE_ID_B = 'pri_b'
-  storedProject = { paid_at: null, paddle_transaction_id: null }
+  storedProject = { user_id: 'user_1', paid_at: null, paddle_transaction_id: null }
+  funnelInserts = []
   updates = []
   serviceRoleConstructed = false
 })
@@ -77,6 +81,7 @@ describe('Paddle webhook — unlocking projects', () => {
     expect(res.body.ignored).toBe('not a Methea price')
     expect(serviceRoleConstructed).toBe(false)
     expect(updates).toHaveLength(0)
+    expect(funnelInserts).toHaveLength(0)
   })
 
   it('unlocks an unpaid project and records the payment fields', async () => {
@@ -87,6 +92,13 @@ describe('Paddle webhook — unlocking projects', () => {
       paddle_transaction_id: 'txn_new', amount_paid: 9900, currency: 'USD', paid_price_variant: 'B', discount_code: null,
     })
     expect(updates[0].filters).toContainEqual(['is', 'paid_at', null])
+    // Funnel: one server-side purchase event for the owner, once per transaction.
+    expect(funnelInserts).toEqual([{
+      user_id: 'user_1',
+      event: 'purchase',
+      props: { project_id: 'proj_1', amount: 9900, currency: 'USD', price_variant: 'B', discount_code: null },
+      dedupe_key: 'purchase:txn_new',
+    }])
   })
 
   it('never applies the same transaction twice', async () => {

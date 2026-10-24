@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { initializePaddle, CheckoutEventNames, type Paddle } from '@paddle/paddle-js'
 import { foundingBannerText, type CheckoutContext } from '@/lib/pricing'
+import { trackUnlockClick } from '@/app/actions/funnel'
 
 interface Props {
   projectId: string
@@ -53,6 +54,7 @@ export default function UnlockButton({ projectId, checkout, compact }: Props) {
   function handleClick() {
     if (status !== 'idle' || !paddleRef.current) return
     setStatus('opening')
+    void trackUnlockClick(projectId)
     paddleRef.current.Checkout.open({
       items: [{ priceId: checkout.priceId, quantity: 1 }],
       // discount_code is for funnel analysis only; Paddle applies and validates discountCode.
