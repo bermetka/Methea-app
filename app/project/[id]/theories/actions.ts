@@ -25,6 +25,14 @@ export async function saveTheorySelection(formData: FormData) {
   const suggestions  = formData.get('suggestions')
     ? (JSON.parse(formData.get('suggestions') as string) as TheorySuggestion[])
     : undefined
+  // Fit-check verdict (see lib/prompts/theories.ts), persisted so a revisit reuses it
+  // instead of re-calling Claude. Sent only when the page actually computed one.
+  const fitsRaw = formData.get('fits')
+  const fits = fitsRaw !== null ? (JSON.parse(fitsRaw as string) as boolean) : undefined
+  const fitReason = formData.get('fitReason') as string | null
+  const suggestedCustomTheories = formData.get('suggestedCustomTheories')
+    ? (JSON.parse(formData.get('suggestedCustomTheories') as string) as string[])
+    : undefined
 
   const { data: project } = await supabase
     .from('projects')
@@ -82,6 +90,7 @@ export async function saveTheorySelection(formData: FormData) {
         reading_list_items: [...libraryItems, ...customItems],
         custom_theories: customTheories,
         ...(suggestions ? { suggestions } : {}),
+        ...(fits !== undefined ? { fits, fit_reason: fitReason ?? '', suggested_custom_theories: suggestedCustomTheories ?? [] } : {}),
       },
       outdated_blocks: outdatedBlocks,
     },

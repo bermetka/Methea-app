@@ -40,6 +40,12 @@ interface Props {
   initialSelected?: string[]
   suggestions?: TheorySuggestion[]
   readOnly?: boolean
+  // Theory-fit check (see lib/prompts/theories.ts). `fits === false` means the topic has
+  // no social-science angle the library can serve — `fitReason` + `suggestedCustomTheories`
+  // drive the no-fit message below instead of the usual "these theories tend to fit" banner.
+  fits?: boolean
+  fitReason?: string
+  suggestedCustomTheories?: string[]
 }
 
 const MIN_SELECT = 2
@@ -47,16 +53,39 @@ const MAX_SELECT = 4
 
 type View = 'suggested' | 'browse'
 
-export default function TheoryCards({ projectId, topic, cards, libraryCards, initialSelected, suggestions, readOnly }: Props) {
+export default function TheoryCards({
+  projectId, topic, cards, libraryCards, initialSelected, suggestions, readOnly,
+  fits, fitReason, suggestedCustomTheories,
+}: Props) {
+  const noFit = fits === false
   const [selected, setSelected] = useState<Set<string>>(new Set(initialSelected ?? []))
   const [submitting, setSubmitting] = useState(false)
-  const [view, setView] = useState<View>('suggested')
-  const [showAdd, setShowAdd] = useState(false)
+  // No fit → there's nothing worth looking at in "Suggested for you", so land on the full
+  // library, and open the add-your-own panel straight away (the path the no-fit message points to).
+  const [view, setView] = useState<View>(noFit ? 'browse' : 'suggested')
+  const [showAdd, setShowAdd] = useState(noFit)
   const [addState, addAction] = useFormState<AddCustomState, FormData>(addCustomTheory, null)
   const [note, setNote] = useState<{ text: string; tone: 'ok' | 'warn' | 'muted' } | null>(null)
+  const [pendingName, setPendingName] = useState<string | null>(null)
+  const nameInputRef = useRef<HTMLInputElement>(null)
 
   const hasLibrary = !!libraryCards?.length
   const visibleCards = view === 'browse' && libraryCards ? libraryCards : cards
+
+  // Click a suggested custom-theory name → open the add panel (if not already) and drop the
+  // name into the "display name" field so the student doesn't have to retype it.
+  function pickSuggestedName(name: string) {
+    setShowAdd(true)
+    setPendingName(name)
+  }
+
+  useEffect(() => {
+    if (showAdd && pendingName && nameInputRef.current) {
+      nameInputRef.current.value = pendingName
+      nameInputRef.current.focus()
+      setPendingName(null)
+    }
+  }, [showAdd, pendingName])
 
   // Read latest `selected` inside the add-effect without making it a dep (which would re-run
   // the effect on every toggle).
@@ -119,24 +148,50 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
     formData.append('projectId', projectId)
     formData.append('selectedIds', JSON.stringify(Array.from(selected)))
     if (suggestions?.length) formData.append('suggestions', JSON.stringify(suggestions))
+    // Persist the fit-check verdict too, so revisiting this project reuses it instead of
+    // re-calling Claude (see the `hasCachedFit` check in theories/page.tsx).
+    if (fits !== undefined) {
+      formData.append('fits', JSON.stringify(fits))
+      formData.append('fitReason', fitReason ?? '')
+      formData.append('suggestedCustomTheories', JSON.stringify(suggestedCustomTheories ?? []))
+    }
     await saveTheorySelection(formData)
   }
 
   return (
     <div style={s.wrapper}>
       {/* AI confirmation banner — starts from what student brought */}
-      <div style={s.banner}>
-        <p style={s.bannerText}>
-          Based on your question about <strong style={{ color: 'var(--ink)' }}>{topic}</strong>,
-          {' '}these theories tend to fit well. Pick 2–4 to build your theoretical framework
-          <GlossaryTooltip term={glossaryTerm('theoretical-vs-conceptual')} /> on.
-        </p>
-        <p style={s.bannerText}>
-          Each theory is a lens for your analysis, not a source for your literature review
-          <GlossaryTooltip term={glossaryTerm('theory-vs-literature')} />. The year shows when
-          the lens was first set out, so older usually means well tested.
-        </p>
-      </div>
+      {noFit ? (
+        <div style={s.noFitBanner}>
+          <p style={s.bannerText}>
+            Methea&apos;s theory library focuses on social-science research. Your topic looks
+            like {fitReason || 'a different kind of research'}. You can add your own theory
+            {suggestedCustomTheories?.length ? ' (suggestions: ' : ''}
+            {suggestedCustomTheories?.map((name, i) => (
+              <span key={name}>
+                {i > 0 && ', '}
+                <button type="button" onClick={() => pickSuggestedName(name)} style={s.noFitSuggestion}>
+                  {name}
+                </button>
+              </span>
+            ))}
+            {suggestedCustomTheories?.length ? ')' : ''} or continue with a custom one.
+          </p>
+        </div>
+      ) : (
+        <div style={s.banner}>
+          <p style={s.bannerText}>
+            Based on your question about <strong style={{ color: 'var(--ink)' }}>{topic}</strong>,
+            {' '}these theories tend to fit well. Pick 2–4 to build your theoretical framework
+            <GlossaryTooltip term={glossaryTerm('theoretical-vs-conceptual')} /> on.
+          </p>
+          <p style={s.bannerText}>
+            Each theory is a lens for your analysis, not a source for your literature review
+            <GlossaryTooltip term={glossaryTerm('theory-vs-literature')} />. The year shows when
+            the lens was first set out, so older usually means well tested.
+          </p>
+        </div>
+      )}
 
       {/* View toggle — segmented control, suggested-first / browse-second */}
       {hasLibrary && (
@@ -257,7 +312,7 @@ export default function TheoryCards({ projectId, topic, cards, libraryCards, ini
             <label style={s.addLabel} htmlFor="byo-citation">or citation / title</label>
             <input id="byo-citation" name="citation" placeholder="Author (Year). Title of the work." style={s.addInput} />
             <label style={s.addLabel} htmlFor="byo-name">Display name (optional)</label>
-            <input id="byo-name" name="name" placeholder="e.g. Institutional Logics" style={s.addInput} />
+            <input ref={nameInputRef} id="byo-name" name="name" placeholder="e.g. Institutional Logics" style={s.addInput} />
             <AddSubmitButton />
           </form>
           {note && (
@@ -320,6 +375,8 @@ const s: Record<string, React.CSSProperties> = {
   viewHint:   { fontSize: '0.8125rem', color: 'var(--pencil)' },
   banner:     { padding: '1rem 1.25rem', background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)' },
   bannerText: { fontSize: '0.9375rem', color: 'var(--graphite)', lineHeight: 1.6 },
+  noFitBanner: { padding: '1rem 1.25rem', background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderLeft: '3px solid var(--marker-yellow)', borderRadius: 'var(--radius)' },
+  noFitSuggestion: { background: 'none', border: 'none', padding: 0, margin: 0, font: 'inherit', fontWeight: 600, color: 'var(--ink-blue)', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: '2px' },
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',

@@ -5,7 +5,7 @@ import { suggestTheories } from '@/lib/prompts/theories'
 import { verifyTheory, isInReadingList } from '@/lib/openalex'
 import TheoryCards, { type TheoryCardData } from './TheoryCards'
 import type { VerificationStatus } from '@/components/ui/StatusChip'
-import type { Project, Theory } from '@/types/database'
+import type { Project, Theory, TheoryFitResult } from '@/types/database'
 
 export const metadata = { title: 'Choose your theories — Methea' }
 
@@ -40,12 +40,21 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   const selectedIds = ctx?.theories?.selected_ids ?? []
   const isOutdated  = (ctx.outdated_blocks ?? []).includes('theories')
 
-  // Reuse cached AI suggestions so revisiting keeps the "why it fits" reasoning without
-  // re-calling Claude. Recompute when upstream (gate 1) changed and marked us outdated.
-  const cachedSuggestions = ctx?.theories?.suggestions
-  const suggestions = (!isOutdated && cachedSuggestions?.length)
-    ? cachedSuggestions
+  // Reuse the cached fit check + suggestions so revisiting keeps the "why it fits" reasoning
+  // (or the no-fit verdict) without re-calling Claude. Recompute when upstream (gate 1)
+  // changed and marked us outdated. `fits` is the presence check — unlike `suggestions`,
+  // an empty cached array is a valid result (no-fit) and must not trigger a recompute.
+  const hasCachedFit = ctx?.theories?.fits !== undefined
+  const fitResult: TheoryFitResult = (!isOutdated && hasCachedFit)
+    ? {
+        fits: ctx.theories!.fits!,
+        reason: ctx.theories!.fit_reason ?? '',
+        theories: ctx.theories!.suggestions ?? [],
+        suggested_custom_theories: ctx.theories!.suggested_custom_theories ?? [],
+      }
     : await suggestTheories(ctx, allTheories as Theory[])
+
+  const { fits, reason: fitReason, theories: suggestions, suggested_custom_theories: suggestedCustomTheories } = fitResult
 
   const theoriesById   = new Map((allTheories as Theory[]).map(t => [t.id, t]))
   const readingListRaw = ctx.brief?.reading_list_raw ?? ''
@@ -118,6 +127,9 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
           libraryCards={libraryCards}
           initialSelected={selectedIds}
           suggestions={suggestions}
+          fits={fits}
+          fitReason={fitReason}
+          suggestedCustomTheories={suggestedCustomTheories}
         />
       </div>
     </main>
