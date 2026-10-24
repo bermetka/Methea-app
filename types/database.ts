@@ -28,6 +28,19 @@ export interface TheorySuggestion {
   fit_score: number
 }
 
+// Result of the theory-fit check that gates theory suggestion. The library is curated
+// for social-science research (see suggestTheories) — when a topic genuinely has no
+// social/behavioural angle (e.g. a pure NLP/tokenization study), `fits` is false and
+// `theories` stays empty. `suggested_custom_theories` are bare NAMES only (never authors,
+// years, or citations — that would violate the no-hallucinated-citation rule) the student
+// can look up and add themselves via the existing bring-your-own flow.
+export interface TheoryFitResult {
+  fits: boolean
+  reason: string
+  theories: TheorySuggestion[]
+  suggested_custom_theories: string[]
+}
+
 // A theory a student added themselves (bring-your-own). Stored per-project inside
 // research_context.theories.custom_theories — NEVER written to the global `theories`
 // table, so the AI suggestion pool stays curated. Its OpenAlex verification result is
@@ -114,6 +127,9 @@ export interface ResearchContext {
     reading_list_items: ReadingListItem[]
     custom_theories?: CustomTheory[]   // bring-your-own theories (per-project, off the global table)
     suggestions?: TheorySuggestion[]   // cached so re-entry keeps AI reasons without re-calling Claude
+    fits?: boolean                              // cached fit-check verdict, see TheoryFitResult
+    fit_reason?: string                         // one-sentence reason behind `fits`
+    suggested_custom_theories?: string[]        // cached bare theory NAMES offered when fits === false
   }
   socratic_gate_2?: {
     completed: boolean
