@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Logo from '@/components/ui/Logo'
+import { isUnlimitedUser } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import PaywallLock from '@/components/paywall/PaywallLock'
@@ -26,7 +27,7 @@ export default async function AnalysisPage({ params }: { params: { id: string } 
 
   const ctx = project.research_context
   const findings = ctx?.findings
-  const access = hasFullAccess(project)
+  const access = hasFullAccess(project, { unlimited: await isUnlimitedUser(supabase, user.id) })
 
   // Transcript analysis is paid-only (it generates). Existing findings stay viewable, read-only.
   if (!access && !findings) {

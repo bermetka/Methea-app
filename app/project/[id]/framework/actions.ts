@@ -3,6 +3,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
+import { isUnlimitedUser } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import type { FrameworkEdge, FrameworkCitation } from '@/types/database'
 
@@ -31,7 +32,7 @@ export async function saveFramework(formData: FormData) {
   // hides this button when unpaid, but the server action itself must also
   // reject direct calls, since research_context stays writable at the DB
   // grant level for legitimate free-tier writes (e.g. diagram persistence).
-  if (!hasFullAccess(project)) {
+  if (!hasFullAccess(project, { unlimited: await isUnlimitedUser(supabase, user.id) })) {
     redirect(`/project/${projectId}/framework`)
   }
 

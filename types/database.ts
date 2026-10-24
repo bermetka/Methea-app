@@ -200,6 +200,7 @@ export interface Profile {
   id: string                          // = auth.users.id
   price_variant: PriceVariant         // set once at signup, never changed
   signup_source: Record<string, unknown>
+  unlimited: boolean                  // comp flag: full access, no cap, no expiry (set by us, never by the user)
   created_at: string
 }
 

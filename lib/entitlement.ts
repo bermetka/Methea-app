@@ -43,15 +43,19 @@ export function isAccessExpired(project: Pick<Project, 'paid_at'>, now: Date = n
 
 /**
  * Generation, regeneration, edits and full export. Everything else (viewing
- * already generated content) is open to every project owner.
+ * already generated content) is open to every project owner. `unlimited` is
+ * the owner's comp flag (profiles.unlimited): full access, no expiry.
  */
-export function hasFullAccess(project: Pick<Project, 'paid_at'>, now: Date = new Date()): boolean {
-  return !isPaywallActive(now) || isProjectPaid(project, now)
+export function hasFullAccess(
+  project: Pick<Project, 'paid_at'>,
+  { unlimited = false, now = new Date() }: { unlimited?: boolean; now?: Date } = {}
+): boolean {
+  return unlimited || !isPaywallActive(now) || isProjectPaid(project, now)
 }
 
 /** Max unpaid, non-archived projects per user (only counts while the paywall is active). */
 export const FREE_PROJECT_CAP = 3
 
 export function countUnpaidProjects(projects: Pick<Project, 'paid_at'>[], now: Date = new Date()): number {
-  return projects.filter(p => !hasFullAccess(p, now)).length
+  return projects.filter(p => !hasFullAccess(p, { now })).length
 }

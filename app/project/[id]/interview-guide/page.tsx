@@ -4,6 +4,7 @@ import GenerationError from '@/components/ui/GenerationError'
 import { createClient } from '@/lib/supabase/server'
 import { generateInterviewGuide } from '@/lib/prompts/interview'
 import { resolveProjectTheories } from '@/lib/project-theories'
+import { isUnlimitedUser } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import PaywallLock from '@/components/paywall/PaywallLock'
@@ -37,7 +38,7 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
   // Paid-only step — checked before the ethics checkpoint so unpaid users
   // don't see a checkpoint for a feature they can't use yet. Already generated
   // questions stay viewable, read-only.
-  if (!hasFullAccess(p)) {
+  if (!hasFullAccess(p, { unlimited: await isUnlimitedUser(supabase, user.id) })) {
     const unlock = await getUnlockInfo(p, user.id)
     const saved = ctx.interview_guide?.questions ?? []
     if (!saved.length) {

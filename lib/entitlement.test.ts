@@ -59,14 +59,28 @@ describe('isProjectPaid — 6-month access window', () => {
 describe('hasFullAccess', () => {
   it('every project has full access before PAYWALL_START', () => {
     process.env.PAYWALL_START = START
-    expect(hasFullAccess({ paid_at: null }, beforeStart)).toBe(true)
+    expect(hasFullAccess({ paid_at: null }, { now: beforeStart })).toBe(true)
   })
 
   it('after PAYWALL_START only projects inside their paid window', () => {
     process.env.PAYWALL_START = START
-    expect(hasFullAccess({ paid_at: null }, afterStart)).toBe(false)
-    expect(hasFullAccess({ paid_at: '2026-11-15T00:00:00Z' }, afterStart)).toBe(true)
-    expect(hasFullAccess({ paid_at: '2026-01-01T00:00:00Z' }, afterStart)).toBe(false) // expired
+    expect(hasFullAccess({ paid_at: null }, { now: afterStart })).toBe(false)
+    expect(hasFullAccess({ paid_at: '2026-11-15T00:00:00Z' }, { now: afterStart })).toBe(true)
+    expect(hasFullAccess({ paid_at: '2026-01-01T00:00:00Z' }, { now: afterStart })).toBe(false) // expired
+  })
+})
+
+describe('hasFullAccess — unlimited (comp) owners', () => {
+  it('unlimited owner has full access without paid_at, after the start date and past any window', () => {
+    process.env.PAYWALL_START = START
+    expect(hasFullAccess({ paid_at: null }, { unlimited: true, now: afterStart })).toBe(true)
+    expect(hasFullAccess({ paid_at: '2026-01-01T00:00:00Z' }, { unlimited: true, now: afterStart })).toBe(true)
+  })
+
+  it('normal owners are unchanged', () => {
+    process.env.PAYWALL_START = START
+    expect(hasFullAccess({ paid_at: null }, { unlimited: false, now: afterStart })).toBe(false)
+    expect(hasFullAccess({ paid_at: null }, { now: afterStart })).toBe(false)
   })
 })
 
