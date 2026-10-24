@@ -79,6 +79,13 @@ export default function TermsPage() {
           Refund requests are handled by Paddle in line with their refund policy and applicable
           law.
         </p>
+        <p style={prose.p}>
+          <strong style={prose.strong}>14-day money-back guarantee.</strong> Within 14 days of
+          your purchase you can get a full refund, no questions asked, even if you&apos;ve already
+          used the paid features. Request it through Paddle, using the link in your receipt email
+          or at paddle.net. This guarantee applies to everyone, wherever you live, and is in
+          addition to any legal right of withdrawal above.
+        </p>
       </section>
 
       <section style={prose.section}>
