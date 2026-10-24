@@ -6,6 +6,7 @@ import {
   fromPriceLabel,
   sanitizeDiscountCode,
   foundingBannerText,
+  priceLabel,
 } from './pricing'
 
 beforeEach(() => {
@@ -55,5 +56,13 @@ describe('foundingBannerText', () => {
     expect(foundingBannerText('2026-11-23')).toBe('Founding tester: 50% off until Nov 23')
     expect(foundingBannerText(undefined)).toBe('Founding tester: 50% off')
     expect(foundingBannerText('soon')).toBe('Founding tester: 50% off')
+  })
+})
+
+describe('priceLabel', () => {
+  it('accepts the escaped env form and the plain one', () => {
+    expect(priceLabel('\\$49')).toBe('$49')
+    expect(priceLabel('$99')).toBe('$99')
+    expect(priceLabel(undefined)).toBe('')
   })
 })

@@ -18,16 +18,26 @@ export function randomPriceVariant(random: () => number = Math.random): PriceVar
   return random() < 0.5 ? 'A' : 'B'
 }
 
+/**
+ * Next's env loader expands `$NAME` in env values (both .env files and the real
+ * environment, e.g. Vercel), so a bare `$49` becomes empty. Labels are therefore
+ * set as `\$49`; this strips the escape if it survives (an environment that
+ * doesn't expand).
+ */
+export function priceLabel(raw: string | undefined): string {
+  return (raw ?? '').replace(/^\\\$/, '$')
+}
+
 // Literal process.env.NEXT_PUBLIC_* reads so Next inlines them into client bundles.
 export function priceForVariant(variant: PriceVariant): { priceId: string; label: string } {
   return variant === 'A'
-    ? { priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID_A ?? '', label: process.env.NEXT_PUBLIC_PRICE_LABEL_A ?? '' }
-    : { priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID_B ?? '', label: process.env.NEXT_PUBLIC_PRICE_LABEL_B ?? '' }
+    ? { priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID_A ?? '', label: priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_A) }
+    : { priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID_B ?? '', label: priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_B) }
 }
 
 /** Lowest price label, for logged-out visitors ("from $49"). */
 export function fromPriceLabel(): string {
-  return `from ${process.env.NEXT_PUBLIC_PRICE_LABEL_A ?? ''}`
+  return `from ${priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_A)}`
 }
 
 /**
