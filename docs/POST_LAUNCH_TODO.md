@@ -30,6 +30,10 @@ Not for before launch.
 - **`public.paywall_start()` duplicates `PAYWALL_START`.** The free-cap trigger can't
   read app env, so the start date is hardcoded in that SQL function. If the launch
   date moves, change both (or move it to a config table).
+- **Payments table.** `projects` keeps only the latest payment: a re-buy after the
+  6-month window overwrites `paddle_transaction_id`, `amount_paid`, `currency`,
+  `paid_price_variant` and `discount_code`. Keep every payment (one row per Paddle
+  transaction) for funnel and revenue analysis.
 
 ## Ops
 
