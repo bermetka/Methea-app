@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { fromPriceLabel } from '@/lib/pricing'
 
 export const metadata = {
   title: 'Methea — Your research, methodically.',
@@ -240,9 +241,9 @@ export default async function LandingPage() {
             <div style={{ ...s.pricingCard, ...s.pricingCardFeatured }}>
               <p style={s.planBadge}>Most popular</p>
               <p style={s.planName}>Project</p>
-              {/* TODO(prompt-2): hardcoded price — use the price variant (NEXT_PUBLIC_PRICE_LABEL_A/_B) */}
-              <p style={s.planPrice}>$49</p>
-              <p style={s.planNote}>One-time · valid until you're done</p>
+              {/* Logged-out only (logged-in users are redirected), so "from" the lowest variant */}
+              <p style={s.planPrice}>{fromPriceLabel()}</p>
+              <p style={s.planNote}>One-time · 6 months of full access</p>
               <ul style={s.planItems}>
                 {['Everything in Free', 'Unlimited exports', '5 transcript analyses', 'Interview guide export', 'Full findings scaffold', 'Valid for one project'].map(i => (
                   <li key={i} style={s.planItem}><span style={{ ...s.planCheck, color: 'var(--moss)' }}>✓</span>{i}</li>

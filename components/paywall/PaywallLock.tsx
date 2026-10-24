@@ -1,13 +1,15 @@
 import Logo from '@/components/ui/Logo'
-import UnlockButton from './UnlockButton'
+import UnlockSlot from './UnlockSlot'
+import type { UnlockInfo } from '@/lib/pricing'
 
 interface Props {
   projectId: string
   title: string
   description: string
+  unlock: UnlockInfo
 }
 
-export default function PaywallLock({ projectId, title, description }: Props) {
+export default function PaywallLock({ projectId, title, description, unlock }: Props) {
   return (
     <main style={s.page}>
       <div style={s.container}>
@@ -16,7 +18,7 @@ export default function PaywallLock({ projectId, title, description }: Props) {
           <p style={s.eyebrow}>Unlock this project</p>
           <h1 style={s.heading}>{title}</h1>
           <p style={s.description}>{description}</p>
-          <UnlockButton projectId={projectId} />
+          <UnlockSlot projectId={projectId} unlock={unlock} />
           <a href={`/project/${projectId}`} style={s.backLink}>← Back to project</a>
         </div>
       </div>

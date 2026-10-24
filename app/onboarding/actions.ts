@@ -2,11 +2,14 @@
 
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { enforceFreeProjectCap } from '@/lib/project-cap'
 
 export async function createFirstProject(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+
+  await enforceFreeProjectCap(supabase, user.id)
 
   const title = (formData.get('title') as string)?.trim() || 'My research project'
 

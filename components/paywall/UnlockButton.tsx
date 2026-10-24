@@ -2,10 +2,12 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { initializePaddle, CheckoutEventNames, type Paddle } from '@paddle/paddle-js'
+import { foundingBannerText, type CheckoutContext } from '@/lib/pricing'
 
 interface Props {
   projectId: string
-  label?: string
+  checkout: CheckoutContext
+  compact?: boolean
 }
 
 // idle transitions: loading (Paddle.js still booting) -> idle (ready to click)
@@ -14,9 +16,10 @@ interface Props {
 // token/config) so the button never sits in a clickable-but-silently-broken state.
 type Status = 'loading' | 'idle' | 'opening' | 'finalizing' | 'error'
 
-// TODO(prompt-2): price is hardcoded — take it from the user's price variant
-// (NEXT_PUBLIC_PRICE_LABEL_A/_B) instead of '$49'.
-export default function UnlockButton({ projectId, label = 'Unlock this project — $49 →' }: Props) {
+export default function UnlockButton({ projectId, checkout, compact }: Props) {
+  const label = compact
+    ? `Unlock — ${checkout.priceLabel} →`
+    : `Unlock this project — ${checkout.priceLabel} →`
   const paddleRef = useRef<Paddle | undefined>(undefined)
   const [status, setStatus] = useState<Status>('loading')
 
@@ -51,8 +54,10 @@ export default function UnlockButton({ projectId, label = 'Unlock this project �
     if (status !== 'idle' || !paddleRef.current) return
     setStatus('opening')
     paddleRef.current.Checkout.open({
-      items: [{ priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID!, quantity: 1 }],
-      customData: { project_id: projectId },
+      items: [{ priceId: checkout.priceId, quantity: 1 }],
+      // discount_code is for funnel analysis only; Paddle applies and validates discountCode.
+      customData: { project_id: projectId, ...(checkout.discountCode && { discount_code: checkout.discountCode }) },
+      ...(checkout.discountCode && { discountCode: checkout.discountCode }),
     })
   }
 
@@ -66,9 +71,12 @@ export default function UnlockButton({ projectId, label = 'Unlock this project �
           : label
 
   return (
-    <button type="button" onClick={handleClick} disabled={status !== 'idle'} style={s.btn}>
-      {text}
-    </button>
+    <div style={s.wrap}>
+      {checkout.discountCode && <p style={s.founding}>{foundingBannerText()}</p>}
+      <button type="button" onClick={handleClick} disabled={status !== 'idle'} style={s.btn}>
+        {text}
+      </button>
+    </div>
   )
 }
 
@@ -87,6 +95,8 @@ function pollForUnlock(projectId: string, onUnlocked: () => void, attempt = 0) {
 }
 
 const s: Record<string, React.CSSProperties> = {
+  wrap: { display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.375rem' },
+  founding: { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--moss)', background: 'var(--mint)', padding: '2px 8px', borderRadius: 'var(--radius-sm)' },
   btn: {
     padding: '0.75rem 1.5rem',
     background: 'var(--ink)',

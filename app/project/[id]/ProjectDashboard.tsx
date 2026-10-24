@@ -4,7 +4,8 @@ import { useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer } from 'docx'
 import Logo from '@/components/ui/Logo'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
-import UnlockButton from '@/components/paywall/UnlockButton'
+import UnlockSlot from '@/components/paywall/UnlockSlot'
+import type { UnlockInfo } from '@/lib/pricing'
 import type { ResearchContext, Theory } from '@/types/database'
 
 // ── Accent palette per section ────────────────────────────────────────────────
@@ -25,10 +26,12 @@ interface Props {
   ctx: ResearchContext
   theories: Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]
   isComplete: boolean
-  paid: boolean
+  paid: boolean                 // full access (paid in window, or before PAYWALL_START)
+  unlock: UnlockInfo | null     // null when paid
+  accessUntil: string | null    // formatted end of the 6-month paid window
 }
 
-export default function ProjectDashboard({ projectId, ctx, theories, isComplete, paid }: Props) {
+export default function ProjectDashboard({ projectId, ctx, theories, isComplete, paid, unlock, accessUntil }: Props) {
   const [open, setOpen]               = useState<Record<string, boolean>>({})
   const [copiedSection, setCopiedSection] = useState<string | null>(null)
   const [tooltipId, setTooltipId]     = useState<string | null>(null)
@@ -116,14 +119,18 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
   type CardStatus = 'done' | 'outdated' | 'locked' | 'empty' | 'paywalled'
   const outdated = new Set(ctx.outdated_blocks ?? [])
   const qStatus:  CardStatus = 'done'
-  const fwStatus: CardStatus = !paid && frameworkDone ? 'paywalled'
+  // Without full access, already generated content stays viewable; only steps with
+  // nothing generated yet show as paywalled.
+  const paywall = !paid && frameworkDone
+  const fwStatus: CardStatus = paywall && !framework?.narrative ? 'paywalled'
     : frameworkDone ? (outdated.has('framework') ? 'outdated' : 'done') : 'empty'
-  const mStatus:  CardStatus = !paid && frameworkDone ? 'paywalled'
-    : methodologyDone ? (outdated.has('methodology') ? 'outdated' : 'done') : frameworkDone ? 'empty' : 'locked'
-  const igStatus: CardStatus = !paid && frameworkDone ? 'paywalled'
-    : interviewDone ? (outdated.has('interview_guide') ? 'outdated' : 'done') : methodologyDone ? 'empty' : 'locked'
-  const anStatus: CardStatus = !paid && frameworkDone ? 'paywalled'
-    : findingsDone ? 'done' : interviewDone ? 'empty' : 'locked'
+  const mStatus:  CardStatus = methodologyDone ? (outdated.has('methodology') ? 'outdated' : 'done')
+    : paywall ? 'paywalled' : frameworkDone ? 'empty' : 'locked'
+  const igStatus: CardStatus = interviewDone ? (outdated.has('interview_guide') ? 'outdated' : 'done')
+    : paywall ? 'paywalled' : methodologyDone ? 'empty' : 'locked'
+  const anStatus: CardStatus = findingsDone ? 'done'
+    : paywall ? 'paywalled' : interviewDone ? 'empty' : 'locked'
+  const paywallLabel = unlock?.kind === 'checkout' ? `${unlock.priceLabel} to unlock` : undefined
 
   const CONNECTORS = [
     { id: 'c1', label: 'shapes which theories fit' },
@@ -140,6 +147,7 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
         <div style={s.header}>
           <Logo size="sm" />
           <div style={s.headerActions}>
+            {accessUntil && <span style={s.accessUntil}>Access until {accessUntil}</span>}
             {isComplete && (
               <a href={`/project/${projectId}/export`} style={s.exportLink}>Export full proposal →</a>
             )}
@@ -148,14 +156,13 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
         </div>
 
         {/* Banner — unlock takes priority over "next step" once theories are selected */}
-        {!paid && frameworkDone ? (
+        {paywall && unlock ? (
           <div style={s.banner}>
             <div>
               <p style={s.bannerEyebrow}>Unlock this project</p>
-              <p style={s.bannerText}>Get the full framework narrative, methodology, interview guide, and analysis.</p>
+              <p style={s.bannerText}>Generate, regenerate and export your framework narrative, methodology, interview guide, and analysis.</p>
             </div>
-            {/* TODO(prompt-2): hardcoded price — use the price variant (NEXT_PUBLIC_PRICE_LABEL_A/_B) */}
-            <UnlockButton projectId={projectId} label="Unlock — $49 →" />
+            <UnlockSlot projectId={projectId} unlock={unlock} compact />
           </div>
         ) : nextHref && (
           <div style={s.banner}>
@@ -222,6 +229,7 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
                   status="paywalled"
                   href={`/project/${projectId}/framework`}
                   ctaLabel="Preview & unlock →"
+                  paywallLabel={paywallLabel}
                   lockedReason="Your framework diagram is ready — unlock this project to see the full verified narrative."
                 />
               ) : frameworkDone ? (
@@ -299,7 +307,7 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
                     '',
                     method!.narrative,
                   ].join('\n')) }}
-                  secondaryAction={{ label: 'Export Word', onClick: exportMethodologyWord }}
+                  secondaryAction={paid ? { label: 'Export Word', onClick: exportMethodologyWord } : undefined}
                   preview={
                     <div style={s.previewStack}>
                       <p style={s.chainPreview}>
@@ -339,7 +347,8 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
                   title="Methodology chain"
                   status="paywalled"
                   lockedReason="Unlock this project to get your full paradigm-to-analysis methodology chain."
-                  unlockSlot={<UnlockButton projectId={projectId} />}
+                  unlockSlot={unlock && <UnlockSlot projectId={projectId} unlock={unlock} />}
+                  paywallLabel={paywallLabel}
                 />
               ) : (
                 <LockedCard
@@ -377,7 +386,7 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
                   primaryAction={{ label: copiedSection === 'interview' ? '✓ Copied' : 'Copy all', onClick: () => copy('interview',
                     questions.map((q, i) => `${i + 1}. ${q.question}\n   [${q.concept}]`).join('\n\n')
                   )}}
-                  secondaryAction={{ label: 'Export Word', onClick: exportInterviewWord }}
+                  secondaryAction={paid ? { label: 'Export Word', onClick: exportInterviewWord } : undefined}
                   preview={
                     <div style={s.previewStack}>
                       <div style={s.questionPreviewRow}>
@@ -408,7 +417,8 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
                   title="Interview guide"
                   status="paywalled"
                   lockedReason="Unlock this project to get your full interview guide."
-                  unlockSlot={<UnlockButton projectId={projectId} />}
+                  unlockSlot={unlock && <UnlockSlot projectId={projectId} unlock={unlock} />}
+                  paywallLabel={paywallLabel}
                 />
               ) : (
                 <LockedCard
@@ -469,7 +479,8 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
                   title="Findings analysis"
                   status="paywalled"
                   lockedReason="Unlock this project to upload transcripts and get your full findings analysis."
-                  unlockSlot={<UnlockButton projectId={projectId} />}
+                  unlockSlot={unlock && <UnlockSlot projectId={projectId} unlock={unlock} />}
+                  paywallLabel={paywallLabel}
                 />
               ) : (
                 <LockedCard
@@ -635,11 +646,12 @@ function SectionCard({
 
 // ── LockedCard ────────────────────────────────────────────────────────────────
 
-function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReason, locked, derivedFrom, unlockSlot }: {
+function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReason, locked, derivedFrom, unlockSlot, paywallLabel }: {
   accent: string; kicker: string; title: string; status?: 'done' | 'outdated' | 'locked' | 'empty' | 'paywalled'
   href?: string; ctaLabel?: string; lockedReason?: string; locked?: boolean
   derivedFrom?: { label: string; sourceCardId: string }
   unlockSlot?: React.ReactNode
+  paywallLabel?: string
 }) {
   return (
     <div style={{ ...s.card, borderLeftColor: accent, opacity: locked ? 0.55 : 1 }}>
@@ -652,8 +664,7 @@ function LockedCard({ accent, kicker, title, status, href, ctaLabel, lockedReaso
           {locked
             ? <span style={s.lockBadge}>🔒 v2</span>
             : status === 'paywalled'
-            // TODO(prompt-2): hardcoded price — use the price variant (NEXT_PUBLIC_PRICE_LABEL_A/_B)
-            ? <StatusBadge status="paywalled" label="$49 to unlock" />
+            ? <StatusBadge status="paywalled" label={paywallLabel} />
             : status === 'empty'
             ? <StatusBadge status="locked" label="Not started" />
             : <StatusBadge status="locked" />
@@ -740,6 +751,7 @@ const s: Record<string, React.CSSProperties> = {
   headerActions:{ display: 'flex', alignItems: 'center', gap: '1rem' },
   projectsLink: { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
   exportLink:   { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
+  accessUntil:  { fontSize: '0.8125rem', color: 'var(--pencil)' },
 
   banner:     { display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem 1.25rem', background: 'var(--ink)', borderRadius: 'var(--radius-lg)', marginBottom: '1.5rem', flexWrap: 'wrap' as const },
   bannerEyebrow:{ fontSize: '0.625rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' as const, color: 'rgba(251,249,243,0.5)', marginBottom: '0.15rem' },

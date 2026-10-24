@@ -2,11 +2,13 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Logo from '@/components/ui/Logo'
 import NewProjectForm from './NewProjectForm'
+import { archiveProject } from './actions'
+import { FREE_CAP_ERROR, FREE_CAP_MESSAGE } from '@/lib/project-cap'
 import type { Project } from '@/types/database'
 
 export const metadata = { title: 'My projects — Methea' }
 
-export default async function ProjectsPage() {
+export default async function ProjectsPage({ searchParams }: { searchParams: { error?: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
@@ -53,7 +55,8 @@ export default async function ProjectsPage() {
               const isComplete = step === 'Complete'
 
               return (
-                <a key={p.id} href={`/project/${p.id}`} style={s.projectCard}>
+                <div key={p.id} style={s.projectRow}>
+                <a href={`/project/${p.id}`} style={s.projectCard}>
                   <div style={s.projectMain}>
                     <p style={s.projectTitle}>{p.title || 'Untitled project'}</p>
                     <p style={s.projectMeta}>
@@ -73,6 +76,11 @@ export default async function ProjectsPage() {
                     <span style={s.arrow}>→</span>
                   </div>
                 </a>
+                <form action={archiveProject} style={s.archiveForm}>
+                  <input type="hidden" name="projectId" value={p.id} />
+                  <button type="submit" style={s.archiveBtn}>Archive</button>
+                </form>
+                </div>
               )
             })}
           </div>
@@ -80,6 +88,7 @@ export default async function ProjectsPage() {
 
         {/* New project form */}
         <div style={s.newSection}>
+          {searchParams.error === FREE_CAP_ERROR && <p style={s.capError}>{FREE_CAP_MESSAGE}</p>}
           <p style={s.newLabel}>
             {list.length === 0 ? 'Start your first project' : 'Start a new project'}
           </p>
@@ -98,13 +107,16 @@ const s: Record<string, React.CSSProperties> = {
   heading:     { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.5rem', fontWeight: 400, color: 'var(--ink)', letterSpacing: '-0.015em' },
 
   projectList: { display: 'flex', flexDirection: 'column', gap: '0', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', overflow: 'hidden', background: 'var(--sheet)' },
+  projectRow:  { display: 'flex', alignItems: 'center', borderBottom: '1px solid var(--stone-soft)' },
   projectCard: {
-    display: 'flex', alignItems: 'center', gap: '1rem',
-    padding: '1rem 1.25rem',
-    borderBottom: '1px solid var(--stone-soft)',
+    display: 'flex', alignItems: 'center', gap: '1rem', flex: 1, minWidth: 0,
+    padding: '1rem 0 1rem 1.25rem',
     textDecoration: 'none',
     cursor: 'pointer',
   },
+  archiveForm: { padding: '0 1.25rem 0 0.75rem' },
+  archiveBtn:  { background: 'none', border: 'none', padding: 0, fontSize: '0.75rem', fontFamily: 'inherit', color: 'var(--pencil)', cursor: 'pointer' },
+  capError:    { fontSize: '0.875rem', color: 'var(--warn-text)', background: 'var(--marker-yellow)', padding: '0.5rem 0.75rem', borderRadius: 'var(--radius)' },
   projectMain: { flex: 1, minWidth: 0 },
   projectTitle:{ fontSize: '0.9375rem', fontWeight: 600, color: 'var(--ink)', marginBottom: '0.2rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' as const },
   projectMeta: { fontSize: '0.8125rem', color: 'var(--pencil)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' as const },

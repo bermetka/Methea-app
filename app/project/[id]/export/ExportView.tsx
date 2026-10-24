@@ -4,17 +4,19 @@ import { useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer, AlignmentType } from 'docx'
 import Logo from '@/components/ui/Logo'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
-import UnlockButton from '@/components/paywall/UnlockButton'
+import UnlockSlot from '@/components/paywall/UnlockSlot'
+import type { UnlockInfo } from '@/lib/pricing'
 import type { ResearchContext, Theory } from '@/types/database'
 
 interface Props {
   projectId: string
   ctx: ResearchContext
   theories: Pick<Theory, 'id' | 'name' | 'author' | 'year'>[]
-  paid: boolean
+  paid: boolean                // full access: full export allowed
+  unlock: UnlockInfo | null    // null when paid
 }
 
-export default function ExportView({ projectId, ctx, theories, paid }: Props) {
+export default function ExportView({ projectId, ctx, theories, paid, unlock }: Props) {
   const [copiedSection, setCopiedSection] = useState<string | null>(null)
   const [showPolishedModal, setShowPolishedModal] = useState(false)
   const [polishedAcknowledged, setPolishedAcknowledged] = useState(false)
@@ -259,7 +261,7 @@ export default function ExportView({ projectId, ctx, theories, paid }: Props) {
             <p style={s.unlockBannerText}>
               Unlock this project to export the full scaffold — framework narrative, methodology, interview guide, and analysis.
             </p>
-            <UnlockButton projectId={projectId} />
+            {unlock && <UnlockSlot projectId={projectId} unlock={unlock} />}
           </div>
         )}
 

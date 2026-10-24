@@ -3,7 +3,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
-import { isProjectPaid } from '@/lib/entitlement'
+import { hasFullAccess } from '@/lib/entitlement'
 import type { FrameworkEdge, FrameworkCitation } from '@/types/database'
 
 export async function saveFramework(formData: FormData) {
@@ -31,7 +31,7 @@ export async function saveFramework(formData: FormData) {
   // hides this button when unpaid, but the server action itself must also
   // reject direct calls, since research_context stays writable at the DB
   // grant level for legitimate free-tier writes (e.g. diagram persistence).
-  if (!isProjectPaid(project)) {
+  if (!hasFullAccess(project)) {
     redirect(`/project/${projectId}/framework`)
   }
 

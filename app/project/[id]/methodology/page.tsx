@@ -3,8 +3,10 @@ import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import { generateMethodologyChain } from '@/lib/prompts/methodology'
 import { resolveProjectTheories } from '@/lib/project-theories'
-import { isProjectPaid } from '@/lib/entitlement'
+import { hasFullAccess } from '@/lib/entitlement'
+import { getUnlockInfo } from '@/lib/checkout'
 import PaywallLock from '@/components/paywall/PaywallLock'
+import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
 import MethodologyChainView from './MethodologyChain'
 import type { Project } from '@/types/database'
 
@@ -30,14 +32,37 @@ export default async function MethodologyPage({ params }: { params: { id: string
   // Guard: must have framework before methodology
   if (!ctx?.framework?.edges?.length) redirect(`/project/${params.id}/framework`)
 
-  // Paid-only step — no generation happens for unpaid projects
-  if (!isProjectPaid(p)) {
+  // Paid-only step — no generation happens for unpaid projects. Already generated
+  // content (e.g. from before the paywall started) stays viewable, read-only.
+  if (!hasFullAccess(p)) {
+    const unlock = await getUnlockInfo(p, user.id)
+    if (!ctx.methodology?.narrative) {
+      return (
+        <PaywallLock
+          projectId={params.id}
+          title="Your methodology chain is ready to build"
+          description="Unlock this project to get your full paradigm-to-analysis methodology chain, each choice explained, plus the interview guide and transcript analysis that follow it."
+          unlock={unlock}
+        />
+      )
+    }
     return (
-      <PaywallLock
-        projectId={params.id}
-        title="Your methodology chain is ready to build"
-        description="Unlock this project to get your full paradigm-to-analysis methodology chain, each choice explained, plus the interview guide and transcript analysis that follow it."
-      />
+      <main style={styles.page}>
+        <div style={styles.container}>
+          <Logo size="sm" />
+          <ViewOnlyNotice
+            projectId={params.id}
+            unlock={unlock}
+            outdated={(ctx.outdated_blocks ?? []).includes('methodology')}
+          />
+          <h2 style={styles.heading}>Your methodology chain</h2>
+          <MethodologyChainView
+            projectId={params.id}
+            chain={ctx.methodology as unknown as import('@/lib/prompts/methodology').MethodologyChain}
+            readOnly
+          />
+        </div>
+      </main>
     )
   }
 

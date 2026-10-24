@@ -55,11 +55,10 @@ export default function TermsPage() {
 
       <section style={prose.section}>
         <h2 style={prose.h2}>4. Purchases and payments</h2>
-        {/* TODO(prompt-2): hardcoded price in legal copy — must not contradict the price
-            variant a user sees (NEXT_PUBLIC_PRICE_LABEL_A/_B). Decide wording with the A/B test. */}
         <p style={prose.p}>
-          Methea&apos;s paid plan is <strong style={prose.strong}>$49 per project, one-time</strong>,
-          covering that project until it&apos;s complete. Other plans, if and when offered, will be
+          Methea&apos;s paid plan is a <strong style={prose.strong}>one-time payment per project</strong>;
+          the price is shown at checkout. It unlocks that project for 6 months from the date of
+          payment, after which the project stays viewable. Other plans, if and when offered, will be
           described at the point of purchase.
         </p>
         <p style={prose.p}>

@@ -2,6 +2,7 @@
 
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { requireFullAccess } from '@/lib/access'
 import { updateResearchContext } from '@/lib/research-context'
 import { resolveProjectTheories } from '@/lib/project-theories'
 import { codeTranscript } from '@/lib/prompts/analysis'
@@ -13,6 +14,8 @@ export async function runTranscriptAnalysis(formData: FormData) {
 
   const projectId = formData.get('projectId') as string
   const file = formData.get('transcript') as File | null
+  // Coding a transcript generates content — paid only.
+  await requireFullAccess(supabase, projectId, user.id)
 
   if (!file || file.size === 0) throw new Error('No file provided')
 
@@ -85,6 +88,7 @@ export async function confirmThemes(formData: FormData) {
 
   const projectId = formData.get('projectId') as string
   const confirmedIds: string[] = JSON.parse(formData.get('confirmedIds') as string)
+  await requireFullAccess(supabase, projectId, user.id)
 
   const { data: project } = await supabase
     .from('projects')

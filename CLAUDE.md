@@ -184,6 +184,11 @@ Never suggest building toward "AI writes the essay" or "humanize this text"
 features — that crosses the line above and is the exact thing that gets
 tools banned by universities.
 
+## Database safety
+
+- Never run `supabase config push` against prod — `supabase/config.toml` has
+  local-only weak auth settings.
+
 ## When in doubt
 
 1. Does this feature help the student think, or does it think for them? If

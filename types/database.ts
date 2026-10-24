@@ -169,8 +169,22 @@ export interface Project {
   context_version: number
   paid_at: string | null
   paddle_transaction_id: string | null
+  // Written only by the Paddle webhook (service role), at payment time.
+  amount_paid: number | null          // minor units (details.totals.grand_total)
+  currency: string | null
+  paid_price_variant: PriceVariant | null
+  discount_code: string | null
   created_at: string
   updated_at: string
+}
+
+export type PriceVariant = 'A' | 'B'
+
+export interface Profile {
+  id: string                          // = auth.users.id
+  price_variant: PriceVariant         // set once at signup, never changed
+  signup_source: Record<string, unknown>
+  created_at: string
 }
 
 export interface Theory {

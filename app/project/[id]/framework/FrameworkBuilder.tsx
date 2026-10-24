@@ -3,7 +3,9 @@
 import { useRef, useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer } from 'docx'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
-import UnlockButton from '@/components/paywall/UnlockButton'
+import UnlockSlot from '@/components/paywall/UnlockSlot'
+import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
+import type { UnlockInfo } from '@/lib/pricing'
 import { saveFramework } from './actions'
 import type { FrameworkEdge, FrameworkCitation } from '@/types/database'
 
@@ -20,6 +22,7 @@ interface Props {
   defaultLayout: Layout
   outdated?: boolean
   locked: boolean
+  unlock: UnlockInfo | null   // null when the project has full access
   diagramRefreshCapReached?: boolean
 }
 
@@ -31,7 +34,7 @@ const LAYOUT_LABELS: Record<Layout, string> = {
 
 export default function FrameworkBuilder({
   projectId, theories, edges, narrative, citations, citationStatuses, defaultLayout, outdated, locked,
-  diagramRefreshCapReached,
+  unlock, diagramRefreshCapReached,
 }: Props) {
   const [layout, setLayout] = useState<Layout>(defaultLayout)
   const [saving, setSaving] = useState(false)
@@ -129,7 +132,7 @@ export default function FrameworkBuilder({
             redraws for this project. Unlock it to redraw the diagram with your current theories
             and get the full verified narrative.
           </p>
-          <UnlockButton projectId={projectId} />
+          {unlock && <UnlockSlot projectId={projectId} unlock={unlock} />}
         </div>
       )}
 
@@ -163,14 +166,14 @@ export default function FrameworkBuilder({
       {/* Narrative — paid only. The unpaid branch never receives real narrative/
           citation text as props (page.tsx only generates them when paid), so
           there is nothing here to leak even if this branch were inspected. */}
-      {locked ? (
+      {locked && !narrative ? (
         <div style={s.narrativeCard}>
           <p style={s.narrativeLabel}>Framework narrative</p>
           <p style={s.lockedPlaceholder}>
             Unlock this project to see the full verified narrative — how your theories connect,
             with citations checked against OpenAlex/CrossRef.
           </p>
-          <UnlockButton projectId={projectId} />
+          {unlock && <UnlockSlot projectId={projectId} unlock={unlock} />}
         </div>
       ) : (
         <div style={s.narrativeCard}>
@@ -200,6 +203,9 @@ export default function FrameworkBuilder({
           </div>
         </div>
       )}
+
+      {/* Existing narrative on an unpaid project: readable, but regenerate/save/export need an unlock */}
+      {locked && narrative && unlock && <ViewOnlyNotice projectId={projectId} unlock={unlock} />}
 
       {/* Actions — save/export are paid-only actions */}
       {!locked && (

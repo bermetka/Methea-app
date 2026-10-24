@@ -2,6 +2,7 @@
 
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { requireFullAccess } from '@/lib/access'
 import { updateResearchContext } from '@/lib/research-context'
 import type { InterviewQuestion } from '@/types/database'
 
@@ -23,6 +24,7 @@ export async function saveInterviewGuide(formData: FormData) {
 
   const projectId = formData.get('projectId') as string
   const questions: InterviewQuestion[] = JSON.parse(formData.get('questions') as string)
+  await requireFullAccess(supabase, projectId, user.id)
 
   const { data: project } = await supabase
     .from('projects')

@@ -2,12 +2,14 @@ import { NextResponse } from 'next/server'
 import { EventName } from '@paddle/paddle-node-sdk'
 import { verifyPaddleWebhook } from '@/lib/paddle/verify-webhook'
 import { createServiceRoleClient } from '@/lib/supabase/service-role'
+import { metheaVariantOf, paymentRecordFromTransaction } from '@/lib/paddle/payment-record'
+import { isProjectPaid } from '@/lib/entitlement'
 
 /**
- * Paddle webhook receiver. This route — and ONLY this route — is allowed to
- * construct `createServiceRoleClient()` and write `projects.paid_at` /
- * `projects.paddle_transaction_id`. Do not import the service-role client
- * anywhere else; it bypasses RLS entirely (see lib/supabase/service-role.ts).
+ * Paddle webhook receiver. This route — and ONLY this route — writes
+ * `projects.paid_at` and the payment fields (amount_paid, currency,
+ * paid_price_variant, discount_code, paddle_transaction_id), via the
+ * service-role client (see lib/supabase/service-role.ts for its other use).
  *
  * Signature verification MUST happen before any Supabase call of any kind —
  * an invalid signature returns 401 immediately with zero DB access.
@@ -34,8 +36,14 @@ export async function POST(request: Request) {
   if (event.eventType === EventName.TransactionCompleted) {
     // event is narrowed to TransactionCompletedEvent here; event.data is a
     // TransactionNotification (id: string, customData: Record<string, any> | null).
+    // The Paddle account is shared with other products (o-nion, SOLA): only a
+    // transaction for one of OUR prices (server-side PADDLE_PRICE_ID_A/_B) may
+    // unlock a project. Anything else is acknowledged and ignored.
+    if (!metheaVariantOf(event.data)) {
+      return NextResponse.json({ received: true, ignored: 'not a Methea price' })
+    }
+
     const projectId = event.data.customData?.project_id as string | undefined
-    const transactionId = event.data.id
 
     if (!projectId) {
       // Nothing to map this payment to — acknowledge so Paddle doesn't retry
@@ -45,13 +53,42 @@ export async function POST(request: Request) {
     }
 
     const supabase = createServiceRoleClient()
-    const { error } = await supabase
+    const { data: project, error: readError } = await supabase
       .from('projects')
-      .update({ paid_at: new Date().toISOString(), paddle_transaction_id: transactionId })
+      .select('paid_at, paddle_transaction_id')
       .eq('id', projectId)
-      .is('paid_at', null)
+      .maybeSingle()
+
+    if (readError) {
+      return NextResponse.json({ error: readError.message }, { status: 500 })
+    }
+    if (!project) {
+      return NextResponse.json({ received: true, warning: 'unknown project' })
+    }
+
+    // Idempotent: Paddle retries deliveries, and the same transaction must never apply twice.
+    if (project.paddle_transaction_id === event.data.id) {
+      return NextResponse.json({ received: true })
+    }
+
+    // First payment, or a re-buy after the 6-month window ended (new window from now).
+    // A payment on a project still inside its window doesn't change it.
+    if (isProjectPaid(project)) {
+      return NextResponse.json({ received: true, warning: 'project already paid' })
+    }
+
+    const update = supabase
+      .from('projects')
+      .update({ paid_at: new Date().toISOString(), ...paymentRecordFromTransaction(event.data) })
+      .eq('id', projectId)
+    // Only apply if paid_at is unchanged since the read (concurrent deliveries).
+    const { error } = await (project.paid_at ? update.eq('paid_at', project.paid_at) : update.is('paid_at', null))
 
     if (error) {
+      // Unique index on paddle_transaction_id: this transaction is already recorded elsewhere.
+      if (error.code === '23505') {
+        return NextResponse.json({ received: true, warning: 'transaction already recorded' })
+      }
       return NextResponse.json({ error: error.message }, { status: 500 })
     }
   }

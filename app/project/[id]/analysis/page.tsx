@@ -1,8 +1,10 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Logo from '@/components/ui/Logo'
-import { isProjectPaid } from '@/lib/entitlement'
+import { hasFullAccess } from '@/lib/entitlement'
+import { getUnlockInfo } from '@/lib/checkout'
 import PaywallLock from '@/components/paywall/PaywallLock'
+import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
 import UploadForm from './UploadForm'
 import FindingsView from './FindingsView'
 
@@ -22,18 +24,22 @@ export default async function AnalysisPage({ params }: { params: { id: string } 
 
   if (!project) redirect('/projects')
 
-  if (!isProjectPaid(project)) {
+  const ctx = project.research_context
+  const findings = ctx?.findings
+  const access = hasFullAccess(project)
+
+  // Transcript analysis is paid-only (it generates). Existing findings stay viewable, read-only.
+  if (!access && !findings) {
     return (
       <PaywallLock
         projectId={params.id}
         title="Transcript analysis is ready to unlock"
         description="Unlock this project to upload interview transcripts — Methea codes them against your framework and surfaces themes with supporting quotes."
+        unlock={await getUnlockInfo(project, user.id)}
       />
     )
   }
-
-  const ctx = project.research_context
-  const findings = ctx?.findings
+  const unlock = access ? null : await getUnlockInfo(project, user.id)
 
   return (
     <main style={s.page}>
@@ -63,6 +69,8 @@ export default async function AnalysisPage({ params }: { params: { id: string } 
           </>
         )}
 
+        {findings && unlock && <ViewOnlyNotice projectId={params.id} unlock={unlock} />}
+
         {findings && (
           <>
             <p style={s.sub}>
@@ -75,8 +83,9 @@ export default async function AnalysisPage({ params }: { params: { id: string } 
               projectId={params.id}
               themes={findings.themes}
               gate3Completed={findings.gate3_completed}
+              readOnly={!access}
             />
-            {findings.gate3_completed && (
+            {access && findings.gate3_completed && (
               <div style={s.reuploadRow}>
                 <p style={s.reuploadNote}>Want to analyse another transcript?</p>
                 <UploadForm projectId={params.id} />

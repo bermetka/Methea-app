@@ -11,9 +11,10 @@ interface Props {
   projectId: string
   questions: InterviewQuestion[]
   theories: Pick<Theory, 'id' | 'name'>[]
+  readOnly?: boolean   // unpaid/expired: view already generated content, no save or export
 }
 
-export default function InterviewGuideView({ projectId, questions, theories }: Props) {
+export default function InterviewGuideView({ projectId, questions, theories, readOnly }: Props) {
   const [saving, setSaving]   = useState(false)
   const [copied, setCopied]   = useState(false)
 
@@ -112,17 +113,21 @@ export default function InterviewGuideView({ projectId, questions, theories }: P
         <button type="button" onClick={handleCopy} style={s.ghostBtn}>
           {copied ? '✓ Copied' : '⧉ Copy all'}
         </button>
-        <button type="button" onClick={handleExportWord} style={s.ghostBtn}>
-          Export Word
-        </button>
-        <button
-          type="button"
-          onClick={handleSave}
-          disabled={saving}
-          style={{ ...s.primaryBtn, ...(saving ? s.primaryBtnDisabled : {}) }}
-        >
-          {saving ? 'Saving…' : 'Save guide →'}
-        </button>
+        {!readOnly && (
+          <>
+            <button type="button" onClick={handleExportWord} style={s.ghostBtn}>
+              Export Word
+            </button>
+            <button
+              type="button"
+              onClick={handleSave}
+              disabled={saving}
+              style={{ ...s.primaryBtn, ...(saving ? s.primaryBtnDisabled : {}) }}
+            >
+              {saving ? 'Saving…' : 'Save guide →'}
+            </button>
+          </>
+        )}
       </div>
     </div>
   )

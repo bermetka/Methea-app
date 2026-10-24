@@ -10,9 +10,11 @@ interface Props {
   projectId: string
   themes: AnalysisTheme[]
   gate3Completed: boolean
+  readOnly?: boolean   // unpaid/expired: view existing findings, no confirming
 }
 
-export default function FindingsView({ projectId, themes, gate3Completed }: Props) {
+export default function FindingsView({ projectId, themes, gate3Completed, readOnly }: Props) {
+  const editable = !gate3Completed && !readOnly
   const [selected, setSelected] = useState<Set<string>>(
     new Set(themes.filter(t => t.confirmed || !gate3Completed).map(t => t.id))
   )
@@ -39,7 +41,7 @@ export default function FindingsView({ projectId, themes, gate3Completed }: Prop
 
   return (
     <div style={s.wrap}>
-      {!gate3Completed && (
+      {editable && (
         <div style={s.gate3Banner}>
           <p style={s.gate3Eyebrow}>Socratic gate 3</p>
           <p style={s.gate3Text}>
@@ -54,7 +56,7 @@ export default function FindingsView({ projectId, themes, gate3Completed }: Prop
           <div key={theme.id} style={{ ...s.themeCard, ...(selected.has(theme.id) ? s.themeSelected : s.themeDeselected) }}>
             {/* Header */}
             <div style={s.themeHeader}>
-              {!gate3Completed && (
+              {editable && (
                 <button
                   type="button"
                   onClick={() => toggleSelect(theme.id)}
@@ -108,7 +110,7 @@ export default function FindingsView({ projectId, themes, gate3Completed }: Prop
         ))}
       </div>
 
-      {!gate3Completed && (
+      {editable && (
         <div style={s.confirmRow}>
           <p style={s.confirmNote}>
             {selected.size} of {themes.length} themes selected

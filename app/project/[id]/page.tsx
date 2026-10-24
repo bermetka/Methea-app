@@ -1,9 +1,10 @@
 import { notFound, redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { resolveProjectTheories } from '@/lib/project-theories'
-import { isProjectPaid } from '@/lib/entitlement'
+import { accessUntil, hasFullAccess, isProjectPaid } from '@/lib/entitlement'
+import { formatAccessDate, getUnlockInfo } from '@/lib/checkout'
 import ProjectDashboard from './ProjectDashboard'
-import type { Project, ResearchContext } from '@/types/database'
+import type { Project } from '@/types/database'
 
 export async function generateMetadata() {
   return { title: 'Project — Methea' }
@@ -37,47 +38,27 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   // Library + custom theories merged for the dashboard's theory map.
   const selectedTheories = await resolveProjectTheories(ctx, selectedIds, supabase)
 
-  const paid = isProjectPaid(p)
+  // Full access = paid inside the 6-month window, or any project before PAYWALL_START.
+  // Without it, already generated content stays viewable (read-only); generating,
+  // regenerating and exporting are locked — see ProjectDashboard.
+  const access = hasFullAccess(p)
+  const until  = isProjectPaid(p) ? accessUntil(p) : null
 
-  // Framework diagram (edges) is the free teaser — always safe to send.
-  // Narrative/citations, methodology, interview guide, and findings are paid-only.
-  // These must not just be hidden in the JSX for unpaid renders — they must never
-  // be serialized into the client component's props at all, since a pre-existing
-  // project (from before this paywall shipped) can already have real narrative,
-  // methodology, interview-guide, or findings content sitting in research_context
-  // even though it isn't paid. Passing `ctx` wholesale to a client component embeds
-  // the whole object in the RSC/hydration payload regardless of what the JSX
-  // chooses to render — same class of bug fixed on the framework page (115b6b8)
-  // and the export page (3280824).
-  const clientCtx: ResearchContext = paid
-    ? ctx
-    : {
-        ...ctx,
-        framework: ctx.framework
-          ? { ...ctx.framework, narrative: '', citations: [], citation_statuses: {} }
-          : ctx.framework,
-        methodology: undefined,
-        interview_guide: undefined,
-        findings: undefined,
-      }
-
-  // Computed from clientCtx (post-sanitization), not the raw ctx — so an unpaid
-  // project can never resolve isComplete to true from stripped-but-previously-real
-  // methodology/interview-guide/findings data. This keeps the "Export full
-  // proposal →" header link hidden for unpaid projects without needing a separate
-  // `paid` check in the formula itself.
   const isComplete =
-    !!clientCtx.methodology?.narrative &&
-    !!clientCtx.interview_guide?.questions?.length &&
-    !!clientCtx.findings?.gate3_completed
+    access &&
+    !!ctx.methodology?.narrative &&
+    !!ctx.interview_guide?.questions?.length &&
+    !!ctx.findings?.gate3_completed
 
   return (
     <ProjectDashboard
       projectId={params.id}
-      ctx={clientCtx}
+      ctx={ctx}
       theories={selectedTheories}
       isComplete={isComplete}
-      paid={paid}
+      paid={access}
+      unlock={access ? null : await getUnlockInfo(p, user.id)}
+      accessUntil={until ? formatAccessDate(until) : null}
     />
   )
 }

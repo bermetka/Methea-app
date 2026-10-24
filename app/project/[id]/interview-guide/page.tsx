@@ -3,8 +3,10 @@ import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import { generateInterviewGuide } from '@/lib/prompts/interview'
 import { resolveProjectTheories } from '@/lib/project-theories'
-import { isProjectPaid } from '@/lib/entitlement'
+import { hasFullAccess } from '@/lib/entitlement'
+import { getUnlockInfo } from '@/lib/checkout'
 import PaywallLock from '@/components/paywall/PaywallLock'
+import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
 import InterviewGuideView from './InterviewGuide'
 import EthicsCheckpoint from './EthicsCheckpoint'
 import type { Project } from '@/types/database'
@@ -32,14 +34,40 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
   if (!ctx?.methodology?.narrative) redirect(`/project/${params.id}/methodology`)
 
   // Paid-only step — checked before the ethics checkpoint so unpaid users
-  // don't see a checkpoint for a feature they can't use yet
-  if (!isProjectPaid(p)) {
+  // don't see a checkpoint for a feature they can't use yet. Already generated
+  // questions stay viewable, read-only.
+  if (!hasFullAccess(p)) {
+    const unlock = await getUnlockInfo(p, user.id)
+    const saved = ctx.interview_guide?.questions ?? []
+    if (!saved.length) {
+      return (
+        <PaywallLock
+          projectId={params.id}
+          title="Your interview guide is ready to build"
+          description="Unlock this project to generate 10-15 interview questions, each tagged to a framework concept, plus transcript analysis."
+          unlock={unlock}
+        />
+      )
+    }
+    const theories = await resolveProjectTheories(ctx, ctx.theories?.selected_ids ?? [], supabase)
     return (
-      <PaywallLock
-        projectId={params.id}
-        title="Your interview guide is ready to build"
-        description="Unlock this project to generate 10-15 interview questions, each tagged to a framework concept, plus transcript analysis."
-      />
+      <main style={styles.page}>
+        <div style={styles.container}>
+          <Logo size="sm" />
+          <ViewOnlyNotice
+            projectId={params.id}
+            unlock={unlock}
+            outdated={(ctx.outdated_blocks ?? []).includes('interview_guide')}
+          />
+          <h2 style={styles.heading}>Your interview guide</h2>
+          <InterviewGuideView
+            projectId={params.id}
+            questions={saved}
+            theories={theories.map(t => ({ id: t.id, name: t.name }))}
+            readOnly
+          />
+        </div>
+      </main>
     )
   }
 

@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
+import { ensureProfile } from '@/lib/checkout'
 
 export async function GET(request: Request) {
   const { searchParams, origin } = new URL(request.url)
@@ -24,8 +25,15 @@ export async function GET(request: Request) {
       }
     )
 
-    const { error } = await supabase.auth.exchangeCodeForSession(code)
+    const { data, error } = await supabase.auth.exchangeCodeForSession(code)
     if (!error) {
+      // Assign the price variant once, at signup (no-op for returning users).
+      // Never block login on it — getUserPriceVariant creates it lazily too.
+      try {
+        await ensureProfile(data.user.id)
+      } catch (e) {
+        console.error('Profile creation failed:', e)
+      }
       return NextResponse.redirect(`${origin}${next}`)
     }
     console.error('Auth callback error:', error.message)

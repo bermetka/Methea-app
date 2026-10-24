@@ -25,9 +25,10 @@ const WHY_KEYS: Record<string, keyof MethodologyChain> = {
 interface Props {
   projectId: string
   chain: MethodologyChain
+  readOnly?: boolean   // unpaid/expired: view already generated content, no save
 }
 
-export default function MethodologyChainView({ projectId, chain }: Props) {
+export default function MethodologyChainView({ projectId, chain, readOnly }: Props) {
   const [saving, setSaving] = useState(false)
   const [copied, setCopied] = useState(false)
 
@@ -98,14 +99,16 @@ export default function MethodologyChainView({ projectId, chain }: Props) {
         <button type="button" onClick={handleCopy} style={s.ghostBtn}>
           {copied ? '✓ Copied' : '⧉ Copy'}
         </button>
-        <button
-          type="button"
-          onClick={handleSave}
-          disabled={saving}
-          style={{ ...s.primaryBtn, ...(saving ? s.primaryBtnDisabled : {}) }}
-        >
-          {saving ? 'Saving…' : 'Save methodology →'}
-        </button>
+        {!readOnly && (
+          <button
+            type="button"
+            onClick={handleSave}
+            disabled={saving}
+            style={{ ...s.primaryBtn, ...(saving ? s.primaryBtnDisabled : {}) }}
+          >
+            {saving ? 'Saving…' : 'Save methodology →'}
+          </button>
+        )}
       </div>
     </div>
   )

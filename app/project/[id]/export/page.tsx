@@ -1,7 +1,8 @@
 import { notFound, redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { resolveProjectTheories } from '@/lib/project-theories'
-import { isProjectPaid } from '@/lib/entitlement'
+import { hasFullAccess } from '@/lib/entitlement'
+import { getUnlockInfo } from '@/lib/checkout'
 import ExportView from './ExportView'
 import type { Project, ResearchContext } from '@/types/database'
 
@@ -33,17 +34,13 @@ export default async function ExportPage({ params }: { params: { id: string } })
   // Library + custom theories merged, so a student's own theory appears in the export too.
   const theories = await resolveProjectTheories(ctx, selectedIds, supabase)
 
-  const paid = isProjectPaid(p)
+  // Full export is locked without full access (paid in window, or before PAYWALL_START).
+  const paid = hasFullAccess(p)
 
-  // Framework diagram (edges) is the free teaser — always safe to send.
-  // Narrative/citations, methodology, interview guide, and findings are paid-only.
-  // These must not just be hidden in the JSX for unpaid renders — they must never
-  // be serialized into the client component's props at all, since a pre-existing
-  // project (from before this paywall shipped) can already have real narrative,
-  // methodology, or interview-guide content sitting in research_context even
-  // though it isn't paid. Passing `ctx` wholesale to a client component embeds
-  // the whole object in the RSC/hydration payload regardless of what the JSX
-  // chooses to render — same class of bug fixed in the framework page (115b6b8).
+  // This page IS the full export, which is locked without full access, so paid
+  // content (narrative/citations, methodology, interview guide, findings) is not
+  // even serialized into the client props for unpaid renders. Already generated
+  // content stays viewable, read-only, on the dashboard and each step's own page.
   const clientCtx: ResearchContext = paid
     ? ctx
     : {
@@ -62,6 +59,7 @@ export default async function ExportPage({ params }: { params: { id: string } })
       ctx={clientCtx}
       theories={theories}
       paid={paid}
+      unlock={paid ? null : await getUnlockInfo(p, user.id)}
     />
   )
 }
