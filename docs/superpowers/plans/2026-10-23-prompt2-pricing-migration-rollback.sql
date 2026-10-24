@@ -4,6 +4,8 @@
 -- paid_at / paddle_transaction_id are untouched, so paid projects stay paid.
 -- Roll back the app first: feat/funnel-paywall code reads these objects.
 -- Does not remove the entry from supabase_migrations.schema_migrations.
+-- Dropping the free-cap trigger leaves the cap enforced only in the app's server
+-- actions; a direct REST insert could then exceed it until the trigger is restored.
 
 -- Free project cap
 drop trigger if exists projects_free_project_cap on public.projects;
