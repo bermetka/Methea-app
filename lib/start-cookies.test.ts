@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { startCookies } from './start-cookies'
 
-const opts = { random: () => 0.9, newId: () => 'new-anon-id-0001' }
+const opts = { random: () => 0.9, newId: () => 'new-anon-id-0001', allowVariantParam: true }
 const q = (s: string) => new URLSearchParams(s)
 
 describe('startCookies (sales page → Prompt 3 cookie contract)', () => {
@@ -34,5 +34,11 @@ describe('startCookies (sales page → Prompt 3 cookie contract)', () => {
       attribution: { angle: 'question', utm_source: 'google' },
       variant: 'B',
     })
+  })
+
+  it('production ignores ?p=: keeps the stored variant, else 50/50', () => {
+    const prod = { ...opts, allowVariantParam: false }
+    expect(startCookies(q('p=A'), {}, prod).variant).toBe('B')
+    expect(startCookies(q('p=B'), { variant: 'A' }, prod).variant).toBe('A')
   })
 })

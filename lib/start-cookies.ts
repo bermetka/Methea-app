@@ -22,12 +22,17 @@ export interface StartCookies {
  * - anon id: kept if valid, else a new one;
  * - attribution: from ?a= and utm_* when the URL carries any, else the existing
  *   cookie (a later visit without params doesn't wipe the original source);
- * - price variant: ?p=A|B, else the existing cookie, else 50/50.
+ * - price variant: ?p=A|B (preview/local only — ignored on production, so a
+ *   shared link can't pick the price), else the existing cookie, else 50/50.
  */
 export function startCookies(
   search: URLSearchParams,
   existing: { anonId?: string; attribution?: string; variant?: string },
-  { random = Math.random, newId = () => crypto.randomUUID() } = {}
+  {
+    random = Math.random,
+    newId = () => crypto.randomUUID(),
+    allowVariantParam = process.env.VERCEL_ENV !== 'production',
+  } = {}
 ): StartCookies {
   const anonId = sanitizeAnonId(existing.anonId) ?? newId()
 
@@ -37,7 +42,8 @@ export function startCookies(
     : sanitizeAttribution(existing.attribution)
   const attribution = { ...raw, angle: parseAngle(fromUrl ? search.get('a') : raw.angle) ?? DEFAULT_ANGLE }
 
-  const variant = parsePriceVariant(search.get('p')) ?? parsePriceVariant(existing.variant) ?? randomPriceVariant(random)
+  const fromParam = allowVariantParam ? parsePriceVariant(search.get('p')) : null
+  const variant = fromParam ?? parsePriceVariant(existing.variant) ?? randomPriceVariant(random)
 
   return { anonId, attribution, variant }
 }

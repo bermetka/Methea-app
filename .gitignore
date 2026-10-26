@@ -41,3 +41,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 docs/methea-handoff.zip
+
+# Paddle sandbox webhook URL (contains the Vercel protection-bypass secret)
+.webhook-url.local
