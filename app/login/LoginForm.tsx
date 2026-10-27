@@ -3,7 +3,15 @@
 import { useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
 
-export default function LoginForm() {
+// Always carries a query string: the Supabase email templates append
+// `&token_hash=…&type=email` to this URL ({{ .RedirectTo }}).
+function callbackUrl(carry: string | null) {
+  const params = new URLSearchParams({ next: '/projects' })
+  if (carry) params.set('carry', carry)
+  return `${window.location.origin}/auth/callback?${params}`
+}
+
+export default function LoginForm({ carry }: { carry: string | null }) {
   const [email, setEmail] = useState('')
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -19,7 +27,7 @@ export default function LoginForm() {
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: `${window.location.origin}/auth/callback`,
+        emailRedirectTo: callbackUrl(carry),
       },
     })
 
@@ -36,7 +44,7 @@ export default function LoginForm() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: callbackUrl(carry),
       },
     })
     if (error) setError(error.message)

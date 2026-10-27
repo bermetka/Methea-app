@@ -60,7 +60,7 @@ export default async function ExportPage({ params }: { params: { id: string } })
       ctx={clientCtx}
       theories={theories}
       paid={paid}
-      unlock={paid ? null : await getUnlockInfo(p, user.id)}
+      unlock={paid ? null : await getUnlockInfo(p, user)}
     />
   )
 }

@@ -195,7 +195,13 @@ export default async function FrameworkPage({ params }: { params: { id: string }
         <Logo size="sm" />
         <div style={styles.heading}>
           <h2 style={styles.h2}>Here's how your theories connect</h2>
-          <p style={styles.sub}>Review the diagram and narrative, then save to continue.</p>
+          <p style={styles.sub}>
+            {paid
+              ? 'Review the diagram and narrative, then save to continue.'
+              : narrativeResult.narrative
+                ? 'Unlock to save your framework and continue to methodology.'
+                : 'Unlock to see the full narrative and continue to methodology.'}
+          </p>
         </div>
         <FrameworkBuilder
           projectId={params.id}
@@ -207,7 +213,7 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           defaultLayout={defaultLayout}
           outdated={resetForReview}
           locked={!paid}
-          unlock={paid ? null : await getUnlockInfo(p, user.id)}
+          unlock={paid ? null : await getUnlockInfo(p, user)}
           diagramRefreshCapReached={diagramRefreshCapReached}
         />
       </div>

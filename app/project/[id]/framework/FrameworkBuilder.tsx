@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer } from 'docx'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
+import FrameworkDiagramStack from '@/components/ui/FrameworkDiagramStack'
 import UnlockSlot from '@/components/paywall/UnlockSlot'
 import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
 import type { UnlockInfo } from '@/lib/pricing'
@@ -137,7 +138,7 @@ export default function FrameworkBuilder({
       )}
 
       {/* Layout switcher */}
-      <div style={s.layoutRow}>
+      <div className="fw-layout-row" style={s.layoutRow}>
         <span style={s.layoutLabel}>Layout</span>
         <div style={s.layoutBtns}>
           {(Object.keys(LAYOUT_LABELS) as Layout[]).map(l => (
@@ -153,15 +154,28 @@ export default function FrameworkBuilder({
         </div>
       </div>
 
-      {/* Diagram */}
-      <div style={s.diagramWrap}>
-        <FrameworkDiagram
-          theories={theories}
-          edges={edges}
-          layout={layout}
-          svgRef={svgRef}
-        />
+      {/* Diagram — the SVG on wider screens; a vertical stack on phones. The SVG
+          stays mounted (moved off-screen) so PNG export works at any width. */}
+      <div className="fw-diagram-wrap" style={s.diagramWrap}>
+        <div className="fw-diagram-svg">
+          <FrameworkDiagram
+            theories={theories}
+            edges={edges}
+            layout={layout}
+            svgRef={svgRef}
+          />
+        </div>
+        <FrameworkDiagramStack className="fw-diagram-stack" theories={theories} edges={edges} />
       </div>
+      <style>{`
+        .fw-diagram-stack { display: none !important; }
+        @media (max-width: 560px) {
+          .fw-diagram-wrap { position: relative; }
+          .fw-diagram-svg { position: absolute; left: -10000px; top: 0; width: 700px; }
+          .fw-diagram-stack { display: flex !important; }
+          .fw-layout-row { display: none !important; }
+        }
+      `}</style>
 
       {/* Narrative — paid only. The unpaid branch never receives real narrative/
           citation text as props (page.tsx only generates them when paid), so
@@ -173,7 +187,6 @@ export default function FrameworkBuilder({
             Unlock this project to see the full verified narrative — how your theories connect,
             with citations checked against OpenAlex/CrossRef.
           </p>
-          {unlock && <UnlockSlot projectId={projectId} unlock={unlock} />}
         </div>
       ) : (
         <div style={s.narrativeCard}>
@@ -206,6 +219,18 @@ export default function FrameworkBuilder({
 
       {/* Existing narrative on an unpaid project: readable, but regenerate/save/export need an unlock */}
       {locked && narrative && unlock && <ViewOnlyNotice projectId={projectId} unlock={unlock} />}
+
+      {/* Unpaid: the next step is methodology, which is part of the unlock — make that
+          explicit instead of a dead end. The button opens the checkout. */}
+      {locked && unlock && (
+        <div style={s.nextStep}>
+          <p style={s.nextStepText}>
+            <strong>Next: your methodology.</strong> Unlocking this project gives you the full
+            narrative, methodology, interview guide, analysis and export for 6 months.
+          </p>
+          <UnlockSlot projectId={projectId} unlock={unlock} label="Continue to methodology" />
+        </div>
+      )}
 
       {/* Actions — save/export are paid-only actions */}
       {!locked && (
@@ -249,6 +274,8 @@ const s: Record<string, React.CSSProperties> = {
   citationItem:   { display: 'inline-flex', alignItems: 'center', gap: '0.3rem', cursor: 'help' },
   stateChip:      { display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '18px', height: '18px', borderRadius: '50%', fontSize: '0.6875rem', fontWeight: 700, flexShrink: 0 },
   citationLabel:  { fontSize: '0.8125rem', fontWeight: 500, color: 'var(--graphite)' },
+  nextStep:           { display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.75rem', paddingTop: '1rem', borderTop: '1px solid var(--stone-soft)' },
+  nextStepText:       { fontSize: '0.9375rem', lineHeight: 1.6, color: 'var(--graphite)' },
   actions:            { display: 'flex', justifyContent: 'flex-end', gap: '0.75rem' },
   secondaryBtn:       { padding: '0.625rem 1.25rem', border: '1px solid var(--stone)', borderRadius: 'var(--radius)', background: 'var(--sheet)', color: 'var(--graphite)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
   primaryBtn:         { padding: '0.75rem 1.5rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },

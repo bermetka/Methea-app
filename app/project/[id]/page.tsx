@@ -58,7 +58,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
       theories={selectedTheories}
       isComplete={isComplete}
       paid={access}
-      unlock={access ? null : await getUnlockInfo(p, user.id)}
+      unlock={access ? null : await getUnlockInfo(p, user)}
       accessUntil={until ? formatAccessDate(until) : null}
     />
   )

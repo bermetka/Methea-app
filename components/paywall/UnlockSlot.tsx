@@ -3,11 +3,12 @@ import type { UnlockInfo } from '@/lib/pricing'
 
 // Where an unlock button goes. Expired projects get the same checkout: paying
 // again starts a new 6-month window (see the Paddle webhook).
-export default function UnlockSlot({ projectId, unlock, compact }: {
+export default function UnlockSlot({ projectId, unlock, compact, label }: {
   projectId: string
   unlock: UnlockInfo
   compact?: boolean
+  label?: string
 }) {
   const { kind: _kind, ...checkout } = unlock
-  return <UnlockButton projectId={projectId} checkout={checkout} compact={compact} />
+  return <UnlockButton projectId={projectId} checkout={checkout} compact={compact} label={label} />
 }

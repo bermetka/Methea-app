@@ -9,6 +9,8 @@ interface Props {
   projectId: string
   checkout: CheckoutContext
   compact?: boolean
+  /** Replaces "Unlock this project", e.g. "Continue to methodology". */
+  label?: string
 }
 
 // idle transitions: loading (Paddle.js still booting) -> idle (ready to click)
@@ -17,10 +19,12 @@ interface Props {
 // token/config) so the button never sits in a clickable-but-silently-broken state.
 type Status = 'loading' | 'idle' | 'opening' | 'finalizing' | 'error'
 
-export default function UnlockButton({ projectId, checkout, compact }: Props) {
-  const label = compact
-    ? `Unlock — ${checkout.priceLabel} →`
-    : `Unlock this project — ${checkout.priceLabel} →`
+export default function UnlockButton({ projectId, checkout, compact, label: customLabel }: Props) {
+  const label = customLabel
+    ? `${customLabel} — ${checkout.priceLabel} →`
+    : compact
+      ? `Unlock — ${checkout.priceLabel} →`
+      : `Unlock this project — ${checkout.priceLabel} →`
   const paddleRef = useRef<Paddle | undefined>(undefined)
   const [status, setStatus] = useState<Status>('loading')
 
@@ -60,6 +64,7 @@ export default function UnlockButton({ projectId, checkout, compact }: Props) {
       // discount_code is for funnel analysis only; Paddle applies and validates discountCode.
       customData: { project_id: projectId, ...(checkout.discountCode && { discount_code: checkout.discountCode }) },
       ...(checkout.discountCode && { discountCode: checkout.discountCode }),
+      ...(checkout.customerEmail && { customer: { email: checkout.customerEmail } }),
     })
   }
 

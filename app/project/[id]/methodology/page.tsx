@@ -37,7 +37,7 @@ export default async function MethodologyPage({ params }: { params: { id: string
   // Paid-only step — no generation happens for unpaid projects. Already generated
   // content (e.g. from before the paywall started) stays viewable, read-only.
   if (!hasFullAccess(p, { unlimited: await isUnlimitedUser(supabase, user.id) })) {
-    const unlock = await getUnlockInfo(p, user.id)
+    const unlock = await getUnlockInfo(p, user)
     if (!ctx.methodology?.narrative) {
       return (
         <PaywallLock

@@ -39,7 +39,7 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
   // don't see a checkpoint for a feature they can't use yet. Already generated
   // questions stay viewable, read-only.
   if (!hasFullAccess(p, { unlimited: await isUnlimitedUser(supabase, user.id) })) {
-    const unlock = await getUnlockInfo(p, user.id)
+    const unlock = await getUnlockInfo(p, user)
     const saved = ctx.interview_guide?.questions ?? []
     if (!saved.length) {
       return (

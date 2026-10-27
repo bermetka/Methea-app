@@ -36,11 +36,11 @@ export default async function AnalysisPage({ params }: { params: { id: string } 
         projectId={params.id}
         title="Transcript analysis is ready to unlock"
         description="Unlock this project to upload interview transcripts — Methea codes them against your framework and surfaces themes with supporting quotes."
-        unlock={await getUnlockInfo(project, user.id)}
+        unlock={await getUnlockInfo(project, user)}
       />
     )
   }
-  const unlock = access ? null : await getUnlockInfo(project, user.id)
+  const unlock = access ? null : await getUnlockInfo(project, user)
 
   return (
     <main style={s.page}>

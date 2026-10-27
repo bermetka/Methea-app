@@ -67,6 +67,7 @@ export interface CheckoutContext {
   priceId: string
   priceLabel: string
   discountCode: string | null
+  customerEmail: string | null
 }
 
 /** What to show where an unlock button would go. */

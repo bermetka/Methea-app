@@ -72,8 +72,10 @@ export function readAttribution(): Attribution {
  * At signup: attach the visitor's anonymous (pre-signup) events to their new
  * user id, so the funnel follows one person from the sales page onwards.
  */
-export async function linkAnonEvents(userId: string): Promise<void> {
-  const anonId = sanitizeAnonId(cookies().get(ANON_ID_COOKIE)?.value)
+export async function linkAnonEvents(
+  userId: string,
+  anonId = sanitizeAnonId(cookies().get(ANON_ID_COOKIE)?.value)
+): Promise<void> {
   if (!anonId) return
   try {
     const { error } = await createServiceRoleClient()

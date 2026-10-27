@@ -1,4 +1,6 @@
 import { redirect } from 'next/navigation'
+import { cookies } from 'next/headers'
+import { encodeVisit, readVisit } from '@/lib/visit'
 import { createClient } from '@/lib/supabase/server'
 import LoginForm from './LoginForm'
 import Logo from '@/components/ui/Logo'
@@ -10,6 +12,10 @@ export default async function LoginPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (user) redirect('/projects')
 
+  // Signed into the sign-in link, so the sales-page visit survives opening the
+  // email on another device (restored in /auth/callback).
+  const carry = encodeVisit(readVisit(cookies()))
+
   return (
     <main style={styles.page}>
       <div style={styles.container}>
@@ -17,7 +23,7 @@ export default async function LoginPage() {
           <Logo size="md" />
           <p style={styles.tagline}>Your research, methodically.</p>
         </div>
-        <LoginForm />
+        <LoginForm carry={carry} />
         <p style={styles.footer}>
           By signing in you agree to use Methea as a thinking tool,
           not a writing tool.
