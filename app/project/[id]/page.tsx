@@ -1,7 +1,7 @@
 import { notFound, redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { resolveProjectTheories } from '@/lib/project-theories'
-import { isUnlimitedUser } from '@/lib/access'
+import { accessOptions } from '@/lib/access'
 import { accessUntil, hasFullAccess, isProjectPaid } from '@/lib/entitlement'
 import { formatAccessDate, getUnlockInfo } from '@/lib/checkout'
 import ProjectDashboard from './ProjectDashboard'
@@ -42,7 +42,7 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   // Full access = paid inside the 6-month window, or any project before PAYWALL_START.
   // Without it, already generated content stays viewable (read-only); generating,
   // regenerating and exporting are locked — see ProjectDashboard.
-  const access = hasFullAccess(p, { unlimited: await isUnlimitedUser(supabase, user.id) })
+  const access = hasFullAccess(p, await accessOptions(supabase, user.id))
   const until  = isProjectPaid(p) ? accessUntil(p) : null
 
   const isComplete =

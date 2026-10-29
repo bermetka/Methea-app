@@ -4,7 +4,7 @@ import GenerationError from '@/components/ui/GenerationError'
 import { createClient } from '@/lib/supabase/server'
 import { generateMethodologyChain } from '@/lib/prompts/methodology'
 import { resolveProjectTheories } from '@/lib/project-theories'
-import { isUnlimitedUser } from '@/lib/access'
+import { accessOptions } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import PaywallLock from '@/components/paywall/PaywallLock'
@@ -36,7 +36,7 @@ export default async function MethodologyPage({ params }: { params: { id: string
 
   // Paid-only step — no generation happens for unpaid projects. Already generated
   // content (e.g. from before the paywall started) stays viewable, read-only.
-  if (!hasFullAccess(p, { unlimited: await isUnlimitedUser(supabase, user.id) })) {
+  if (!hasFullAccess(p, await accessOptions(supabase, user.id))) {
     const unlock = await getUnlockInfo(p, user)
     if (!ctx.methodology?.narrative) {
       return (

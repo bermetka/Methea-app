@@ -3,7 +3,7 @@ import { createClient } from '@/lib/supabase/server'
 import { generateRelationshipLabels, generateFrameworkNarrative } from '@/lib/prompts/framework'
 import { resolveProjectTheories } from '@/lib/project-theories'
 import { updateResearchContext } from '@/lib/research-context'
-import { isUnlimitedUser } from '@/lib/access'
+import { accessOptions } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import Logo from '@/components/ui/Logo'
@@ -72,7 +72,7 @@ export default async function FrameworkPage({ params }: { params: { id: string }
   if (!theories.length) redirect(`/project/${params.id}`)
 
   // Full access = paid inside the window, or any project before PAYWALL_START.
-  const paid = hasFullAccess(p, { unlimited: await isUnlimitedUser(supabase, user.id) })
+  const paid = hasFullAccess(p, await accessOptions(supabase, user.id))
 
   // Soft-invalidation: when an upstream change marked the framework ⚠ outdated, discard the
   // stale saved framework and regenerate from the current theories. Saving clears the flag.

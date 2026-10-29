@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import type { SupabaseClient } from '@supabase/supabase-js'
-import { hasFullAccess } from '@/lib/entitlement'
+import { hasFullAccess, isPaywallTester } from '@/lib/entitlement'
 
 /**
  * Server-action guard: generation, regeneration and saving paid content need
@@ -17,6 +17,11 @@ export async function isUnlimitedUser(supabase: SupabaseClient, userId: string):
   return data?.unlimited === true
 }
 
+/** The owner-level inputs to hasFullAccess: comp flag and early-paywall tester. */
+export async function accessOptions(supabase: SupabaseClient, userId: string) {
+  return { unlimited: await isUnlimitedUser(supabase, userId), paywallTester: isPaywallTester(userId) }
+}
+
 export async function requireFullAccess(supabase: SupabaseClient, projectId: string, userId: string) {
   const { data: project } = await supabase
     .from('projects')
@@ -26,7 +31,7 @@ export async function requireFullAccess(supabase: SupabaseClient, projectId: str
     .single()
 
   if (!project) redirect('/projects')
-  if (!hasFullAccess(project, { unlimited: await isUnlimitedUser(supabase, userId) })) {
+  if (!hasFullAccess(project, await accessOptions(supabase, userId))) {
     redirect(`/project/${projectId}`)
   }
   return project

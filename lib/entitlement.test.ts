@@ -6,6 +6,7 @@ import {
   accessUntil,
   hasFullAccess,
   countUnpaidProjects,
+  isPaywallTester,
 } from './entitlement'
 
 const START = '2026-11-01T00:00:00+06:00'
@@ -95,5 +96,31 @@ describe('countUnpaidProjects (free project cap)', () => {
     ]
     expect(countUnpaidProjects(projects, afterStart)).toBe(3)
     expect(countUnpaidProjects(projects, beforeStart)).toBe(0)
+  })
+})
+
+describe('PAYWALL_TEST_USER_IDS (live test purchase before launch)', () => {
+  const beforeStart = new Date('2026-10-30T12:00:00Z')
+  const unpaid = { paid_at: null }
+
+  it('lists only exact ids; unset or empty means nobody', () => {
+    expect(isPaywallTester('u-1', 'u-1, u-2')).toBe(true)
+    expect(isPaywallTester('u-2', 'u-1, u-2')).toBe(true)
+    expect(isPaywallTester('u-3', 'u-1, u-2')).toBe(false)
+    expect(isPaywallTester('u-1', undefined)).toBe(false)
+    expect(isPaywallTester('u-1', '')).toBe(false)
+    expect(isPaywallTester(undefined, 'u-1')).toBe(false)
+  })
+
+  it('a tester hits the paywall before PAYWALL_START; everyone else still has full access', () => {
+    process.env.PAYWALL_START = START
+    expect(hasFullAccess(unpaid, { now: beforeStart })).toBe(true)
+    expect(hasFullAccess(unpaid, { paywallTester: true, now: beforeStart })).toBe(false)
+  })
+
+  it('a tester who paid is unlocked; unlimited still wins', () => {
+    process.env.PAYWALL_START = START
+    expect(hasFullAccess({ paid_at: '2026-10-30T10:00:00Z' }, { paywallTester: true, now: beforeStart })).toBe(true)
+    expect(hasFullAccess(unpaid, { paywallTester: true, unlimited: true, now: beforeStart })).toBe(true)
   })
 })

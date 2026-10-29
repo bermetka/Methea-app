@@ -18,6 +18,19 @@ export function isPaywallActive(
   return now.getTime() >= startMs
 }
 
+/**
+ * Accounts that see the paywall before PAYWALL_START (comma-separated user
+ * ids in PAYWALL_TEST_USER_IDS) — for a live test purchase on production while
+ * the paywall is still off for everyone else. Unset = nobody.
+ */
+export function isPaywallTester(
+  userId: string | undefined,
+  list: string | undefined = process.env.PAYWALL_TEST_USER_IDS
+): boolean {
+  if (!userId || !list) return false
+  return list.split(',').map(id => id.trim()).filter(Boolean).includes(userId)
+}
+
 /** End of the paid access window (paid_at + ACCESS_MONTHS), or null if never paid. */
 export function accessUntil(project: Pick<Project, 'paid_at'>): Date | null {
   if (!project.paid_at) return null
@@ -45,12 +58,14 @@ export function isAccessExpired(project: Pick<Project, 'paid_at'>, now: Date = n
  * Generation, regeneration, edits and full export. Everything else (viewing
  * already generated content) is open to every project owner. `unlimited` is
  * the owner's comp flag (profiles.unlimited): full access, no expiry.
+ * `paywallTester`: the paywall applies to this owner even before PAYWALL_START.
  */
 export function hasFullAccess(
   project: Pick<Project, 'paid_at'>,
-  { unlimited = false, now = new Date() }: { unlimited?: boolean; now?: Date } = {}
+  { unlimited = false, paywallTester = false, now = new Date() }:
+    { unlimited?: boolean; paywallTester?: boolean; now?: Date } = {}
 ): boolean {
-  return unlimited || !isPaywallActive(now) || isProjectPaid(project, now)
+  return unlimited || (!paywallTester && !isPaywallActive(now)) || isProjectPaid(project, now)
 }
 
 /** Max unpaid, non-archived projects per user (only counts while the paywall is active). */

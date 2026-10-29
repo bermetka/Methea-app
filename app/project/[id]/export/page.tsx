@@ -1,7 +1,7 @@
 import { notFound, redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { resolveProjectTheories } from '@/lib/project-theories'
-import { isUnlimitedUser } from '@/lib/access'
+import { accessOptions } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import ExportView from './ExportView'
@@ -36,7 +36,7 @@ export default async function ExportPage({ params }: { params: { id: string } })
   const theories = await resolveProjectTheories(ctx, selectedIds, supabase)
 
   // Full export is locked without full access (paid in window, or before PAYWALL_START).
-  const paid = hasFullAccess(p, { unlimited: await isUnlimitedUser(supabase, user.id) })
+  const paid = hasFullAccess(p, await accessOptions(supabase, user.id))
 
   // This page IS the full export, which is locked without full access, so paid
   // content (narrative/citations, methodology, interview guide, findings) is not
