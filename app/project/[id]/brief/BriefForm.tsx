@@ -4,6 +4,7 @@ import { useRef, useState } from 'react'
 import { submitBrief } from './actions'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
 import { glossaryTerm } from '@/lib/glossary'
+import PendingSteps from '@/components/ui/PendingSteps'
 
 const DEGREE_LEVELS = [
   { value: 'bachelor',    label: "Bachelor's" },
@@ -228,7 +229,7 @@ export default function BriefForm({ projectId }: Props) {
         }}
       >
         {status === 'submitting'
-          ? <><Spinner /> Reading your brief...</>
+          ? <><Spinner /> <PendingSteps steps={['Reading your topic…', 'Finding the gaps…', 'Drafting your questions…']} /></>
           : 'Start my research →'
         }
       </button>

@@ -13,6 +13,10 @@ import InterviewGuideView from './InterviewGuide'
 import EthicsCheckpoint from './EthicsCheckpoint'
 import type { Project, InterviewQuestion } from '@/types/database'
 
+// Claude runs while this page renders or in its server actions, which execute
+// on this route — allow up to 60s instead of the platform default.
+export const maxDuration = 60
+
 export const metadata = { title: 'Interview guide — Methea' }
 
 export default async function InterviewGuidePage({ params }: { params: { id: string } }) {

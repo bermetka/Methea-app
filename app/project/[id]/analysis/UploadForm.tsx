@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react'
 import { runTranscriptAnalysis } from './actions'
+import PendingSteps from '@/components/ui/PendingSteps'
 
 export default function UploadForm({ projectId }: { projectId: string }) {
   const [dragging, setDragging]   = useState(false)
@@ -80,7 +81,9 @@ export default function UploadForm({ projectId }: { projectId: string }) {
         disabled={!file || loading}
         style={{ ...s.btn, ...((!file || loading) ? s.btnDisabled : {}) }}
       >
-        {loading ? 'Coding transcript…' : 'Code transcript →'}
+        {loading
+          ? <PendingSteps steps={['Reading your transcript…', 'Matching quotes to your concepts…', 'Flagging new themes…', 'Counting how often each appears…']} />
+          : 'Code transcript →'}
       </button>
 
       {loading && (

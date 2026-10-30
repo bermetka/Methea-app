@@ -4,6 +4,10 @@ import { createClient } from '@/lib/supabase/server'
 import BriefForm from './BriefForm'
 import type { Project } from '@/types/database'
 
+// Claude runs while this page renders or in its server actions, which execute
+// on this route — allow up to 60s instead of the platform default.
+export const maxDuration = 60
+
 export const metadata = { title: "Tell me what you're researching — Methea" }
 
 export default async function BriefPage({ params }: { params: { id: string } }) {

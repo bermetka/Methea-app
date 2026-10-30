@@ -9,6 +9,10 @@ import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
 import UploadForm from './UploadForm'
 import FindingsView from './FindingsView'
 
+// Claude runs while this page renders or in its server actions, which execute
+// on this route — allow up to 60s instead of the platform default.
+export const maxDuration = 60
+
 export const metadata = { title: 'Transcript analysis — Methea' }
 
 export default async function AnalysisPage({ params }: { params: { id: string } }) {

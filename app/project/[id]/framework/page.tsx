@@ -12,6 +12,10 @@ import { trackEvent } from '@/lib/funnel'
 import FrameworkBuilder from './FrameworkBuilder'
 import type { Project } from '@/types/database'
 
+// Claude runs while this page renders or in its server actions, which execute
+// on this route — allow up to 60s instead of the platform default.
+export const maxDuration = 60
+
 export const metadata = { title: 'Your framework — Methea' }
 
 // Free diagram redraws per project after the student changes theories, before

@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from 'react'
 import { confirmEthics } from './actions'
+import PendingSteps from '@/components/ui/PendingSteps'
 
 export default function EthicsCheckpoint({ projectId }: { projectId: string }) {
   const [checked, setChecked]   = useState(false)
@@ -53,7 +54,9 @@ export default function EthicsCheckpoint({ projectId }: { projectId: string }) {
         disabled={pending}
         style={{ ...s.btn, ...(pending ? s.btnDisabled : {}) }}
       >
-        {pending ? 'Confirming…' : 'Confirm and generate guide →'}
+        {pending
+          ? <PendingSteps steps={['Confirming…', 'Linking questions to your concepts…', 'Writing your interview guide…']} />
+          : 'Confirm and generate guide →'}
       </button>
     </div>
   )
