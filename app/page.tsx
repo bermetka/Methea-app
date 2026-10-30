@@ -1,12 +1,16 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import { fromPriceLabel } from '@/lib/pricing'
+import { FREE_FEATURES, PAID_FEATURES, fromPriceLabel } from '@/lib/pricing'
+import { FREE_PROJECT_CAP } from '@/lib/entitlement'
 
 export const metadata = {
   title: 'Methea — Your research, methodically.',
   description:
     'Methea guides Masters and PhD students from assignment brief to structured research findings. Framework selection, methodology, interview guides, and analysis — all anchored to your research question.',
 }
+
+// Same primary CTA as /start.
+const CTA_LABEL = 'Check my research for free'
 
 export default async function LandingPage() {
   const supabase = createClient()
@@ -39,7 +43,7 @@ export default async function LandingPage() {
               question. You bring the thinking. Methea asks the right questions.
             </p>
             <div style={s.heroCtas}>
-              <a href="/login" style={s.primaryCta}>Try it free →</a>
+              <a href="/login" style={s.primaryCta}>{CTA_LABEL}</a>
               <a href="#how-it-works" style={s.secondaryCta}>See how it works</a>
             </div>
             <p style={s.heroNote}>Free to start · No credit card required</p>
@@ -228,14 +232,13 @@ export default async function LandingPage() {
             <div style={s.pricingCard}>
               <p style={s.planName}>Free</p>
               <p style={s.planPrice}>$0</p>
-              <p style={s.planNote}>Always free</p>
+              <p style={s.planNote}>Up to {FREE_PROJECT_CAP} projects</p>
               <ul style={s.planItems}>
-                {['1 project', 'Full framework builder', 'Methodology chain', 'Education layer (all glossary + reasoning)', 'View everything in-app'].map(i => (
+                {FREE_FEATURES.map(i => (
                   <li key={i} style={s.planItem}><span style={s.planCheck}>✓</span>{i}</li>
                 ))}
-                <li style={{ ...s.planItem, color: 'var(--pencil)' }}><span style={s.planX}>–</span>Export</li>
               </ul>
-              <a href="/login" style={s.planCta}>Start free →</a>
+              <a href="/login" style={s.planCta}>{CTA_LABEL}</a>
             </div>
 
             <div style={{ ...s.pricingCard, ...s.pricingCardFeatured }}>
@@ -245,25 +248,16 @@ export default async function LandingPage() {
               <p style={s.planPrice}>{fromPriceLabel()}</p>
               <p style={s.planNote}>One-time · 6 months of full access</p>
               <ul style={s.planItems}>
-                {['Everything in Free', 'Unlimited exports', '5 transcript analyses', 'Interview guide export', 'Full findings scaffold', 'Valid for one project'].map(i => (
+                {['Everything in Free', ...PAID_FEATURES].map(i => (
                   <li key={i} style={s.planItem}><span style={{ ...s.planCheck, color: 'var(--moss)' }}>✓</span>{i}</li>
                 ))}
               </ul>
-              <a href="/login" style={{ ...s.planCta, ...s.planCtaFeatured }}>Get started →</a>
-            </div>
-
-            <div style={s.pricingCard}>
-              <p style={s.planName}>Researcher</p>
-              <p style={s.planPrice}>$19<span style={s.planPer}>/mo</span></p>
-              <p style={s.planNote}>Unlimited projects</p>
-              <ul style={s.planItems}>
-                {['Everything in Project', 'Unlimited projects', 'Unlimited transcripts', 'Priority support'].map(i => (
-                  <li key={i} style={s.planItem}><span style={s.planCheck}>✓</span>{i}</li>
-                ))}
-              </ul>
-              <a href="/login" style={s.planCta}>Start free →</a>
+              <a href="/login" style={{ ...s.planCta, ...s.planCtaFeatured }}>{CTA_LABEL}</a>
             </div>
           </div>
+          <p style={s.pricingTalk}>
+            Need it for a whole cohort or department? <a href="mailto:hello@methea.app" style={s.pricingTalkLink}>Talk to us</a>
+          </p>
         </div>
       </section>
 
@@ -272,7 +266,7 @@ export default async function LandingPage() {
         <div style={s.finalInner}>
           <h2 style={s.finalHeading}>Your research, methodically.</h2>
           <p style={s.finalSub}>Start with your brief. Methea handles the rest of the structure.</p>
-          <a href="/login" style={s.finalBtn}>Try Methea free →</a>
+          <a href="/login" style={s.finalBtn}>{CTA_LABEL}</a>
         </div>
       </section>
 
@@ -384,14 +378,14 @@ const s: Record<string, React.CSSProperties> = {
   planBadge:   { position: 'absolute' as const, top: '-12px', left: '1.25rem', background: 'var(--marker-lime)', color: 'var(--ink)', fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' as const, padding: '2px 8px', borderRadius: 'var(--radius-sm)' },
   planName:    { fontSize: '0.875rem', fontWeight: 700, color: 'var(--pencil)', letterSpacing: '0.06em', textTransform: 'uppercase' as const },
   planPrice:   { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '2.25rem', fontWeight: 400, color: 'var(--ink)', lineHeight: 1 },
-  planPer:     { fontSize: '1rem', color: 'var(--graphite)' },
   planNote:    { fontSize: '0.8125rem', color: 'var(--pencil)', marginTop: '-0.5rem' },
   planItems:   { listStyle: 'none', display: 'flex', flexDirection: 'column' as const, gap: '0.5rem', flex: 1 },
   planItem:    { display: 'flex', alignItems: 'flex-start', gap: '0.5rem', fontSize: '0.875rem', color: 'var(--graphite)', lineHeight: 1.5 },
   planCheck:   { flexShrink: 0, fontWeight: 700, color: 'var(--graphite)', marginTop: '0.1rem' },
-  planX:       { flexShrink: 0, color: 'var(--stone)', marginTop: '0.1rem' },
   planCta:     { display: 'block', textAlign: 'center' as const, padding: '0.625rem 1rem', border: '1px solid var(--stone)', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontWeight: 600, color: 'var(--ink)', textDecoration: 'none', marginTop: 'auto' },
   planCtaFeatured: { background: 'var(--ink)', color: 'var(--sheet)', border: 'none' },
+  pricingTalk: { fontSize: '0.9375rem', color: 'var(--graphite)', textAlign: 'center' as const, marginTop: '-1.5rem' },
+  pricingTalkLink: { color: 'var(--ink-blue)', fontWeight: 600, textDecoration: 'underline', textUnderlineOffset: '2px' },
 
   // Final CTA
   finalCta:   { background: 'var(--marker-lime)', padding: '5rem 1.5rem', textAlign: 'center' as const },

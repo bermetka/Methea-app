@@ -35,6 +35,16 @@ export function priceForVariant(variant: PriceVariant): { priceId: string; label
     : { priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID_B ?? '', label: priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_B) }
 }
 
+/** What's free and what a paid project adds. Single source for the marketing pages. */
+export const FREE_FEATURES = ['Brief upload', 'Research-question refinement', 'Theory suggestions', 'Framework diagram (watermarked export)']
+export const PAID_FEATURES = [
+  'Full framework narrative with verified citations',
+  'Methodology chain',
+  'Interview guide',
+  'Transcript analysis',
+  'Full export, no watermark',
+]
+
 /** Lowest price label, for logged-out visitors ("from $49"). */
 export function fromPriceLabel(): string {
   return `from ${priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_A)}`
