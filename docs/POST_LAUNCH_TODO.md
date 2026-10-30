@@ -1,6 +1,6 @@
 # Post-launch TODO
 
-Deferred on purpose during the funnel + paywall sprint (paywall live Nov 1, 2026).
+Deferred on purpose during the funnel + paywall sprint (paywall live 2026-10-30 16:00 Bishkek, moved forward from Nov 1).
 Not for before launch.
 
 ## Database

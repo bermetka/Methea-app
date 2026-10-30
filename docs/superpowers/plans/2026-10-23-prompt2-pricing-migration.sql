@@ -84,7 +84,8 @@ comment on column public.projects.paid_price_variant is
 -- "Unpaid" matches lib/entitlement.ts: never paid, or paid more than 6 months
 -- ago. Before the paywall starts nothing counts as unpaid (rule A).
 
--- Must match the app's PAYWALL_START env (prod: 2026-11-01T00:00:00+06:00).
+-- Must match the app's PAYWALL_START env. Applied as 2026-11-01T00:00:00+06:00;
+-- moved to 2026-10-30T16:00:00+06:00 by 2026-10-30-paywall-start-today-migration.sql.
 create function public.paywall_start()
 returns timestamptz
 language sql
