@@ -24,6 +24,8 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
 
   const list = (projects ?? []) as Project[]
   const isFirstVisit = list.length === 0
+  // Nothing past the title yet: no projects, or none has a brief. Show the full welcome.
+  const showWelcome = list.every(p => !p.research_context?.brief)
   // The student's own price (same as checkout), only needed for the welcome copy.
   const price = isFirstVisit ? priceForVariant(await getUserPriceVariant(user.id)).label : null
 
@@ -37,6 +39,14 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
         <div style={s.titleRow}>
           <h2 style={s.heading}>My projects</h2>
         </div>
+
+        {/* Past the first brief: the same steps, folded away */}
+        {!showWelcome && (
+          <details style={s.howTo}>
+            <summary style={s.howToSummary}>How Methea works</summary>
+            <WelcomeSteps />
+          </details>
+        )}
 
         {/* Project list */}
         {list.length > 0 && (
@@ -91,22 +101,12 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
           </div>
         )}
 
-        {/* First visit: what Methea does, before the first project */}
-        {isFirstVisit && (
+        {/* First visit: what Methea does, until the first brief */}
+        {showWelcome && (
           <section style={s.welcome}>
             <h3 style={s.welcomeTitle}>Welcome to Methea</h3>
             <p style={s.welcomeSub}>Your research methods navigator. It guides, you write.</p>
-            <ol style={s.steps}>
-              {WELCOME_STEPS.map(([lead, rest], i) => (
-                <li key={lead} style={s.step}>
-                  <span style={s.stepNum}>{i + 1}</span>
-                  <span style={s.stepText}>
-                    <strong style={s.stepLead}>{lead}</strong>
-                    {rest && <span style={s.stepRest}> — {rest}</span>}
-                  </span>
-                </li>
-              ))}
-            </ol>
+            <WelcomeSteps />
           </section>
         )}
 
@@ -137,6 +137,22 @@ const WELCOME_STEPS: [string, string | null][] = [
   ['Choose a theoretical lens', 'and see how it shapes your study'],
   ['Build your framework, method and interview guide', null],
 ]
+
+function WelcomeSteps() {
+  return (
+    <ol style={s.steps}>
+      {WELCOME_STEPS.map(([lead, rest], i) => (
+        <li key={lead} style={s.step}>
+          <span style={s.stepNum}>{i + 1}</span>
+          <span style={s.stepText}>
+            <strong style={s.stepLead}>{lead}</strong>
+            {rest && <span style={s.stepRest}> — {rest}</span>}
+          </span>
+        </li>
+      ))}
+    </ol>
+  )
+}
 
 const s: Record<string, React.CSSProperties> = {
   page:        { minHeight: '100vh', background: 'var(--paper)', padding: '2.5rem 1rem 4rem' },
@@ -176,4 +192,7 @@ const s: Record<string, React.CSSProperties> = {
   stepText:     { fontSize: '0.9375rem', lineHeight: 1.5, paddingTop: '1px' },
   stepLead:     { fontWeight: 600, color: 'var(--ink)' },
   stepRest:     { color: 'var(--pencil)' },
+
+  howTo:        { marginTop: '-0.75rem' },
+  howToSummary: { fontSize: '0.8125rem', color: 'var(--pencil)', cursor: 'pointer', width: 'fit-content' },
 }
