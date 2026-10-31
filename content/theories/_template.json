@@ -1,0 +1,41 @@
+{
+  "theory_id": "<uuid from public.theories>",
+  "slug": "institutional-theory",
+  "status": "draft",
+  "original": {
+    "authors": ["Meyer, J. W.", "Rowan, B."],
+    "year": 1977,
+    "title": "Institutionalized Organizations: Formal Structure as Myth and Ceremony",
+    "type": "article",
+    "openalex_id": "W...",
+    "doi": "10....",
+    "isbn": null,
+    "verified": true
+  },
+  "core_idea": "2–3 plain sentences.",
+  "when_to_use": ["..."],
+  "common_mistakes": ["..."],
+  "development": [
+    {
+      "kind": "refinement | strand | synthesis",
+      "work": { "authors": [], "year": 0, "title": "", "openalex_id": "", "doi": null, "isbn": null, "verified": true },
+      "adds": "One line: what this work changed.",
+      "named_by": "Review or handbook that treats it as a development (verified work)"
+    }
+  ],
+  "strands": [
+    { "name": "", "summary": "One line.", "defining_work": { "authors": [], "year": 0, "title": "", "openalex_id": "", "verified": true } }
+  ],
+  "strengths": [
+    { "point": "", "source": { "authors": [], "year": 0, "title": "", "openalex_id": "", "verified": true } }
+  ],
+  "critiques": [
+    { "point": "", "source": { "authors": [], "year": 0, "title": "", "openalex_id": "", "verified": true } }
+  ],
+  "must_read": [
+    { "role": "original | refinement | review", "work": { "authors": [], "year": 0, "title": "", "openalex_id": "", "verified": true }, "chapter": null, "why_read": "One generic line.", "reading_question": "One question answered by reading." }
+  ],
+  "verification_log": [
+    { "step": "machine | human", "by": "", "date": "YYYY-MM-DD", "notes": "" }
+  ]
+}
