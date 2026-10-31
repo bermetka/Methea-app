@@ -1,0 +1,351 @@
+{
+  "theory_id": null,
+  "library_name": "Postcolonial theory (research applications)",
+  "slug": "postcolonial-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Said, Edward W."
+    ],
+    "year": 1978,
+    "title": "Orientalism",
+    "type": "book",
+    "venue": "Pantheon Books",
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": false,
+    "verified_in": null,
+    "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Colonialism shaped not only economies and borders but also knowledge: how the colonizers described the colonized, which categories became 'normal', and whose voices count as knowledge. Said showed how Western scholarship constructed 'the Orient' as its opposite. Postcolonial research questions such representations and the power behind them.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How is a region, people or culture represented in media, policy, textbooks or research, and by whom?",
+    "How do identity, language and national culture get rebuilt after imperial or Soviet rule?",
+    "Whose knowledge counts in a field, and how should research with local communities be done?",
+    "Typical data: texts, media, archives, policy documents, interviews; discourse and critical analysis."
+  ],
+  "common_mistakes": [
+    "Applying it to Central Asia without addressing whether and how Soviet rule counts as colonial. This is debated; cite the debate.",
+    "Treating 'the West' or 'the colonized' as uniform blocks.",
+    "Speaking for participants while claiming to give them voice.",
+    "Mixing postcolonial (South Asian, Middle Eastern roots) and decolonial (Latin American) thought without saying which one you use."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Chandra Talpade Mohanty"
+        ],
+        "year": 1988,
+        "title": "Under Western Eyes: Feminist Scholarship and Colonial Discourses",
+        "type": "article",
+        "venue": "Feminist Review",
+        "doi": "10.1057/fr.1988.42",
+        "openalex_id": "W1987351853",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "original_year": 1984
+      },
+      "adds": "Shows how Western feminist scholarship produced a single 'Third World woman' through its own categories."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Homi Κ. Bhabha"
+        ],
+        "year": 2012,
+        "title": "The Location of Culture",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203820551",
+        "openalex_id": "W1485995441",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2012 Routledge edition of the 1994 book.",
+        "original_year": 1994
+      },
+      "adds": "Hybridity, mimicry and the 'third space': colonial identities are mixed and unstable, not simple opposites."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Dipesh Chakrabarty"
+        ],
+        "year": 2008,
+        "title": "Provincializing Europe",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400828654",
+        "openalex_id": "W2946055890",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2008 edition of the 2000 book.",
+        "original_year": 2000
+      },
+      "adds": "European categories of thought are indispensable for studying the non-West and also inadequate for it."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "David Chioni Moore"
+        ],
+        "year": 2001,
+        "title": "Is the Post- in Postcolonial the Post- in Post-Soviet? Toward a Global Postcolonial Critique",
+        "type": "article",
+        "venue": "PMLA/Publications of the Modern Language Association of America",
+        "doi": "10.1632/pmla.2001.116.1.111",
+        "openalex_id": "W2090276112",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Brings the post-Soviet sphere, including Central Asia, into postcolonial critique."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Decolonial thought / coloniality of power",
+      "summary": "Latin American strand: colonial hierarchies of race and knowledge outlived formal colonialism.",
+      "defining_work": {
+        "authors": [
+          "Aníbal Quijano"
+        ],
+        "year": 2008,
+        "title": "Coloniality of Power, Eurocentrism, and Latin America",
+        "type": "book-chapter",
+        "venue": "Duke University Press eBooks",
+        "doi": "10.1215/9780822388883-011",
+        "openalex_id": "W1536538149",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2008 reprint of the 2000 article.",
+        "original_year": 2000
+      }
+    },
+    {
+      "name": "Post-Soviet postcolonial studies",
+      "summary": "Asks whether and how Russian and Soviet rule over Central Asia, the Caucasus and Eastern Europe was colonial.",
+      "defining_work": {
+        "authors": [
+          "David Chioni Moore"
+        ],
+        "year": 2001,
+        "title": "Is the Post- in Postcolonial the Post- in Post-Soviet? Toward a Global Postcolonial Critique",
+        "type": "article",
+        "venue": "PMLA/Publications of the Modern Language Association of America",
+        "doi": "10.1632/pmla.2001.116.1.111",
+        "openalex_id": "W2090276112",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Indigenous / decolonizing methodologies",
+      "summary": "Research itself as part of colonial practice, and how to do it differently with communities.",
+      "defining_work": {
+        "authors": [
+          "Linda Tuhiwai Smith"
+        ],
+        "year": 2021,
+        "title": "Decolonizing Methodologies",
+        "type": "book",
+        "venue": "Zed Books",
+        "doi": "10.5040/9781350225282",
+        "openalex_id": "W4251392789",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2021 third edition of the 1999 book.",
+        "original_year": 1999
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Makes visible how research categories and representations carry power, including in well-meaning scholarship.",
+      "source": {
+        "authors": [
+          "Chandra Talpade Mohanty"
+        ],
+        "year": 1988,
+        "title": "Under Western Eyes: Feminist Scholarship and Colonial Discourses",
+        "type": "article",
+        "venue": "Feminist Review",
+        "doi": "10.1057/fr.1988.42",
+        "openalex_id": "W1987351853",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "original_year": 1984
+      }
+    },
+    {
+      "point": "Opens questions about the post-Soviet sphere that the rest of postcolonial studies has largely ignored.",
+      "source": {
+        "authors": [
+          "David Chioni Moore"
+        ],
+        "year": 2001,
+        "title": "Is the Post- in Postcolonial the Post- in Post-Soviet? Toward a Global Postcolonial Critique",
+        "type": "article",
+        "venue": "PMLA/Publications of the Modern Language Association of America",
+        "doi": "10.1632/pmla.2001.116.1.111",
+        "openalex_id": "W2090276112",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Postcolonial criticism diverts attention from global capitalism, the structuring principle of today's global relations, and so risks complicity in the hegemony it criticises.",
+      "source": {
+        "authors": [
+          "Arif Dirlik"
+        ],
+        "year": 1994,
+        "title": "The Postcolonial Aura: Third World Criticism in the Age of Global Capitalism",
+        "type": "article",
+        "venue": "Critical Inquiry",
+        "doi": "10.1086/448714",
+        "openalex_id": "W4289254140",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "checked_full_text": true
+    },
+    {
+      "point": "The term risks homogenizing very different colonial experiences; its potential and its limits differ in the Middle East and Central Asia.",
+      "source": {
+        "authors": [
+          "Deniz Kandiyoti"
+        ],
+        "year": 2002,
+        "title": "POST-COLONIALISM COMPARED: POTENTIALS AND LIMITATIONS IN THE MIDDLE EAST AND CENTRAL ASIA",
+        "type": "article",
+        "venue": "International Journal Middle East Studies",
+        "doi": "10.1017/s0020743802002076",
+        "openalex_id": "W1951712093",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/S0020743802002076"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Said, Edward W."
+        ],
+        "year": 1978,
+        "title": "Orientalism",
+        "type": "book",
+        "venue": "Pantheon Books",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then."
+      },
+      "chapter": "Introduction",
+      "why_read": "The founding argument in about thirty pages.",
+      "reading_question": "Who represents your topic or group, and what categories do they use?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "David Chioni Moore"
+        ],
+        "year": 2001,
+        "title": "Is the Post- in Postcolonial the Post- in Post-Soviet? Toward a Global Postcolonial Critique",
+        "type": "article",
+        "venue": "PMLA/Publications of the Modern Language Association of America",
+        "doi": "10.1632/pmla.2001.116.1.111",
+        "openalex_id": "W2090276112",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The key text for applying postcolonial ideas to the post-Soviet space.",
+      "reading_question": "Does Moore's argument fit the country or group you study? Where does it not?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Deniz Kandiyoti"
+        ],
+        "year": 2002,
+        "title": "POST-COLONIALISM COMPARED: POTENTIALS AND LIMITATIONS IN THE MIDDLE EAST AND CENTRAL ASIA",
+        "type": "article",
+        "venue": "International Journal Middle East Studies",
+        "doi": "10.1017/s0020743802002076",
+        "openalex_id": "W1951712093",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/S0020743802002076"
+      },
+      "chapter": null,
+      "why_read": "A careful comparison of what the postcolonial lens can and cannot do in Central Asia.",
+      "reading_question": "Which of Kandiyoti's limitations matters most for your case, and how will you handle it?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "postcolonial",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Spivak (1988) and Said (1978) have no clean records; Said is flagged."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-11-01",
+      "notes": "Critique wording checked against the full text of: The Postcolonial Aura: Third World Criti (founder supplied PDFs)."
+    }
+  ]
+}

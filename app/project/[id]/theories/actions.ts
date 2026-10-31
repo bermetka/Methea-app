@@ -15,7 +15,7 @@ function normText(raw: string): string {
   return raw.trim().toLowerCase().replace(/\s+/g, ' ')
 }
 
-export async function saveTheorySelection(formData: FormData) {
+export async function saveTheorySelection(formData: FormData): Promise<string> {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
@@ -97,7 +97,12 @@ export async function saveTheorySelection(formData: FormData) {
     supabase
   )
 
-  redirect(`/project/${projectId}`)
+  // Return where to go instead of redirecting: the client navigates, so the next step's
+  // loading screen shows immediately.
+  // First pass (or theories changed): go to Gate 2, the reading step.
+  return ctx?.framework?.edges?.length && !outdatedBlocks.includes('framework')
+    ? `/project/${projectId}`
+    : `/project/${projectId}/gate2`
 }
 
 export type AddCustomState = {

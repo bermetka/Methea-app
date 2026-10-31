@@ -1,0 +1,377 @@
+{
+  "theory_id": null,
+  "library_name": "Effectuation theory",
+  "slug": "effectuation-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Saras D. Sarasvathy"
+    ],
+    "year": 2001,
+    "title": "Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency",
+    "type": "article",
+    "venue": "Academy of Management Review",
+    "doi": "10.5465/amr.2001.4378020",
+    "openalex_id": "W2009248339",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2009248339",
+  "core_idea": "Expert entrepreneurs often do not start from a goal and then find means (causation). They start from the means they have (who they are, what they know, whom they know), commit what they can afford to lose, build partnerships, and let goals emerge, treating surprises as opportunities. This is effectual logic, suited to uncertain futures.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do founders actually make decisions when markets are uncertain or don't exist yet?",
+    "Do entrepreneurs in your context use effectual or causal logic, and when?",
+    "Typical data: think-aloud protocols, interviews with founders, surveys using validated scales."
+  ],
+  "common_mistakes": [
+    "Presenting effectuation as 'no planning'. Founders mix both logics.",
+    "Measuring effectuation without a validated instrument.",
+    "Treating it as proven to improve performance; evidence is still developing."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Saras D. Sarasvathy"
+        ],
+        "year": 2008,
+        "title": "Effectuation: Elements of Entrepreneurial Expertise",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1956620396",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The full account of effectual principles."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Nicholas Dew",
+          "Stuart Read",
+          "Saras D. Sarasvathy",
+          "Robert Wiltbank"
+        ],
+        "year": 2008,
+        "title": "Effectual versus predictive logics in entrepreneurial decision-making: Differences between experts and novices",
+        "type": "article",
+        "venue": "Journal of Business Venturing",
+        "doi": "10.1016/j.jbusvent.2008.02.002",
+        "openalex_id": "W2013340531",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Experts use effectual logic more than novices."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Gaylen N. Chandler",
+          "Dawn R. DeTienne",
+          "Alexander McKelvie",
+          "Troy V. Mumford"
+        ],
+        "year": 2009,
+        "title": "Causation and effectuation processes: A validation study",
+        "type": "article",
+        "venue": "Journal of Business Venturing",
+        "doi": "10.1016/j.jbusvent.2009.10.006",
+        "openalex_id": "W2025641108",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "original_year": 2011
+      },
+      "adds": "Validates measures of causation and effectuation."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Stuart Read",
+          "Michael Song",
+          "Willem Smit"
+        ],
+        "year": 2008,
+        "title": "A meta-analytic review of effectuation and venture performance",
+        "type": "article",
+        "venue": "Journal of Business Venturing",
+        "doi": "10.1016/j.jbusvent.2008.02.005",
+        "openalex_id": "W2088777647",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Meta-analysis linking effectual principles to venture performance."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Expert entrepreneurial reasoning",
+      "summary": "Comparing expert and novice decision-making.",
+      "defining_work": {
+        "authors": [
+          "Nicholas Dew",
+          "Stuart Read",
+          "Saras D. Sarasvathy",
+          "Robert Wiltbank"
+        ],
+        "year": 2008,
+        "title": "Effectual versus predictive logics in entrepreneurial decision-making: Differences between experts and novices",
+        "type": "article",
+        "venue": "Journal of Business Venturing",
+        "doi": "10.1016/j.jbusvent.2008.02.002",
+        "openalex_id": "W2013340531",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A paradigmatic shift in how entrepreneurship is understood.",
+      "source": {
+        "authors": [
+          "John Timothy Perry",
+          "Gaylen N. Chandler",
+          "Gergana Markova"
+        ],
+        "year": 2011,
+        "title": "Entrepreneurial Effectuation: A Review and Suggestions for Future Research",
+        "type": "article",
+        "venue": "Entrepreneurship Theory and Practice",
+        "doi": "10.1111/j.1540-6520.2010.00435.x",
+        "openalex_id": "W2032721138",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Has measurable constructs and some evidence of links to performance.",
+      "source": {
+        "authors": [
+          "Stuart Read",
+          "Michael Song",
+          "Willem Smit"
+        ],
+        "year": 2008,
+        "title": "A meta-analytic review of effectuation and venture performance",
+        "type": "article",
+        "venue": "Journal of Business Venturing",
+        "doi": "10.1016/j.jbusvent.2008.02.005",
+        "openalex_id": "W2088777647",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "As a theory it is underdeveloped and insufficiently tested, judged against formal theory-building criteria.",
+      "source": {
+        "authors": [
+          "Richard J. Arend",
+          "Hessam Sarooghi",
+          "Andrew Curtis Burkemper"
+        ],
+        "year": 2015,
+        "title": "Effectuation As Ineffectual? Applying the 3E Theory-Assessment Framework to a Proposed New Theory of Entrepreneurship",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.2014.0455",
+        "openalex_id": "W2136653441",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Few studies have tested it empirically.",
+      "source": {
+        "authors": [
+          "John Timothy Perry",
+          "Gaylen N. Chandler",
+          "Gergana Markova"
+        ],
+        "year": 2011,
+        "title": "Entrepreneurial Effectuation: A Review and Suggestions for Future Research",
+        "type": "article",
+        "venue": "Entrepreneurship Theory and Practice",
+        "doi": "10.1111/j.1540-6520.2010.00435.x",
+        "openalex_id": "W2032721138",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Saras D. Sarasvathy"
+        ],
+        "year": 2001,
+        "title": "Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.2001.4378020",
+        "openalex_id": "W2009248339",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "What means did the founders in your study start from?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Gaylen N. Chandler",
+          "Dawn R. DeTienne",
+          "Alexander McKelvie",
+          "Troy V. Mumford"
+        ],
+        "year": 2009,
+        "title": "Causation and effectuation processes: A validation study",
+        "type": "article",
+        "venue": "Journal of Business Venturing",
+        "doi": "10.1016/j.jbusvent.2009.10.006",
+        "openalex_id": "W2025641108",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "original_year": 2011
+      },
+      "chapter": null,
+      "why_read": "How to measure the two logics.",
+      "reading_question": "How will you measure effectuation?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Richard J. Arend",
+          "Hessam Sarooghi",
+          "Andrew Curtis Burkemper"
+        ],
+        "year": 2015,
+        "title": "Effectuation As Ineffectual? Applying the 3E Theory-Assessment Framework to a Proposed New Theory of Entrepreneurship",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.2014.0455",
+        "openalex_id": "W2136653441",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The main critique; read with the authors' response (Read et al., 2015).",
+      "reading_question": "Which weakness does your study help address?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "effectuation theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2789389223",
+        "title": "Conceptualizing and operationalizing the social entrepreneurship construct",
+        "year": 2018,
+        "authors": [
+          "Abhishek Dwivedi",
+          "Jay Weerawardena"
+        ],
+        "cited_by": 297,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2893409477",
+        "title": "Digital startups and the adoption and implementation of Lean Startup Approaches: Effectuation, Bricolage and Opportunity Creation in practice",
+        "year": 2018,
+        "authors": [
+          "Antonio Ghezzi"
+        ],
+        "cited_by": 233,
+        "oa_url": "http://hdl.handle.net/11311/1117150"
+      },
+      {
+        "openalex_id": "W2920714770",
+        "title": "Comparing effectuation to discovery-driven planning, prescriptive entrepreneurship, business planning, lean startup, and design thinking",
+        "year": 2019,
+        "authors": [
+          "Yashar Mansoori",
+          "Martin Lackéus"
+        ],
+        "cited_by": 207,
+        "oa_url": "https://doi.org/10.1007/s11187-019-00153-w"
+      },
+      {
+        "openalex_id": "W3103670726",
+        "title": "The development of international e-commerce in retail SMEs: An effectuation perspective",
+        "year": 2020,
+        "authors": [
+          "Daniel Tolstoy",
+          "Emilia Rovira Nordman",
+          "Sara Melén Hånell",
+          "Nurgül Özbek"
+        ],
+        "cited_by": 203,
+        "oa_url": "https://doi.org/10.1016/j.jwb.2020.101165"
+      },
+      {
+        "openalex_id": "W2514954034",
+        "title": "How do entrepreneurs think they create value? A scientific reflection of Eric Ries’ Lean Startup approach",
+        "year": 2016,
+        "authors": [
+          "Dennis Lyth Frederiksen",
+          "Alexander Brem"
+        ],
+        "cited_by": 194,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

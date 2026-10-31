@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer, AlignmentType } from 'docx'
-import Logo from '@/components/ui/Logo'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
 import UnlockSlot from '@/components/paywall/UnlockSlot'
 import type { UnlockInfo } from '@/lib/pricing'
@@ -230,7 +229,6 @@ export default function ExportView({ projectId, ctx, theories, paid, unlock }: P
 
         {/* Header */}
         <div style={s.header}>
-          <Logo size="sm" />
           <div style={s.headerActions}>
             <a href={`/project/${projectId}`} style={s.backLink}>← Back to project</a>
             {paid && (
@@ -475,7 +473,7 @@ function Btn({ onClick, children }: { onClick: () => void; children: React.React
 const s: Record<string, React.CSSProperties> = {
   page:        { minHeight: '100vh', background: 'var(--paper)', padding: '2rem 1rem 5rem' },
   container:   { maxWidth: '720px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' },
-  header:      { display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
+  header:      { display: 'flex', alignItems: 'center', justifyContent: 'flex-end' },
   headerActions:{ display: 'flex', alignItems: 'center', gap: '1rem' },
   backLink:    { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
   exportBtn:    { padding: '0.5rem 1rem', background: 'var(--ink-blue)', color: '#fff', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },

@@ -1,0 +1,353 @@
+{
+  "theory_id": null,
+  "library_name": "Stakeholder theory",
+  "slug": "stakeholder-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "R. Edward Freeman"
+    ],
+    "year": 2010,
+    "title": "Strategic Management",
+    "type": "book",
+    "venue": "Cambridge University Press eBooks",
+    "doi": "10.1017/cbo9781139192675",
+    "openalex_id": "W4242709221",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "Cambridge reissue (2010) of the 1984 book.",
+    "original_year": 1984
+  },
+  "citation_anchor_openalex_id": "W4242709221",
+  "core_idea": "A firm should be managed with attention to all groups that affect or are affected by it (employees, customers, suppliers, communities, financiers), not only shareholders. Managing these relationships well is both a strategic necessity and a moral responsibility.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do organizations identify, prioritize and engage stakeholders?",
+    "How does stakeholder pressure shape CSR, sustainability or governance decisions?",
+    "Typical data: interviews with managers and stakeholders, reports and disclosures, case studies."
+  ],
+  "common_mistakes": [
+    "Using 'stakeholder' so broadly that the theory explains nothing.",
+    "Mixing descriptive, instrumental and normative claims without saying which one you make.",
+    "Listing stakeholders without analysing their relationships, power or claims."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Thomas J. Donaldson",
+          "Lee E. Preston"
+        ],
+        "year": 1995,
+        "title": "The Stakeholder Theory of the Corporation: Concepts, Evidence, and Implications",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1995.9503271992",
+        "openalex_id": "W2089087592",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Separates descriptive, instrumental and normative uses of the theory."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Thomas M. Jones"
+        ],
+        "year": 1995,
+        "title": "INSTRUMENTAL STAKEHOLDER THEORY: A SYNTHESIS OF ETHICS AND ECONOMICS",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1995.9507312924",
+        "openalex_id": "W2040324527",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Instrumental stakeholder theory: trust and cooperation with stakeholders can create advantage."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Max B. E. Clarkson"
+        ],
+        "year": 1995,
+        "title": "A Stakeholder Framework for Analyzing and Evaluating Corporate Social Performance",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/258888",
+        "openalex_id": "W2164946207",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A framework for analysing corporate social performance through stakeholder relationships."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Stakeholder salience",
+      "summary": "Which stakeholders managers pay attention to, based on power, legitimacy and urgency (own library entry).",
+      "defining_work": {
+        "authors": [
+          "Ronald K. Mitchell",
+          "Bradley R. Agle",
+          "Donna J. Wood"
+        ],
+        "year": 1997,
+        "title": "Toward a Theory of Stakeholder Identification and Salience: Defining the Principle of who and What Really Counts",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1997.9711022105",
+        "openalex_id": "W2149010029",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Broad appeal across many fields of management research.",
+      "source": {
+        "authors": [
+          "André O. Laplume",
+          "Karan Sonpar",
+          "Reginald A. Litz"
+        ],
+        "year": 2008,
+        "title": "Stakeholder Theory: Reviewing a Theory That Moves Us",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206308324322",
+        "openalex_id": "W1992329207",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Its conceptual breadth is one of its greatest strengths.",
+      "source": {
+        "authors": [
+          "Robert A. Phillips",
+          "R. Edward Freeman",
+          "Andrew C. Wicks"
+        ],
+        "year": 2003,
+        "title": "What Stakeholder Theory is Not",
+        "type": "article",
+        "venue": "Business Ethics Quarterly",
+        "doi": "10.5840/beq200313434",
+        "openalex_id": "W2024960229",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=663703"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Without a single objective, managers cannot make tradeoffs; long-term value maximization should be the criterion.",
+      "source": {
+        "authors": [
+          "Michael C. Jensen"
+        ],
+        "year": 2002,
+        "title": "Value Maximization, Stakeholder Theory, and the Corporate Objective Function",
+        "type": "article",
+        "venue": "Business Ethics Quarterly",
+        "doi": "10.2307/3857812",
+        "openalex_id": "W2333049154",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The same breadth is a theoretical liability: the term means different things to different people.",
+      "source": {
+        "authors": [
+          "Robert A. Phillips",
+          "R. Edward Freeman",
+          "Andrew C. Wicks"
+        ],
+        "year": 2003,
+        "title": "What Stakeholder Theory is Not",
+        "type": "article",
+        "venue": "Business Ethics Quarterly",
+        "doi": "10.5840/beq200313434",
+        "openalex_id": "W2024960229",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=663703"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "R. Edward Freeman"
+        ],
+        "year": 2010,
+        "title": "Strategic Management",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9781139192675",
+        "openalex_id": "W4242709221",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Cambridge reissue (2010) of the 1984 book.",
+        "original_year": 1984
+      },
+      "chapter": null,
+      "why_read": "The founding book.",
+      "reading_question": "Who affects or is affected by the organization you study, and how?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Thomas J. Donaldson",
+          "Lee E. Preston"
+        ],
+        "year": 1995,
+        "title": "The Stakeholder Theory of the Corporation: Concepts, Evidence, and Implications",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1995.9503271992",
+        "openalex_id": "W2089087592",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The distinction most studies rely on.",
+      "reading_question": "Is your claim descriptive, instrumental or normative?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "André O. Laplume",
+          "Karan Sonpar",
+          "Reginald A. Litz"
+        ],
+        "year": 2008,
+        "title": "Stakeholder Theory: Reviewing a Theory That Moves Us",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206308324322",
+        "openalex_id": "W1992329207",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A content analysis of how the theory has been used.",
+      "reading_question": "Which of the five themes is your study part of?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "stakeholder theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W3202073315",
+        "title": "Stakeholder pressure, green innovation, and performance in small and medium‐sized enterprises: The role of green dynamic capabilities",
+        "year": 2021,
+        "authors": [
+          "Sanjay Kumar Singh",
+          "Manlio Del Giudice",
+          "Charbel José Chiappetta Jabbour",
+          "Hengky Latan",
+          "Amrik Singh Sohal"
+        ],
+        "cited_by": 674,
+        "oa_url": "https://doi.org/10.1002/bse.2906"
+      },
+      {
+        "openalex_id": "W3108953960",
+        "title": "Effect of CSR and Ethical Practices on Sustainable Competitive Performance: A Case of Emerging Markets from Stakeholder Theory Perspective",
+        "year": 2020,
+        "authors": [
+          "Abdul Waheed",
+          "Qingyu Zhang"
+        ],
+        "cited_by": 322,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2609497163",
+        "title": "Stakeholder collaboration in entrepreneurship education: an analysis of the entrepreneurial ecosystems of European higher educational institutions",
+        "year": 2017,
+        "authors": [
+          "Kathrin Bischoff",
+          "Christine Katharina Volkmann",
+          "David Bruce Audretsch"
+        ],
+        "cited_by": 235,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2520626317",
+        "title": "Organizational listening: Addressing a major gap in public relations theory and practice",
+        "year": 2016,
+        "authors": [
+          "Jim Macnamara"
+        ],
+        "cited_by": 163,
+        "oa_url": "https://doi.org/10.1080/1062726x.2016.1228064"
+      },
+      {
+        "openalex_id": "W4382623399",
+        "title": "Advancing the sustainability agenda through strategic human resource management: Insights and suggestions for future research",
+        "year": 2023,
+        "authors": [
+          "Shuang Ren",
+          "Fang Lee Cooke",
+          "Günter K. Stahl",
+          "Di Fan",
+          "Andrew R. Timming"
+        ],
+        "cited_by": 148,
+        "oa_url": "https://doi.org/10.1002/hrm.22169"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Freeman et al. (2010) had no clean record and is left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

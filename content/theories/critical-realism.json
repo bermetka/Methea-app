@@ -1,0 +1,399 @@
+{
+  "theory_id": null,
+  "library_name": "Critical realism",
+  "slug": "critical-realism",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Roy Bhaskar"
+    ],
+    "year": 2013,
+    "title": "A Realist Theory of Science",
+    "type": "book",
+    "venue": "Routledge eBooks",
+    "doi": "10.4324/9780203090732",
+    "openalex_id": "W2101234667",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "2013 Routledge edition of the 1975 book.",
+    "original_year": 1975
+  },
+  "citation_anchor_openalex_id": "W2101234667",
+  "core_idea": "A philosophy of science, not a method. Reality exists independently of what we know about it and is layered: the real (structures and mechanisms), the actual (events) and the empirical (what we observe). Research aims to explain which mechanisms, in which conditions, produce the events we observe, while accepting that our knowledge is always fallible.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Explanatory 'why' and 'how' questions: what produces this pattern, under which conditions?",
+    "Case studies and mixed-methods designs that seek causal explanation without positivist laws.",
+    "Writing the research philosophy section of a thesis."
+  ],
+  "common_mistakes": [
+    "Treating critical realism as a method. It needs to be paired with methods.",
+    "Calling mechanisms 'variables'.",
+    "Claiming to have identified a mechanism without retroductive reasoning across cases or data.",
+    "Assuming it is just a softer positivism."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Roy Bhaskar"
+        ],
+        "year": 2013,
+        "title": "The Possibility of Naturalism",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203976623",
+        "openalex_id": "W4299135184",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2013 Routledge edition of the 1979 book.",
+        "original_year": 1979
+      },
+      "adds": "Extends the argument from natural to social science: social structures are real but depend on human activity."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Margaret Scotford Archer"
+        ],
+        "year": 1995,
+        "title": "Realist Social Theory",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511557675",
+        "openalex_id": "W2999158853",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The morphogenetic approach: structure and agency analysed as separate layers interacting over time."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Berth Danermark",
+          "Mats Ekström",
+          "Jan Ch. Karlsson"
+        ],
+        "year": 2019,
+        "title": "Explaining Society",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781351017831",
+        "openalex_id": "W4242028178",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2019 edition of the 2002 book.",
+        "original_year": 2002
+      },
+      "adds": "Turns the philosophy into a research methodology for the social sciences."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Amber J. Fletcher"
+        ],
+        "year": 2016,
+        "title": "Applying critical realism in qualitative research: methodology meets method",
+        "type": "article",
+        "venue": "International Journal of Social Research Methodology",
+        "doi": "10.1080/13645579.2016.1144401",
+        "openalex_id": "W2289587231",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A concrete coding and analysis process for qualitative research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Morphogenetic approach",
+      "summary": "Structure, culture and agency over time: conditioning, interaction, elaboration.",
+      "defining_work": {
+        "authors": [
+          "Margaret Scotford Archer"
+        ],
+        "year": 1995,
+        "title": "Realist Social Theory",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511557675",
+        "openalex_id": "W2999158853",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Applied / methodological",
+      "summary": "Principles and procedures for case studies and qualitative analysis.",
+      "defining_work": {
+        "authors": [
+          "Donald E. Wynn",
+          "Clay K. Williams"
+        ],
+        "year": 2012,
+        "title": "Principles for conducting critical realist case study research in information systems",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.5555/2481655.2481663",
+        "openalex_id": "W2129387776",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives qualitative and case research a philosophical basis for causal explanation, with concrete coding guidance.",
+      "source": {
+        "authors": [
+          "Amber J. Fletcher"
+        ],
+        "year": 2016,
+        "title": "Applying critical realism in qualitative research: methodology meets method",
+        "type": "article",
+        "venue": "International Journal of Social Research Methodology",
+        "doi": "10.1080/13645579.2016.1144401",
+        "openalex_id": "W2289587231",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Offers clear principles for conducting critical realist case studies.",
+      "source": {
+        "authors": [
+          "Donald E. Wynn",
+          "Clay K. Williams"
+        ],
+        "year": 2012,
+        "title": "Principles for conducting critical realist case study research in information systems",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.5555/2481655.2481663",
+        "openalex_id": "W2129387776",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Philosophy cannot 'take the lead' by fixing the nature of social reality before research is done.",
+      "source": {
+        "authors": [
+          "Stephen Kemp"
+        ],
+        "year": 2005,
+        "title": "Critical Realism and the Limits of Philosophy",
+        "type": "article",
+        "venue": "European Journal of Social Theory",
+        "doi": "10.1177/1368431005051762",
+        "openalex_id": "W2095971767",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Critical realism does not succeed in justifying research that draws critical value conclusions directly from facts.",
+      "source": {
+        "authors": [
+          "Martyn Hammersley"
+        ],
+        "year": 2009,
+        "title": "Why Critical Realism Fails to Justify Critical Social Research",
+        "type": "article",
+        "venue": "Methodological Innovations Online",
+        "doi": "10.1177/205979910900400201",
+        "openalex_id": "W1507981724",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1177/205979910900400201"
+      }
+    },
+    {
+      "point": "Epistemological relativism is marginalised in practice, so many studies are empirically but not critically realist.",
+      "source": {
+        "authors": [
+          "Ismael Al‐Amoudi",
+          "Hugh Christopher Willmott"
+        ],
+        "year": 2011,
+        "title": "Where Constructionism and Critical Realism Converge: Interrogating the Domain of Epistemological Relativism",
+        "type": "article",
+        "venue": "Organization Studies",
+        "doi": "10.1177/0170840610394293",
+        "openalex_id": "W2062123328",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.2139/ssrn.1781119"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Roy Bhaskar"
+        ],
+        "year": 2013,
+        "title": "A Realist Theory of Science",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203090732",
+        "openalex_id": "W2101234667",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "original_year": 1975
+      },
+      "chapter": "Introduction",
+      "why_read": "Dense, but the introduction states the layered ontology.",
+      "reading_question": "Which mechanisms might produce what you expect to observe, and in which conditions?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Amber J. Fletcher"
+        ],
+        "year": 2016,
+        "title": "Applying critical realism in qualitative research: methodology meets method",
+        "type": "article",
+        "venue": "International Journal of Social Research Methodology",
+        "doi": "10.1080/13645579.2016.1144401",
+        "openalex_id": "W2289587231",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The most practical guide to doing critical realist qualitative analysis.",
+      "reading_question": "How would you adapt Fletcher's coding steps to your data?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Berth Danermark",
+          "Mats Ekström",
+          "Jan Ch. Karlsson"
+        ],
+        "year": 2019,
+        "title": "Explaining Society",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781351017831",
+        "openalex_id": "W4242028178",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2019 edition of the 2002 book.",
+        "original_year": 2002
+      },
+      "chapter": null,
+      "why_read": "A full methodology textbook built on critical realism.",
+      "reading_question": "Which mode of inference (abduction, retroduction) will your analysis rely on?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "critical realism",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W4282037483",
+        "title": "A critical realist approach to thematic analysis: producing causal explanations",
+        "year": 2022,
+        "authors": [
+          "T. Bruce Fryer"
+        ],
+        "cited_by": 204,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2750468022",
+        "title": "Powerful geographical knowledge is critical knowledge underpinned by critical realism",
+        "year": 2017,
+        "authors": [
+          "John Huckle"
+        ],
+        "cited_by": 159,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2626539655",
+        "title": "Explaining sociotechnical transitions: A critical realist perspective",
+        "year": 2018,
+        "authors": [
+          "Steve Sorrell"
+        ],
+        "cited_by": 157,
+        "oa_url": "https://doi.org/10.1016/j.respol.2018.04.008"
+      },
+      {
+        "openalex_id": "W2884646530",
+        "title": "Critical realism in empirical research: employing techniques from grounded theory methodology",
+        "year": 2018,
+        "authors": [
+          "Eric Hoddy"
+        ],
+        "cited_by": 137,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2800436572",
+        "title": "A case for critical realism in the pursuit of interdisciplinarity and impact",
+        "year": 2018,
+        "authors": [
+          "Gareth Wiltshire"
+        ],
+        "cited_by": 125,
+        "oa_url": "https://researchportal.bath.ac.uk/en/publications/314339c8-7867-4f3a-8f6f-16472601376e"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

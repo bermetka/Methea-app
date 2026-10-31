@@ -39,9 +39,16 @@ describe('generateJSON', () => {
   // The exact scenario this whole change exists for: Claude occasionally ignores the
   // "JSON only" instruction and wraps the JSON in prose. One retry — a fresh call — gives
   // it a second chance before giving up.
-  it('retries once on a prose-wrapped (invalid JSON) reply, and returns the retry result', async () => {
+  it('reads JSON wrapped in prose without a retry', async () => {
+    createMock.mockResolvedValueOnce(textMessage('Sure! Here you go: {"a":1}'))
+    const result = await generateJSON<{ a: number }>('sys', 'user')
+    expect(result).toEqual({ a: 1 })
+    expect(createMock).toHaveBeenCalledTimes(1)
+  })
+
+  it('retries once on an unparsable reply, and returns the retry result', async () => {
     createMock
-      .mockResolvedValueOnce(textMessage('Sure! Here you go: {"a":1}'))
+      .mockResolvedValueOnce(textMessage('Sure! Here you go: {"a":1'))
       .mockResolvedValueOnce(textMessage('{"a":2}'))
 
     const result = await generateJSON<{ a: number }>('sys', 'user')
@@ -88,5 +95,41 @@ describe('generateJSON', () => {
     expect(logged.length).toBeLessThan(hugeReply.length)
 
     consoleErrorSpy.mockRestore()
+  })
+})
+
+describe('generateJSON options', () => {
+  beforeEach(() => {
+    createMock.mockReset()
+  })
+
+  it('defaults to a plain system string and the default model', async () => {
+    createMock.mockResolvedValueOnce(textMessage('{"a":1}'))
+    await generateJSON('sys', 'user')
+    const args = createMock.mock.calls[0][0]
+    expect(args.system).toBe('sys')
+    expect(args.model).toBe('claude-sonnet-4-6')
+  })
+
+  it('uses the model override and sends cached context as a cached system block', async () => {
+    createMock.mockResolvedValueOnce(textMessage('{"a":1}'))
+    await generateJSON('sys', 'user', 512, { model: 'fast-model', cachedContext: 'LIBRARY' })
+    const args = createMock.mock.calls[0][0]
+    expect(args.model).toBe('fast-model')
+    expect(args.system).toEqual([
+      { type: 'text', text: 'sys' },
+      { type: 'text', text: 'LIBRARY', cache_control: { type: 'ephemeral' } },
+    ])
+  })
+})
+
+describe('parseJSONReply', () => {
+  it('parses fenced JSON followed by prose', async () => {
+    const { parseJSONReply } = await import('./claude')
+    expect(parseJSONReply('```json\n{\n  "items": []\n}\n```\n\nThe text "X" appears to be a name.')).toEqual({ items: [] })
+  })
+  it('parses JSON with prose before it', async () => {
+    const { parseJSONReply } = await import('./claude')
+    expect(parseJSONReply('Here you go: {"a": "b}"} hope this helps')).toEqual({ a: 'b}' })
   })
 })

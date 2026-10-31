@@ -1,0 +1,378 @@
+{
+  "theory_id": null,
+  "library_name": "Self-determination theory",
+  "slug": "self-determination-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Edward L. Deci",
+      "Richard M. Ryan"
+    ],
+    "year": 1985,
+    "title": "Intrinsic Motivation and Self-Determination in Human Behavior",
+    "type": "book",
+    "venue": "Springer eBooks",
+    "doi": "10.1007/978-1-4899-2271-7",
+    "openalex_id": "W2052729098",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://eduq.info/xmlui/handle/11515/34618"
+  },
+  "citation_anchor_openalex_id": "W2052729098",
+  "core_idea": "People have three basic psychological needs: autonomy, competence and relatedness. When environments support these needs, people are more intrinsically motivated, internalize goals more fully and do better. Motivation is not just 'more or less' but differs in quality, from controlled (pressure, rewards) to autonomous (interest, values).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What supports or undermines students', employees' or patients' motivation?",
+    "How do teaching, management or parenting styles relate to autonomy, competence and relatedness?",
+    "Typical data: validated scales (need satisfaction, motivation types), experiments, interviews."
+  ],
+  "common_mistakes": [
+    "Treating motivation as a single amount instead of distinguishing types (intrinsic, identified, introjected, external).",
+    "Equating autonomy with independence. Autonomy means acting with volition, which can include relying on others.",
+    "Assuming rewards always undermine intrinsic motivation; effects depend on how rewards are given."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Richard M. Ryan",
+          "Edward L. Deci"
+        ],
+        "year": 2000,
+        "title": "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.55.1.68",
+        "openalex_id": "W4242883546",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The widely cited summary: basic needs and their link to motivation, development and well-being."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Edward L. Deci",
+          "Richard M. Ryan"
+        ],
+        "year": 2000,
+        "title": "The \"What\" and \"Why\" of Goal Pursuits: Human Needs and the Self-Determination of Behavior",
+        "type": "article",
+        "venue": "Psychological Inquiry",
+        "doi": "10.1207/s15327965pli1104_01",
+        "openalex_id": "W2122517769",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The 'what' and 'why' of goals: need satisfaction and the regulation of behaviour."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Edward L. Deci",
+          "Richard Koestner",
+          "Richard M. Ryan"
+        ],
+        "year": 1999,
+        "title": "A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037//0033-2909.125.6.627",
+        "openalex_id": "W2007851141",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Meta-analysis: tangible, expected rewards tend to undermine intrinsic motivation."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Beiwen Chen",
+          "Maarten Vansteenkiste",
+          "Wim Beyers",
+          "Liesbet Boone",
+          "Edward L. Deci",
+          "Jolene van der Kaap‐Deeder"
+        ],
+        "year": 2014,
+        "title": "Basic psychological need satisfaction, need frustration, and need strength across four cultures",
+        "type": "article",
+        "venue": "Motivation and Emotion",
+        "doi": "10.1007/s11031-014-9450-1",
+        "openalex_id": "W2084716978",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2013/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/409773"
+      },
+      "adds": "Need satisfaction and frustration matter across four cultures."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Work motivation",
+      "summary": "Applications of the theory in organizations.",
+      "defining_work": {
+        "authors": [
+          "Marylène Gagné",
+          "Edward L. Deci"
+        ],
+        "year": 2005,
+        "title": "Self‐determination theory and work motivation",
+        "type": "article",
+        "venue": "Journal of Organizational Behavior",
+        "doi": "10.1002/job.322",
+        "openalex_id": "W2084389751",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Need satisfaction and frustration relate to well-being across cultures, not only in the West.",
+      "source": {
+        "authors": [
+          "Beiwen Chen",
+          "Maarten Vansteenkiste",
+          "Wim Beyers",
+          "Liesbet Boone",
+          "Edward L. Deci",
+          "Jolene van der Kaap‐Deeder"
+        ],
+        "year": 2014,
+        "title": "Basic psychological need satisfaction, need frustration, and need strength across four cultures",
+        "type": "article",
+        "venue": "Motivation and Emotion",
+        "doi": "10.1007/s11031-014-9450-1",
+        "openalex_id": "W2084716978",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2013/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/409773"
+      }
+    },
+    {
+      "point": "A broad framework that links motivation, development and well-being.",
+      "source": {
+        "authors": [
+          "Richard M. Ryan",
+          "Edward L. Deci"
+        ],
+        "year": 2000,
+        "title": "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.55.1.68",
+        "openalex_id": "W4242883546",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Rewards do not, overall, decrease intrinsic motivation; verbal praise can increase it.",
+      "source": {
+        "authors": [
+          "Judy Cameron",
+          "W. David Pierce"
+        ],
+        "year": 1994,
+        "title": "Reinforcement, Reward, and Intrinsic Motivation: A Meta-Analysis",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.2307/1170677",
+        "openalex_id": "W4253356459",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Personal choice enhanced motivation more for American than for Asian participants, questioning the universal value of choice.",
+      "source": {
+        "authors": [
+          "Sheena S. Iyengar",
+          "Mark R. Lepper"
+        ],
+        "year": 1999,
+        "title": "Rethinking the value of choice: A cultural perspective on intrinsic motivation.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.76.3.349",
+        "openalex_id": "W2114883239",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Edward L. Deci",
+          "Richard M. Ryan"
+        ],
+        "year": 1985,
+        "title": "Intrinsic Motivation and Self-Determination in Human Behavior",
+        "type": "book",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-1-4899-2271-7",
+        "openalex_id": "W2052729098",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://eduq.info/xmlui/handle/11515/34618"
+      },
+      "chapter": null,
+      "why_read": "The founding book; the later articles are easier to start with.",
+      "reading_question": "Which of the three needs is most at stake in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Richard M. Ryan",
+          "Edward L. Deci"
+        ],
+        "year": 2000,
+        "title": "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.55.1.68",
+        "openalex_id": "W4242883546",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The most cited short overview.",
+      "reading_question": "Which types of motivation will you distinguish, and how will you measure them?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Sheena S. Iyengar",
+          "Mark R. Lepper"
+        ],
+        "year": 1999,
+        "title": "Rethinking the value of choice: A cultural perspective on intrinsic motivation.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.76.3.349",
+        "openalex_id": "W2114883239",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The key cultural challenge to the theory.",
+      "reading_question": "Does your cultural setting change how autonomy or choice works?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "self-determination theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W3016249157",
+        "title": "Intrinsic and extrinsic motivation from a self-determination theory perspective: Definitions, theory, practices, and future directions",
+        "year": 2020,
+        "authors": [
+          "Richard M. Ryan",
+          "Edward L. Deci"
+        ],
+        "cited_by": 6047,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2342137125",
+        "title": "Self-Determination Theory in Work Organizations: The State of a Science",
+        "year": 2017,
+        "authors": [
+          "Edward L. Deci",
+          "Anja H. Olafsen",
+          "Richard M. Ryan"
+        ],
+        "cited_by": 3203,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2566152916",
+        "title": "How gamification motivates: An experimental study of the effects of specific game design elements on psychological need satisfaction",
+        "year": 2016,
+        "authors": [
+          "Michael Sailer",
+          "Jan Ulrich Hense",
+          "Sarah Katharina Mayr",
+          "Heinz Mandl"
+        ],
+        "cited_by": 2064,
+        "oa_url": "https://doi.org/10.1016/j.chb.2016.12.033"
+      },
+      {
+        "openalex_id": "W3001065916",
+        "title": "Basic psychological need theory: Advancements, critical themes, and future directions",
+        "year": 2020,
+        "authors": [
+          "Maarten Vansteenkiste",
+          "Richard M. Ryan",
+          "Bart Soenens"
+        ],
+        "cited_by": 1891,
+        "oa_url": "https://doi.org/10.1007/s11031-019-09818-1"
+      },
+      {
+        "openalex_id": "W2294890106",
+        "title": "A Review of Self-Determination Theory’s Basic Psychological Needs at Work",
+        "year": 2016,
+        "authors": [
+          "Anja Van den Broeck",
+          "D. Lance Ferris",
+          "Chu-Hsiang Daisy Chang",
+          "Christopher C. Rosen"
+        ],
+        "cited_by": 1466,
+        "oa_url": "https://lirias.kuleuven.be/handle/123456789/525978"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Ryan & Deci (2017) had no clean record and is left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

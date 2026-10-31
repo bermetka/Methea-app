@@ -1,0 +1,315 @@
+{
+  "theory_id": null,
+  "library_name": "Self-efficacy theory",
+  "slug": "self-efficacy-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Albert Bandura"
+    ],
+    "year": 1977,
+    "title": "Self-efficacy: Toward a unifying theory of behavioral change.",
+    "type": "article",
+    "venue": "Psychological Review",
+    "doi": "10.1037/0033-295x.84.2.191",
+    "openalex_id": "W4292808503",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W4292808503",
+  "core_idea": "Self-efficacy is a person's belief in their ability to carry out the actions needed for a specific task. It shapes which tasks people choose, how much effort they put in and how long they persist. It comes from four sources: mastery experiences, vicarious experience, verbal persuasion and physiological and emotional states.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do students' or employees' beliefs in their abilities relate to performance or persistence?",
+    "Which sources of self-efficacy (mastery, role models, feedback) matter in a programme?",
+    "Typical data: task-specific self-efficacy scales, interventions, interviews."
+  ],
+  "common_mistakes": [
+    "Measuring general self-confidence instead of task-specific self-efficacy.",
+    "Confusing self-efficacy with self-esteem.",
+    "Assuming more self-efficacy is always better."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1982,
+        "title": "Self-efficacy mechanism in human agency.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037/0003-066x.37.2.122",
+        "openalex_id": "W1982210139",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Self-efficacy as a central mechanism of human agency."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Social cognitive theory",
+      "summary": "Self-efficacy within the broader theory (own library entry).",
+      "defining_work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1985,
+        "title": "Social Foundations of Thought and Action : A Social Cognitive Theory",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2888190061",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "OpenAlex record (dated 1985) for the 1986 book."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Strong positive link with work-related performance across over a hundred studies.",
+      "source": {
+        "authors": [
+          "Alexander D. Stajković",
+          "Fred Luthans"
+        ],
+        "year": 1998,
+        "title": "Self-efficacy and work-related performance: A meta-analysis.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037//0033-2909.124.2.240",
+        "openalex_id": "W2168781129",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Related to academic performance and persistence.",
+      "source": {
+        "authors": [
+          "Karen D. Multon",
+          "Steven D. Brown",
+          "Robert W. Lent"
+        ],
+        "year": 1991,
+        "title": "Relation of self-efficacy beliefs to academic outcomes: A meta-analytic investigation.",
+        "type": "article",
+        "venue": "Journal of Counseling Psychology",
+        "doi": "10.1037//0022-0167.38.1.30",
+        "openalex_id": "W2039840987",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Within persons over time, higher self-efficacy can lower effort and performance.",
+      "source": {
+        "authors": [
+          "Jeffrey B. Vancouver",
+          "Charles M. Thompson",
+          "E. Casey Tischner",
+          "Dan J. Putka"
+        ],
+        "year": 2002,
+        "title": "Two studies examining the negative effect of self-efficacy on performance.",
+        "type": "article",
+        "venue": "Journal of Applied Psychology",
+        "doi": "10.1037//0021-9010.87.3.506",
+        "openalex_id": "W2084523232",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "In tests of ability, self-efficacy is measured in ways almost identical to Rotter's older expectancy construct and makes the same predictions; for feared tasks, the questionnaires measure willingness more than ability.",
+      "source": {
+        "authors": [
+          "Irving Kirsch"
+        ],
+        "year": 1985,
+        "title": "Self-efficacy and expectancy: Old wine with new labels.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.49.3.824",
+        "openalex_id": "W2079642786",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "checked_full_text": true
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1977,
+        "title": "Self-efficacy: Toward a unifying theory of behavioral change.",
+        "type": "article",
+        "venue": "Psychological Review",
+        "doi": "10.1037/0033-295x.84.2.191",
+        "openalex_id": "W4292808503",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article; defines the four sources.",
+      "reading_question": "Which source of self-efficacy is most at work in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Alexander D. Stajković",
+          "Fred Luthans"
+        ],
+        "year": 1998,
+        "title": "Self-efficacy and work-related performance: A meta-analysis.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037//0033-2909.124.2.240",
+        "openalex_id": "W2168781129",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "How strong the link to performance is.",
+      "reading_question": "What effect size might you expect?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jeffrey B. Vancouver",
+          "Charles M. Thompson",
+          "E. Casey Tischner",
+          "Dan J. Putka"
+        ],
+        "year": 2002,
+        "title": "Two studies examining the negative effect of self-efficacy on performance.",
+        "type": "article",
+        "venue": "Journal of Applied Psychology",
+        "doi": "10.1037//0021-9010.87.3.506",
+        "openalex_id": "W2084523232",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The main empirical challenge.",
+      "reading_question": "Could self-efficacy work differently over time in your study?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "self-efficacy theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2597900308",
+        "title": "A Review of Self-regulated Learning: Six Models and Four Directions for Research",
+        "year": 2017,
+        "authors": [
+          "Ernesto Panadero"
+        ],
+        "cited_by": 2911,
+        "oa_url": "https://doi.org/10.3389/fpsyg.2017.00422"
+      },
+      {
+        "openalex_id": "W2995918197",
+        "title": "Motivation and social cognitive theory",
+        "year": 2019,
+        "authors": [
+          "Dale H. Schunk",
+          "Maria K. DiBenedetto"
+        ],
+        "cited_by": 1878,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3105746534",
+        "title": "Self-efficacy and human motivation",
+        "year": 2020,
+        "authors": [
+          "Dale H. Schunk",
+          "Maria K. DiBenedetto"
+        ],
+        "cited_by": 439,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2551311960",
+        "title": "Allostatic Self-efficacy: A Metacognitive Theory of Dyshomeostasis-Induced Fatigue and Depression",
+        "year": 2016,
+        "authors": [
+          "Klaas Enno Stephan",
+          "Zina M. Manjaly",
+          "Christoph D. Mathys",
+          "Lilian A. E. Weber",
+          "Saee Paliwal",
+          "Tim Gard"
+        ],
+        "cited_by": 438,
+        "oa_url": "https://doi.org/10.3389/fnhum.2016.00550"
+      },
+      {
+        "openalex_id": "W2635482608",
+        "title": "Interventions to Improve Breastfeeding Self-Efficacy and Resultant Breastfeeding Rates: A Systematic Review and Meta-Analysis",
+        "year": 2017,
+        "authors": [
+          "Meredith Lee Brockway",
+          "Karen Benzies",
+          "Alix Hayden"
+        ],
+        "cited_by": 432,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Bandura (1997) had no clean record and is left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: Self-efficacy and expectancy: Old wine w (founder supplied PDFs, 31 Oct 2026)."
+    }
+  ]
+}

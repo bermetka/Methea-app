@@ -1,0 +1,323 @@
+{
+  "theory_id": null,
+  "library_name": "Transformative learning theory",
+  "slug": "transformative-learning-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Jack Mezirow"
+    ],
+    "year": 1991,
+    "title": "Transformative Dimensions of Adult Learning",
+    "type": "article",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W1556215917",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1556215917",
+  "core_idea": "Adults can transform their frames of reference, the assumptions through which they understand experience. Transformation often begins with a disorienting dilemma and moves through critical reflection on assumptions, dialogue with others and acting on a new perspective.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do adults change their perspective through education, migration, illness or professional change?",
+    "What role do critical reflection and dialogue play?",
+    "Typical data: interviews, reflective writing, longitudinal qualitative studies."
+  ],
+  "common_mistakes": [
+    "Calling any learning 'transformative'.",
+    "Focusing only on individual reflection and ignoring social context and emotion.",
+    "Not distinguishing a change in skills from a change in assumptions."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Jack Mezirow"
+        ],
+        "year": 1978,
+        "title": "Perspective Transformation",
+        "type": "article",
+        "venue": "Adult Education",
+        "doi": "10.1177/074171367802800202",
+        "openalex_id": "W4238999211",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "First statement: perspective transformation in women returning to education."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jack Mezirow"
+        ],
+        "year": 1997,
+        "title": "Transformative Learning: Theory to Practice",
+        "type": "article",
+        "venue": "New Directions for Adult and Continuing Education",
+        "doi": "10.1002/ace.7401",
+        "openalex_id": "W2011182411",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "From theory to practice: how educators can foster transformation."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Empirical studies of transformative learning",
+      "summary": "Reviews of what research has found.",
+      "defining_work": {
+        "authors": [
+          "Edward W. Taylor"
+        ],
+        "year": 2007,
+        "title": "An update of transformative learning theory: a critical review of the empirical research (1999–2005)",
+        "type": "article",
+        "venue": "International Journal of Lifelong Education",
+        "doi": "10.1080/02601370701219475",
+        "openalex_id": "W2120043196",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A large empirical literature has refined understanding of the process.",
+      "source": {
+        "authors": [
+          "Edward W. Taylor"
+        ],
+        "year": 2007,
+        "title": "An update of transformative learning theory: a critical review of the empirical research (1999–2005)",
+        "type": "article",
+        "venue": "International Journal of Lifelong Education",
+        "doi": "10.1080/02601370701219475",
+        "openalex_id": "W2120043196",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The theory has evolved and been clarified over time.",
+      "source": {
+        "authors": [
+          "Andrew D. Kitchenham"
+        ],
+        "year": 2008,
+        "title": "The Evolution of John Mezirow's Transformative Learning Theory",
+        "type": "article",
+        "venue": "Journal of Transformative Education",
+        "doi": "10.1177/1541344608322678",
+        "openalex_id": "W1989556586",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The theory lacks the socio-political critique of the tradition it draws on and fails to address context, ideology and collective struggles; its claim to be a full theory is premature.",
+      "source": {
+        "authors": [
+          "Susan P. Collard",
+          "Michael Law"
+        ],
+        "year": 1989,
+        "title": "The Limits of Perspective Transformation: A Critique of Mezirow's Theory",
+        "type": "article",
+        "venue": "Adult Education Quarterly",
+        "doi": "10.1177/0001848189039002004",
+        "openalex_id": "W2045957371",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "checked_full_text": true
+    },
+    {
+      "point": "Empirical research has added little to identifying transformation itself.",
+      "source": {
+        "authors": [
+          "Edward W. Taylor"
+        ],
+        "year": 2007,
+        "title": "An update of transformative learning theory: a critical review of the empirical research (1999–2005)",
+        "type": "article",
+        "venue": "International Journal of Lifelong Education",
+        "doi": "10.1080/02601370701219475",
+        "openalex_id": "W2120043196",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Jack Mezirow"
+        ],
+        "year": 1991,
+        "title": "Transformative Dimensions of Adult Learning",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1556215917",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The full theory.",
+      "reading_question": "What frame of reference might change for your participants, and what triggers it?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jack Mezirow"
+        ],
+        "year": 1997,
+        "title": "Transformative Learning: Theory to Practice",
+        "type": "article",
+        "venue": "New Directions for Adult and Continuing Education",
+        "doi": "10.1002/ace.7401",
+        "openalex_id": "W2011182411",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A short, practical statement.",
+      "reading_question": "How does your setting support critical reflection?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Edward W. Taylor"
+        ],
+        "year": 2007,
+        "title": "An update of transformative learning theory: a critical review of the empirical research (1999–2005)",
+        "type": "article",
+        "venue": "International Journal of Lifelong Education",
+        "doi": "10.1080/02601370701219475",
+        "openalex_id": "W2120043196",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A critical review of the evidence.",
+      "reading_question": "Which gap in the evidence does your study address?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "transformative learning theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W3104102581",
+        "title": "Students Satisfaction with Online Learning Experiences during the COVID-19 Pandemic",
+        "year": 2020,
+        "authors": [
+          "Norah Almusharraf",
+          "Shabir Hussain Khahro"
+        ],
+        "cited_by": 323,
+        "oa_url": "https://doi.org/10.3991/ijet.v15i21.15647"
+      },
+      {
+        "openalex_id": "W2913920211",
+        "title": "Transformative learning as pedagogy for the health professions: a scoping review",
+        "year": 2019,
+        "authors": [
+          "Susan Camille Van Schalkwyk",
+          "Janet P. Hafler",
+          "Timothy F. Brewer",
+          "Moira A. L. Maley",
+          "Carmi Z. Margolis",
+          "Lakshini McNamee"
+        ],
+        "cited_by": 236,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4254384185",
+        "title": "Transformative Learning Theory",
+        "year": 2017,
+        "authors": [
+          "Edward W. Taylor"
+        ],
+        "cited_by": 214,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3001511210",
+        "title": "Implicit Bias in Health Professions: From Recognition to Transformation",
+        "year": 2020,
+        "authors": [
+          "Javeed I. Sukhera",
+          "Christopher Watling",
+          "Cristina M. González"
+        ],
+        "cited_by": 199,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2464312702",
+        "title": "Grassroots accountability promises in rights-based approaches to development: The role of transformative monitoring and evaluation in NGOs",
+        "year": 2016,
+        "authors": [
+          "Susan G. O'Ĺeary"
+        ],
+        "cited_by": 168,
+        "oa_url": "https://figshare.com/articles/thesis/Grassroots_accountability_promises_in_rights-based_approaches_to_development_the_role_of_transformative_monitoring_and_evaluation_in_NGOs/4719511"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Newman (2012) could not be verified and is left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: The Limits of Perspective Transformation (founder supplied PDFs, 31 Oct 2026)."
+    }
+  ]
+}

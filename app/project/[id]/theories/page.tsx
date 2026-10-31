@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation'
-import Logo from '@/components/ui/Logo'
 import GenerationError from '@/components/ui/GenerationError'
 import { trackEvent } from '@/lib/funnel'
 import { createClient } from '@/lib/supabase/server'
@@ -50,6 +49,13 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   // (or the no-fit verdict) without re-calling Claude. Recompute when upstream (gate 1)
   // changed and marked us outdated. `fits` is the presence check — unlike `suggestions`,
   // an empty cached array is a valid result (no-fit) and must not trigger a recompute.
+  // Verify every library theory once (cached 24h; pre-1995 classics short-circuit without a
+  // network call). Started now so it runs while Claude picks theories, not after.
+  // verifyTheory never throws, so an early return below leaves no unhandled rejection.
+  const verifPromise = Promise.all(
+    (allTheories as Theory[]).map(async t => [t.id, await verifyTheory(t)] as const)
+  )
+
   const hasCachedFit = ctx?.theories?.fits !== undefined
   let fitResult: TheoryFitResult
   if (!isOutdated && hasCachedFit) {
@@ -76,13 +82,8 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   const theoriesById   = new Map((allTheories as Theory[]).map(t => [t.id, t]))
   const readingListRaw = ctx.brief?.reading_list_raw ?? ''
 
-  // Verify every library theory once (cached 24h; pre-1995 classics short-circuit without a
-  // network call) and reuse the result for both the suggested view and the browse view.
-  const verifById = new Map<string, VerificationStatus>(
-    await Promise.all(
-      (allTheories as Theory[]).map(async t => [t.id, await verifyTheory(t)] as const)
-    )
-  )
+  // Reuse the verification for both the suggested view and the browse view.
+  const verifById = new Map<string, VerificationStatus>(await verifPromise)
 
   const suggestionIds = suggestions.map(s => s.theory_id)
   const whyById   = new Map(suggestions.map(s => [s.theory_id, s.why_it_fits]))
@@ -136,7 +137,6 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Logo size="sm" />
         <TheoryCards
           projectId={params.id}
           topic={ctx.brief?.topic ?? 'your research topic'}

@@ -1,0 +1,306 @@
+{
+  "theory_id": null,
+  "library_name": "Social exchange theory",
+  "slug": "social-exchange-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Blau, Peter M."
+    ],
+    "year": 1964,
+    "title": "Exchange and Power in Social Life",
+    "type": "book",
+    "venue": "Wiley",
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": false,
+    "verified_in": null,
+    "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Social relationships can be understood as exchanges of rewards and costs, material or not (help, approval, status, information). Exchanges are governed by norms such as reciprocity; they build trust and obligation over time, and unequal dependence in an exchange creates power.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do employees go beyond their role, stay or leave (in response to support, fairness, trust)?",
+    "How do reciprocity and dependence shape relationships in families, communities or organizations?",
+    "Typical data: surveys (perceived support, trust, commitment), interviews on give-and-take in relationships."
+  ],
+  "common_mistakes": [
+    "Using 'social exchange' as a general label for any relationship without specifying what is exchanged and under which rules.",
+    "Explaining outcomes after the fact without predicting anything in advance.",
+    "Ignoring power and dependence, which are central to the theory."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "George Caspar Homans"
+        ],
+        "year": 1958,
+        "title": "Social Behavior as Exchange",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/222355",
+        "openalex_id": "W2085123588",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Social behaviour as an exchange of material and non-material goods."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Alvin W. Gouldner"
+        ],
+        "year": 1960,
+        "title": "The Norm of Reciprocity: A Preliminary Statement",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2092623",
+        "openalex_id": "W2008073538",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The norm of reciprocity as a near-universal rule that stabilizes exchange."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Richard M. Emerson"
+        ],
+        "year": 1962,
+        "title": "Power-Dependence Relations",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2089716",
+        "openalex_id": "W2322324549",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Power as the inverse of dependence in an exchange relation."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Richard M. Emerson"
+        ],
+        "year": 1976,
+        "title": "Social Exchange Theory",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.so.02.080176.002003",
+        "openalex_id": "W2335962051",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A review that organizes the field's main lines."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Perceived organizational support",
+      "summary": "Employees reciprocate the support they believe the organization gives them.",
+      "defining_work": {
+        "authors": [
+          "Robert Eisenberger",
+          "Robin Huntington",
+          "Steven Hutchison",
+          "Debora Sowa"
+        ],
+        "year": 1986,
+        "title": "Perceived organizational support.",
+        "type": "article",
+        "venue": "Journal of Applied Psychology",
+        "doi": "10.1037/0021-9010.71.3.500",
+        "openalex_id": "W2038984978",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "One of the most prominent perspectives in management and related fields.",
+      "source": {
+        "authors": [
+          "Russell Cropanzano",
+          "Erica L. Anthony",
+          "Shanna R. Daniels",
+          "Alison V. Hall"
+        ],
+        "year": 2017,
+        "title": "Social Exchange Theory: A Critical Review with Theoretical Remedies",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/annals.2015.0099",
+        "openalex_id": "W2580080876",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Integrates findings from sociology, psychology and management into one framework.",
+      "source": {
+        "authors": [
+          "Russell Cropanzano",
+          "Marie S. Mitchell"
+        ],
+        "year": 2005,
+        "title": "Social Exchange Theory: An Interdisciplinary Review",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206305279602",
+        "openalex_id": "W2164385948",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://stars.library.ucf.edu/facultybib2000/5094"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "It lacks theoretical precision: it explains many phenomena after the fact but makes few useful predictions in advance.",
+      "source": {
+        "authors": [
+          "Russell Cropanzano",
+          "Erica L. Anthony",
+          "Shanna R. Daniels",
+          "Alison V. Hall"
+        ],
+        "year": 2017,
+        "title": "Social Exchange Theory: A Critical Review with Theoretical Remedies",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/annals.2015.0099",
+        "openalex_id": "W2580080876",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Theoretical ambiguities remain, so tests and applications rely on an incompletely specified set of ideas.",
+      "source": {
+        "authors": [
+          "Russell Cropanzano",
+          "Marie S. Mitchell"
+        ],
+        "year": 2005,
+        "title": "Social Exchange Theory: An Interdisciplinary Review",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206305279602",
+        "openalex_id": "W2164385948",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://stars.library.ucf.edu/facultybib2000/5094"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Blau, Peter M."
+        ],
+        "year": 1964,
+        "title": "Exchange and Power in Social Life",
+        "type": "book",
+        "venue": "Wiley",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then."
+      },
+      "chapter": null,
+      "why_read": "The founding sociological statement, including power.",
+      "reading_question": "What is exchanged in the relationships you study, and who depends on whom?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Alvin W. Gouldner"
+        ],
+        "year": 1960,
+        "title": "The Norm of Reciprocity: A Preliminary Statement",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2092623",
+        "openalex_id": "W2008073538",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The norm at the heart of most applications.",
+      "reading_question": "How does reciprocity show up (or fail) in your setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Russell Cropanzano",
+          "Marie S. Mitchell"
+        ],
+        "year": 2005,
+        "title": "Social Exchange Theory: An Interdisciplinary Review",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206305279602",
+        "openalex_id": "W2164385948",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://stars.library.ucf.edu/facultybib2000/5094"
+      },
+      "chapter": null,
+      "why_read": "The standard interdisciplinary review.",
+      "reading_question": "Which form of exchange and which rules apply in your study?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social exchange theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

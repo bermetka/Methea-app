@@ -1,0 +1,386 @@
+{
+  "theory_id": null,
+  "library_name": "Gender and entrepreneurship (gendered pathways)",
+  "slug": "gender-and-entrepreneurship",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Candida G. Brush",
+      "Anne de Bruin",
+      "Friederike Welter"
+    ],
+    "year": 2009,
+    "title": "A gender‐aware framework for women's entrepreneurship",
+    "type": "article",
+    "venue": "International Journal of Gender and Entrepreneurship",
+    "doi": "10.1108/17566260910942318",
+    "openalex_id": "W1968637298",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1968637298",
+  "core_idea": "Women's entrepreneurship cannot be understood with models built around male founders. Brush, de Bruin and Welter extend the classic '3M' (market, money, management) with 'motherhood' (household and family context) and the meso and macro environment (norms, institutions, policy), which shape women's pathways into and through entrepreneurship.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What shapes women's entry into, and growth in, entrepreneurship in a given context?",
+    "How do family, social norms, finance and policy affect women entrepreneurs?",
+    "Typical data: interviews, life stories, surveys, comparative and contextual case studies."
+  ],
+  "common_mistakes": [
+    "Studying women only in comparison with men and framing them as lacking.",
+    "Treating gender as a variable (male/female) rather than a social structure.",
+    "Ignoring context: households, institutions and culture."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Susan Marlow",
+          "Dean Patton"
+        ],
+        "year": 2005,
+        "title": "All Credit to Men? Entrepreneurship, Finance, and Gender",
+        "type": "article",
+        "venue": "Entrepreneurship Theory and Practice",
+        "doi": "10.1111/j.1540-6520.2005.00105.x",
+        "openalex_id": "W2075731134",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "How gender shapes access to finance."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Helene Ahl"
+        ],
+        "year": 2006,
+        "title": "Why Research on Women Entrepreneurs Needs New Directions",
+        "type": "article",
+        "venue": "Entrepreneurship Theory and Practice",
+        "doi": "10.1111/j.1540-6520.2006.00138.x",
+        "openalex_id": "W2023286583",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-2215"
+      },
+      "adds": "Shows how research itself reproduces women as secondary, and proposes new directions."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Friederike Welter"
+        ],
+        "year": 2011,
+        "title": "Contextualizing Entrepreneurship—Conceptual Challenges and Ways Forward",
+        "type": "article",
+        "venue": "Entrepreneurship Theory and Practice",
+        "doi": "10.1111/j.1540-6520.2010.00427.x",
+        "openalex_id": "W2035713844",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Context (social, spatial, institutional) as central to entrepreneurship research."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "P. Devereaux Jennings",
+          "Candida G. Brush"
+        ],
+        "year": 2013,
+        "title": "Research on Women Entrepreneurs: Challenges to (and from) the Broader Entrepreneurship Literature?",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.1080/19416520.2013.782190",
+        "openalex_id": "W4239741251",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "What research on women entrepreneurs challenges in the broader field."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Feminist and discursive approaches",
+      "summary": "Gender as a construct reproduced in entrepreneurial discourse.",
+      "defining_work": {
+        "authors": [
+          "Helene Ahl",
+          "Susan Marlow"
+        ],
+        "year": 2012,
+        "title": "Exploring the dynamics of gender, feminism and entrepreneurship: advancing debate to escape a dead end?",
+        "type": "article",
+        "venue": "Organization",
+        "doi": "10.1177/1350508412448695",
+        "openalex_id": "W2162302371",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-19596"
+      }
+    },
+    {
+      "name": "Contextual approaches",
+      "summary": "Entrepreneurship embedded in local institutions and households.",
+      "defining_work": {
+        "authors": [
+          "Friederike Welter"
+        ],
+        "year": 2011,
+        "title": "Contextualizing Entrepreneurship—Conceptual Challenges and Ways Forward",
+        "type": "article",
+        "venue": "Entrepreneurship Theory and Practice",
+        "doi": "10.1111/j.1540-6520.2010.00427.x",
+        "openalex_id": "W2035713844",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Moves research beyond male/female comparison to context and structure.",
+      "source": {
+        "authors": [
+          "Helene Ahl"
+        ],
+        "year": 2006,
+        "title": "Why Research on Women Entrepreneurs Needs New Directions",
+        "type": "article",
+        "venue": "Entrepreneurship Theory and Practice",
+        "doi": "10.1111/j.1540-6520.2006.00138.x",
+        "openalex_id": "W2023286583",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-2215"
+      }
+    },
+    {
+      "point": "Challenges assumptions in the wider entrepreneurship literature.",
+      "source": {
+        "authors": [
+          "P. Devereaux Jennings",
+          "Candida G. Brush"
+        ],
+        "year": 2013,
+        "title": "Research on Women Entrepreneurs: Challenges to (and from) the Broader Entrepreneurship Literature?",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.1080/19416520.2013.782190",
+        "openalex_id": "W4239741251",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Despite calls to use feminist theory, the field still positions women as lacking; a persistent gender bias remains in entrepreneurial discourse.",
+      "source": {
+        "authors": [
+          "Helene Ahl",
+          "Susan Marlow"
+        ],
+        "year": 2012,
+        "title": "Exploring the dynamics of gender, feminism and entrepreneurship: advancing debate to escape a dead end?",
+        "type": "article",
+        "venue": "Organization",
+        "doi": "10.1177/1350508412448695",
+        "openalex_id": "W2162302371",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-19596"
+      }
+    },
+    {
+      "point": "The field is dominated by large male/female comparisons with little methodological innovation.",
+      "source": {
+        "authors": [
+          "Colette Henry",
+          "Lene Foss",
+          "Helene Ahl"
+        ],
+        "year": 2015,
+        "title": "Gender and entrepreneurship research: A review of methodological approaches",
+        "type": "article",
+        "venue": "International Small Business Journal Researching Entrepreneurship",
+        "doi": "10.1177/0266242614549779",
+        "openalex_id": "W2080708839",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-24842"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Candida G. Brush",
+          "Anne de Bruin",
+          "Friederike Welter"
+        ],
+        "year": 2009,
+        "title": "A gender‐aware framework for women's entrepreneurship",
+        "type": "article",
+        "venue": "International Journal of Gender and Entrepreneurship",
+        "doi": "10.1108/17566260910942318",
+        "openalex_id": "W1968637298",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The framework itself; short.",
+      "reading_question": "Which of the five Ms matter most for the women in your study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Helene Ahl"
+        ],
+        "year": 2006,
+        "title": "Why Research on Women Entrepreneurs Needs New Directions",
+        "type": "article",
+        "venue": "Entrepreneurship Theory and Practice",
+        "doi": "10.1111/j.1540-6520.2006.00138.x",
+        "openalex_id": "W2023286583",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-2215"
+      },
+      "chapter": null,
+      "why_read": "Why the usual research questions reproduce bias.",
+      "reading_question": "Does your research question frame women as lacking?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Colette Henry",
+          "Lene Foss",
+          "Helene Ahl"
+        ],
+        "year": 2015,
+        "title": "Gender and entrepreneurship research: A review of methodological approaches",
+        "type": "article",
+        "venue": "International Small Business Journal Researching Entrepreneurship",
+        "doi": "10.1177/0266242614549779",
+        "openalex_id": "W2080708839",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-24842"
+      },
+      "chapter": null,
+      "why_read": "A systematic review of methods in the field.",
+      "reading_question": "Which methodological trap will your design avoid?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "gender and entrepreneurship",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W3043689190",
+        "title": "Women Entrepreneurship: A Systematic Review to Outline the Boundaries of Scientific Literature",
+        "year": 2020,
+        "authors": [
+          "Giuseppina Maria Cardella",
+          "Brizeida Raquel Hernández-Sánchez",
+          "José Carlos Sánchez García"
+        ],
+        "cited_by": 368,
+        "oa_url": "https://doi.org/10.3389/fpsyg.2020.01557"
+      },
+      {
+        "openalex_id": "W2795586872",
+        "title": "Constraints faced by women entrepreneurs in developing countries: review and ranking",
+        "year": 2018,
+        "authors": [
+          "Swati Panda"
+        ],
+        "cited_by": 343,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2902204786",
+        "title": "Gender Characterizations in Entrepreneurship: A Multi-Level Investigation of Sex-Role Stereotypes about High-Growth, Commercial, and Social Entrepreneurs",
+        "year": 2018,
+        "authors": [
+          "Vishal K. Gupta",
+          "Alice M. Wieland",
+          "Daniel B. Turban"
+        ],
+        "cited_by": 260,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3183731048",
+        "title": "Women entrepreneurship in developing economies: A gender-based growth model",
+        "year": 2021,
+        "authors": [
+          "Oyedele Martins Ogundana",
+          "Amon Simba",
+          "Léo‐Paul Dana",
+          "Eric W. Liguori"
+        ],
+        "cited_by": 198,
+        "oa_url": "https://doi.org/10.1080/00472778.2021.1938098"
+      },
+      {
+        "openalex_id": "W2918022407",
+        "title": "Identifying women’s entrepreneurial barriers and empowering female entrepreneurship worldwide: a fuzzy-set QCA approach",
+        "year": 2019,
+        "authors": [
+          "Juan Yu Wu",
+          "Yaokuang Li",
+          "Daru Zhang"
+        ],
+        "cited_by": 181,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

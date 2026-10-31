@@ -276,7 +276,7 @@ const s: Record<string, React.CSSProperties> = {
   citationLabel:  { fontSize: '0.8125rem', fontWeight: 500, color: 'var(--graphite)' },
   nextStep:           { display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.75rem', paddingTop: '1rem', borderTop: '1px solid var(--stone-soft)' },
   nextStepText:       { fontSize: '0.9375rem', lineHeight: 1.6, color: 'var(--graphite)' },
-  actions:            { display: 'flex', justifyContent: 'flex-end', gap: '0.75rem' },
+  actions:            { display: 'flex', flexWrap: 'wrap', justifyContent: 'flex-end', gap: '0.75rem' },
   secondaryBtn:       { padding: '0.625rem 1.25rem', border: '1px solid var(--stone)', borderRadius: 'var(--radius)', background: 'var(--sheet)', color: 'var(--graphite)', fontSize: '0.875rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
   primaryBtn:         { padding: '0.75rem 1.5rem', background: 'var(--ink-blue)', color: 'var(--sheet)', border: 'none', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', fontWeight: 600, cursor: 'pointer' },
   primaryBtnDisabled: { background: 'var(--paper-deep)', color: 'var(--pencil)', cursor: 'default' },

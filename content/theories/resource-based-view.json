@@ -1,0 +1,376 @@
+{
+  "theory_id": null,
+  "library_name": "Resource-Based View",
+  "slug": "resource-based-view",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Jay Bryan Barney"
+    ],
+    "year": 1991,
+    "title": "Firm Resources and Sustained Competitive Advantage",
+    "type": "article",
+    "venue": "Journal of Management",
+    "doi": "10.1177/014920639101700108",
+    "openalex_id": "W3124536214",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://repositorio.itfip.edu.co/handle/itfip/174"
+  },
+  "citation_anchor_openalex_id": "W3124536214",
+  "core_idea": "Firms differ in the resources they control, and those differences persist. A resource can be a source of sustained competitive advantage if it is valuable, rare, hard to imitate and non-substitutable (the VRIN criteria). Strategy should therefore start from what the firm has, not only from the industry it is in.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do some firms outperform others in the same industry?",
+    "Which resources or capabilities explain a firm's or sector's advantage (e.g. in SMEs, family firms, startups)?",
+    "Typical data: firm surveys, financial data, case studies of resources and capabilities."
+  ],
+  "common_mistakes": [
+    "Calling any asset a 'resource' without showing it meets the VRIN criteria.",
+    "Arguing in a circle: the resource is valuable because the firm succeeded.",
+    "Ignoring how resources are built and changed over time (see dynamic capabilities)."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Birger Wernerfelt"
+        ],
+        "year": 1984,
+        "title": "A resource‐based view of the firm",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250050207",
+        "openalex_id": "W2140956556",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Looks at firms in terms of their resources rather than their products."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Ingemar Dierickx",
+          "Karel O. Cool"
+        ],
+        "year": 1989,
+        "title": "Asset Stock Accumulation and Sustainability of Competitive Advantage",
+        "type": "article",
+        "venue": "Management Science",
+        "doi": "10.1287/mnsc.35.12.1504",
+        "openalex_id": "W2101946146",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Resources are stocks built up over time, which makes them hard to imitate."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Margaret A. Peteraf"
+        ],
+        "year": 1993,
+        "title": "The cornerstones of competitive advantage: A resource‐based view",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250140303",
+        "openalex_id": "W2122679534",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Four conditions for competitive advantage: heterogeneity, ex post and ex ante limits to competition, imperfect mobility."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Dynamic capabilities",
+      "summary": "How firms build and reconfigure resources in changing environments (own library entry).",
+      "defining_work": {
+        "authors": [
+          "David J. Teece",
+          "Gary Paul Pisano",
+          "Amy Shuen"
+        ],
+        "year": 1997,
+        "title": "Dynamic capabilities and strategic management",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/(sici)1097-0266(199708)18:7<509::aid-smj882>3.0.co;2-z",
+        "openalex_id": "W2123709218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Knowledge-based view",
+      "summary": "Knowledge as the most strategic resource (own library entry).",
+      "defining_work": {
+        "authors": [
+          "Robert M. Grant"
+        ],
+        "year": 1996,
+        "title": "Toward a knowledge‐based theory of the firm",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250171110",
+        "openalex_id": "W2160449301",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Has grown into one of the most prominent theories for understanding organizations.",
+      "source": {
+        "authors": [
+          "Jay Bryan Barney",
+          "David J. Ketchen",
+          "Mike Wright"
+        ],
+        "year": 2011,
+        "title": "The Future of Resource-Based Theory",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206310391805",
+        "openalex_id": "W2137945789",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Its core message withstands most critiques if variables, boundaries and applicability are specified.",
+      "source": {
+        "authors": [
+          "Jeroen Kraaijenbrink",
+          "J.‐C. Spender",
+          "Arend J. Groen"
+        ],
+        "year": 2009,
+        "title": "The Resource-Based View: A Review and Assessment of Its Critiques",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206309350775",
+        "openalex_id": "W2198189408",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1614798"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Not yet a theory: definitions are imprecise, product markets are assumed stable and causality stays in a 'black box'.",
+      "source": {
+        "authors": [
+          "Richard L. Priem",
+          "John E. Butler"
+        ],
+        "year": 2001,
+        "title": "Is the Resource-Based \"View\" a Useful Perspective for Strategic Management Research?",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/259392",
+        "openalex_id": "W2043189549",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Some critiques (e.g. on the definition of resources and value) remain serious.",
+      "source": {
+        "authors": [
+          "Jeroen Kraaijenbrink",
+          "J.‐C. Spender",
+          "Arend J. Groen"
+        ],
+        "year": 2009,
+        "title": "The Resource-Based View: A Review and Assessment of Its Critiques",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206309350775",
+        "openalex_id": "W2198189408",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1614798"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Jay Bryan Barney"
+        ],
+        "year": 1991,
+        "title": "Firm Resources and Sustained Competitive Advantage",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/014920639101700108",
+        "openalex_id": "W3124536214",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://repositorio.itfip.edu.co/handle/itfip/174"
+      },
+      "chapter": null,
+      "why_read": "The founding statement of the VRIN logic.",
+      "reading_question": "Which resource in your case might meet all four criteria, and how will you show it?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Margaret A. Peteraf"
+        ],
+        "year": 1993,
+        "title": "The cornerstones of competitive advantage: A resource‐based view",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250140303",
+        "openalex_id": "W2122679534",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A clear model of the conditions for advantage.",
+      "reading_question": "Which of Peteraf's conditions hold in your case?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jeroen Kraaijenbrink",
+          "J.‐C. Spender",
+          "Arend J. Groen"
+        ],
+        "year": 2009,
+        "title": "The Resource-Based View: A Review and Assessment of Its Critiques",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206309350775",
+        "openalex_id": "W2198189408",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1614798"
+      },
+      "chapter": null,
+      "why_read": "Maps the eight main critiques and what survives them.",
+      "reading_question": "Which critique applies most to your study, and how will you handle it?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "resource-based view",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2517745273",
+        "title": "How to improve firm performance using big data analytics capability and business strategy alignment?",
+        "year": 2016,
+        "authors": [
+          "Shahriar Akter",
+          "Samuel Fosso Wamba",
+          "Angappa Gunasekaran",
+          "Rameshwar Dubey",
+          "Stephen J. Childe"
+        ],
+        "cited_by": 1453,
+        "oa_url": "http://hdl.handle.net/10026.1/5545"
+      },
+      {
+        "openalex_id": "W2508563792",
+        "title": "Big data and predictive analytics for supply chain and organizational performance",
+        "year": 2016,
+        "authors": [
+          "Angappa Gunasekaran",
+          "Θάνος Παπαδόπουλος",
+          "Rameshwar Dubey",
+          "Samuel Fosso Wamba",
+          "Stephen J. Childe",
+          "Benjamin Thomas Hazen"
+        ],
+        "cited_by": 1145,
+        "oa_url": "https://pearl.plymouth.ac.uk/pbs-research/147"
+      },
+      {
+        "openalex_id": "W2947337027",
+        "title": "Exploring the relationship between big data analytics capability and competitive performance: The mediating roles of dynamic and operational capabilities",
+        "year": 2019,
+        "authors": [
+          "Patrick Mikalef",
+          "John Krogstie",
+          "Ilias O. Pappas",
+          "Paul A. Pavlou"
+        ],
+        "cited_by": 1106,
+        "oa_url": "https://doi.org/10.1016/j.im.2019.05.004"
+      },
+      {
+        "openalex_id": "W3085940513",
+        "title": "Artificial intelligence and business models in the sustainable development goals perspective: A systematic literature review",
+        "year": 2020,
+        "authors": [
+          "Assunta Di Vaio",
+          "Rosa Palladino",
+          "Rohail Hassan",
+          "Octavio Escobar"
+        ],
+        "cited_by": 1103,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2954217333",
+        "title": "Digital servitization business models in ecosystems: A theory of the firm",
+        "year": 2019,
+        "authors": [
+          "Marko Kohtamäki",
+          "Vinit Parida",
+          "Pejvak Oghazi",
+          "Heiko Gebauer",
+          "Tim S. Baines"
+        ],
+        "cited_by": 1003,
+        "oa_url": "https://doi.org/10.1016/j.jbusres.2019.06.027"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Penrose (1959) had no clean record and is left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

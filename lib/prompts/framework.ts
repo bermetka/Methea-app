@@ -1,4 +1,4 @@
-import { generateJSON } from '@/lib/claude'
+import { generateJSON, FAST_MODEL } from '@/lib/claude'
 import type { ResearchContext, Theory, FrameworkEdge, FrameworkCitation } from '@/types/database'
 
 // ── Relationship labels ──────────────────────────────────────────────────────
@@ -44,7 +44,7 @@ Rules:
 - Keep labels under 5 words
 - Prefer directional (from→to) over bidirectional where one direction is dominant`
 
-  const raw = await generateJSON<FrameworkEdge[]>(EDGE_SYSTEM, userPrompt, 512)
+  const raw = await generateJSON<FrameworkEdge[]>(EDGE_SYSTEM, userPrompt, 512, { model: FAST_MODEL })
 
   const validIds = new Set(theories.map(t => t.id))
   return raw.filter(e => validIds.has(e.from) && validIds.has(e.to))

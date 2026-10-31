@@ -1,0 +1,343 @@
+{
+  "theory_id": null,
+  "library_name": "Sensemaking Theory",
+  "slug": "sensemaking-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Weick, Karl E."
+    ],
+    "year": 1995,
+    "title": "Sensemaking in Organizations",
+    "type": "book",
+    "venue": "Sage",
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": false,
+    "verified_in": null,
+    "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. OpenAlex collects its citations on W201578715 (a 1996 review record); used only as the citation anchor."
+  },
+  "citation_anchor_openalex_id": "W201578715",
+  "core_idea": "When something unexpected or ambiguous happens, people work to make sense of it: they notice cues, interpret them with others, and act, and their actions in turn shape the situation they are trying to understand. Sensemaking is ongoing, social and retrospective, and it is driven more by plausibility than by accuracy.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people in an organization interpret a crisis, a change programme or a new policy?",
+    "How do leaders shape how others understand change (sensegiving)?",
+    "Typical data: interviews, observation of meetings, documents and accounts produced during events."
+  ],
+  "common_mistakes": [
+    "Using 'sensemaking' as a synonym for 'understanding' or 'perception'.",
+    "Studying only individual cognition and missing the social, interactive side.",
+    "Ignoring that sensemaking is triggered by ambiguity or surprise: say what the trigger was."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Karl E. Weick"
+        ],
+        "year": 1988,
+        "title": "ENACTED SENSEMAKING IN CRISIS SITUATIONS [1]",
+        "type": "article",
+        "venue": "Journal of Management Studies",
+        "doi": "10.1111/j.1467-6486.1988.tb00039.x",
+        "openalex_id": "W2115779401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1467-6486.1988.tb00039.x"
+      },
+      "adds": "Action during crises both produces understanding and can escalate the crisis."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Karl E. Weick"
+        ],
+        "year": 1993,
+        "title": "The Collapse of Sensemaking in Organizations: The Mann Gulch Disaster",
+        "type": "article",
+        "venue": "Administrative Science Quarterly",
+        "doi": "10.2307/2393339",
+        "openalex_id": "W2103756065",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "How sensemaking collapsed in the Mann Gulch fire, and what makes organizations resilient."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Dennis A. Gioia",
+          "Kumar Chittipeddi"
+        ],
+        "year": 1991,
+        "title": "Sensemaking and sensegiving in strategic change initiation",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250120604",
+        "openalex_id": "W2111363451",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Sensegiving: how leaders influence others' sensemaking during strategic change."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Karl E. Weick",
+          "Kathleen M. Sutcliffe",
+          "David Obstfeld"
+        ],
+        "year": 2005,
+        "title": "Organizing and the Process of Sensemaking",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.1050.0133",
+        "openalex_id": "W2112665591",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Restates sensemaking as a process at the core of organizing."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Sensegiving and leadership",
+      "summary": "How managers and others shape interpretations.",
+      "defining_work": {
+        "authors": [
+          "Dennis A. Gioia",
+          "Kumar Chittipeddi"
+        ],
+        "year": 1991,
+        "title": "Sensemaking and sensegiving in strategic change initiation",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250120604",
+        "openalex_id": "W2111363451",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Social processes of sensemaking",
+      "summary": "Forms of sensemaking depending on how leaders and stakeholders engage.",
+      "defining_work": {
+        "authors": [
+          "Sally Maitlis"
+        ],
+        "year": 2005,
+        "title": "The Social Processes of Organizational Sensemaking",
+        "type": "article",
+        "venue": "Academy of Management Journal",
+        "doi": "10.5465/amj.2005.15993111",
+        "openalex_id": "W2049881921",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A central lens for how people understand novel, ambiguous or confusing events, with a large and growing literature.",
+      "source": {
+        "authors": [
+          "Sally Maitlis",
+          "Marlys K. Christianson"
+        ],
+        "year": 2014,
+        "title": "Sensemaking in Organizations: Taking Stock and Moving Forward",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/19416520.2014.873177",
+        "openalex_id": "W4245597957",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The perspective has been limited to episodes triggered by ambiguous events, overlooking more immanent, everyday sensemaking.",
+      "source": {
+        "authors": [
+          "Jörgen Sandberg",
+          "Haridimos Tsoukas"
+        ],
+        "year": 2014,
+        "title": "Making sense of the sensemaking perspective: Its constituents, limitations, and opportunities for further development",
+        "type": "article",
+        "venue": "Journal of Organizational Behavior",
+        "doi": "10.1002/job.1937",
+        "openalex_id": "W1538543390",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Weick, Karl E."
+        ],
+        "year": 1995,
+        "title": "Sensemaking in Organizations",
+        "type": "book",
+        "venue": "Sage",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. OpenAlex collects its citations on W201578715 (a 1996 review record); used only as the citation anchor."
+      },
+      "chapter": "Chapter 2, 'Seven properties of sensemaking'",
+      "why_read": "The seven properties most studies use.",
+      "reading_question": "Which properties of sensemaking can you observe in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Karl E. Weick"
+        ],
+        "year": 1993,
+        "title": "The Collapse of Sensemaking in Organizations: The Mann Gulch Disaster",
+        "type": "article",
+        "venue": "Administrative Science Quarterly",
+        "doi": "10.2307/2393339",
+        "openalex_id": "W2103756065",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A classic, readable case analysis.",
+      "reading_question": "What made sense collapse (or hold) in your setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Sally Maitlis",
+          "Marlys K. Christianson"
+        ],
+        "year": 2014,
+        "title": "Sensemaking in Organizations: Taking Stock and Moving Forward",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/19416520.2014.873177",
+        "openalex_id": "W4245597957",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The field's main review and a working definition.",
+      "reading_question": "Which kind of sensemaking (trigger, process, outcome) is your study about?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "sensemaking theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2789901505",
+        "title": "Making sense of blockchain technology: How will it transform supply chains?",
+        "year": 2019,
+        "authors": [
+          "Yingli Wang",
+          "Meita Singgih",
+          "Jingyao Wang",
+          "Mihaela Rit"
+        ],
+        "cited_by": 811,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2588753226",
+        "title": "On Corporate Social Responsibility, Sensemaking, and the Search for Meaningfulness Through Work",
+        "year": 2017,
+        "authors": [
+          "Herman Aguinis",
+          "Ante Glavas"
+        ],
+        "cited_by": 722,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2430108188",
+        "title": "Transformational change: governance interventions for climate change adaptation from a continuous change perspective",
+        "year": 2016,
+        "authors": [
+          "Catrien J.A.M. Termeer",
+          "Art R. P. J. Dewulf",
+          "Robbert G. Biesbroek"
+        ],
+        "cited_by": 379,
+        "oa_url": "https://doi.org/10.1080/09640568.2016.1168288"
+      },
+      {
+        "openalex_id": "W2888230430",
+        "title": "Making sense of “STEM education” in K-12 contexts",
+        "year": 2018,
+        "authors": [
+          "Tamara Holmlund Nelson",
+          "Kristin Lesseig",
+          "David Slavit"
+        ],
+        "cited_by": 260,
+        "oa_url": "https://doi.org/10.1186/s40594-018-0127-2"
+      },
+      {
+        "openalex_id": "W4379521334",
+        "title": "Artificial intelligence for supply chain management: Disruptive innovation or innovative disruption?",
+        "year": 2023,
+        "authors": [
+          "Christian Hendriksen"
+        ],
+        "cited_by": 216,
+        "oa_url": "https://doi.org/10.1111/jscm.12304"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "theory_id": null,
+  "library_name": "Diffusion of Innovations",
+  "slug": "diffusion-of-innovations",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Rogers, Everett M."
+    ],
+    "year": 1962,
+    "title": "Diffusion of Innovations",
+    "type": "book",
+    "venue": "Free Press",
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": false,
+    "verified_in": null,
+    "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. Fifth edition 2003. OpenAlex collects citations on W1990513740 (a 2019 chapter by Rogers, Singhal & Quinlan); used only as the citation anchor."
+  },
+  "citation_anchor_openalex_id": "W1990513740",
+  "core_idea": "New ideas, practices and technologies spread through a social system over time via communication channels. Whether people adopt depends on how they perceive the innovation (relative advantage, compatibility, complexity, trialability, observability). Adopters range from innovators and early adopters to the late majority and laggards, which produces the familiar S-shaped adoption curve.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why are some practices, technologies or policies adopted faster than others in a community or organization?",
+    "Who adopts first, and through which channels does an innovation spread?",
+    "Typical data: surveys on perceived attributes and adoption, interviews with adopters and non-adopters, adoption records over time."
+  ],
+  "common_mistakes": [
+    "Assuming the innovation is good and non-adopters are 'resistant' (pro-innovation bias).",
+    "Studying only adopters, not rejecters or people who stopped using the innovation.",
+    "Treating adopter categories as personality types rather than positions in time.",
+    "Ignoring organizational and system context when studying adoption in organizations."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Frank M. Bass"
+        ],
+        "year": 1969,
+        "title": "A New Product Growth for Model Consumer Durables",
+        "type": "article",
+        "venue": "Management Science",
+        "doi": "10.1287/mnsc.15.5.215",
+        "openalex_id": "W4253543067",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A mathematical model of how adoption grows over time, driven by innovators and imitators."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Fred D. Davis"
+        ],
+        "year": 1989,
+        "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.2307/249008",
+        "openalex_id": "W1791587663",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Focuses on individual acceptance of technology through perceived usefulness and ease of use."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Trisha Greenhalgh",
+          "Glenn Robert",
+          "Fraser Macfarlane",
+          "Paul Bate",
+          "Olivia Kyriakidou"
+        ],
+        "year": 2004,
+        "title": "Diffusion of Innovations in Service Organizations: Systematic Review and Recommendations",
+        "type": "review",
+        "venue": "Milbank Quarterly",
+        "doi": "10.1111/j.0887-378x.2004.00325.x",
+        "openalex_id": "W2081753990",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2690184"
+      },
+      "adds": "A systematic review that builds an evidence-based model of diffusion in service organizations."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Technology acceptance",
+      "summary": "Individual-level models of technology adoption (TAM, UTAUT).",
+      "defining_work": {
+        "authors": [
+          "Fred D. Davis"
+        ],
+        "year": 1989,
+        "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.2307/249008",
+        "openalex_id": "W1791587663",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Organizational diffusion",
+      "summary": "How innovations spread and are sustained in organizations and health services.",
+      "defining_work": {
+        "authors": [
+          "Trisha Greenhalgh",
+          "Glenn Robert",
+          "Fraser Macfarlane",
+          "Paul Bate",
+          "Olivia Kyriakidou"
+        ],
+        "year": 2004,
+        "title": "Diffusion of Innovations in Service Organizations: Systematic Review and Recommendations",
+        "type": "review",
+        "venue": "Milbank Quarterly",
+        "doi": "10.1111/j.0887-378x.2004.00325.x",
+        "openalex_id": "W2081753990",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2690184"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Draws on a very large, cross-disciplinary body of research, synthesized into usable models.",
+      "source": {
+        "authors": [
+          "Trisha Greenhalgh",
+          "Glenn Robert",
+          "Fraser Macfarlane",
+          "Paul Bate",
+          "Olivia Kyriakidou"
+        ],
+        "year": 2004,
+        "title": "Diffusion of Innovations in Service Organizations: Systematic Review and Recommendations",
+        "type": "review",
+        "venue": "Milbank Quarterly",
+        "doi": "10.1111/j.0887-378x.2004.00325.x",
+        "openalex_id": "W2081753990",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2690184"
+      }
+    },
+    {
+      "point": "Offers concrete constructs that can be turned into survey items.",
+      "source": {
+        "authors": [
+          "Fred D. Davis"
+        ],
+        "year": 1989,
+        "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.2307/249008",
+        "openalex_id": "W1791587663",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The literature carries a pro-innovation bias, so it struggles to explain why inefficient innovations spread and efficient ones are rejected.",
+      "source": {
+        "authors": [
+          "Eric Abrahamson"
+        ],
+        "year": 1991,
+        "title": "Managerial Fads and Fashions: The Diffusion and Rejection of Innovations",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/258919",
+        "openalex_id": "W2091775201",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Analyses based on the theory miss important facets of complex, networked, learning-intensive technologies; they need institutional, process and multi-level accounts.",
+      "source": {
+        "authors": [
+          "Kalle Lyytinen",
+          "Jan Damsgaard"
+        ],
+        "year": 2001,
+        "title": "What’s Wrong with the Diffusion of Innovation Theory?",
+        "type": "conference-paper",
+        "venue": "IFIP advances in information and communication technology",
+        "doi": "10.1007/978-0-387-35404-0_11",
+        "openalex_id": "W1517087321",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1007/978-0-387-35404-0_11"
+      },
+      "checked_full_text": true
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Rogers, Everett M."
+        ],
+        "year": 1962,
+        "title": "Diffusion of Innovations",
+        "type": "book",
+        "venue": "Free Press",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. Fifth edition 2003. OpenAlex collects citations on W1990513740 (a 2019 chapter by Rogers, Singhal & Quinlan); used only as the citation anchor."
+      },
+      "chapter": "Fifth edition (2003), the chapter on attributes of innovations",
+      "why_read": "Defines the five perceived attributes most studies measure.",
+      "reading_question": "Which of the five attributes is most likely to explain adoption in your setting, and how would you observe it?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Eric Abrahamson"
+        ],
+        "year": 1991,
+        "title": "Managerial Fads and Fashions: The Diffusion and Rejection of Innovations",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/258919",
+        "openalex_id": "W2091775201",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The key correction to the theory's built-in optimism.",
+      "reading_question": "Could the innovation you study be spreading for reasons other than its benefits?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Trisha Greenhalgh",
+          "Glenn Robert",
+          "Fraser Macfarlane",
+          "Paul Bate",
+          "Olivia Kyriakidou"
+        ],
+        "year": 2004,
+        "title": "Diffusion of Innovations in Service Organizations: Systematic Review and Recommendations",
+        "type": "review",
+        "venue": "Milbank Quarterly",
+        "doi": "10.1111/j.0887-378x.2004.00325.x",
+        "openalex_id": "W2081753990",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2690184"
+      },
+      "chapter": null,
+      "why_read": "A rigorous review with a model you can borrow for organizations.",
+      "reading_question": "Which part of the model (innovation, adopters, system, context) is your study about?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "diffusion of innovations",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2513577383",
+        "title": "Understanding consumer intention to participate in online travel community and effects on consumer intention to purchase travel online and WOM: An integration of innovation diffusion theory and TAM with trust",
+        "year": 2016,
+        "authors": [
+          "Gomaa Agag",
+          "Ahmed El‐Masry"
+        ],
+        "cited_by": 594,
+        "oa_url": "https://pearl.plymouth.ac.uk/pbs-research/343"
+      },
+      {
+        "openalex_id": "W2569181695",
+        "title": "Determinants of intention to use the mobile banking apps: An extension of the classic TAM model",
+        "year": 2017,
+        "authors": [
+          "Francisco Muñoz‐Leiva",
+          "S. Climent-Climent",
+          "Francisco José Liébana-Cabanillas"
+        ],
+        "cited_by": 517,
+        "oa_url": "https://doi.org/10.1016/j.sjme.2016.12.001"
+      },
+      {
+        "openalex_id": "W2891004579",
+        "title": "Consumer adoption of the Uber mobile application: Insights from diffusion of innovation theory and technology acceptance model",
+        "year": 2018,
+        "authors": [
+          "Somang Min",
+          "Kevin Kam Fung So",
+          "Miyoung Jeong"
+        ],
+        "cited_by": 489,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2766015027",
+        "title": "Limitations to the rapid adoption of M-payment services: Understanding the impact of privacy risk on M-Payment services",
+        "year": 2017,
+        "authors": [
+          "Vess Johnson",
+          "Angelina I. T. Kiser",
+          "Ronald Washington",
+          "Russell Torres"
+        ],
+        "cited_by": 444,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2908146178",
+        "title": "Antecedents of trust and continuance intention in mobile payment platforms: The moderating effect of gender",
+        "year": 2018,
+        "authors": [
+          "Zhen Shao",
+          "Lin Zhang",
+          "Xiaotong Li",
+          "Yue Guo"
+        ],
+        "cited_by": 425,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: What’s Wrong with the Diffusion of Innov (founder supplied PDFs, 31 Oct 2026)."
+    }
+  ]
+}

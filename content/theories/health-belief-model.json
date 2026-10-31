@@ -1,0 +1,353 @@
+{
+  "theory_id": null,
+  "library_name": "Health belief model",
+  "slug": "health-belief-model",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Irwin M. Rosenstock"
+    ],
+    "year": 1966,
+    "title": "Why People Use Health Services",
+    "type": "article",
+    "venue": "The Milbank Memorial Fund Quarterly",
+    "doi": "10.2307/3348967",
+    "openalex_id": "W4252823809",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W4252823809",
+  "core_idea": "People take a health action if they believe they are susceptible to a condition, that it is severe, that the action has benefits, and that the barriers are not too great. Cues to action and later self-efficacy were added.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do people use or avoid preventive services (screening, vaccination)?",
+    "Which beliefs should a health campaign target?",
+    "Typical data: surveys with HBM scales, intervention studies, interviews."
+  ],
+  "common_mistakes": [
+    "Measuring constructs with ad hoc items.",
+    "Treating the model as a full theory of behaviour change.",
+    "Ignoring social and structural barriers outside individual beliefs."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Irwin M. Rosenstock"
+        ],
+        "year": 1974,
+        "title": "Historical Origins of the Health Belief Model",
+        "type": "article",
+        "venue": "Health Education Monographs",
+        "doi": "10.1177/109019817400200403",
+        "openalex_id": "W2142150409",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Where the model came from."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Nancy K. Janz",
+          "Marshall H. Becker"
+        ],
+        "year": 1984,
+        "title": "The Health Belief Model: A Decade Later",
+        "type": "article",
+        "venue": "Health Education Quarterly",
+        "doi": "10.1177/109019818401100101",
+        "openalex_id": "W2134740567",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/2027.42/66877"
+      },
+      "adds": "A decade of evidence; barriers are the strongest predictor."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Irwin M. Rosenstock",
+          "Victor J. Strecher",
+          "Marshall H. Becker"
+        ],
+        "year": 1988,
+        "title": "Social Learning Theory and the Health Belief Model",
+        "type": "article",
+        "venue": "Health Education Quarterly",
+        "doi": "10.1177/109019818801500203",
+        "openalex_id": "W2158216255",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/2027.42/67783"
+      },
+      "adds": "Adds self-efficacy."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Christina Jones",
+          "Jakob D. Jensen",
+          "Courtney Lynam Scherr",
+          "Natasha R. Brown",
+          "Katheryn R. Christy",
+          "Jeremy Weaver"
+        ],
+        "year": 2014,
+        "title": "The Health Belief Model as an Explanatory Framework in Communication Research: Exploring Parallel, Serial, and Moderated Mediation",
+        "type": "article",
+        "venue": "Health Communication",
+        "doi": "10.1080/10410236.2013.873363",
+        "openalex_id": "W2095362277",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4530978"
+      },
+      "adds": "Tests how the variables relate to each other."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Health communication",
+      "summary": "Using the model in campaigns and messages.",
+      "defining_work": {
+        "authors": [
+          "Christina Jones",
+          "Jakob D. Jensen",
+          "Courtney Lynam Scherr",
+          "Natasha R. Brown",
+          "Katheryn R. Christy",
+          "Jeremy Weaver"
+        ],
+        "year": 2014,
+        "title": "The Health Belief Model as an Explanatory Framework in Communication Research: Exploring Parallel, Serial, and Moderated Mediation",
+        "type": "article",
+        "venue": "Health Communication",
+        "doi": "10.1080/10410236.2013.873363",
+        "openalex_id": "W2095362277",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4530978"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Benefits and barriers consistently predict behaviour.",
+      "source": {
+        "authors": [
+          "Christopher J. Carpenter"
+        ],
+        "year": 2010,
+        "title": "A Meta-Analysis of the Effectiveness of Health Belief Model Variables in Predicting Behavior",
+        "type": "review",
+        "venue": "Health Communication",
+        "doi": "10.1080/10410236.2010.521906",
+        "openalex_id": "W2102635611",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Effect sizes are small and studies are inconsistent.",
+      "source": {
+        "authors": [
+          "Joel A. Harrison",
+          "Patricia Dolan Mullen",
+          "Lawrence W. Green"
+        ],
+        "year": 1992,
+        "title": "A meta-analysis of studies of the Health Belief Model with adults",
+        "type": "review",
+        "venue": "Health Education Research",
+        "doi": "10.1093/her/7.1.107",
+        "openalex_id": "W2134859409",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Susceptibility and severity are weak predictors.",
+      "source": {
+        "authors": [
+          "Christopher J. Carpenter"
+        ],
+        "year": 2010,
+        "title": "A Meta-Analysis of the Effectiveness of Health Belief Model Variables in Predicting Behavior",
+        "type": "review",
+        "venue": "Health Communication",
+        "doi": "10.1080/10410236.2010.521906",
+        "openalex_id": "W2102635611",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Irwin M. Rosenstock"
+        ],
+        "year": 1966,
+        "title": "Why People Use Health Services",
+        "type": "article",
+        "venue": "The Milbank Memorial Fund Quarterly",
+        "doi": "10.2307/3348967",
+        "openalex_id": "W4252823809",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "Which beliefs might explain the health behaviour you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Nancy K. Janz",
+          "Marshall H. Becker"
+        ],
+        "year": 1984,
+        "title": "The Health Belief Model: A Decade Later",
+        "type": "article",
+        "venue": "Health Education Quarterly",
+        "doi": "10.1177/109019818401100101",
+        "openalex_id": "W2134740567",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/2027.42/66877"
+      },
+      "chapter": null,
+      "why_read": "An early review.",
+      "reading_question": "Which constructs are best supported?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Christopher J. Carpenter"
+        ],
+        "year": 2010,
+        "title": "A Meta-Analysis of the Effectiveness of Health Belief Model Variables in Predicting Behavior",
+        "type": "review",
+        "venue": "Health Communication",
+        "doi": "10.1080/10410236.2010.521906",
+        "openalex_id": "W2102635611",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Meta-analysis of predictive power.",
+      "reading_question": "Which variables should your design prioritize?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "health belief model",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W3157031034",
+        "title": "Predicting intention to receive COVID-19 vaccine among the general population using the health belief model and the theory of planned behavior model",
+        "year": 2021,
+        "authors": [
+          "Liora Shmueli"
+        ],
+        "cited_by": 521,
+        "oa_url": "https://doi.org/10.1186/s12889-021-10816-7"
+      },
+      {
+        "openalex_id": "W3048561042",
+        "title": "Mental health toll from the coronavirus: Social media usage reveals Wuhan residents’ depression and secondary trauma in the COVID-19 outbreak",
+        "year": 2020,
+        "authors": [
+          "Bu Zhong",
+          "Yakun Huang",
+          "Qian Liu"
+        ],
+        "cited_by": 337,
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7428783"
+      },
+      {
+        "openalex_id": "W2613429820",
+        "title": "Factors associated with help-seeking behaviour among individuals with major depression: A systematic review",
+        "year": 2017,
+        "authors": [
+          "Julia Luise Magaard",
+          "Tharanya Seeralan",
+          "Holger Schulz",
+          "Anna Levke Brütt"
+        ],
+        "cited_by": 320,
+        "oa_url": "https://doi.org/10.1371/journal.pone.0176730"
+      },
+      {
+        "openalex_id": "W3047474781",
+        "title": "Adoption of a Contact Tracing App for Containing COVID-19: A Health Belief Model Approach",
+        "year": 2020,
+        "authors": [
+          "Michel Walrave",
+          "Cato Waeterloos",
+          "Koen S. Ponnet"
+        ],
+        "cited_by": 272,
+        "oa_url": "https://doi.org/10.2196/20572"
+      },
+      {
+        "openalex_id": "W2762675159",
+        "title": "Technical attributes, health attribute, consumer attributes and their roles in adoption intention of healthcare wearable technology",
+        "year": 2017,
+        "authors": [
+          "Min Zhang",
+          "Meifen Luo",
+          "Rui Nie",
+          "Yan Zhang"
+        ],
+        "cited_by": 210,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

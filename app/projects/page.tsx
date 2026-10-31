@@ -1,6 +1,5 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import Logo from '@/components/ui/Logo'
 import NewProjectForm from './NewProjectForm'
 import { archiveProject } from './actions'
 import { FREE_CAP_ERROR, FREE_CAP_MESSAGE } from '@/lib/project-cap'
@@ -10,7 +9,7 @@ import type { Project } from '@/types/database'
 
 export const metadata = { title: 'My projects — Methea' }
 
-export default async function ProjectsPage({ searchParams }: { searchParams: { error?: string } }) {
+export default async function ProjectsPage({ searchParams }: { searchParams: { error?: string; how?: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
@@ -29,20 +28,37 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
   // The student's own price (same as checkout), only needed for the welcome copy.
   const price = isFirstVisit ? priceForVariant(await getUserPriceVariant(user.id)).label : null
 
+  const newProject = (
+    <div style={s.newSection}>
+      {searchParams.error === FREE_CAP_ERROR && <p style={s.capError}>{FREE_CAP_MESSAGE}</p>}
+      <p style={s.newLabel}>
+        {list.length === 0 ? 'Start your first project' : 'Start a new project'}
+      </p>
+      <NewProjectForm />
+      {isFirstVisit && (
+        <>
+          <p style={s.hint}>Just a working title. You&apos;ll describe your research on the next screen.</p>
+          <p style={s.hint}>
+            Steps 1–3 are free. Full framework, methodology and interview guide: {price} per project.
+          </p>
+        </>
+      )}
+    </div>
+  )
+
   return (
     <main style={s.page}>
       <div style={s.container}>
-        <div style={s.header}>
-          <Logo size="sm" />
-        </div>
-
         <div style={s.titleRow}>
           <h2 style={s.heading}>My projects</h2>
         </div>
 
+        {/* Returning students: start a new project first, above the list */}
+        {!showWelcome && newProject}
+
         {/* Past the first brief: the same steps, folded away */}
         {!showWelcome && (
-          <details style={s.howTo}>
+          <details id="how" open={searchParams.how === '1'} style={s.howTo}>
             <summary style={s.howToSummary}>How Methea works</summary>
             <WelcomeSteps />
           </details>
@@ -110,22 +126,8 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
           </section>
         )}
 
-        {/* New project form */}
-        <div style={s.newSection}>
-          {searchParams.error === FREE_CAP_ERROR && <p style={s.capError}>{FREE_CAP_MESSAGE}</p>}
-          <p style={s.newLabel}>
-            {list.length === 0 ? 'Start your first project' : 'Start a new project'}
-          </p>
-          <NewProjectForm />
-          {isFirstVisit && (
-            <>
-              <p style={s.hint}>Just a working title. You&apos;ll describe your research on the next screen.</p>
-              <p style={s.hint}>
-                Steps 1–3 are free. Full framework, methodology and interview guide: {price} per project.
-              </p>
-            </>
-          )}
-        </div>
+        {/* First visit: the form comes after the welcome */}
+        {showWelcome && newProject}
       </div>
     </main>
   )

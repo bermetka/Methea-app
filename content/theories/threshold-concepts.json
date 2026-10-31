@@ -1,0 +1,298 @@
+{
+  "theory_id": null,
+  "library_name": "Threshold concepts",
+  "slug": "threshold-concepts",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Meyer, Jan H. F.",
+      "Land, Ray"
+    ],
+    "year": 2003,
+    "title": "Threshold concepts and troublesome knowledge: linkages to ways of thinking and practising within the disciplines",
+    "type": "book",
+    "venue": "ETL Project Occasional Report",
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": false,
+    "verified_in": null,
+    "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. Not a book; an occasional report/chapter without a DOI."
+  },
+  "citation_anchor_openalex_id": "W2127773115",
+  "core_idea": "Some concepts in a discipline work like portals: once understood, they transform how a learner sees the subject. Threshold concepts are transformative, irreversible, integrative, often bounded and frequently troublesome. Students can get stuck in a 'liminal' state before crossing them.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Which concepts in a course or discipline are thresholds for students?",
+    "Where do students get stuck, and how can teaching help them through?",
+    "Typical data: interviews with students and teachers, analysis of student work, Delphi studies."
+  ],
+  "common_mistakes": [
+    "Labelling any difficult concept a threshold concept.",
+    "Not saying how you identified the threshold concepts.",
+    "Ignoring the liminal phase, which is central to the idea."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jan H. F. Meyer",
+          "Ray Land"
+        ],
+        "year": 2005,
+        "title": "Threshold concepts and troublesome knowledge (2): Epistemological considerations and a conceptual framework for teaching and learning",
+        "type": "article",
+        "venue": "Higher Education",
+        "doi": "10.1007/s10734-004-6779-5",
+        "openalex_id": "W2127773115",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://durham-repository.worktribe.com/output/1601228"
+      },
+      "adds": "Liminality and a conceptual framework for teaching and learning."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Jan H. F. Meyer",
+          "Ray Land"
+        ],
+        "year": 2006,
+        "title": "Overcoming Barriers to Student Understanding",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203966273",
+        "openalex_id": "W3216977707",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "An edited collection applying the idea across disciplines."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Introductions for teachers",
+      "summary": "Short accessible overviews used in teaching development.",
+      "defining_work": {
+        "authors": [
+          "Glynis Cousin"
+        ],
+        "year": 2006,
+        "title": "An introduction to threshold concepts",
+        "type": "article",
+        "venue": "Planet",
+        "doi": "10.11120/plan.2006.00170004",
+        "openalex_id": "W2135851823",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.11120/plan.2006.00170004"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives teachers a practical lens to find where students get stuck.",
+      "source": {
+        "authors": [
+          "Glynis Cousin"
+        ],
+        "year": 2006,
+        "title": "An introduction to threshold concepts",
+        "type": "article",
+        "venue": "Planet",
+        "doi": "10.11120/plan.2006.00170004",
+        "openalex_id": "W2135851823",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.11120/plan.2006.00170004"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "As defined, threshold concepts cannot even in principle be empirically isolated.",
+      "source": {
+        "authors": [
+          "Darrell P. Rowbottom"
+        ],
+        "year": 2007,
+        "title": "Demystifying Threshold Concepts",
+        "type": "article",
+        "venue": "Journal of Philosophy of Education",
+        "doi": "10.1111/j.1467-9752.2007.00554.x",
+        "openalex_id": "W1983542288",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Identifying threshold concepts raises unresolved theoretical and methodological challenges.",
+      "source": {
+        "authors": [
+          "Sarah Barradell"
+        ],
+        "year": 2012,
+        "title": "The identification of threshold concepts: a review of theoretical complexities and methodological challenges",
+        "type": "article",
+        "venue": "Higher Education",
+        "doi": "10.1007/s10734-012-9542-3",
+        "openalex_id": "W2029752393",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Meyer, Jan H. F.",
+          "Land, Ray"
+        ],
+        "year": 2003,
+        "title": "Threshold concepts and troublesome knowledge: linkages to ways of thinking and practising within the disciplines",
+        "type": "book",
+        "venue": "ETL Project Occasional Report",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. Not a book; an occasional report/chapter without a DOI."
+      },
+      "chapter": null,
+      "why_read": "The founding paper.",
+      "reading_question": "Which concept in your discipline might work as a portal for students?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jan H. F. Meyer",
+          "Ray Land"
+        ],
+        "year": 2005,
+        "title": "Threshold concepts and troublesome knowledge (2): Epistemological considerations and a conceptual framework for teaching and learning",
+        "type": "article",
+        "venue": "Higher Education",
+        "doi": "10.1007/s10734-004-6779-5",
+        "openalex_id": "W2127773115",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://durham-repository.worktribe.com/output/1601228"
+      },
+      "chapter": null,
+      "why_read": "Adds liminality.",
+      "reading_question": "What does being 'stuck' look like for your students?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Sarah Barradell"
+        ],
+        "year": 2012,
+        "title": "The identification of threshold concepts: a review of theoretical complexities and methodological challenges",
+        "type": "article",
+        "venue": "Higher Education",
+        "doi": "10.1007/s10734-012-9542-3",
+        "openalex_id": "W2029752393",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Reviews how threshold concepts are identified.",
+      "reading_question": "Which identification method will you use?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "threshold concepts",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2490964687",
+        "title": "Threshold Concepts in Practice",
+        "year": 2016,
+        "authors": [
+          "Flanagan, Michael T",
+          "Jan H. F. Meyer",
+          "Land, Ray"
+        ],
+        "cited_by": 117,
+        "oa_url": "https://durham-repository.worktribe.com/output/1130340"
+      },
+      {
+        "openalex_id": "W2995787020",
+        "title": "The theory of empowerment: A critical analysis with the theory evaluation scale",
+        "year": 2019,
+        "authors": [
+          "Rigaud Joseph"
+        ],
+        "cited_by": 106,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2768503917",
+        "title": "Biological Principles and Threshold Concepts for Understanding Natural Selection",
+        "year": 2017,
+        "authors": [
+          "Lena Anna Elisabet Tibell",
+          "Ute Harms"
+        ],
+        "cited_by": 104,
+        "oa_url": "https://doi.org/10.1007/s11191-017-9935-x"
+      },
+      {
+        "openalex_id": "W2988919209",
+        "title": "Troubling transitions and celebrating becomings: from pathway to rhizome",
+        "year": 2019,
+        "authors": [
+          "Karen Gravett"
+        ],
+        "cited_by": 82,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2765333945",
+        "title": "A framework for working with university teachers to create and embed ‘Integrated Threshold Concept Knowledge’ (ITCK) in their practice",
+        "year": 2017,
+        "authors": [
+          "Julie A. Timmermans",
+          "Jan H. F. Meyer"
+        ],
+        "cited_by": 81,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

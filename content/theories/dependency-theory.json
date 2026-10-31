@@ -1,0 +1,358 @@
+{
+  "theory_id": null,
+  "library_name": "Dependency theory",
+  "slug": "dependency-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "André Gunder Frank"
+    ],
+    "year": 1966,
+    "title": "The Development of Underdevelopment",
+    "type": "article",
+    "venue": "Monthly Review",
+    "doi": "10.14452/mr-018-04-1966-08_3",
+    "openalex_id": "W2040057718",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2040057718",
+  "core_idea": "Underdevelopment is not an early stage that every country passes through. It was produced by the way peripheral economies were tied to wealthy core economies through colonial history, trade and investment. Surplus flows from 'satellites' to 'metropoles', so the same process develops one and underdevelops the other.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do some regions remain dependent on raw-material exports, remittances or aid?",
+    "How do historical and global economic ties shape a country's development options?",
+    "Typical data: historical and economic data, trade and investment flows, policy documents, comparative case studies."
+  ],
+  "common_mistakes": [
+    "Treating dependency theory as one theory. Frank and Cardoso & Faletto disagree on whether development is possible under dependency.",
+    "Ignoring internal factors such as the state, class alliances and local elites.",
+    "Asserting dependency without historical and economic evidence."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Fernando Henríque Cardoso",
+          "Enzo Faletto V."
+        ],
+        "year": 1979,
+        "title": "Dependency and Development in Latin America",
+        "type": "book",
+        "venue": "University of California Press eBooks",
+        "doi": "10.1525/9780520342118",
+        "openalex_id": "W4300624328",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Dependent development is possible: outcomes depend on internal class alliances as well as external ties."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Peter B. Evans"
+        ],
+        "year": 1979,
+        "title": "Dependent Development",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9780691186801",
+        "openalex_id": "W4242589823",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Brazil's development through an alliance of multinational, state and local capital."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Immanuel Maurice Wallerstein"
+        ],
+        "year": 1974,
+        "title": "The Modern World-System I: Capitalist Agriculture and the Origins of the European World-Economy in the Sixteenth Century",
+        "type": "article",
+        "venue": "Project Muse (Johns Hopkins University)",
+        "doi": null,
+        "openalex_id": "W2617515511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "World-systems analysis: the capitalist world-economy (core, semi-periphery, periphery) as the unit of analysis."
+    }
+  ],
+  "strands": [
+    {
+      "name": "World-systems analysis",
+      "summary": "The world-economy, not the nation-state, as the unit of analysis.",
+      "defining_work": {
+        "authors": [
+          "Immanuel Maurice Wallerstein"
+        ],
+        "year": 1974,
+        "title": "The Modern World-System I: Capitalist Agriculture and the Origins of the European World-Economy in the Sixteenth Century",
+        "type": "article",
+        "venue": "Project Muse (Johns Hopkins University)",
+        "doi": null,
+        "openalex_id": "W2617515511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Dependent development",
+      "summary": "Development within dependency, shaped by internal alliances.",
+      "defining_work": {
+        "authors": [
+          "Fernando Henríque Cardoso",
+          "Enzo Faletto V."
+        ],
+        "year": 1979,
+        "title": "Dependency and Development in Latin America",
+        "type": "book",
+        "venue": "University of California Press eBooks",
+        "doi": "10.1525/9780520342118",
+        "openalex_id": "W4300624328",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Puts history and global structure into development questions, instead of theories built only from the experience of rich countries.",
+      "source": {
+        "authors": [
+          "André Gunder Frank"
+        ],
+        "year": 1966,
+        "title": "The Development of Underdevelopment",
+        "type": "article",
+        "venue": "Monthly Review",
+        "doi": "10.14452/mr-018-04-1966-08_3",
+        "openalex_id": "W2040057718",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Later versions explain variation between dependent countries, not only their shared position.",
+      "source": {
+        "authors": [
+          "Fernando Henríque Cardoso",
+          "Enzo Faletto V."
+        ],
+        "year": 1979,
+        "title": "Dependency and Development in Latin America",
+        "type": "book",
+        "venue": "University of California Press eBooks",
+        "doi": "10.1525/9780520342118",
+        "openalex_id": "W4300624328",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Exaggerates the whole: denies peripheral countries any autonomy or specificity apart from their place in the international system.",
+      "source": {
+        "authors": [
+          "Tony Smith"
+        ],
+        "year": 1979,
+        "title": "The Underdevelopment of Development Literature: The Case of Dependency Theory",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.2307/2009944",
+        "openalex_id": "W2047175376",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Locates the origins of capitalism and underdevelopment in trade and market relations rather than in class relations of production.",
+      "source": {
+        "authors": [
+          "Robert Brenner"
+        ],
+        "year": 1977,
+        "title": "The Origins of Capitalist Development: A Critique of Neo-Smithian Marxism",
+        "type": "article",
+        "venue": "New Left Review",
+        "doi": "10.64590/9sc",
+        "openalex_id": "W4414178478",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "André Gunder Frank"
+        ],
+        "year": 1966,
+        "title": "The Development of Underdevelopment",
+        "type": "article",
+        "venue": "Monthly Review",
+        "doi": "10.14452/mr-018-04-1966-08_3",
+        "openalex_id": "W2040057718",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Short and readable; the founding statement of the 'development of underdevelopment'.",
+      "reading_question": "What evidence would show that the region you study was 'underdeveloped' by its ties to a metropole?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Fernando Henríque Cardoso",
+          "Enzo Faletto V."
+        ],
+        "year": 1979,
+        "title": "Dependency and Development in Latin America",
+        "type": "book",
+        "venue": "University of California Press eBooks",
+        "doi": "10.1525/9780520342118",
+        "openalex_id": "W4300624328",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The main corrective to the strict version, adding internal politics.",
+      "reading_question": "Which internal alliances in your case shape how external dependence plays out?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Tony Smith"
+        ],
+        "year": 1979,
+        "title": "The Underdevelopment of Development Literature: The Case of Dependency Theory",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.2307/2009944",
+        "openalex_id": "W2047175376",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A clear critique that maps the theory's weak points.",
+      "reading_question": "How will your study avoid treating your country only as a part of the system?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "dependency theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W3185133529",
+        "title": "International financial subordination: a critical research agenda",
+        "year": 2022,
+        "authors": [
+          "Ilias Alami",
+          "Carolina Alves",
+          "Bruno Bonizzi",
+          "Annina Kaltenbrunner",
+          "Kai Koddenbrock",
+          "Ingrid Harvold Kvangraven"
+        ],
+        "cited_by": 243,
+        "oa_url": "https://doi.org/10.1080/09692290.2022.2098359"
+      },
+      {
+        "openalex_id": "W2947659949",
+        "title": "What is driving global obesity trends? Globalization or “modernization”?",
+        "year": 2019,
+        "authors": [
+          "ASHLEY M. FOX",
+          "Wenhui Feng",
+          "Victor H. Asal"
+        ],
+        "cited_by": 223,
+        "oa_url": "https://doi.org/10.1186/s12992-019-0457-y"
+      },
+      {
+        "openalex_id": "W2967701414",
+        "title": "Dependent development in South America: China and the soybean nexus",
+        "year": 2019,
+        "authors": [
+          "María Eugenia Giraudo"
+        ],
+        "cited_by": 65,
+        "oa_url": "https://eprints.whiterose.ac.uk/id/eprint/149326/1/Giraudo_JournalofAgrarianChange_Final.pdf"
+      },
+      {
+        "openalex_id": "W4324049828",
+        "title": "Back to Dakar: Decolonizing international political economy through dependency theory",
+        "year": 2023,
+        "authors": [
+          "Felipe Antunes de Oliveira",
+          "Ingrid Harvold Kvangraven"
+        ],
+        "cited_by": 53,
+        "oa_url": "https://doi.org/10.1080/09692290.2023.2169322"
+      },
+      {
+        "openalex_id": "W2583286390",
+        "title": "Dependency Theory – A Conceptual Lens to Understand China’s Presence in Africa?",
+        "year": 2017,
+        "authors": [
+          "Motolani Agbebi",
+          "Petri Juhani Virtanen"
+        ],
+        "cited_by": 52,
+        "oa_url": "https://trepo.tuni.fi/handle/10024/102382"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Warren (1980) and Dos Santos (1970) have no clean records and are left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

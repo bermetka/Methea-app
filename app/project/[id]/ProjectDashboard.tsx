@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Document, Paragraph, TextRun, HeadingLevel, Packer } from 'docx'
-import Logo from '@/components/ui/Logo'
 import FrameworkDiagram, { type DiagramTheory } from '@/components/ui/FrameworkDiagram'
 import UnlockSlot from '@/components/paywall/UnlockSlot'
 import type { UnlockInfo } from '@/lib/pricing'
@@ -145,13 +144,11 @@ export default function ProjectDashboard({ projectId, ctx, theories, isComplete,
 
         {/* Header */}
         <div style={s.header}>
-          <Logo size="sm" />
           <div style={s.headerActions}>
             {accessUntil && <span style={s.accessUntil}>Access until {accessUntil}</span>}
             {isComplete && (
               <a href={`/project/${projectId}/export`} style={s.exportLink}>Export full proposal →</a>
             )}
-            <a href="/projects" style={s.projectsLink}>← My projects</a>
           </div>
         </div>
 
@@ -747,7 +744,7 @@ const s: Record<string, React.CSSProperties> = {
   page:       { minHeight: '100vh', background: 'var(--paper)', padding: '2rem 1rem 5rem' },
   container:  { maxWidth: '680px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '0' },
 
-  header:     { display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' },
+  header:     { display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginBottom: '1.25rem' },
   headerActions:{ display: 'flex', alignItems: 'center', gap: '1rem' },
   projectsLink: { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
   exportLink:   { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },

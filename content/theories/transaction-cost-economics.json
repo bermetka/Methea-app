@@ -1,0 +1,387 @@
+{
+  "theory_id": null,
+  "library_name": "Transaction cost economics",
+  "slug": "transaction-cost-economics",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Oliver E. Williamson"
+    ],
+    "year": 1981,
+    "title": "The Economics of Organization: The Transaction Cost Approach",
+    "type": "article",
+    "venue": "American Journal of Sociology",
+    "doi": "10.1086/227496",
+    "openalex_id": "W1972698480",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1972698480",
+  "core_idea": "Firms and markets are alternative ways of organizing transactions, and each has costs: searching, negotiating, monitoring and enforcing agreements. Because people are boundedly rational and may act opportunistically, transactions that involve specific assets, uncertainty and frequent exchange are often better organized inside a firm (or by close contracts) than on the open market.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why does a firm make something itself rather than buy it (make-or-buy), or choose a certain contract or alliance?",
+    "How do asset specificity, uncertainty and frequency shape governance choices?",
+    "Typical data: firm-level surveys, contracts, case studies of outsourcing or supply relationships."
+  ],
+  "common_mistakes": [
+    "Using 'transaction costs' loosely for any cost; the theory is about the costs of governing exchange.",
+    "Ignoring asset specificity, the theory's central variable.",
+    "Treating opportunism as a claim that everyone always cheats; it is an assumption that some may."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Ronald H. Coase"
+        ],
+        "year": 1937,
+        "title": "The Nature of the Firm",
+        "type": "article",
+        "venue": "Economica",
+        "doi": "10.1111/j.1468-0335.1937.tb00002.x",
+        "openalex_id": "W2015930340",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Asks why firms exist at all: using the market has costs."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Benjamin Klein",
+          "Robert Gunn Crawford",
+          "Armen A. Alchian"
+        ],
+        "year": 1978,
+        "title": "Vertical Integration, Appropriable Rents, and the Competitive Contracting Process",
+        "type": "article",
+        "venue": "The Journal of Law and Economics",
+        "doi": "10.1086/466922",
+        "openalex_id": "W2043593255",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Specific assets create appropriable rents, which pushes towards vertical integration."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Oliver E. Williamson"
+        ],
+        "year": 2007,
+        "title": "The Economic Institutions of Capitalism. Firms, Markets, Relational Contracting",
+        "type": "book-chapter",
+        "venue": "Gabler eBooks",
+        "doi": "10.1007/978-3-8349-9320-5_6",
+        "openalex_id": "W2166814848",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Later printing of the 1985 book.",
+        "original_year": 1985
+      },
+      "adds": "The full framework: bounded rationality, opportunism, asset specificity."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Oliver E. Williamson"
+        ],
+        "year": 1991,
+        "title": "Comparative Economic Organization: The Analysis of Discrete Structural Alternatives",
+        "type": "article",
+        "venue": "Administrative Science Quarterly",
+        "doi": "10.2307/2393356",
+        "openalex_id": "W2109280325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Compares markets, hybrids and hierarchies as discrete structural alternatives."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Hybrid governance",
+      "summary": "Alliances, long-term contracts and other forms between market and hierarchy.",
+      "defining_work": {
+        "authors": [
+          "Oliver E. Williamson"
+        ],
+        "year": 1991,
+        "title": "Comparative Economic Organization: The Analysis of Discrete Structural Alternatives",
+        "type": "article",
+        "venue": "Administrative Science Quarterly",
+        "doi": "10.2307/2393356",
+        "openalex_id": "W2109280325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "One of the leading perspectives in management and organization studies, with a large empirical literature.",
+      "source": {
+        "authors": [
+          "Robert J. David",
+          "Shin‐Kap Han"
+        ],
+        "year": 2003,
+        "title": "A systematic assessment of the empirical support for transaction cost economics",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.359",
+        "openalex_id": "W2006722299",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Offers clear, testable predictions about governance choices.",
+      "source": {
+        "authors": [
+          "Howard Shelanski",
+          "Peter G. Klein"
+        ],
+        "year": 1995,
+        "title": "Empirical Research in Transaction Cost Economics: A Review and Assessment",
+        "type": "article",
+        "venue": "The Journal of Law Economics and Organization",
+        "doi": "10.1093/oxfordjournals.jleo.a036875",
+        "openalex_id": "W2127761399",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Its assumption of opportunism can become self-fulfilling, so prescriptions drawn from it may be bad for practice.",
+      "source": {
+        "authors": [
+          "Sumantra Ghoshal",
+          "Peter Moran"
+        ],
+        "year": 1996,
+        "title": "Bad for Practice: A Critique of the Transaction Cost Theory",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1996.9602161563",
+        "openalex_id": "W2021840847",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Economic action is embedded in social relations; under- and over-socialized views both miss this.",
+      "source": {
+        "authors": [
+          "Mark S. Granovetter"
+        ],
+        "year": 1985,
+        "title": "Economic Action and Social Structure: The Problem of Embeddedness",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/228311",
+        "openalex_id": "W3022339544",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Empirical support is more mixed than often claimed.",
+      "source": {
+        "authors": [
+          "Robert J. David",
+          "Shin‐Kap Han"
+        ],
+        "year": 2003,
+        "title": "A systematic assessment of the empirical support for transaction cost economics",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.359",
+        "openalex_id": "W2006722299",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Oliver E. Williamson"
+        ],
+        "year": 1981,
+        "title": "The Economics of Organization: The Transaction Cost Approach",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/227496",
+        "openalex_id": "W1972698480",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A compact statement of the approach for sociologists and organization scholars.",
+      "reading_question": "Which transaction in your study is being governed, and what are its asset specificity, uncertainty and frequency?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Oliver E. Williamson"
+        ],
+        "year": 1991,
+        "title": "Comparative Economic Organization: The Analysis of Discrete Structural Alternatives",
+        "type": "article",
+        "venue": "Administrative Science Quarterly",
+        "doi": "10.2307/2393356",
+        "openalex_id": "W2109280325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The comparative logic of markets, hybrids and hierarchies.",
+      "reading_question": "Which governance alternatives were realistically available in your case?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Robert J. David",
+          "Shin‐Kap Han"
+        ],
+        "year": 2003,
+        "title": "A systematic assessment of the empirical support for transaction cost economics",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.359",
+        "openalex_id": "W2006722299",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A systematic check of the evidence across hundreds of tests.",
+      "reading_question": "Which predictions are well supported, and which are you relying on?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "transaction cost economics",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W3091809528",
+        "title": "Transaction Cost Theory: Past Progress, Current Challenges, and Suggestions for the Future",
+        "year": 2020,
+        "authors": [
+          "Ilya R. P. Cuypers",
+          "Jean‐François Hennart",
+          "Brian S. Silverman",
+          "Gökhan Ertug"
+        ],
+        "cited_by": 385,
+        "oa_url": "https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=7602&amp;amp;context=lkcsb_research"
+      },
+      {
+        "openalex_id": "W2994101749",
+        "title": "Blockchain technology and startup financing: A transaction cost economics perspective",
+        "year": 2019,
+        "authors": [
+          "Saurabh Ahluwalia",
+          "Raj V. Mahto",
+          "Maribel Guerrero"
+        ],
+        "cited_by": 311,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4229020385",
+        "title": "The costs of collaborative innovation",
+        "year": 2022,
+        "authors": [
+          "Roberto Vivona",
+          "Mehmet Akif Demircioğlu",
+          "David Bruce Audretsch"
+        ],
+        "cited_by": 182,
+        "oa_url": "https://doi.org/10.1007/s10961-022-09933-1"
+      },
+      {
+        "openalex_id": "W2995526978",
+        "title": "Is it too complex? The curious case of supply network complexity and focal firm innovation",
+        "year": 2019,
+        "authors": [
+          "Amalesh Sharma",
+          "Surya Pathak",
+          "Sourav Bikash Borah",
+          "Anirban Adhikary"
+        ],
+        "cited_by": 168,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2612174634",
+        "title": "Organizational theory for dissemination and implementation research",
+        "year": 2017,
+        "authors": [
+          "Sarah A. Birken",
+          "Alicia C. Bunger",
+          "Byron J. Powell",
+          "Kea L. Turner",
+          "Alecia Clary",
+          "Stacey L. Klaman"
+        ],
+        "cited_by": 156,
+        "oa_url": "https://doi.org/10.1186/s13012-017-0592-x"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

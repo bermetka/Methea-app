@@ -1,0 +1,344 @@
+{
+  "theory_id": null,
+  "library_name": "Cognitive dissonance theory",
+  "slug": "cognitive-dissonance-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Léon Festinger"
+    ],
+    "year": 1957,
+    "title": "A Theory of Cognitive Dissonance",
+    "type": "book",
+    "venue": "Stanford University Press eBooks",
+    "doi": "10.1515/9781503620766",
+    "openalex_id": "W4300107936",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W4300107936",
+  "core_idea": "Holding two inconsistent cognitions (beliefs, attitudes, knowledge of one's own behaviour) creates an unpleasant state, dissonance, that people are motivated to reduce. They do it by changing a belief, adding justifying thoughts, or changing behaviour. A classic finding: people paid little to argue for something come to believe it more than people paid a lot.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do people justify choices, keep beliefs despite contrary evidence, or change attitudes after acting?",
+    "How do consumers, voters or professionals deal with inconsistency between values and actions?",
+    "Typical data: experiments, surveys on attitudes before and after decisions, interviews on justification."
+  ],
+  "common_mistakes": [
+    "Using 'dissonance' for any discomfort or disagreement.",
+    "Not showing an actual inconsistency between cognitions the person holds.",
+    "Ignoring the later revisions (self-consistency, self-affirmation, aversive consequences)."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Léon Festinger",
+          "J. Merrill Carlsmith"
+        ],
+        "year": 1959,
+        "title": "Cognitive consequences of forced compliance.",
+        "type": "article",
+        "venue": "Journal of Abnormal & Social Psychology",
+        "doi": "10.1037/h0041593",
+        "openalex_id": "W2017680376",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The forced-compliance experiment: insufficient justification leads to attitude change."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Joel Cooper",
+          "Russell H. Fázio"
+        ],
+        "year": 1984,
+        "title": "A New Look at Dissonance Theory",
+        "type": "book-chapter",
+        "venue": "Advances in experimental social psychology",
+        "doi": "10.1016/s0065-2601(08)60121-5",
+        "openalex_id": "W1584033246",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Dissonance arises from responsibility for aversive consequences, not inconsistency alone."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Andrew J. Elliot",
+          "Patricia G. Devine"
+        ],
+        "year": 1994,
+        "title": "On the motivational nature of cognitive dissonance: Dissonance as psychological discomfort.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.67.3.382",
+        "openalex_id": "W2123716662",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Shows dissonance is experienced as psychological discomfort."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Self-affirmation",
+      "summary": "Affirming other important values can reduce the need to resolve dissonance.",
+      "defining_work": {
+        "authors": [
+          "Claude M. Steele"
+        ],
+        "year": 1988,
+        "title": "The Psychology of Self-Affirmation: Sustaining the Integrity of the Self",
+        "type": "book-chapter",
+        "venue": "Advances in experimental social psychology",
+        "doi": "10.1016/s0065-2601(08)60229-4",
+        "openalex_id": "W1935421882",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Fifty years of research and revisions, with continued support for the original theory.",
+      "source": {
+        "authors": [
+          "Eddie Harmon‐Jones",
+          "Cindy Harmon‐Jones"
+        ],
+        "year": 2007,
+        "title": "Cognitive Dissonance Theory After 50 Years of Development",
+        "type": "article",
+        "venue": "Zeitschrift für Sozialpsychologie",
+        "doi": "10.1024/0044-3514.38.1.7",
+        "openalex_id": "W2161028505",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Evidence that dissonance is a real state of psychological discomfort, as the theory claims.",
+      "source": {
+        "authors": [
+          "Andrew J. Elliot",
+          "Patricia G. Devine"
+        ],
+        "year": 1994,
+        "title": "On the motivational nature of cognitive dissonance: Dissonance as psychological discomfort.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.67.3.382",
+        "openalex_id": "W2123716662",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Many dissonance findings can be explained as self-perception: people infer their attitudes from their behaviour, without any aversive state.",
+      "source": {
+        "authors": [
+          "Daryl J. Bem"
+        ],
+        "year": 1967,
+        "title": "Self-perception: An alternative interpretation of cognitive dissonance phenomena.",
+        "type": "article",
+        "venue": "Psychological Review",
+        "doi": "10.1037/h0024835",
+        "openalex_id": "W2138612226",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Inconsistency alone may not be enough: dissonance may require feeling responsible for aversive consequences.",
+      "source": {
+        "authors": [
+          "Joel Cooper",
+          "Russell H. Fázio"
+        ],
+        "year": 1984,
+        "title": "A New Look at Dissonance Theory",
+        "type": "book-chapter",
+        "venue": "Advances in experimental social psychology",
+        "doi": "10.1016/s0065-2601(08)60121-5",
+        "openalex_id": "W1584033246",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Léon Festinger"
+        ],
+        "year": 1957,
+        "title": "A Theory of Cognitive Dissonance",
+        "type": "book",
+        "venue": "Stanford University Press eBooks",
+        "doi": "10.1515/9781503620766",
+        "openalex_id": "W4300107936",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding book.",
+      "reading_question": "What two cognitions are in conflict for the people you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Léon Festinger",
+          "J. Merrill Carlsmith"
+        ],
+        "year": 1959,
+        "title": "Cognitive consequences of forced compliance.",
+        "type": "article",
+        "venue": "Journal of Abnormal & Social Psychology",
+        "doi": "10.1037/h0041593",
+        "openalex_id": "W2017680376",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The classic experiment; short.",
+      "reading_question": "How does justification work in your setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Eddie Harmon‐Jones",
+          "Cindy Harmon‐Jones"
+        ],
+        "year": 2007,
+        "title": "Cognitive Dissonance Theory After 50 Years of Development",
+        "type": "article",
+        "venue": "Zeitschrift für Sozialpsychologie",
+        "doi": "10.1024/0044-3514.38.1.7",
+        "openalex_id": "W2161028505",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A review of the revisions and where the theory stands.",
+      "reading_question": "Which version of the theory are you using?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "cognitive dissonance theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2737872961",
+        "title": "Confirmation Bias, Ingroup Bias, and Negativity Bias in Selective Exposure to Political Information",
+        "year": 2017,
+        "authors": [
+          "Silvia Knobloch‐Westerwick",
+          "Cornelia Mothes",
+          "Nick Polavin"
+        ],
+        "cited_by": 391,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2767403522",
+        "title": "Dealing with dissonance: A review of cognitive dissonance reduction",
+        "year": 2017,
+        "authors": [
+          "April L. McGrath"
+        ],
+        "cited_by": 350,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2520591232",
+        "title": "A Review of Cognitive Dissonance Theory in Management Research",
+        "year": 2016,
+        "authors": [
+          "Amanda Sophia Hinojosa",
+          "William L. Gardner",
+          "H. Jack Walker",
+          "Claudia C. Cogliser",
+          "Daniel P. Gullifor"
+        ],
+        "cited_by": 305,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2602441985",
+        "title": "Sustainability of the sharing economy in question: When second-hand peer-to-peer platforms stimulate indulgent consumption",
+        "year": 2017,
+        "authors": [
+          "Béatrice Parguel",
+          "Renaud Lunardo",
+          "Florence Benoît-Moreau"
+        ],
+        "cited_by": 260,
+        "oa_url": "https://basepub.dauphine.fr/handle/123456789/17862"
+      },
+      {
+        "openalex_id": "W2280465155",
+        "title": "Determinants of negative word-of-mouth communication using social networking sites",
+        "year": 2016,
+        "authors": [
+          "Makam S. Balaji",
+          "Kok Wei Khong",
+          "Alain Yee‐Loong Chong"
+        ],
+        "cited_by": 255,
+        "oa_url": "https://doi.org/10.1016/j.im.2015.12.002"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

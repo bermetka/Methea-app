@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation'
-import Logo from '@/components/ui/Logo'
 import GenerationError from '@/components/ui/GenerationError'
 import { createClient } from '@/lib/supabase/server'
 import { generateMethodologyChain } from '@/lib/prompts/methodology'
@@ -55,7 +54,6 @@ export default async function MethodologyPage({ params }: { params: { id: string
     return (
       <main style={styles.page}>
         <div style={styles.container}>
-          <Logo size="sm" />
           <ViewOnlyNotice
             projectId={params.id}
             unlock={unlock}
@@ -109,7 +107,6 @@ export default async function MethodologyPage({ params }: { params: { id: string
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Logo size="sm" />
         {isOutdated && (
           <div style={styles.reviewBanner}>
             <span style={styles.reviewBadge}>⚠ Review changes</span>

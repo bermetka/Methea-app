@@ -1,0 +1,297 @@
+{
+  "theory_id": null,
+  "library_name": "Self-categorization theory",
+  "slug": "self-categorization-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "John C. Turner"
+    ],
+    "year": 1987,
+    "title": "Rediscovering the Social Group",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W24698601",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1978493498",
+  "core_idea": "People can see themselves as unique individuals or as interchangeable members of a group, depending on context. When a social category becomes salient, people define themselves in group terms (depersonalization) and take on the group's norms, which explains group behaviour, conformity, stereotyping and leadership.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "When and why do people act as group members rather than as individuals?",
+    "How do context and comparison make a group identity salient?",
+    "Typical data: experiments, surveys, discourse analysis."
+  ],
+  "common_mistakes": [
+    "Treating it as the same theory as social identity theory.",
+    "Assuming one identity is always active; salience depends on context.",
+    "Treating stereotypes only as errors; the theory sees them as context-dependent judgements."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "John C. Turner",
+          "Penélope J. Oakes",
+          "S. Alexander Haslam",
+          "Craig McGarty"
+        ],
+        "year": 1994,
+        "title": "Self and Collective: Cognition and Social Context",
+        "type": "article",
+        "venue": "Personality and Social Psychology Bulletin",
+        "doi": "10.1177/0146167294205002",
+        "openalex_id": "W1986357892",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The self is flexible and context-dependent, shaped by social context."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Penélope J. Oakes",
+          "S. Alexander Haslam",
+          "John C. Turner"
+        ],
+        "year": 1994,
+        "title": "Stereotyping and Social Reality",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1728918544",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Stereotyping as a normal, context-sensitive process."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Social identity approach to leadership",
+      "summary": "Leaders as group prototypes.",
+      "defining_work": {
+        "authors": [
+          "S. Alexander Haslam",
+          "Stephen David Reicher",
+          "Michael J. Platow"
+        ],
+        "year": 2020,
+        "title": "The New Psychology of Leadership",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781351108232",
+        "openalex_id": "W3141814673",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2020 second edition.",
+        "original_year": 2011
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Part of a highly influential approach to group processes.",
+      "source": {
+        "authors": [
+          "Matthew J. Hornsey"
+        ],
+        "year": 2008,
+        "title": "Social Identity Theory and Self‐categorization Theory: A Historical Review",
+        "type": "article",
+        "venue": "Social and Personality Psychology Compass",
+        "doi": "10.1111/j.1751-9004.2007.00066.x",
+        "openalex_id": "W2032497511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Often misinterpreted and blended with social identity theory.",
+      "source": {
+        "authors": [
+          "Matthew J. Hornsey"
+        ],
+        "year": 2008,
+        "title": "Social Identity Theory and Self‐categorization Theory: A Historical Review",
+        "type": "article",
+        "venue": "Social and Personality Psychology Compass",
+        "doi": "10.1111/j.1751-9004.2007.00066.x",
+        "openalex_id": "W2032497511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "John C. Turner"
+        ],
+        "year": 1987,
+        "title": "Rediscovering the Social Group",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W24698601",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding book.",
+      "reading_question": "Which categories become salient for your participants, and in what contexts?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "John C. Turner",
+          "Penélope J. Oakes",
+          "S. Alexander Haslam",
+          "Craig McGarty"
+        ],
+        "year": 1994,
+        "title": "Self and Collective: Cognition and Social Context",
+        "type": "article",
+        "venue": "Personality and Social Psychology Bulletin",
+        "doi": "10.1177/0146167294205002",
+        "openalex_id": "W1986357892",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A short statement of the flexible self.",
+      "reading_question": "How does context change identity in your setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Matthew J. Hornsey"
+        ],
+        "year": 2008,
+        "title": "Social Identity Theory and Self‐categorization Theory: A Historical Review",
+        "type": "article",
+        "venue": "Social and Personality Psychology Compass",
+        "doi": "10.1111/j.1751-9004.2007.00066.x",
+        "openalex_id": "W2032497511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A historical review of the social identity approach.",
+      "reading_question": "Which claims belong to self-categorization theory specifically?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "self-categorization theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2831437479",
+        "title": "The social identity approach to disability: Bridging disability studies and psychological science.",
+        "year": 2018,
+        "authors": [
+          "Thomas P. Dirth",
+          "Nyla R. Branscombe"
+        ],
+        "cited_by": 136,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2601828035",
+        "title": "A Social Identity Approach to Understanding and Promoting Physical Activity",
+        "year": 2017,
+        "authors": [
+          "Mark R. Stevens",
+          "Tim Rees",
+          "Pete Coffee",
+          "Niklas K. Steffens",
+          "S. Alexander Haslam",
+          "Remco C. J. Polman"
+        ],
+        "cited_by": 135,
+        "oa_url": "https://doi.org/10.1007/s40279-017-0720-4"
+      },
+      {
+        "openalex_id": "W2900771576",
+        "title": "Social identities in the policy process",
+        "year": 2018,
+        "authors": [
+          "Johanna Hornung",
+          "Nils C. Bandelow",
+          "Colette Sophie Vogeler"
+        ],
+        "cited_by": 131,
+        "oa_url": "https://doi.org/10.1007/s11077-018-9340-6"
+      },
+      {
+        "openalex_id": "W2736512919",
+        "title": "“Say Instagram, Kids!”: Examining Sharenting and Children's Digital Representations on Instagram",
+        "year": 2017,
+        "authors": [
+          "Grace Yiseul Choi",
+          "Jennifer Lewallen"
+        ],
+        "cited_by": 118,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2802667787",
+        "title": "Group-based physical activity for older adults (GOAL) randomized controlled trial: Exercise adherence outcomes.",
+        "year": 2018,
+        "authors": [
+          "Mark R. Beauchamp",
+          "Geralyn R. Ruissen",
+          "William L. Dunlop",
+          "Paul Andrew Estabrooks",
+          "Samantha M. Harden",
+          "Svenja A. Wolf"
+        ],
+        "cited_by": 113,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Turner (1985) had no clean record. Only one verified critique: reviewer to add a second."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

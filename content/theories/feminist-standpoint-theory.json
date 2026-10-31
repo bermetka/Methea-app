@@ -1,0 +1,361 @@
+{
+  "theory_id": null,
+  "library_name": "Feminist standpoint theory",
+  "slug": "feminist-standpoint-theory",
+  "status": "beta",
+  "original": {
+    "authors": [
+      "Sandra Harding"
+    ],
+    "year": 2016,
+    "title": "Whose Science? Whose Knowledge?",
+    "type": "book",
+    "venue": "Cornell University Press eBooks",
+    "doi": "10.7591/9781501712951",
+    "openalex_id": "W2078186038",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "Record dated 2016 (later printing of the 1991 book).",
+    "original_year": 1991
+  },
+  "citation_anchor_openalex_id": "W2078186038",
+  "core_idea": "Knowledge is shaped by the social position of those who produce it. Starting research from the lives of marginalized groups, such as women, can reveal aspects of social relations that are invisible from dominant positions. Harding argues this yields 'strong objectivity': more objective knowledge, because researchers examine their own social location instead of claiming a view from nowhere.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do women or other marginalized groups experience and understand an institution, a policy or a workplace?",
+    "Whose knowledge counts in a field, and what is missed when research starts from dominant groups?",
+    "Typical data: in-depth interviews, life histories, institutional ethnography, participatory methods."
+  ],
+  "common_mistakes": [
+    "Claiming that being a woman automatically gives better knowledge. A standpoint is achieved through critical reflection, not given by identity.",
+    "Treating 'women' as one group without attention to race, class, ethnicity or location.",
+    "Using the term without addressing your own position as researcher."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Nancy C. M. Hartsock"
+        ],
+        "year": 2003,
+        "title": "The Feminist Standpoint: Developing the Ground for a Specifically Feminist Historical Materialism",
+        "type": "book-chapter",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-94-010-0101-4_15",
+        "openalex_id": "W4242724764",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2003 reprint of the 1983 chapter.",
+        "original_year": 1983
+      },
+      "adds": "Grounds a feminist standpoint in women's material, everyday activity, by analogy with Marxist analysis of labour."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Patrícia Hill Collins"
+        ],
+        "year": 1986,
+        "title": "Learning from the Outsider Within: The Sociological Significance of Black Feminist Thought",
+        "type": "article",
+        "venue": "Social Problems",
+        "doi": "10.2307/800672",
+        "openalex_id": "W2061732992",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Black women's 'outsider within' position as a distinctive source of sociological insight."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Donna Haraway"
+        ],
+        "year": 1988,
+        "title": "Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective",
+        "type": "article",
+        "venue": "Feminist Studies",
+        "doi": "10.2307/3178066",
+        "openalex_id": "W3146083582",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Situated knowledges: objectivity as partial, located and accountable perspective."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Black feminist thought",
+      "summary": "Knowledge from the intersecting positions of race, gender and class.",
+      "defining_work": {
+        "authors": [
+          "Patrícia Hill Collins"
+        ],
+        "year": 1986,
+        "title": "Learning from the Outsider Within: The Sociological Significance of Black Feminist Thought",
+        "type": "article",
+        "venue": "Social Problems",
+        "doi": "10.2307/800672",
+        "openalex_id": "W2061732992",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Situated knowledges",
+      "summary": "All knowledge is partial and located; objectivity means being accountable for one's location.",
+      "defining_work": {
+        "authors": [
+          "Donna Haraway"
+        ],
+        "year": 1988,
+        "title": "Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective",
+        "type": "article",
+        "venue": "Feminist Studies",
+        "doi": "10.2307/3178066",
+        "openalex_id": "W3146083582",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives researchers a principled argument for starting from marginalized lives and for reflecting on their own position.",
+      "source": {
+        "authors": [
+          "Sandra Harding"
+        ],
+        "year": 2016,
+        "title": "Whose Science? Whose Knowledge?",
+        "type": "book",
+        "venue": "Cornell University Press eBooks",
+        "doi": "10.7591/9781501712951",
+        "openalex_id": "W2078186038",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Record dated 2016 (later printing of the 1991 book).",
+        "original_year": 1991
+      }
+    },
+    {
+      "point": "Has been clarified and refined over decades and moved closer to feminist empiricism in useful ways.",
+      "source": {
+        "authors": [
+          "Kristen K. Intemann"
+        ],
+        "year": 2010,
+        "title": "25 Years of Feminist Empiricism and Standpoint Theory: Where Are We Now?",
+        "type": "article",
+        "venue": "Hypatia",
+        "doi": "10.1111/j.1527-2001.2010.01138.x",
+        "openalex_id": "W2150575490",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "If the multiplicity of standpoints is taken to its conclusion, coherent analysis becomes impossible, and it is unclear how to judge between standpoints. Hekman still argues the theory is worth keeping.",
+      "source": {
+        "authors": [
+          "Susan J. Hekman"
+        ],
+        "year": 1997,
+        "title": "Truth and Method: Feminist Standpoint Theory Revisited",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/495159",
+        "openalex_id": "W2000460168",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "checked_full_text": true
+    },
+    {
+      "point": "The line between standpoint theory and feminist empiricism has become unclear.",
+      "source": {
+        "authors": [
+          "Kristen K. Intemann"
+        ],
+        "year": 2010,
+        "title": "25 Years of Feminist Empiricism and Standpoint Theory: Where Are We Now?",
+        "type": "article",
+        "venue": "Hypatia",
+        "doi": "10.1111/j.1527-2001.2010.01138.x",
+        "openalex_id": "W2150575490",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Sandra Harding"
+        ],
+        "year": 2016,
+        "title": "Whose Science? Whose Knowledge?",
+        "type": "book",
+        "venue": "Cornell University Press eBooks",
+        "doi": "10.7591/9781501712951",
+        "openalex_id": "W2078186038",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Record dated 2016 (later printing of the 1991 book).",
+        "original_year": 1991
+      },
+      "chapter": null,
+      "why_read": "Where 'strong objectivity' is developed.",
+      "reading_question": "What does your research see if it starts from the lives of the least powerful people in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Donna Haraway"
+        ],
+        "year": 1988,
+        "title": "Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective",
+        "type": "article",
+        "venue": "Feminist Studies",
+        "doi": "10.2307/3178066",
+        "openalex_id": "W3146083582",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A widely cited essay on objectivity as situated knowledge.",
+      "reading_question": "How will you account for your own position in this research?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Kristen K. Intemann"
+        ],
+        "year": 2010,
+        "title": "25 Years of Feminist Empiricism and Standpoint Theory: Where Are We Now?",
+        "type": "article",
+        "venue": "Hypatia",
+        "doi": "10.1111/j.1527-2001.2010.01138.x",
+        "openalex_id": "W2150575490",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Where the debate stands after 25 years.",
+      "reading_question": "Is your approach closer to standpoint theory or to feminist empiricism, and why?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "feminist standpoint theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2797609275",
+        "title": "SITUATING FEMINIST EPISTEMOLOGY",
+        "year": 2018,
+        "authors": [
+          "Natalie Alana Ashton",
+          "Robin McKenna"
+        ],
+        "cited_by": 41,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4311322240",
+        "title": "\"That's Above My Paygrade\": Woke Excuses for Ignorance",
+        "year": 2022,
+        "authors": [
+          "Emily C. R. Tilton"
+        ],
+        "cited_by": 23,
+        "oa_url": "https://doi.org/10.3998/phimp.2796"
+      },
+      {
+        "openalex_id": "W2899067435",
+        "title": "Technology, Gender, and Climate Change: A Feminist Examination of Climate Technologies",
+        "year": 2018,
+        "authors": [
+          "Tina Sikka"
+        ],
+        "cited_by": 19,
+        "oa_url": "http://dx.doi.org/10.3390/soc8040109"
+      },
+      {
+        "openalex_id": "W2805423761",
+        "title": "Feminist Epistemology, Feminist Methodology, and the Study of Gender",
+        "year": 2018,
+        "authors": [
+          "Joey Sprague"
+        ],
+        "cited_by": 9,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2990746314",
+        "title": "Scientific Perspectives, Feminist Standpoints, and Non-Silly Relativism",
+        "year": 2019,
+        "authors": [
+          "Natalie Alana Ashton"
+        ],
+        "cited_by": 8,
+        "oa_url": "https://doi.org/10.1007/978-3-030-27041-4_5"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Smith (1987), Harding (1992, 2004) and Longino (1993) had no clean records and are left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: Truth and Method: Feminist Standpoint Th (founder supplied PDFs, 31 Oct 2026)."
+    }
+  ]
+}

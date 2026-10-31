@@ -1,6 +1,5 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import Logo from '@/components/ui/Logo'
 import { accessOptions } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
@@ -51,7 +50,6 @@ export default async function AnalysisPage({ params }: { params: { id: string } 
       <div style={s.container}>
         {/* Header */}
         <div style={s.header}>
-          <Logo size="sm" />
           <a href={`/project/${params.id}`} style={s.backLink}>← Back to project</a>
         </div>
 
@@ -107,7 +105,7 @@ const s: Record<string, React.CSSProperties> = {
   page:      { minHeight: '100vh', background: 'var(--paper)', padding: '2rem 1rem 5rem' },
   container: { maxWidth: '680px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.25rem' },
 
-  header:    { display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' },
+  header:    { display: 'flex', alignItems: 'center', justifyContent: 'flex-end', marginBottom: '0.5rem' },
   backLink:  { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
 
   eyebrow:   { fontSize: '0.625rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' as const, color: '#8C8A82' },
