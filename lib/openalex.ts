@@ -4,6 +4,16 @@ import type { VerificationStatus } from '@/components/ui/StatusChip'
 const OPENALEX_BASE = 'https://api.openalex.org'
 const MAILTO = 'bermet.ak@gmail.com'
 
+/**
+ * Query params every OpenAlex call carries: the polite-pool mailto and, when set, the
+ * API key. Since 2026 OpenAlex meters usage per day ($0.10 without a key, $1 with a free
+ * key); single-work lookups are free, list calls and searches are not.
+ */
+export function openAlexAuth(): string {
+  const key = process.env.OPENALEX_API_KEY
+  return key ? `mailto=${MAILTO}&api_key=${encodeURIComponent(key)}` : `mailto=${MAILTO}`
+}
+
 export async function verifyTheory(theory: Theory): Promise<VerificationStatus> {
   // Pre-DOI classics — verified by inclusion in our curated library
   if (!theory.doi || (theory.year !== null && theory.year < 1995)) {
@@ -11,7 +21,7 @@ export async function verifyTheory(theory: Theory): Promise<VerificationStatus> 
   }
 
   try {
-    const url = `${OPENALEX_BASE}/works/doi:${encodeURIComponent(theory.doi)}?mailto=${MAILTO}`
+    const url = `${OPENALEX_BASE}/works/doi:${encodeURIComponent(theory.doi)}?${openAlexAuth()}`
     const res = await fetch(url, { next: { revalidate: 86400 } })
 
     if (!res.ok) return { kind: 'unverified' }
@@ -69,7 +79,7 @@ export async function verifyCitation(input: { doi?: string; text?: string }): Pr
   try {
     if (doi) {
       const res = await fetch(
-        `${OPENALEX_BASE}/works/doi:${encodeURIComponent(doi)}?mailto=${MAILTO}`,
+        `${OPENALEX_BASE}/works/doi:${encodeURIComponent(doi)}?${openAlexAuth()}`,
         { next: { revalidate: 86400 } }
       )
       if (res.ok) {
@@ -80,7 +90,7 @@ export async function verifyCitation(input: { doi?: string; text?: string }): Pr
     const text = (input.text ?? '').trim()
     if (text) {
       const res = await fetch(
-        `${OPENALEX_BASE}/works?search=${encodeURIComponent(text)}&per-page=1&mailto=${MAILTO}`,
+        `${OPENALEX_BASE}/works?search=${encodeURIComponent(text)}&per-page=1&${openAlexAuth()}`,
         { next: { revalidate: 86400 } }
       )
       if (res.ok) {

@@ -1,3 +1,4 @@
+import { openAlexAuth } from '@/lib/openalex'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { generateRelationshipLabels, generateFrameworkNarrative } from '@/lib/prompts/framework'
@@ -148,7 +149,7 @@ export default async function FrameworkPage({ params }: { params: { id: string }
         if (c.doi) {
           try {
             const res = await fetch(
-              `https://api.openalex.org/works/doi:${encodeURIComponent(c.doi)}?mailto=bermet.ak@gmail.com`,
+              `https://api.openalex.org/works/doi:${encodeURIComponent(c.doi)}?${openAlexAuth()}`,
               { next: { revalidate: 86400 } }
             )
             const data = await res.json()
