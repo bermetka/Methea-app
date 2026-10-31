@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Postcolonial theory (research applications)",
   "slug": "postcolonial-theory",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Said, Edward W."
@@ -49,7 +49,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": null
+        "oa_url": null,
+        "original_year": 1984
       },
       "adds": "Shows how Western feminist scholarship produced a single 'Third World woman' through its own categories."
     },
@@ -69,7 +70,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2012 Routledge edition of the 1994 book."
+        "note": "2012 Routledge edition of the 1994 book.",
+        "original_year": 1994
       },
       "adds": "Hybridity, mimicry and the 'third space': colonial identities are mixed and unstable, not simple opposites."
     },
@@ -89,7 +91,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2008 edition of the 2000 book."
+        "note": "2008 edition of the 2000 book.",
+        "original_year": 2000
       },
       "adds": "European categories of thought are indispensable for studying the non-West and also inadequate for it."
     },
@@ -131,7 +134,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2008 reprint of the 2000 article."
+        "note": "2008 reprint of the 2000 article.",
+        "original_year": 2000
       }
     },
     {
@@ -170,7 +174,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2021 third edition of the 1999 book."
+        "note": "2021 third edition of the 1999 book.",
+        "original_year": 1999
       }
     }
   ],
@@ -190,7 +195,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": null
+        "oa_url": null,
+        "original_year": 1984
       }
     },
     {

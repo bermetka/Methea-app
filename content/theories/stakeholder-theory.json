@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Stakeholder theory",
   "slug": "stakeholder-theory",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "R. Edward Freeman"
@@ -17,7 +17,8 @@
     "verified": true,
     "verified_in": "openalex",
     "oa_url": null,
-    "note": "Cambridge reissue (2010) of the 1984 book."
+    "note": "Cambridge reissue (2010) of the 1984 book.",
+    "original_year": 1984
   },
   "citation_anchor_openalex_id": "W4242709221",
   "core_idea": "A firm should be managed with attention to all groups that affect or are affected by it (employees, customers, suppliers, communities, financiers), not only shareholders. Managing these relationships well is both a strategic necessity and a moral responsibility.",
@@ -214,7 +215,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "Cambridge reissue (2010) of the 1984 book."
+        "note": "Cambridge reissue (2010) of the 1984 book.",
+        "original_year": 1984
       },
       "chapter": null,
       "why_read": "The founding book.",

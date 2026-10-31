@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Grounded Theory",
   "slug": "grounded-theory",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Barney G. Glaser",
@@ -18,7 +18,8 @@
     "verified": true,
     "verified_in": "openalex",
     "oa_url": "https://www.taylorfrancis.com/books/9780203793206",
-    "note": "Record dated 2017 (Routledge reissue of the 1967 book)."
+    "note": "Record dated 2017 (Routledge reissue of the 1967 book).",
+    "original_year": 1967
   },
   "citation_anchor_openalex_id": "W1515587369",
   "core_idea": "A research methodology for building theory from data rather than testing existing theory. Researchers collect and analyse data at the same time, compare constantly between data and emerging categories, sample theoretically to develop categories, and stop when categories are saturated.",
@@ -69,7 +70,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": null
+        "oa_url": null,
+        "original_year": 1990
       },
       "adds": "A more structured, procedural version (Strauss & Corbin), which split the founders."
     }
@@ -172,7 +174,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": "http://www.qualitative-research.net/index.php/fqs/article/view/467"
+        "oa_url": "http://www.qualitative-research.net/index.php/fqs/article/view/467",
+        "original_year": 2005
       }
     },
     {
@@ -213,7 +216,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": "https://www.taylorfrancis.com/books/9780203793206",
-        "note": "Record dated 2017 (Routledge reissue of the 1967 book)."
+        "note": "Record dated 2017 (Routledge reissue of the 1967 book).",
+        "original_year": 1967
       },
       "chapter": "Chapters 1–3",
       "why_read": "The original argument for generating theory from data.",

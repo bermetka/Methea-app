@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Social capital theory",
   "slug": "social-capital-theory",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Pierre Bourdıeu"
@@ -17,7 +17,8 @@
     "verified": true,
     "verified_in": "openalex",
     "oa_url": null,
-    "note": "2002 reprint of the 1986 chapter."
+    "note": "2002 reprint of the 1986 chapter.",
+    "original_year": 1986
   },
   "citation_anchor_openalex_id": "W380575115",
   "core_idea": "Relationships are a resource. For Bourdieu, social capital is the resources a person can draw on through membership in a durable network; it can be converted into economic and cultural capital and helps reproduce class inequality. Coleman and Putnam later framed it as the trust, norms and networks that make cooperation and collective action easier.",
@@ -269,7 +270,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2002 reprint of the 1986 chapter."
+        "note": "2002 reprint of the 1986 chapter.",
+        "original_year": 1986
       },
       "chapter": null,
       "why_read": "Short; sets out social capital next to economic and cultural capital.",

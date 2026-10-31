@@ -125,7 +125,11 @@ answers by reading (not by asking AI). Methea never summarizes these works.
 Reviewer signs off in the verification log (name, date).
 
 ### Step 9 — Publish
-Statuses: `draft` → `verified` (machine pass) → `reviewed` (human pass) → `published`.
+Statuses: `draft` → `verified` (machine pass) → `beta` → `reviewed` (human pass) → `published`.
+
+`beta` (decided 31 Oct 2026): shown to students with the label "Draft guide, being checked…"
+and an error-report link. Used so students get the cards before founder review is done;
+the label goes when the card is `published`.
 Only `published` content shows in Gate 2. A theory without it shows the existing
 library summary and concepts, as today.
 

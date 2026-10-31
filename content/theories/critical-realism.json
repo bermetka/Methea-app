@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Critical realism",
   "slug": "critical-realism",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Roy Bhaskar"
@@ -17,7 +17,8 @@
     "verified": true,
     "verified_in": "openalex",
     "oa_url": null,
-    "note": "2013 Routledge edition of the 1975 book."
+    "note": "2013 Routledge edition of the 1975 book.",
+    "original_year": 1975
   },
   "citation_anchor_openalex_id": "W2101234667",
   "core_idea": "A philosophy of science, not a method. Reality exists independently of what we know about it and is layered: the real (structures and mechanisms), the actual (events) and the empirical (what we observe). Research aims to explain which mechanisms, in which conditions, produce the events we observe, while accepting that our knowledge is always fallible.",
@@ -50,7 +51,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2013 Routledge edition of the 1979 book."
+        "note": "2013 Routledge edition of the 1979 book.",
+        "original_year": 1979
       },
       "adds": "Extends the argument from natural to social science: social structures are real but depend on human activity."
     },
@@ -91,7 +93,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2019 edition of the 2002 book."
+        "note": "2019 edition of the 2002 book.",
+        "original_year": 2002
       },
       "adds": "Turns the philosophy into a research methodology for the social sciences."
     },
@@ -268,7 +271,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": null
+        "oa_url": null,
+        "original_year": 1975
       },
       "chapter": "Introduction",
       "why_read": "Dense, but the introduction states the layered ontology.",
@@ -313,7 +317,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2019 edition of the 2002 book."
+        "note": "2019 edition of the 2002 book.",
+        "original_year": 2002
       },
       "chapter": null,
       "why_read": "A full methodology textbook built on critical realism.",

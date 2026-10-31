@@ -39,11 +39,14 @@ function keyOf(w: { openalex_id: string | null; doi: string | null; title: strin
   return w.openalex_id ?? (w.doi ? `doi:${w.doi}` : `t:${norm(w.title)}`)
 }
 
-function cite(w: { authors: string[]; year: number | null }) {
+function cite(w: { authors: string[]; year: number | null; original_year?: number }) {
   const s = w.authors.map(a => (a.includes(',') ? a.split(',')[0] : a.split(' ').pop() ?? a).trim())
   const who = s.length > 2 ? `${s[0]} et al.` : s.join(' & ')
-  return `${who || 'Unknown'} (${w.year ?? 'n.d.'})`
+  // Classics: show the year of first publication, not the reprint the record describes.
+  return `${who || 'Unknown'} (${w.original_year ?? w.year ?? 'n.d.'})`
 }
+
+const FEEDBACK_EMAIL = process.env.NEXT_PUBLIC_FEEDBACK_EMAIL
 
 function Chip({ ok, title }: { ok: boolean; title: string }) {
   return (
@@ -60,7 +63,7 @@ function WorkLine({ w, children }: { w: CardWork | VerifiedWork; children?: Reac
     <div style={s.workLine}>
       <Chip ok={verified} title={verified ? 'Found in OpenAlex / Crossref' : 'Not found in OpenAlex or Crossref yet: check this source yourself'} />
       <div style={{ minWidth: 0 }}>
-        <span style={s.workCite}>{cite(w)}</span>{' '}
+        <span style={s.workCite} title={'original_year' in w && w.original_year && w.year ? `First published ${w.original_year}; this record is the ${w.year} edition` : undefined}>{cite(w)}</span>{' '}
         {href ? <a href={href} target="_blank" rel="noreferrer" style={s.workTitle}>{w.title}</a> : <span style={s.workTitleText}>{w.title}</span>}
         {w.oa_url && <span style={s.oaTag}>open access</span>}
         {children}
@@ -202,7 +205,13 @@ export default function Gate2View(p: Props) {
           <article key={t.id} style={s.card} aria-labelledby={`t-${t.id}`}>
             <div>
               <h2 id={`t-${t.id}`} style={s.cardTitle}>{t.name}</h2>
-              <p style={s.cardMeta}>{c ? cite(c.original) : `${t.author} (${t.year})`}{c?.status !== 'published' && c ? ' · draft content (preview only)' : ''}</p>
+              <p style={s.cardMeta}>{c ? cite(c.original) : `${t.author} (${t.year})`}</p>
+              {c && c.status !== 'published' && (
+                <p style={s.betaNote}>
+                  Draft guide, being checked by the Methea team. Sources are verified; wording may still change.
+                  {FEEDBACK_EMAIL && <> <a href={`mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(`Methea theory guide: ${t.name}`)}`} style={s.betaLink}>Spotted an error? Tell us</a></>}
+                </p>
+              )}
             </div>
 
             {t.whyItFits && (
@@ -387,6 +396,8 @@ const s: Record<string, React.CSSProperties> = {
   card:        { minWidth: 0, background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.875rem' },
   cardTitle:   { margin: 0, fontSize: '1.25rem', fontWeight: 600, color: 'var(--ink)', letterSpacing: '-0.015em' },
   cardMeta:    { margin: '0.125rem 0 0', fontSize: '0.8125rem', color: 'var(--pencil)' },
+  betaNote:    { margin: '0.375rem 0 0', fontSize: '0.75rem', color: 'var(--graphite)', background: 'var(--paper-deep)', padding: '0.25rem 0.5rem', borderRadius: 'var(--radius-sm)', width: 'fit-content' },
+  betaLink:    { color: 'var(--ink-blue)' },
   why:         { margin: 0, fontSize: '0.875rem', color: 'var(--graphite)', lineHeight: 1.6, borderLeft: '3px solid var(--marker-lime)', paddingLeft: '0.75rem' },
   body:        { margin: 0, fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.9375rem', lineHeight: 1.7, color: 'var(--ink)' },
   details:     { borderTop: '1px solid var(--stone-soft)', paddingTop: '0.625rem' },

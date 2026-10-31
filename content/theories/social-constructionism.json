@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Social constructionism",
   "slug": "social-constructionism",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Berger, Peter L.",
@@ -51,7 +51,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "Routledge reissue (2017) of the 1977 book."
+        "note": "Routledge reissue (2017) of the 1977 book.",
+        "original_year": 1977
       },
       "adds": "Treats social problems as claims-making activities: a problem exists when groups successfully define it as one."
     },
@@ -114,7 +115,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "Routledge reissue (2017) of the 1977 book."
+        "note": "Routledge reissue (2017) of the 1977 book.",
+        "original_year": 1977
       }
     },
     {

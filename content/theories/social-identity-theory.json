@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Social identity theory",
   "slug": "social-identity-theory",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Henri Tajfel",
@@ -18,7 +18,8 @@
     "verified": true,
     "verified_in": "openalex",
     "oa_url": null,
-    "note": "Reprint (2000) of the 1979 chapter."
+    "note": "Reprint (2000) of the 1979 chapter.",
+    "original_year": 1979
   },
   "citation_anchor_openalex_id": "W90970949",
   "core_idea": "Part of who we are comes from the groups we belong to. People sort themselves and others into groups, take on the group as part of their self-concept, and compare their group with others. Because a positive group identity supports self-esteem, people tend to favour their own group, even when groups are formed on trivial grounds.",
@@ -253,7 +254,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "Reprint (2000) of the 1979 chapter."
+        "note": "Reprint (2000) of the 1979 chapter.",
+        "original_year": 1979
       },
       "chapter": null,
       "why_read": "The founding statement of the theory; short and argued from experiments.",

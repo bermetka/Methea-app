@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Critical pedagogy",
   "slug": "critical-pedagogy",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Freire, Paulo"
@@ -48,7 +48,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2014 edition of the 1994 book."
+        "note": "2014 edition of the 1994 book.",
+        "original_year": 1994
       },
       "adds": "Engaged pedagogy: education as the practice of freedom, with attention to race and gender."
     },
@@ -132,7 +133,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2023 edition of the reader."
+        "note": "2023 edition of the reader.",
+        "original_year": 2003
       }
     },
     {

@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Capability approach",
   "slug": "capability-approach",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Amartya Kumar Sen"
@@ -17,7 +17,8 @@
     "verified": true,
     "verified_in": "openalex",
     "oa_url": null,
-    "note": "Record dated 2009 (later printing of the 1999 book)."
+    "note": "Record dated 2009 (later printing of the 1999 book).",
+    "original_year": 1999
   },
   "citation_anchor_openalex_id": "W1535803599",
   "core_idea": "Judge well-being and development by what people are actually able to do and to be (capabilities) and what they achieve (functionings), not only by income or resources. Two people with the same income may have very different real freedoms. For Sen, expanding freedom is both the main goal and the main means of development.",
@@ -245,7 +246,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": null
+        "oa_url": null,
+        "original_year": 1999
       },
       "chapter": "Introduction and Chapter 1, 'The perspective of freedom'",
       "why_read": "The core argument in Sen's own words.",

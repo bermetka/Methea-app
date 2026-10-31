@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Norm Localization",
   "slug": "norm-localization",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Amitav Acharya"
@@ -105,7 +105,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": null
+        "oa_url": null,
+        "original_year": 2016
       },
       "adds": "Post-conflict states show outcomes between resistance, compliance and localization."
     }
@@ -222,7 +223,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": null
+        "oa_url": null,
+        "original_year": 2016
       }
     }
   ],
@@ -285,7 +287,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": null
+        "oa_url": null,
+        "original_year": 2016
       },
       "chapter": null,
       "why_read": "Shows the range of outcomes and how to tell them apart.",

@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Experiential learning theory",
   "slug": "experiential-learning-theory",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "David Alan Kolb"
@@ -49,7 +49,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": "https://www.taylorfrancis.com/books/9781315237473",
-        "note": "2017 edition of the 1983 book."
+        "note": "2017 edition of the 1983 book.",
+        "original_year": 1983
       },
       "adds": "Reflection-in-action and reflection-on-action in professional practice."
     },
@@ -91,7 +92,8 @@
         "isbn": null,
         "verified": true,
         "verified_in": "openalex",
-        "oa_url": "https://www.taylorfrancis.com/books/9781315237473"
+        "oa_url": "https://www.taylorfrancis.com/books/9781315237473",
+        "original_year": 1983
       }
     }
   ],

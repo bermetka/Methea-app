@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Feminist standpoint theory",
   "slug": "feminist-standpoint-theory",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Sandra Harding"
@@ -17,7 +17,8 @@
     "verified": true,
     "verified_in": "openalex",
     "oa_url": null,
-    "note": "Record dated 2016 (later printing of the 1991 book)."
+    "note": "Record dated 2016 (later printing of the 1991 book).",
+    "original_year": 1991
   },
   "citation_anchor_openalex_id": "W2078186038",
   "core_idea": "Knowledge is shaped by the social position of those who produce it. Starting research from the lives of marginalized groups, such as women, can reveal aspects of social relations that are invisible from dominant positions. Harding argues this yields 'strong objectivity': more objective knowledge, because researchers examine their own social location instead of claiming a view from nowhere.",
@@ -49,7 +50,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2003 reprint of the 1983 chapter."
+        "note": "2003 reprint of the 1983 chapter.",
+        "original_year": 1983
       },
       "adds": "Grounds a feminist standpoint in women's material, everyday activity, by analogy with Marxist analysis of labour."
     },
@@ -149,7 +151,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "Record dated 2016 (later printing of the 1991 book)."
+        "note": "Record dated 2016 (later printing of the 1991 book).",
+        "original_year": 1991
       }
     },
     {
@@ -226,7 +229,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "Record dated 2016 (later printing of the 1991 book)."
+        "note": "Record dated 2016 (later printing of the 1991 book).",
+        "original_year": 1991
       },
       "chapter": null,
       "why_read": "Where 'strong objectivity' is developed.",

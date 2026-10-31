@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Self-categorization theory",
   "slug": "self-categorization-theory",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "John C. Turner"
@@ -96,7 +96,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "2020 second edition."
+        "note": "2020 second edition.",
+        "original_year": 2011
       }
     }
   ],

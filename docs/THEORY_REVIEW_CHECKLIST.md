@@ -1,8 +1,8 @@
 # Theory cards: review checklist
 
 *Generated 31 Oct 2026. All 42 library theories have a draft card in `content/theories/`.*
-Status of every card: `draft`. A card shows to students in production only after review,
-when its `status` is set to `published`. On preview and dev, drafts are visible inside Gate 2.
+Status of every card: `beta` (shown to students with a "being checked" label). After review set
+`"status": "published"` to remove the label. Years of classics show first publication (`original_year`).
 
 ## How to review a card
 1. Is the core idea correct and fair?

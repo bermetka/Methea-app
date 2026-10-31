@@ -8,6 +8,7 @@ import { THEORY_CARDS } from '@/content/theories'
 export interface CardWork {
   authors: string[]
   year: number | null
+  original_year?: number   // first publication, when the record is a later edition/reprint
   title: string
   type?: string | null
   venue?: string | null
@@ -23,7 +24,8 @@ export interface CardWork {
 export interface TheoryCardContent {
   library_name: string
   slug: string
-  status: 'draft' | 'verified' | 'reviewed' | 'published'
+  // 'beta' = shown to students with a 'being checked' label; 'published' = founder-reviewed
+  status: 'draft' | 'verified' | 'reviewed' | 'beta' | 'published'
   original: CardWork
   citation_anchor_openalex_id: string | null
   core_idea: string
@@ -48,7 +50,7 @@ export function showDrafts(): boolean {
 export function theoryCard(libraryName: string): TheoryCardContent | null {
   const card = THEORY_CARDS[libraryName]
   if (!card) return null
-  if (card.status === 'published' || showDrafts()) return card
+  if (card.status === 'published' || card.status === 'beta' || showDrafts()) return card
   return null
 }
 
@@ -81,5 +83,5 @@ export function curatedWorks(card: TheoryCardContent): CardWork[] {
 export function cite(w: CardWork): string {
   const surnames = w.authors.map(a => (a.includes(',') ? a.split(',')[0] : a.split(' ').pop() ?? a).trim())
   const who = surnames.length > 2 ? `${surnames[0]} et al.` : surnames.join(' & ')
-  return `${who} (${w.year ?? 'n.d.'})`
+  return `${who} (${w.original_year ?? w.year ?? 'n.d.'})`
 }

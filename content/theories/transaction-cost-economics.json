@@ -2,7 +2,7 @@
   "theory_id": null,
   "library_name": "Transaction cost economics",
   "slug": "transaction-cost-economics",
-  "status": "draft",
+  "status": "beta",
   "original": {
     "authors": [
       "Oliver E. Williamson"
@@ -88,7 +88,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null,
-        "note": "Later printing of the 1985 book."
+        "note": "Later printing of the 1985 book.",
+        "original_year": 1985
       },
       "adds": "The full framework: bounded rationality, opportunism, asset specificity."
     },
