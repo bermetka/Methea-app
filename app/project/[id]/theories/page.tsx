@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation'
-import Logo from '@/components/ui/Logo'
 import GenerationError from '@/components/ui/GenerationError'
 import { trackEvent } from '@/lib/funnel'
 import { createClient } from '@/lib/supabase/server'
@@ -136,7 +135,6 @@ export default async function TheoriesPage({ params }: { params: { id: string } 
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Logo size="sm" />
         <TheoryCards
           projectId={params.id}
           topic={ctx.brief?.topic ?? 'your research topic'}

@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation'
-import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import BriefForm from './BriefForm'
 import type { Project } from '@/types/database'
@@ -38,7 +37,6 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
       <main style={styles.page}>
         <div style={styles.container}>
           <div style={styles.header}>
-            <Logo size="sm" />
             <h2 style={styles.heading}>Your research brief</h2>
           </div>
           <div style={styles.reviewCard}>
@@ -71,7 +69,6 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
     <main style={styles.page}>
       <div style={styles.container}>
         <div style={styles.header}>
-          <Logo size="sm" />
           <h2 style={styles.heading}>Tell me what you&apos;re researching</h2>
           <p style={styles.sub}>A sentence or two is enough to start.</p>
         </div>

@@ -1,6 +1,5 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import Logo from '@/components/ui/Logo'
 import NewProjectForm from './NewProjectForm'
 import { archiveProject } from './actions'
 import { FREE_CAP_ERROR, FREE_CAP_MESSAGE } from '@/lib/project-cap'
@@ -32,10 +31,6 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
   return (
     <main style={s.page}>
       <div style={s.container}>
-        <div style={s.header}>
-          <Logo size="sm" />
-        </div>
-
         <div style={s.titleRow}>
           <h2 style={s.heading}>My projects</h2>
         </div>
