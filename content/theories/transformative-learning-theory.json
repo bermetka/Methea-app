@@ -132,7 +132,7 @@
   ],
   "critiques": [
     {
-      "point": "Overlooks social context and collective social change, focusing on the individual.",
+      "point": "The theory lacks the socio-political critique of the tradition it draws on and fails to address context, ideology and collective struggles; its claim to be a full theory is premature.",
       "source": {
         "authors": [
           "Susan P. Collard",
@@ -148,7 +148,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null
-      }
+      },
+      "checked_full_text": true
     },
     {
       "point": "Empirical research has added little to identifying transformation itself.",
@@ -311,6 +312,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: The Limits of Perspective Transformation (founder supplied PDFs, 31 Oct 2026)."
     }
   ]
 }

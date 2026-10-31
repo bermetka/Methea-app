@@ -173,7 +173,7 @@
   ],
   "critiques": [
     {
-      "point": "Archer contrasts structuration with her morphogenetic approach: by fusing structure and action, structuration makes it hard to study how each changes the other over time.",
+      "point": "By amalgamating structure and action, structuration swings between too much voluntarism (agents could always act otherwise) and too little account of how structures constrain over time; Archer proposes separating them analytically over time (morphogenesis).",
       "source": {
         "authors": [
           "Margaret Scotford Archer"
@@ -188,7 +188,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null
-      }
+      },
+      "checked_full_text": true
     },
     {
       "point": "The concepts are very abstract and not easily coupled to any method, so the theory is difficult to apply empirically.",
@@ -355,6 +356,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: Morphogenesis versus Structuration: On C (founder supplied PDFs, 31 Oct 2026)."
     }
   ]
 }

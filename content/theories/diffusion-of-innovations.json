@@ -201,7 +201,7 @@
       }
     },
     {
-      "point": "The theory fits poorly with complex, networked technologies adopted by organizations rather than individuals.",
+      "point": "Analyses based on the theory miss important facets of complex, networked, learning-intensive technologies; they need institutional, process and multi-level accounts.",
       "source": {
         "authors": [
           "Kalle Lyytinen",
@@ -217,7 +217,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": "https://doi.org/10.1007/978-0-387-35404-0_11"
-      }
+      },
+      "checked_full_text": true
     }
   ],
   "must_read": [
@@ -369,6 +370,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: What’s Wrong with the Diffusion of Innov (founder supplied PDFs, 31 Oct 2026)."
     }
   ]
 }

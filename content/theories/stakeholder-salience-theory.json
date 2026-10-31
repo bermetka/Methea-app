@@ -163,7 +163,7 @@
       }
     },
     {
-      "point": "Leaves out proximity and stakeholders such as the natural environment.",
+      "point": "The model's attributes need reconceptualizing, and a fourth one, proximity, should be added; this gives a stronger case for the natural environment as a stakeholder.",
       "source": {
         "authors": [
           "Cathy Driscoll",
@@ -179,7 +179,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null
-      }
+      },
+      "checked_full_text": true
     }
   ],
   "must_read": [
@@ -331,6 +332,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: The Primordial Stakeholder: Advancing th (founder supplied PDFs, 31 Oct 2026)."
     }
   ]
 }

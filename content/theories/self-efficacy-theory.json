@@ -138,7 +138,7 @@
       }
     },
     {
-      "point": "May be expectancy under a new label rather than a new construct.",
+      "point": "In tests of ability, self-efficacy is measured in ways almost identical to Rotter's older expectancy construct and makes the same predictions; for feared tasks, the questionnaires measure willingness more than ability.",
       "source": {
         "authors": [
           "Irving Kirsch"
@@ -153,7 +153,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null
-      }
+      },
+      "checked_full_text": true
     }
   ],
   "must_read": [
@@ -303,6 +304,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: Self-efficacy and expectancy: Old wine w (founder supplied PDFs, 31 Oct 2026)."
     }
   ]
 }

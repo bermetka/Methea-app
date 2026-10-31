@@ -176,7 +176,7 @@
   ],
   "critiques": [
     {
-      "point": "Struggles to justify the epistemic privilege of any one standpoint once multiple, intersecting standpoints are recognized.",
+      "point": "If the multiplicity of standpoints is taken to its conclusion, coherent analysis becomes impossible, and it is unclear how to judge between standpoints. Hekman still argues the theory is worth keeping.",
       "source": {
         "authors": [
           "Susan J. Hekman"
@@ -191,7 +191,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null
-      }
+      },
+      "checked_full_text": true
     },
     {
       "point": "The line between standpoint theory and feminist empiricism has become unclear.",
@@ -349,6 +350,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Critique wording checked against the full text of: Truth and Method: Feminist Standpoint Th (founder supplied PDFs, 31 Oct 2026)."
     }
   ]
 }
