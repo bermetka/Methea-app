@@ -50,6 +50,6 @@ export default async function Gate1Page({ params }: { params: { id: string } }) 
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  page:          { minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem 1rem', background: 'var(--paper)' },
+  page:          { minHeight: '100vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: '2.5rem 1rem', background: 'var(--paper)' },
   container:     { width: '100%', maxWidth: '720px', display: 'flex', flexDirection: 'column', gap: '1.5rem' },
 }

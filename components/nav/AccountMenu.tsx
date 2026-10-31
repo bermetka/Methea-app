@@ -45,6 +45,7 @@ export default function AccountMenu({ email }: { email: string }) {
           <p style={s.email}>{email}</p>
           <a role="menuitem" href="/projects" style={s.item}>My projects</a>
           <a role="menuitem" href="/account" style={s.item}>Plan &amp; billing</a>
+          <a role="menuitem" href="/projects?how=1#how" style={s.item}>How Methea works</a>
           <form action={signOut} style={s.logoutForm}>
             <button type="submit" role="menuitem" style={s.logout}>Log out</button>
           </form>
@@ -62,5 +63,5 @@ const s: Record<string, React.CSSProperties> = {
   email:      { margin: 0, padding: '8px 10px 10px', fontSize: '0.8125rem', color: 'var(--graphite)', borderBottom: '1px solid var(--stone-soft)', overflow: 'hidden', textOverflow: 'ellipsis' },
   item:       { padding: '10px', borderRadius: 6, color: 'var(--ink)', fontSize: '0.9375rem' },
   logoutForm: { margin: 0, borderTop: '1px solid var(--stone-soft)', marginTop: 4, paddingTop: 4 },
-  logout:     { width: '100%', textAlign: 'left', padding: '10px', borderRadius: 6, border: 'none', background: 'transparent', color: '#8E3B2E', fontSize: '0.9375rem', cursor: 'pointer', font: 'inherit' },
+  logout:     { width: '100%', textAlign: 'left', padding: '10px', borderRadius: 6, border: 'none', background: 'transparent', color: '#8E3B2E', fontFamily: 'inherit', fontSize: '0.9375rem', cursor: 'pointer' },
 }

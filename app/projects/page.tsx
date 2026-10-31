@@ -9,7 +9,7 @@ import type { Project } from '@/types/database'
 
 export const metadata = { title: 'My projects — Methea' }
 
-export default async function ProjectsPage({ searchParams }: { searchParams: { error?: string } }) {
+export default async function ProjectsPage({ searchParams }: { searchParams: { error?: string; how?: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
@@ -37,7 +37,7 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
 
         {/* Past the first brief: the same steps, folded away */}
         {!showWelcome && (
-          <details style={s.howTo}>
+          <details id="how" open={searchParams.how === '1'} style={s.howTo}>
             <summary style={s.howToSummary}>How Methea works</summary>
             <WelcomeSteps />
           </details>

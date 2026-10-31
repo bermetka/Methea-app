@@ -27,7 +27,7 @@ const STEPS: { key: StepKey; label: string; done: (c: Ctx) => boolean }[] = [
   { key: 'theories',        label: 'Theories',        done: c => !!c?.theories?.selected_ids?.length },
   { key: 'framework',       label: 'Framework',       done: c => !!c?.framework?.edges?.length },
   { key: 'methodology',     label: 'Methodology',     done: c => !!c?.methodology?.narrative },
-  { key: 'interview-guide', label: 'Interview guide', done: c => !!c?.interview_guide?.questions?.length },
+  { key: 'interview-guide', label: 'Guide',           done: c => !!c?.interview_guide?.questions?.length },
   { key: 'analysis',        label: 'Analysis',        done: c => !!c?.findings?.gate3_completed },
 ]
 

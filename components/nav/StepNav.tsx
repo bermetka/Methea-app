@@ -65,8 +65,8 @@ export default function StepNav({ projectId, steps }: Props) {
 
 const s: Record<string, React.CSSProperties> = {
   wrap:       { display: 'flex', flexDirection: 'column', gap: 8 },
-  row:        { display: 'flex', flexWrap: 'wrap', gap: 6 },
-  chip:       { fontSize: '0.8125rem', padding: '4px 10px', borderRadius: 999, border: '1px solid transparent', background: 'transparent', font: 'inherit', lineHeight: 1.5, cursor: 'pointer', textDecoration: 'none' },
+  row:        { display: 'flex', flexWrap: 'nowrap', gap: 2, overflowX: 'auto', scrollbarWidth: 'none' },
+  chip:       { fontFamily: 'inherit', fontSize: '0.8125rem', lineHeight: 1.5, padding: '4px 9px', borderRadius: 999, border: '1px solid transparent', background: 'transparent', cursor: 'pointer', textDecoration: 'none', whiteSpace: 'nowrap', flexShrink: 0 },
   done:       { color: 'var(--graphite)' },
   current:    { color: 'var(--ink)', borderColor: 'var(--ink)', fontWeight: 600 },
   here:       { background: 'var(--ink)', color: 'var(--paper)', fontWeight: 600 },
