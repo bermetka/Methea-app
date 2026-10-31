@@ -1,0 +1,362 @@
+{
+  "theory_id": null,
+  "library_name": "Theory of planned behaviour",
+  "slug": "theory-of-planned-behaviour",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Icek Ajzen"
+    ],
+    "year": 1991,
+    "title": "The theory of planned behavior",
+    "type": "article",
+    "venue": "Organizational Behavior and Human Decision Processes",
+    "doi": "10.1016/0749-5978(91)90020-t",
+    "openalex_id": "W2099697766",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://ojs.unbc.ca/index.php/design/article/view/1887"
+  },
+  "citation_anchor_openalex_id": "W2099697766",
+  "core_idea": "Behaviour is best predicted by the intention to perform it. Intention depends on three things: attitude towards the behaviour, subjective norms (what important others expect), and perceived behavioural control (how easy or hard the person thinks it is). Perceived control can also affect behaviour directly.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What predicts whether people intend to do something (recycle, use a service, get vaccinated, start a business)?",
+    "Which of attitude, norms or perceived control matters most for a given behaviour and group?",
+    "Typical data: structured questionnaires built from elicitation interviews, analysed with regression or SEM."
+  ],
+  "common_mistakes": [
+    "Writing your own questionnaire items without the elicitation step the theory recommends.",
+    "Measuring intention but claiming conclusions about actual behaviour.",
+    "Adding extra variables without a reason grounded in the theory or the context."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Icek Ajzen"
+        ],
+        "year": 1985,
+        "title": "From Intentions to Actions: A Theory of Planned Behavior",
+        "type": "book-chapter",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-3-642-69746-3_2",
+        "openalex_id": "W1517229207",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The first statement of the theory, extending reasoned action with perceived behavioural control."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Icek Ajzen"
+        ],
+        "year": 2002,
+        "title": "Perceived Behavioral Control, Self‐Efficacy, Locus of Control, and the Theory of Planned Behavior 1",
+        "type": "article",
+        "venue": "Journal of Applied Social Psychology",
+        "doi": "10.1111/j.1559-1816.2002.tb00236.x",
+        "openalex_id": "W2088135512",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Clarifies perceived behavioural control and its relation to self-efficacy and locus of control."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Martin Fishbein",
+          "Icek Ajzen"
+        ],
+        "year": 2011,
+        "title": "Predicting and Changing Behavior",
+        "type": "book",
+        "venue": "Psychology Press eBooks",
+        "doi": "10.4324/9780203838020",
+        "openalex_id": "W4206711400",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The 'reasoned action approach': a unified account and guide to measurement and intervention."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Implementation intentions",
+      "summary": "Closing the intention-behaviour gap with if-then plans.",
+      "defining_work": {
+        "authors": [
+          "Peter M. Gollwitzer"
+        ],
+        "year": 1999,
+        "title": "Implementation intentions: Strong effects of simple plans.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.54.7.493",
+        "openalex_id": "W2133044046",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nbn-resolving.de/urn:nbn:de:bsz:352-opus-55590"
+      }
+    },
+    {
+      "name": "Reasoned action approach",
+      "summary": "The later, unified version of the theory.",
+      "defining_work": {
+        "authors": [
+          "Martin Fishbein",
+          "Icek Ajzen"
+        ],
+        "year": 2011,
+        "title": "Predicting and Changing Behavior",
+        "type": "book",
+        "venue": "Psychology Press eBooks",
+        "doi": "10.4324/9780203838020",
+        "openalex_id": "W4206711400",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains a substantial share of variance in intentions and behaviour across many studies.",
+      "source": {
+        "authors": [
+          "Christopher J. Armitage",
+          "Mark T. Conner"
+        ],
+        "year": 2001,
+        "title": "Efficacy of the Theory of Planned Behaviour: A meta‐analytic review",
+        "type": "article",
+        "venue": "British Journal of Social Psychology",
+        "doi": "10.1348/014466601164939",
+        "openalex_id": "W2152095411",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Perceived behavioural control adds explanation beyond attitudes and norms alone.",
+      "source": {
+        "authors": [
+          "Christopher J. Armitage",
+          "Mark T. Conner"
+        ],
+        "year": 2001,
+        "title": "Efficacy of the Theory of Planned Behaviour: A meta‐analytic review",
+        "type": "article",
+        "venue": "British Journal of Social Psychology",
+        "doi": "10.1348/014466601164939",
+        "openalex_id": "W2152095411",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Its predictive validity and usefulness for changing behaviour are limited; the authors argue it is time to retire it.",
+      "source": {
+        "authors": [
+          "Falko F. Sniehotta",
+          "Justin Presseau",
+          "Vera Araújo‐Soares"
+        ],
+        "year": 2013,
+        "title": "Time to retire the theory of planned behaviour",
+        "type": "editorial",
+        "venue": "Health Psychology Review",
+        "doi": "10.1080/17437199.2013.869710",
+        "openalex_id": "W2084772351",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/17437199.2013.869710"
+      }
+    },
+    {
+      "point": "The theory's author replies that the critique misreads it and that it remains useful.",
+      "source": {
+        "authors": [
+          "Icek Ajzen"
+        ],
+        "year": 2014,
+        "title": "The theory of planned behaviour is alive and well, and not ready to retire: a commentary on Sniehotta, Presseau, and Araújo-Soares",
+        "type": "editorial",
+        "venue": "Health Psychology Review",
+        "doi": "10.1080/17437199.2014.883474",
+        "openalex_id": "W2030030817",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Icek Ajzen"
+        ],
+        "year": 1991,
+        "title": "The theory of planned behavior",
+        "type": "article",
+        "venue": "Organizational Behavior and Human Decision Processes",
+        "doi": "10.1016/0749-5978(91)90020-t",
+        "openalex_id": "W2099697766",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://ojs.unbc.ca/index.php/design/article/view/1887"
+      },
+      "chapter": null,
+      "why_read": "The reference article; defines the constructs you will measure.",
+      "reading_question": "Which of attitude, norms or perceived control do you expect to matter most for your behaviour, and why?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Christopher J. Armitage",
+          "Mark T. Conner"
+        ],
+        "year": 2001,
+        "title": "Efficacy of the Theory of Planned Behaviour: A meta‐analytic review",
+        "type": "article",
+        "venue": "British Journal of Social Psychology",
+        "doi": "10.1348/014466601164939",
+        "openalex_id": "W2152095411",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Shows how well the theory actually predicts, and where it is weaker.",
+      "reading_question": "How large an effect can you realistically expect, given the meta-analysis?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Falko F. Sniehotta",
+          "Justin Presseau",
+          "Vera Araújo‐Soares"
+        ],
+        "year": 2013,
+        "title": "Time to retire the theory of planned behaviour",
+        "type": "editorial",
+        "venue": "Health Psychology Review",
+        "doi": "10.1080/17437199.2013.869710",
+        "openalex_id": "W2084772351",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/17437199.2013.869710"
+      },
+      "chapter": null,
+      "why_read": "The sharpest recent critique; read it together with Ajzen's reply (2015).",
+      "reading_question": "How will your design respond to the intention-behaviour gap?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "theory of planned behaviour",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2624509573",
+        "title": "The literature review of technology adoption models and theories for the novelty technology",
+        "year": 2017,
+        "authors": [
+          "P. C. Lai"
+        ],
+        "cited_by": 1065,
+        "oa_url": "https://doi.org/10.4301/s1807-17752017000100002"
+      },
+      {
+        "openalex_id": "W2890784719",
+        "title": "Understanding the Blockchain technology adoption in supply chains-Indian context",
+        "year": 2018,
+        "authors": [
+          "Sachin Kamble",
+          "Angappa Gunasekaran",
+          "Himanshu Arha"
+        ],
+        "cited_by": 958,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3045096110",
+        "title": "The effect of coronavirus disease-19 (COVID-19) risk perception on behavioural intention towards ‘untact’ tourism in South Korea during the first wave of the pandemic (March 2020)",
+        "year": 2020,
+        "authors": [
+          "So Young Bae",
+          "Po-Ju Chang"
+        ],
+        "cited_by": 743,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2627503525",
+        "title": "Bringing habits and emotions into food waste behaviour",
+        "year": 2017,
+        "authors": [
+          "Sally Russell",
+          "William Young",
+          "Kerrie L. Unsworth",
+          "Cheryl A. Robinson"
+        ],
+        "cited_by": 623,
+        "oa_url": "https://doi.org/10.1016/j.resconrec.2017.06.007"
+      },
+      {
+        "openalex_id": "W2522837983",
+        "title": "Purchasing behaviour for environmentally sustainable products: A conceptual framework and empirical study",
+        "year": 2016,
+        "authors": [
+          "Bipul Kumar",
+          "Ajay K. Manrai",
+          "Lalita A. Manrai"
+        ],
+        "cited_by": 610,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+{
+  "theory_id": null,
+  "library_name": "Social identity theory",
+  "slug": "social-identity-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Henri Tajfel",
+      "John C. Turner"
+    ],
+    "year": 2000,
+    "title": "An Integrative Theory of Intergroup Conflict",
+    "type": "book-chapter",
+    "venue": null,
+    "doi": "10.1093/oso/9780199269464.003.0005",
+    "openalex_id": "W90970949",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "Reprint (2000) of the 1979 chapter."
+  },
+  "citation_anchor_openalex_id": "W90970949",
+  "core_idea": "Part of who we are comes from the groups we belong to. People sort themselves and others into groups, take on the group as part of their self-concept, and compare their group with others. Because a positive group identity supports self-esteem, people tend to favour their own group, even when groups are formed on trivial grounds.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do students, employees or citizens identify with a group (ethnic, national, professional, organizational), and how does that shape behaviour?",
+    "Why do in-group favouritism, stereotyping or intergroup tension appear?",
+    "How do lower-status groups respond to their position (mobility, creativity, competition)?",
+    "Typical data: surveys with identification scales, experiments, interviews about belonging and comparison."
+  ],
+  "common_mistakes": [
+    "Treating any mention of 'identity' as social identity theory. The theory is about group membership and intergroup comparison.",
+    "Assuming identification always leads to hostility towards out-groups. The theory predicts favouritism, not necessarily conflict.",
+    "Blending social identity theory and self-categorization theory without saying which claims come from which."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Henri Tajfel"
+        ],
+        "year": 1970,
+        "title": "Experiments in Intergroup Discrimination",
+        "type": "article",
+        "venue": "Scientific American",
+        "doi": "10.1038/scientificamerican1170-96",
+        "openalex_id": "W4293092812",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The minimal group experiments: people favour their own group even when groups are arbitrary."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Henri Tajfel",
+          "M. G. Billig",
+          "R. P. Bundy",
+          "Claude Flament"
+        ],
+        "year": 1971,
+        "title": "Social categorization and intergroup behaviour",
+        "type": "article",
+        "venue": "European Journal of Social Psychology",
+        "doi": "10.1002/ejsp.2420010202",
+        "openalex_id": "W2147602649",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The formal report of the minimal group studies that the theory was built to explain."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Blake E. Ashforth",
+          "Fred A. Mael"
+        ],
+        "year": 1989,
+        "title": "Social Identity Theory and the Organization",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1989.4278999",
+        "openalex_id": "W2142821253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Brings the theory into organizations: identification with the organization and its consequences."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Michael A. Hogg",
+          "Deborah J. Terry"
+        ],
+        "year": 2000,
+        "title": "Social Identity and Self-Categorization Processes in Organizational Contexts",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/259266",
+        "openalex_id": "W2124999700",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Combines social identity and self-categorization processes to explain behaviour in organizations."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Self-categorization theory",
+      "summary": "Explains how people come to see themselves as group members in a given context (its own library entry).",
+      "defining_work": {
+        "authors": [
+          "Michael A. Hogg",
+          "Deborah J. Terry"
+        ],
+        "year": 2000,
+        "title": "Social Identity and Self-Categorization Processes in Organizational Contexts",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/259266",
+        "openalex_id": "W2124999700",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Organizational identification",
+      "summary": "How employees identify with their organization, team or profession.",
+      "defining_work": {
+        "authors": [
+          "Blake E. Ashforth",
+          "Fred A. Mael"
+        ],
+        "year": 1989,
+        "title": "Social Identity Theory and the Organization",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1989.4278999",
+        "openalex_id": "W2142821253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives powerful explanations of in-group bias, how subordinate groups respond to unequal status, and stereotyping.",
+      "source": {
+        "authors": [
+          "Rupert James Brown"
+        ],
+        "year": 2000,
+        "title": "Social identity theory: past achievements, current problems and future challenges",
+        "type": "article",
+        "venue": "European Journal of Social Psychology",
+        "doi": "10.1002/1099-0992(200011/12)30:6<745::aid-ejsp24>3.0.co;2-o",
+        "openalex_id": "W1969333510",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1002/1099-0992(200011/12)30:6<745::aid-ejsp24>3.0.co;2-o"
+      }
+    },
+    {
+      "point": "A highly influential approach to group processes that has reshaped how many group phenomena are studied.",
+      "source": {
+        "authors": [
+          "Matthew J. Hornsey"
+        ],
+        "year": 2008,
+        "title": "Social Identity Theory and Self‐categorization Theory: A Historical Review",
+        "type": "article",
+        "venue": "Social and Personality Psychology Compass",
+        "doi": "10.1111/j.1751-9004.2007.00066.x",
+        "openalex_id": "W2032497511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Several issues remain problematic, for example the link between identification and in-group bias is weaker and less consistent than first assumed.",
+      "source": {
+        "authors": [
+          "Rupert James Brown"
+        ],
+        "year": 2000,
+        "title": "Social identity theory: past achievements, current problems and future challenges",
+        "type": "article",
+        "venue": "European Journal of Social Psychology",
+        "doi": "10.1002/1099-0992(200011/12)30:6<745::aid-ejsp24>3.0.co;2-o",
+        "openalex_id": "W1969333510",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1002/1099-0992(200011/12)30:6<745::aid-ejsp24>3.0.co;2-o"
+      }
+    },
+    {
+      "point": "Applied to politics, the theory gives too little attention to how strongly people hold an identity, to identity choice and to the meaning of an identity.",
+      "source": {
+        "authors": [
+          "Leonie Huddy"
+        ],
+        "year": 2001,
+        "title": "From Social to Political Identity: A Critical Examination of Social Identity Theory",
+        "type": "article",
+        "venue": "Political Psychology",
+        "doi": "10.1111/0162-895x.00230",
+        "openalex_id": "W2114991554",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Henri Tajfel",
+          "John C. Turner"
+        ],
+        "year": 2000,
+        "title": "An Integrative Theory of Intergroup Conflict",
+        "type": "book-chapter",
+        "venue": null,
+        "doi": "10.1093/oso/9780199269464.003.0005",
+        "openalex_id": "W90970949",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint (2000) of the 1979 chapter."
+      },
+      "chapter": null,
+      "why_read": "The founding statement of the theory; short and argued from experiments.",
+      "reading_question": "Which group memberships matter to your participants, and with which other groups do they compare themselves?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Blake E. Ashforth",
+          "Fred A. Mael"
+        ],
+        "year": 1989,
+        "title": "Social Identity Theory and the Organization",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1989.4278999",
+        "openalex_id": "W2142821253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The standard bridge into organizational research.",
+      "reading_question": "If you study an organization, what makes people identify with it, and what follows from that?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Matthew J. Hornsey"
+        ],
+        "year": 2008,
+        "title": "Social Identity Theory and Self‐categorization Theory: A Historical Review",
+        "type": "article",
+        "venue": "Social and Personality Psychology Compass",
+        "doi": "10.1111/j.1751-9004.2007.00066.x",
+        "openalex_id": "W2032497511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A critical history of the social identity approach, including common misreadings.",
+      "reading_question": "Which misreading Hornsey describes do you need to avoid in your study?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social identity theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W418313381",
+        "title": "Social Identity Theory",
+        "year": 2016,
+        "authors": [
+          "Michael A. Hogg"
+        ],
+        "cited_by": 1551,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2624574483",
+        "title": "Why do audiences choose to keep watching on live video streaming platforms? An explanation of dual identification framework",
+        "year": 2017,
+        "authors": [
+          "Mu Hu",
+          "Mingli Zhang",
+          "Yu Wang"
+        ],
+        "cited_by": 677,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2281926242",
+        "title": "A Social Identity Analysis of Climate Change and Environmental Attitudes and Behaviors: Insights and Opportunities",
+        "year": 2016,
+        "authors": [
+          "Kelly S. Fielding",
+          "Matthew J. Hornsey"
+        ],
+        "cited_by": 562,
+        "oa_url": "https://doi.org/10.3389/fpsyg.2016.00121"
+      },
+      {
+        "openalex_id": "W3125596025",
+        "title": "Activist Choice Homophily and the Crowdfunding of Female Founders",
+        "year": 2016,
+        "authors": [
+          "Jason Greenberg",
+          "Ethan Mollick"
+        ],
+        "cited_by": 533,
+        "oa_url": "https://doi.org/10.1177/0001839216678847"
+      },
+      {
+        "openalex_id": "W2806576596",
+        "title": "Developing a STEM Identity Among Young Women: A Social Identity Perspective",
+        "year": 2018,
+        "authors": [
+          "Ann Y. Kim",
+          "Gale M. Sinatra",
+          "Viviane Seyranian"
+        ],
+        "cited_by": 390,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

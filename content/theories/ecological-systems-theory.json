@@ -1,0 +1,369 @@
+{
+  "theory_id": null,
+  "library_name": "Bronfenbrenner's ecological systems theory",
+  "slug": "ecological-systems-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Urie Bronfenbrenner"
+    ],
+    "year": 1979,
+    "title": "The Ecology of Human Development",
+    "type": "book",
+    "venue": "Harvard University Press eBooks",
+    "doi": "10.4159/9780674028845",
+    "openalex_id": "W2254735081",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2254735081",
+  "core_idea": "A person develops inside a set of nested environments: the microsystem (family, school, peers), the mesosystem (links between them), the exosystem (settings that affect the person indirectly, like a parent's workplace), and the macrosystem (culture, policy, economy). Bronfenbrenner later added time (chronosystem) and moved the centre to proximal processes in his bioecological model.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do family, school, community and policy together shape a child's, student's or migrant's development or well-being?",
+    "How do links between settings (home–school) matter?",
+    "Typical data: multi-level designs, interviews with people in several settings, mixed methods."
+  ],
+  "common_mistakes": [
+    "Using the 1979 nested-circles version while citing the theory as current. Bronfenbrenner's mature theory is the bioecological, Process–Person–Context–Time model.",
+    "Listing the systems as a descriptive framework without studying processes or time.",
+    "Placing every factor in a circle without showing how levels interact."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Urie Bronfenbrenner"
+        ],
+        "year": 1986,
+        "title": "Ecology of the family as a context for human development: Research perspectives.",
+        "type": "article",
+        "venue": "Developmental Psychology",
+        "doi": "10.1037//0012-1649.22.6.723",
+        "openalex_id": "W2050336499",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reviews research on how family processes are shaped by external settings."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Urie Bronfenbrenner",
+          "Stephen J. Ceci"
+        ],
+        "year": 1994,
+        "title": "Nature-nurture reconceptualized in developmental perspective: A bioecological model.",
+        "type": "article",
+        "venue": "Psychological Review",
+        "doi": "10.1037/0033-295x.101.4.568",
+        "openalex_id": "W2075631829",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The bioecological model: proximal processes as the engines of development, interacting with genes and context."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Urie Bronfenbrenner",
+          "Pamela Morris"
+        ],
+        "year": 2007,
+        "title": "The Bioecological Model of Human Development",
+        "type": "other",
+        "venue": null,
+        "doi": "10.1002/9780470147658.chpsy0114",
+        "openalex_id": "W1737861481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The mature Process–Person–Context–Time model."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Bioecological model (PPCT)",
+      "summary": "Focus on proximal processes, the person's characteristics, context and time.",
+      "defining_work": {
+        "authors": [
+          "Urie Bronfenbrenner",
+          "Pamela Morris"
+        ],
+        "year": 2007,
+        "title": "The Bioecological Model of Human Development",
+        "type": "other",
+        "venue": null,
+        "doi": "10.1002/9780470147658.chpsy0114",
+        "openalex_id": "W1737861481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Networked ecological systems",
+      "summary": "Systems as overlapping social networks rather than nested circles.",
+      "defining_work": {
+        "authors": [
+          "Jennifer Watling Neal",
+          "Zachary P. Neal"
+        ],
+        "year": 2013,
+        "title": "Nested or Networked? Future Directions for Ecological Systems Theory",
+        "type": "article",
+        "venue": "Social Development",
+        "doi": "10.1111/sode.12018",
+        "openalex_id": "W2151511741",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.31234/osf.io/s6w2r"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Among the most widely adopted frameworks for studying individuals in their ecological contexts.",
+      "source": {
+        "authors": [
+          "Jennifer Watling Neal",
+          "Zachary P. Neal"
+        ],
+        "year": 2013,
+        "title": "Nested or Networked? Future Directions for Ecological Systems Theory",
+        "type": "article",
+        "venue": "Social Development",
+        "doi": "10.1111/sode.12018",
+        "openalex_id": "W2151511741",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.31234/osf.io/s6w2r"
+      }
+    },
+    {
+      "point": "The theory evolved over time, from ecology to bioecology, giving researchers a richer model to use.",
+      "source": {
+        "authors": [
+          "Edinete María Rosa",
+          "Jonathan Richard Henry Tudge"
+        ],
+        "year": 2013,
+        "title": "Urie Bronfenbrenner's Theory of Human Development: Its Evolution From Ecology to Bioecology",
+        "type": "article",
+        "venue": "Journal of Family Theory & Review",
+        "doi": "10.1111/jftr.12022",
+        "openalex_id": "W1675192189",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://libres.uncg.edu/ir/uncg/f/J_Tudge_Urie_2013.pdf"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Most empirical studies citing the theory rely on outdated versions of it rather than the mature bioecological model.",
+      "source": {
+        "authors": [
+          "Jonathan Richard Henry Tudge",
+          "Irina L. Mokrova",
+          "Bridget E. Hatfield",
+          "Rachana B. Karnik"
+        ],
+        "year": 2009,
+        "title": "Uses and Misuses of Bronfenbrenner's Bioecological Theory of Human Development",
+        "type": "article",
+        "venue": "Journal of Family Theory & Review",
+        "doi": "10.1111/j.1756-2589.2009.00026.x",
+        "openalex_id": "W2122458328",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://libres.uncg.edu/ir/uncg/f/J_Tudge_Uses_2009.pdf"
+      }
+    },
+    {
+      "point": "The nested view of systems is limiting; systems are better seen as overlapping networks of interactions.",
+      "source": {
+        "authors": [
+          "Jennifer Watling Neal",
+          "Zachary P. Neal"
+        ],
+        "year": 2013,
+        "title": "Nested or Networked? Future Directions for Ecological Systems Theory",
+        "type": "article",
+        "venue": "Social Development",
+        "doi": "10.1111/sode.12018",
+        "openalex_id": "W2151511741",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.31234/osf.io/s6w2r"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Urie Bronfenbrenner"
+        ],
+        "year": 1979,
+        "title": "The Ecology of Human Development",
+        "type": "book",
+        "venue": "Harvard University Press eBooks",
+        "doi": "10.4159/9780674028845",
+        "openalex_id": "W2254735081",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The classic source for the system levels.",
+      "reading_question": "Which settings and links between them matter for the people in your study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Urie Bronfenbrenner",
+          "Pamela Morris"
+        ],
+        "year": 2007,
+        "title": "The Bioecological Model of Human Development",
+        "type": "other",
+        "venue": null,
+        "doi": "10.1002/9780470147658.chpsy0114",
+        "openalex_id": "W1737861481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The mature theory; cite this if you use the model as it stands today.",
+      "reading_question": "What proximal processes will you study, and over what time?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jonathan Richard Henry Tudge",
+          "Irina L. Mokrova",
+          "Bridget E. Hatfield",
+          "Rachana B. Karnik"
+        ],
+        "year": 2009,
+        "title": "Uses and Misuses of Bronfenbrenner's Bioecological Theory of Human Development",
+        "type": "article",
+        "venue": "Journal of Family Theory & Review",
+        "doi": "10.1111/j.1756-2589.2009.00026.x",
+        "openalex_id": "W2122458328",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://libres.uncg.edu/ir/uncg/f/J_Tudge_Uses_2009.pdf"
+      },
+      "chapter": null,
+      "why_read": "Shows how the theory is used and misused; a checklist for your own use.",
+      "reading_question": "Which version of the theory are you using, and does your design match it?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "bronfenbrenner's ecological systems theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2742392924",
+        "title": "Rethinking the biopsychosocial model of health: Understanding health as a dynamic system",
+        "year": 2017,
+        "authors": [
+          "Barbara J. Lehman",
+          "Diana David",
+          "Jennifer A. Gruber"
+        ],
+        "cited_by": 376,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2791169198",
+        "title": "Different uses of Bronfenbrenner’s ecological theory in public mental health research: what is their value for guiding public mental health policy and practice?",
+        "year": 2018,
+        "authors": [
+          "Malin Eriksson",
+          "Mehdi Ghazinour",
+          "Anne Hammarström"
+        ],
+        "cited_by": 373,
+        "oa_url": "https://doi.org/10.1057/s41285-018-0065-6"
+      },
+      {
+        "openalex_id": "W4390665569",
+        "title": "Review of studies applying Bronfenbrenner's bioecological theory in international and intercultural education research",
+        "year": 2024,
+        "authors": [
+          "Peiru Tong",
+          "Irene Shidong An"
+        ],
+        "cited_by": 250,
+        "oa_url": "https://doi.org/10.3389/fpsyg.2023.1233925"
+      },
+      {
+        "openalex_id": "W4366351919",
+        "title": "The structural and social determinants of Alzheimer's disease related dementias",
+        "year": 2023,
+        "authors": [
+          "Paris B. Adkins‐Jackson",
+          "Kristen M. George",
+          "Lilah M. Besser",
+          "Jinshil Hyun",
+          "Melissa Lamar",
+          "Tanisha G. Hill‐Jarrett"
+        ],
+        "cited_by": 250,
+        "oa_url": "https://doi.org/10.1002/alz.13027"
+      },
+      {
+        "openalex_id": "W4244290194",
+        "title": "Ecological Systems Theory: Exploring the Development of the Theoretical Framework as Conceived by Bronfenbrenner",
+        "year": 2020,
+        "authors": [
+          "Marcus R. Crawford"
+        ],
+        "cited_by": 242,
+        "oa_url": "https://doi.org/10.33790/jphip1100170"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

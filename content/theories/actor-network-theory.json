@@ -1,0 +1,314 @@
+{
+  "theory_id": null,
+  "library_name": "Actor-network theory",
+  "slug": "actor-network-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Bruno Latour"
+    ],
+    "year": 2005,
+    "title": "Reassembling the Social",
+    "type": "book",
+    "venue": null,
+    "doi": "10.1093/oso/9780199256044.001.0001",
+    "openalex_id": "W4388174267",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W4388174267",
+  "core_idea": "Society is not a thing that explains action; it is what has to be explained. Social order is assembled from networks of people and non-humans (technologies, documents, objects), all treated symmetrically as actors. Research follows how actors enrol others, translate interests and make networks hold together or fall apart.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How did a technology, policy, standard or practice come to be established (or fail)?",
+    "What role do objects and technologies play alongside people?",
+    "Typical data: ethnography, following documents and objects, interviews across many actors, archival tracing."
+  ],
+  "common_mistakes": [
+    "Using ANT as a label while still explaining outcomes by 'social factors' decided in advance.",
+    "Listing actors without tracing the work of translation and enrolment.",
+    "Claiming ANT gives a ready-made method; it is a sensibility for following actors."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Michel Callon"
+        ],
+        "year": 1984,
+        "title": "Some Elements of a Sociology of Translation: Domestication of the Scallops and the Fishermen of St Brieuc Bay",
+        "type": "article",
+        "venue": "The Sociological Review",
+        "doi": "10.1111/j.1467-954x.1984.tb00113.x",
+        "openalex_id": "W2167757977",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The sociology of translation: how a network is built through problematization, interessement, enrolment and mobilization."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Bruno Latour"
+        ],
+        "year": 1987,
+        "title": "Science in Action",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2798568231",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Follows scientists and engineers through society; science as network-building."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "John Law"
+        ],
+        "year": 1992,
+        "title": "Notes on the theory of the actor-network: Ordering, strategy, and heterogeneity",
+        "type": "article",
+        "venue": "Systemic Practice and Action Research",
+        "doi": "10.1007/bf01059830",
+        "openalex_id": "W2764436181",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A short statement of ANT as the study of heterogeneous ordering."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Material semiotics / 'after ANT'",
+      "summary": "Multiple realities enacted in practice.",
+      "defining_work": {
+        "authors": [
+          "Annemarie Mol"
+        ],
+        "year": 2002,
+        "title": "The Body Multiple",
+        "type": "book",
+        "venue": "Duke University Press eBooks",
+        "doi": "10.1215/9780822384151",
+        "openalex_id": "W4239287321",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Brings technologies and objects into the analysis of organizations and society, which other theories often ignore.",
+      "source": {
+        "authors": [
+          "John Law"
+        ],
+        "year": 1992,
+        "title": "Notes on the theory of the actor-network: Ordering, strategy, and heterogeneity",
+        "type": "article",
+        "venue": "Systemic Practice and Action Research",
+        "doi": "10.1007/bf01059830",
+        "openalex_id": "W2764436181",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Gives tools to trace how networks are assembled step by step.",
+      "source": {
+        "authors": [
+          "Michel Callon"
+        ],
+        "year": 1984,
+        "title": "Some Elements of a Sociology of Translation: Domestication of the Scallops and the Fishermen of St Brieuc Bay",
+        "type": "article",
+        "venue": "The Sociological Review",
+        "doi": "10.1111/j.1467-954x.1984.tb00113.x",
+        "openalex_id": "W2167757977",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "ANT does not fit critical organization theory: it relies on a naturalizing ontology, an un-reflexive epistemology and a performative politics.",
+      "source": {
+        "authors": [
+          "Andrea Whittle",
+          "André Spicer"
+        ],
+        "year": 2008,
+        "title": "Is Actor Network Theory Critique?",
+        "type": "article",
+        "venue": "Organization Studies",
+        "doi": "10.1177/0170840607082223",
+        "openalex_id": "W2030661035",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://openaccess.city.ac.uk/view/creators_id/andre=2Espicer=2E1.html>"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Bruno Latour"
+        ],
+        "year": 2005,
+        "title": "Reassembling the Social",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/oso/9780199256044.001.0001",
+        "openalex_id": "W4388174267",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Latour's own introduction to ANT.",
+      "reading_question": "Which actors, human and non-human, would you have to follow to explain your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Michel Callon"
+        ],
+        "year": 1984,
+        "title": "Some Elements of a Sociology of Translation: Domestication of the Scallops and the Fishermen of St Brieuc Bay",
+        "type": "article",
+        "venue": "The Sociological Review",
+        "doi": "10.1111/j.1467-954x.1984.tb00113.x",
+        "openalex_id": "W2167757977",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The classic worked example of translation.",
+      "reading_question": "Can you map the four moments of translation in your case?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "John Law"
+        ],
+        "year": 1992,
+        "title": "Notes on the theory of the actor-network: Ordering, strategy, and heterogeneity",
+        "type": "article",
+        "venue": "Systemic Practice and Action Research",
+        "doi": "10.1007/bf01059830",
+        "openalex_id": "W2764436181",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A short, clear overview of the approach.",
+      "reading_question": "What is being 'ordered' in your study, and by which network?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "actor-network theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2040077666",
+        "title": "Social Construction of Communication Technology",
+        "year": 2017,
+        "authors": [
+          "Janet L. Fulk",
+          "Yuan Yu"
+        ],
+        "cited_by": 733,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2989891165",
+        "title": "Entanglement HCI The Next Wave?",
+        "year": 2019,
+        "authors": [
+          "Christopher Frauenberger"
+        ],
+        "cited_by": 557,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2696589634",
+        "title": "Ordering theories: Typologies and conceptual frameworks for sociotechnical change",
+        "year": 2017,
+        "authors": [
+          "Benjamin Kenneth Sovacool",
+          "David J. Hess"
+        ],
+        "cited_by": 516,
+        "oa_url": "https://doi.org/10.1177/0306312717709363"
+      },
+      {
+        "openalex_id": "W2301786850",
+        "title": "Assemblage thinking and actor‐network theory: conjunctions, disjunctions, cross‐fertilisations",
+        "year": 2016,
+        "authors": [
+          "Martín Müller",
+          "Carolin Schurr"
+        ],
+        "cited_by": 410,
+        "oa_url": "https://doi.org/10.1111/tran.12117"
+      },
+      {
+        "openalex_id": "W3090322396",
+        "title": "Technology-Facilitated Domestic and Sexual Violence: A Review",
+        "year": 2020,
+        "authors": [
+          "Nicola Henry",
+          "Asher Flynn",
+          "Anastasia Powell"
+        ],
+        "cited_by": 241,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Law & Hassard (1999), Amsterdamska (1990) and Collins & Yearley (1992) had no clean records. Only one verified critique so far: reviewer to add a second."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

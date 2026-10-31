@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Attachment theory (research applications)",
+  "slug": "attachment-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "John Bowlby"
+    ],
+    "year": 1969,
+    "title": "Attachment and Loss",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W1720881856",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1720881856",
+  "core_idea": "Children form an emotional bond with a caregiver, and how sensitive and available that caregiver is shapes the child's sense of security. From these early experiences children build internal working models of relationships that can influence how they relate to others later. Ainsworth identified patterns of attachment (secure, avoidant, ambivalent).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do early caregiving relationships relate to later well-being, relationships or behaviour?",
+    "How do adults' attachment styles shape close relationships, help-seeking or work?",
+    "Typical data: observation (Strange Situation), interviews, validated questionnaires on attachment styles."
+  ],
+  "common_mistakes": [
+    "Treating attachment styles as fixed personality types.",
+    "Assuming the theory applies the same way in every culture.",
+    "Using adult romantic-attachment questionnaires to make claims about infant attachment, or the reverse."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Mary D. Salter Ainsworth",
+          "Mary C. Blehar",
+          "Everett Waters",
+          "Sally N. Wall"
+        ],
+        "year": 1978,
+        "title": "Patterns of Attachment: A Psychological Study of the Strange Situation",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1796738135",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Defines attachment patterns using the Strange Situation procedure."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Mary D. Salter Ainsworth",
+          "Silvia M. V. Bell"
+        ],
+        "year": 1970,
+        "title": "Attachment, Exploration, and Separation: Illustrated by the Behavior of One-Year-Olds in a Strange Situation",
+        "type": "article",
+        "venue": "Child Development",
+        "doi": "10.2307/1127388",
+        "openalex_id": "W2091863037",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The original Strange Situation study of one-year-olds."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Kim Bartholomew",
+          "Leonard M. Horowitz"
+        ],
+        "year": 1991,
+        "title": "Attachment styles among young adults: A test of a four-category model.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.61.2.226",
+        "openalex_id": "W2030561037",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A four-category model of adult attachment."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Adult attachment",
+      "summary": "Attachment processes in romantic relationships and adulthood.",
+      "defining_work": {
+        "authors": [
+          "Cindy Hazan",
+          "Phillip R. Shaver"
+        ],
+        "year": 1987,
+        "title": "Romantic love conceptualized as an attachment process.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.52.3.511",
+        "openalex_id": "W2082352243",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A testable account of how early relationships may shape later development, studied with established procedures.",
+      "source": {
+        "authors": [
+          "Mary D. Salter Ainsworth",
+          "Mary C. Blehar",
+          "Everett Waters",
+          "Sally N. Wall"
+        ],
+        "year": 1978,
+        "title": "Patterns of Attachment: A Psychological Study of the Strange Situation",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1796738135",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Generative beyond childhood: extended to adult close relationships.",
+      "source": {
+        "authors": [
+          "Cindy Hazan",
+          "Phillip R. Shaver"
+        ],
+        "year": 1987,
+        "title": "Romantic love conceptualized as an attachment process.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.52.3.511",
+        "openalex_id": "W2082352243",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Laden with Western values: core hypotheses look different in the United States and Japan.",
+      "source": {
+        "authors": [
+          "Fred M. Rothbaum",
+          "John R. Weisz",
+          "Martha Pott",
+          "Kazuo Miyake",
+          "Gilda A. Morelli"
+        ],
+        "year": 2000,
+        "title": "Attachment and culture: Security in the United States and Japan.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.55.10.1093",
+        "openalex_id": "W4256352305",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The universality claim does not hold across cultures with different socialization strategies.",
+      "source": {
+        "authors": [
+          "Heidi Keller"
+        ],
+        "year": 2018,
+        "title": "Universality claim of attachment theory: Children’s socioemotional development across cultures",
+        "type": "article",
+        "venue": "Proceedings of the National Academy of Sciences",
+        "doi": "10.1073/pnas.1720325115",
+        "openalex_id": "W2900237278",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1073/pnas.1720325115"
+      }
+    },
+    {
+      "point": "Stability of attachment from infancy to adulthood is only moderate, and models of it differ.",
+      "source": {
+        "authors": [
+          "Robert Chris Fraley"
+        ],
+        "year": 2002,
+        "title": "Attachment Stability From Infancy to Adulthood: Meta-Analysis and Dynamic Modeling of Developmental Mechanisms",
+        "type": "article",
+        "venue": "Personality and Social Psychology Review",
+        "doi": "10.1207/s15327957pspr0602_03",
+        "openalex_id": "W2002249643",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "John Bowlby"
+        ],
+        "year": 1969,
+        "title": "Attachment and Loss",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1720881856",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding work.",
+      "reading_question": "Which part of the theory (bond, security, working models) does your question rely on?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Mary D. Salter Ainsworth",
+          "Mary C. Blehar",
+          "Everett Waters",
+          "Sally N. Wall"
+        ],
+        "year": 1978,
+        "title": "Patterns of Attachment: A Psychological Study of the Strange Situation",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1796738135",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Where the attachment patterns come from.",
+      "reading_question": "How will you measure attachment, and is that measure valid for your age group?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Fred M. Rothbaum",
+          "John R. Weisz",
+          "Martha Pott",
+          "Kazuo Miyake",
+          "Gilda A. Morelli"
+        ],
+        "year": 2000,
+        "title": "Attachment and culture: Security in the United States and Japan.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.55.10.1093",
+        "openalex_id": "W4256352305",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The key cultural critique; important for research outside the West.",
+      "reading_question": "Do the core hypotheses hold in your cultural setting?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "attachment theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2553646641",
+        "title": "Attachment in the Early Life Course: Meta-Analytic Evidence for Its Role in Socioemotional Development",
+        "year": 2016,
+        "authors": [
+          "Ashley M. Groh",
+          "Pasco R. M. Fearon",
+          "Marinus H. van IJzendoorn",
+          "Marian J. Bakermans‐Kranenburg",
+          "Glenn I. Roisman"
+        ],
+        "cited_by": 512,
+        "oa_url": "https://doi.org/10.1111/cdep.12213"
+      },
+      {
+        "openalex_id": "W3044037212",
+        "title": "Applying relationship science to evaluate how the COVID-19 pandemic may impact couples’ relationships.",
+        "year": 2020,
+        "authors": [
+          "Paula R. Pietromonaco",
+          "Nickola Christine Overall"
+        ],
+        "cited_by": 462,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2752095913",
+        "title": "Interpersonal mechanisms linking close relationships to health.",
+        "year": 2017,
+        "authors": [
+          "Paula R. Pietromonaco",
+          "Nancy L. Collins"
+        ],
+        "cited_by": 382,
+        "oa_url": "https://doi.org/10.1037/amp0000129"
+      },
+      {
+        "openalex_id": "W2336040666",
+        "title": "Adult attachment, stress, and romantic relationships",
+        "year": 2016,
+        "authors": [
+          "Jeffry A. Simpson",
+          "W. Steven Rholes"
+        ],
+        "cited_by": 362,
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4845754"
+      },
+      {
+        "openalex_id": "W2292275166",
+        "title": "Autonomy and Autonomy Disturbances in Self‐Development and Psychopathology: Research on Motivation, Attachment, and Clinical Process",
+        "year": 2016,
+        "authors": [
+          "Richard M. Ryan",
+          "Edward L. Deci",
+          "Maarten Vansteenkiste"
+        ],
+        "cited_by": 306,
+        "oa_url": "https://doi.org/10.1002/9781119125556.devpsy109"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Mikulincer & Shaver (2007) had no clean record and is left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

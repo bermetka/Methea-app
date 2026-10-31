@@ -23,9 +23,9 @@ def card(slug,name,original,core,when,mistakes,dev,strands,strengths,critiques,m
        "strengths":[{"point":p,"source":w} for p,w in strengths],
        "critiques":[{"point":p,"source":w} for p,w in critiques],
        "must_read":[{"role":r,"work":w,"chapter":ch,"why_read":y,"reading_question":q} for r,w,ch,y,q in must],
-       "recent_works":"auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.","recent_search_term":TERMS[slug]}
+       "recent_works":"auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.","recent_search_term":TERMS.get(slug, re.sub(r' \(.*\)', '', name).lower())}
     a=c["citation_anchor_openalex_id"]
-    c["recent_works_preview"]={"fetched":TODAY,"items":[{k:x[k] for k in ("openalex_id","title","year","authors","cited_by","oa_url")} for x in (recent(a,term=TERMS[slug]) if a else [])]}
+    c["recent_works_preview"]={"fetched":TODAY,"items":[{k:x[k] for k in ("openalex_id","title","year","authors","cited_by","oa_url")} for x in (recent(a,term=TERMS.get(slug, re.sub(r' \(.*\)', '', name).lower())) if a else [])]}
     c["verification_log"]=[{"step":"machine","by":"Claude","date":TODAY,"notes":"Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "+notes},
                            {"step":"human","by":"Bermet","date":None,"notes":"Pending review."}]
     json.dump(c,open(f"out/{slug}.json","w"),indent=2,ensure_ascii=False)
