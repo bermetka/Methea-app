@@ -1,0 +1,398 @@
+{
+  "theory_id": null,
+  "library_name": "Social capital theory",
+  "slug": "social-capital-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Pierre Bourdıeu"
+    ],
+    "year": 2002,
+    "title": "The Forms of Capital",
+    "type": "book-chapter",
+    "venue": "Routledge eBooks",
+    "doi": "10.1002/9780470755679.ch15",
+    "openalex_id": "W380575115",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "2002 reprint of the 1986 chapter."
+  },
+  "citation_anchor_openalex_id": "W380575115",
+  "core_idea": "Relationships are a resource. For Bourdieu, social capital is the resources a person can draw on through membership in a durable network; it can be converted into economic and cultural capital and helps reproduce class inequality. Coleman and Putnam later framed it as the trust, norms and networks that make cooperation and collective action easier.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do networks, trust or connections shape access to jobs, credit, education or power?",
+    "Why do some communities or organizations cooperate better than others?",
+    "Typical data: interviews on networks and help-seeking, network surveys, community case studies."
+  ],
+  "common_mistakes": [
+    "Mixing Bourdieu (inequality, individuals and classes) with Putnam (communities, civic life) without saying which version you use.",
+    "Assuming more social capital is always good.",
+    "Measuring it with one proxy (e.g. number of memberships) and calling that social capital."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "James S. Coleman"
+        ],
+        "year": 1988,
+        "title": "Social Capital in the Creation of Human Capital",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/228943",
+        "openalex_id": "W3123534837",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Social capital as a resource in social structure that enables action, e.g. family and community ties supporting children's education."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Robert D. Putnam",
+          "Robert Leonardi",
+          "Raffaella Y. Nanetti"
+        ],
+        "year": 1994,
+        "title": "Making Democracy Work",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400820740",
+        "openalex_id": "W2135409175",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Civic version: networks of civic engagement and trust explain why regional governments in Italy perform differently."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Janine Nahapiet",
+          "Sumantra Ghoshal"
+        ],
+        "year": 1998,
+        "title": "Social Capital, Intellectual Capital, and the Organizational Advantage",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1998.533225",
+        "openalex_id": "W2108183214",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Three dimensions in organizations: structural, relational and cognitive."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Paul S. Adler",
+          "Seok‐Woo Kwon"
+        ],
+        "year": 2002,
+        "title": "Social Capital: Prospects for a New Concept",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/4134367",
+        "openalex_id": "W2129658695",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A common framework across disciplines: sources, benefits, risks and contingencies of social capital."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Network / structural",
+      "summary": "Position in a network matters: weak ties and bridging positions bring new information and opportunities.",
+      "defining_work": {
+        "authors": [
+          "Mark S. Granovetter"
+        ],
+        "year": 1973,
+        "title": "The Strength of Weak Ties",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/225469",
+        "openalex_id": "W2109469951",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Civic / communitarian",
+      "summary": "Social capital as a property of communities: associations, trust, norms of reciprocity.",
+      "defining_work": {
+        "authors": [
+          "Robert D. Putnam",
+          "Robert Leonardi",
+          "Raffaella Y. Nanetti"
+        ],
+        "year": 1994,
+        "title": "Making Democracy Work",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400820740",
+        "openalex_id": "W2135409175",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Development",
+      "summary": "Social capital in development policy: ties within communities and links beyond them.",
+      "defining_work": {
+        "authors": [
+          "Michael J. V. Woolcock"
+        ],
+        "year": 1998,
+        "title": "Social capital and economic development: Toward a theoretical synthesis and policy framework",
+        "type": "article",
+        "venue": "Theory and Society",
+        "doi": "10.1023/a:1006884930135",
+        "openalex_id": "W1533558196",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "One concept that connects sociology, political science, economics and organization studies.",
+      "source": {
+        "authors": [
+          "Paul S. Adler",
+          "Seok‐Woo Kwon"
+        ],
+        "year": 2002,
+        "title": "Social Capital: Prospects for a New Concept",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/4134367",
+        "openalex_id": "W2129658695",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Explains how connections give access to information and opportunities that formal qualifications alone do not.",
+      "source": {
+        "authors": [
+          "Mark S. Granovetter"
+        ],
+        "year": 1973,
+        "title": "The Strength of Weak Ties",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/225469",
+        "openalex_id": "W2109469951",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Social capital has a downside: strong ties can exclude outsiders, make excessive claims on members, restrict freedom and pull members down to group norms. The concept is also stretched too far.",
+      "source": {
+        "authors": [
+          "Alejandro Portes"
+        ],
+        "year": 1998,
+        "title": "Social Capital: Its Origins and Applications in Modern Sociology",
+        "type": "review",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.24.1.1",
+        "openalex_id": "W2115059495",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Treating social relations as 'capital' imports economic thinking into social science and simplifies what it claims to measure.",
+      "source": {
+        "authors": [
+          "Ben Fine"
+        ],
+        "year": 2002,
+        "title": "Social Capital Versus Social Theory",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203470787",
+        "openalex_id": "W1647165795",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Pierre Bourdıeu"
+        ],
+        "year": 2002,
+        "title": "The Forms of Capital",
+        "type": "book-chapter",
+        "venue": "Routledge eBooks",
+        "doi": "10.1002/9780470755679.ch15",
+        "openalex_id": "W380575115",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2002 reprint of the 1986 chapter."
+      },
+      "chapter": null,
+      "why_read": "Short; sets out social capital next to economic and cultural capital.",
+      "reading_question": "In your setting, what can social capital be converted into, and who can't make that conversion?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "James S. Coleman"
+        ],
+        "year": 1988,
+        "title": "Social Capital in the Creation of Human Capital",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/228943",
+        "openalex_id": "W3123534837",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The other foundational version; compare it with Bourdieu's.",
+      "reading_question": "Is your study closer to Coleman's view (a resource for action) or Bourdieu's (a source of inequality)?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Alejandro Portes"
+        ],
+        "year": 1998,
+        "title": "Social Capital: Its Origins and Applications in Modern Sociology",
+        "type": "review",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.24.1.1",
+        "openalex_id": "W2115059495",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The classic critical review: origins, uses and downsides.",
+      "reading_question": "Which of the four negative consequences could appear in your data?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social capital",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2587920046",
+        "title": "Forms of graduate capital and their relationship to graduate employability",
+        "year": 2017,
+        "authors": [
+          "Michael Tomlinson"
+        ],
+        "cited_by": 701,
+        "oa_url": "https://doi.org/10.1108/et-05-2016-0090"
+      },
+      {
+        "openalex_id": "W2995429343",
+        "title": "Social networks, social capital, social support and academic success in higher education: A systematic review with a special focus on ‘underrepresented’ students",
+        "year": 2019,
+        "authors": [
+          "Shweta Mishra"
+        ],
+        "cited_by": 688,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2561874311",
+        "title": "The Social Determinants of Chronic Disease",
+        "year": 2016,
+        "authors": [
+          "William C. Cockerham",
+          "Bryant W. Hamby",
+          "Gabriela R. Oates"
+        ],
+        "cited_by": 584,
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5328595"
+      },
+      {
+        "openalex_id": "W2792816196",
+        "title": "Entrepreneurship ecosystems and women entrepreneurs: a social capital and network approach",
+        "year": 2018,
+        "authors": [
+          "Xaver Neumeyer",
+          "Susana Correia Santos",
+          "António Caetano",
+          "Pamela J. Kalbfleisch"
+        ],
+        "cited_by": 357,
+        "oa_url": "http://hdl.handle.net/10400.12/6927"
+      },
+      {
+        "openalex_id": "W2381817057",
+        "title": "Microfinance and the business of poverty reduction: Critical perspectives from rural Bangladesh",
+        "year": 2016,
+        "authors": [
+          "Subhabrata Bobby Banerjee",
+          "Laurel R Jackson"
+        ],
+        "cited_by": 337,
+        "oa_url": "https://doi.org/10.1177/0018726716640865"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

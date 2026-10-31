@@ -1,0 +1,360 @@
+{
+  "theory_id": null,
+  "library_name": "Structuration Theory",
+  "slug": "structuration-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Anthony Giddens"
+    ],
+    "year": 1984,
+    "title": "The Constitution of Society. Outline of the Theory of Structuration",
+    "type": "article",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W1515810707",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "OpenAlex record that collects the book's citations (typed as article)."
+  },
+  "citation_anchor_openalex_id": "W1515810707",
+  "core_idea": "Structure and agency make each other. When people act they draw on rules and resources (structure), and by acting they reproduce or change those same rules and resources. Giddens calls this the duality of structure: structure is both the medium and the outcome of action.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How are routines, rules or practices in an organization reproduced or changed over time?",
+    "How does the way people use a technology reshape the organization around it?",
+    "Longitudinal qualitative designs: observation, repeated interviews, case studies that follow practices over time."
+  ],
+  "common_mistakes": [
+    "Using 'duality of structure' as a label without showing the loop in the data: which rules and resources people drew on, and what their actions reproduced or changed.",
+    "Trying to measure 'structure' as a variable. In Giddens's sense structure exists only when people draw on it.",
+    "Expecting a ready-made method. Giddens gave few methodological guidelines; you will need to borrow one."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Stephen R. Barley"
+        ],
+        "year": 1986,
+        "title": "Technology as an Occasion for Structuring: Evidence from Observations of CT Scanners and the Social Order of Radiology Departments",
+        "type": "article",
+        "venue": "Administrative Science Quarterly",
+        "doi": "10.2307/2392767",
+        "openalex_id": "W3183765052",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Shows the same technology (CT scanners) leading to different structures in two hospital departments: technology as an occasion for structuring."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Wanda J. Orlikowski"
+        ],
+        "year": 1992,
+        "title": "The Duality of Technology: Rethinking the Concept of Technology in Organizations",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.3.3.398",
+        "openalex_id": "W2101419153",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1721.1/2300"
+      },
+      "adds": "The duality of technology: technology is made by human action and also constrains it."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "William H. Sewell"
+        ],
+        "year": 1992,
+        "title": "A Theory of Structure: Duality, Agency, and Transformation",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/229967",
+        "openalex_id": "W2122407370",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reformulates structure (via Giddens and Bourdieu) to restore agency and build in the possibility of change."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Technology and information systems",
+      "summary": "Applies structuration to how technology use shapes and is shaped by organizations.",
+      "defining_work": {
+        "authors": [
+          "Wanda J. Orlikowski"
+        ],
+        "year": 1992,
+        "title": "The Duality of Technology: Rethinking the Concept of Technology in Organizations",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.3.3.398",
+        "openalex_id": "W2101419153",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1721.1/2300"
+      }
+    },
+    {
+      "name": "Adaptive structuration theory",
+      "summary": "Studies how groups appropriate the structures built into technologies such as group decision systems.",
+      "defining_work": {
+        "authors": [
+          "Gerardine DeSanctis",
+          "Marshall Scott Poole"
+        ],
+        "year": 1994,
+        "title": "Capturing the Complexity in Advanced Technology Use: Adaptive Structuration Theory",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.5.2.121",
+        "openalex_id": "W2169736278",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Widely used and adaptable: a review found 331 information-systems articles (1983–2004) drawing on Giddens.",
+      "source": {
+        "authors": [
+          "Matthew Jones",
+          "Helena Karsten"
+        ],
+        "year": 2008,
+        "title": "Giddens's structuration theory and information systems research",
+        "type": "article",
+        "venue": "Journal of the Association for Information Systems",
+        "doi": "10.5555/2017378.2017385",
+        "openalex_id": "W1601482672",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "One of the main attempts to bridge structure and agency, and a base other theorists build on.",
+      "source": {
+        "authors": [
+          "William H. Sewell"
+        ],
+        "year": 1992,
+        "title": "A Theory of Structure: Duality, Agency, and Transformation",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/229967",
+        "openalex_id": "W2122407370",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Archer contrasts structuration with her morphogenetic approach: by fusing structure and action, structuration makes it hard to study how each changes the other over time.",
+      "source": {
+        "authors": [
+          "Margaret Scotford Archer"
+        ],
+        "year": 1982,
+        "title": "Morphogenesis versus Structuration: On Combining Structure and Action",
+        "type": "article",
+        "venue": "British Journal of Sociology",
+        "doi": "10.2307/589357",
+        "openalex_id": "W4250026844",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The concepts are very abstract and not easily coupled to any method, so the theory is difficult to apply empirically.",
+      "source": {
+        "authors": [
+          "Marlei Pozzebon",
+          "Alain Pinsonneault"
+        ],
+        "year": 2005,
+        "title": "Challenges in Conducting Empirical Work Using Structuration Theory: Learning from IT Research",
+        "type": "article",
+        "venue": "Organization Studies",
+        "doi": "10.1177/0170840605054621",
+        "openalex_id": "W2059706776",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Anthony Giddens"
+        ],
+        "year": 1984,
+        "title": "The Constitution of Society. Outline of the Theory of Structuration",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1515810707",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": "Chapter 1, 'Elements of the theory of structuration'",
+      "why_read": "The core concepts in Giddens's own words; the rest of the book can wait.",
+      "reading_question": "Which rules and resources do the people in your study draw on, and what do their actions reproduce?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Wanda J. Orlikowski"
+        ],
+        "year": 1992,
+        "title": "The Duality of Technology: Rethinking the Concept of Technology in Organizations",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.3.3.398",
+        "openalex_id": "W2101419153",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1721.1/2300"
+      },
+      "chapter": null,
+      "why_read": "A model of applying structuration to a concrete object (technology) in organizations.",
+      "reading_question": "What in your study plays the role that technology plays for Orlikowski?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Marlei Pozzebon",
+          "Alain Pinsonneault"
+        ],
+        "year": 2005,
+        "title": "Challenges in Conducting Empirical Work Using Structuration Theory: Learning from IT Research",
+        "type": "article",
+        "venue": "Organization Studies",
+        "doi": "10.1177/0170840605054621",
+        "openalex_id": "W2059706776",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Practical strategies for doing empirical work with a theory that offers no method.",
+      "reading_question": "Which of the strategies they describe could you use for your data collection and analysis?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "structuration",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W4247573850",
+        "title": "Paradox Research in Management Science: Looking Back to Move Forward",
+        "year": 2016,
+        "authors": [
+          "Jonathan Schad",
+          "Marianne W. Lewis",
+          "Sebastian Raisch",
+          "Wendy K. Smith"
+        ],
+        "cited_by": 1381,
+        "oa_url": "https://udspace.udel.edu/handle/19716/37189"
+      },
+      {
+        "openalex_id": "W4230341080",
+        "title": "Contradictions, Dialectics, and Paradoxes in Organizations: A Constitutive Approach",
+        "year": 2016,
+        "authors": [
+          "Linda L. Putnam",
+          "Gail Theus Fairhurst",
+          "Scott Banghart"
+        ],
+        "cited_by": 904,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2769918765",
+        "title": "What is co-creation? An interactional creation framework and its implications for value creation",
+        "year": 2017,
+        "authors": [
+          "Venkat Ramaswamy",
+          "Kerimcan Ozcan"
+        ],
+        "cited_by": 735,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3100553765",
+        "title": "Dancing the Supply Chain: Toward Transformative Supply Chain Management",
+        "year": 2020,
+        "authors": [
+          "Andreas Wieland"
+        ],
+        "cited_by": 604,
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7753537"
+      },
+      {
+        "openalex_id": "W4221040597",
+        "title": "Digital technologies: tensions in privacy and data",
+        "year": 2022,
+        "authors": [
+          "Sara Quach",
+          "Park Thaichon",
+          "Kelly D. Martin",
+          "Scott K. Weaven",
+          "Robert W. Palmatier"
+        ],
+        "cited_by": 548,
+        "oa_url": "https://doi.org/10.1007/s11747-022-00845-y"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

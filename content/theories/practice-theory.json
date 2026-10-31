@@ -1,0 +1,377 @@
+{
+  "theory_id": null,
+  "library_name": "Practice theory",
+  "slug": "practice-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Pierre Bourdıeu"
+    ],
+    "year": 1977,
+    "title": "Outline of a Theory of Practice",
+    "type": "book",
+    "venue": "Cambridge University Press eBooks",
+    "doi": "10.1017/cbo9780511812507",
+    "openalex_id": "W4301056702",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W4301056702",
+  "core_idea": "Social life is made of practices: routinized ways of doing and saying that combine bodies, objects, know-how and shared meanings. Instead of explaining behaviour by what is in individual minds or by abstract structures, practice theory studies what people actually do, again and again, and how that reproduces or changes social order. Bourdieu's version adds habitus (embodied dispositions) and fields (arenas of struggle).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How is an everyday practice (teaching, farming, cooking, commuting, consuming) carried out, learned and changed?",
+    "Why do routines persist even when people say they want to change them?",
+    "How is work in an organization actually done, as opposed to how it is described?",
+    "Typical data: observation, ethnography, interviews about doing, diaries, video."
+  ],
+  "common_mistakes": [
+    "Studying only what people say about a practice, not the doing itself.",
+    "Treating 'practice' as a synonym for 'behaviour' or 'activity' without its elements (materials, competences, meanings).",
+    "Using Bourdieu and Schatzki interchangeably; they are different versions."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sherry B. Ortner"
+        ],
+        "year": 1984,
+        "title": "Theory in Anthropology since the Sixties",
+        "type": "article",
+        "venue": "Comparative Studies in Society and History",
+        "doi": "10.1017/s0010417500010811",
+        "openalex_id": "W2097379326",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Identifies 'practice' as the emerging key orientation in anthropological theory."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Andreas Reckwitz"
+        ],
+        "year": 2002,
+        "title": "Toward a Theory of Social Practices",
+        "type": "article",
+        "venue": "European Journal of Social Theory",
+        "doi": "10.1177/13684310222225432",
+        "openalex_id": "W2120969145",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Defines practice theory as an alternative to explaining the social through minds, texts or interaction."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Elizabeth Shove",
+          "Mika Pantzar",
+          "Matt Watson"
+        ],
+        "year": 2012,
+        "title": "The Dynamics of Social Practice: Everyday Life and How it Changes",
+        "type": "book",
+        "venue": "SAGE Publications Ltd eBooks",
+        "doi": "10.4135/9781446250655",
+        "openalex_id": "W86961873",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A simple model: practices are made of materials, competences and meanings, and change when links between them change."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Bourdieusian",
+      "summary": "Habitus, capital and field: practices reproduce social position.",
+      "defining_work": {
+        "authors": [
+          "Pierre Bourdıeu"
+        ],
+        "year": 1977,
+        "title": "Outline of a Theory of Practice",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511812507",
+        "openalex_id": "W4301056702",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Consumption and sustainability",
+      "summary": "Everyday consumption understood through the practices it serves.",
+      "defining_work": {
+        "authors": [
+          "Alan Warde"
+        ],
+        "year": 2005,
+        "title": "Consumption and Theories of Practice",
+        "type": "article",
+        "venue": "Journal of Consumer Culture",
+        "doi": "10.1177/1469540505053090",
+        "openalex_id": "W2119020812",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Organizations",
+      "summary": "Practice as an empirical focus, a theory and a philosophy in organization studies.",
+      "defining_work": {
+        "authors": [
+          "Martha S. Feldman",
+          "Wanda J. Orlikowski"
+        ],
+        "year": 2011,
+        "title": "Theorizing Practice and Practicing Theory",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.1100.0612",
+        "openalex_id": "W2151363056",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1721.1/66516"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Offers an alternative to explaining social life through individual minds or texts alone.",
+      "source": {
+        "authors": [
+          "Andreas Reckwitz"
+        ],
+        "year": 2002,
+        "title": "Toward a Theory of Social Practices",
+        "type": "article",
+        "venue": "European Journal of Social Theory",
+        "doi": "10.1177/13684310222225432",
+        "openalex_id": "W2120969145",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Works well for everyday routines such as consumption, where individual-choice explanations fall short.",
+      "source": {
+        "authors": [
+          "Alan Warde"
+        ],
+        "year": 2005,
+        "title": "Consumption and Theories of Practice",
+        "type": "article",
+        "venue": "Journal of Consumer Culture",
+        "doi": "10.1177/1469540505053090",
+        "openalex_id": "W2119020812",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Bourdieu's scheme remains deterministic and circular: structures produce dispositions, which produce practices, which reproduce the structures.",
+      "source": {
+        "authors": [
+          "Richard Jenkins"
+        ],
+        "year": 1982,
+        "title": "Pierre Bourdieu and the Reproduction of Determinism",
+        "type": "article",
+        "venue": "Sociology",
+        "doi": "10.1177/0038038582016002008",
+        "openalex_id": "W1996724386",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The habitus concept retreats into objectivism and conflicts with Bourdieu's own emphasis on practical interaction.",
+      "source": {
+        "authors": [
+          "Anthony C. King"
+        ],
+        "year": 2000,
+        "title": "Thinking with Bourdieu against Bourdieu: A ‘Practical’ Critique of the Habitus",
+        "type": "article",
+        "venue": "Sociological Theory",
+        "doi": "10.1111/0735-2751.00109",
+        "openalex_id": "W2159337037",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Pierre Bourdıeu"
+        ],
+        "year": 1977,
+        "title": "Outline of a Theory of Practice",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511812507",
+        "openalex_id": "W4301056702",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": "Chapter 2, 'Structures and the habitus'",
+      "why_read": "Where habitus is defined.",
+      "reading_question": "Which dispositions do the people in your study bring to the practice, and where did they learn them?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Andreas Reckwitz"
+        ],
+        "year": 2002,
+        "title": "Toward a Theory of Social Practices",
+        "type": "article",
+        "venue": "European Journal of Social Theory",
+        "doi": "10.1177/13684310222225432",
+        "openalex_id": "W2120969145",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The clearest short definition of practice theory.",
+      "reading_question": "What exactly is the 'practice' in your study, and what are its elements?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Martha S. Feldman",
+          "Wanda J. Orlikowski"
+        ],
+        "year": 2011,
+        "title": "Theorizing Practice and Practicing Theory",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.1100.0612",
+        "openalex_id": "W2151363056",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1721.1/66516"
+      },
+      "chapter": null,
+      "why_read": "How practice theory is used in organization research, with three ways to use it.",
+      "reading_question": "Are you using practice as an empirical focus, a theory, or a philosophy?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "practice theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2765659056",
+        "title": "Translanguaging as a Practical Theory of Language",
+        "year": 2017,
+        "authors": [
+          "Li Wei"
+        ],
+        "cited_by": 2909,
+        "oa_url": "https://doi.org/10.1093/applin/amx039"
+      },
+      {
+        "openalex_id": "W2781528138",
+        "title": "“News comes across when I’m in a moment of leisure”: Understanding the practices of incidental news consumption on social media",
+        "year": 2018,
+        "authors": [
+          "Pablo Javier Boczkowski",
+          "Eugenia Mitchelstein",
+          "Mora Matassi"
+        ],
+        "cited_by": 435,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2904911455",
+        "title": "“If they don’t tell us what they do with it, why would we trust them?” Trust, transparency and benefit-sharing in Smart Farming",
+        "year": 2018,
+        "authors": [
+          "Emma Jakku",
+          "Bruce Taylor",
+          "Aysha Fleming",
+          "Claire Mason",
+          "Simon Fielke",
+          "Chris Sounness"
+        ],
+        "cited_by": 302,
+        "oa_url": "https://doi.org/10.1016/j.njas.2018.11.002"
+      },
+      {
+        "openalex_id": "W3213655494",
+        "title": "Digital well-being theory and research",
+        "year": 2021,
+        "authors": [
+          "Moritz Büchi"
+        ],
+        "cited_by": 278,
+        "oa_url": "https://doi.org/10.1177/14614448211056851"
+      },
+      {
+        "openalex_id": "W2418146398",
+        "title": "Theory and practice of value co-creation in B2B systems",
+        "year": 2016,
+        "authors": [
+          "Marko Kohtamäki",
+          "Risto Rajala"
+        ],
+        "cited_by": 221,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Schatzki (1996) has no clean record and is left out of this card until checked."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

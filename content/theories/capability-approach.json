@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Capability approach",
+  "slug": "capability-approach",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Amartya Kumar Sen"
+    ],
+    "year": 2009,
+    "title": "Development as Freedom",
+    "type": "book-chapter",
+    "venue": null,
+    "doi": "10.1007/978-1-137-28787-8_94",
+    "openalex_id": "W1535803599",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "Record dated 2009 (later printing of the 1999 book)."
+  },
+  "citation_anchor_openalex_id": "W1535803599",
+  "core_idea": "Judge well-being and development by what people are actually able to do and to be (capabilities) and what they achieve (functionings), not only by income or resources. Two people with the same income may have very different real freedoms. For Sen, expanding freedom is both the main goal and the main means of development.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What can people in a given group actually do or be, and what stops them?",
+    "How should a policy or programme be evaluated beyond income or access figures?",
+    "Typical data: interviews on valued 'beings and doings', participatory methods, multidimensional survey indicators."
+  ],
+  "common_mistakes": [
+    "Confusing capabilities (real freedoms) with functionings (achieved outcomes).",
+    "Listing capabilities without explaining how and why you selected them.",
+    "Treating it as the same as human capital theory."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Martha C. Nussbaum"
+        ],
+        "year": 2000,
+        "title": "Women and Human Development",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511841286",
+        "openalex_id": "W4248110397",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/cbo9780511841286"
+      },
+      "adds": "Proposes a list of central human capabilities, developed through the lives of women in India."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Martha C. Nussbaum"
+        ],
+        "year": 2011,
+        "title": "Creating Capabilities",
+        "type": "book",
+        "venue": "Harvard University Press eBooks",
+        "doi": "10.4159/harvard.9780674061200",
+        "openalex_id": "W4240580964",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "An accessible restatement of the approach for policy and research."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Sabina Alkire"
+        ],
+        "year": 2002,
+        "title": "Valuing Freedoms",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0199245797.001.0001",
+        "openalex_id": "W4249572787",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Methods for selecting and valuing capabilities in poverty reduction projects."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Sabina Alkire",
+          "James E. Foster"
+        ],
+        "year": 2010,
+        "title": "Counting and multidimensional poverty measurement",
+        "type": "article",
+        "venue": "Journal of Public Economics",
+        "doi": "10.1016/j.jpubeco.2010.11.006",
+        "openalex_id": "W2129578420",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A method for measuring multidimensional poverty, later used for global poverty indices."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Open-ended (Sen) vs list-based (Nussbaum)",
+      "summary": "Whether capabilities should be chosen through public reasoning or fixed in a list.",
+      "defining_work": {
+        "authors": [
+          "Martha C. Nussbaum"
+        ],
+        "year": 2000,
+        "title": "Women and Human Development",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511841286",
+        "openalex_id": "W4248110397",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/cbo9780511841286"
+      }
+    },
+    {
+      "name": "Measurement",
+      "summary": "Turning capabilities into multidimensional indicators.",
+      "defining_work": {
+        "authors": [
+          "Sabina Alkire",
+          "James E. Foster"
+        ],
+        "year": 2010,
+        "title": "Counting and multidimensional poverty measurement",
+        "type": "article",
+        "venue": "Journal of Public Economics",
+        "doi": "10.1016/j.jpubeco.2010.11.006",
+        "openalex_id": "W2129578420",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A broad, interdisciplinary framework for evaluating well-being, policies and social arrangements across several dimensions.",
+      "source": {
+        "authors": [
+          "Ingrid Robeyns"
+        ],
+        "year": 2005,
+        "title": "The Capability Approach: a theoretical survey",
+        "type": "article",
+        "venue": "Journal of Human Development",
+        "doi": "10.1080/146498805200034266",
+        "openalex_id": "W2165124553",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Separates means (resources) from ends (what people can do), which sharpens evaluation questions.",
+      "source": {
+        "authors": [
+          "Ingrid Robeyns"
+        ],
+        "year": 2005,
+        "title": "The Capability Approach: a theoretical survey",
+        "type": "article",
+        "venue": "Journal of Human Development",
+        "doi": "10.1080/146498805200034266",
+        "openalex_id": "W2165124553",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Too individualistic: groups shape well-being, values and choices, so group capabilities should be analysed too.",
+      "source": {
+        "authors": [
+          "Frances Stewart"
+        ],
+        "year": 2005,
+        "title": "Groups and Capabilities",
+        "type": "article",
+        "venue": "Journal of Human Development",
+        "doi": "10.1080/14649880500120517",
+        "openalex_id": "W2099331147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Sen's approach under-theorizes the social structures people live within.",
+      "source": {
+        "authors": [
+          "Frances Stewart",
+          "Séverine Deneulin"
+        ],
+        "year": 2002,
+        "title": "Amartya Sen’s contribution to development thinking",
+        "type": "article",
+        "venue": "Studies in Comparative International Development",
+        "doi": "10.1007/bf02686262",
+        "openalex_id": "W2062330360",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Amartya Kumar Sen"
+        ],
+        "year": 2009,
+        "title": "Development as Freedom",
+        "type": "book-chapter",
+        "venue": null,
+        "doi": "10.1007/978-1-137-28787-8_94",
+        "openalex_id": "W1535803599",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": "Introduction and Chapter 1, 'The perspective of freedom'",
+      "why_read": "The core argument in Sen's own words.",
+      "reading_question": "What does 'freedom' concretely mean for the people in your study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Martha C. Nussbaum"
+        ],
+        "year": 2011,
+        "title": "Creating Capabilities",
+        "type": "book",
+        "venue": "Harvard University Press eBooks",
+        "doi": "10.4159/harvard.9780674061200",
+        "openalex_id": "W4240580964",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The most accessible full statement, including Nussbaum's list.",
+      "reading_question": "Would you use Nussbaum's list, or select capabilities with your participants?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Ingrid Robeyns"
+        ],
+        "year": 2005,
+        "title": "The Capability Approach: a theoretical survey",
+        "type": "article",
+        "venue": "Journal of Human Development",
+        "doi": "10.1080/146498805200034266",
+        "openalex_id": "W2165124553",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The standard survey of the approach.",
+      "reading_question": "Which of the approach's distinctions (means vs ends, capability vs functioning) does your question rely on?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "capability approach",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2555509407",
+        "title": "Distributive justice and equity in transportation",
+        "year": 2016,
+        "authors": [
+          "Rafael H. M. Pereira",
+          "Tim Schwanen",
+          "David Banister"
+        ],
+        "cited_by": 1065,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2769436221",
+        "title": "Wellbeing, Freedom and Social Justice",
+        "year": 2017,
+        "authors": [
+          "Ingrid Robeyns"
+        ],
+        "cited_by": 1011,
+        "oa_url": "https://doi.org/10.11647/obp.0130"
+      },
+      {
+        "openalex_id": "W2570086612",
+        "title": "Assessing the extent and intensity of energy poverty using Multidimensional Energy Poverty Index: Empirical evidence from households in India",
+        "year": 2017,
+        "authors": [
+          "Anver C. Sadath",
+          "Rajesh Herolli Acharya"
+        ],
+        "cited_by": 392,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2473585802",
+        "title": "How Do Aspirations Matter?",
+        "year": 2016,
+        "authors": [
+          "Caroline Sarojini Hart"
+        ],
+        "cited_by": 228,
+        "oa_url": "https://doi.org/10.1080/19452829.2016.1199540"
+      },
+      {
+        "openalex_id": "W3046119274",
+        "title": "Tourism specialization, economic growth, human development and transition economies: The case of Poland",
+        "year": 2020,
+        "authors": [
+          "Robertico R. Croes",
+          "Jorge R. Ridderstaat",
+          "Monika Bąk",
+          "Piotr Zientara"
+        ],
+        "cited_by": 207,
+        "oa_url": "https://stars.library.ucf.edu/ucfscholar/957"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Sen (1985) and Sugden (1993) have no clean records and are left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

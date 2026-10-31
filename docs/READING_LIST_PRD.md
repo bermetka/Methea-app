@@ -23,8 +23,9 @@ checks what she already has.
 1. **Theory card.** Curated content per `THEORY_CONTENT_PROTOCOL.md`: core idea, development,
    strands, strengths and critiques with sources, 3 must-read works with reading questions.
    Only theories the founder has reviewed get the full card. The rest keep today's summary.
-2. **Recent works.** Pulled from OpenAlex: works citing the original, last 10 years, top 5 by
-   citations, cached for 7 days per theory.
+2. **Recent works.** Pulled from OpenAlex: works citing the original that also match the
+   student's topic terms, last 10 years, top 5 by citations, cached for 7 days per theory+topic.
+   Without the topic filter the list is generic famous papers (found in the pilot).
 3. **Student's reading list: verification.** The student pastes her list on the brief step or
    adds it in Gate 2.
    - Claude (fast model) only splits her text into items: author, year, title, DOI. It adds

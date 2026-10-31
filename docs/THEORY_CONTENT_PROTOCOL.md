@@ -141,11 +141,16 @@ library summary and concepts, as today.
 
 ## 5. Recent works (automatic, not curated)
 
-Shown under "More recent works citing the original":
-- OpenAlex: `filter=cites:<original W-id>,from_publication_date:<today − 10 years>,is_retracted:false`
-- Sort by `cited_by_count:desc`, take the top 5.
-- Show title, authors, year, ✓ chip, open-access link when `best_oa_location` exists.
-- Cached 7 days. Labelled clearly as "recent works citing the original", not as developments.
+Shown under "Beyond your list":
+- OpenAlex: `filter=cites:<citation anchor W-id>,from_publication_date:<today − 10 years>,is_retracted:false,title_and_abstract.search:<terms>`
+- `<terms>` = the student's topic terms (from her brief), so the list is about her topic, not just
+  any highly cited paper that cites the classic. Without topic terms the sort returns generic
+  famous papers (pilot: a Lancet commission for the capability approach). Fallback: the theory name.
+- Sort by `cited_by_count:desc`, top 5. Show title, authors, year, ✓ chip, open-access link when `best_oa_location` exists.
+- Cache per (theory, terms) for 7 days. Labelled "Recent works citing the original", never as developments.
+- **Citation anchor.** For classic books OpenAlex often collects citations on an odd record (a 1967
+  review, a later reprint chapter). The card stores `citation_anchor_openalex_id` separately from the
+  bibliographic record and uses it only for this query.
 
 ---
 

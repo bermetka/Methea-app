@@ -1,0 +1,361 @@
+{
+  "theory_id": null,
+  "library_name": "Social constructionism",
+  "slug": "social-constructionism",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Berger, Peter L.",
+      "Luckmann, Thomas"
+    ],
+    "year": 1966,
+    "title": "The Social Construction of Reality: A Treatise in the Sociology of Knowledge",
+    "type": "book",
+    "venue": "Doubleday",
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": false,
+    "verified_in": null,
+    "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. OpenAlex collects its citations on a 1967 record (W2073506374) that also lists a reviewer as author; used only as the citation anchor for recent works."
+  },
+  "citation_anchor_openalex_id": "W2073506374",
+  "core_idea": "What people treat as obvious reality (roles, institutions, what counts as normal or true) is produced by people interacting and is then experienced as objective. Berger and Luckmann describe this as a cycle: people create social order (externalization), it comes to feel like a fact outside them (objectivation), and new generations learn it as simply how things are (internalization).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How did a category or meaning come to be taken for granted (e.g. 'a good student', 'national dress', 'corruption')?",
+    "How do participants talk about, define and negotiate a phenomenon?",
+    "Interpretive qualitative designs: interviews, discourse and media analysis, document analysis."
+  ],
+  "common_mistakes": [
+    "Reading 'socially constructed' as 'not real' or 'fake'. Constructed things have real consequences.",
+    "Not saying what exactly is constructed, by whom and through which practices.",
+    "Combining it with a design that measures 'true' values of variables without addressing the clash in research philosophy.",
+    "Citing Berger & Luckmann as if they offered a method for discourse analysis. They offer a theory of knowledge, not a method."
+  ],
+  "development": [
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Malcolm Spector",
+          "John I. Kitsuse"
+        ],
+        "year": 2017,
+        "title": "Constructing Social Problems",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781315080512",
+        "openalex_id": "W4230958478",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Routledge reissue (2017) of the 1977 book."
+      },
+      "adds": "Treats social problems as claims-making activities: a problem exists when groups successfully define it as one."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Kenneth J. Gergen"
+        ],
+        "year": 1985,
+        "title": "The social constructionist movement in modern psychology.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037/0003-066x.40.3.266",
+        "openalex_id": "W2157525610",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "OpenAlex's abstract for this record belongs to a different text; check the title page."
+      },
+      "adds": "Brings constructionism into psychology: knowledge is a product of social exchange, not a mirror of the mind or the world."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Vivien Burr"
+        ],
+        "year": 1995,
+        "title": "An Introduction to Social Constructionism",
+        "type": "book",
+        "venue": "Taylor & Francis eBooks",
+        "doi": "10.4324/9780203299968",
+        "openalex_id": "W1785520540",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The standard introduction that organized constructionist ideas for social-science students."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Social problems as claims-making",
+      "summary": "Studies how conditions become recognized 'problems' through claims by groups, media and experts.",
+      "defining_work": {
+        "authors": [
+          "Malcolm Spector",
+          "John I. Kitsuse"
+        ],
+        "year": 2017,
+        "title": "Constructing Social Problems",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781315080512",
+        "openalex_id": "W4230958478",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Routledge reissue (2017) of the 1977 book."
+      }
+    },
+    {
+      "name": "Constructionism in psychology",
+      "summary": "Treats knowledge, emotion and the self as produced in relationships and language.",
+      "defining_work": {
+        "authors": [
+          "Kenneth J. Gergen"
+        ],
+        "year": 1985,
+        "title": "The social constructionist movement in modern psychology.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037/0003-066x.40.3.266",
+        "openalex_id": "W2157525610",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "OpenAlex's abstract for this record belongs to a different text."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains how roles and institutions come to feel natural even though people made them, which opens them to questioning.",
+      "source": {
+        "authors": [
+          "Berger, Peter L.",
+          "Luckmann, Thomas"
+        ],
+        "year": 1966,
+        "title": "The Social Construction of Reality",
+        "type": "book",
+        "venue": "Doubleday",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then."
+      }
+    },
+    {
+      "point": "Gives qualitative researchers a clear rationale for studying meanings, language and interaction rather than 'objective' variables.",
+      "source": {
+        "authors": [
+          "Vivien Burr"
+        ],
+        "year": 1995,
+        "title": "An Introduction to Social Constructionism",
+        "type": "book",
+        "venue": "Taylor & Francis eBooks",
+        "doi": "10.4324/9780203299968",
+        "openalex_id": "W1785520540",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Studies often treat some conditions as constructed while quietly treating others as objectively given. The authors call this boundary-drawing 'ontological gerrymandering'.",
+      "source": {
+        "authors": [
+          "Steve Woolgar",
+          "Dorothy Pawluch"
+        ],
+        "year": 1985,
+        "title": "Ontological Gerrymandering: The Anatomy of Social Problems Explanations",
+        "type": "article",
+        "venue": "Social Problems",
+        "doi": "10.1525/sp.1985.32.3.03a00020",
+        "openalex_id": "W2169609726",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "'Social construction' is used so loosely that it often says little. Researchers should state what exactly is constructed (an idea, a category, an object) and what follows from that.",
+      "source": {
+        "authors": [
+          "Ian Hacking"
+        ],
+        "year": 2000,
+        "title": "The Social Construction of What?",
+        "type": "book",
+        "venue": "Harvard University Press eBooks",
+        "doi": "10.2307/j.ctv1bzfp1z",
+        "openalex_id": "W4299955896",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Berger, Peter L.",
+          "Luckmann, Thomas"
+        ],
+        "year": 1966,
+        "title": "The Social Construction of Reality",
+        "type": "book",
+        "venue": "Doubleday",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then."
+      },
+      "chapter": "Parts II and III ('Society as Objective Reality', 'Society as Subjective Reality')",
+      "why_read": "Where the cycle of externalization, objectivation and internalization is set out.",
+      "reading_question": "Which taken-for-granted 'fact' in your topic could you trace back to how people created and passed it on?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Steve Woolgar",
+          "Dorothy Pawluch"
+        ],
+        "year": 1985,
+        "title": "Ontological Gerrymandering: The Anatomy of Social Problems Explanations",
+        "type": "article",
+        "venue": "Social Problems",
+        "doi": "10.1525/sp.1985.32.3.03a00020",
+        "openalex_id": "W2169609726",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Short and sharp; helps you avoid the most common inconsistency in constructionist studies.",
+      "reading_question": "In your study, what are you treating as constructed and what as given, and can you justify the line?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Vivien Burr"
+        ],
+        "year": 1995,
+        "title": "An Introduction to Social Constructionism",
+        "type": "book",
+        "venue": "Taylor & Francis eBooks",
+        "doi": "10.4324/9780203299968",
+        "openalex_id": "W1785520540",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A clear map of what constructionism claims and how it is used in research.",
+      "reading_question": "Which version of constructionism (strong or moderate) fits how you plan to analyse your data?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social construction",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2990698409",
+        "title": "Interactional Linguistics: Studying Language in Social Interaction",
+        "year": 2018,
+        "authors": [
+          "Elizabeth Couper‐Kuhlen",
+          "Margret Selting"
+        ],
+        "cited_by": 486,
+        "oa_url": "http://digitale-objekte.hbz-nrw.de/storage2/2018/02/20/file_50/7554386.pdf"
+      },
+      {
+        "openalex_id": "W2393537175",
+        "title": "Intersectionality in Quantitative Psychological Research",
+        "year": 2016,
+        "authors": [
+          "Nicole Meredith Else-Quest",
+          "Janet Shibley Hyde"
+        ],
+        "cited_by": 421,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2938531267",
+        "title": "The Social Origins of ESG: An Analysis of Innovest and KLD",
+        "year": 2019,
+        "authors": [
+          "Robert G. Eccles",
+          "Linda-Eling Lee",
+          "Judith C. Stroehle"
+        ],
+        "cited_by": 388,
+        "oa_url": "https://doi.org/10.2139/ssrn.3318225"
+      },
+      {
+        "openalex_id": "W4249729665",
+        "title": "Social Constructionism",
+        "year": 2018,
+        "authors": [
+          "Vivien Burr"
+        ],
+        "cited_by": 366,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4236610026",
+        "title": "Social Constructionism",
+        "year": 2019,
+        "authors": [
+          "Vivien Burr"
+        ],
+        "cited_by": 269,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}
