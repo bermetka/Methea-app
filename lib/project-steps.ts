@@ -4,6 +4,7 @@ export type StepKey =
   | 'brief'
   | 'gate1'
   | 'theories'
+  | 'gate2'
   | 'framework'
   | 'methodology'
   | 'interview-guide'
@@ -25,6 +26,8 @@ const STEPS: { key: StepKey; label: string; done: (c: Ctx) => boolean }[] = [
   { key: 'brief',           label: 'Brief',           done: c => !!c?.brief },
   { key: 'gate1',           label: 'Question',        done: c => !!c?.socratic_gate_1?.completed },
   { key: 'theories',        label: 'Theories',        done: c => !!c?.theories?.selected_ids?.length },
+  // Projects that built a framework before Gate 2 existed count it as done.
+  { key: 'gate2',           label: 'Reading',         done: c => !!c?.socratic_gate_2?.completed || !!c?.framework?.edges?.length },
   { key: 'framework',       label: 'Framework',       done: c => !!c?.framework?.edges?.length },
   { key: 'methodology',     label: 'Methodology',     done: c => !!c?.methodology?.narrative },
   { key: 'interview-guide', label: 'Guide',           done: c => !!c?.interview_guide?.questions?.length },

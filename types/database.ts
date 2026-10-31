@@ -73,6 +73,39 @@ export interface ReadingListItem {
 
 export type CitationStatus = 'verified' | 'unverified' | 'outdated'
 
+/** A work as found in OpenAlex or Crossref (bibliographic fields copied from the record). */
+export interface VerifiedWork {
+  openalex_id: string | null
+  doi: string | null
+  title: string
+  year: number | null
+  authors: string[]
+  venue: string | null
+  oa_url: string | null
+  verified_in: 'openalex' | 'crossref'
+}
+
+/** One entry of the student's own reading list, as checked in Gate 2. */
+export interface StudentListItem {
+  id: string                                   // stable key within the list
+  raw: string                                  // exactly what the student wrote
+  parsed: { authors: string[]; year: number | null; title: string | null; doi: string | null }
+  status: 'verified' | 'unverified'
+  work: VerifiedWork | null
+  /** Machine evidence: the work cites the theory's original or is a curated work for it. */
+  theory_links: { theory_id: string; evidence: string }[]
+  /** Abstract-based tags; every quote is checked to appear verbatim in the abstract. */
+  concept_tags: { concept: string; quote: string }[]
+  abstract_available: boolean
+}
+
+export interface StudentReadingList {
+  items: StudentListItem[]
+  checked_for: string                          // sorted selected theory ids the links were computed for
+  checked_at: string
+  truncated?: boolean                          // list was longer than the limit
+}
+
 export interface InterviewQuestion {
   id: string
   question: string
@@ -130,6 +163,9 @@ export interface ResearchContext {
     fits?: boolean                              // cached fit-check verdict, see TheoryFitResult
     fit_reason?: string                         // one-sentence reason behind `fits`
     suggested_custom_theories?: string[]        // cached bare theory NAMES offered when fits === false
+    student_list?: StudentReadingList            // the student's own reading list, checked in Gate 2
+    read_marks?: string[]                        // work keys (OpenAlex id or DOI) the student marked as read
+    search_terms?: string[]                      // 2–4 topic terms used to find recent works on her topic
   }
   socratic_gate_2?: {
     completed: boolean

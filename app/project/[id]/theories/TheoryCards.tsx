@@ -353,8 +353,8 @@ export default function TheoryCards({
               }}
             >
               {submitting
-                ? <PendingSteps steps={['Saving your theories…', 'Working out how they relate…', 'Drawing your framework…']} />
-                : 'Build my framework →'}
+                ? <PendingSteps steps={['Saving your theories…', 'Opening your reading guide…']} />
+                : 'Continue to reading →'}
             </button>
           </>
         )}

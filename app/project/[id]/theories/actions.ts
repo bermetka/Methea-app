@@ -98,9 +98,11 @@ export async function saveTheorySelection(formData: FormData): Promise<string> {
   )
 
   // Return where to go instead of redirecting: the client navigates, so the next step's
-  // loading screen shows immediately. Mirrors the project page's routing (first pass →
-  // framework; otherwise the workspace).
-  return ctx?.framework?.edges?.length ? `/project/${projectId}` : `/project/${projectId}/framework`
+  // loading screen shows immediately.
+  // First pass (or theories changed): go to Gate 2, the reading step.
+  return ctx?.framework?.edges?.length && !outdatedBlocks.includes('framework')
+    ? `/project/${projectId}`
+    : `/project/${projectId}/gate2`
 }
 
 export type AddCustomState = {

@@ -7,7 +7,7 @@ const ctx = (c: Partial<ResearchContext>) => c as ResearchContext
 describe('projectSteps', () => {
   it('marks nothing done for an empty project', () => {
     const steps = projectSteps(null, 'p1')
-    expect(steps.map(s => s.done)).toEqual([false, false, false, false, false, false, false])
+    expect(steps.map(s => s.done)).toEqual([false, false, false, false, false, false, false, false])
     expect(steps[0].href).toBe('/project/p1/brief')
     expect(currentStepIndex(steps)).toBe(0)
   })

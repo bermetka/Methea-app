@@ -31,6 +31,10 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   if (!p.research_context?.brief)                              redirect(`/project/${params.id}/brief`)
   if (!p.research_context?.socratic_gate_1?.completed)         redirect(`/project/${params.id}/gate1`)
   if (!p.research_context?.theories?.selected_ids?.length)     redirect(`/project/${params.id}/theories`)
+  // Gate 2 (reading + theory–timeline check) sits before the first framework only;
+  // projects that already have a framework skip it.
+  if (!p.research_context?.framework?.edges?.length && !p.research_context?.socratic_gate_2?.completed)
+                                                               redirect(`/project/${params.id}/gate2`)
   if (!p.research_context?.framework?.edges?.length)           redirect(`/project/${params.id}/framework`)
 
   const ctx         = p.research_context
