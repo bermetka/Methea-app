@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import PendingSteps from '@/components/ui/PendingSteps'
 import RadioCard from '@/components/ui/RadioCard'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
@@ -26,6 +27,7 @@ export default function Gate1Form({
   const [answers, setAnswers]       = useState<Record<string, string>>(initialAnswers ?? {})
   const [contextNote, setContextNote] = useState(initialContextNote ?? '')
   const [submitting, setSubmitting] = useState(false)
+  const router = useRouter()
 
   const current  = questions[step]
   const selected = answers[current.id]
@@ -45,7 +47,9 @@ export default function Gate1Form({
     formData.append('projectId', projectId)
     formData.append('answers', JSON.stringify(answers))
     formData.append('contextNote', contextNote)
-    await submitGate1(formData)
+    const next = await submitGate1(formData)
+    // Client navigation: the theories loading screen appears immediately.
+    if (next) router.push(next)
   }
 
   async function goForward() {
@@ -192,9 +196,11 @@ export default function Gate1Form({
             type="button"
             onClick={goForward}
             disabled={!selected || submitting}
+            className={submitting ? 'methea-busy' : undefined}
+            aria-busy={submitting}
             style={{
               ...s.continueBtn,
-              ...(!selected || submitting ? s.continueBtnDisabled : {}),
+              ...(!selected && !submitting ? s.continueBtnDisabled : {}),
             }}
           >
             {submitting

@@ -59,3 +59,17 @@ a { color: var(--ink-blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* Busy button: the button keeps its ink colour and a lime marker bar runs along the
+   bottom edge, so a waiting student sees work in progress, not a disabled button.
+   Marker stays a highlight (brand rule: never a button fill). */
+.methea-busy { position: relative; overflow: hidden; cursor: progress !important; }
+.methea-busy::after {
+  content: ''; position: absolute; left: 0; bottom: 0; height: 3px; width: 40%;
+  background: var(--marker-lime); border-radius: 2px;
+  animation: methea-busy 1.4s ease-in-out infinite;
+}
+@keyframes methea-busy { from { transform: translateX(-100%) } to { transform: translateX(250%) } }
+@media (prefers-reduced-motion: reduce) {
+  .methea-busy::after { animation: none; width: 100%; }
+}

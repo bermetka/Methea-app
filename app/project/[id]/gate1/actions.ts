@@ -54,5 +54,9 @@ export async function submitGate1(formData: FormData) {
   )
 
   await trackEvent('gate1_done', { once: projectId })
-  redirect(`/project/${projectId}`)
+  // Return the next step instead of redirecting, so the client navigates and the
+  // theories loading screen shows at once. Mirrors the project page's routing.
+  return project.research_context?.theories?.selected_ids?.length
+    ? `/project/${projectId}`
+    : `/project/${projectId}/theories`
 }
