@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { titlesMatch, authorsMatch, yearsMatch, reconstructAbstract, normalizeDoi } from './works'
+import { titlesMatch, authorsMatch, yearsMatch, reconstructAbstract, normalizeDoi, extractDoi } from './works'
 import { quoteInText } from '@/lib/prompts/reading-list'
 
 describe('titlesMatch', () => {
@@ -56,5 +56,16 @@ describe('quoteInText (anti-hallucination guard for concept tags)', () => {
   })
   it('rejects one- or two-word quotes', () => {
     expect(quoteInText('legitimacy', abstract)).toBe(false)
+  })
+})
+
+describe('extractDoi', () => {
+  it('reads a DOI from doi.org and publisher links', () => {
+    expect(extractDoi('https://doi.org/10.2307/2095101')).toBe('10.2307/2095101')
+    expect(extractDoi('https://www.tandfonline.com/doi/full/10.1080/13645579.2016.1144401')).toBe('10.1080/13645579.2016.1144401')
+    expect(extractDoi('https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6520.2010.00427.x.')).toBe('10.1111/j.1540-6520.2010.00427.x')
+  })
+  it('returns null when there is no DOI', () => {
+    expect(extractDoi('Giddens, A. (1984). The constitution of society.')).toBeNull()
   })
 })

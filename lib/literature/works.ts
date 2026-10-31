@@ -86,6 +86,16 @@ export function normalizeDoi(doi: string): string {
   return doi.trim().replace(/^https?:\/\/(dx\.)?doi\.org\//i, '').replace(/^doi:\s*/i, '').toLowerCase()
 }
 
+/**
+ * Pull a DOI out of a reference line or a link: doi.org links, and publisher URLs that carry
+ * the DOI in their path (Wiley, Taylor & Francis, SAGE, Springer, Elsevier '/doi/' links…).
+ */
+export function extractDoi(text: string): string | null {
+  const m = text.match(/\b(10\.\d{4,9}\/[^\s"<>]+)/i)
+  if (!m) return null
+  return normalizeDoi(decodeURIComponent(m[1]).replace(/[).,;\]]+$/, '').replace(/\/(full|abstract|pdf|epdf)$/i, ''))
+}
+
 export function shortId(openalexId: string): string {
   return openalexId.replace(/^https?:\/\/openalex\.org\//, '')
 }

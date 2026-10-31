@@ -1,4 +1,5 @@
 import { generateJSON, FAST_MODEL } from '@/lib/claude'
+import { extractDoi } from '@/lib/literature/works'
 
 export const READING_LIST_LIMIT = 40
 
@@ -43,6 +44,8 @@ export async function parseReadingList(text: string): Promise<{ items: ParsedRef
       title: i.title && text.toLowerCase().includes(i.title.toLowerCase().slice(0, 25)) ? i.title : null,
       doi: i.doi && text.toLowerCase().includes(i.doi.toLowerCase()) ? i.doi : null,
     }))
+    // A DOI inside a link (doi.org or a publisher URL) counts even if the model missed it.
+    .map(i => ({ ...i, doi: i.doi ?? extractDoi(i.raw) }))
   return { items: items.slice(0, READING_LIST_LIMIT), truncated: items.length > READING_LIST_LIMIT }
 }
 

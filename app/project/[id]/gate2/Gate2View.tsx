@@ -159,7 +159,7 @@ export default function Gate2View(p: Props) {
 
         {editing && (
           <>
-            <p style={s.muted}>Optional. Paste the readings from your course or your own list, one per line (up to {p.limit}). Methea checks that each one exists and how it connects to your theories.</p>
+            <p style={s.muted}>Optional. Paste the readings from your course or your own list (up to {p.limit}). One work per line: <b>author, year, title</b>. Add a DOI or link if you have one, but you don&apos;t need to. Methea checks that each work exists and how it connects to your theories.</p>
             <textarea value={text} onChange={e => setText(e.target.value)} rows={7} style={s.textarea} placeholder={'DiMaggio, P. J., & Powell, W. W. (1983). The iron cage revisited…\nGiddens, A. (1984). The constitution of society.'} />
             <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
               <button type="button" disabled={!text.trim() || checking} onClick={() => runCheck(text)} className={checking ? 'methea-busy' : undefined} style={{ ...s.btn, ...(!text.trim() && !checking ? s.btnOff : {}) }}>
@@ -346,7 +346,11 @@ function ListItemLine({ item, theoryId }: { item: StudentListItem; theoryId?: st
         <Chip ok={false} title="Not found in OpenAlex or Crossref: check the reference" />
         <div>
           <span style={s.workTitleText}>{item.raw}</span>
-          <div style={s.adds}>Not found. Check the spelling, year or DOI; it may also be a source these databases don&apos;t cover.</div>
+          <div style={s.adds}>
+            {item.parsed.title
+              ? <>Not found. Check the spelling of the title and author, or add a DOI; it may also be a source these databases don&apos;t cover.</>
+              : <>No title found in this line. Add the title of the work (and the author) so Methea can look it up.</>}
+          </div>
         </div>
       </div>
     )
