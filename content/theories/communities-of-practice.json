@@ -204,7 +204,7 @@
       }
     },
     {
-      "point": "The concept is stretched across very different forms of knowing in action.",
+      "point": "'Community of practice' has become a homogeneous, instrumental label; different kinds of knowing in action (craft, epistemic, professional, virtual) need to be distinguished.",
       "source": {
         "authors": [
           "Ash Amin",
@@ -220,7 +220,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": "https://doi.org/10.25405/ncl.34640205"
-      }
+      },
+      "checked_full_text": true
     }
   ],
   "must_read": [
@@ -372,6 +373,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-11-01",
+      "notes": "Critique wording checked against the full text of: Knowing in action: Beyond communities of (founder supplied PDFs)."
     }
   ]
 }

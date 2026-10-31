@@ -219,6 +219,28 @@
         "verified_in": "openalex",
         "oa_url": "https://doi.org/10.17705/1jais.00126"
       }
+    },
+    {
+      "point": "TAM and TAM2 explain about 40% of system use and results are inconsistent; the model is useful but needs to be part of a broader one that includes human and social change processes.",
+      "source": {
+        "authors": [
+          "Paul Legris",
+          "John Ingham",
+          "Pierre Collerette"
+        ],
+        "year": 2003,
+        "title": "Why do people use information technology? A critical review of the technology acceptance model",
+        "type": "article",
+        "venue": "Information & Management",
+        "doi": "10.1016/s0378-7206(01)00143-4",
+        "openalex_id": "W2135617001",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "OpenAlex record dated 2002 (online first); print 2003."
+      },
+      "checked_full_text": true
     }
   ],
   "must_read": [
@@ -375,6 +397,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-11-01",
+      "notes": "Added Legris et al. (2003) critique, checked against full text."
     }
   ]
 }

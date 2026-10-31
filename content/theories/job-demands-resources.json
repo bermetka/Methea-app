@@ -182,7 +182,7 @@
   ],
   "critiques": [
     {
-      "point": "The model is a heuristic rather than a theory: its generality makes it hard to falsify.",
+      "point": "Findings largely support the model, but key issues remain unresolved: its status as a theory, how demands and resources are defined and told apart, personal resources, reciprocal causation and use beyond the individual level.",
       "source": {
         "authors": [
           "Wilmar B. Schaufeli",
@@ -198,7 +198,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": "https://lirias.kuleuven.be/handle/123456789/487875"
-      }
+      },
+      "checked_full_text": true
     }
   ],
   "must_read": [
@@ -350,6 +351,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-11-01",
+      "notes": "Critique wording checked against the full text of: A Critical Review of the Job Demands-Res (founder supplied PDFs)."
     }
   ]
 }

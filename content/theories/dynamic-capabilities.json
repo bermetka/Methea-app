@@ -180,7 +180,7 @@
       }
     },
     {
-      "point": "The view adds little beyond existing theories and lacks clear foundations and evidence.",
+      "point": "Four problems limit the view: unclear value added over existing concepts, no coherent theoretical foundation, weak empirical support and unclear practical implications.",
       "source": {
         "authors": [
           "Richard J. Arend",
@@ -196,7 +196,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": "https://doi.org/10.1177/1476127008100132"
-      }
+      },
+      "checked_full_text": true
     }
   ],
   "must_read": [
@@ -348,6 +349,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-11-01",
+      "notes": "Critique wording checked against the full text of: Assessing the dynamic capabilities view: (founder supplied PDFs)."
     }
   ]
 }

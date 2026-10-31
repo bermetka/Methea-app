@@ -220,7 +220,7 @@
   ],
   "critiques": [
     {
-      "point": "Postcolonial criticism pays too little attention to global capitalism as the context of the postcolonial condition.",
+      "point": "Postcolonial criticism diverts attention from global capitalism, the structuring principle of today's global relations, and so risks complicity in the hegemony it criticises.",
       "source": {
         "authors": [
           "Arif Dirlik"
@@ -235,7 +235,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null
-      }
+      },
+      "checked_full_text": true
     },
     {
       "point": "The term risks homogenizing very different colonial experiences; its potential and its limits differ in the Middle East and Central Asia.",
@@ -339,6 +340,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-11-01",
+      "notes": "Critique wording checked against the full text of: The Postcolonial Aura: Third World Criti (founder supplied PDFs)."
     }
   ]
 }

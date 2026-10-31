@@ -211,7 +211,7 @@
       }
     },
     {
-      "point": "Sen's approach under-theorizes the social structures people live within.",
+      "point": "Its individualism neglects important aspects of well-being and human activity, and it sidesteps political economy, for example of democracy and modern capitalism.",
       "source": {
         "authors": [
           "Frances Stewart",
@@ -227,7 +227,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null
-      }
+      },
+      "checked_full_text": true
     }
   ],
   "must_read": [
@@ -371,6 +372,12 @@
       "by": "Bermet",
       "date": null,
       "notes": "Pending review."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-11-01",
+      "notes": "Critique wording checked against the full text of: Amartya Sen’s contribution to developmen (founder supplied PDFs)."
     }
   ]
 }

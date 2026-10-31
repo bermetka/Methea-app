@@ -143,7 +143,7 @@
   ],
   "critiques": [
     {
-      "point": "The attributes, especially legitimacy, need refining and redefining.",
+      "point": "Urgency is not relevant for identifying stakeholders, legitimacy should mean the moral legitimacy of the claim, and salience varies with the degree of each attribute.",
       "source": {
         "authors": [
           "Benjamin A. Neville",
@@ -160,7 +160,8 @@
         "verified": true,
         "verified_in": "openalex",
         "oa_url": null
-      }
+      },
+      "checked_full_text": true
     },
     {
       "point": "The model's attributes need reconceptualizing, and a fourth one, proximity, should be added; this gives a stronger case for the natural environment as a stakeholder.",
@@ -338,6 +339,12 @@
       "by": "Claude",
       "date": "2026-10-31",
       "notes": "Critique wording checked against the full text of: The Primordial Stakeholder: Advancing th (founder supplied PDFs, 31 Oct 2026)."
+    },
+    {
+      "step": "full-text",
+      "by": "Claude",
+      "date": "2026-11-01",
+      "notes": "Critique wording checked against the full text of: Stakeholder Salience Revisited: Refining (founder supplied PDFs)."
     }
   ]
 }
