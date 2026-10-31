@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import PendingSteps from '@/components/ui/PendingSteps'
 import { useFormState, useFormStatus } from 'react-dom'
 import StatusChip, { type VerificationStatus } from '@/components/ui/StatusChip'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
@@ -344,7 +345,9 @@ export default function TheoryCards({
                 ...(!canSubmit || submitting ? s.buildBtnDisabled : {}),
               }}
             >
-              {submitting ? 'Saving…' : 'Build my framework →'}
+              {submitting
+                ? <PendingSteps steps={['Saving your theories…', 'Working out how they relate…', 'Drawing your framework…']} />
+                : 'Build my framework →'}
             </button>
           </>
         )}

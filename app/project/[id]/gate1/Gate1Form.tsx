@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import PendingSteps from '@/components/ui/PendingSteps'
 import RadioCard from '@/components/ui/RadioCard'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
 import { glossaryTerm } from '@/lib/glossary'
@@ -196,7 +197,11 @@ export default function Gate1Form({
               ...(!selected || submitting ? s.continueBtnDisabled : {}),
             }}
           >
-            {submitting ? 'Saving...' : isLast ? 'Finish →' : 'Continue →'}
+            {submitting
+              ? (isLast
+                  ? <PendingSteps steps={['Saving your answers…', 'Finding theories for your question…', 'Checking citations in OpenAlex…', 'Explaining why each one fits…']} />
+                  : 'Saving…')
+              : isLast ? 'Finish →' : 'Continue →'}
           </button>
         </div>
       </div>
