@@ -7,7 +7,6 @@ import { updateResearchContext } from '@/lib/research-context'
 import { accessOptions } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
-import Logo from '@/components/ui/Logo'
 import GenerationError from '@/components/ui/GenerationError'
 import { trackEvent } from '@/lib/funnel'
 import FrameworkBuilder from './FrameworkBuilder'
@@ -197,7 +196,6 @@ export default async function FrameworkPage({ params }: { params: { id: string }
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Logo size="sm" />
         <div style={styles.heading}>
           <h2 style={styles.h2}>Here's how your theories connect</h2>
           <p style={styles.sub}>

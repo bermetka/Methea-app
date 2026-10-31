@@ -1,4 +1,4 @@
-import { generateJSON } from '@/lib/claude'
+import { generateJSON, FAST_MODEL } from '@/lib/claude'
 import type { BriefExtraction, ClarificationQuestion } from '@/types/database'
 
 const EXTRACT_BRIEF_SYSTEM = `You are a research methodology assistant helping Masters and PhD students structure their research.
@@ -39,7 +39,8 @@ Research type guide:
 
 Be concise. The research_question should be one sentence. constraints may be empty [] if none are apparent.`
 
-  return generateJSON<BriefExtraction>(EXTRACT_BRIEF_SYSTEM, userPrompt, 512)
+  // Plain field extraction: the fast model is enough and cuts the first wait.
+  return generateJSON<BriefExtraction>(EXTRACT_BRIEF_SYSTEM, userPrompt, 512, { model: FAST_MODEL })
 }
 
 const GATE1_SYSTEM = `You are a research methodology assistant. Your job is to ask up to 3 targeted clarifying questions that help sharpen a student's research question and confirm the right methodology direction.

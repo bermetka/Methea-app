@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation'
-import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import Gate1Form from './Gate1Form'
 import type { Project } from '@/types/database'
@@ -37,7 +36,6 @@ export default async function Gate1Page({ params }: { params: { id: string } }) 
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Logo size="sm" />
         <Gate1Form
           projectId={params.id}
           questions={questions}
@@ -52,6 +50,6 @@ export default async function Gate1Page({ params }: { params: { id: string } }) 
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  page:          { minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem 1rem', background: 'var(--paper)' },
+  page:          { minHeight: '100vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: '2.5rem 1rem', background: 'var(--paper)' },
   container:     { width: '100%', maxWidth: '720px', display: 'flex', flexDirection: 'column', gap: '1.5rem' },
 }

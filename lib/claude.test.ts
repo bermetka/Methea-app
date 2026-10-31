@@ -90,3 +90,28 @@ describe('generateJSON', () => {
     consoleErrorSpy.mockRestore()
   })
 })
+
+describe('generateJSON options', () => {
+  beforeEach(() => {
+    createMock.mockReset()
+  })
+
+  it('defaults to a plain system string and the default model', async () => {
+    createMock.mockResolvedValueOnce(textMessage('{"a":1}'))
+    await generateJSON('sys', 'user')
+    const args = createMock.mock.calls[0][0]
+    expect(args.system).toBe('sys')
+    expect(args.model).toBe('claude-sonnet-4-6')
+  })
+
+  it('uses the model override and sends cached context as a cached system block', async () => {
+    createMock.mockResolvedValueOnce(textMessage('{"a":1}'))
+    await generateJSON('sys', 'user', 512, { model: 'fast-model', cachedContext: 'LIBRARY' })
+    const args = createMock.mock.calls[0][0]
+    expect(args.model).toBe('fast-model')
+    expect(args.system).toEqual([
+      { type: 'text', text: 'sys' },
+      { type: 'text', text: 'LIBRARY', cache_control: { type: 'ephemeral' } },
+    ])
+  })
+})

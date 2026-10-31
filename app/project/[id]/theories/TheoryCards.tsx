@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { useRouter } from 'next/navigation'
+import PendingSteps from '@/components/ui/PendingSteps'
 import { useFormState, useFormStatus } from 'react-dom'
 import StatusChip, { type VerificationStatus } from '@/components/ui/StatusChip'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
@@ -60,6 +62,7 @@ export default function TheoryCards({
   const noFit = fits === false
   const [selected, setSelected] = useState<Set<string>>(new Set(initialSelected ?? []))
   const [submitting, setSubmitting] = useState(false)
+  const router = useRouter()
   // No fit → there's nothing worth looking at in "Suggested for you", so land on the full
   // library, and open the add-your-own panel straight away (the path the no-fit message points to).
   const [view, setView] = useState<View>(noFit ? 'browse' : 'suggested')
@@ -155,7 +158,10 @@ export default function TheoryCards({
       formData.append('fitReason', fitReason ?? '')
       formData.append('suggestedCustomTheories', JSON.stringify(suggestedCustomTheories ?? []))
     }
-    await saveTheorySelection(formData)
+    const next = await saveTheorySelection(formData)
+    // Navigate from the client so the framework loading screen shows straight away,
+    // instead of the button waiting for the whole framework to generate.
+    if (next) router.push(next)
   }
 
   return (
@@ -339,12 +345,16 @@ export default function TheoryCards({
               type="button"
               onClick={handleBuild}
               disabled={!canSubmit || submitting}
+              className={submitting ? 'methea-busy' : undefined}
+              aria-busy={submitting}
               style={{
                 ...s.buildBtn,
-                ...(!canSubmit || submitting ? s.buildBtnDisabled : {}),
+                ...(!canSubmit && !submitting ? s.buildBtnDisabled : {}),
               }}
             >
-              {submitting ? 'Saving…' : 'Build my framework →'}
+              {submitting
+                ? <PendingSteps steps={['Saving your theories…', 'Working out how they relate…', 'Drawing your framework…']} />
+                : 'Build my framework →'}
             </button>
           </>
         )}
