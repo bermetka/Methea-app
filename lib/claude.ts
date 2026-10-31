@@ -5,6 +5,28 @@ const client = new Anthropic({
 })
 
 const DEFAULT_MODEL = 'claude-sonnet-4-6'
+// Simple field extraction where speed matters more than nuance (e.g. the brief).
+export const FAST_MODEL = 'claude-haiku-4-5'
+
+export interface GenerateOptions {
+  /** Model override; defaults to Sonnet. */
+  model?: string
+  /**
+   * A large block that is identical across requests (e.g. the theory library).
+   * Sent as a cached system block after `systemPrompt`, so repeat requests skip
+   * re-reading it — faster first token, lower cost. Below the model's minimum
+   * cacheable size it is simply sent uncached.
+   */
+  cachedContext?: string
+}
+
+function systemBlocks(systemPrompt: string, cachedContext?: string) {
+  if (!cachedContext) return systemPrompt
+  return [
+    { type: 'text' as const, text: systemPrompt },
+    { type: 'text' as const, text: cachedContext, cache_control: { type: 'ephemeral' as const } },
+  ]
+}
 
 export interface StreamCallbacks {
   onText: (text: string) => void
@@ -43,16 +65,17 @@ const LOGGED_REPLY_CHARS = 500
 export async function generateJSON<T>(
   systemPrompt: string,
   userPrompt: string,
-  maxTokens = 2048
+  maxTokens = 2048,
+  options: GenerateOptions = {}
 ): Promise<T> {
   let lastRawText = ''
   let lastParseError: unknown
 
   for (let attempt = 1; attempt <= JSON_PARSE_ATTEMPTS; attempt++) {
     const message = await client.messages.create({
-      model: DEFAULT_MODEL,
+      model: options.model ?? DEFAULT_MODEL,
       max_tokens: maxTokens,
-      system: systemPrompt,
+      system: systemBlocks(systemPrompt, options.cachedContext),
       messages: [{ role: 'user', content: userPrompt }],
     })
 

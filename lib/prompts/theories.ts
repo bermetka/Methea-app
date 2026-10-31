@@ -37,8 +37,7 @@ ${brief.constraints?.length ? `Constraints: ${brief.constraints.join('; ')}` : '
 ${gate1?.responses ? `Clarification answers: ${JSON.stringify(gate1.responses)}` : ''}
 ${gate1?.context_note ? `Student's added context (weight this nuance in your reasoning): ${gate1.context_note}` : ''}
 
-Available theory library (you MUST only suggest IDs from this list):
-${libraryListing}
+The theory library is in the system prompt (you MUST only suggest IDs from it).
 
 Return a single JSON object:
 {
@@ -46,7 +45,7 @@ Return a single JSON object:
   "reason": "<one sentence — if fits is false, name what kind of research this actually is>",
   "theories": [
     {
-      "theory_id": "<exact UUID from the library above>",
+      "theory_id": "<exact UUID from the theory library>",
       "why_it_fits": "<1-2 sentences explaining why this theory fits THIS specific research question — be concrete, not generic>",
       "fit_score": <integer 1-5, where 5 = strongest fit>
     }
@@ -57,12 +56,14 @@ Return a single JSON object:
 Rules:
 - When fits is true: "theories" has exactly 5 objects sorted by fit (best fit first), sorted by fit_score descending, and "suggested_custom_theories" is [].
 - When fits is false: "theories" is [], and "suggested_custom_theories" has 0-3 names (no authors, years, or citations).
-- theory_id must be an exact ID from the library list above — never invent one
+- theory_id must be an exact ID from the theory library — never invent one
 - why_it_fits must reference the student's actual topic, not generic praise
 - Vary disciplines if possible — don't suggest 5 theories from the same field
 - fit_score 5 = theory is central to this type of research; 1 = tangentially relevant`
 
-  const raw = await generateJSON<Partial<TheoryFitResult>>(SYSTEM, userPrompt, 1024)
+  // The library is the same for every student: send it as a cached system block.
+  const cachedContext = `Available theory library (you MUST only suggest IDs from this list):\n${libraryListing}`
+  const raw = await generateJSON<Partial<TheoryFitResult>>(SYSTEM, userPrompt, 1024, { cachedContext })
 
   // Defensive parsing throughout: a malformed or partial response from the model must
   // degrade to a safe empty state, never throw and crash the theories page.
