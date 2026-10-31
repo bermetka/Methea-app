@@ -1,0 +1,395 @@
+{
+  "theory_id": null,
+  "library_name": "Institutional Theory",
+  "slug": "institutional-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "DiMaggio, Paul J.",
+      "Powell, Walter W."
+    ],
+    "year": 1983,
+    "title": "The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields",
+    "type": "journal-article",
+    "venue": "American Sociological Review",
+    "doi": "10.2307/2095101",
+    "openalex_id": "W3123282572",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "crossref"
+  },
+  "core_idea": "Organizations in the same field (universities, hospitals, NGOs, banks) tend to become more alike over time. DiMaggio and Powell argue this is often not because the shared form is the most efficient, but because looking like the others brings legitimacy. They name three pressures that produce this sameness: coercive (rules and demands from the state, donors or parent organizations), mimetic (copying peers that seem successful when the way forward is uncertain) and normative (shared standards spread by professions and education).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do organizations in one sector adopt the same policies, structures or reforms (e.g. quality-assurance units in universities, gender policies in NGOs)?",
+    "Why does what an organization says it does (formal policy) differ from what it actually does?",
+    "How do donor, state or professional pressures shape organizations in a developing or post-Soviet context?",
+    "Typical data: organizational documents and policies, interviews with managers and staff, comparison across several organizations in one field."
+  ],
+  "common_mistakes": [
+    "Saying 'isomorphism' without naming which of the three mechanisms is at work, and what evidence shows it.",
+    "Assuming that adopting a policy means implementing it. Check for decoupling between formal structure and daily practice.",
+    "Using the theory to explain how individuals change institutions without adding a strand built for agency (institutional work or institutional entrepreneurship).",
+    "Treating Meyer & Rowan (1977) and DiMaggio & Powell (1983) as the same argument: the first is about myth, ceremony and decoupling, the second about why organizations become alike."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Meyer, John W.",
+          "Rowan, Brian"
+        ],
+        "year": 1977,
+        "title": "Institutionalized Organizations: Formal Structure as Myth and Ceremony",
+        "type": "journal-article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/226550",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      },
+      "adds": "Organizations adopt formal structures as 'myth and ceremony' to look legitimate, and often decouple them from the actual work."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Zucker, Lynne G."
+        ],
+        "year": 1977,
+        "title": "The Role of Institutionalization in Cultural Persistence",
+        "type": "journal-article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2094862",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      },
+      "adds": "Micro-level view: the more institutionalized a behaviour, the more it is taken for granted and the longer it persists."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Oliver, Christine"
+        ],
+        "year": 1991,
+        "title": "Strategic Responses to Institutional Processes",
+        "type": "journal-article",
+        "venue": "The Academy of Management Review",
+        "doi": "10.2307/258610",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      },
+      "adds": "Organizations do not just conform: they can acquiesce, compromise, avoid, defy or manipulate institutional pressures."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Greenwood, Royston",
+          "Hinings, C. R."
+        ],
+        "year": 1996,
+        "title": "Understanding Radical Organizational Change: Bringing together the Old and the New Institutionalism",
+        "type": "journal-article",
+        "venue": "The Academy of Management Review",
+        "doi": "10.2307/259163",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      },
+      "adds": "Brings the 'old' and 'new' institutionalism together to explain radical change inside organizations, not only stability."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Scott, W. Richard"
+        ],
+        "year": 1995,
+        "title": "Institutions and Organizations",
+        "type": "book",
+        "venue": "Sage",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Book without a DOI in Crossref. Check in OpenAlex / by ISBN before publishing (later editions: 2001, 2008, 2014)."
+      },
+      "adds": "Organizes institutions into three pillars: regulative, normative and cultural-cognitive. Widely used by students as a coding frame."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Institutional logics",
+      "summary": "Fields hold several competing belief systems (e.g. professional vs market); actors draw on them, and shifts between them change organizations.",
+      "defining_work": {
+        "authors": [
+          "Thornton, Patricia H.",
+          "Ocasio, William"
+        ],
+        "year": 1999,
+        "title": "Institutional Logics and the Historical Contingency of Power in Organizations: Executive Succession in the Higher Education Publishing Industry, 1958– 1990",
+        "type": "journal-article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/210361",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      },
+      "further": {
+        "authors": [
+          "Thornton, Patricia H.",
+          "Ocasio, William",
+          "Lounsbury, Michael"
+        ],
+        "year": 2012,
+        "title": "The Institutional Logics Perspective: A New Approach to Culture, Structure and Process",
+        "type": "monograph",
+        "venue": "Oxford University Press",
+        "doi": "10.1093/acprof:oso/9780199601936.001.0001",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    },
+    {
+      "name": "Institutional work",
+      "summary": "Looks at the purposeful actions of people and organizations to create, maintain and disrupt institutions.",
+      "defining_work": {
+        "authors": [
+          "Lawrence, Thomas B.",
+          "Suddaby, Roy"
+        ],
+        "year": 2006,
+        "title": "Institutions and Institutional Work",
+        "type": "book-chapter",
+        "venue": "The SAGE Handbook of Organization Studies",
+        "doi": "10.4135/9781848608030.n7",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    },
+    {
+      "name": "Institutional entrepreneurship",
+      "summary": "How actors who are themselves shaped by institutions still manage to change them (the 'paradox of embedded agency').",
+      "defining_work": {
+        "authors": [
+          "Battilana, Julie",
+          "Leca, Bernard",
+          "Boxenbaum, Eva"
+        ],
+        "year": 2009,
+        "title": "How Actors Change Institutions: Towards a Theory of Institutional Entrepreneurship",
+        "type": "journal-article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/19416520903053598",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains why organizations adopt structures and practices that are not the most efficient: legitimacy, not only efficiency, drives adoption.",
+      "source": {
+        "authors": [
+          "Meyer, John W.",
+          "Rowan, Brian"
+        ],
+        "year": 1977,
+        "title": "Institutionalized Organizations: Formal Structure as Myth and Ceremony",
+        "type": "journal-article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/226550",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    },
+    {
+      "point": "Gives a ready vocabulary for the gap between formal policy and real practice (decoupling), which is common in reform and donor-funded settings.",
+      "source": {
+        "authors": [
+          "Meyer, John W.",
+          "Rowan, Brian"
+        ],
+        "year": 1977,
+        "title": "Institutionalized Organizations: Formal Structure as Myth and Ceremony",
+        "type": "journal-article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/226550",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    },
+    {
+      "point": "A mature, widely used lens for organization-level and field-level questions, so there is a large body of studies to compare your findings with.",
+      "source": {
+        "authors": [
+          "Suddaby, Roy"
+        ],
+        "year": 2010,
+        "title": "Challenges for Institutional Theory",
+        "type": "journal-article",
+        "venue": "Journal of Management Inquiry",
+        "doi": "10.1177/1056492609347564",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The 'new' institutionalism became too structural and lost the attention to action and interests of the 'old' institutionalism; the authors argue the two should be reconciled.",
+      "source": {
+        "authors": [
+          "Hirsch, PAUL M.",
+          "Lounsbury, MICHAEL"
+        ],
+        "year": 1997,
+        "title": "Ending the Family Quarrel: Toward a Reconciliation of “Old” and “New” Institutionalisms",
+        "type": "journal-article",
+        "venue": "American Behavioral Scientist",
+        "doi": "10.1177/0002764297040004004",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    },
+    {
+      "point": "Better at explaining sameness and stability than change. If actors are shaped by institutions, how do they change them? Later work had to add agency explicitly.",
+      "source": {
+        "authors": [
+          "Battilana, Julie",
+          "Leca, Bernard",
+          "Boxenbaum, Eva"
+        ],
+        "year": 2009,
+        "title": "How Actors Change Institutions: Towards a Theory of Institutional Entrepreneurship",
+        "type": "journal-article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/19416520903053598",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    },
+    {
+      "point": "The theory has been stretched far beyond its core purpose of understanding how organizational structures acquire meaning and continuity beyond technical goals.",
+      "source": {
+        "authors": [
+          "Suddaby, Roy"
+        ],
+        "year": 2010,
+        "title": "Challenges for Institutional Theory",
+        "type": "journal-article",
+        "venue": "Journal of Management Inquiry",
+        "doi": "10.1177/1056492609347564",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "DiMaggio, Paul J.",
+          "Powell, Walter W."
+        ],
+        "year": 1983,
+        "title": "The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields",
+        "type": "journal-article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095101",
+        "openalex_id": "W3123282572",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      },
+      "chapter": null,
+      "why_read": "The source of the three mechanisms most students cite; short and clearly argued.",
+      "reading_question": "Which of the three mechanisms (coercive, mimetic, normative) do you expect to find in your organizations, and what evidence in your data would show it?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Oliver, Christine"
+        ],
+        "year": 1991,
+        "title": "Strategic Responses to Institutional Processes",
+        "type": "journal-article",
+        "venue": "The Academy of Management Review",
+        "doi": "10.2307/258610",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      },
+      "chapter": null,
+      "why_read": "Shows that organizations respond to pressure in different ways, which helps if your participants resist or game the rules.",
+      "reading_question": "Which of Oliver's five responses would you expect from the organizations in your study, and what would make them choose it?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Suddaby, Roy"
+        ],
+        "year": 2010,
+        "title": "Challenges for Institutional Theory",
+        "type": "journal-article",
+        "venue": "Journal of Management Inquiry",
+        "doi": "10.1177/1056492609347564",
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "crossref"
+      },
+      "chapter": null,
+      "why_read": "A short critical summary of where the theory stands and where it has been overstretched.",
+      "reading_question": "Which of the four research threads Suddaby proposes is closest to your question?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<original openalex_id>, last 10 years, top 5 by citations (see protocol §5)",
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "All DOIs resolved in Crossref; authors, years and titles copied from the Crossref records. Scott (1995) has no DOI: flagged unverified. OpenAlex IDs pending (OpenAlex daily quota was exhausted on 31 Oct); DiMaggio & Powell 1983 confirmed in OpenAlex (W3123282572). One title from memory was wrong and corrected by Crossref: Thornton & Ocasio (1999)."
+    },
+    {
+      "step": "human",
+      "by": null,
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

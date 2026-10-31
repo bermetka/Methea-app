@@ -10,14 +10,15 @@
     "openalex_id": "W...",
     "doi": "10....",
     "isbn": null,
-    "verified": true
+    "verified": true,
+    "verified_in": "openalex | crossref | null"
   },
   "core_idea": "2–3 plain sentences.",
   "when_to_use": ["..."],
   "common_mistakes": ["..."],
   "development": [
     {
-      "kind": "refinement | strand | synthesis",
+      "kind": "foundation | refinement | strand | synthesis",
       "work": { "authors": [], "year": 0, "title": "", "openalex_id": "", "doi": null, "isbn": null, "verified": true },
       "adds": "One line: what this work changed.",
       "named_by": "Review or handbook that treats it as a development (verified work)"

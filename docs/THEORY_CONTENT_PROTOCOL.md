@@ -46,6 +46,11 @@ next to this shared content.
 | Finding what counts as a "development" | Review articles (OpenAlex `type:review`), handbooks (Sage, Oxford), Annual Reviews, Oxford Bibliographies, Stanford Encyclopedia of Philosophy | Expert consensus on how the theory evolved |
 | Open-access link for the student | OpenAlex `best_oa_location` (Unpaywall data) | Never host or download PDFs ourselves |
 
+**OpenAlex quota.** Since 2026 OpenAlex runs on a daily budget: $0.10/day without a key,
+$1/day with a free key (openalex.org/settings/api, passed as `api_key=`). Single-work lookups
+by ID or DOI are free; list/filter calls cost $0.10 per 1,000; keyword search $1 per 1,000.
+The app needs `OPENALEX_API_KEY` in production for the recent-works lists and custom-theory search.
+
 Claude's training memory is **not** a source. It may suggest where to look; every
 name, year and title must then be found in OpenAlex, Crossref or Open Library.
 
@@ -59,6 +64,13 @@ name, year and title must then be found in OpenAlex, Crossref or Open Library.
 3. Record `openalex_id`, `doi` (if any), `isbn` (if book), exact title.
 4. Still not found → status `?` (unverified). Keep it, flag it, never hide it.
 
+**Matching traps found in the pilot (31 Oct 2026):**
+- A search for a classic book often returns a *book review* of it (JSTOR `10.2307/…` records
+  typed `journal-article`), a later chapter that only mentions it, or a reply to it.
+  A book is matched only to a record of type book / monograph / edited-book / book-chapter
+  whose title equals the book title. Never accept a fuzzy title match without checking it.
+- Titles from memory can be wrong. Copy every title from the verified record.
+
 ### Step 2 — Find candidate developments
 Collect candidates from three places:
 - **Most-cited works citing the original**: OpenAlex `filter=cites:<W-id>`, `sort=cited_by_count:desc`, top 25.
@@ -71,7 +83,8 @@ A candidate goes in only if **all three** hold:
 2. **Named as a development**: at least one review or handbook (Step 2) describes it as refining, extending or branching the theory. Being highly cited alone is not enough: citing a work is not developing it.
 3. **Adds something distinct**: a new mechanism, concept or scope, written in one line ("adds three mechanisms: coercive, mimetic, normative").
 
-Tag each as `refinement`, `strand` or `synthesis`. Order oldest first.
+Tag each as `foundation` (a precursor the original builds on), `refinement`, `strand`
+or `synthesis`. Order oldest first.
 
 ### Step 4 — Strands
 2–4 schools or branches. Each needs a defining work that passed Step 3.
