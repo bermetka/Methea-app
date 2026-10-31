@@ -1,6 +1,5 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-import Logo from '@/components/ui/Logo'
 import NewProjectForm from './NewProjectForm'
 import { archiveProject } from './actions'
 import { FREE_CAP_ERROR, FREE_CAP_MESSAGE } from '@/lib/project-cap'
@@ -10,7 +9,7 @@ import type { Project } from '@/types/database'
 
 export const metadata = { title: 'My projects — Methea' }
 
-export default async function ProjectsPage({ searchParams }: { searchParams: { error?: string } }) {
+export default async function ProjectsPage({ searchParams }: { searchParams: { error?: string; how?: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
@@ -32,17 +31,13 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
   return (
     <main style={s.page}>
       <div style={s.container}>
-        <div style={s.header}>
-          <Logo size="sm" />
-        </div>
-
         <div style={s.titleRow}>
           <h2 style={s.heading}>My projects</h2>
         </div>
 
         {/* Past the first brief: the same steps, folded away */}
         {!showWelcome && (
-          <details style={s.howTo}>
+          <details id="how" open={searchParams.how === '1'} style={s.howTo}>
             <summary style={s.howToSummary}>How Methea works</summary>
             <WelcomeSteps />
           </details>

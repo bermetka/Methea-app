@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation'
-import Logo from '@/components/ui/Logo'
 import { createClient } from '@/lib/supabase/server'
 import BriefForm from './BriefForm'
 import type { Project } from '@/types/database'
@@ -38,7 +37,6 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
       <main style={styles.page}>
         <div style={styles.container}>
           <div style={styles.header}>
-            <Logo size="sm" />
             <h2 style={styles.heading}>Your research brief</h2>
           </div>
           <div style={styles.reviewCard}>
@@ -71,7 +69,6 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
     <main style={styles.page}>
       <div style={styles.container}>
         <div style={styles.header}>
-          <Logo size="sm" />
           <h2 style={styles.heading}>Tell me what you&apos;re researching</h2>
           <p style={styles.sub}>A sentence or two is enough to start.</p>
         </div>
@@ -82,7 +79,7 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
 }
 
 const styles: Record<string, React.CSSProperties> = {
-  page:        { minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem 1rem', background: 'var(--paper)' },
+  page:        { minHeight: '100vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: '2.5rem 1rem', background: 'var(--paper)' },
   container:   { width: '100%', maxWidth: '600px', display: 'flex', flexDirection: 'column', gap: '1.5rem' },
   header:      { display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '0.5rem' },
   heading:     { fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: 400, letterSpacing: '-0.015em', color: 'var(--ink)', lineHeight: 1.2 },

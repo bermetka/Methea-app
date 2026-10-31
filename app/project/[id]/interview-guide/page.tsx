@@ -1,5 +1,4 @@
 import { redirect } from 'next/navigation'
-import Logo from '@/components/ui/Logo'
 import GenerationError from '@/components/ui/GenerationError'
 import { createClient } from '@/lib/supabase/server'
 import { generateInterviewGuide } from '@/lib/prompts/interview'
@@ -59,7 +58,6 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
     return (
       <main style={styles.page}>
         <div style={styles.container}>
-          <Logo size="sm" />
           <ViewOnlyNotice
             projectId={params.id}
             unlock={unlock}
@@ -82,7 +80,6 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
     return (
       <main style={styles.page}>
         <div style={styles.container}>
-          <Logo size="sm" />
           <EthicsCheckpoint projectId={params.id} />
         </div>
       </main>
@@ -110,7 +107,6 @@ export default async function InterviewGuidePage({ params }: { params: { id: str
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <Logo size="sm" />
         {isOutdated && (
           <div style={styles.reviewBanner}>
             <span style={styles.reviewBadge}>⚠ Review changes</span>
