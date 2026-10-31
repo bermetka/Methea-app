@@ -1,0 +1,380 @@
+{
+  "theory_id": null,
+  "library_name": "Constructivist learning theory",
+  "slug": "constructivist-learning-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "L. S. Vygotsky"
+    ],
+    "year": 1978,
+    "title": "Mind in Society: The Development of Higher Psychological Processes",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W2135943618",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2135943618",
+  "core_idea": "Learners build knowledge actively rather than receiving it. Piaget focused on how individuals construct understanding through interaction with the world; Vygotsky stressed that learning is social and mediated by language and tools, and that learners can do more with help than alone (the zone of proximal development).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do students build understanding in a course, programme or learning technology?",
+    "How do peer interaction, scaffolding or tools support learning?",
+    "Typical data: classroom observation, interviews, learning artefacts, design-based research."
+  ],
+  "common_mistakes": [
+    "Equating constructivism with unguided discovery learning.",
+    "Mixing Piaget's individual and Vygotsky's social constructivism without saying which you use.",
+    "Treating it as a teaching method rather than a theory of learning."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Jean Piaget"
+        ],
+        "year": 1952,
+        "title": "The origins of intelligence in children.",
+        "type": "book",
+        "venue": "W W Norton & Co eBooks",
+        "doi": "10.1037/11494-000",
+        "openalex_id": "W2157904933",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "How children construct intelligence through action and adaptation."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "David Wood",
+          "Jerome S. Bruner",
+          "Gail S. Ross"
+        ],
+        "year": 1976,
+        "title": "THE ROLE OF TUTORING IN PROBLEM SOLVING *",
+        "type": "article",
+        "venue": "Journal of Child Psychology and Psychiatry",
+        "doi": "10.1111/j.1469-7610.1976.tb00381.x",
+        "openalex_id": "W1970209023",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1469-7610.1976.tb00381.x"
+      },
+      "adds": "Scaffolding: how a tutor supports a learner to do what they could not do alone."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "John Seely Brown",
+          "Allan Collins",
+          "Paul Duguid"
+        ],
+        "year": 1989,
+        "title": "Situated Cognition and the Culture of Learning",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x018001032",
+        "openalex_id": "W2164599981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/2142/17979"
+      },
+      "adds": "Situated cognition: knowledge is tied to the activity and culture in which it is learned."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Social constructivism",
+      "summary": "Learning through interaction and cultural tools.",
+      "defining_work": {
+        "authors": [
+          "Annemarie Sullivan Palincsar"
+        ],
+        "year": 1998,
+        "title": "SOCIAL CONSTRUCTIVIST PERSPECTIVES ON TEACHING AND LEARNING",
+        "type": "review",
+        "venue": "Annual Review of Psychology",
+        "doi": "10.1146/annurev.psych.49.1.345",
+        "openalex_id": "W2102531419",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Situated learning",
+      "summary": "Learning as participation in authentic activity.",
+      "defining_work": {
+        "authors": [
+          "John Seely Brown",
+          "Allan Collins",
+          "Paul Duguid"
+        ],
+        "year": 1989,
+        "title": "Situated Cognition and the Culture of Learning",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x018001032",
+        "openalex_id": "W2164599981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/2142/17979"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A rich account of how learning happens through social interaction and tools.",
+      "source": {
+        "authors": [
+          "Annemarie Sullivan Palincsar"
+        ],
+        "year": 1998,
+        "title": "SOCIAL CONSTRUCTIVIST PERSPECTIVES ON TEACHING AND LEARNING",
+        "type": "review",
+        "venue": "Annual Review of Psychology",
+        "doi": "10.1146/annurev.psych.49.1.345",
+        "openalex_id": "W2102531419",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Explains why knowledge learned out of context often fails to transfer.",
+      "source": {
+        "authors": [
+          "John Seely Brown",
+          "Allan Collins",
+          "Paul Duguid"
+        ],
+        "year": 1989,
+        "title": "Situated Cognition and the Culture of Learning",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x018001032",
+        "openalex_id": "W2164599981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/2142/17979"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Minimally guided instruction based on constructivist ideas is less effective than guided instruction, given human cognitive architecture.",
+      "source": {
+        "authors": [
+          "Paul A. Kirschner",
+          "John Sweller",
+          "Richard E. Clark"
+        ],
+        "year": 2006,
+        "title": "Why Minimal Guidance During Instruction Does Not Work: An Analysis of the Failure of Constructivist, Discovery, Problem-Based, Experiential, and Inquiry-Based Teaching",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1207/s15326985ep4102_1",
+        "openalex_id": "W1976637107",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1207/s15326985ep4102_1"
+      }
+    },
+    {
+      "point": "Pure discovery learning does not work; constructivist learning needs guidance.",
+      "source": {
+        "authors": [
+          "Richard E. Mayer"
+        ],
+        "year": 2004,
+        "title": "Should There Be a Three-Strikes Rule Against Pure Discovery Learning?",
+        "type": "review",
+        "venue": "American Psychologist",
+        "doi": "10.1037/0003-066x.59.1.14",
+        "openalex_id": "W131038430",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "'Constructivism' covers many different positions, some sound and some not.",
+      "source": {
+        "authors": [
+          "Denis C. Phillips"
+        ],
+        "year": 1995,
+        "title": "The Good, the Bad, and the Ugly: The Many Faces of Constructivism",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.2307/1177059",
+        "openalex_id": "W2096126412",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "L. S. Vygotsky"
+        ],
+        "year": 1978,
+        "title": "Mind in Society: The Development of Higher Psychological Processes",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2135943618",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": "Chapter 6, 'Interaction between learning and development'",
+      "why_read": "Where the zone of proximal development is introduced.",
+      "reading_question": "What can your learners do with help that they cannot yet do alone?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "David Wood",
+          "Jerome S. Bruner",
+          "Gail S. Ross"
+        ],
+        "year": 1976,
+        "title": "THE ROLE OF TUTORING IN PROBLEM SOLVING *",
+        "type": "article",
+        "venue": "Journal of Child Psychology and Psychiatry",
+        "doi": "10.1111/j.1469-7610.1976.tb00381.x",
+        "openalex_id": "W1970209023",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1469-7610.1976.tb00381.x"
+      },
+      "chapter": null,
+      "why_read": "The source of the term 'scaffolding'.",
+      "reading_question": "What forms of scaffolding exist in your setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Paul A. Kirschner",
+          "John Sweller",
+          "Richard E. Clark"
+        ],
+        "year": 2006,
+        "title": "Why Minimal Guidance During Instruction Does Not Work: An Analysis of the Failure of Constructivist, Discovery, Problem-Based, Experiential, and Inquiry-Based Teaching",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1207/s15326985ep4102_1",
+        "openalex_id": "W1976637107",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1207/s15326985ep4102_1"
+      },
+      "chapter": null,
+      "why_read": "The strongest critique, important for any study of instruction.",
+      "reading_question": "How much guidance do learners get in your setting, and why does that matter?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "constructivist learning theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2973117219",
+        "title": "Instructional design of scaffolded online learning modules for self-directed and inquiry-based learning environments",
+        "year": 2019,
+        "authors": [
+          "Md Abdullah Al Mamun",
+          "Gwendolyn Angela Lawrie",
+          "Tony Wright"
+        ],
+        "cited_by": 284,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2785492254",
+        "title": "Constructivism and connectivism in education technology: Active, situated, authentic, experiential, and anchored learning",
+        "year": 2018,
+        "authors": [
+          "João Mattar"
+        ],
+        "cited_by": 219,
+        "oa_url": "https://doi.org/10.5944/ried.21.2.20055"
+      },
+      {
+        "openalex_id": "W3144679910",
+        "title": "Exploring the impact of wiki-mediated collaborative writing on EFL students’ writing performance, writing self-regulation, and writing self-efficacy: a mixed methods study",
+        "year": 2021,
+        "authors": [
+          "Masoud Rahimi",
+          "Jalil Fathi"
+        ],
+        "cited_by": 164,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3210333081",
+        "title": "Constructivist Learning Theory and Creating Effective Learning Environments",
+        "year": 2021,
+        "authors": [
+          "Joseph Zajda"
+        ],
+        "cited_by": 164,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2567515750",
+        "title": "Early Childhood Creativity: Challenging Educators in Their Role to Intentionally Develop Creative Thinking in Children",
+        "year": 2017,
+        "authors": [
+          "Nicole Leggett"
+        ],
+        "cited_by": 142,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

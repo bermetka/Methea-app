@@ -1,0 +1,370 @@
+{
+  "theory_id": null,
+  "library_name": "Norm Localization",
+  "slug": "norm-localization",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Amitav Acharya"
+    ],
+    "year": 2004,
+    "title": "How Ideas Spread: Whose Norms Matter? Norm Localization and Institutional Change in Asian Regionalism",
+    "type": "article",
+    "venue": "International Organization",
+    "doi": "10.1017/s0020818304582024",
+    "openalex_id": "W2110438916",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://doi.org/10.1017/s0020818304582024"
+  },
+  "citation_anchor_openalex_id": "W2110438916",
+  "core_idea": "International norms do not simply diffuse from global to local. Local actors actively select, reinterpret and graft external norms onto existing local beliefs and practices, so that the norm fits local identity and legitimacy. Acharya shows this with Southeast Asian regionalism: norms are more likely to take hold when they can be localized.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How was an international norm or policy (human rights, gender equality, anti-corruption, education standards) adopted, adapted or resisted in a country or region?",
+    "What role do local actors and traditions play in shaping how global norms are used?",
+    "Typical data: policy documents, interviews with officials and civil society, process tracing, comparative case studies."
+  ],
+  "common_mistakes": [
+    "Treating any partial adoption as 'localization'. Localization is active reconstruction by local actors, not just incomplete compliance.",
+    "Ignoring the local norms and prior beliefs the external norm is grafted onto.",
+    "Assuming localization is always positive for the norm's original purpose."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Martha Finnemore",
+          "Kathryn Sikkink"
+        ],
+        "year": 1998,
+        "title": "International Norm Dynamics and Political Change",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081898550789",
+        "openalex_id": "W2164304100",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The norm life cycle: emergence, cascade, internalization."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Jeffrey T. Checkel"
+        ],
+        "year": 1999,
+        "title": "Norms, Institutions, and National Identity in Contemporary Europe",
+        "type": "article",
+        "venue": "International Studies Quarterly",
+        "doi": "10.1111/0020-8833.00112",
+        "openalex_id": "W2029732602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Domestic structures and identity shape whether international norms take hold."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Amitav Acharya"
+        ],
+        "year": 2011,
+        "title": "Norm Subsidiarity and Regional Orders: Sovereignty, Regionalism, and Rule-Making in the Third World1",
+        "type": "article",
+        "venue": "International Studies Quarterly",
+        "doi": "10.1111/j.1468-2478.2010.00637.x",
+        "openalex_id": "W1738564968",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Norm subsidiarity: local actors create their own rules to resist or check powerful outsiders."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Lisbeth Zimmermann"
+        ],
+        "year": 2014,
+        "title": "Same Same or Different? Norm Diffusion Between Resistance, Compliance, and Localization in Post-conflict States",
+        "type": "article",
+        "venue": "International Studies Perspectives",
+        "doi": "10.1111/insp.12080",
+        "openalex_id": "W1985595088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Post-conflict states show outcomes between resistance, compliance and localization."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Norm contestation",
+      "summary": "Norms are contested in use; contested compliance reveals changes in their meaning.",
+      "defining_work": {
+        "authors": [
+          "Antje Wiener"
+        ],
+        "year": 2004,
+        "title": "Contested Compliance: Interventions on the Normative Structure of World Politics",
+        "type": "article",
+        "venue": "European Journal of International Relations",
+        "doi": "10.1177/1354066104042934",
+        "openalex_id": "W3126073030",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.2139/ssrn.1666699"
+      }
+    },
+    {
+      "name": "Norm subsidiarity",
+      "summary": "Local rule-making to resist or check outside powers.",
+      "defining_work": {
+        "authors": [
+          "Amitav Acharya"
+        ],
+        "year": 2011,
+        "title": "Norm Subsidiarity and Regional Orders: Sovereignty, Regionalism, and Rule-Making in the Third World1",
+        "type": "article",
+        "venue": "International Studies Quarterly",
+        "doi": "10.1111/j.1468-2478.2010.00637.x",
+        "openalex_id": "W1738564968",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives local actors agency in norm diffusion, instead of seeing them as passive receivers.",
+      "source": {
+        "authors": [
+          "Amitav Acharya"
+        ],
+        "year": 2004,
+        "title": "How Ideas Spread: Whose Norms Matter? Norm Localization and Institutional Change in Asian Regionalism",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818304582024",
+        "openalex_id": "W2110438916",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/s0020818304582024"
+      }
+    },
+    {
+      "point": "Explains uneven responses to global norms across regional organizations.",
+      "source": {
+        "authors": [
+          "David Capie"
+        ],
+        "year": 2008,
+        "title": "Localization as Resistance: The Contested Diffusion of Small Arms Norms in Southeast Asia",
+        "type": "article",
+        "venue": "Security Dialogue",
+        "doi": "10.1177/0967010608098213",
+        "openalex_id": "W2085873866",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Localization can work as resistance: a regional body may mediate global norms in ways that dilute action.",
+      "source": {
+        "authors": [
+          "David Capie"
+        ],
+        "year": 2008,
+        "title": "Localization as Resistance: The Contested Diffusion of Small Arms Norms in Southeast Asia",
+        "type": "article",
+        "venue": "Security Dialogue",
+        "doi": "10.1177/0967010608098213",
+        "openalex_id": "W2085873866",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Established diffusion approaches, including localization, miss outcomes observed in post-conflict states.",
+      "source": {
+        "authors": [
+          "Lisbeth Zimmermann"
+        ],
+        "year": 2014,
+        "title": "Same Same or Different? Norm Diffusion Between Resistance, Compliance, and Localization in Post-conflict States",
+        "type": "article",
+        "venue": "International Studies Perspectives",
+        "doi": "10.1111/insp.12080",
+        "openalex_id": "W1985595088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Amitav Acharya"
+        ],
+        "year": 2004,
+        "title": "How Ideas Spread: Whose Norms Matter? Norm Localization and Institutional Change in Asian Regionalism",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818304582024",
+        "openalex_id": "W2110438916",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/s0020818304582024"
+      },
+      "chapter": null,
+      "why_read": "The founding article; clear and case-based.",
+      "reading_question": "Which local norms or beliefs could an external norm be grafted onto in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Martha Finnemore",
+          "Kathryn Sikkink"
+        ],
+        "year": 1998,
+        "title": "International Norm Dynamics and Political Change",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081898550789",
+        "openalex_id": "W2164304100",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The model localization argues against; read to understand the debate.",
+      "reading_question": "Where in the norm life cycle does your case sit, and where does it not fit?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Lisbeth Zimmermann"
+        ],
+        "year": 2014,
+        "title": "Same Same or Different? Norm Diffusion Between Resistance, Compliance, and Localization in Post-conflict States",
+        "type": "article",
+        "venue": "International Studies Perspectives",
+        "doi": "10.1111/insp.12080",
+        "openalex_id": "W1985595088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Shows the range of outcomes and how to tell them apart.",
+      "reading_question": "Which outcome (resistance, compliance, localization) does your evidence point to?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "norm localization",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W3207921027",
+        "title": "Norm Contestation and Normative Transformation in Global Peacebuilding Order(s): The Cases of China, Japan, and Russia",
+        "year": 2021,
+        "authors": [
+          "Oliver Jütersonke",
+          "Kazushige Kobayashi",
+          "Keith R. Krause",
+          "Xinyu Yuan"
+        ],
+        "cited_by": 68,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2771311972",
+        "title": "More for Less: The Interactive Translation of Global Norms in Postconflict Guatemala",
+        "year": 2017,
+        "authors": [
+          "Lisbeth Zimmermann"
+        ],
+        "cited_by": 63,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2298536171",
+        "title": "The myth of the local",
+        "year": 2016,
+        "authors": [
+          "Felix Anderl"
+        ],
+        "cited_by": 45,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2968332156",
+        "title": "Ambiguity in international finance and the spread of financial norms: the localization of financial inclusion in Kenya and Nigeria",
+        "year": 2019,
+        "authors": [
+          "Florence Dafe"
+        ],
+        "cited_by": 40,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4220793832",
+        "title": "The national development plans after the SDGs: Steering implications of the global goals towards national development planning",
+        "year": 2022,
+        "authors": [
+          "Mahesti Okitasari",
+          "Tarek Katramiz"
+        ],
+        "cited_by": 36,
+        "oa_url": "https://doi.org/10.1016/j.esg.2022.100136"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Zwingel (2012) and Epstein (2012) had no clean records and are left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

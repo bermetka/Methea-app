@@ -5,17 +5,25 @@ import actor_network_theory from './actor-network-theory.json'
 import attachment_theory from './attachment-theory.json'
 import capability_approach from './capability-approach.json'
 import cognitive_dissonance_theory from './cognitive-dissonance-theory.json'
+import constructivist_learning_theory from './constructivist-learning-theory.json'
 import critical_realism from './critical-realism.json'
 import dependency_theory from './dependency-theory.json'
 import diffusion_of_innovations from './diffusion-of-innovations.json'
+import dynamic_capabilities from './dynamic-capabilities.json'
 import ecological_systems_theory from './ecological-systems-theory.json'
+import feminist_standpoint_theory from './feminist-standpoint-theory.json'
+import gender_and_entrepreneurship from './gender-and-entrepreneurship.json'
 import institutional_theory from './institutional-theory.json'
+import norm_localization from './norm-localization.json'
 import postcolonial_theory from './postcolonial-theory.json'
 import practice_theory from './practice-theory.json'
+import resource_based_view from './resource-based-view.json'
+import self_determination_theory from './self-determination-theory.json'
 import social_capital_theory from './social-capital-theory.json'
 import social_constructionism from './social-constructionism.json'
 import social_exchange_theory from './social-exchange-theory.json'
 import social_identity_theory from './social-identity-theory.json'
+import stakeholder_theory from './stakeholder-theory.json'
 import structuration_theory from './structuration-theory.json'
 import theory_of_planned_behaviour from './theory-of-planned-behaviour.json'
 import transaction_cost_economics from './transaction-cost-economics.json'
@@ -25,17 +33,25 @@ export const THEORY_CARDS: Record<string, TheoryCardContent> = {
   "Attachment theory (research applications)": attachment_theory as unknown as TheoryCardContent,
   "Capability approach": capability_approach as unknown as TheoryCardContent,
   "Cognitive dissonance theory": cognitive_dissonance_theory as unknown as TheoryCardContent,
+  "Constructivist learning theory": constructivist_learning_theory as unknown as TheoryCardContent,
   "Critical realism": critical_realism as unknown as TheoryCardContent,
   "Dependency theory": dependency_theory as unknown as TheoryCardContent,
   "Diffusion of Innovations": diffusion_of_innovations as unknown as TheoryCardContent,
+  "Dynamic capabilities": dynamic_capabilities as unknown as TheoryCardContent,
   "Bronfenbrenner's ecological systems theory": ecological_systems_theory as unknown as TheoryCardContent,
+  "Feminist standpoint theory": feminist_standpoint_theory as unknown as TheoryCardContent,
+  "Gender and entrepreneurship (gendered pathways)": gender_and_entrepreneurship as unknown as TheoryCardContent,
   "Institutional Theory": institutional_theory as unknown as TheoryCardContent,
+  "Norm Localization": norm_localization as unknown as TheoryCardContent,
   "Postcolonial theory (research applications)": postcolonial_theory as unknown as TheoryCardContent,
   "Practice theory": practice_theory as unknown as TheoryCardContent,
+  "Resource-Based View": resource_based_view as unknown as TheoryCardContent,
+  "Self-determination theory": self_determination_theory as unknown as TheoryCardContent,
   "Social capital theory": social_capital_theory as unknown as TheoryCardContent,
   "Social constructionism": social_constructionism as unknown as TheoryCardContent,
   "Social exchange theory": social_exchange_theory as unknown as TheoryCardContent,
   "Social identity theory": social_identity_theory as unknown as TheoryCardContent,
+  "Stakeholder theory": stakeholder_theory as unknown as TheoryCardContent,
   "Structuration Theory": structuration_theory as unknown as TheoryCardContent,
   "Theory of planned behaviour": theory_of_planned_behaviour as unknown as TheoryCardContent,
   "Transaction cost economics": transaction_cost_economics as unknown as TheoryCardContent,

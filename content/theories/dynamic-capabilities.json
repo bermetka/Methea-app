@@ -1,0 +1,353 @@
+{
+  "theory_id": null,
+  "library_name": "Dynamic capabilities",
+  "slug": "dynamic-capabilities",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "David J. Teece",
+      "Gary Paul Pisano",
+      "Amy Shuen"
+    ],
+    "year": 1997,
+    "title": "Dynamic capabilities and strategic management",
+    "type": "article",
+    "venue": "Strategic Management Journal",
+    "doi": "10.1002/(sici)1097-0266(199708)18:7<509::aid-smj882>3.0.co;2-z",
+    "openalex_id": "W2123709218",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2123709218",
+  "core_idea": "In fast-changing environments, advantage comes less from the resources a firm holds and more from its ability to integrate, build and reconfigure them. Dynamic capabilities are these higher-order capacities: sensing opportunities, seizing them and transforming the organization.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do firms adapt to technological or market change?",
+    "Which routines or managerial capacities allow organizations to renew themselves?",
+    "Typical data: longitudinal case studies, firm surveys, interviews with managers."
+  ],
+  "common_mistakes": [
+    "Calling any capability 'dynamic'. Dynamic capabilities change other capabilities.",
+    "Defining the capability by its outcome (the firm adapted, so it had dynamic capabilities).",
+    "Ignoring the difference between Teece's view (source of lasting advantage) and Eisenhardt & Martin's (best-practice routines)."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Kathleen M. Eisenhardt",
+          "Jeffrey A. Martin"
+        ],
+        "year": 2000,
+        "title": "Dynamic capabilities: what are they?",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/1097-0266(200010/11)21:10/11<1105::aid-smj133>3.0.co;2-e",
+        "openalex_id": "W2089402107",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1002/1097-0266(200010/11)21:10/11<1105::aid-smj133>3.0.co;2-e"
+      },
+      "adds": "Dynamic capabilities as identifiable routines; in high-velocity markets they are simple and experiential."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Maurizio Zollo",
+          "Sidney G. Winter"
+        ],
+        "year": 2002,
+        "title": "Deliberate Learning and the Evolution of Dynamic Capabilities",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.13.3.339.2780",
+        "openalex_id": "W2018514036",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Dynamic capabilities develop through experience, knowledge articulation and codification."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sidney G. Winter"
+        ],
+        "year": 2003,
+        "title": "Understanding dynamic capabilities",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.318",
+        "openalex_id": "W2059813301",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://repository.upenn.edu/mgmt_papers/30"
+      },
+      "adds": "Distinguishes ordinary capabilities from dynamic ones, and ad hoc problem solving."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "David J. Teece"
+        ],
+        "year": 2007,
+        "title": "Explicating dynamic capabilities: the nature and microfoundations of (sustainable) enterprise performance",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.640",
+        "openalex_id": "W2169667133",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.2139/ssrn.5131710"
+      },
+      "adds": "Microfoundations: sensing, seizing and transforming."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Entrepreneurship and dynamic capabilities",
+      "summary": "How new and established firms build and use dynamic capabilities.",
+      "defining_work": {
+        "authors": [
+          "Shaker A. Zahra",
+          "Harry J. Sapienza",
+          "Per Davidsson"
+        ],
+        "year": 2006,
+        "title": "Entrepreneurship and Dynamic Capabilities: A Review, Model and Research Agenda*",
+        "type": "article",
+        "venue": "Journal of Management Studies",
+        "doi": "10.1111/j.1467-6486.2006.00616.x",
+        "openalex_id": "W1525360602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1467-6486.2006.00616.x"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "One of the most used theoretical lenses in management, with growing empirical knowledge.",
+      "source": {
+        "authors": [
+          "Oliver S. Schilke",
+          "Songcui Hu",
+          "Constance E. Helfat"
+        ],
+        "year": 2018,
+        "title": "Quo Vadis, Dynamic Capabilities? A Content-Analytic Review of the Current State of Knowledge and Recommendations for Future Research",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/annals.2016.0014",
+        "openalex_id": "W2767795466",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://autopapers.ssrn.com/sol3/papers.cfm?abstract_id=3069608"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The construct is underspecified and empirical knowledge has lagged behind the theory.",
+      "source": {
+        "authors": [
+          "Oliver S. Schilke",
+          "Songcui Hu",
+          "Constance E. Helfat"
+        ],
+        "year": 2018,
+        "title": "Quo Vadis, Dynamic Capabilities? A Content-Analytic Review of the Current State of Knowledge and Recommendations for Future Research",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/annals.2016.0014",
+        "openalex_id": "W2767795466",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://autopapers.ssrn.com/sol3/papers.cfm?abstract_id=3069608"
+      }
+    },
+    {
+      "point": "The view adds little beyond existing theories and lacks clear foundations and evidence.",
+      "source": {
+        "authors": [
+          "Richard J. Arend",
+          "Philip Bromiley"
+        ],
+        "year": 2009,
+        "title": "Assessing the dynamic capabilities view: spare change, everyone?",
+        "type": "editorial",
+        "venue": "Strategic Organization",
+        "doi": "10.1177/1476127008100132",
+        "openalex_id": "W2120828026",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1177/1476127008100132"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "David J. Teece",
+          "Gary Paul Pisano",
+          "Amy Shuen"
+        ],
+        "year": 1997,
+        "title": "Dynamic capabilities and strategic management",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/(sici)1097-0266(199708)18:7<509::aid-smj882>3.0.co;2-z",
+        "openalex_id": "W2123709218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "Which capability in your case changes other capabilities?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Kathleen M. Eisenhardt",
+          "Jeffrey A. Martin"
+        ],
+        "year": 2000,
+        "title": "Dynamic capabilities: what are they?",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/1097-0266(200010/11)21:10/11<1105::aid-smj133>3.0.co;2-e",
+        "openalex_id": "W2089402107",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1002/1097-0266(200010/11)21:10/11<1105::aid-smj133>3.0.co;2-e"
+      },
+      "chapter": null,
+      "why_read": "The main alternative view; compare it with Teece.",
+      "reading_question": "Which of the two views fits your setting better?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Oliver S. Schilke",
+          "Songcui Hu",
+          "Constance E. Helfat"
+        ],
+        "year": 2018,
+        "title": "Quo Vadis, Dynamic Capabilities? A Content-Analytic Review of the Current State of Knowledge and Recommendations for Future Research",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.5465/annals.2016.0014",
+        "openalex_id": "W2767795466",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://autopapers.ssrn.com/sol3/papers.cfm?abstract_id=3069608"
+      },
+      "chapter": null,
+      "why_read": "A content-analytic review of the field.",
+      "reading_question": "Which open question in the review does your study address?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "dynamic capabilities",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2738241474",
+        "title": "Business models and dynamic capabilities",
+        "year": 2017,
+        "authors": [
+          "David J. Teece"
+        ],
+        "cited_by": 3697,
+        "oa_url": "https://doi.org/10.1016/j.lrp.2017.06.007"
+      },
+      {
+        "openalex_id": "W2904649625",
+        "title": "Building dynamic capabilities for digital transformation: An ongoing process of strategic renewal",
+        "year": 2018,
+        "authors": [
+          "Karl Warner",
+          "Maximilian Wäger"
+        ],
+        "cited_by": 3529,
+        "oa_url": "http://eprints.gla.ac.uk/210967/7/210967.pdf"
+      },
+      {
+        "openalex_id": "W2594555910",
+        "title": "Organizational Response to Adversity: Fusing Crisis Management and Resilience Research Streams",
+        "year": 2017,
+        "authors": [
+          "Trenton Alma Williams",
+          "Daniel A. Gruber",
+          "Kathleen M. Sutcliffe",
+          "Dean A. Shepherd",
+          "Eric Yanfei Zhao"
+        ],
+        "cited_by": 1945,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2767795466",
+        "title": "Quo Vadis, Dynamic Capabilities? A Content-Analytic Review of the Current State of Knowledge and Recommendations for Future Research",
+        "year": 2018,
+        "authors": [
+          "Oliver S. Schilke",
+          "Songcui Hu",
+          "Constance E. Helfat"
+        ],
+        "cited_by": 1223,
+        "oa_url": "https://autopapers.ssrn.com/sol3/papers.cfm?abstract_id=3069608"
+      },
+      {
+        "openalex_id": "W3093646510",
+        "title": "Digital transformation and customer value creation in Made in Italy SMEs: A dynamic capabilities perspective",
+        "year": 2020,
+        "authors": [
+          "Michela Matarazzo",
+          "Lara Penco",
+          "Giorgia Profumo",
+          "Roberto Quaglia"
+        ],
+        "cited_by": 1196,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}
