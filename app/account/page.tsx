@@ -11,7 +11,7 @@ export const metadata = { title: 'Plan & billing — Methea' }
 
 type Row = Pick<Project, 'id' | 'title' | 'paid_at'>
 
-export default async function AccountPage() {
+export default async function AccountPage({ searchParams }: { searchParams: { preview?: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
@@ -23,11 +23,16 @@ export default async function AccountPage() {
     .eq('status', 'active')
     .order('created_at', { ascending: false })
 
-  const projects = (data ?? []) as Row[]
-  const options = await accessOptions(supabase, user.id)
+  // Preview/dev only: `?preview=free` shows the page as a user without full access
+  // (comp flag and payments ignored), so the founder can see what students see.
+  const previewFree = searchParams.preview === 'free' && process.env.VERCEL_ENV !== 'production'
+  const projects = ((data ?? []) as Row[]).map(p => (previewFree ? { ...p, paid_at: null } : p))
+  const realOptions = await accessOptions(supabase, user.id)
+  const options = previewFree ? { unlimited: false, paywallTester: true } : realOptions
   const price = priceForVariant(await getUserPriceVariant(user.id)).label
   const paywallOn = options.paywallTester || isPaywallActive()
   const unpaid = projects.filter(p => !hasFullAccess(p, options)).length
+  const firstLocked = projects.find(p => status(p).unlock)
 
   function status(p: Row): { label: string; tone: 'ok' | 'muted' | 'warn'; unlock: boolean } {
     if (options.unlimited) return { label: 'Full access', tone: 'ok', unlock: false }
@@ -42,10 +47,11 @@ export default async function AccountPage() {
 
   return (
     <>
-      <AppHeader email={user.email ?? ''} />
+      <AppHeader email={user.email ?? ''} upgrade={!!firstLocked} />
       <main style={s.page}>
         <div style={s.container}>
           <h1 style={s.heading}>Plan &amp; billing</h1>
+          {previewFree && <p style={s.previewNote}>Preview: this is how the page looks for a student without full access. Payments and your comp access are ignored here.</p>}
 
           <section style={s.card}>
             <p style={s.label}>Your plan</p>
@@ -60,6 +66,9 @@ export default async function AccountPage() {
             )}
             {!options.unlimited && paywallOn && (
               <p style={s.meta}>{unpaid} of {FREE_PROJECT_CAP} free projects used.</p>
+            )}
+            {firstLocked && (
+              <a href={`/project/${firstLocked.id}`} style={s.cta}>Upgrade a project · {price}</a>
             )}
           </section>
 
@@ -108,5 +117,7 @@ const s: Record<string, React.CSSProperties> = {
   ok:        { background: 'var(--mint)', color: 'var(--moss)' },
   muted:     { background: 'var(--paper-deep)', color: 'var(--graphite)' },
   warn:      { background: 'var(--marker-yellow)', color: 'var(--ink)' },
+  cta:       { alignSelf: 'flex-start', marginTop: 6, padding: '0.625rem 1.125rem', background: 'var(--ink-blue)', color: 'var(--sheet)', borderRadius: 8, fontWeight: 600, fontSize: '0.9375rem', textDecoration: 'none' },
+  previewNote: { margin: 0, fontSize: '0.8125rem', color: 'var(--warn-text)', background: 'var(--marker-yellow)', padding: '0.375rem 0.625rem', borderRadius: 6 },
   unlock:    { fontSize: '0.875rem', fontWeight: 600, color: 'var(--ink-blue)', whiteSpace: 'nowrap' },
 }

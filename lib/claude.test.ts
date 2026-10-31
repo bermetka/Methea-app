@@ -39,9 +39,16 @@ describe('generateJSON', () => {
   // The exact scenario this whole change exists for: Claude occasionally ignores the
   // "JSON only" instruction and wraps the JSON in prose. One retry — a fresh call — gives
   // it a second chance before giving up.
-  it('retries once on a prose-wrapped (invalid JSON) reply, and returns the retry result', async () => {
+  it('reads JSON wrapped in prose without a retry', async () => {
+    createMock.mockResolvedValueOnce(textMessage('Sure! Here you go: {"a":1}'))
+    const result = await generateJSON<{ a: number }>('sys', 'user')
+    expect(result).toEqual({ a: 1 })
+    expect(createMock).toHaveBeenCalledTimes(1)
+  })
+
+  it('retries once on an unparsable reply, and returns the retry result', async () => {
     createMock
-      .mockResolvedValueOnce(textMessage('Sure! Here you go: {"a":1}'))
+      .mockResolvedValueOnce(textMessage('Sure! Here you go: {"a":1'))
       .mockResolvedValueOnce(textMessage('{"a":2}'))
 
     const result = await generateJSON<{ a: number }>('sys', 'user')
@@ -113,5 +120,16 @@ describe('generateJSON options', () => {
       { type: 'text', text: 'sys' },
       { type: 'text', text: 'LIBRARY', cache_control: { type: 'ephemeral' } },
     ])
+  })
+})
+
+describe('parseJSONReply', () => {
+  it('parses fenced JSON followed by prose', async () => {
+    const { parseJSONReply } = await import('./claude')
+    expect(parseJSONReply('```json\n{\n  "items": []\n}\n```\n\nThe text "X" appears to be a name.')).toEqual({ items: [] })
+  })
+  it('parses JSON with prose before it', async () => {
+    const { parseJSONReply } = await import('./claude')
+    expect(parseJSONReply('Here you go: {"a": "b}"} hope this helps')).toEqual({ a: 'b}' })
   })
 })

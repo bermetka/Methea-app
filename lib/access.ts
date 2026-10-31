@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import type { SupabaseClient } from '@supabase/supabase-js'
-import { hasFullAccess, isPaywallTester } from '@/lib/entitlement'
+import { hasFullAccess, isPaywallTester, isPaywallActive } from '@/lib/entitlement'
 
 /**
  * Server-action guard: generation, regeneration and saving paid content need
@@ -35,4 +35,19 @@ export async function requireFullAccess(supabase: SupabaseClient, projectId: str
     redirect(`/project/${projectId}`)
   }
   return project
+}
+
+/**
+ * True when the user has at least one active project without full access while the
+ * paywall is on: the account menu then shows an "Upgrade" badge on Plan & billing.
+ */
+export async function hasLockedProjects(supabase: SupabaseClient, userId: string): Promise<boolean> {
+  const options = await accessOptions(supabase, userId)
+  if (options.unlimited || (!options.paywallTester && !isPaywallActive())) return false
+  const { data } = await supabase
+    .from('projects')
+    .select('paid_at')
+    .eq('user_id', userId)
+    .eq('status', 'active')
+  return (data ?? []).some(p => !hasFullAccess(p, options))
 }

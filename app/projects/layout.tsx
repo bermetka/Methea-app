@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import AppHeader from '@/components/nav/AppHeader'
+import { hasLockedProjects } from '@/lib/access'
 
 export default async function ProjectsLayout({ children }: { children: React.ReactNode }) {
   const supabase = createClient()
@@ -7,7 +8,7 @@ export default async function ProjectsLayout({ children }: { children: React.Rea
   if (!user) return <>{children}</>
   return (
     <>
-      <AppHeader email={user.email ?? ''} />
+      <AppHeader email={user.email ?? ''} upgrade={await hasLockedProjects(supabase, user.id)} />
       {children}
     </>
   )

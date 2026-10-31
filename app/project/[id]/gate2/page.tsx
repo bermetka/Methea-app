@@ -10,6 +10,8 @@ import type { ResearchContext } from '@/types/database'
 import Gate2View, { type Gate2Theory } from './Gate2View'
 
 export const metadata = { title: 'Reading — Methea' }
+// Server actions on this page (list check: parse + lookups + tagging) can take a while.
+export const maxDuration = 60
 
 export default async function Gate2Page({ params }: { params: { id: string } }) {
   const supabase = createClient()

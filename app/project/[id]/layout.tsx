@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import AppHeader from '@/components/nav/AppHeader'
+import { hasLockedProjects } from '@/lib/access'
 import type { ResearchContext } from '@/types/database'
 
 export default async function ProjectLayout({ children, params }: { children: React.ReactNode; params: { id: string } }) {

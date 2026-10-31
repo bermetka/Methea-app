@@ -10,7 +10,7 @@ function initials(email: string): string {
   return (letters || '?').toUpperCase()
 }
 
-export default function AccountMenu({ email }: { email: string }) {
+export default function AccountMenu({ email, upgrade = false }: { email: string; upgrade?: boolean }) {
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -44,7 +44,10 @@ export default function AccountMenu({ email }: { email: string }) {
         <div role="menu" aria-label="Account" style={s.menu}>
           <p style={s.email}>{email}</p>
           <a role="menuitem" href="/projects" style={s.item}>My projects</a>
-          <a role="menuitem" href="/account" style={s.item}>Plan &amp; billing</a>
+          <a role="menuitem" href="/account" style={{ ...s.item, display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 8 }}>
+            Plan &amp; billing
+            {upgrade && <span style={{ fontSize: '0.75rem', fontWeight: 700, padding: '1px 8px', borderRadius: 999, background: 'var(--marker-yellow)', color: 'var(--ink)' }}>Upgrade</span>}
+          </a>
           <a role="menuitem" href="/projects?how=1#how" style={s.item}>How Methea works</a>
           <form action={signOut} style={s.logoutForm}>
             <button type="submit" role="menuitem" style={s.logout}>Log out</button>

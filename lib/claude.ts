@@ -85,11 +85,8 @@ export async function generateJSON<T>(
       .join('')
     lastRawText = text
 
-    // Strip markdown code fences if present
-    const json = text.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '').trim()
-
     try {
-      return JSON.parse(json) as T
+      return parseJSONReply<T>(text)
     } catch (err) {
       lastParseError = err
       // Loop again for a fresh attempt, unless this was the last one.
@@ -102,6 +99,38 @@ export async function generateJSON<T>(
     `Raw reply (truncated to ${LOGGED_REPLY_CHARS} chars): ${lastRawText.slice(0, LOGGED_REPLY_CHARS)}`
   )
   throw new ClaudeJSONParseError()
+}
+
+/**
+ * Parse Claude's reply as JSON. Handles code fences and a trailing (or leading) sentence of
+ * prose around the JSON, which Claude sometimes adds despite instructions, e.g.
+ * '```json\n{"items": []}\n```\n\nThe text appears to be a name rather than a reference.'
+ */
+export function parseJSONReply<T>(text: string): T {
+  const unfenced = text.replace(/^\s*```(?:json)?\s*\n?/, '').replace(/\n?```[\s\S]*$/, '').trim()
+  try {
+    return JSON.parse(unfenced) as T
+  } catch {
+    // Fall back to the first balanced JSON object or array in the reply.
+    const start = text.search(/[{[]/)
+    if (start === -1) throw new SyntaxError('No JSON found in reply')
+    const open = text[start]
+    const close = open === '{' ? '}' : ']'
+    let depth = 0, inStr = false, esc = false
+    for (let i = start; i < text.length; i++) {
+      const c = text[i]
+      if (inStr) {
+        if (esc) esc = false
+        else if (c === '\\') esc = true
+        else if (c === '"') inStr = false
+        continue
+      }
+      if (c === '"') inStr = true
+      else if (c === open) depth++
+      else if (c === close && --depth === 0) return JSON.parse(text.slice(start, i + 1)) as T
+    }
+    throw new SyntaxError('Unbalanced JSON in reply')
+  }
 }
 
 /**

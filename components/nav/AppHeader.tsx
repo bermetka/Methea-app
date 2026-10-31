@@ -6,11 +6,12 @@ import type { ResearchContext } from '@/types/database'
 
 interface Props {
   email: string
+  upgrade?: boolean
   project?: { id: string; title: string | null; ctx: ResearchContext | null }
 }
 
 /** One header for every signed-in page: home, where you are, your account. */
-export default function AppHeader({ email, project }: Props) {
+export default function AppHeader({ email, upgrade = false, project }: Props) {
   return (
     <header style={s.header}>
       <div style={s.row}>
@@ -28,7 +29,7 @@ export default function AppHeader({ email, project }: Props) {
             </nav>
           )}
         </div>
-        <AccountMenu email={email} />
+        <AccountMenu email={email} upgrade={upgrade} />
       </div>
       {project && <StepNav projectId={project.id} steps={projectSteps(project.ctx, project.id)} />}
     </header>
