@@ -1,0 +1,380 @@
+{
+  "theory_id": null,
+  "library_name": "Technology Acceptance Model",
+  "slug": "technology-acceptance-model",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Fred D. Davis"
+    ],
+    "year": 1989,
+    "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+    "type": "article",
+    "venue": "MIS Quarterly",
+    "doi": "10.2307/249008",
+    "openalex_id": "W1791587663",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1791587663",
+  "core_idea": "People's intention to use a technology depends mainly on two beliefs: perceived usefulness (it will help me do my work) and perceived ease of use (it won't take much effort). Intention then predicts actual use.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do students, teachers, patients or employees adopt (or not) a digital tool?",
+    "Which perceptions predict intention to use a system?",
+    "Typical data: questionnaires with validated items, analysed with SEM."
+  ],
+  "common_mistakes": [
+    "Adding many extra variables without a reason.",
+    "Measuring intention and claiming conclusions about actual use.",
+    "Using it to say why a system is useful; TAM measures perceptions, not design."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Fred D. Davis",
+          "Richard P. Bagozzi",
+          "Paul R. Warshaw"
+        ],
+        "year": 1989,
+        "title": "User Acceptance of Computer Technology: A Comparison of Two Theoretical Models",
+        "type": "article",
+        "venue": "Management Science",
+        "doi": "10.1287/mnsc.35.8.982",
+        "openalex_id": "W2033943395",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Compares TAM with the theory of reasoned action."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Viswanath Venkatesh",
+          "Fred D. Davis"
+        ],
+        "year": 2000,
+        "title": "A Theoretical Extension of the Technology Acceptance Model: Four Longitudinal Field Studies",
+        "type": "article",
+        "venue": "Management Science",
+        "doi": "10.1287/mnsc.46.2.186.11926",
+        "openalex_id": "W2168569455",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "TAM2 adds social influence and cognitive processes."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Viswanath Venkatesh",
+          "Michael G. Morris",
+          "Gordon B. Davis",
+          "Fred D. Davis"
+        ],
+        "year": 2003,
+        "title": "User Acceptance of Information Technology: Toward a Unified View",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W3121633574",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID3682309_code1767496.pdf?abstractid=3375136&mirid=1"
+      },
+      "adds": "UTAUT unifies eight acceptance models."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Viswanath Venkatesh",
+          "Hillol Bala"
+        ],
+        "year": 2008,
+        "title": "Technology Acceptance Model 3 and a Research Agenda on Interventions",
+        "type": "article",
+        "venue": "Decision Sciences",
+        "doi": "10.1111/j.1540-5915.2008.00192.x",
+        "openalex_id": "W2112042732",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1540-5915.2008.00192.x"
+      },
+      "adds": "TAM3 and interventions."
+    }
+  ],
+  "strands": [
+    {
+      "name": "UTAUT",
+      "summary": "Unified model of acceptance and use.",
+      "defining_work": {
+        "authors": [
+          "Viswanath Venkatesh",
+          "Michael G. Morris",
+          "Gordon B. Davis",
+          "Fred D. Davis"
+        ],
+        "year": 2003,
+        "title": "User Acceptance of Information Technology: Toward a Unified View",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W3121633574",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID3682309_code1767496.pdf?abstractid=3375136&mirid=1"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Robust across many studies, according to meta-analysis.",
+      "source": {
+        "authors": [
+          "William R. King",
+          "Jun He"
+        ],
+        "year": 2006,
+        "title": "A meta-analysis of the technology acceptance model",
+        "type": "review",
+        "venue": "Information & Management",
+        "doi": "10.1016/j.im.2006.05.003",
+        "openalex_id": "W2140938420",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "One of the most influential theories in information systems.",
+      "source": {
+        "authors": [
+          "Izak Benbasat",
+          "Henri Barki",
+          "HEC Montréal"
+        ],
+        "year": 2007,
+        "title": "Quo vadis TAM?",
+        "type": "article",
+        "venue": "Journal of the Association for Information Systems",
+        "doi": "10.17705/1jais.00126",
+        "openalex_id": "W1508343863",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.17705/1jais.00126"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The model's simplicity is also a weakness; it needs a paradigm shift towards goals and decision-making.",
+      "source": {
+        "authors": [
+          "Richard P. Bagozzi"
+        ],
+        "year": 2007,
+        "title": "The Legacy of the Technology Acceptance Model and a Proposal for a Paradigm Shift.",
+        "type": "article",
+        "venue": "Journal of the Association for Information Systems",
+        "doi": "10.17705/1jais.00122",
+        "openalex_id": "W2150376909",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The intense focus on TAM has diverted attention and created an illusion of progress.",
+      "source": {
+        "authors": [
+          "Izak Benbasat",
+          "Henri Barki",
+          "HEC Montréal"
+        ],
+        "year": 2007,
+        "title": "Quo vadis TAM?",
+        "type": "article",
+        "venue": "Journal of the Association for Information Systems",
+        "doi": "10.17705/1jais.00126",
+        "openalex_id": "W1508343863",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.17705/1jais.00126"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Fred D. Davis"
+        ],
+        "year": 1989,
+        "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.2307/249008",
+        "openalex_id": "W1791587663",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article; includes the scales.",
+      "reading_question": "How will you adapt the items to your technology?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Viswanath Venkatesh",
+          "Michael G. Morris",
+          "Gordon B. Davis",
+          "Fred D. Davis"
+        ],
+        "year": 2003,
+        "title": "User Acceptance of Information Technology: Toward a Unified View",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W3121633574",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID3682309_code1767496.pdf?abstractid=3375136&mirid=1"
+      },
+      "chapter": null,
+      "why_read": "The unified model many recent studies use.",
+      "reading_question": "TAM or UTAUT: which fits your question better?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Izak Benbasat",
+          "Henri Barki",
+          "HEC Montréal"
+        ],
+        "year": 2007,
+        "title": "Quo vadis TAM?",
+        "type": "article",
+        "venue": "Journal of the Association for Information Systems",
+        "doi": "10.17705/1jais.00126",
+        "openalex_id": "W1508343863",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.17705/1jais.00126"
+      },
+      "chapter": null,
+      "why_read": "The key critique from within IS.",
+      "reading_question": "What does your study add beyond yet another TAM test?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "technology acceptance model",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2894528744",
+        "title": "Brave new world: service robots in the frontline",
+        "year": 2018,
+        "authors": [
+          "Jochen Wirtz",
+          "Paul G. Patterson",
+          "Werner H. Kunz",
+          "Thorsten Gruber",
+          "Vinh Nhat Lu",
+          "Stefanie Paluch"
+        ],
+        "cited_by": 2318,
+        "oa_url": "https://doi.org/10.1108/josm-04-2018-0119"
+      },
+      {
+        "openalex_id": "W2622458265",
+        "title": "Re-examining the Unified Theory of Acceptance and Use of Technology (UTAUT): Towards a Revised Theoretical Model",
+        "year": 2017,
+        "authors": [
+          "Yogesh Kumar Dwivedi",
+          "Nripendra Pratap Rana",
+          "Anand Jeyaraj",
+          "Marc Clement",
+          "Michael D. Williams"
+        ],
+        "cited_by": 2137,
+        "oa_url": "https://doi.org/10.1007/s10796-017-9774-y"
+      },
+      {
+        "openalex_id": "W2890892752",
+        "title": "The technology acceptance model (TAM): A meta-analytic structural equation modeling approach to explaining teachers’ adoption of digital technology in education",
+        "year": 2018,
+        "authors": [
+          "Ronny Scherer",
+          "Fazilat Siddiq",
+          "Jo Tondeur"
+        ],
+        "cited_by": 1925,
+        "oa_url": "http://urn.nb.no/URN:NBN:no-67817"
+      },
+      {
+        "openalex_id": "W2528032239",
+        "title": "Gain more insight from your PLS-SEM results",
+        "year": 2016,
+        "authors": [
+          "Christian M. Ringle",
+          "Marko Sarstedt"
+        ],
+        "cited_by": 1518,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2914711619",
+        "title": "Mobile payment: Understanding the determinants of customer adoption and intention to recommend the technology",
+        "year": 2016,
+        "authors": [
+          "Tiago Oliveira",
+          "Manoj Abraham Thomas",
+          "Gonçalo Baptista",
+          "Filipe Campos"
+        ],
+        "cited_by": 1371,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

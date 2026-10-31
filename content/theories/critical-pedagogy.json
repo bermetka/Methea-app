@@ -1,0 +1,336 @@
+{
+  "theory_id": null,
+  "library_name": "Critical pedagogy",
+  "slug": "critical-pedagogy",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Freire, Paulo"
+    ],
+    "year": 1970,
+    "title": "Pedagogy of the Oppressed",
+    "type": "book",
+    "venue": "Herder & Herder",
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": false,
+    "verified_in": null,
+    "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. First published in Portuguese in 1968."
+  },
+  "citation_anchor_openalex_id": "W2503899908",
+  "core_idea": "Education is never neutral: it either helps people accept the existing order or helps them question and change it. Freire criticizes 'banking' education, where teachers deposit knowledge into passive students, and proposes problem-posing dialogue through which learners and teachers develop critical consciousness of their social reality.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do teaching practices reproduce or challenge inequality?",
+    "How do learners develop a critical understanding of their own situation through education?",
+    "Typical data: classroom observation, participatory action research, interviews, curricula analysis."
+  ],
+  "common_mistakes": [
+    "Using 'critical' to mean 'critical thinking' in a general sense.",
+    "Applying it without attention to who holds power in the classroom, including the researcher-teacher.",
+    "Treating Freire's ideas as a technique detached from their political aims."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "bell hooks"
+        ],
+        "year": 2014,
+        "title": "Teaching To Transgress",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203700280",
+        "openalex_id": "W2914408884",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2014 edition of the 1994 book."
+      },
+      "adds": "Engaged pedagogy: education as the practice of freedom, with attention to race and gender."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 1995,
+        "title": "Toward a Theory of Culturally Relevant Pedagogy",
+        "type": "article",
+        "venue": "American Educational Research Journal",
+        "doi": "10.2307/1163320",
+        "openalex_id": "W4251373185",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Culturally relevant pedagogy: achievement, cultural competence and critical consciousness."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Feminist and poststructural critiques",
+      "summary": "Questioning the authority and empowerment claims of critical pedagogy.",
+      "defining_work": {
+        "authors": [
+          "Jennifer M. Gore"
+        ],
+        "year": 1993,
+        "title": "The Struggle for Pedagogies: Critical and Feminist Discourses As Regimes of Truth",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W161472384",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Culturally relevant pedagogy",
+      "summary": "Teaching that builds on students' cultures and develops critical consciousness.",
+      "defining_work": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 1995,
+        "title": "Toward a Theory of Culturally Relevant Pedagogy",
+        "type": "article",
+        "venue": "American Educational Research Journal",
+        "doi": "10.2307/1163320",
+        "openalex_id": "W4251373185",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Has inspired a broad body of work collected and taught across education programmes.",
+      "source": {
+        "authors": [
+          "Antonia Darder",
+          "Kortney Hernandez",
+          "Kevin D. Lam",
+          "Marta P Baltodano"
+        ],
+        "year": 2023,
+        "title": "The Critical Pedagogy Reader",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781003286080",
+        "openalex_id": "W1497550421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "2023 edition of the reader."
+      }
+    },
+    {
+      "point": "Extended by later scholars to race, gender and culture in the classroom.",
+      "source": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 1995,
+        "title": "Toward a Theory of Culturally Relevant Pedagogy",
+        "type": "article",
+        "venue": "American Educational Research Journal",
+        "doi": "10.2307/1163320",
+        "openalex_id": "W4251373185",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Its discourse is abstract and utopian; rationalist assumptions produce 'repressive myths' that may not empower students in practice.",
+      "source": {
+        "authors": [
+          "Elizabeth Ellsworth"
+        ],
+        "year": 1989,
+        "title": "Why Doesn't This Feel Empowering? Working Through the Repressive Myths of Critical Pedagogy",
+        "type": "article",
+        "venue": "Harvard Educational Review",
+        "doi": "10.17763/haer.59.3.058342114k266250",
+        "openalex_id": "W2147168459",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Critical and feminist pedagogies can themselves become regimes of truth with their own authority problems.",
+      "source": {
+        "authors": [
+          "Jennifer M. Gore"
+        ],
+        "year": 1993,
+        "title": "The Struggle for Pedagogies: Critical and Feminist Discourses As Regimes of Truth",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W161472384",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Freire, Paulo"
+        ],
+        "year": 1970,
+        "title": "Pedagogy of the Oppressed",
+        "type": "book",
+        "venue": "Herder & Herder",
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "note": "Classic book with no clean OpenAlex/Crossref record (searches return reviews or reprints). Check by ISBN before publishing; shown with a ? chip until then. First published in Portuguese in 1968."
+      },
+      "chapter": "Chapter 2 (the 'banking' concept of education)",
+      "why_read": "The core contrast between banking and problem-posing education.",
+      "reading_question": "Where do you see 'banking' or 'problem-posing' practices in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 1995,
+        "title": "Toward a Theory of Culturally Relevant Pedagogy",
+        "type": "article",
+        "venue": "American Educational Research Journal",
+        "doi": "10.2307/1163320",
+        "openalex_id": "W4251373185",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A widely used extension with a clear framework.",
+      "reading_question": "Which of the three criteria could your study examine?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Elizabeth Ellsworth"
+        ],
+        "year": 1989,
+        "title": "Why Doesn't This Feel Empowering? Working Through the Repressive Myths of Critical Pedagogy",
+        "type": "article",
+        "venue": "Harvard Educational Review",
+        "doi": "10.17763/haer.59.3.058342114k266250",
+        "openalex_id": "W2147168459",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The classic critique from inside the field.",
+      "reading_question": "How will your study avoid the 'repressive myths' Ellsworth describes?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "critical pedagogy",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W4223982870",
+        "title": "In the Black Mirror: Youth Investigations into Artificial Intelligence",
+        "year": 2022,
+        "authors": [
+          "Clifford H. Lee",
+          "Nimah Gobir",
+          "Alex Gurn",
+          "Elisabeth Soep"
+        ],
+        "cited_by": 61,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4220771464",
+        "title": "Towards a critical pedagogy of place for environmental conservation",
+        "year": 2022,
+        "authors": [
+          "Sandra Ajaps",
+          "Marcellus Forh Mbah"
+        ],
+        "cited_by": 49,
+        "oa_url": "https://research.manchester.ac.uk/en/publications/75ed1b7e-013b-4cf8-87e8-a861d6d6dec4"
+      },
+      {
+        "openalex_id": "W4283370964",
+        "title": "Transformative STEAM Education as a Praxis-Driven Orientation",
+        "year": 2022,
+        "authors": [
+          "Niroj Dahal"
+        ],
+        "cited_by": 15,
+        "oa_url": "https://doi.org/10.55290/steam.1098153"
+      },
+      {
+        "openalex_id": "W3107806375",
+        "title": "Contesting schoolification through snapshots of pedagogy-in-participation in early childhood development centres in South Africa",
+        "year": 2020,
+        "authors": [
+          "Keshni Bipath",
+          "Hantie Theron"
+        ],
+        "cited_by": 13,
+        "oa_url": "https://doi.org/10.18820/2519593x/pie.v38.i2.15"
+      },
+      {
+        "openalex_id": "W2737919542",
+        "title": "Against reconciliation: Constituent power, ethics, and the meaning of democratic education",
+        "year": 2017,
+        "authors": [
+          "Noah De Lissovoy"
+        ],
+        "cited_by": 13,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Giroux (1983) and McLaren (1989) had no clean records and are left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

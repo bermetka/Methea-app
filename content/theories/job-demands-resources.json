@@ -1,0 +1,355 @@
+{
+  "theory_id": null,
+  "library_name": "Job demands-resources model",
+  "slug": "job-demands-resources",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Evangelia Demerouti",
+      "Arnold B. Bakker",
+      "Friedhelm Nachreiner",
+      "Wilmar B. Schaufeli"
+    ],
+    "year": 2001,
+    "title": "The job demands-resources model of burnout.",
+    "type": "article",
+    "venue": "Journal of Applied Psychology",
+    "doi": "10.1037//0021-9010.86.3.499",
+    "openalex_id": "W2127625785",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "http://deepblue.lib.umich.edu/bitstream/2027.42/176893/1/medu14995_am.pdf"
+  },
+  "citation_anchor_openalex_id": "W2127625785",
+  "core_idea": "Every job has demands (workload, emotional pressure) and resources (support, autonomy, feedback). High demands drain energy and lead to burnout and health problems; resources foster engagement and motivation and can buffer the effect of demands. The model is general enough to apply to any occupation.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What drives burnout or engagement among teachers, nurses, civil servants or other workers?",
+    "Which resources buffer the effect of demands in a given job?",
+    "Typical data: surveys with validated scales, often longitudinal; interviews for context."
+  ],
+  "common_mistakes": [
+    "Picking demands and resources without justifying them for the occupation studied.",
+    "Using cross-sectional data to claim causal effects.",
+    "Ignoring personal resources and job crafting added later."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Robert A. Karasek"
+        ],
+        "year": 1979,
+        "title": "Job Demands, Job Decision Latitude, and Mental Strain: Implications for Job Redesign",
+        "type": "article",
+        "venue": "Administrative Science Quarterly",
+        "doi": "10.2307/2392498",
+        "openalex_id": "W2102463240",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Job demands and decision latitude together explain strain."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Wilmar B. Schaufeli",
+          "Arnold B. Bakker"
+        ],
+        "year": 2004,
+        "title": "Job demands, job resources, and their relationship with burnout and engagement: a multi‐sample study",
+        "type": "article",
+        "venue": "Journal of Organizational Behavior",
+        "doi": "10.1002/job.248",
+        "openalex_id": "W2153610778",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://dspace.library.uu.nl/handle/1874/12021"
+      },
+      "adds": "Two processes: demands lead to burnout, resources to engagement."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Despoina Xanthopoulou",
+          "Arnold B. Bakker",
+          "Evangelia Demerouti",
+          "Wilmar B. Schaufeli"
+        ],
+        "year": 2007,
+        "title": "The role of personal resources in the job demands-resources model.",
+        "type": "article",
+        "venue": "International Journal of Stress Management",
+        "doi": "10.1037/1072-5245.14.2.121",
+        "openalex_id": "W2163577748",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Personal resources (self-efficacy, optimism) join job resources."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Arnold B. Bakker",
+          "Evangelia Demerouti"
+        ],
+        "year": 2007,
+        "title": "The Job Demands‐Resources model: state of the art",
+        "type": "article",
+        "venue": "Journal of Managerial Psychology",
+        "doi": "10.1108/02683940710733115",
+        "openalex_id": "W2010348352",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/20.500.14005/16194"
+      },
+      "adds": "State of the art of the model."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Job crafting",
+      "summary": "Employees reshape their own demands and resources.",
+      "defining_work": {
+        "authors": [
+          "Maria Tims",
+          "Arnold B. Bakker"
+        ],
+        "year": 2010,
+        "title": "Job crafting: Towards a new model of individual job redesign",
+        "type": "article",
+        "venue": "SA Journal of Industrial Psychology",
+        "doi": "10.4102/sajip.v36i2.841",
+        "openalex_id": "W2129487207",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.4102/sajip.v36i2.841"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Applied in thousands of organizations and supported by hundreds of studies.",
+      "source": {
+        "authors": [
+          "Arnold B. Bakker",
+          "Evangelia Demerouti"
+        ],
+        "year": 2016,
+        "title": "Job demands–resources theory: Taking stock and looking forward.",
+        "type": "article",
+        "venue": "Journal of Occupational Health Psychology",
+        "doi": "10.1037/ocp0000056",
+        "openalex_id": "W2530409471",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://pure.eur.nl/en/publications/e1042574-e338-40a2-b780-2edef7cadfea"
+      }
+    },
+    {
+      "point": "Longitudinal evidence supports its essential assumptions.",
+      "source": {
+        "authors": [
+          "Tino Lesener",
+          "Burkhard Gusy",
+          "Christine Wolter"
+        ],
+        "year": 2018,
+        "title": "The job demands-resources model: A meta-analytic review of longitudinal studies",
+        "type": "article",
+        "venue": "Work & Stress",
+        "doi": "10.1080/02678373.2018.1529065",
+        "openalex_id": "W2894775062",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The model is a heuristic rather than a theory: its generality makes it hard to falsify.",
+      "source": {
+        "authors": [
+          "Wilmar B. Schaufeli",
+          "Toon W. Taris"
+        ],
+        "year": 2013,
+        "title": "A Critical Review of the Job Demands-Resources Model: Implications for Improving Work and Health",
+        "type": "book-chapter",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-94-007-5640-3_4",
+        "openalex_id": "W2172175374",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://lirias.kuleuven.be/handle/123456789/487875"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Evangelia Demerouti",
+          "Arnold B. Bakker",
+          "Friedhelm Nachreiner",
+          "Wilmar B. Schaufeli"
+        ],
+        "year": 2001,
+        "title": "The job demands-resources model of burnout.",
+        "type": "article",
+        "venue": "Journal of Applied Psychology",
+        "doi": "10.1037//0021-9010.86.3.499",
+        "openalex_id": "W2127625785",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://deepblue.lib.umich.edu/bitstream/2027.42/176893/1/medu14995_am.pdf"
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "Which demands and resources matter in the job you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Wilmar B. Schaufeli",
+          "Arnold B. Bakker"
+        ],
+        "year": 2004,
+        "title": "Job demands, job resources, and their relationship with burnout and engagement: a multi‐sample study",
+        "type": "article",
+        "venue": "Journal of Organizational Behavior",
+        "doi": "10.1002/job.248",
+        "openalex_id": "W2153610778",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://dspace.library.uu.nl/handle/1874/12021"
+      },
+      "chapter": null,
+      "why_read": "The dual-process version most studies use.",
+      "reading_question": "Will you study the health process, the motivation process, or both?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Arnold B. Bakker",
+          "Evangelia Demerouti"
+        ],
+        "year": 2016,
+        "title": "Job demands–resources theory: Taking stock and looking forward.",
+        "type": "article",
+        "venue": "Journal of Occupational Health Psychology",
+        "doi": "10.1037/ocp0000056",
+        "openalex_id": "W2530409471",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://pure.eur.nl/en/publications/e1042574-e338-40a2-b780-2edef7cadfea"
+      },
+      "chapter": null,
+      "why_read": "Where the theory stands after 15 years.",
+      "reading_question": "Which extension (personal resources, crafting) fits your study?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "job demands-resources model",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2530409471",
+        "title": "Job demands–resources theory: Taking stock and looking forward.",
+        "year": 2016,
+        "authors": [
+          "Arnold B. Bakker",
+          "Evangelia Demerouti"
+        ],
+        "cited_by": 6979,
+        "oa_url": "https://pure.eur.nl/en/publications/e1042574-e338-40a2-b780-2edef7cadfea"
+      },
+      {
+        "openalex_id": "W2625774310",
+        "title": "Conservation of Resources in the Organizational Context: The Reality of Resources and Their Consequences",
+        "year": 2017,
+        "authors": [
+          "Stevan E. Hobfoll",
+          "Jonathon R. B. Halbesleben",
+          "Jean‐Pierre Neveu",
+          "Mina Westman"
+        ],
+        "cited_by": 5771,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4309373941",
+        "title": "Job Demands–Resources Theory: Ten Years Later",
+        "year": 2022,
+        "authors": [
+          "Arnold B. Bakker",
+          "Evangelia Demerouti",
+          "Ana Isabel Sanz‐Vergel"
+        ],
+        "cited_by": 1930,
+        "oa_url": "https://doi.org/10.1146/annurev-orgpsych-120920-053933"
+      },
+      {
+        "openalex_id": "W3082353819",
+        "title": "Job Demands–Resources theory and self-regulation: new explanations and remedies for job burnout",
+        "year": 2020,
+        "authors": [
+          "Arnold B. Bakker",
+          "Juriena Dorothea de Vries"
+        ],
+        "cited_by": 1134,
+        "oa_url": "https://doi.org/10.1080/10615806.2020.1797695"
+      },
+      {
+        "openalex_id": "W2619680664",
+        "title": "Job crafting: A meta-analysis of relationships with individual differences, job characteristics, and work outcomes",
+        "year": 2017,
+        "authors": [
+          "Cort W. Rudolph",
+          "Ian M. Katz",
+          "Kristi N. Lavigne",
+          "Hannes Zacher"
+        ],
+        "cited_by": 1072,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

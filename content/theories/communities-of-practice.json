@@ -1,0 +1,377 @@
+{
+  "theory_id": null,
+  "library_name": "Communities of practice",
+  "slug": "communities-of-practice",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Jean Lave",
+      "Étienne Wenger"
+    ],
+    "year": 1991,
+    "title": "Situated Learning",
+    "type": "book",
+    "venue": "Cambridge University Press eBooks",
+    "doi": "10.1017/cbo9780511815355",
+    "openalex_id": "W4245961435",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W4245961435",
+  "core_idea": "Learning is participation in a community's practice. Newcomers start at the edge (legitimate peripheral participation) and move towards full participation as they take on the community's knowledge, identity and ways of doing. Wenger later defined communities of practice by mutual engagement, joint enterprise and shared repertoire.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do newcomers become professionals (teachers, nurses, researchers)?",
+    "How is knowledge shared in informal groups at work or online?",
+    "Typical data: ethnography, interviews, observation of practice, online interaction."
+  ],
+  "common_mistakes": [
+    "Calling any team or group a community of practice.",
+    "Mixing the 1991 learning theory with later management versions without saying which.",
+    "Ignoring power and conflict within communities."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "John Seely Brown",
+          "Paul Duguid"
+        ],
+        "year": 1991,
+        "title": "Organizational Learning and Communities-of-Practice: Toward a Unified View of Working, Learning, and Innovation",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.2.1.40",
+        "openalex_id": "W2150587481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Communities of practice as the link between working, learning and innovation."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Étienne Wenger"
+        ],
+        "year": 1998,
+        "title": "Communities of Practice",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511803932",
+        "openalex_id": "W4210702550",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Defines the community of practice through meaning, identity and practice."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Karen Handley",
+          "Andrew J. Sturdy",
+          "Robin Fincham",
+          "Timothy Clark"
+        ],
+        "year": 2006,
+        "title": "Within and Beyond Communities of Practice: Making Sense of Learning Through Participation, Identity and Practice*",
+        "type": "article",
+        "venue": "Journal of Management Studies",
+        "doi": "10.1111/j.1467-6486.2006.00605.x",
+        "openalex_id": "W2143960597",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://ink.library.smu.edu.sg/soss_research/2874"
+      },
+      "adds": "Learning through participation and identity beyond a single community."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Organizational knowledge management",
+      "summary": "Cultivating communities of practice in firms.",
+      "defining_work": {
+        "authors": [
+          "John Seely Brown",
+          "Paul Duguid"
+        ],
+        "year": 1991,
+        "title": "Organizational Learning and Communities-of-Practice: Toward a Unified View of Working, Learning, and Innovation",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.2.1.40",
+        "openalex_id": "W2150587481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Illuminates aspects of workplace learning such as participation and identity.",
+      "source": {
+        "authors": [
+          "Alison Fuller",
+          "Heather Hodkinson",
+          "Phil Hodkinson",
+          "Lorna Unwin"
+        ],
+        "year": 2005,
+        "title": "Learning as peripheral participation in communities of practice: a reassessment of key concepts in workplace learning",
+        "type": "article",
+        "venue": "British Educational Research Journal",
+        "doi": "10.1080/0141192052000310029",
+        "openalex_id": "W2077234110",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Widely used in health care and other sectors to share knowledge.",
+      "source": {
+        "authors": [
+          "LINDA C. LI",
+          "Jeremy Grimshaw",
+          "Camilla Palmhøj Nielsen",
+          "Maria Judd",
+          "Peter C. Coyte",
+          "Ian D. Graham"
+        ],
+        "year": 2009,
+        "title": "Evolution of Wenger's concept of community of practice",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/1748-5908-4-11",
+        "openalex_id": "W1982345010",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/1748-5908-4-11"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Fails to capture important features of contemporary workplace learning, including formal learning and existing expertise of newcomers.",
+      "source": {
+        "authors": [
+          "Alison Fuller",
+          "Heather Hodkinson",
+          "Phil Hodkinson",
+          "Lorna Unwin"
+        ],
+        "year": 2005,
+        "title": "Learning as peripheral participation in communities of practice: a reassessment of key concepts in workplace learning",
+        "type": "article",
+        "venue": "British Educational Research Journal",
+        "doi": "10.1080/0141192052000310029",
+        "openalex_id": "W2077234110",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Has clear limits as a knowledge management tool: power, trust and scale.",
+      "source": {
+        "authors": [
+          "Joanne Roberts"
+        ],
+        "year": 2006,
+        "title": "Limits to Communities of Practice",
+        "type": "article",
+        "venue": "Journal of Management Studies",
+        "doi": "10.1111/j.1467-6486.2006.00618.x",
+        "openalex_id": "W1987163608",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://durham-repository.worktribe.com/output/1563439"
+      }
+    },
+    {
+      "point": "The concept is stretched across very different forms of knowing in action.",
+      "source": {
+        "authors": [
+          "Ash Amin",
+          "Joanne Roberts"
+        ],
+        "year": 2008,
+        "title": "Knowing in action: Beyond communities of practice",
+        "type": "article",
+        "venue": "Research Policy",
+        "doi": "10.1016/j.respol.2007.11.003",
+        "openalex_id": "W1964382024",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.25405/ncl.34640205"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Jean Lave",
+          "Étienne Wenger"
+        ],
+        "year": 1991,
+        "title": "Situated Learning",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511815355",
+        "openalex_id": "W4245961435",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding book.",
+      "reading_question": "Who are newcomers and old-timers in your setting, and how do they move?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Étienne Wenger"
+        ],
+        "year": 1998,
+        "title": "Communities of Practice",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511803932",
+        "openalex_id": "W4210702550",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The definitive account of communities of practice.",
+      "reading_question": "Do the groups you study have mutual engagement, a joint enterprise and a shared repertoire?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "LINDA C. LI",
+          "Jeremy Grimshaw",
+          "Camilla Palmhøj Nielsen",
+          "Maria Judd",
+          "Peter C. Coyte",
+          "Ian D. Graham"
+        ],
+        "year": 2009,
+        "title": "Evolution of Wenger's concept of community of practice",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/1748-5908-4-11",
+        "openalex_id": "W1982345010",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/1748-5908-4-11"
+      },
+      "chapter": null,
+      "why_read": "How the concept changed over time.",
+      "reading_question": "Which version of the concept are you using?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "communities of practice",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2289522766",
+        "title": "A Bibliometric Review of Open Innovation: Setting a Research Agenda",
+        "year": 2016,
+        "authors": [
+          "Krithika Randhawa",
+          "Ralf Wilden",
+          "Jan Hohberger"
+        ],
+        "cited_by": 763,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2497919442",
+        "title": "Thinking together: What makes Communities of Practice work?",
+        "year": 2016,
+        "authors": [
+          "Igor Pyrko",
+          "Viktor Dörfler",
+          "Colin Eden"
+        ],
+        "cited_by": 562,
+        "oa_url": "https://doi.org/10.1177/0018726716661040"
+      },
+      {
+        "openalex_id": "W2911860197",
+        "title": "Supporting the development of a professional identity: General principles",
+        "year": 2019,
+        "authors": [
+          "Sylvia R. Cruess",
+          "Richard L. Cruess",
+          "Yvonne Steinert"
+        ],
+        "cited_by": 506,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2238567904",
+        "title": "Communities of Practice as a Social Theory of Learning: a Conversation with Etienne Wenger",
+        "year": 2016,
+        "authors": [
+          "Valerie Farnsworth",
+          "Irene Kleanthous",
+          "Étienne Wenger"
+        ],
+        "cited_by": 461,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2339337351",
+        "title": "Seven Affordances of Computer-Supported Collaborative Learning: How to Support Collaborative Learning? How Can Technologies Help?",
+        "year": 2016,
+        "authors": [
+          "Heisawn Jeong",
+          "Cindy E. Hmelo‐Silver"
+        ],
+        "cited_by": 454,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

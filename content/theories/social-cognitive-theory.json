@@ -1,0 +1,384 @@
+{
+  "theory_id": null,
+  "library_name": "Social Cognitive Theory",
+  "slug": "social-cognitive-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Albert Bandura"
+    ],
+    "year": 1985,
+    "title": "Social Foundations of Thought and Action : A Social Cognitive Theory",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W2888190061",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "OpenAlex record (dated 1985) for the 1986 book."
+  },
+  "citation_anchor_openalex_id": "W2888190061",
+  "core_idea": "Behaviour, personal factors (beliefs, skills, emotions) and the environment influence one another (reciprocal determinism). People learn by observing others, regulate their own behaviour through goals and self-reflection, and act according to their belief in their own capability (self-efficacy).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people learn behaviours from role models, peers or media?",
+    "How do self-efficacy, outcome expectations and goals shape health, learning or career behaviour?",
+    "Typical data: surveys with validated scales, interventions, interviews."
+  ],
+  "common_mistakes": [
+    "Reducing the theory to self-efficacy alone.",
+    "Ignoring the environment side of reciprocal determinism.",
+    "Measuring self-efficacy as a general trait when the theory defines it for specific tasks."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1989,
+        "title": "Human agency in social cognitive theory.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.44.9.1175",
+        "openalex_id": "W2153403719",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "People as agents who influence their own lives, not only products of environment."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1991,
+        "title": "Social cognitive theory of self-regulation",
+        "type": "article",
+        "venue": "Organizational Behavior and Human Decision Processes",
+        "doi": "10.1016/0749-5978(91)90022-l",
+        "openalex_id": "W2062121040",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/0749-5978(91)90022-l"
+      },
+      "adds": "Self-regulation through self-monitoring, judgement and self-reaction."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1999,
+        "title": "Social Cognitive Theory: An Agentic Perspective",
+        "type": "article",
+        "venue": "Asian Journal Of Social Psychology",
+        "doi": "10.1111/1467-839x.00024",
+        "openalex_id": "W2109120348",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "An agentic perspective: individual, proxy and collective agency."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Organizational management",
+      "summary": "Applying the theory to management and work.",
+      "defining_work": {
+        "authors": [
+          "Robert E. Wood",
+          "Albert Bandura"
+        ],
+        "year": 1989,
+        "title": "Social Cognitive Theory of Organizational Management",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/258173",
+        "openalex_id": "W2009158521",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Health promotion",
+      "summary": "Self-efficacy, outcome expectations and goals in health behaviour.",
+      "defining_work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 2004,
+        "title": "Health Promotion by Social Cognitive Means",
+        "type": "article",
+        "venue": "Health Education & Behavior",
+        "doi": "10.1177/1090198104263660",
+        "openalex_id": "W2111591671",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Social cognitive career theory",
+      "summary": "Interest, choice and performance in careers and education.",
+      "defining_work": {
+        "authors": [
+          "Robert W. Lent",
+          "Steven D. Brown",
+          "Gail Hackett"
+        ],
+        "year": 1994,
+        "title": "Toward a Unifying Social Cognitive Theory of Career and Academic Interest, Choice, and Performance",
+        "type": "article",
+        "venue": "Journal of Vocational Behavior",
+        "doi": "10.1006/jvbe.1994.1027",
+        "openalex_id": "W2035286692",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Widely applied across health, work and career research.",
+      "source": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 2004,
+        "title": "Health Promotion by Social Cognitive Means",
+        "type": "article",
+        "venue": "Health Education & Behavior",
+        "doi": "10.1177/1090198104263660",
+        "openalex_id": "W2111591671",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "A full account of human agency, from individual to collective.",
+      "source": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1999,
+        "title": "Social Cognitive Theory: An Agentic Perspective",
+        "type": "article",
+        "venue": "Asian Journal Of Social Psychology",
+        "doi": "10.1111/1467-839x.00024",
+        "openalex_id": "W2109120348",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Within persons over time, self-efficacy can relate negatively to performance, contrary to the theory.",
+      "source": {
+        "authors": [
+          "Jeffrey B. Vancouver",
+          "Charles M. Thompson",
+          "E. Casey Tischner",
+          "Dan J. Putka"
+        ],
+        "year": 2002,
+        "title": "Two studies examining the negative effect of self-efficacy on performance.",
+        "type": "article",
+        "venue": "Journal of Applied Psychology",
+        "doi": "10.1037//0021-9010.87.3.506",
+        "openalex_id": "W2084523232",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Self-efficacy may be the old idea of expectancy under a new label.",
+      "source": {
+        "authors": [
+          "Irving Kirsch"
+        ],
+        "year": 1985,
+        "title": "Self-efficacy and expectancy: Old wine with new labels.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.49.3.824",
+        "openalex_id": "W2079642786",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1985,
+        "title": "Social Foundations of Thought and Action : A Social Cognitive Theory",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2888190061",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "OpenAlex record (dated 1985) for the 1986 book."
+      },
+      "chapter": null,
+      "why_read": "The full statement.",
+      "reading_question": "Which of the person, behaviour and environment factors does your design measure?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 1999,
+        "title": "Social Cognitive Theory: An Agentic Perspective",
+        "type": "article",
+        "venue": "Asian Journal Of Social Psychology",
+        "doi": "10.1111/1467-839x.00024",
+        "openalex_id": "W2109120348",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The most accessible short version.",
+      "reading_question": "Which form of agency (individual, proxy, collective) matters in your setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Albert Bandura"
+        ],
+        "year": 2004,
+        "title": "Health Promotion by Social Cognitive Means",
+        "type": "article",
+        "venue": "Health Education & Behavior",
+        "doi": "10.1177/1090198104263660",
+        "openalex_id": "W2111591671",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "A clear application to one field.",
+      "reading_question": "Which determinants would you measure if you applied this to your topic?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social cognitive theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W4361264961",
+        "title": "Theories of Motivation in Education: an Integrative Framework",
+        "year": 2023,
+        "authors": [
+          "Detlef Urhahne",
+          "Lisette Wijnia"
+        ],
+        "cited_by": 299,
+        "oa_url": "https://doi.org/10.1007/s10648-023-09767-9"
+      },
+      {
+        "openalex_id": "W3173912034",
+        "title": "The Cognitive-Affective-Social Theory of Learning in digital Environments (CASTLE)",
+        "year": 2021,
+        "authors": [
+          "Sascha Schneider",
+          "Maik Beege",
+          "Steve Nebel",
+          "Lenka Schnaubert",
+          "Günter Daniel Rey"
+        ],
+        "cited_by": 285,
+        "oa_url": "https://doi.org/10.1007/s10648-021-09626-5"
+      },
+      {
+        "openalex_id": "W2801471367",
+        "title": "Does Entrepreneurial Leadership Foster Creativity Among Employees and Teams? The Mediating Role of Creative Efficacy Beliefs",
+        "year": 2018,
+        "authors": [
+          "Wenjing Cai",
+          "Evgenia I. Lysova",
+          "Svetlana N. Khapova",
+          "Bart A. G. Bossink"
+        ],
+        "cited_by": 248,
+        "oa_url": "https://doi.org/10.1007/s10869-018-9536-y"
+      },
+      {
+        "openalex_id": "W2734440606",
+        "title": "Revisiting entrepreneurial intentions: a social cognitive career theory approach",
+        "year": 2017,
+        "authors": [
+          "Eric W. Liguori",
+          "Joshua S. Bendickson",
+          "William C. McDowell"
+        ],
+        "cited_by": 237,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2343413709",
+        "title": "Research Note—Gamification of Technology-Mediated Training: Not All Competitions Are the Same",
+        "year": 2016,
+        "authors": [
+          "Radhika Santhanam",
+          "Liu De",
+          "Wei-Cheng Milton Shen"
+        ],
+        "cited_by": 213,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Bandura (1977) 'Social Learning Theory' had no clean record and is left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "theory_id": null,
+  "library_name": "Stakeholder salience theory",
+  "slug": "stakeholder-salience-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Ronald K. Mitchell",
+      "Bradley R. Agle",
+      "Donna J. Wood"
+    ],
+    "year": 1997,
+    "title": "Toward a Theory of Stakeholder Identification and Salience: Defining the Principle of who and What Really Counts",
+    "type": "article",
+    "venue": "Academy of Management Review",
+    "doi": "10.5465/amr.1997.9711022105",
+    "openalex_id": "W2149010029",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2149010029",
+  "core_idea": "Managers pay attention to stakeholders according to three attributes: power (ability to impose their will), legitimacy (appropriateness of their claim) and urgency (time-sensitivity and criticality of the claim). The more attributes a stakeholder has, the more salient it is to managers.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Which stakeholders do managers actually prioritize, and why?",
+    "How does a stakeholder gain or lose salience over time?",
+    "Typical data: interviews with managers, document analysis, surveys, case studies."
+  ],
+  "common_mistakes": [
+    "Classifying stakeholders once, as if salience never changes.",
+    "Assuming managers' perceptions equal objective attributes.",
+    "Confusing salience (attention) with importance or moral standing."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bradley R. Agle",
+          "Ronald K. Mitchell",
+          "Jeffrey Alan Sonnenfeld"
+        ],
+        "year": 1999,
+        "title": "WHO MATTERS TO CEOS? AN INVESTIGATION OF STAKEHOLDER ATTRIBUTES AND SALIENCE,CORPATE PERFORMANCE, AND CEO VALUES.",
+        "type": "article",
+        "venue": "Academy of Management Journal",
+        "doi": "10.2307/256973",
+        "openalex_id": "W2134995742",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Tests the model with CEOs: attributes relate to salience."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Milena M. Parent",
+          "David L. Deephouse"
+        ],
+        "year": 2007,
+        "title": "A Case Study of Stakeholder Identification and Prioritization by Managers",
+        "type": "article",
+        "venue": "Journal of Business Ethics",
+        "doi": "10.1007/s10551-007-9533-y",
+        "openalex_id": "W2139181918",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID2268680_code1956965.pdf?abstractid=2268680&mirid=1"
+      },
+      "adds": "How managers identify and prioritize stakeholders in practice."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Charles Eric Eesley",
+          "Michael James Lenox"
+        ],
+        "year": 2006,
+        "title": "Firm responses to secondary stakeholder action",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.536",
+        "openalex_id": "W2886812813",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Firm responses to secondary stakeholders depend on the request and the stakeholder."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Natural environment as stakeholder",
+      "summary": "Adds proximity and the environment's status as stakeholder.",
+      "defining_work": {
+        "authors": [
+          "Cathy Driscoll",
+          "Mark Starik"
+        ],
+        "year": 2004,
+        "title": "The Primordial Stakeholder: Advancing the Conceptual Consideration of Stakeholder Status for the Natural Environment",
+        "type": "article",
+        "venue": "Journal of Business Ethics",
+        "doi": "10.1023/b:busi.0000013852.62017.0e",
+        "openalex_id": "W2053745686",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A widely used model with a long track record of applications.",
+      "source": {
+        "authors": [
+          "Donna J. Wood",
+          "Ronald K. Mitchell",
+          "Bradley R. Agle",
+          "Logan M. Bryan"
+        ],
+        "year": 2018,
+        "title": "Stakeholder Identification and Salience After 20 Years: Progress, Problems, and Prospects",
+        "type": "article",
+        "venue": "Business & Society",
+        "doi": "10.1177/0007650318816522",
+        "openalex_id": "W2906557400",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3360193"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The attributes, especially legitimacy, need refining and redefining.",
+      "source": {
+        "authors": [
+          "Benjamin A. Neville",
+          "Simon J. Bell",
+          "Greg Whitwell"
+        ],
+        "year": 2011,
+        "title": "Stakeholder Salience Revisited: Refining, Redefining, and Refueling an Underdeveloped Conceptual Tool",
+        "type": "article",
+        "venue": "Journal of Business Ethics",
+        "doi": "10.1007/s10551-011-0818-9",
+        "openalex_id": "W1964626097",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Leaves out proximity and stakeholders such as the natural environment.",
+      "source": {
+        "authors": [
+          "Cathy Driscoll",
+          "Mark Starik"
+        ],
+        "year": 2004,
+        "title": "The Primordial Stakeholder: Advancing the Conceptual Consideration of Stakeholder Status for the Natural Environment",
+        "type": "article",
+        "venue": "Journal of Business Ethics",
+        "doi": "10.1023/b:busi.0000013852.62017.0e",
+        "openalex_id": "W2053745686",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Ronald K. Mitchell",
+          "Bradley R. Agle",
+          "Donna J. Wood"
+        ],
+        "year": 1997,
+        "title": "Toward a Theory of Stakeholder Identification and Salience: Defining the Principle of who and What Really Counts",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.1997.9711022105",
+        "openalex_id": "W2149010029",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article with the typology.",
+      "reading_question": "Which of the three attributes do the stakeholders in your case have?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Bradley R. Agle",
+          "Ronald K. Mitchell",
+          "Jeffrey Alan Sonnenfeld"
+        ],
+        "year": 1999,
+        "title": "WHO MATTERS TO CEOS? AN INVESTIGATION OF STAKEHOLDER ATTRIBUTES AND SALIENCE,CORPATE PERFORMANCE, AND CEO VALUES.",
+        "type": "article",
+        "venue": "Academy of Management Journal",
+        "doi": "10.2307/256973",
+        "openalex_id": "W2134995742",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The first empirical test.",
+      "reading_question": "How will you measure salience?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Donna J. Wood",
+          "Ronald K. Mitchell",
+          "Bradley R. Agle",
+          "Logan M. Bryan"
+        ],
+        "year": 2018,
+        "title": "Stakeholder Identification and Salience After 20 Years: Progress, Problems, and Prospects",
+        "type": "article",
+        "venue": "Business & Society",
+        "doi": "10.1177/0007650318816522",
+        "openalex_id": "W2906557400",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3360193"
+      },
+      "chapter": null,
+      "why_read": "Twenty years of the theory, by its authors.",
+      "reading_question": "Which open problem does your study touch?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "stakeholder salience theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2367374756",
+        "title": "Strategies of legitimation: MNEs and the adoption of CSR in response to host-country institutions",
+        "year": 2016,
+        "authors": [
+          "Nikolas Rathert"
+        ],
+        "cited_by": 235,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2517999773",
+        "title": "Sustainable Human Resource Management with Salience of Stakeholders: A Top Management Perspective",
+        "year": 2016,
+        "authors": [
+          "Maria Järlström",
+          "Essi Saru",
+          "Sinikka Vanhala"
+        ],
+        "cited_by": 229,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2906557400",
+        "title": "Stakeholder Identification and Salience After 20 Years: Progress, Problems, and Prospects",
+        "year": 2018,
+        "authors": [
+          "Donna J. Wood",
+          "Ronald K. Mitchell",
+          "Bradley R. Agle",
+          "Logan M. Bryan"
+        ],
+        "cited_by": 196,
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3360193"
+      },
+      {
+        "openalex_id": "W2774116859",
+        "title": "Stakeholder engagement in sustainability accounting and reporting",
+        "year": 2017,
+        "authors": [
+          "Amanpreet Kaur",
+          "Sumit Lodhia"
+        ],
+        "cited_by": 184,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2778222974",
+        "title": "Tackling the sustainability iceberg",
+        "year": 2018,
+        "authors": [
+          "Jan Meinlschmidt",
+          "Martin C. Schleper",
+          "Kai Dominik Foerstl"
+        ],
+        "cited_by": 126,
+        "oa_url": "https://nottingham-repository.worktribe.com/output/919026"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "theory_id": null,
+  "library_name": "Knowledge-based view of the firm",
+  "slug": "knowledge-based-view",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Robert M. Grant"
+    ],
+    "year": 1996,
+    "title": "Toward a knowledge‐based theory of the firm",
+    "type": "article",
+    "venue": "Strategic Management Journal",
+    "doi": "10.1002/smj.4250171110",
+    "openalex_id": "W2160449301",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2160449301",
+  "core_idea": "Knowledge is the most strategically important resource of the firm. Firms exist because they integrate the specialized knowledge of individuals better than markets can. Organizational design is about coordinating knowledge integration.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do organizations create, share and integrate knowledge?",
+    "Why do some firms transfer best practices better than others?",
+    "Typical data: case studies, surveys of knowledge sharing, network data."
+  ],
+  "common_mistakes": [
+    "Treating 'knowledge' and 'information' as the same.",
+    "Assuming knowledge lives only at firm level.",
+    "Ignoring tacit knowledge, which is hard to transfer."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Bruce Kogut",
+          "Udo Zander"
+        ],
+        "year": 1992,
+        "title": "Knowledge of the Firm, Combinative Capabilities, and the Replication of Technology",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.3.3.383",
+        "openalex_id": "W2179492332",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Firms as social communities that combine and transfer knowledge."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Ikujiro Nonaka"
+        ],
+        "year": 1994,
+        "title": "A Dynamic Theory of Organizational Knowledge Creation",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.5.1.14",
+        "openalex_id": "W2132454116",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Organizational knowledge creation through tacit-explicit conversion."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "J.‐C. Spender"
+        ],
+        "year": 1996,
+        "title": "Making knowledge the basis of a dynamic theory of the firm",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250171106",
+        "openalex_id": "W1518732113",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Knowledge as the basis for a dynamic theory of the firm."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Gabriel Szulanski"
+        ],
+        "year": 1996,
+        "title": "Exploring internal stickiness: Impediments to the transfer of best practice within the firm",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250171105",
+        "openalex_id": "W2172157658",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1002/smj.4250171105"
+      },
+      "adds": "Why knowledge is 'sticky' and hard to transfer internally."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Problem-solving perspective",
+      "summary": "Knowledge-based theory through problem solving.",
+      "defining_work": {
+        "authors": [
+          "Jack A. Nickerson",
+          "Todd R. Zenger"
+        ],
+        "year": 2004,
+        "title": "A Knowledge-Based Theory of the Firm—The Problem-Solving Perspective",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.1040.0093",
+        "openalex_id": "W2112059919",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains why internal transfer of practices is hard.",
+      "source": {
+        "authors": [
+          "Gabriel Szulanski"
+        ],
+        "year": 1996,
+        "title": "Exploring internal stickiness: Impediments to the transfer of best practice within the firm",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250171105",
+        "openalex_id": "W2172157658",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1002/smj.4250171105"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Errs in how it treats opportunism and the firm's boundaries.",
+      "source": {
+        "authors": [
+          "Nicolai J. Foss"
+        ],
+        "year": 1996,
+        "title": "Knowledge-Based Approaches to the Theory of the Firm: Some Critical Comments",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.7.5.470",
+        "openalex_id": "W2020492031",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Places the locus of knowledge at firm level and neglects individuals.",
+      "source": {
+        "authors": [
+          "Teppo Felin",
+          "William S. Hesterly"
+        ],
+        "year": 2007,
+        "title": "The Knowledge-Based View, Nested Heterogeneity, and New Value Creation: Philosophical Considerations on the Locus of Knowledge",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.2007.23464020",
+        "openalex_id": "W2111812658",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Robert M. Grant"
+        ],
+        "year": 1996,
+        "title": "Toward a knowledge‐based theory of the firm",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/smj.4250171110",
+        "openalex_id": "W2160449301",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "Whose knowledge is integrated in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Bruce Kogut",
+          "Udo Zander"
+        ],
+        "year": 1992,
+        "title": "Knowledge of the Firm, Combinative Capabilities, and the Replication of Technology",
+        "type": "article",
+        "venue": "Organization Science",
+        "doi": "10.1287/orsc.3.3.383",
+        "openalex_id": "W2179492332",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The other foundational article.",
+      "reading_question": "How is knowledge combined in your setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Teppo Felin",
+          "William S. Hesterly"
+        ],
+        "year": 2007,
+        "title": "The Knowledge-Based View, Nested Heterogeneity, and New Value Creation: Philosophical Considerations on the Locus of Knowledge",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.5465/amr.2007.23464020",
+        "openalex_id": "W2111812658",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Main critique on locus of knowledge.",
+      "reading_question": "At what level does knowledge reside in your study?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "knowledge-based view of the firm",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2942807767",
+        "title": "Top management knowledge value, knowledge sharing practices, open innovation and organizational performance",
+        "year": 2019,
+        "authors": [
+          "Sanjay Kumar Singh",
+          "Shivam Gupta",
+          "Donatella Busso",
+          "Shampy Kamboj"
+        ],
+        "cited_by": 678,
+        "oa_url": "http://hdl.handle.net/2318/1700969"
+      },
+      {
+        "openalex_id": "W2464417241",
+        "title": "External Knowledge and Information Technology: Implications for Process Innovation Performance1",
+        "year": 2017,
+        "authors": [
+          "Konstantinos Trantopoulos",
+          "Georg von Krogh",
+          "Martin W. Wallin",
+          "Martin Wörter"
+        ],
+        "cited_by": 435,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3163328069",
+        "title": "Extending the resource and knowledge based view: A critical analysis into its theoretical evolution and future research directions",
+        "year": 2021,
+        "authors": [
+          "Vijay Edward Pereira",
+          "Umesh Kumar Bamel"
+        ],
+        "cited_by": 376,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2284663831",
+        "title": "Review of empirical research on knowledge management practices and firm performance",
+        "year": 2016,
+        "authors": [
+          "Henri Hussinki"
+        ],
+        "cited_by": 367,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2786484532",
+        "title": "Knowledge absorptive capacity and innovation performance in high-tech companies: A multi-mediating analysis",
+        "year": 2018,
+        "authors": [
+          "Xuemei Xie",
+          "Hailiang Zou",
+          "Guoyou Qi"
+        ],
+        "cited_by": 337,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. "
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

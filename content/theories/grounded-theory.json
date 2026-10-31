@@ -1,0 +1,343 @@
+{
+  "theory_id": null,
+  "library_name": "Grounded Theory",
+  "slug": "grounded-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "Barney G. Glaser",
+      "Anselm L. Strauss"
+    ],
+    "year": 2017,
+    "title": "The Discovery of Grounded Theory",
+    "type": "book",
+    "venue": "Routledge eBooks",
+    "doi": "10.4324/9780203793206",
+    "openalex_id": "W1515587369",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://www.taylorfrancis.com/books/9780203793206",
+    "note": "Record dated 2017 (Routledge reissue of the 1967 book)."
+  },
+  "citation_anchor_openalex_id": "W1515587369",
+  "core_idea": "A research methodology for building theory from data rather than testing existing theory. Researchers collect and analyse data at the same time, compare constantly between data and emerging categories, sample theoretically to develop categories, and stop when categories are saturated.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What is going on in a setting that existing theory doesn't explain well?",
+    "How do people manage a process or problem (e.g. becoming a migrant student, coping with a reform)?",
+    "Typical data: interviews, observation, documents, analysed through coding and memo writing."
+  ],
+  "common_mistakes": [
+    "Calling any thematic coding 'grounded theory'.",
+    "Starting with a full theoretical framework and then claiming the theory 'emerged'.",
+    "Not saying which version you follow (Glaser, Strauss & Corbin, Charmaz)."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Barney G. Glaser"
+        ],
+        "year": 1978,
+        "title": "Theoretical Sensitivity: Advances in the Methodology of Grounded Theory",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1482707767",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Theoretical sensitivity: how researchers see what is significant in data."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Anselm L. Strauss",
+          "Juliet M. Corbin"
+        ],
+        "year": 1998,
+        "title": "Basics of qualitative research : techniques and procedures for developing grounded theory",
+        "type": "book",
+        "venue": "Sage eBooks",
+        "doi": null,
+        "openalex_id": "W1658908529",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A more structured, procedural version (Strauss & Corbin), which split the founders."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Gioia methodology",
+      "summary": "A structured inductive approach to qualitative rigor in organization studies.",
+      "defining_work": {
+        "authors": [
+          "Dennis A. Gioia",
+          "Kevin G. Corley",
+          "Aimee L. Hamilton"
+        ],
+        "year": 2012,
+        "title": "Seeking Qualitative Rigor in Inductive Research",
+        "type": "article",
+        "venue": "Organizational Research Methods",
+        "doi": "10.1177/1094428112452151",
+        "openalex_id": "W2002554683",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Constructivist grounded theory",
+      "summary": "Charmaz's version: theories are constructed by researchers, not discovered.",
+      "defining_work": {
+        "authors": [
+          "Antony Bryant",
+          "Kathy Calkins Charmaz"
+        ],
+        "year": 2007,
+        "title": "The SAGE Handbook of Grounded Theory",
+        "type": "book",
+        "venue": "SAGE Publications Ltd eBooks",
+        "doi": "10.4135/9781848607941",
+        "openalex_id": "W1480414464",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Popular and lasting across fields, with a large methodological literature.",
+      "source": {
+        "authors": [
+          "Antony Bryant",
+          "Kathy Calkins Charmaz"
+        ],
+        "year": 2007,
+        "title": "The SAGE Handbook of Grounded Theory",
+        "type": "book",
+        "venue": "SAGE Publications Ltd eBooks",
+        "doi": "10.4135/9781848607941",
+        "openalex_id": "W1480414464",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Gives clear warnings about what it is not, which helps rigour.",
+      "source": {
+        "authors": [
+          "Roy Suddaby"
+        ],
+        "year": 2006,
+        "title": "From the Editors: What Grounded Theory is Not",
+        "type": "editorial",
+        "venue": "Academy of Management Journal",
+        "doi": "10.5465/amj.2006.22083020",
+        "openalex_id": "W2147226379",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The founders split over 'emergence' versus 'forcing': how much prior theory should guide coding.",
+      "source": {
+        "authors": [
+          "Udo Kelle"
+        ],
+        "year": 2008,
+        "title": "\"Emergence\" vs. \"Forcing\" of Empirical Data? A Crucial Problem of \"Grounded Theory\" Reconsidered",
+        "type": "article",
+        "venue": "Forum qualitative Sozialforschung",
+        "doi": "10.17169/fqs-6.2.467",
+        "openalex_id": "W2132585896",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://www.qualitative-research.net/index.php/fqs/article/view/467"
+      }
+    },
+    {
+      "point": "Its notions of 'theory', 'ground' and 'discovery' do not provide the epistemic security they promise.",
+      "source": {
+        "authors": [
+          "Gary Thomas",
+          "David James"
+        ],
+        "year": 2006,
+        "title": "Reinventing grounded theory: some questions about theory, ground and discovery",
+        "type": "article",
+        "venue": "British Educational Research Journal",
+        "doi": "10.1080/01411920600989412",
+        "openalex_id": "W1991858445",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://research.birmingham.ac.uk/en/publications/6ac5a1a3-c929-4564-8844-ec0fb80f758c"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Barney G. Glaser",
+          "Anselm L. Strauss"
+        ],
+        "year": 2017,
+        "title": "The Discovery of Grounded Theory",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203793206",
+        "openalex_id": "W1515587369",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.taylorfrancis.com/books/9780203793206",
+        "note": "Record dated 2017 (Routledge reissue of the 1967 book)."
+      },
+      "chapter": "Chapters 1–3",
+      "why_read": "The original argument for generating theory from data.",
+      "reading_question": "What process or problem in your data could a grounded theory explain?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Roy Suddaby"
+        ],
+        "year": 2006,
+        "title": "From the Editors: What Grounded Theory is Not",
+        "type": "editorial",
+        "venue": "Academy of Management Journal",
+        "doi": "10.5465/amj.2006.22083020",
+        "openalex_id": "W2147226379",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Short; lists common misuses.",
+      "reading_question": "Which of Suddaby's misconceptions might apply to your plan?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Antony Bryant",
+          "Kathy Calkins Charmaz"
+        ],
+        "year": 2007,
+        "title": "The SAGE Handbook of Grounded Theory",
+        "type": "book",
+        "venue": "SAGE Publications Ltd eBooks",
+        "doi": "10.4135/9781848607941",
+        "openalex_id": "W1480414464",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Covers the different versions and debates.",
+      "reading_question": "Which version of grounded theory will you follow, and why?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "grounded theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W4388503650",
+        "title": "A Step-by-Step Process of Thematic Analysis to Develop a Conceptual Model in Qualitative Research",
+        "year": 2023,
+        "authors": [
+          "Muhammad Naeem",
+          "Wilson Ozuem",
+          "Kerry E. Howell",
+          "Silvia Ranfagni"
+        ],
+        "cited_by": 2243,
+        "oa_url": "https://doi.org/10.1177/16094069231205789"
+      },
+      {
+        "openalex_id": "W2492554153",
+        "title": "The Power of Constructivist Grounded Theory for Critical Inquiry",
+        "year": 2016,
+        "authors": [
+          "Kathy Calkins Charmaz"
+        ],
+        "cited_by": 1003,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2943028521",
+        "title": "The SAGE Handbook of Current Developments in Grounded Theory",
+        "year": 2019,
+        "authors": [
+          "Antony Bryant",
+          "Kathy Calkins Charmaz"
+        ],
+        "cited_by": 613,
+        "oa_url": "https://doi.org/10.4135/9781526485656"
+      },
+      {
+        "openalex_id": "W2562473293",
+        "title": "Using conceptual depth criteria: addressing the challenge of reaching saturation in qualitative research",
+        "year": 2016,
+        "authors": [
+          "James K. Nelson"
+        ],
+        "cited_by": 599,
+        "oa_url": "https://doi.org/10.1177/1468794116679873"
+      },
+      {
+        "openalex_id": "W2995963897",
+        "title": "Blockchain and the circular economy: potential tensions and critical reflections from practice",
+        "year": 2019,
+        "authors": [
+          "Mahtab Kouhizadeh",
+          "Qingyun Zhu",
+          "Joseph Sarkis"
+        ],
+        "cited_by": 510,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Charmaz (2006) had no clean record; the handbook is used instead."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}

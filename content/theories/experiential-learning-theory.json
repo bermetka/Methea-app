@@ -1,0 +1,340 @@
+{
+  "theory_id": null,
+  "library_name": "Experiential learning theory",
+  "slug": "experiential-learning-theory",
+  "status": "draft",
+  "original": {
+    "authors": [
+      "David Alan Kolb"
+    ],
+    "year": 1983,
+    "title": "Experiential Learning : Experience as the Source of Learning and Development",
+    "type": "article",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W2170644967",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "OpenAlex record dated 1983 for the 1984 book."
+  },
+  "citation_anchor_openalex_id": "W2170644967",
+  "core_idea": "Learning is the process of creating knowledge through the transformation of experience. Kolb describes a cycle: concrete experience, reflective observation, abstract conceptualization and active experimentation. Learners differ in which parts of the cycle they prefer.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do students learn through internships, projects, simulations or fieldwork?",
+    "What role does reflection play in turning experience into learning?",
+    "Typical data: reflective journals, interviews, observation, pre/post assessment."
+  ],
+  "common_mistakes": [
+    "Treating the cycle as fixed steps that happen in order.",
+    "Building a study on 'learning styles' matching, which has weak evidence.",
+    "Ignoring the social and emotional sides of learning from experience."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Donald A. Schön"
+        ],
+        "year": 2017,
+        "title": "The Reflective Practitioner",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781315237473",
+        "openalex_id": "W4241464738",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.taylorfrancis.com/books/9781315237473",
+        "note": "2017 edition of the 1983 book."
+      },
+      "adds": "Reflection-in-action and reflection-on-action in professional practice."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Alice Y. Kolb",
+          "David Alan Kolb"
+        ],
+        "year": 2005,
+        "title": "Learning Styles and Learning Spaces: Enhancing Experiential Learning in Higher Education",
+        "type": "article",
+        "venue": "Academy of Management Learning and Education",
+        "doi": "10.5465/amle.2005.17268566",
+        "openalex_id": "W2147454772",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Learning spaces: applying the theory to higher education."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Reflective practice",
+      "summary": "Learning through reflecting during and after practice.",
+      "defining_work": {
+        "authors": [
+          "Donald A. Schön"
+        ],
+        "year": 2017,
+        "title": "The Reflective Practitioner",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781315237473",
+        "openalex_id": "W4241464738",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.taylorfrancis.com/books/9781315237473"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Extremely influential and useful in management education.",
+      "source": {
+        "authors": [
+          "David J. Holman",
+          "Karel Pavlica",
+          "Richard Thorpe"
+        ],
+        "year": 1997,
+        "title": "Rethinking Kolb's Theory of Experiential Learning in Management Education",
+        "type": "article",
+        "venue": "Management Learning",
+        "doi": "10.1177/1350507697282003",
+        "openalex_id": "W1985129310",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Preserves the role of experience in learning, linking personal and social knowledge.",
+      "source": {
+        "authors": [
+          "D. Christopher Kayes"
+        ],
+        "year": 2002,
+        "title": "Experiential Learning and Its Critics: Preserving the Role of Experience in Management Learning and Education",
+        "type": "article",
+        "venue": "Academy of Management Learning and Education",
+        "doi": "10.5465/amle.2002.8509336",
+        "openalex_id": "W2169263771",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Places learning in individual cognition and neglects its social and historical character.",
+      "source": {
+        "authors": [
+          "David J. Holman",
+          "Karel Pavlica",
+          "Richard Thorpe"
+        ],
+        "year": 1997,
+        "title": "Rethinking Kolb's Theory of Experiential Learning in Management Education",
+        "type": "article",
+        "venue": "Management Learning",
+        "doi": "10.1177/1350507697282003",
+        "openalex_id": "W1985129310",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The cycle misses emotion, power and relations; a fuller picture of experiential learning is needed.",
+      "source": {
+        "authors": [
+          "Russ Vince"
+        ],
+        "year": 1998,
+        "title": "Behind and Beyond Kolb's Learning Cycle",
+        "type": "article",
+        "venue": "Organizational Behavior Teaching Review",
+        "doi": "10.1177/105256299802200304",
+        "openalex_id": "W2113056005",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "There is little evidence that matching instruction to learning styles improves learning.",
+      "source": {
+        "authors": [
+          "Harold Pashler",
+          "Mark A. McDaniel",
+          "Doug Rohrer",
+          "Robert A. Bjork"
+        ],
+        "year": 2008,
+        "title": "Learning Styles",
+        "type": "article",
+        "venue": "Gothic.net",
+        "doi": "10.1111/j.1539-6053.2009.01038.x",
+        "openalex_id": "W2112955368",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "David Alan Kolb"
+        ],
+        "year": 1983,
+        "title": "Experiential Learning : Experience as the Source of Learning and Development",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2170644967",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "OpenAlex record dated 1983 for the 1984 book."
+      },
+      "chapter": "Chapter 2, the experiential learning cycle",
+      "why_read": "Where the cycle is set out.",
+      "reading_question": "Which stages of the cycle does your learning setting support or skip?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Alice Y. Kolb",
+          "David Alan Kolb"
+        ],
+        "year": 2005,
+        "title": "Learning Styles and Learning Spaces: Enhancing Experiential Learning in Higher Education",
+        "type": "article",
+        "venue": "Academy of Management Learning and Education",
+        "doi": "10.5465/amle.2005.17268566",
+        "openalex_id": "W2147454772",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "An application to higher education.",
+      "reading_question": "What kind of learning space does your setting offer?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "D. Christopher Kayes"
+        ],
+        "year": 2002,
+        "title": "Experiential Learning and Its Critics: Preserving the Role of Experience in Management Learning and Education",
+        "type": "article",
+        "venue": "Academy of Management Learning and Education",
+        "doi": "10.5465/amle.2002.8509336",
+        "openalex_id": "W2169263771",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Maps the critics and argues for keeping experience central.",
+      "reading_question": "Which critique matters most for your study?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "experiential learning theory",
+  "recent_works_preview": {
+    "fetched": "2026-10-31",
+    "items": [
+      {
+        "openalex_id": "W2912486129",
+        "title": "Experiential learning – a systematic review and revision of Kolb’s model",
+        "year": 2019,
+        "authors": [
+          "Thomas Howard Morris"
+        ],
+        "cited_by": 987,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3022090634",
+        "title": "Experiential Learning Theory as a Guide for Experiential Educators in Higher Education",
+        "year": 2022,
+        "authors": [
+          "Alice Y. Kolb",
+          "David Alan Kolb"
+        ],
+        "cited_by": 557,
+        "oa_url": "https://doi.org/10.46787/elthe.v1i1.3362"
+      },
+      {
+        "openalex_id": "W2285948776",
+        "title": "Animating eco-education: To see, feel, and discover in an augmented reality-based experiential learning environment",
+        "year": 2016,
+        "authors": [
+          "Tien-Chi Huang",
+          "Chia‐Chen Chen",
+          "Yu-Wen Chou"
+        ],
+        "cited_by": 420,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2785492254",
+        "title": "Constructivism and connectivism in education technology: Active, situated, authentic, experiential, and anchored learning",
+        "year": 2018,
+        "authors": [
+          "João Mattar"
+        ],
+        "cited_by": 219,
+        "oa_url": "https://doi.org/10.5944/ried.21.2.20055"
+      },
+      {
+        "openalex_id": "W2921247802",
+        "title": "Using simulations to teach young students science concepts: An Experiential Learning theoretical analysis",
+        "year": 2019,
+        "authors": [
+          "Garry Falloon"
+        ],
+        "cited_by": 216,
+        "oa_url": "https://doi.org/10.1016/j.compedu.2019.03.001"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-10-31",
+      "notes": "Every work resolved in OpenAlex by exact title + author (books: book-type records only); bibliographic fields copied from the OpenAlex record. Items marked verified:false are shown with a ? chip. Dewey (1938) had no clean record and is left out."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    }
+  ]
+}
