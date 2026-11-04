@@ -1,0 +1,97 @@
+/* Blog — "ink on paper, marker in hand". Paper backgrounds, ink text,
+   marker only as a highlight. Long-form text in Source Serif 4, 720px column. */
+
+.root { min-height: 100vh; background: var(--paper); color: var(--ink); overflow-x: hidden; }
+
+/* Nav */
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 1.5rem; max-width: 1000px; margin: 0 auto; }
+.wordmark { font-family: 'Playfair Display', Georgia, serif; font-size: 1.375rem; font-weight: 600; letter-spacing: -0.045em; color: var(--ink); text-decoration: none; }
+.navLinks { display: flex; align-items: center; gap: 1.25rem; }
+.navLink { font-size: 0.9375rem; color: var(--graphite); text-decoration: none; }
+.navLink:hover { color: var(--ink); }
+.navCta { font-size: 0.9375rem; font-weight: 600; color: var(--ink-blue); text-decoration: none; }
+
+.main { max-width: var(--max-width); margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+
+.mark { background: linear-gradient(transparent 58%, var(--marker-lime) 58%, var(--marker-lime) 92%, transparent 92%); padding: 0 0.1em; }
+
+/* Index */
+.indexHeader { padding: 2rem 0 2.5rem; border-bottom: 1px solid var(--stone); }
+.kicker { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pencil); margin-bottom: 0.75rem; }
+.indexTitle { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 1rem; }
+.indexLede { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.125rem; line-height: 1.6; color: var(--graphite); }
+.postList { list-style: none; padding: 0; margin: 0; }
+.postCard { border-bottom: 1px solid var(--stone); }
+.postCardLink { display: block; padding: 1.75rem 0; color: inherit; text-decoration: none; }
+.postCardTitle { font-size: clamp(1.25rem, 3.5vw, 1.625rem); margin-bottom: 0.5rem; }
+.postCardLink:hover .postCardTitle { text-decoration: underline; text-decoration-color: var(--marker-lime); text-decoration-thickness: 0.3em; text-underline-offset: -0.1em; text-decoration-skip-ink: none; }
+.postCardDesc { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.0625rem; line-height: 1.6; color: var(--graphite); margin-bottom: 0.5rem; }
+
+/* Post */
+.breadcrumb { font-size: 0.875rem; margin-bottom: 1rem; }
+.breadcrumb a { color: var(--ink-blue); text-decoration: none; }
+.breadcrumb a::before { content: '← '; }
+.postTitle { font-size: clamp(1.875rem, 5.5vw, 2.75rem); line-height: 1.15; margin-bottom: 0.75rem; }
+.meta { font-size: 0.875rem; color: var(--pencil); }
+.meta a { color: var(--graphite); }
+
+.prose { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.125rem; line-height: 1.7; color: var(--ink); margin-top: 2rem; }
+.prose p, .prose ul, .prose ol, .prose blockquote, .prose :global(.table-wrap) { margin: 0 0 1.25rem; }
+.prose h2 { margin: 2.5rem 0 1rem; }
+.prose h3 { margin: 2rem 0 0.75rem; }
+.prose ul, .prose ol { padding-left: 1.5rem; }
+.prose li { margin-bottom: 0.4rem; }
+.prose a { color: var(--ink-blue); text-decoration-thickness: 1px; text-underline-offset: 0.15em; overflow-wrap: anywhere; }
+.prose strong { font-weight: 600; }
+.prose code { font-family: var(--font-geist-mono), monospace; font-size: 0.875em; background: var(--paper-deep); padding: 0.1em 0.3em; border-radius: 4px; }
+.prose blockquote { border-left: 3px solid var(--marker-yellow); padding: 0.25rem 0 0.25rem 1rem; color: var(--graphite); }
+.prose blockquote p { margin: 0; }
+.prose hr { border: 0; border-top: 1px solid var(--stone); margin: 2rem 0; }
+.prose > p:first-child { font-size: 1.1875rem; background: var(--sheet); border: 1px solid var(--stone); border-radius: var(--radius); padding: 1rem 1.25rem; }
+
+.prose :global(.table-wrap) { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--stone); border-radius: var(--radius); background: var(--sheet); }
+.prose table { border-collapse: collapse; width: 100%; min-width: 560px; font-family: 'Schibsted Grotesk', 'Inter', system-ui, sans-serif; font-size: 0.875rem; line-height: 1.5; }
+.prose th, .prose td { text-align: left; vertical-align: top; padding: 0.625rem 0.75rem; border-bottom: 1px solid var(--stone-soft); }
+.prose thead th { background: var(--paper-deep); font-weight: 600; }
+.prose tbody th { font-weight: 600; white-space: nowrap; }
+.prose tbody tr:last-child th, .prose tbody tr:last-child td { border-bottom: 0; }
+
+/* References — smaller, last */
+.references { margin-top: 2.5rem; font-size: 0.9375rem; line-height: 1.6; }
+.references li { margin-bottom: 0.6rem; }
+
+/* FAQ */
+.faq { margin-top: 3rem; }
+.faq h2 { margin-bottom: 1rem; }
+.faqItem { border-top: 1px solid var(--stone); padding: 1rem 0; }
+.faqItem h3 { margin-bottom: 0.5rem; }
+.faqItem p { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.0625rem; line-height: 1.65; color: var(--graphite); }
+
+/* CTA */
+.cta { margin-top: 3rem; background: var(--sheet); border: 1px solid var(--stone); border-radius: var(--radius-lg); padding: 1.75rem 1.5rem; }
+.ctaHeading { margin-bottom: 0.75rem; }
+.cta p { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.0625rem; line-height: 1.65; color: var(--graphite); margin-bottom: 1.25rem; }
+.ctaButton { display: inline-block; background: var(--ink); color: var(--sheet); font-weight: 600; font-size: 0.9375rem; padding: 0.8rem 1.25rem; border-radius: var(--radius); text-decoration: none; }
+.ctaButton:hover { background: var(--ink-blue-deep); }
+
+/* Author */
+.author { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--stone); }
+.authorName { font-weight: 600; }
+.authorRole { font-size: 0.875rem; color: var(--graphite); margin: 0.15rem 0 0.5rem; }
+.authorBio { font-size: 0.9375rem; line-height: 1.6; color: var(--graphite); }
+
+/* Related */
+.related { margin-top: 3rem; }
+.related h2 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+.related ul { list-style: none; padding: 0; }
+.related li { padding: 0.5rem 0; border-bottom: 1px solid var(--stone-soft); }
+.related a { color: var(--ink-blue); text-decoration: none; }
+
+/* Footer */
+.footer { background: var(--ink); padding: 2.5rem 1.5rem; }
+.footerInner { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.5rem; }
+.footerWordmark { font-family: 'Playfair Display', Georgia, serif; font-size: 1.125rem; font-weight: 600; letter-spacing: -0.045em; color: var(--sheet); }
+.footerTagline { font-size: 0.875rem; color: #B0ADA6; }
+.footerNote { font-size: 0.8125rem; color: #706D66; max-width: 480px; line-height: 1.6; margin-top: 0.5rem; }
+.footerLinks { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.75rem; font-size: 0.8125rem; color: #706D66; }
+.footerLinks a { color: #B0ADA6; }

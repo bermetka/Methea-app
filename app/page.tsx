@@ -23,7 +23,10 @@ export default async function LandingPage() {
       {/* ── Nav ── */}
       <nav style={s.nav}>
         <span style={s.wordmark}>Methea</span>
-        <a href="/login" style={s.navCta}>Sign in →</a>
+        <div style={s.navLinks}>
+          <a href="/blog" style={s.navLink}>Blog</a>
+          <a href="/login" style={s.navCta}>Sign in →</a>
+        </div>
       </nav>
 
       {/* ── Hero ── */}
@@ -279,6 +282,8 @@ export default async function LandingPage() {
             Methea is a thinking tool, not a writing tool. Students remain the authors of their own research.
           </p>
           <div style={s.footerLinks}>
+            <a href="/blog" style={s.footerLink}>Blog</a>
+            <span style={s.footerDot}>·</span>
             <a href="/privacy" style={s.footerLink}>Privacy</a>
             <span style={s.footerDot}>·</span>
             <a href="/terms" style={s.footerLink}>Terms</a>
@@ -298,6 +303,8 @@ const s: Record<string, React.CSSProperties> = {
   // Nav
   nav:    { display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.25rem 1.5rem', maxWidth: '1000px', margin: '0 auto' },
   wordmark: { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.375rem', fontWeight: 600, letterSpacing: '-0.045em', color: 'var(--ink)' },
+  navLinks: { display: 'flex', alignItems: 'center', gap: '1.25rem' },
+  navLink: { fontSize: '0.9375rem', color: 'var(--graphite)', textDecoration: 'none' },
   navCta: { fontSize: '0.9375rem', fontWeight: 600, color: 'var(--ink-blue)', textDecoration: 'none' },
 
   // Hero
