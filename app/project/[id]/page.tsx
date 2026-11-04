@@ -58,7 +58,10 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   return (
     <ProjectDashboard
       projectId={params.id}
-      ctx={ctx}
+      ctx={access || !ctx.framework?.preview_generated
+        ? ctx
+        // The narrative an unpaid project got as a preview stays on the server (shown as a teaser on the framework page only).
+        : { ...ctx, framework: { ...ctx.framework, narrative: '', citations: [], citation_statuses: {} } }}
       theories={selectedTheories}
       isComplete={isComplete}
       paid={access}

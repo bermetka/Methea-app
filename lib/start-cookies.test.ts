@@ -28,6 +28,15 @@ describe('startCookies (sales page → Prompt 3 cookie contract)', () => {
     })
   })
 
+  it('a click from our blog or check keeps the original source; only the angle follows', () => {
+    const existing = { anonId: 'kept-anon-id-0001', attribution: '{"angle":"deadline","utm_source":"threads","utm_campaign":"post-3"}', variant: 'A' }
+    expect(startCookies(q('a=lens&utm_source=blog&utm_campaign=how-to-choose'), existing, opts).attribution)
+      .toEqual({ angle: 'lens', utm_source: 'threads', utm_campaign: 'post-3' })
+    // …but with no earlier source, the blog or check is the source.
+    expect(startCookies(q('a=question&utm_source=quiz&utm_campaign=readiness-check'), {}, opts).attribution)
+      .toEqual({ angle: 'question', utm_source: 'quiz', utm_campaign: 'readiness-check' })
+  })
+
   it('a new campaign URL replaces the source; ?p= overrides the stored variant', () => {
     const existing = { anonId: 'kept-anon-id-0001', attribution: '{"angle":"deadline","utm_source":"reddit"}', variant: 'A' }
     expect(startCookies(q('a=question&utm_source=google&p=B'), existing, opts)).toMatchObject({

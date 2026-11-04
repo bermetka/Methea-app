@@ -24,6 +24,8 @@ interface Props {
   outdated?: boolean
   locked: boolean
   unlock: UnlockInfo | null   // null when the project has full access
+  /** Unpaid preview: `narrative` is only its opening; these are the citation counts. */
+  citationSummary?: { verified: number; unverified: number } | null
   diagramRefreshCapReached?: boolean
 }
 
@@ -35,8 +37,9 @@ const LAYOUT_LABELS: Record<Layout, string> = {
 
 export default function FrameworkBuilder({
   projectId, theories, edges, narrative, citations, citationStatuses, defaultLayout, outdated, locked,
-  unlock, diagramRefreshCapReached,
+  unlock, diagramRefreshCapReached, citationSummary,
 }: Props) {
+  const preview = locked && !!citationSummary && !!narrative
   const [layout, setLayout] = useState<Layout>(defaultLayout)
   const [saving, setSaving] = useState(false)
   const svgRef = useRef<SVGSVGElement>(null)
@@ -180,7 +183,24 @@ export default function FrameworkBuilder({
       {/* Narrative — paid only. The unpaid branch never receives real narrative/
           citation text as props (page.tsx only generates them when paid), so
           there is nothing here to leak even if this branch were inspected. */}
-      {locked && !narrative ? (
+      {preview ? (
+        <div style={s.narrativeCard}>
+          <p style={s.narrativeLabel}>Framework narrative · preview</p>
+          <p style={s.narrativeText}>{narrative}</p>
+          <div aria-hidden="true" style={s.blurWrap}>
+            {[94, 88, 91, 72].map((w, i) => <div key={i} style={{ ...s.blurBar, width: `${w}%` }} />)}
+          </div>
+          <div style={s.citationChips}>
+            {citationSummary!.verified > 0 && (
+              <span style={{ ...s.summaryChip, background: 'var(--mint)', color: 'var(--moss)' }}>✓ {citationSummary!.verified} {citationSummary!.verified === 1 ? 'citation' : 'citations'} verified</span>
+            )}
+            {citationSummary!.unverified > 0 && (
+              <span style={{ ...s.summaryChip, background: 'var(--paper-deep)', color: 'var(--pencil)' }}>? {citationSummary!.unverified} to check</span>
+            )}
+          </div>
+          <p style={s.previewNote}>🔒 The rest of your narrative and its sources are part of the project unlock.</p>
+        </div>
+      ) : locked && !narrative ? (
         <div style={s.narrativeCard}>
           <p style={s.narrativeLabel}>Framework narrative</p>
           <p style={s.lockedPlaceholder}>
@@ -218,14 +238,14 @@ export default function FrameworkBuilder({
       )}
 
       {/* Existing narrative on an unpaid project: readable, but regenerate/save/export need an unlock */}
-      {locked && narrative && unlock && <ViewOnlyNotice projectId={projectId} unlock={unlock} />}
+      {locked && narrative && !preview && unlock && <ViewOnlyNotice projectId={projectId} unlock={unlock} />}
 
       {/* Unpaid: the next step is methodology, which is part of the unlock — make that
           explicit instead of a dead end. The button opens the checkout. */}
       {locked && unlock && (
         <div style={s.nextStep}>
           <p style={s.nextStepText}>
-            <strong>Next: your methodology.</strong> Unlocking this project gives you the full
+            <strong>{preview ? 'Read the rest and keep going.' : 'Next: your methodology.'}</strong> Unlocking this project gives you the full
             narrative, methodology, interview guide, analysis and export for 6 months.
           </p>
           <UnlockSlot projectId={projectId} unlock={unlock} label="Continue to methodology" />
@@ -271,6 +291,10 @@ const s: Record<string, React.CSSProperties> = {
   narrativeText:      { fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.9375rem', lineHeight: 1.7, color: 'var(--graphite)' },
   lockedPlaceholder:  { fontFamily: "'Source Serif 4', Georgia, serif", fontSize: '0.9375rem', lineHeight: 1.7, color: 'var(--pencil)', fontStyle: 'italic' },
   citationChips:  { display: 'flex', flexWrap: 'wrap' as const, gap: '0.375rem' },
+  blurWrap:       { display: 'flex', flexDirection: 'column', gap: 8 },
+  blurBar:        { height: 11, borderRadius: 4, background: 'var(--stone)', filter: 'blur(3px)' },
+  summaryChip:    { fontSize: '0.8125rem', fontWeight: 600, borderRadius: 999, padding: '3px 10px' },
+  previewNote:    { margin: 0, fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)' },
   citationItem:   { display: 'inline-flex', alignItems: 'center', gap: '0.3rem', cursor: 'help' },
   stateChip:      { display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '18px', height: '18px', borderRadius: '50%', fontSize: '0.6875rem', fontWeight: 700, flexShrink: 0 },
   citationLabel:  { fontSize: '0.8125rem', fontWeight: 500, color: 'var(--graphite)' },

@@ -148,6 +148,8 @@ export interface AnalysisTheme {
 
 export interface ResearchContext {
   version: number
+  /** Where the project started from, e.g. the /check result (pre-fills the brief). */
+  seed?: { source: 'check'; topic: string; path: 'program' | 'applicant'; stage: string }
   brief?: BriefExtraction
   socratic_gate_1?: {
     completed: boolean
@@ -178,6 +180,8 @@ export interface ResearchContext {
     citations: FrameworkCitation[]
     citation_statuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'>
     diagram_theory_key?: string  // sorted selected_ids the diagram (edges) was generated from
+    preview_generated?: boolean  // narrative generated for an unpaid project: shown as a teaser only
+    narrative_theory_key?: string // sorted selected_ids the narrative was generated from
   }
   free_diagram_refreshes?: number  // unpaid diagram regenerations after a theory change (soft cap)
   methodology?: {

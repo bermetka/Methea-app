@@ -10,6 +10,7 @@ import { getUnlockInfo } from '@/lib/checkout'
 import GenerationError from '@/components/ui/GenerationError'
 import { trackEvent } from '@/lib/funnel'
 import FrameworkBuilder from './FrameworkBuilder'
+import { teaser } from '@/lib/teaser'
 import type { Project } from '@/types/database'
 
 // Claude runs while this page renders or in its server actions, which execute
@@ -35,6 +36,7 @@ async function saveFrameworkEdgesOnly(
     'framework',
     {
       framework: {
+        ...ctx.framework,
         layout_preset: ctx.framework?.layout_preset ?? 'hub-and-spoke',
         edges,
         narrative: ctx.framework?.narrative ?? '',
@@ -119,15 +121,23 @@ export default async function FrameworkPage({ params }: { params: { id: string }
   // The paywall moment: the student sees their diagram.
   if (edges.length) await trackEvent('framework_diagram_viewed', { once: params.id })
 
-  // Narrative + citations: generating them is paid-only. A narrative that was
-  // already generated (e.g. before the paywall started) stays viewable, read-only.
+  // Narrative + citations. Paid: generated and shown in full. Unpaid: generated too
+  // (paywall option 2, 2026-11-04) but only its opening reaches the page, as a
+  // preview; it's stored, so paying shows the full text without generating again.
+  // A narrative an unpaid project already had from before the paywall stays readable.
   let narrativeResult = !resetForReview
     ? { narrative: ctx.framework?.narrative ?? '', citations: ctx.framework?.citations ?? [] }
     : { narrative: '', citations: [] }
   let citationStatuses: Record<string, 'doi_verified' | 'classic_verified' | 'unverified'> =
     !resetForReview ? (ctx.framework?.citation_statuses ?? {}) : {}
 
-  if (paid && !narrativeResult.narrative) {
+  const previewStale = !paid && !!ctx.framework?.preview_generated
+    && ctx.framework?.narrative_theory_key !== diagramTheoryKey && !diagramRefreshCapReached
+  const needNarrative = edges.length > 0 && (!narrativeResult.narrative || previewStale)
+  let generatedNow = false
+
+  if (needNarrative) {
+    generatedNow = true
     try {
       const result = await generateFrameworkNarrative(ctx, theories, edges)
       // generateFrameworkNarrative (unlike the other prompt functions) returns Claude's
@@ -139,9 +149,14 @@ export default async function FrameworkPage({ params }: { params: { id: string }
       }
     } catch (err) {
       console.error(`[framework] generateFrameworkNarrative failed for project ${params.id}:`, err)
-      return <GenerationError projectId={params.id} stepLabel="framework narrative" retryHref={`/project/${params.id}/framework`} />
+      // Unpaid: the preview is a bonus — never block the free diagram on it.
+      if (paid) return <GenerationError projectId={params.id} stepLabel="framework narrative" retryHref={`/project/${params.id}/framework`} />
+      generatedNow = false
     }
+  }
 
+  if (generatedNow) {
+    citationStatuses = {}
     await Promise.all(
       narrativeResult.citations.map(async (c) => {
         const key = `${c.author}, ${c.year}`
@@ -164,8 +179,8 @@ export default async function FrameworkPage({ params }: { params: { id: string }
       })
     )
 
-    // Persist narrative + citations now that they've been generated for a paid project.
-    // Not during a review reset — the student reviews the regenerated version and saves.
+    // Persist narrative + citations. Not during a review reset — the student reviews the
+    // regenerated version and saves.
     if (!resetForReview) await updateResearchContext(
       params.id,
       'framework',
@@ -176,11 +191,24 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           narrative: narrativeResult.narrative,
           citations: narrativeResult.citations,
           citation_statuses: citationStatuses,
+          diagram_theory_key: diagramRefreshCapReached ? ctx.framework?.diagram_theory_key : diagramTheoryKey,
+          preview_generated: !paid,
+          narrative_theory_key: diagramTheoryKey,
         },
       },
       supabase
     )
   }
+
+  // Unpaid and the narrative was made for the preview: send only its opening and the
+  // citation counts — the rest stays on the server.
+  const isPreview = !paid && !!narrativeResult.narrative && (generatedNow || !!ctx.framework?.preview_generated)
+  const citationSummary = isPreview
+    ? {
+        verified: Object.values(citationStatuses).filter(v => v !== 'unverified').length,
+        unverified: Object.values(citationStatuses).filter(v => v === 'unverified').length,
+      }
+    : null
 
   const defaultLayout: 'linear' | 'hub-and-spoke' =
     (ctx.framework?.layout_preset as 'linear' | 'hub-and-spoke') ??
@@ -201,6 +229,8 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           <p style={styles.sub}>
             {paid
               ? 'Review the diagram and narrative, then save to continue.'
+              : isPreview
+                ? 'Here is the start of your framework narrative. Unlock to read the rest and continue to methodology.'
               : narrativeResult.narrative
                 ? 'Unlock to save your framework and continue to methodology.'
                 : 'Unlock to see the full narrative and continue to methodology.'}
@@ -210,9 +240,10 @@ export default async function FrameworkPage({ params }: { params: { id: string }
           projectId={params.id}
           theories={diagramTheories}
           edges={edges}
-          narrative={narrativeResult.narrative}
-          citations={narrativeResult.citations}
-          citationStatuses={citationStatuses}
+          narrative={isPreview ? teaser(narrativeResult.narrative) : narrativeResult.narrative}
+          citations={isPreview ? [] : narrativeResult.citations}
+          citationStatuses={isPreview ? {} : citationStatuses}
+          citationSummary={citationSummary}
           defaultLayout={defaultLayout}
           outdated={resetForReview}
           locked={!paid}

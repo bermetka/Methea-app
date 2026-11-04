@@ -25,6 +25,16 @@ describe('visit carry (sign-in link opened on another device)', () => {
     expect(decodeVisit(token, { now, secret: 'other-secret' })).toBeNull()
   })
 
+  it('carries the /check question across devices, cleaned on the way back', () => {
+    const withCheck: Visit = { attribution: {}, check: { q: 'Как доверие строится в удалённых командах? '.repeat(12).trim(), path: 'applicant', stage: 'lens' } }
+    const token = encodeVisit(withCheck, { now, secret })!
+    expect(token.length).toBeLessThan(4000)
+    expect(decodeVisit(token, { now, secret })!.check).toEqual({ ...withCheck.check, q: withCheck.check!.q.slice(0, 600) })
+    const { visit: merged, restored } = mergeVisit({ attribution: {} }, decodeVisit(token, { now, secret }))
+    expect(merged.check?.stage).toBe('lens')
+    expect(restored.check).toBe(true)
+  })
+
   it('rejects expired, garbage and missing tokens', () => {
     const token = encodeVisit(visit, { now, secret })!
     expect(decodeVisit(token, { now: now + 8 * 24 * 3600 * 1000, secret })).toBeNull()
@@ -53,14 +63,14 @@ describe('mergeVisit', () => {
     const own: Visit = { anonId: 'own-anon-0001', attribution: { angle: 'deadline' }, variant: 'B' }
     const { visit: v, restored, variantSource } = mergeVisit(own, visit)
     expect(v).toEqual({ ...own, discountCode: 'FOUNDING50' })
-    expect(restored).toEqual({ anonId: false, attribution: false, variant: false, discountCode: true })
+    expect(restored).toEqual({ anonId: false, attribution: false, variant: false, discountCode: true, check: false })
     expect(variantSource).toBe('cookie')
   })
 
   it('new device: everything comes from the link', () => {
     const { visit: v, restored, variantSource } = mergeVisit({ attribution: {} }, visit)
     expect(v).toEqual(visit)
-    expect(restored).toEqual({ anonId: true, attribution: true, variant: true, discountCode: true })
+    expect(restored).toEqual({ anonId: true, attribution: true, variant: true, discountCode: true, check: false })
     expect(variantSource).toBe('link')
   })
 

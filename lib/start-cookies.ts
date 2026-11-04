@@ -3,6 +3,7 @@ import {
   ATTRIBUTION_COOKIE,
   ATTRIBUTION_KEYS,
   DEFAULT_ANGLE,
+  INTERNAL_SOURCES,
   parseAngle,
   sanitizeAnonId,
   sanitizeAttribution,
@@ -37,9 +38,14 @@ export function startCookies(
   const anonId = sanitizeAnonId(existing.anonId) ?? newId()
 
   const fromUrl = search.has('a') || ATTRIBUTION_KEYS.some(k => k !== 'angle' && search.has(k))
-  const raw: Attribution = fromUrl
+  const kept = sanitizeAttribution(existing.attribution)
+  // A click from our own blog or check keeps the original source (Threads, Google…);
+  // only the angle follows the page they clicked from.
+  const internalHop = fromUrl && !!kept.utm_source
+    && (INTERNAL_SOURCES as readonly string[]).includes(search.get('utm_source') ?? '')
+  const raw: Attribution = fromUrl && !internalHop
     ? sanitizeAttribution(Object.fromEntries(ATTRIBUTION_KEYS.map(k => [k, search.get(k) ?? undefined])))
-    : sanitizeAttribution(existing.attribution)
+    : kept
   const attribution = { ...raw, angle: parseAngle(fromUrl ? search.get('a') : raw.angle) ?? DEFAULT_ANGLE }
 
   const fromParam = allowVariantParam ? parsePriceVariant(search.get('p')) : null

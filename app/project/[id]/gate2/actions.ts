@@ -5,7 +5,10 @@ import { updateResearchContext } from '@/lib/research-context'
 import { resolveProjectTheories } from '@/lib/project-theories'
 import { parseReadingList } from '@/lib/prompts/reading-list'
 import { checkStudentList } from '@/lib/literature/check-list'
-import type { ResearchContext, StudentReadingList } from '@/types/database'
+import type { Project, ResearchContext, StudentReadingList } from '@/types/database'
+import { accessOptions } from '@/lib/access'
+import { hasFullAccess } from '@/lib/entitlement'
+import { gateStudentList, type ListPreview } from '@/lib/reading-gate'
 
 async function loadProject(projectId: string) {
   const supabase = createClient()
@@ -13,16 +16,20 @@ async function loadProject(projectId: string) {
   if (!user) return null
   const { data: project } = await supabase
     .from('projects')
-    .select('id, research_context')
+    .select('id, research_context, paid_at')
     .eq('id', projectId)
     .eq('user_id', user.id)
     .single()
   if (!project) return null
-  return { supabase, ctx: project.research_context as ResearchContext }
+  return {
+    supabase,
+    ctx: project.research_context as ResearchContext,
+    paid: hasFullAccess(project as Pick<Project, 'paid_at'>, await accessOptions(supabase, user.id)),
+  }
 }
 
 export type CheckListResult =
-  | { ok: true; list: StudentReadingList }
+  | { ok: true; list: StudentReadingList; preview: ListPreview | null }
   | { ok: false; error: string }
 
 /**
@@ -32,7 +39,7 @@ export type CheckListResult =
 export async function checkReadingList(projectId: string, text?: string): Promise<CheckListResult> {
   const loaded = await loadProject(projectId)
   if (!loaded) return { ok: false, error: 'Project not found.' }
-  const { supabase, ctx } = loaded
+  const { supabase, ctx, paid } = loaded
 
   const raw = (text ?? ctx.brief?.reading_list_raw ?? '').trim()
   if (!raw) return { ok: false, error: 'Paste your reading list first.' }
@@ -63,7 +70,9 @@ export async function checkReadingList(projectId: string, text?: string): Promis
       },
       supabase
     )
-    return { ok: true, list }
+    // Unpaid: the summary and one linked work; the per-work breakdown is part of the unlock.
+    const gated = gateStudentList(list, paid)
+    return { ok: true, list: gated.list!, preview: gated.preview }
   } catch (err) {
     console.error(`[gate2] checkReadingList failed for ${projectId}:`, err)
     return { ok: false, error: "We couldn't check your list just now. Nothing was lost; please try again." }

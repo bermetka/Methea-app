@@ -47,7 +47,7 @@ export const POSTS: Post[] = [
     angle: 'lens',
     cta: {
       heading: 'Check your own study',
-      body: 'Knowing the definitions is the easy part. Making your question, theory, concepts and analysis line up is where most proposals get stuck. Methea walks you through that chain one link at a time — it asks the questions a methods supervisor would ask, suggests theories that fit your topic, and shows where the links break. It doesn’t write your thesis. The first steps are free.',
+      body: 'Knowing the definitions is the easy part. Making your question, theory, concepts and analysis line up is where most proposals get stuck. Take a 2-minute check on your own idea: you’ll see what you already have and the one next step. Methea can pick it up from there. It doesn’t write your thesis.',
     },
     faq: [
       {
@@ -89,7 +89,7 @@ export const POSTS: Post[] = [
     angle: 'question',
     cta: {
       heading: 'Narrow your own question',
-      body: 'Upload your brief and Methea starts from what you already have: it reads your topic, asks one or two questions a supervisor would ask, and suggests a sharper version of your research question — you decide what to keep. It doesn’t write your thesis. The first steps are free.',
+      body: 'Paste your question or topic into a 2-minute check. You’ll see which pieces are already in place (the people, the place, one idea) and your next move. Methea can pick it up from there and suggest a sharper version. You stay the author.',
     },
     faq: [
       {
@@ -128,7 +128,7 @@ export const POSTS: Post[] = [
     angle: 'lens',
     cta: {
       heading: 'Find theories that fit your question',
-      body: 'Methea suggests theories from a curated library of 40+ established theories, explains why each one fits your question, and checks whether it fits your timeline before you commit. Every citation is verified against OpenAlex. It doesn’t write your thesis. The first steps are free.',
+      body: 'Start with a 2-minute check on your own idea: is it ready for a lens yet? Then Methea suggests theories from a curated library of 40+ established theories, explains why each one fits, and checks every citation against OpenAlex. It doesn’t write your thesis.',
     },
     faq: [
       {
@@ -174,5 +174,5 @@ export function ctaHref(post: Post): string {
     utm_medium: 'organic',
     utm_campaign: post.slug,
   })
-  return `/start?${q.toString()}`
+  return `/check?${q.toString()}`
 }

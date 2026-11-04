@@ -72,7 +72,7 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
           <h2 style={styles.heading}>Tell me what you&apos;re researching</h2>
           <p style={styles.sub}>A sentence or two is enough to start.</p>
         </div>
-        <BriefForm projectId={params.id} />
+        <BriefForm projectId={params.id} initialTopic={p.research_context?.seed?.topic ?? ''} />
       </div>
     </main>
   )

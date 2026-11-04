@@ -75,7 +75,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           <aside className={styles.cta}>
             <h2 className={styles.ctaHeading}><span className={styles.mark}>{post.cta.heading}</span></h2>
             <p>{post.cta.body}</p>
-            <a href={ctaHref(post)} className={styles.ctaButton}>Check my research for free</a>
+            <a href={ctaHref(post)} className={styles.ctaButton}>Where is my research? Take the 2-minute check</a>
           </aside>
 
           {referencesHtml && (

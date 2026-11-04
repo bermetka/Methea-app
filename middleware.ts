@@ -5,9 +5,12 @@ import { ANON_ID_COOKIE, ATTRIBUTION_COOKIE } from '@/lib/funnel-shared'
 import { PRICE_VARIANT_COOKIE } from '@/lib/pricing'
 
 export async function middleware(request: NextRequest) {
-  // Sales page: set the anon id / attribution / price-variant cookies. Written to
-  // the request too, so /start itself renders with them on the very first visit.
-  const writes = request.nextUrl.pathname === '/start'
+  // Pages people land on from outside (sales page, the check, blog posts): set the
+  // anon id / attribution / price-variant cookies so the funnel credits the source.
+  // Written to the request too, so the page renders with them on the very first visit.
+  const path = request.nextUrl.pathname
+  const landing = path === '/start' || path === '/check' || path === '/blog' || path.startsWith('/blog/')
+  const writes = landing
     ? startCookieWrites(startCookies(request.nextUrl.searchParams, {
         anonId: request.cookies.get(ANON_ID_COOKIE)?.value,
         attribution: request.cookies.get(ATTRIBUTION_COOKIE)?.value,

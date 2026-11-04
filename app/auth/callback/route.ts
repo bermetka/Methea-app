@@ -8,6 +8,8 @@ import { startCookieWrites } from '@/lib/start-cookies'
 import { DEFAULT_ANGLE } from '@/lib/funnel-shared'
 import { DISCOUNT_CODE_COOKIE } from '@/lib/pricing'
 import { decodeVisit, mergeVisit, readVisit } from '@/lib/visit'
+import { CHECK_COOKIE } from '@/lib/check'
+import { startProjectFromCheck } from '@/lib/check-project'
 
 const EMAIL_OTP_TYPES: EmailOtpType[] = ['email', 'magiclink', 'signup', 'invite', 'recovery', 'email_change']
 
@@ -78,7 +80,14 @@ export async function GET(request: Request) {
           path: '/', sameSite: 'lax', secure: process.env.NODE_ENV === 'production', httpOnly: true,
         })
       }
-      return NextResponse.redirect(`${origin}${next}`)
+      // Came from /check: start their first project from the question they typed.
+      // Only for the default landing, so other sign-in flows keep their `next`.
+      let dest = next
+      if (visit.check && next === '/projects') {
+        dest = await startProjectFromCheck(supabase, data.user.id, visit.check)
+        if (dest.startsWith('/project/')) cookieStore.set(CHECK_COOKIE, '', { path: '/', maxAge: 0 })
+      }
+      return NextResponse.redirect(`${origin}${dest}`)
     }
     console.error('Auth callback error:', error?.message ?? 'no user')
   }

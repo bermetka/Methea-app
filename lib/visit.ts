@@ -1,6 +1,7 @@
 import { createHmac, timingSafeEqual } from 'node:crypto'
 import { ANON_ID_COOKIE, ATTRIBUTION_COOKIE, sanitizeAnonId, sanitizeAttribution, type Attribution } from '@/lib/funnel-shared'
 import { DISCOUNT_CODE_COOKIE, PRICE_VARIANT_COOKIE, parsePriceVariant, sanitizeDiscountCode, type PriceVariant } from '@/lib/pricing'
+import { CHECK_COOKIE, sanitizeCheck, type CheckCarry } from '@/lib/check'
 
 /**
  * The sales-page visit (Prompt 3 cookies) that signup should be credited to.
@@ -13,6 +14,8 @@ export interface Visit {
   attribution: Attribution
   variant?: PriceVariant
   discountCode?: string
+  /** The /check result to start the first project from. */
+  check?: CheckCarry
 }
 
 type CookieReader = { get(name: string): { value: string } | undefined }
@@ -23,11 +26,12 @@ export function readVisit(cookies: CookieReader): Visit {
     attribution: sanitizeAttribution(cookies.get(ATTRIBUTION_COOKIE)?.value),
     variant: parsePriceVariant(cookies.get(PRICE_VARIANT_COOKIE)?.value) ?? undefined,
     discountCode: sanitizeDiscountCode(cookies.get(DISCOUNT_CODE_COOKIE)?.value) ?? undefined,
+    check: sanitizeCheck(cookies.get(CHECK_COOKIE)?.value) ?? undefined,
   }
 }
 
 function isEmpty(v: Visit) {
-  return !v.anonId && !v.variant && !v.discountCode && Object.keys(v.attribution).length === 0
+  return !v.anonId && !v.variant && !v.discountCode && !v.check && Object.keys(v.attribution).length === 0
 }
 
 const MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000
@@ -54,7 +58,7 @@ export function decodeVisit(
   token: string | null | undefined,
   { now = Date.now(), secret = process.env.SUPABASE_SERVICE_ROLE_KEY } = {}
 ): Visit | null {
-  if (!token || !secret || token.length > 2000) return null
+  if (!token || !secret || token.length > 4000) return null
   const [payload, sig] = token.split('.')
   if (!payload || !sig) return null
   const expected = Buffer.from(sign(payload, secret))
@@ -68,6 +72,7 @@ export function decodeVisit(
       attribution: sanitizeAttribution(raw.attribution),
       variant: parsePriceVariant(raw.variant) ?? undefined,
       discountCode: sanitizeDiscountCode(raw.discountCode) ?? undefined,
+      check: sanitizeCheck(raw.check) ?? undefined,
     }
   } catch {
     return null
@@ -87,12 +92,14 @@ export function mergeVisit(fromCookies: Visit, carried: Visit | null) {
     attribution: hasCookieAttribution ? fromCookies.attribution : c.attribution,
     variant: fromCookies.variant ?? c.variant,
     discountCode: fromCookies.discountCode ?? c.discountCode,
+    check: fromCookies.check ?? c.check,
   }
   const restored = {
     anonId: !fromCookies.anonId && !!c.anonId,
     attribution: !hasCookieAttribution && Object.keys(c.attribution).length > 0,
     variant: !fromCookies.variant && !!c.variant,
     discountCode: !fromCookies.discountCode && !!c.discountCode,
+    check: !fromCookies.check && !!c.check,
   }
   const variantSource = fromCookies.variant ? 'cookie' : c.variant ? 'link' : 'random'
   return { visit, restored, variantSource } as const

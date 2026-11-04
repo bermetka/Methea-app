@@ -12,9 +12,10 @@ export const FREE_CAP_MESSAGE =
  * projects per user. Expired projects count as unpaid; before PAYWALL_START
  * nothing counts; unlimited users are exempt. Redirects back to /projects with the error when full.
  */
-export async function enforceFreeProjectCap(supabase: SupabaseClient, userId: string) {
+/** True when the user can't start another free project (unlimited users never are). */
+export async function isAtFreeProjectCap(supabase: SupabaseClient, userId: string): Promise<boolean> {
   // Unlimited (comp) users have no cap — the DB trigger skips them too.
-  if (await isUnlimitedUser(supabase, userId)) return
+  if (await isUnlimitedUser(supabase, userId)) return false
 
   const { data: active } = await supabase
     .from('projects')
@@ -22,7 +23,11 @@ export async function enforceFreeProjectCap(supabase: SupabaseClient, userId: st
     .eq('user_id', userId)
     .eq('status', 'active')
 
-  if (countUnpaidProjects(active ?? []) >= FREE_PROJECT_CAP) {
+  return countUnpaidProjects(active ?? []) >= FREE_PROJECT_CAP
+}
+
+export async function enforceFreeProjectCap(supabase: SupabaseClient, userId: string) {
+  if (await isAtFreeProjectCap(supabase, userId)) {
     redirect(`/projects?error=${FREE_CAP_ERROR}`)
   }
 }

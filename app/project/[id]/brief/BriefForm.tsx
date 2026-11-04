@@ -19,7 +19,11 @@ const DISCIPLINES = [
   'Psychology', 'Public Administration', 'Sociology', 'Other',
 ]
 
-interface Props { projectId: string }
+interface Props {
+  projectId: string
+  /** Their question from /check, to start from (still theirs to edit and submit). */
+  initialTopic?: string
+}
 
 const MAX_FILE_BYTES = 10 * 1024 * 1024
 const ALLOWED_EXTENSIONS = ['.pdf', '.doc', '.docx']
@@ -30,8 +34,8 @@ const SUBMIT_ERROR_MESSAGES: Record<string, string> = {
   DEFAULT: 'Something went wrong — please try again.',
 }
 
-export default function BriefForm({ projectId }: Props) {
-  const [topic, setTopic]             = useState('')
+export default function BriefForm({ projectId, initialTopic = '' }: Props) {
+  const [topic, setTopic]             = useState(initialTopic)
   const [degree, setDegree]           = useState('')
   const [discipline, setDiscipline]   = useState('')
   const [showReading, setShowReading] = useState(false)
@@ -112,6 +116,9 @@ export default function BriefForm({ projectId }: Props) {
     <form onSubmit={handleSubmit} noValidate style={s.card}>
       {/* Topic textarea */}
       <div>
+        {initialTopic && (
+          <p style={s.seedNote}>From your check: here&apos;s what you wrote. Add anything that matters (your course, your deadline) and pick your degree and discipline below.</p>
+        )}
         <textarea
           value={topic}
           onChange={e => { setTopic(e.target.value); setErrors(p => ({ ...p, topic: '' })) }}
@@ -319,5 +326,6 @@ const s: Record<string, React.CSSProperties> = {
   btnDisabled: { background: 'var(--paper-deep)', color: 'var(--pencil)', cursor: 'default' },
   btnLoading:  { background: 'var(--ink-blue)', cursor: 'wait' },
   errorText: { fontSize: '0.8125rem', color: 'var(--error)', marginTop: '0.375rem', lineHeight: 1.4 },
+  seedNote:  { fontSize: '0.875rem', lineHeight: 1.55, color: 'var(--ink-blue)', background: 'var(--sky)', borderRadius: 'var(--radius-sm)', padding: '0.625rem 0.75rem', marginBottom: '0.625rem' },
   hint:      { fontSize: '0.8125rem', color: 'var(--pencil)', marginTop: '0.375rem', display: 'flex', alignItems: 'center', gap: '0.25rem' },
 }

@@ -3,6 +3,7 @@
 import { trackEvent } from '@/lib/funnel'
 import { sanitizeAttribution } from '@/lib/funnel-shared'
 import { parsePriceVariant } from '@/lib/pricing'
+import { CHECK_PATHS, CHECK_STAGES } from '@/lib/check'
 
 // Client-triggered funnel events. Each validates its input — server actions are
 // callable directly — and records as the current visitor (RLS-scoped).
@@ -30,4 +31,12 @@ export async function trackPilotRequest() {
 /** Fake-door "Monthly $15" button (Prompt 4). */
 export async function trackMonthlyWaitlist() {
   await trackEvent('monthly_waitlist', { once: 'monthly' })
+}
+
+/** The /check: opened, finished (with where the road stops) and the click into Methea. No question text is sent. */
+export async function trackCheck(event: 'check_view' | 'check_complete' | 'check_cta', props: { path?: string; stage?: string } = {}) {
+  if (!['check_view', 'check_complete', 'check_cta'].includes(event)) return
+  const path = (CHECK_PATHS as readonly string[]).includes(props.path ?? '') ? props.path : undefined
+  const stage = (CHECK_STAGES as readonly string[]).includes(props.stage ?? '') ? props.stage : undefined
+  await trackEvent(event, { props: { ...sanitizeAttribution(props), ...(path && { path }), ...(stage && { stage }) } })
 }

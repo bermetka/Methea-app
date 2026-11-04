@@ -6,6 +6,9 @@ import PendingSteps from '@/components/ui/PendingSteps'
 import type { StudentListItem, StudentReadingList, VerifiedWork } from '@/types/database'
 import type { CardWork, TheoryCardContent } from '@/lib/literature/theory-content'
 import { checkReadingList, toggleRead, completeGate2 } from './actions'
+import UnlockSlot from '@/components/paywall/UnlockSlot'
+import type { UnlockInfo } from '@/lib/pricing'
+import type { ListPreview } from '@/lib/reading-gate'
 
 export interface Gate2Theory {
   id: string
@@ -17,6 +20,9 @@ export interface Gate2Theory {
   whyItFits: string | null
   card: TheoryCardContent | null
   recent: VerifiedWork[]
+  /** Unpaid: core readings beyond the free ones (titles only) and how many recent works are locked. */
+  lockedReads: CardWork[]
+  lockedRecent: number
 }
 
 interface Props {
@@ -24,6 +30,9 @@ interface Props {
   theories: Gate2Theory[]
   rawList: string
   list: StudentReadingList | null
+  /** Unpaid: counts for the list summary (the per-work breakdown is part of the unlock). */
+  listPreview: ListPreview | null
+  unlock: UnlockInfo | null   // null when the project has full access
   listOutdated: boolean
   readMarks: string[]
   constraints: string[]
@@ -77,6 +86,8 @@ function WorkLine({ w, children }: { w: CardWork | VerifiedWork; children?: Reac
 export default function Gate2View(p: Props) {
   const router = useRouter()
   const [list, setList] = useState<StudentReadingList | null>(p.list)
+  const [preview, setPreview] = useState<ListPreview | null>(p.listPreview)
+  const locked = !!p.unlock
   const [outdated, setOutdated] = useState(p.listOutdated)
   const [text, setText] = useState(p.rawList)
   const [editing, setEditing] = useState(!p.rawList)
@@ -93,6 +104,7 @@ export default function Gate2View(p: Props) {
     setChecking(false)
     if (res.ok) {
       setList(res.list)
+      setPreview(res.preview)
       setOutdated(false)
       setEditing(false)
     } else setError(res.error)
@@ -139,6 +151,8 @@ export default function Gate2View(p: Props) {
 
   const mustReads = p.theories.flatMap(t => t.card?.must_read ?? [])
   const readCount = mustReads.filter(m => marks.has(keyOf(m.work))).length
+  const coreTotal = mustReads.length + p.theories.reduce((n, t) => n + t.lockedReads.length, 0)
+  const anyLockedReading = locked && p.theories.some(t => t.lockedReads.length > 0 || t.lockedRecent > 0)
 
   return (
     <div style={s.wrap}>
@@ -182,8 +196,8 @@ export default function Gate2View(p: Props) {
         {list && !editing && !checking && (
           <>
             <p style={s.muted}>
-              {items.filter(i => i.status === 'verified').length} of {items.length} works found ·{' '}
-              {linkedIds.size} linked to your theories
+              {preview ? preview.verified : items.filter(i => i.status === 'verified').length} of {items.length} works found ·{' '}
+              {preview ? preview.linked : linkedIds.size} linked to your theories
               {list.truncated ? ` · only the first ${p.limit} were checked` : ''}
             </p>
             {outdated && (
@@ -277,14 +291,18 @@ export default function Gate2View(p: Props) {
 
               {list && (
                 <div>
-                  <p style={s.label}>In your list · {mine.length}</p>
-                  {mine.length ? mine.map(i => <ListItemLine key={i.id} item={i} theoryId={t.id} />) : <p style={s.muted}>None of your works is linked to this theory yet.</p>}
+                  <p style={s.label}>In your list · {preview ? (preview.linkedByTheory[t.id] ?? 0) : mine.length}</p>
+                  {mine.map(i => <ListItemLine key={i.id} item={i} theoryId={t.id} />)}
+                  {preview && (preview.linkedByTheory[t.id] ?? 0) > mine.length && (
+                    <LockedLines n={(preview.linkedByTheory[t.id] ?? 0) - mine.length} note="How each of these works supports this theory" />
+                  )}
+                  {!(preview ? preview.linkedByTheory[t.id] : mine.length) && <p style={s.muted}>None of your works is linked to this theory yet.</p>}
                 </div>
               )}
 
-              {missed.length > 0 && (
+              {(missed.length > 0 || t.lockedReads.length > 0) && (
                 <div>
-                  <p style={s.label}>{list ? 'You missed' : 'Start with'} · {missed.length}</p>
+                  <p style={s.label}>{list ? 'You missed' : 'Start with'} · {missed.length + t.lockedReads.length}</p>
                   {missed.map((m, i) => {
                     const k = keyOf(m.work)
                     return (
@@ -300,6 +318,13 @@ export default function Gate2View(p: Props) {
                       </div>
                     )
                   })}
+                  {t.lockedReads.map(w => (
+                    <div key={keyOf(w)} style={s.mustRead}>
+                      <WorkLine w={w}>
+                        <BlurBars widths={[70, 84]} />
+                      </WorkLine>
+                    </div>
+                  ))}
                 </div>
               )}
 
@@ -307,6 +332,7 @@ export default function Gate2View(p: Props) {
                 <div>
                   <p style={s.label}>Beyond your list · recent works citing {c ? cite(c.original) : t.author}</p>
                   {t.recent.map(w => <WorkLine key={keyOf(w)} w={w} />)}
+                  {t.lockedRecent > 0 && <LockedLines n={t.lockedRecent} note={`${t.lockedRecent} more recent ${t.lockedRecent === 1 ? 'work' : 'works'} on your topic`} />}
                 </div>
               )}
             </div>
@@ -314,7 +340,26 @@ export default function Gate2View(p: Props) {
         )
       })}
 
-      {list && notLinked.length > 0 && (
+      {anyLockedReading && p.unlock && (
+        <section style={s.unlockCard} aria-labelledby="unlockreading">
+          <h2 id="unlockreading" style={s.h2}>Get the full reading guide for your theories</h2>
+          <p style={s.unlockText}>
+            What to read for in every core reading, the rest of the recent work on your topic
+            {list ? ', and how each work on your own list fits your theories' : ''}. It&apos;s part of
+            your project unlock, together with the framework narrative, methodology and interview guide.
+          </p>
+          <UnlockSlot projectId={p.projectId} unlock={p.unlock} label="Unlock this project" />
+        </section>
+      )}
+
+      {list && preview && preview.total - preview.linked > 0 && (
+        <section style={s.panel} aria-labelledby="notlinked">
+          <h2 id="notlinked" style={s.h2}>Not linked to your chosen theories · {preview.total - preview.linked}</h2>
+          <LockedLines n={preview.total - preview.linked} note="Which of your works don't fit your theories, and why" />
+        </section>
+      )}
+
+      {list && !preview && notLinked.length > 0 && (
         <section style={s.panel} aria-labelledby="notlinked">
           <h2 id="notlinked" style={s.h2}>Not linked to your chosen theories · {notLinked.length}</h2>
           <p style={s.muted}>These may still matter for your topic or method. Citation data for older works is incomplete, so a missing link doesn't mean a work is unrelated. If many of them share one theory, it may be worth adding that theory.</p>
@@ -327,7 +372,7 @@ export default function Gate2View(p: Props) {
         <p style={s.label}>Check before you build</p>
         <h2 id="gate2q" style={s.h2}>
           You chose {p.theories.length} {p.theories.length === 1 ? 'theory' : 'theories'}
-          {mustReads.length ? ` with ${mustReads.length} core readings` : ''}
+          {coreTotal ? ` with ${coreTotal} core readings` : ''}
           {p.constraints.length ? `, and your brief mentions: ${p.constraints.join('; ')}` : ''}. Can you read and apply {p.theories.length === 1 ? 'it' : 'them'} in the time you have?
         </h2>
         {mustReads.length > 0 && (
@@ -343,6 +388,24 @@ export default function Gate2View(p: Props) {
         </div>
         {p.gateDone && <p style={s.muted}>You confirmed this earlier; you can change your answer.</p>}
       </section>
+    </div>
+  )
+}
+
+// Locked content placeholders: empty bars, never the real text (it isn't sent to the page).
+function BlurBars({ widths }: { widths: number[] }) {
+  return (
+    <div aria-hidden="true" style={s.blurWrap}>
+      {widths.map((w, i) => <div key={i} style={{ ...s.blurBar, width: `${w}%` }} />)}
+    </div>
+  )
+}
+
+function LockedLines({ n, note }: { n: number; note: string }) {
+  return (
+    <div style={s.lockedRow}>
+      <BlurBars widths={Array.from({ length: Math.min(n, 3) }, (_, i) => [82, 68, 76][i])} />
+      <p style={s.lockedNote}><span aria-hidden="true">🔒 </span>{note} · part of the project unlock</p>
     </div>
   )
 }
@@ -391,6 +454,12 @@ const s: Record<string, React.CSSProperties> = {
   secondary:   { padding: '0.625rem 1rem', background: 'transparent', color: 'var(--ink-blue)', border: '1px solid var(--stone)', borderRadius: 'var(--radius)', fontSize: '0.9375rem', fontFamily: 'inherit', cursor: 'pointer', minHeight: 44 },
   linkBtn:     { background: 'none', border: 'none', padding: 0, fontFamily: 'inherit', fontSize: '0.875rem', color: 'var(--ink-blue)', cursor: 'pointer', textDecoration: 'underline', textUnderlineOffset: 3 },
   muted:       { margin: 0, fontSize: '0.8125rem', color: 'var(--pencil)', lineHeight: 1.5 },
+  blurWrap:    { display: 'flex', flexDirection: 'column', gap: 6, padding: '4px 0' },
+  blurBar:     { height: 10, borderRadius: 4, background: 'var(--stone)', filter: 'blur(3px)' },
+  lockedRow:   { display: 'flex', flexDirection: 'column', gap: 4, padding: '0.25rem 0' },
+  lockedNote:  { margin: 0, fontSize: '0.8125rem', fontWeight: 600, color: 'var(--ink-blue)' },
+  unlockCard:  { display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.75rem', padding: '1.25rem', background: '#E7F1FB', borderRadius: 'var(--radius-lg)' },
+  unlockText:  { margin: 0, fontSize: '0.9375rem', lineHeight: 1.6, color: 'var(--ink)' },
   error:       { margin: 0, fontSize: '0.875rem', color: 'var(--error)', background: 'var(--error-bg)', padding: '0.5rem 0.75rem', borderRadius: 'var(--radius-sm)' },
   outdated:    { display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap', fontSize: '0.875rem', color: 'var(--warn-text)', background: 'var(--marker-yellow)', padding: '0.375rem 0.75rem', borderRadius: 'var(--radius-sm)', width: 'fit-content' },
   card:        { minWidth: 0, background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.875rem' },

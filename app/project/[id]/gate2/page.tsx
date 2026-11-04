@@ -6,7 +6,11 @@ import { theoryCard } from '@/lib/literature/theory-content'
 import { theoryAnchors } from '@/lib/literature/check-list'
 import { recentCiting } from '@/lib/literature/works'
 import { topicTerms, READING_LIST_LIMIT } from '@/lib/prompts/reading-list'
-import type { ResearchContext } from '@/types/database'
+import type { Project, ResearchContext } from '@/types/database'
+import { accessOptions } from '@/lib/access'
+import { hasFullAccess } from '@/lib/entitlement'
+import { getUnlockInfo } from '@/lib/checkout'
+import { gateStudentList, gateTheoryReading } from '@/lib/reading-gate'
 import Gate2View, { type Gate2Theory } from './Gate2View'
 
 export const metadata = { title: 'Reading — Methea' }
@@ -20,13 +24,15 @@ export default async function Gate2Page({ params }: { params: { id: string } }) 
 
   const { data: project } = await supabase
     .from('projects')
-    .select('id, research_context')
+    .select('id, research_context, paid_at')
     .eq('id', params.id)
     .eq('user_id', user.id)
     .single()
   if (!project) redirect('/projects')
 
   const ctx = project.research_context as ResearchContext
+  // Reading is mostly free; its extra materials are part of the project unlock.
+  const paid = hasFullAccess(project as Pick<Project, 'paid_at'>, await accessOptions(supabase, user.id))
   const selectedIds = ctx.theories?.selected_ids ?? []
   if (!selectedIds.length) redirect(`/project/${params.id}/theories`)
 
@@ -56,6 +62,7 @@ export default async function Gate2Page({ params }: { params: { id: string } }) 
       const recent = anchor
         ? await recentCiting(anchor, [...terms, card?.recent_search_term ?? t.name].filter(Boolean)).catch(() => [])
         : []
+      const gated = gateTheoryReading(card, recent, paid)
       return {
         id: t.id,
         name: t.name,
@@ -64,13 +71,16 @@ export default async function Gate2Page({ params }: { params: { id: string } }) 
         summary: t.summary,
         concepts: t.concepts ?? [],
         whyItFits: whyById.get(t.id) ?? null,
-        card,
-        recent,
+        card: gated.card,
+        recent: gated.recent,
+        lockedReads: gated.lockedReads,
+        lockedRecent: gated.lockedRecent,
       }
     })
   )
 
-  const list = ctx.theories?.student_list ?? null
+  const { list, preview } = gateStudentList(ctx.theories?.student_list ?? null, paid)
+  const unlock = paid ? null : await getUnlockInfo(project as Pick<Project, 'id' | 'paid_at'>, user)
   const checkedFor = [...selectedIds].sort().join(',')
 
   return (
@@ -81,6 +91,8 @@ export default async function Gate2Page({ params }: { params: { id: string } }) 
           theories={view}
           rawList={ctx.brief?.reading_list_raw ?? ''}
           list={list}
+          listPreview={preview}
+          unlock={unlock}
           listOutdated={!!list && list.checked_for !== checkedFor}
           readMarks={ctx.theories?.read_marks ?? []}
           constraints={ctx.brief?.constraints ?? []}

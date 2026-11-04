@@ -7,6 +7,7 @@ export function BlogNav() {
       <Link href="/" className={styles.wordmark}>Methea</Link>
       <div className={styles.navLinks}>
         <Link href="/blog" className={styles.navLink}>Blog</Link>
+        <Link href="/check" className={styles.navLink}>Free check</Link>
         <Link href="/login" className={styles.navCta}>Sign in →</Link>
       </div>
     </nav>

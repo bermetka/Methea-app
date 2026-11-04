@@ -5,6 +5,7 @@ export const FUNNEL_EVENTS = [
   'start_view', 'signup', 'brief_submitted', 'gate1_done', 'theories_no_fit',
   'framework_diagram_viewed', 'paywall_view', 'unlock_click', 'purchase',
   'pilot_request', 'monthly_waitlist',
+  'check_view', 'check_complete', 'check_cta',
 ] as const
 export type FunnelEvent = (typeof FUNNEL_EVENTS)[number]
 
@@ -22,6 +23,9 @@ export const DEFAULT_ANGLE: StartAngle = 'question'
 export function parseAngle(value: unknown): StartAngle | null {
   return (START_ANGLES as readonly unknown[]).includes(value) ? (value as StartAngle) : null
 }
+
+/** Our own pages: a click from one of them must not overwrite where the visitor first came from. */
+export const INTERNAL_SOURCES = ['blog', 'quiz'] as const
 
 export const ATTRIBUTION_KEYS = ['angle', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'] as const
 export type Attribution = Partial<Record<(typeof ATTRIBUTION_KEYS)[number], string>>
