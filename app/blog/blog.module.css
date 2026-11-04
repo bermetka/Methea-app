@@ -1,7 +1,8 @@
 /* Blog — "ink on paper, marker in hand". Paper backgrounds, ink text,
    marker only as a highlight. Long-form text in Source Serif 4, 720px column. */
 
-.root { min-height: 100vh; background: var(--paper); color: var(--ink); overflow-x: hidden; }
+/* Page background: brand paper #F6F2E8 lightened 70% towards white, for easier reading. */
+.root { --blog-bg: #FCFBF8; --blog-text: #2E2E2B; min-height: 100vh; background: var(--blog-bg); color: var(--ink); overflow-x: hidden; }
 
 /* Nav */
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 1.5rem; max-width: 1000px; margin: 0 auto; }
@@ -19,7 +20,7 @@
 .indexHeader { padding: 2rem 0 2.5rem; border-bottom: 1px solid var(--stone); }
 .kicker { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pencil); margin-bottom: 0.75rem; }
 .indexTitle { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 1rem; }
-.indexLede { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.125rem; line-height: 1.6; color: var(--graphite); }
+.indexLede { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.0625rem; line-height: 1.6; color: var(--graphite); }
 .postList { list-style: none; padding: 0; margin: 0; }
 .postCard { border-bottom: 1px solid var(--stone); }
 .postCardLink { display: block; padding: 1.75rem 0; color: inherit; text-decoration: none; }
@@ -31,14 +32,14 @@
 .breadcrumb { font-size: 0.875rem; margin-bottom: 1rem; }
 .breadcrumb a { color: var(--ink-blue); text-decoration: none; }
 .breadcrumb a::before { content: '← '; }
-.postTitle { font-size: clamp(1.875rem, 5.5vw, 2.75rem); line-height: 1.15; margin-bottom: 0.75rem; }
+.postTitle { font-size: clamp(1.75rem, 4.5vw, 2.375rem); line-height: 1.2; margin-bottom: 0.75rem; }
 .meta { font-size: 0.875rem; color: var(--pencil); }
 .meta a { color: var(--graphite); }
 
-.prose { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.125rem; line-height: 1.7; color: var(--ink); margin-top: 2rem; }
+.prose { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.0625rem; line-height: 1.75; color: var(--blog-text); margin-top: 2rem; }
 .prose p, .prose ul, .prose ol, .prose blockquote, .prose :global(.table-wrap) { margin: 0 0 1.25rem; }
-.prose h2 { margin: 2.5rem 0 1rem; }
-.prose h3 { margin: 2rem 0 0.75rem; }
+.prose h2 { font-size: clamp(1.375rem, 3vw, 1.625rem); margin: 2.75rem 0 1rem; color: var(--ink); }
+.prose h3 { font-family: 'Schibsted Grotesk', 'Inter', system-ui, sans-serif; font-size: 1.0625rem; font-weight: 600; margin: 2rem 0 0.6rem; color: var(--ink); }
 .prose ul, .prose ol { padding-left: 1.5rem; }
 .prose li { margin-bottom: 0.4rem; }
 .prose a { color: var(--ink-blue); text-decoration-thickness: 1px; text-underline-offset: 0.15em; overflow-wrap: anywhere; }
@@ -47,12 +48,12 @@
 .prose blockquote { border-left: 3px solid var(--marker-yellow); padding: 0.25rem 0 0.25rem 1rem; color: var(--graphite); }
 .prose blockquote p { margin: 0; }
 .prose hr { border: 0; border-top: 1px solid var(--stone); margin: 2rem 0; }
-.prose > p:first-child { font-size: 1.1875rem; background: var(--sheet); border: 1px solid var(--stone); border-radius: var(--radius); padding: 1rem 1.25rem; }
+.prose > p:first-child { font-size: 1.0625rem; background: #FFFFFF; border: 1px solid var(--stone); border-radius: var(--radius); padding: 1rem 1.25rem; }
 
-.prose :global(.table-wrap) { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--stone); border-radius: var(--radius); background: var(--sheet); }
+.prose :global(.table-wrap) { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--stone-soft); border-radius: var(--radius); background: #FFFFFF; }
 .prose table { border-collapse: collapse; width: 100%; min-width: 560px; font-family: 'Schibsted Grotesk', 'Inter', system-ui, sans-serif; font-size: 0.875rem; line-height: 1.5; }
 .prose th, .prose td { text-align: left; vertical-align: top; padding: 0.625rem 0.75rem; border-bottom: 1px solid var(--stone-soft); }
-.prose thead th { background: var(--paper-deep); font-weight: 600; }
+.prose thead th { background: var(--paper); font-weight: 600; }
 .prose tbody th { font-weight: 600; white-space: nowrap; }
 .prose tbody tr:last-child th, .prose tbody tr:last-child td { border-bottom: 0; }
 
@@ -68,7 +69,7 @@
 .faqItem p { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.0625rem; line-height: 1.65; color: var(--graphite); }
 
 /* CTA */
-.cta { margin-top: 3rem; background: var(--sheet); border: 1px solid var(--stone); border-radius: var(--radius-lg); padding: 1.75rem 1.5rem; }
+.cta { margin-top: 3rem; background: #FFFFFF; border: 1px solid var(--stone); border-radius: var(--radius-lg); padding: 1.75rem 1.5rem; }
 .ctaHeading { margin-bottom: 0.75rem; }
 .cta p { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.0625rem; line-height: 1.65; color: var(--graphite); margin-bottom: 1.25rem; }
 .ctaButton { display: inline-block; background: var(--ink); color: var(--sheet); font-weight: 600; font-size: 0.9375rem; padding: 0.8rem 1.25rem; border-radius: var(--radius); text-decoration: none; }

@@ -4,15 +4,61 @@ Picking a theory feels like a test of how much you've read. It isn't. It's a mat
 
 ## Step 1: Pull the concepts out of your question
 
-Grant and Osanloo (2014) describe the theoretical framework as the blueprint for the whole dissertation, so it has to be built around your problem, not chosen first and fitted later. Underline the nouns and verbs in your research question that carry the meaning.
+Grant and Osanloo (2014) describe the theoretical framework as the blueprint for the whole dissertation, so it has to be built around your problem, not chosen first and fitted later. That means the first job is not reading theories. It is finding the **concepts** in your own question — because a theory is, at its core, a claim about how certain concepts relate. If you don't know your concepts, you have nothing to match a theory against.
+
+### What is a concept?
+
+A **concept** is an abstract idea that names something you want to understand — *trust*, *motivation*, *belonging*, *legitimacy*, *perceived usefulness*. It is not the topic, the place or the people. It is the thing happening to those people in that place that you want to explain.
+
+It helps to separate three words that are often mixed up:
+
+- **Topic** — the area you're interested in: remote work, social media, AI in education.
+- **Concept** — the idea inside that topic you will actually study: trust, social comparison, academic integrity.
+- **Variable** — a concept made measurable, usually in quantitative research: a trust score on a five-point scale, hours per day on Instagram.
+
+In a qualitative study you rarely "measure" a concept. Instead you define it, then look for how it shows up in what people tell you.
+
+### What makes a concept work
+
+A useful concept passes four quick checks:
+
+1. **You can define it in one sentence.** "Trust is the willingness to rely on a colleague when you can't check their work."
+2. **It can vary.** There can be more or less of it, or different kinds of it. If something is always the same, there's nothing to explain.
+3. **You can say what it would look like in your data.** A sentence in an interview, an answer to a survey item, a pattern in documents.
+4. **Existing theories have a word for it.** If no theory talks about your concept, either it's very new (rare) or it is still a topic in disguise.
+
+### Strong and weak concepts: examples
+
+| Weak (not a concept yet) | Why it doesn't work | Stronger concept |
+|---|---|---|
+| Social media | A platform — a topic, not an idea you can observe | Social comparison; fear of missing out |
+| Remote work | The setting, not what happens in it | Trust; informal communication |
+| Students' experience | Too vague — any data would "fit" | Sense of belonging; academic self-efficacy |
+| Success | Means something different to everyone | Career satisfaction; perceived employability |
+| The impact of AI | An outcome with no mechanism | Perceived usefulness; perceived ease of use |
+| Motivation | A real concept, but too broad on its own | Intrinsic vs extrinsic motivation |
+
+Notice the pattern. Weak concepts name *where* or *what in general*. Strong concepts name a specific idea that can be defined, can vary, and already has a home in at least one theory — perceived usefulness belongs to the Technology Acceptance Model, intrinsic motivation to Self-Determination Theory.
+
+### Applying it to a real question
+
+Underline the words in your research question that carry the meaning, then sort them:
 
 > How do members of small, fully remote software teams **build trust** with **colleagues** they have never met?
 
-The concepts here are *trust*, *building* it over time, and the *relationship between colleagues*. A useful theory must say something about at least these.
+- **Topic:** remote software teams.
+- **Context:** small, fully remote, no face-to-face contact.
+- **Concepts:** *trust*, how it is *built* over time, and the *relationship between colleagues*.
+
+A useful theory must say something about at least these concepts. A theory about technology adoption, however famous, would not — it has nothing to say about trust between people.
+
+If you can't find a single concept in your question, the question is probably still a topic. Go back and [narrow down your research question](/blog/how-to-narrow-down-a-research-question) first.
 
 ## Step 2: Shortlist theories that explain those concepts
 
 Look at the five to ten most-cited studies on your topic and note which theories they use. You'll usually see the same two or three come up. Add any theory your supervisor or programme expects, then stop — a shortlist of three is enough.
+
+Search by concept, not by topic. "Trust theory" or "trust remote teams theoretical framework" will get you further than "remote work theory", because theories are organised around concepts, and your topic may be too new to have a theory of its own.
 
 Here is how some widely used theories map to common question types:
 
@@ -24,7 +70,7 @@ Here is how some widely used theories map to common question types:
 | What motivates people from the inside vs the outside | Self-Determination Theory | Deci & Ryan (1985) |
 | Why people intend to do something, and whether they do it | Theory of Planned Behaviour | Ajzen (1991) |
 
-For the remote-trust question, Social Exchange Theory is a strong candidate: it explains trust as something that grows through repeated, reciprocal exchanges.
+For the remote-trust question, Social Exchange Theory is a strong candidate: it explains trust as something that grows through repeated, reciprocal exchanges. It also adds concepts you hadn't written down yet — *reciprocity*, *obligation*, *perceived fairness*. That's a good sign: a fitting theory sharpens your concepts instead of replacing them.
 
 ## Step 3: Run four fit tests
 
@@ -48,6 +94,8 @@ Your justification should answer three questions:
 1. Why does this theory fit *my* question better than the alternatives I considered?
 2. Which of its concepts will shape my interview questions, variables or codes?
 3. What are its limits, and how will I handle them?
+
+For the remote-trust study, the answers might look like this: Social Exchange Theory fits better than a technology-adoption model because the question is about relationships, not tools; its concepts of reciprocity and obligation become interview topics and deductive codes; its limit is that it treats relationships as fairly rational exchanges, so the study stays open to emotional and cultural factors that emerge in interviews.
 
 Collins and Stockton (2018) show that in qualitative research the theory should shape the whole study — from the questions you ask to how you analyse. If your answer to question 2 is "none", the theory is decoration. Kivunja (2018) is a useful read if you're unsure how the theoretical framework differs from the conceptual framework you'll build next — or see our guide to [theoretical vs conceptual vs analytical frameworks](/blog/theoretical-vs-conceptual-vs-analytical-framework).
 

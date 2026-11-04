@@ -122,6 +122,8 @@ export const POSTS: Post[] = [
       'how to choose a theoretical framework',
       'how to choose a theory for dissertation',
       'theoretical framework examples qualitative research',
+      'what is a concept in research',
+      'concept vs variable',
     ],
     angle: 'lens',
     cta: {
@@ -129,6 +131,14 @@ export const POSTS: Post[] = [
       body: 'Methea suggests theories from a curated library of 40+ established theories, explains why each one fits your question, and checks whether it fits your timeline before you commit. Every citation is verified against OpenAlex. It doesn’t write your thesis. The first steps are free.',
     },
     faq: [
+      {
+        q: 'What is a concept in research?',
+        a: 'A concept is an abstract idea that names what you want to understand — trust, motivation, belonging. It is not your topic (remote work) or your setting; it is the thing happening there that you can define, that can vary, and that you can recognise in your data.',
+      },
+      {
+        q: 'What is the difference between a concept and a variable?',
+        a: 'A variable is a concept made measurable, usually for quantitative research — for example, trust measured on a five-point scale. In qualitative research you define the concept and look for how it shows up in what people say.',
+      },
       {
         q: 'How many theories should a dissertation use?',
         a: 'Usually one, sometimes two. Use a second theory only if it does a separate job, such as explaining the context while the first explains the mechanism.',
