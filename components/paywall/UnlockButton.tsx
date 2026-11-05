@@ -1,9 +1,10 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { initializePaddle, CheckoutEventNames, type Paddle } from '@paddle/paddle-js'
+import { initializePaddle, CheckoutEventNames, type CheckoutEventsData, type Paddle } from '@paddle/paddle-js'
 import { foundingBannerText, type CheckoutContext } from '@/lib/pricing'
 import { trackUnlockClick } from '@/app/actions/funnel'
+import { pushDataLayer } from '@/lib/consent'
 
 interface Props {
   projectId: string
@@ -36,6 +37,7 @@ export default function UnlockButton({ projectId, checkout, compact, label: cust
       token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN!,
       eventCallback(event) {
         if (event.name === CheckoutEventNames.CHECKOUT_COMPLETED) {
+          if (event.data) pushPurchase(event.data)
           setStatus('finalizing')
           pollForUnlock(projectId, () => window.location.reload())
         }
@@ -85,6 +87,26 @@ export default function UnlockButton({ projectId, checkout, compact, label: cust
       </button>
     </div>
   )
+}
+
+// GTM purchase conversion. Paddle.js totals.total is in major units (49, not
+// 4900): what the customer paid, after any discount code, tax included
+// (sandbox FOUNDING50 run: 24.5). The reload after unlock never
+// re-fires checkout.completed; the per-transaction key also covers a second tab.
+function pushPurchase(data: CheckoutEventsData) {
+  const key = `methea_purchase_${data.transaction_id}`
+  try {
+    if (localStorage.getItem(key)) return
+    localStorage.setItem(key, '1')
+  } catch {
+    // Storage blocked: still send it once for this page.
+  }
+  pushDataLayer({
+    event: 'purchase',
+    value: data.totals.total,
+    currency: data.currency_code ?? 'USD',
+    transaction_id: data.transaction_id,
+  })
 }
 
 // Polls a lightweight status endpoint after checkout.completed fires client-side.
