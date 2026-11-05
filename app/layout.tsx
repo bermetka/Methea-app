@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
+import { CONSENT_DEFAULT_SCRIPT } from "@/lib/consent";
+import CookieBanner from "@/components/consent/CookieBanner";
+import SignupEvent from "@/components/analytics/SignupEvent";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,6 +26,8 @@ export const metadata: Metadata = {
   openGraph: { siteName: "Methea", type: "website", locale: "en_GB" },
 };
 
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,8 +35,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {gtmId && (
+        <head>
+          {/* Consent Mode v2 default (all denied) must reach the dataLayer before GTM. */}
+          <script id="consent-default" dangerouslySetInnerHTML={{ __html: CONSENT_DEFAULT_SCRIPT }} />
+        </head>
+      )}
+      {gtmId && <GoogleTagManager gtmId={gtmId} />}
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        {gtmId && <CookieBanner />}
+        {gtmId && <SignupEvent />}
       </body>
     </html>
   );

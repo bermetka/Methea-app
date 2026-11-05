@@ -10,6 +10,7 @@ import { DISCOUNT_CODE_COOKIE } from '@/lib/pricing'
 import { decodeVisit, mergeVisit, readVisit } from '@/lib/visit'
 import { CHECK_COOKIE } from '@/lib/check'
 import { startProjectFromCheck } from '@/lib/check-project'
+import { SIGNUP_EVENT_COOKIE } from '@/lib/consent'
 
 const EMAIL_OTP_TYPES: EmailOtpType[] = ['email', 'magiclink', 'signup', 'invite', 'recovery', 'email_change']
 
@@ -54,6 +55,11 @@ export async function GET(request: Request) {
       try {
         const { variant, created } = await ensureProfile(data.user.id, visit, variantSource)
         if (created) {
+          // Read once by SignupEvent on the next page, for the GTM sign_up conversion.
+          const provider = data.user.app_metadata?.provider
+          cookieStore.set(SIGNUP_EVENT_COOKIE, provider === 'google' ? 'google' : 'email', {
+            path: '/', sameSite: 'lax', secure: process.env.NODE_ENV === 'production', maxAge: 300,
+          })
           // Service role: the new session cookie isn't readable within this request yet.
           await trackServerEvent('signup', data.user.id, {
             props: { ...visit.attribution, price_variant: variant },
