@@ -6,8 +6,9 @@ import { pushConversion } from '@/lib/consent'
 import { CHECK_COOKIE, CHECK_QUESTION_MAX, type CheckPath, type CheckStage } from '@/lib/check'
 import styles from './check.module.css'
 
-// "Where is your research proposal right now?" — a calm walk from topic to
-// proposal: what they already have, and the one next move. Static rules, no AI.
+// "Where is your research proposal right now?" — one page: the questions open one
+// after another as she answers, then the result lists what she has, what's missing
+// and where to start. Static rules, no AI.
 // The question they type stays in this browser until they click through; only
 // then is it put in a cookie for sign-up to start their first project from.
 
@@ -32,6 +33,8 @@ interface Step {
   reach: number
   applicantOnly?: boolean
   have: string | Record<CheckPath, string>
+  /** What's missing, as a short label for the result list */
+  missing: string
   q: string | Record<CheckPath, string>
   example: React.ReactNode
   yes: string
@@ -41,7 +44,7 @@ interface Step {
 
 const STEPS: Step[] = [
   {
-    id: 'who', reach: 1, have: 'You know who and where you will study',
+    id: 'who', missing: "Who and where you'll study", reach: 1, have: 'You know who and where you will study',
     q: "Do you know who you'd study, and where?",
     example: <p className={styles.example}>For example: &ldquo;women founders of early-stage businesses in Bishkek and Almaty&rdquo;.</p>,
     yes: 'Nice. Knowing your people and place is the step most proposals skip.',
@@ -49,7 +52,7 @@ const STEPS: Step[] = [
     read: 'narrow',
   },
   {
-    id: 'concept', reach: 1, have: 'You can name the one idea at the heart of it',
+    id: 'concept', missing: "The one idea at the heart of it", reach: 1, have: 'You can name the one idea at the heart of it',
     q: 'Can you name the one idea you want to understand?',
     example: (
       <>
@@ -66,7 +69,7 @@ const STEPS: Step[] = [
     read: 'concept',
   },
   {
-    id: 'lens', reach: 2, have: 'You have a theory in mind',
+    id: 'lens', missing: "A theory for that idea", reach: 2, have: 'You have a theory in mind',
     q: 'Do you have a theory in mind for that idea?',
     example: <p className={styles.example}>Trust → Social Exchange Theory. Adopting something new → Diffusion of Innovations. Motivation → Self-Determination Theory.</p>,
     yes: 'You have a lens. Now your study has a way of looking, not just a subject.',
@@ -74,7 +77,7 @@ const STEPS: Step[] = [
     read: 'theory',
   },
   {
-    id: 'method', reach: 3, have: "You know how you'll find out",
+    id: 'method', missing: "How you'll collect your data", reach: 3, have: "You know how you'll find out",
     q: "Do you know how you'd collect your data?",
     example: <p className={styles.example}><strong>How / why</strong> questions usually mean interviews or a case study.<br /><strong>How much / to what extent</strong> usually means a survey or existing data.</p>,
     yes: 'Good. Your question and method are starting to point the same way.',
@@ -82,7 +85,7 @@ const STEPS: Step[] = [
     read: 'narrow',
   },
   {
-    id: 'time', reach: 4,
+    id: 'time', missing: "A size that fits your time", reach: 4,
     have: { program: 'It fits your timeline', applicant: 'It fits the length of the program' },
     q: { program: 'Could you do it before your deadline?', applicant: "Could you do it within the program (1–2 years for a Master's, 3–4 for a PhD)?" },
     example: <p className={styles.example}>Can you reach the people, collect the data and still have time to analyse it?</p>,
@@ -91,7 +94,7 @@ const STEPS: Step[] = [
     read: 'narrow',
   },
   {
-    id: 'gap', reach: 5, applicantOnly: true, have: "You can say what's new about it",
+    id: 'gap', missing: "What's new about your study", reach: 5, applicantOnly: true, have: "You can say what's new about it",
     q: "Could you say in one sentence what's new about your study?",
     example: <p className={styles.example}>&ldquo;Most studies look at X, but we know little about Y, and that matters because…&rdquo;</p>,
     yes: 'That sentence is the heart of a strong proposal.',
@@ -127,167 +130,182 @@ function Journey({ path, reached, current }: { path: CheckPath; reached: number;
 }
 
 export default function CheckQuiz({ priceLabel }: { priceLabel: string }) {
-  const [view, setView] = useState<'intro' | 'input' | 'check' | 'result'>('intro')
-  const [path, setPath] = useState<CheckPath>('program')
+  const [path, setPath] = useState<CheckPath | null>(null)
   const [rq, setRq] = useState('')
-  const [i, setI] = useState(0)
   const [answers, setAnswers] = useState<Partial<Record<StepId, Answer>>>({})
-  const top = useRef<HTMLDivElement>(null)
+  const refs = useRef<Record<string, HTMLElement | null>>({})
+  const completed = useRef(false)
+  const lastOpened = useRef<string | null>(null)
 
   useEffect(() => { trackCheck('check_view') }, [])
-  useEffect(() => { top.current?.scrollIntoView({ block: 'start' }) }, [view, i])
 
-  const steps = STEPS.filter(s => !s.applicantOnly || path === 'applicant')
-  const step = steps[i]
-  const answer = step ? answers[step.id] : undefined
+  const p: CheckPath = path ?? 'program'
+  const steps = STEPS.filter(s => !s.applicantOnly || p === 'applicant')
+  // Questions open one at a time: up to and including the first unanswered one.
+  const firstOpen = steps.findIndex(s => !answers[s.id])
+  const shown = path ? (firstOpen === -1 ? steps : steps.slice(0, firstOpen + 1)) : []
+  const done = !!path && firstOpen === -1
 
-  // Where the road stops: the first step not answered "yes".
-  const stop = steps.find(s => answers[s.id] !== 'yes') ?? null
+  const gaps = steps.filter(s => answers[s.id] && answers[s.id] !== 'yes')
+  const stop = gaps[0] ?? null
   const stage: CheckStage = stop ? stop.id : 'none'
-  const reached = stop ? stop.reach : JOURNEY[path].length
+  const reached = stop ? stop.reach : JOURNEY[p].length
   const result = RESULT[stage]
-  const later = steps.filter(s => answers[s.id] !== 'yes' && s.id !== stop?.id).length
   const idea = rq.trim()
 
-  function choosePath(p: CheckPath) { setPath(p); setView('input') }
-  function begin() { setI(0); setAnswers({}); setView('check') }
-  function next() {
-    if (i < steps.length - 1) setI(i + 1)
-    else {
-      setView('result')
-      trackCheck('check_complete', { path, stage })
+  // Bring the newly opened question (or the result) into view, gently.
+  const openId = done ? 'result' : path ? steps[firstOpen]?.id ?? null : null
+  useEffect(() => {
+    if (!openId || openId === lastOpened.current) return
+    const first = lastOpened.current === null
+    lastOpened.current = openId
+    if (first && openId !== 'result') return
+    const el = refs.current[openId]
+    if (!el) return
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: openId === 'result' ? 'start' : 'center' })
+  }, [openId])
+
+  useEffect(() => {
+    if (done && !completed.current) {
+      completed.current = true
+      trackCheck('check_complete', { path: p, stage })
       pushConversion({ event: 'quiz_complete' })
     }
+  }, [done, p, stage])
+
+  function choosePath(next: CheckPath) {
+    setPath(next)
+    window.setTimeout(() => refs.current.idea?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50)
   }
-  function back() { if (i === 0) setView('input'); else setI(i - 1) }
+  function answer(id: StepId, a: Answer) { setAnswers(prev => ({ ...prev, [id]: a })) }
+  function restart() {
+    setRq(''); setAnswers({}); setPath(null); completed.current = false; lastOpened.current = null
+    window.scrollTo({ top: 0 })
+  }
 
   // Hand the question over to sign-up (read by /check/start and the auth callback).
   function handOver() {
-    const value = encodeURIComponent(JSON.stringify({ q: idea.slice(0, CHECK_QUESTION_MAX), path, stage }))
+    const value = encodeURIComponent(JSON.stringify({ q: idea.slice(0, CHECK_QUESTION_MAX), path: p, stage }))
     const secure = window.location.protocol === 'https:' ? '; secure' : ''
     document.cookie = `${CHECK_COOKIE}=${value}; path=/; max-age=${7 * 24 * 3600}; samesite=lax${secure}`
-    trackCheck('check_cta', { path, stage })
+    trackCheck('check_cta', { path: p, stage })
   }
 
   return (
-    <div className={styles.wrap} ref={top}>
-      {view === 'intro' && (
-        <section className={styles.stack} aria-labelledby="h-intro">
-          <span className={styles.eyebrow}>2 minutes · free · no sign-up</span>
-          <h1 id="h-intro" className={styles.h1}>Where is your research proposal <span className={styles.mark}>right now</span>?</h1>
-          <p className={styles.lede}>Every proposal goes the same way: a topic becomes a question, the question finds a lens, the lens points to a method. Most people stall somewhere along that road, usually without knowing where.</p>
-          <p className={styles.lede}>Answer five quick questions about your own idea. You&apos;ll see what you already have and the one next move that gets you unstuck.</p>
-          <div className={styles.stack} role="group" aria-label="Which describes you?">
-            <button type="button" className={styles.path} onClick={() => choosePath('program')}>
-              <strong>I&apos;m working on my thesis or dissertation</strong>
-              <span>Master&apos;s or PhD, already in a program</span>
+    <div className={styles.wrap}>
+      <section className={styles.stack} aria-labelledby="h-intro">
+        <span className={styles.eyebrow}>2 minutes · free · no sign-up</span>
+        <h1 id="h-intro" className={styles.h1}>Where is your research proposal <span className={styles.mark}>right now</span>?</h1>
+        <p className={styles.lede}>Every proposal goes the same way: a topic becomes a question, the question finds a lens, the lens points to a method. Answer {p === 'applicant' ? 'six' : 'five'} quick questions about your own idea and see what you already have, what&apos;s still missing, and where to start.</p>
+        <div className={styles.stack} role="group" aria-label="Which describes you?">
+          {(['program', 'applicant'] as CheckPath[]).map(k => (
+            <button key={k} type="button" className={styles.path} aria-pressed={path === k} onClick={() => choosePath(k)}>
+              <strong>{k === 'program' ? 'I’m working on my thesis or dissertation' : 'I’m applying and need a research proposal'}</strong>
+              <span>{k === 'program' ? 'Master’s or PhD, already in a program' : 'PhD, research Master’s or a scholarship'}</span>
             </button>
-            <button type="button" className={styles.path} onClick={() => choosePath('applicant')}>
-              <strong>I&apos;m applying and need a research proposal</strong>
-              <span>PhD, research Master&apos;s or a scholarship</span>
-            </button>
-          </div>
+          ))}
+        </div>
+        {!path && (
           <div className={styles.byline}>
             <span className={styles.av} aria-hidden="true">BK</span>
             <span>Made by Bermet Koshoeva, university lecturer and founder of Methea. The same steps she walks her students through.</span>
           </div>
+        )}
+      </section>
+
+      {path && (
+        <section className={styles.card} ref={el => { refs.current.idea = el }} style={{ scrollMarginTop: '1rem' }}>
+          <label htmlFor="rq" className={styles.label}>{path === 'applicant' ? 'Your proposal idea' : 'Your thesis idea'} <span className={styles.hint}>(optional)</span></label>
+          <textarea id="rq" className={styles.textarea} maxLength={CHECK_QUESTION_MAX} value={rq} onChange={e => setRq(e.target.value)}
+            placeholder="A rough question, a topic, a few words. e.g. women entrepreneurs in Central Asia and how they test new business ideas" />
+          <span className={styles.hint}>Nothing is saved or sent while you take the check.</span>
         </section>
       )}
 
-      {view === 'input' && (
-        <section className={styles.stack} aria-labelledby="h-input">
-          <span className={styles.eyebrow}>{path === 'applicant' ? 'Your proposal idea' : 'Your thesis idea'}</span>
-          <h2 id="h-input" className={styles.h2}>What&apos;s your research about?</h2>
-          <p className={styles.lede}>A rough question, a topic, a few words. Whatever you have is a fine place to start.</p>
-          <div className={styles.stack}>
-            <label htmlFor="rq" className={styles.label}>Your research question or topic</label>
-            <textarea id="rq" className={styles.textarea} maxLength={CHECK_QUESTION_MAX} value={rq} onChange={e => setRq(e.target.value)}
-              placeholder="e.g. women entrepreneurs in Central Asia and how they test new business ideas" autoFocus />
-            <span className={styles.hint}>Nothing is saved or sent while you take the check.</span>
-          </div>
-          <div className={styles.btnRow}>
-            <button type="button" className={styles.primary} onClick={begin}>Continue</button>
-            <button type="button" className={styles.ghost} onClick={() => { setRq(''); begin() }}>I only have a vague idea</button>
-          </div>
-        </section>
+      {shown.length > 0 && (
+        <ol className={styles.qlist} aria-live="polite">
+          {shown.map((s, n) => {
+            const a = answers[s.id]
+            return (
+              <li key={s.id} ref={el => { refs.current[s.id] = el }} className={`${styles.card} ${a ? styles.answered : styles.active}`}>
+                <span className={styles.eyebrow}>{n + 1} of {steps.length}</span>
+                <h2 className={a ? styles.h3 : styles.h2}>{pick(s.q, p)}</h2>
+                {!a && s.example}
+                <div className={styles.answers} role="group" aria-label="Your answer">
+                  {(['yes', 'partly', 'notyet'] as Answer[]).map(o => (
+                    <button key={o} type="button" aria-pressed={a === o} onClick={() => answer(s.id, o)}>
+                      {o === 'yes' ? 'Yes' : o === 'partly' ? 'Partly' : 'Not yet'}
+                    </button>
+                  ))}
+                </div>
+                {a && (a === 'yes'
+                  ? <p className={`${styles.line} ${styles.lineOk}`}>✓ {s.yes}</p>
+                  : <p className={`${styles.line} ${styles.lineNext}`}><b>{a === 'partly' ? 'On your way.' : 'Normal at this stage.'}</b> {s.move}</p>)}
+              </li>
+            )
+          })}
+        </ol>
       )}
 
-      {view === 'check' && step && (
-        <section className={styles.stack} aria-live="polite">
-          <Journey path={path} reached={step.reach} current={step.reach} />
-          <div className={styles.yourq}><b>Your idea</b>{idea || "A vague idea for now, and that's fine."}</div>
-          <div className={styles.card}>
-            <span className={styles.eyebrow}>Question {i + 1} of {steps.length}</span>
-            <h2 className={styles.h2}>{pick(step.q, path)}</h2>
-            {step.example}
-            <div className={styles.answers} role="group" aria-label="Your answer">
-              {(['yes', 'partly', 'notyet'] as Answer[]).map(a => (
-                <button key={a} type="button" aria-pressed={answer === a}
-                  onClick={() => setAnswers({ ...answers, [step.id]: a })}>
-                  {a === 'yes' ? 'Yes' : a === 'partly' ? 'Partly' : 'Not yet'}
-                </button>
-              ))}
-            </div>
-            {answer && (answer === 'yes' ? (
-              <div className={`${styles.feedback} ${styles.ok}`}><strong>That piece is in place.</strong><p>{step.yes}</p></div>
-            ) : (
-              <div className={`${styles.feedback} ${styles.next}`}>
-                <strong>{answer === 'partly' ? "You're on your way." : 'Completely normal at this stage.'}</strong>
-                <p className={styles.move}>{step.move}</p>
-              </div>
-            ))}
-          </div>
-          <div className={styles.btnRow}>
-            {answer && <button type="button" className={styles.primary} onClick={next}>{i === steps.length - 1 ? 'See where I am' : 'Next'}</button>}
-            <button type="button" className={styles.ghost} onClick={back}>{i === 0 ? 'Edit my idea' : 'Back'}</button>
-          </div>
-        </section>
-      )}
-
-      {view === 'result' && (
-        <section className={styles.stack} aria-labelledby="r-title">
+      {done && (
+        <section className={styles.stack} aria-labelledby="r-title" ref={el => { refs.current.result = el }} style={{ scrollMarginTop: '1rem', marginTop: 24 }}>
           <span className={styles.eyebrow}>Your research, so far</span>
-          <Journey path={path} reached={reached} current={stop ? reached : -1} />
-          <h1 id="r-title" className={styles.h1}>{result.title}</h1>
-          <p className={styles.lede}>{result.body}</p>
+          <Journey path={p} reached={reached} current={stop ? reached : -1} />
+          <h2 id="r-title" className={styles.h1}>{result.title}</h2>
 
           <div className={styles.card}>
             <h3 className={styles.h3}>What you already have</h3>
             <ul className={styles.have}>
               <li>A topic you care about</li>
-              {steps.filter(s => answers[s.id] === 'yes').map(s => <li key={s.id}>{pick(s.have, path)}</li>)}
+              {steps.filter(s => answers[s.id] === 'yes').map(s => <li key={s.id}>{pick(s.have, p)}</li>)}
             </ul>
           </div>
 
-          <div className={styles.nextCard}>
-            <span className={styles.eyebrow}>Your next step</span>
-            <h2 className={styles.h2}>{result.next}</h2>
-            <p>{stop ? stop.move : "Write your question, your theory and your method as three short lines. If you can explain how each one leads to the next, you're ready to write."}</p>
-            {result.shape && (
-              <div className={styles.shape}>A shape that works for many proposals:<br />How do <em>who</em> in <em>where</em> experience <em>one idea</em>?</div>
-            )}
-            {stop?.read && <a href={READ[stop.read].href}>{READ[stop.read].label}</a>}
-          </div>
-          {later > 0 && (
-            <p className={styles.later}>
-              {later === 1
-                ? "There is one more piece after this one. One step at a time; you don't need it today."
-                : `There are ${later} more pieces after this one. One step at a time; you don't need them all today.`}
-            </p>
+          {gaps.length > 0 ? (
+            <div className={styles.nextCard}>
+              <h3 className={styles.h3}>What&apos;s still missing</h3>
+              <ol className={styles.missing}>
+                {gaps.map((g, n) => (
+                  <li key={g.id} className={n === 0 ? styles.first : undefined}>
+                    <span className={styles.missLabel}>
+                      {g.missing}
+                      {answers[g.id] === 'partly' && <span className={styles.tag}>in progress</span>}
+                      {n === 0 && <span className={styles.tagStart}>start here</span>}
+                    </span>
+                    {n === 0 && (
+                      <>
+                        <p>{g.move}</p>
+                        {result.shape && (
+                          <div className={styles.shape}>A shape that works for many proposals:<br />How do <em>who</em> in <em>where</em> experience <em>one idea</em>?</div>
+                        )}
+                        {g.read && <a href={READ[g.read].href}>{READ[g.read].label}</a>}
+                      </>
+                    )}
+                  </li>
+                ))}
+              </ol>
+              {gaps.length > 1 && <p className={styles.later}>Only the first one matters today. The rest gets easier once it&apos;s done.</p>}
+            </div>
+          ) : (
+            <div className={styles.nextCard}>
+              <h3 className={styles.h3}>{result.next}</h3>
+              <p>Write your question, your theory and your method as three short lines. If you can explain how each one leads to the next, you&apos;re ready to write.</p>
+            </div>
           )}
 
           <div className={styles.cta}>
-            <h2 className={styles.h2}>{path === 'applicant' ? 'Keep going with your proposal in Methea' : 'Keep going with your idea in Methea'}</h2>
+            <h2 className={styles.h2}>{p === 'applicant' ? 'Keep going with your proposal in Methea' : 'Keep going with your idea in Methea'}</h2>
             <p>Methea picks up right where you are. It suggests a sharper version of your question, theories that fit your idea (with real, checked sources), and a method that matches. You stay the author; it walks the road with you.</p>
             <p className={styles.startFrom}>{idea ? `Picking up from: "${idea}"` : 'Picking up from your idea, however rough it is.'}</p>
             <a className={styles.ctaBtn} href="/check/start" onClick={handOver}>
-              {path === 'applicant' ? 'Continue my proposal in Methea' : 'Continue my research in Methea'}
+              {p === 'applicant' ? 'Continue my proposal in Methea' : 'Continue my research in Methea'}
             </a>
             <small>Free to start, no card: sharpen your question, find theories that fit, draw your framework. Full methodology, interview guide and export are {priceLabel} per project.</small>
           </div>
 
           <div className={styles.btnRow}>
-            <button type="button" className={styles.ghost} onClick={() => { setRq(''); setAnswers({}); setView('intro') }}>Start again with another idea</button>
+            <button type="button" className={styles.ghost} onClick={restart}>Start again with another idea</button>
           </div>
         </section>
       )}
