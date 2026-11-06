@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Kai",
+  "age": 23,
+  "segment": "Self-funded taught Master's student",
+  "income": 25000,
+  "behaviour": "Free-tier maximiser",
+  "behaviour_how": "Uses the free version of everything and only pays when hard-blocked.",
+  "objection": "Will my university treat this as AI misuse?",
+  "habit": "your cohort shares tools in a WhatsApp group"
+ },
+ {
+  "id": "P002",
+  "name": "Callum",
+  "age": 26,
+  "segment": "Funded PhD student",
+  "income": 20000,
+  "behaviour": "Methods-confident",
+  "behaviour_how": "Feels they already understand methodology and only want a quick check.",
+  "objection": "I only need help with one part, not the whole chain",
+  "habit": "you meet your supervisor for 30 minutes once a month"
+ },
+ {
+  "id": "P003",
+  "name": "Maeve",
+  "age": 34,
+  "segment": "International Master's student on scholarship or loan",
+  "income": 13000,
+  "behaviour": "Follows peers",
+  "behaviour_how": "Uses what classmates in the cohort WhatsApp group recommend.",
+  "objection": "ChatGPT already does this and I already pay for it",
+  "habit": "you meet your supervisor for 30 minutes once a month"
+ },
+ {
+  "id": "P004",
+  "name": "Tomas",
+  "age": 26,
+  "segment": "Funded PhD student",
+  "income": 36000,
+  "behaviour": "Already pays for ChatGPT",
+  "behaviour_how": "Has ChatGPT Plus or Claude Pro and tries to do everything in it first.",
+  "objection": "ChatGPT already does this and I already pay for it",
+  "habit": "your research proposal is due in three weeks"
+ },
+ {
+  "id": "P005",
+  "name": "Hana",
+  "age": 36,
+  "segment": "Self-funded taught Master's student",
+  "income": 20000,
+  "behaviour": "Integrity-cautious",
+  "behaviour_how": "Worried about AI policies; checks whether a tool is allowed before using it.",
+  "objection": "ChatGPT already does this and I already pay for it",
+  "habit": "you are writing in your second language"
+ },
+ {
+  "id": "P006",
+  "name": "Grace",
+  "age": 27,
+  "segment": "International Master's student on scholarship or loan",
+  "income": 11000,
+  "behaviour": "Methods-confident",
+  "behaviour_how": "Feels they already understand methodology and only want a quick check.",
+  "objection": "My supervisor is supposed to help with this for free",
+  "habit": "you meet your supervisor for 30 minutes once a month"
+ },
+ {
+  "id": "P007",
+  "name": "Tess",
+  "age": 26,
+  "segment": "Self-funded taught Master's student",
+  "income": 35000,
+  "behaviour": "Integrity-cautious",
+  "behaviour_how": "Worried about AI policies; checks whether a tool is allowed before using it.",
+  "objection": "$49 is a lot on a student budget",
+  "habit": "you are writing in your second language"
+ },
+ {
+  "id": "P008",
+  "name": "Noah",
+  "age": 40,
+  "segment": "Self-funded taught Master's student",
+  "income": 23000,
+  "behaviour": "Free-tier maximiser",
+  "behaviour_how": "Uses the free version of everything and only pays when hard-blocked.",
+  "objection": "Does this work for my discipline or a mixed-methods design?",
+  "habit": "you work 20 hours a week alongside your studies"
+ },
+ {
+  "id": "P009",
+  "name": "Nora",
+  "age": 28,
+  "segment": "Funded PhD student",
+  "income": 33000,
+  "behaviour": "Already pays for ChatGPT",
+  "behaviour_how": "Has ChatGPT Plus or Claude Pro and tries to do everything in it first.",
+  "objection": "Will my university treat this as AI misuse?",
+  "habit": "you work 20 hours a week alongside your studies"
+ },
+ {
+  "id": "P010",
+  "name": "Amara",
+  "age": 33,
+  "segment": "Self-funded taught Master's student",
+  "income": 15000,
+  "behaviour": "Integrity-cautious",
+  "behaviour_how": "Worried about AI policies; checks whether a tool is allowed before using it.",
+  "objection": "$49 is a lot on a student budget",
+  "habit": "you work 20 hours a week alongside your studies"
+ },
+ {
+  "id": "P011",
+  "name": "Marco",
+  "age": 30,
+  "segment": "Working professional doing a part-time Master's, MBA or DBA",
+  "income": 91000,
+  "behaviour": "Free-tier maximiser",
+  "behaviour_how": "Uses the free version of everything and only pays when hard-blocked.",
+  "objection": "Does this work for my discipline or a mixed-methods design?",
+  "habit": "your cohort shares tools in a WhatsApp group"
+ },
+ {
+  "id": "P012",
+  "name": "Alma",
+  "age": 38,
+  "segment": "International Master's student on scholarship or loan",
+  "income": 18000,
+  "behaviour": "Follows peers",
+  "behaviour_how": "Uses what classmates in the cohort WhatsApp group recommend.",
+  "objection": "My supervisor is supposed to help with this for free",
+  "habit": "your research proposal is due in three weeks"
+ },
+ {
+  "id": "P013",
+  "name": "Eli",
+  "age": 30,
+  "segment": "International Master's student on scholarship or loan",
+  "income": 18000,
+  "behaviour": "Methods-confident",
+  "behaviour_how": "Feels they already understand methodology and only want a quick check.",
+  "objection": "Will my university treat this as AI misuse?",
+  "habit": "you are writing in your second language"
+ },
+ {
+  "id": "P014",
+  "name": "Jordan",
+  "age": 22,
+  "segment": "Self-funded taught Master's student",
+  "income": 17000,
+  "behaviour": "Deadline panic buyer",
+  "behaviour_how": "Ignores tools for months, then pays for anything that helps the night before a supervisor meeting.",
+  "objection": "Will my university treat this as AI misuse?",
+  "habit": "you work 20 hours a week alongside your studies"
+ },
+ {
+  "id": "P015",
+  "name": "Cole",
+  "age": 37,
+  "segment": "Funded PhD student",
+  "income": 22000,
+  "behaviour": "Deadline panic buyer",
+  "behaviour_how": "Ignores tools for months, then pays for anything that helps the night before a supervisor meeting.",
+  "objection": "Will my university treat this as AI misuse?",
+  "habit": "your research proposal is due in three weeks"
+ },
+ {
+  "id": "P016",
+  "name": "Darius",
+  "age": 35,
+  "segment": "Self-funded taught Master's student",
+  "income": 20000,
+  "behaviour": "Follows peers",
+  "behaviour_how": "Uses what classmates in the cohort WhatsApp group recommend.",
+  "objection": "Will my university treat this as AI misuse?",
+  "habit": "you work 20 hours a week alongside your studies"
+ },
+ {
+  "id": "P017",
+  "name": "Rhys",
+  "age": 38,
+  "segment": "Working professional doing a part-time Master's, MBA or DBA",
+  "income": 69000,
+  "behaviour": "Deadline panic buyer",
+  "behaviour_how": "Ignores tools for months, then pays for anything that helps the night before a supervisor meeting.",
+  "objection": "Does this work for my discipline or a mixed-methods design?",
+  "habit": "you meet your supervisor for 30 minutes once a month"
+ },
+ {
+  "id": "P018",
+  "name": "Iris",
+  "age": 40,
+  "segment": "Self-funded taught Master's student",
+  "income": 22000,
+  "behaviour": "Free-tier maximiser",
+  "behaviour_how": "Uses the free version of everything and only pays when hard-blocked.",
+  "objection": "$49 is a lot on a student budget",
+  "habit": "you work 20 hours a week alongside your studies"
+ },
+ {
+  "id": "P019",
+  "name": "June",
+  "age": 36,
+  "segment": "Working professional doing a part-time Master's, MBA or DBA",
+  "income": 95000,
+  "behaviour": "Already pays for ChatGPT",
+  "behaviour_how": "Has ChatGPT Plus or Claude Pro and tries to do everything in it first.",
+  "objection": "$49 is a lot on a student budget",
+  "habit": "your cohort shares tools in a WhatsApp group"
+ },
+ {
+  "id": "P020",
+  "name": "Raj",
+  "age": 35,
+  "segment": "International Master's student on scholarship or loan",
+  "income": 18000,
+  "behaviour": "Deadline panic buyer",
+  "behaviour_how": "Ignores tools for months, then pays for anything that helps the night before a supervisor meeting.",
+  "objection": "$49 is a lot on a student budget",
+  "habit": "your cohort shares tools in a WhatsApp group"
+ }
+]

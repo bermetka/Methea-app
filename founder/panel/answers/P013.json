@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "I already know my methodology; I'd only want a quick sanity check on my framework, and the free tier probably covers that. Paying $49 on my budget for things I can do myself, like an interview guide and coding, doesn't make sense.",
+  "objection": "Even if it doesn't write my paragraphs, I'm not sure my university would see AI-coded transcripts and an AI-built framework as acceptable. As an international student I can't risk an academic misconduct case or my scholarship.",
+  "would_change_my_mind": "My supervisor or university explicitly saying this tool is allowed, plus being stuck on transcript analysis close to a deadline.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

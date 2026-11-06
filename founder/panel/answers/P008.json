@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "The free part gives me the research question, theories and framework diagram, which is the bit I'd actually use this month. On $23k a year, $49 is a week of groceries, and I'd only pay once I'm stuck at the interview guide or coding stage, and even then I'd try my supervisor and free YouTube methods videos first.",
+  "objection": "It talks about interview guides and transcript analysis, so it looks built for purely qualitative work. My design is mixed-methods, and nothing says it handles the survey or quantitative strand, so I could pay $49 for half of what I need.",
+  "would_change_my_mind": "Seeing that it supports mixed-methods designs in my discipline, and hitting a real wall on transcript coding with a deadline close, would get me to pay, probably at a student discount closer to $25.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

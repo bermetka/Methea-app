@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "I'd happily use the free part to sharpen my question and get a framework diagram, but that's probably enough for me. $49 is groceries for a week, and my supervisor plus the library's methods guides cover the interview guide and analysis for free.",
+  "objection": "The free tier already gives me the bit I'm most stuck on, and I can't justify $49 for the rest when I could do the interview guide and coding myself with free tools and a bit more time.",
+  "would_change_my_mind": "If I hit a real wall at the analysis stage with a deadline close, or a student discount brought it down to around $20.",
+  "price_too_cheap": 3,
+  "price_cheap": 10,
+  "price_expensive": 25,
+  "price_too_expensive": 45
+}

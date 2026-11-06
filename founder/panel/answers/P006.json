@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "I already know my methods. I just want someone to quickly check them, and my supervisor does that for free. I'd try the free framework diagram, but $49 is almost a week of groceries for me, and that's too much for a check I don't really need.",
+  "objection": "My supervisor is supposed to help me with this for free, and I'm fairly sure I can write my own interview guide and code my own transcripts. Why pay for something I mostly already know how to do?",
+  "would_change_my_mind": "If my university or department paid for it, or if the transcript analysis alone clearly saved me weeks of coding in NVivo during my data-analysis crunch.",
+  "price_too_cheap": 3,
+  "price_cheap": 10,
+  "price_expensive": 20,
+  "price_too_expensive": 35
+}

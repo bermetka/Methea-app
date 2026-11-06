@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "Three weeks out I'm not paying for anything; I'd poke at the free framework diagram, close the tab, and only think about paying the night before my supervisor meeting. Even then $49 is real money on $22k when I'm not sure my supervisor would be fine with it.",
+  "objection": "Will my university or supervisor see this as AI misuse? 'It never writes text you'd submit' is the company's claim, not my department's policy, and I'm not risking a misconduct conversation over a proposal.",
+  "would_change_my_mind": "Seeing that my university or a supervisor explicitly okays it, or a one-page note I could show my supervisor explaining exactly what the tool did and didn't do.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 39,
+  "price_too_expensive": 69
+}

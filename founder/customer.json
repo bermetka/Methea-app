@@ -1,0 +1,36 @@
+{
+  "business": "Methea (a research-methodology navigator for Master's and PhD students)",
+  "target": "Master's and PhD students in social sciences, education, business and communication, writing a proposal or thesis with a qualitative component",
+  "where": "Online; students at English-speaking universities (UK, US, EU, Australia)",
+  "age": [22, 40],
+  "segments": [
+    {"name": "Self-funded taught Master's student", "share": 0.40, "income": [12000, 35000]},
+    {"name": "International Master's student on scholarship or loan", "share": 0.25, "income": [8000, 20000]},
+    {"name": "Funded PhD student", "share": 0.20, "income": [20000, 38000]},
+    {"name": "Working professional doing a part-time Master's, MBA or DBA", "share": 0.15, "income": [45000, 110000]}
+  ],
+  "behaviours": [
+    {"name": "Deadline panic buyer", "share": 0.20, "how": "Ignores tools for months, then pays for anything that helps the night before a supervisor meeting."},
+    {"name": "Free-tier maximiser", "share": 0.20, "how": "Uses the free version of everything and only pays when hard-blocked."},
+    {"name": "Already pays for ChatGPT", "share": 0.18, "how": "Has ChatGPT Plus or Claude Pro and tries to do everything in it first."},
+    {"name": "Integrity-cautious", "share": 0.14, "how": "Worried about AI policies; checks whether a tool is allowed before using it."},
+    {"name": "Follows peers", "share": 0.14, "how": "Uses what classmates in the cohort WhatsApp group recommend."},
+    {"name": "Methods-confident", "share": 0.14, "how": "Feels they already understand methodology and only want a quick check."}
+  ],
+  "objections": [
+    "ChatGPT already does this and I already pay for it",
+    "Will my university treat this as AI misuse?",
+    "My supervisor is supposed to help with this for free",
+    "$49 is a lot on a student budget",
+    "I only need help with one part, not the whole chain",
+    "Will the theories and citations actually be accurate?",
+    "Does this work for my discipline or a mixed-methods design?"
+  ],
+  "habits": [
+    "your research proposal is due in three weeks",
+    "you meet your supervisor for 30 minutes once a month",
+    "you work 20 hours a week alongside your studies",
+    "you are writing in your second language",
+    "your cohort shares tools in a WhatsApp group"
+  ]
+}

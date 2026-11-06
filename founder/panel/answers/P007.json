@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I'd try the free part, but I wouldn't pay $49 until my supervisor or the university says this tool is allowed. Writing in my second language, I already worry people will think I used AI, so I can't risk it on my own money.",
+  "objection": "It says it never writes my text, but my program's AI policy doesn't know that. If an interview guide or a theme analysis made by AI counts as unauthorised help, I lose much more than $49.",
+  "would_change_my_mind": "My supervisor or my university's AI guidance saying it's fine to use, or the tool being on a list my school recommends.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

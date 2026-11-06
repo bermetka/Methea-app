@@ -1,0 +1,13 @@
+{
+  "id": "P014",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "timing",
+  "reason": "In a normal week I'd use the free bit to get a framework diagram and stop there. $49 is a week of groceries for me, and I only pay for stuff when I'm panicking the night before seeing my supervisor, which isn't this week.",
+  "objection": "If my university decides AI tools for methodology count as misuse, I've wasted $49 and maybe put my degree at risk. Nothing here says my university is fine with it.",
+  "would_change_my_mind": "My supervisor or the uni's academic integrity page saying it's allowed, plus a supervisor meeting coming up with no interview guide ready.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

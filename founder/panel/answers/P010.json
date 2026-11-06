@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I'd try the free part, but I wouldn't pay $49 until I know my programme allows it. If my supervisor or the integrity office says AI tools are off-limits for my thesis, that's money gone and maybe a misconduct flag too.",
+  "objection": "Saying 'it never writes text you submit' is nice, but I can't tell whether my university would agree. An AI-built framework, interview guide and transcript coding could still count as unauthorised AI use. On $15k a year I'm not betting $49 and my degree on it.",
+  "would_change_my_mind": "Something official from my university or supervisor saying it's allowed, like an approved-tools list or a supervisor sign-off, ideally with a student discount.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 29,
+  "price_too_expensive": 45
+}

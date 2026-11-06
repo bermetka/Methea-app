@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I might try the free framework part, but I will not pay $49 for an AI tool until I know my university allows it. I already pay for ChatGPT, and it helps me with my English and my questions, so I don't see why I need a second one.",
+  "objection": "If my programme's AI policy says no, or my supervisor sees the framework came from an AI tool, I risk an academic integrity case. Saying it 'never writes text' doesn't prove it is permitted.",
+  "would_change_my_mind": "My university or supervisor saying this tool is allowed, for example if it is on an approved list or the supervisor recommends it.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

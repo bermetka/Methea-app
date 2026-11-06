@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "I already know my methodology, so most of the $49 bundle is stuff I'd never use. I'd maybe poke at the free framework diagram to sanity-check my theory fit, and that's it.",
+  "objection": "I only need help with one part, maybe a quick check on my interview guide against my framework, not the whole chain from research question to transcript analysis. Paying $49 for the whole thing to use one piece feels like a waste on a $20k stipend.",
+  "would_change_my_mind": "Being able to buy just the interview guide check or the transcript coding on its own for around $10-15, or my supervisor recommending it.",
+  "price_too_cheap": 5,
+  "price_cheap": 12,
+  "price_expensive": 30,
+  "price_too_expensive": 50
+}

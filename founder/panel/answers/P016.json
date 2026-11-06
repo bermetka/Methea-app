@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Nobody in my cohort WhatsApp group has mentioned it, and I'm not putting $49 of my own money into an AI tool before I know my university won't treat it as misuse. I might poke at the free framework part, but I wouldn't pay yet.",
+  "objection": "Even if it says it never writes my text, my supervisor or the integrity office might still see an AI-built framework and interview guide as not my own work, and I can't afford a misconduct flag on a degree I'm paying for myself.",
+  "would_change_my_mind": "A classmate or my supervisor saying they used it and the university is fine with it, ideally something in writing from the programme that it counts as allowed support.",
+  "price_too_cheap": 5,
+  "price_cheap": 15,
+  "price_expensive": 35,
+  "price_too_expensive": 60
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "I'd sign up for the free tier, grab the research question, theory suggestions and framework diagram, screenshot it for the WhatsApp group, and then do the interview guide and coding myself with ChatGPT and the free NVivo trial my school gives us. $49 isn't a lot on my salary, but I only pay when I literally can't move forward, and nothing in the paid list is a hard wall for me.",
+  "objection": "My thesis is mixed-methods, a survey plus a handful of interviews, and everything here reads as qualitative-only. I'd be paying for half a tool, and I can't tell if the theory library even covers business and management stuff or just social science classics.",
+  "would_change_my_mind": "If the free diagram couldn't be exported or used in my proposal without paying, and it clearly supported mixed-methods designs (survey instrument plus interview guide tied to the same framework), I'd pay the $49 right before my proposal deadline.",
+  "price_too_cheap": 5,
+  "price_cheap": 19,
+  "price_expensive": 59,
+  "price_too_expensive": 99
+}

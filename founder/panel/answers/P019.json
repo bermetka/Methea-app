@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "I already pay for Claude Pro and I'd just ask it to help me sharpen my question, pick a theory and draft an interview guide. I'd use the free framework diagram, but I don't see why I'd pay $49 for the rest when my subscription already does most of it.",
+  "objection": "Honestly it's not the money, it's that I can't tell what this does that my AI subscription doesn't. 'Verified citations' and transcript analysis sound nice, but I'd need to see they're clearly better than what I get from ChatGPT before paying again.",
+  "would_change_my_mind": "A couple of people in my cohort WhatsApp saying the transcript analysis and interview guide saved them real time, or my programme recommending it.",
+  "price_too_cheap": 9,
+  "price_cheap": 19,
+  "price_expensive": 49,
+  "price_too_expensive": 89
+}
