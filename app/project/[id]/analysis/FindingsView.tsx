@@ -92,7 +92,7 @@ export default function FindingsView({ projectId, themes, gate3Completed, readOn
               <div style={s.quoteList}>
                 {theme.quotes.map((q, i) => (
                   <div key={i} style={s.quoteRow}>
-                    <span style={s.quoteMark}>"</span>
+                    <span style={s.quoteMark}>&quot;</span>
                     <div style={s.quoteBody}>
                       <p style={s.quoteText}>{q.quote}</p>
                       <div style={s.quoteTags}>

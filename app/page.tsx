@@ -197,7 +197,7 @@ export default async function LandingPage() {
       <section style={s.profs}>
         <div style={s.profsInner}>
           <p style={s.sectionEyebrow}>For supervisors &amp; institutions</p>
-          <h2 style={s.sectionHeading}>Built to complement your teaching,<br />not replace your student's thinking</h2>
+          <h2 style={s.sectionHeading}>Built to complement your teaching,<br />not replace your student&apos;s thinking</h2>
           <div style={s.profsGrid}>
             {[
               {
