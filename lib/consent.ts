@@ -80,11 +80,41 @@ export function readConsent(): ConsentChoice | null {
   return v === 'granted' || v === 'denied' ? v : null
 }
 
+/**
+ * Store the choice and tell Consent Mode. Accept → update granted +
+ * consent_granted. Reject after an earlier Accept → update denied +
+ * consent_revoked, and the ad/analytics cookies already set are removed.
+ */
 export function saveConsent(choice: ConsentChoice) {
+  const previous = readConsent()
   const secure = location.protocol === 'https:' ? '; Secure' : ''
   document.cookie = `${CONSENT_COOKIE}=${choice}; Max-Age=${CONSENT_MAX_AGE}; Path=/; SameSite=Lax${secure}`
   if (choice === 'granted') {
     gtag('consent', 'update', Object.fromEntries(CONSENT_KEYS.map(k => [k, 'granted'])))
     pushDataLayer({ event: 'consent_granted' })
+  } else if (previous === 'granted') {
+    gtag('consent', 'update', Object.fromEntries(CONSENT_KEYS.map(k => [k, 'denied'])))
+    pushDataLayer({ event: 'consent_revoked' })
+    clearTrackingCookies()
   }
+}
+
+// First-party cookies Google Ads / GA / the Meta Pixel set after consent.
+const TRACKING_COOKIE = /^(_gcl_\w+|_ga(_\w+)?|_gid|_fbp|_fbc)$/
+
+/** Best effort: delete them on this host and on each parent domain (GTM sets them on the top domain). */
+function clearTrackingCookies() {
+  const names = document.cookie.split('; ').map(c => c.split('=')[0]).filter(n => TRACKING_COOKIE.test(n))
+  const parts = location.hostname.split('.')
+  const domains = [''].concat(parts.slice(0, -1).map((_, i) => `; Domain=.${parts.slice(i).join('.')}`))
+  for (const name of names) {
+    for (const domain of domains) document.cookie = `${name}=; Max-Age=0; Path=/${domain}`
+  }
+}
+
+/** Event the footer "Cookie settings" link fires; CookieBanner listens and reopens. */
+export const COOKIE_SETTINGS_EVENT = 'methea:cookie-settings'
+
+export function openCookieSettings() {
+  window.dispatchEvent(new Event(COOKIE_SETTINGS_EVENT))
 }

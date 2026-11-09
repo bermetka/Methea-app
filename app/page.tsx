@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { FREE_FEATURES, PAID_FEATURES, fromPriceLabel } from '@/lib/pricing'
 import { FREE_PROJECT_CAP } from '@/lib/entitlement'
+import CookieSettingsLink, { CookieSettingsDot } from '@/components/consent/CookieSettingsLink'
 
 export const metadata = {
   title: 'Methea — Your research, methodically.',
@@ -287,6 +288,8 @@ export default async function LandingPage() {
             <a href="/privacy" style={s.footerLink}>Privacy</a>
             <span style={s.footerDot}>·</span>
             <a href="/terms" style={s.footerLink}>Terms</a>
+            <CookieSettingsDot style={s.footerDot} />
+            <CookieSettingsLink style={s.footerLink} />
           </div>
         </div>
       </footer>

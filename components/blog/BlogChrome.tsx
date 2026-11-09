@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from '@/app/blog/blog.module.css'
+import CookieSettingsLink, { CookieSettingsDot } from '@/components/consent/CookieSettingsLink'
 
 export function BlogNav() {
   return (
@@ -27,6 +28,8 @@ export function BlogFooter() {
           <Link href="/blog">Blog</Link><span aria-hidden>·</span>
           <Link href="/privacy">Privacy</Link><span aria-hidden>·</span>
           <Link href="/terms">Terms</Link>
+          <CookieSettingsDot />
+          <CookieSettingsLink />
         </div>
       </div>
     </footer>

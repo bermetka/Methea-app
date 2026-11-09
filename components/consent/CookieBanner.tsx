@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { readConsent, saveConsent, type ConsentChoice } from '@/lib/consent'
+import { COOKIE_SETTINGS_EVENT, readConsent, saveConsent, type ConsentChoice } from '@/lib/consent'
 import styles from './CookieBanner.module.css'
 
 /**
@@ -14,6 +14,10 @@ export default function CookieBanner() {
 
   useEffect(() => {
     if (!readConsent()) setOpen(true)
+    // Footer "Cookie settings" reopens the bar to change an earlier choice.
+    const reopen = () => setOpen(true)
+    window.addEventListener(COOKIE_SETTINGS_EVENT, reopen)
+    return () => window.removeEventListener(COOKIE_SETTINGS_EVENT, reopen)
   }, [])
 
   useEffect(() => {
