@@ -10,7 +10,8 @@ import { DISCOUNT_CODE_COOKIE } from '@/lib/pricing'
 import { decodeVisit, mergeVisit, readVisit } from '@/lib/visit'
 import { CHECK_COOKIE } from '@/lib/check'
 import { startProjectFromCheck } from '@/lib/check-project'
-import { SIGNUP_EVENT_COOKIE } from '@/lib/consent'
+import { ANALYTICS_OFF_COOKIE, SIGNUP_EVENT_COOKIE, analyticsOffCookieOptions } from '@/lib/consent'
+import { isExcludedFromAnalytics } from '@/lib/analytics-exclusion'
 
 const EMAIL_OTP_TYPES: EmailOtpType[] = ['email', 'magiclink', 'signup', 'invite', 'recovery', 'email_change']
 
@@ -54,10 +55,14 @@ export async function GET(request: Request) {
       // Never block login on it — getUserPriceVariant creates it lazily too.
       try {
         const { variant, created } = await ensureProfile(data.user.id, visit, variantSource)
+        // Accounts excluded from analytics (unlimited, test signups): no conversion events.
+        const excluded = visit.attribution.utm_source?.toLowerCase() === 'test'
+          || (await isExcludedFromAnalytics(data.user.id))
+        if (excluded) cookieStore.set(ANALYTICS_OFF_COOKIE, '1', analyticsOffCookieOptions())
         if (created) {
           // Read once by SignupEvent on the next page, for the GTM sign_up conversion.
           const provider = data.user.app_metadata?.provider
-          cookieStore.set(SIGNUP_EVENT_COOKIE, provider === 'google' ? 'google' : 'email', {
+          if (!excluded) cookieStore.set(SIGNUP_EVENT_COOKIE, provider === 'google' ? 'google' : 'email', {
             path: '/', sameSite: 'lax', secure: process.env.NODE_ENV === 'production', maxAge: 300,
           })
           // Service role: the new session cookie isn't readable within this request yet.

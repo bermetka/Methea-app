@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { initializePaddle, CheckoutEventNames, type CheckoutEventsData, type Paddle } from '@paddle/paddle-js'
-import { foundingBannerText, type CheckoutContext } from '@/lib/pricing'
+import { foundingBannerText, priceFromLabel, type CheckoutContext } from '@/lib/pricing'
 import { trackUnlockClick } from '@/app/actions/funnel'
-import { pushDataLayer } from '@/lib/consent'
+import { pushConversion } from '@/lib/consent'
 
 interface Props {
   projectId: string
@@ -28,6 +28,9 @@ export default function UnlockButton({ projectId, checkout, compact, label: cust
       : `Unlock this project — ${checkout.priceLabel} →`
   const paddleRef = useRef<Paddle | undefined>(undefined)
   const [status, setStatus] = useState<Status>('loading')
+  // Set on click (to the list price, the fallback value), used up by the first
+  // checkout.loaded after it: one begin_checkout per click.
+  const beginCheckoutPending = useRef<number | null>(null)
 
   useEffect(() => {
     let cancelled = false
@@ -36,6 +39,17 @@ export default function UnlockButton({ projectId, checkout, compact, label: cust
       environment: (process.env.NEXT_PUBLIC_PADDLE_ENVIRONMENT as 'sandbox' | 'production') ?? 'sandbox',
       token: process.env.NEXT_PUBLIC_PADDLE_CLIENT_TOKEN!,
       eventCallback(event) {
+        // begin_checkout: from the overlay's first load after the click, because only
+        // Paddle knows the price after a discount code (FOUNDING50 → 24.5).
+        if (event.name === CheckoutEventNames.CHECKOUT_LOADED && beginCheckoutPending.current !== null) {
+          const listPrice = beginCheckoutPending.current
+          beginCheckoutPending.current = null
+          pushConversion({
+            event: 'begin_checkout',
+            value: event.data?.totals.total ?? listPrice,
+            currency: event.data?.currency_code ?? 'USD',
+          })
+        }
         if (event.name === CheckoutEventNames.CHECKOUT_COMPLETED) {
           if (event.data) pushPurchase(event.data)
           setStatus('finalizing')
@@ -61,6 +75,7 @@ export default function UnlockButton({ projectId, checkout, compact, label: cust
     if (status !== 'idle' || !paddleRef.current) return
     setStatus('opening')
     void trackUnlockClick(projectId)
+    beginCheckoutPending.current = priceFromLabel(checkout.priceLabel) ?? 49
     paddleRef.current.Checkout.open({
       items: [{ priceId: checkout.priceId, quantity: 1 }],
       // discount_code is for funnel analysis only; Paddle applies and validates discountCode.
@@ -101,7 +116,7 @@ function pushPurchase(data: CheckoutEventsData) {
   } catch {
     // Storage blocked: still send it once for this page.
   }
-  pushDataLayer({
+  pushConversion({
     event: 'purchase',
     value: data.totals.total,
     currency: data.currency_code ?? 'USD',

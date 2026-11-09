@@ -8,6 +8,18 @@ export const CONSENT_MAX_AGE = 60 * 60 * 24 * 365 // 12 months
 /** Short-lived cookie the auth callback sets on a brand-new account; read once for the sign_up conversion. */
 export const SIGNUP_EVENT_COOKIE = 'methea_signup_event'
 
+/**
+ * Set (not httpOnly) for browsers excluded from analytics: utm_source=test
+ * visits (middleware) and unlimited / test-signup accounts (auth callback).
+ * While present, conversion events aren't pushed. GTM and the banner still run.
+ */
+export const ANALYTICS_OFF_COOKIE = 'methea_analytics_off'
+
+/** Cookie options for server writes of ANALYTICS_OFF_COOKIE (client-readable). */
+export function analyticsOffCookieOptions() {
+  return { path: '/', sameSite: 'lax' as const, secure: process.env.NODE_ENV === 'production', maxAge: CONSENT_MAX_AGE }
+}
+
 export type ConsentChoice = 'granted' | 'denied'
 
 const CONSENT_KEYS = ['ad_storage', 'ad_user_data', 'ad_personalization', 'analytics_storage'] as const
@@ -32,6 +44,20 @@ export function pushDataLayer(payload: Record<string, unknown>) {
   const w = window as DataLayerWindow
   w.dataLayer = w.dataLayer || []
   w.dataLayer.push(payload)
+}
+
+export function isAnalyticsExcluded(): boolean {
+  return readCookie(ANALYTICS_OFF_COOKIE) === '1'
+}
+
+/** Conversion events (quiz_complete, sign_up, begin_checkout, purchase): skipped for excluded browsers. */
+export function pushConversion(payload: Record<string, unknown> & { event: string }) {
+  try {
+    if (typeof window === 'undefined' || isAnalyticsExcluded()) return
+    pushDataLayer(payload)
+  } catch {
+    // Analytics must never break a page or a checkout.
+  }
 }
 
 /** gtag() pushes the arguments object itself, which is what Consent Mode reads. */

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { pushDataLayer, readCookie, SIGNUP_EVENT_COOKIE } from '@/lib/consent'
+import { pushConversion, readCookie, SIGNUP_EVENT_COOKIE } from '@/lib/consent'
 
 /**
  * GTM sign_up conversion. The auth callback sets a 5-minute cookie only when
@@ -13,7 +13,7 @@ export default function SignupEvent() {
     const method = readCookie(SIGNUP_EVENT_COOKIE)
     if (!method) return
     document.cookie = `${SIGNUP_EVENT_COOKIE}=; Max-Age=0; Path=/`
-    pushDataLayer({ event: 'sign_up', method })
+    pushConversion({ event: 'sign_up', method })
   }, [])
   return null
 }

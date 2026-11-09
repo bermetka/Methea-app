@@ -5,6 +5,7 @@ import "./globals.css";
 import { CONSENT_DEFAULT_SCRIPT } from "@/lib/consent";
 import CookieBanner from "@/components/consent/CookieBanner";
 import SignupEvent from "@/components/analytics/SignupEvent";
+import RouteChangeEvent from "@/components/analytics/RouteChangeEvent";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -46,6 +47,7 @@ export default function RootLayout({
         {children}
         {gtmId && <CookieBanner />}
         {gtmId && <SignupEvent />}
+        {gtmId && <RouteChangeEvent />}
       </body>
     </html>
   );
