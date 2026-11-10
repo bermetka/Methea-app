@@ -97,5 +97,28 @@
 .footerLinks { display: flex; gap: 0.5rem; font-size: 0.8125rem; color: #706D66; }
 .footerLinks a { color: #B0ADA6; }
 
-@media (max-width: 420px) { .answers { grid-template-columns: 1fr; } .step span { font-size: 0.7rem; } }
+/* One-page flow: questions open one after another */
+.wrap > * + * { margin-top: 16px; }
+.path[aria-pressed="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.qlist { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.qlist > li { scroll-margin-top: 1rem; }
+.active { border-color: var(--ink); animation: open .25s ease-out; }
+.answered { padding: 16px 20px; gap: 10px; }
+.answered .answers button { padding: 10px 8px; min-height: 44px; font-size: 0.95rem; }
+.line { margin: 0; font-size: 0.95rem; line-height: 1.5; border-radius: 10px; padding: 10px 12px; }
+.lineOk { background: var(--c-ok-bg); color: #24553A; }
+.lineNext { background: var(--c-blue-bg); color: var(--ink); }
+.lineNext b { color: var(--ink-blue); }
+.missing { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; counter-reset: m; }
+.missing li { counter-increment: m; display: flex; flex-direction: column; gap: 8px; padding: 10px 12px; border-radius: 10px; background: rgba(255,255,255,.55); }
+.missing li.first { background: var(--c-sheet); padding: 14px; }
+.missLabel { font-weight: 600; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.missLabel::before { content: counter(m) "."; color: var(--ink-blue); }
+.tag, .tagStart { font-size: 0.72rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; border-radius: 999px; padding: 2px 8px; }
+.tag { background: var(--c-sheet2); color: var(--graphite); }
+.tagStart { background: var(--marker-lime); color: #1C1C1C; }
+@keyframes open { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .active { animation: none; } }
+
+@media (max-width: 420px) { .answers button { padding: 12px 4px; } .step span { font-size: 0.7rem; } }
 @media (prefers-reduced-motion: reduce) { .wrap * { transition: none !important; } }
