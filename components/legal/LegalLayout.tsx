@@ -1,4 +1,5 @@
 import Logo from '@/components/ui/Logo'
+import CookieSettingsLink, { CookieSettingsDot } from '@/components/consent/CookieSettingsLink'
 
 interface Props {
   title: string
@@ -33,6 +34,8 @@ export default function LegalLayout({ title, lastUpdated, draft, children }: Pro
         <a href="/privacy" style={s.footerLink}>Privacy</a>
         <span style={s.footerDot}>·</span>
         <a href="/terms" style={s.footerLink}>Terms</a>
+        <CookieSettingsDot style={s.footerDot} />
+        <CookieSettingsLink style={s.footerLink} />
         <span style={s.footerDot}>·</span>
         <a href="mailto:privacy@methea.app" style={s.footerLink}>privacy@methea.app</a>
       </footer>

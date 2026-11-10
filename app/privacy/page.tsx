@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <LegalLayout title="Privacy Policy" lastUpdated="27 July 2026">
+    <LegalLayout title="Privacy Policy" lastUpdated="9 November 2026">
       <p style={prose.p}>
         Methea (&quot;we&quot;, &quot;us&quot;) helps Master&apos;s and PhD students structure their
         research — framework selection, methodology, interview guides, and qualitative analysis.
@@ -123,6 +123,19 @@ export default function PrivacyPage() {
           and processes refunds. Paddle receives your billing details (name, email, payment method)
           directly and processes them under its own privacy policy — Methea does not see or store
           your card details.
+        </p>
+        <p style={prose.p}>
+          <strong style={prose.strong}>Cookies for ad measurement.</strong> We use Google Tag
+          Manager to run Google Ads and the Meta Pixel (Meta Platforms Ireland Ltd.), which tell us
+          whether our ads lead to visits, sign-ups and purchases. Until you click &quot;Accept&quot; in
+          the cookie bar, none of them set or read cookies on your device; Google may still receive
+          cookieless signals (such as the page address and that consent was refused) to estimate
+          conversions in aggregate. If you accept, these tools set cookies and receive technical
+          data about your visit (page address, browser, device, IP address) and the steps you
+          complete, such as finishing the check, creating an account, starting checkout and
+          purchasing (with the amount paid). We never send them your name, email address or
+          research content. You can change your choice at any time via Cookie settings at the bottom
+          of any page.
         </p>
       </section>
 

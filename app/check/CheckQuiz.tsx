@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { trackCheck } from '@/app/actions/funnel'
+import { pushConversion } from '@/lib/consent'
 import { CHECK_COOKIE, CHECK_QUESTION_MAX, type CheckPath, type CheckStage } from '@/lib/check'
 import styles from './check.module.css'
 
@@ -155,6 +156,7 @@ export default function CheckQuiz({ priceLabel }: { priceLabel: string }) {
     else {
       setView('result')
       trackCheck('check_complete', { path, stage })
+      pushConversion({ event: 'quiz_complete' })
     }
   }
   function back() { if (i === 0) setView('input'); else setI(i - 1) }

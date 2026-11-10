@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { FREE_FEATURES, PAID_FEATURES, fromPriceLabel } from '@/lib/pricing'
 import { FREE_PROJECT_CAP } from '@/lib/entitlement'
+import CookieSettingsLink, { CookieSettingsDot } from '@/components/consent/CookieSettingsLink'
 
 export const metadata = {
   title: 'Methea — Your research, methodically.',
@@ -197,7 +198,7 @@ export default async function LandingPage() {
       <section style={s.profs}>
         <div style={s.profsInner}>
           <p style={s.sectionEyebrow}>For supervisors &amp; institutions</p>
-          <h2 style={s.sectionHeading}>Built to complement your teaching,<br />not replace your student's thinking</h2>
+          <h2 style={s.sectionHeading}>Built to complement your teaching,<br />not replace your student&apos;s thinking</h2>
           <div style={s.profsGrid}>
             {[
               {
@@ -287,6 +288,8 @@ export default async function LandingPage() {
             <a href="/privacy" style={s.footerLink}>Privacy</a>
             <span style={s.footerDot}>·</span>
             <a href="/terms" style={s.footerLink}>Terms</a>
+            <CookieSettingsDot style={s.footerDot} />
+            <CookieSettingsLink style={s.footerLink} />
           </div>
         </div>
       </footer>

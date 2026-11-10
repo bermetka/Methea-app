@@ -362,7 +362,7 @@ export default function Gate2View(p: Props) {
       {list && !preview && notLinked.length > 0 && (
         <section style={s.panel} aria-labelledby="notlinked">
           <h2 id="notlinked" style={s.h2}>Not linked to your chosen theories · {notLinked.length}</h2>
-          <p style={s.muted}>These may still matter for your topic or method. Citation data for older works is incomplete, so a missing link doesn't mean a work is unrelated. If many of them share one theory, it may be worth adding that theory.</p>
+          <p style={s.muted}>These may still matter for your topic or method. Citation data for older works is incomplete, so a missing link doesn&apos;t mean a work is unrelated. If many of them share one theory, it may be worth adding that theory.</p>
           {notLinked.map(i => <ListItemLine key={i.id} item={i} />)}
         </section>
       )}

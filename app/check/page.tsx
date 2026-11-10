@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { priceLabel } from '@/lib/pricing'
 import CheckQuiz from './CheckQuiz'
 import styles from './check.module.css'
+import CookieSettingsLink, { CookieSettingsDot } from '@/components/consent/CookieSettingsLink'
 
 const DESCRIPTION =
   'A 2-minute check for Master\'s and PhD students and applicants: see where your research proposal is, what you already have, and the one next step.'
@@ -37,6 +38,8 @@ export default function CheckPage() {
             <Link href="/blog">Blog</Link><span aria-hidden>·</span>
             <Link href="/privacy">Privacy</Link><span aria-hidden>·</span>
             <Link href="/terms">Terms</Link>
+            <CookieSettingsDot />
+            <CookieSettingsLink />
           </div>
         </div>
       </footer>

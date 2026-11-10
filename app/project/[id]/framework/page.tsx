@@ -225,7 +225,7 @@ export default async function FrameworkPage({ params }: { params: { id: string }
     <main style={styles.page}>
       <div style={styles.container}>
         <div style={styles.heading}>
-          <h2 style={styles.h2}>Here's how your theories connect</h2>
+          <h2 style={styles.h2}>Here&apos;s how your theories connect</h2>
           <p style={styles.sub}>
             {paid
               ? 'Review the diagram and narrative, then save to continue.'

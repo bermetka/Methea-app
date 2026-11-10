@@ -82,3 +82,10 @@ export interface CheckoutContext {
 
 /** What to show where an unlock button would go. */
 export type UnlockInfo = { kind: 'checkout' } & CheckoutContext
+
+/** "$49", "US$24.50" → 49 / 24.5; null when there's no number. */
+export function priceFromLabel(label: string | undefined | null): number | null {
+  const m = label?.replace(/,/g, '').match(/\d+(?:\.\d+)?/)
+  const n = m ? Number(m[0]) : NaN
+  return Number.isFinite(n) && n > 0 ? n : null
+}

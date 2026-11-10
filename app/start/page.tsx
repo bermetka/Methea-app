@@ -6,6 +6,7 @@ import RewriteLoop from '@/components/landing/RewriteLoop'
 import { ATTRIBUTION_COOKIE, DEFAULT_ANGLE, parseAngle, sanitizeAttribution, type StartAngle } from '@/lib/funnel-shared'
 import { PRICE_VARIANT_COOKIE, parsePriceVariant, priceForVariant } from '@/lib/pricing'
 import { MonthlyWaitlistForm, PilotForm, StartViewTracker } from './StartForms'
+import CookieSettingsLink from '@/components/consent/CookieSettingsLink'
 
 export const metadata = {
   title: 'Methea — from assignment brief to a methodology that holds together',
@@ -272,6 +273,7 @@ export default function StartPage({ searchParams }: { searchParams: { a?: string
         <footer style={s.footer}>
           <a href="/terms" style={s.footLink}>Terms</a>
           <a href="/privacy" style={s.footLink}>Privacy</a>
+          <CookieSettingsLink style={s.footLink} />
         </footer>
       </div>
     </main>
