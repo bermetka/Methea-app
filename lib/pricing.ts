@@ -14,7 +14,24 @@ export function parsePriceVariant(value: unknown): PriceVariant | null {
   return value === 'A' || value === 'B' ? value : null
 }
 
-export function randomPriceVariant(random: () => number = Math.random): PriceVariant {
+/**
+ * The A/B price split runs only when PRICE_SPLIT_ENABLED=true (server env, off by
+ * default). Off: every visitor and every account is priced as A, including
+ * earlier B cookies and B profiles. The stored variant stays as it was, so past
+ * A/B data keeps its meaning; the price actually paid is paid_price_variant.
+ */
+export function priceSplitEnabled(raw: string | undefined = process.env.PRICE_SPLIT_ENABLED): boolean {
+  return raw === 'true'
+}
+
+/** The variant a visitor or account is actually priced at. */
+export function effectiveVariant(variant: PriceVariant, splitEnabled = priceSplitEnabled()): PriceVariant {
+  return splitEnabled ? variant : 'A'
+}
+
+/** New assignment: 50/50 while the split runs, otherwise A. */
+export function randomPriceVariant(random: () => number = Math.random, splitEnabled = priceSplitEnabled()): PriceVariant {
+  if (!splitEnabled) return 'A'
   return random() < 0.5 ? 'A' : 'B'
 }
 
@@ -29,8 +46,9 @@ export function priceLabel(raw: string | undefined): string {
 }
 
 // Literal process.env.NEXT_PUBLIC_* reads so Next inlines them into client bundles.
-export function priceForVariant(variant: PriceVariant): { priceId: string; label: string } {
-  return variant === 'A'
+// Server-only callers: PRICE_SPLIT_ENABLED isn't exposed to the client (reads as off there).
+export function priceForVariant(variant: PriceVariant, splitEnabled = priceSplitEnabled()): { priceId: string; label: string } {
+  return effectiveVariant(variant, splitEnabled) === 'A'
     ? { priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID_A ?? '', label: priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_A) }
     : { priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_ID_B ?? '', label: priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_B) }
 }
