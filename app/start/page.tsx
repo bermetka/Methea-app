@@ -4,7 +4,7 @@ import ChainDiagram from '@/components/landing/ChainDiagram'
 import FrameworkShot from '@/components/landing/FrameworkShot'
 import RewriteLoop from '@/components/landing/RewriteLoop'
 import { ATTRIBUTION_COOKIE, DEFAULT_ANGLE, parseAngle, sanitizeAttribution, type StartAngle } from '@/lib/funnel-shared'
-import { PRICE_VARIANT_COOKIE, parsePriceVariant, priceForVariant } from '@/lib/pricing'
+import { PRICE_VARIANT_COOKIE, effectiveVariant, parsePriceVariant, priceForVariant } from '@/lib/pricing'
 import { MonthlyWaitlistForm, PilotForm, StartViewTracker } from './StartForms'
 import CookieSettingsLink from '@/components/consent/CookieSettingsLink'
 
@@ -68,7 +68,8 @@ export default function StartPage({ searchParams }: { searchParams: { a?: string
   const jar = cookies()
   const attribution = sanitizeAttribution(jar.get(ATTRIBUTION_COOKIE)?.value)
   const angle = parseAngle(searchParams.a) ?? parseAngle(attribution.angle) ?? DEFAULT_ANGLE
-  const variant = parsePriceVariant(jar.get(PRICE_VARIANT_COOKIE)?.value) ?? 'B'
+  // The variant priced and logged here is the one shown: always A while the split is off.
+  const variant = effectiveVariant(parsePriceVariant(jar.get(PRICE_VARIANT_COOKIE)?.value) ?? 'B')
   const { label: price } = priceForVariant(variant)
   const hero = HEROES[angle]
 

@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest'
 import { startCookies } from './start-cookies'
 
-const opts = { random: () => 0.9, newId: () => 'new-anon-id-0001', allowVariantParam: true }
+// These cases cover the A/B split itself, so it runs here; the off default is tested at the end.
+const opts = { random: () => 0.9, newId: () => 'new-anon-id-0001', allowVariantParam: true, splitEnabled: true }
 const q = (s: string) => new URLSearchParams(s)
 
 describe('startCookies (sales page → Prompt 3 cookie contract)', () => {
@@ -49,5 +50,12 @@ describe('startCookies (sales page → Prompt 3 cookie contract)', () => {
     const prod = { ...opts, allowVariantParam: false }
     expect(startCookies(q('p=A'), {}, prod).variant).toBe('B')
     expect(startCookies(q('p=B'), { variant: 'A' }, prod).variant).toBe('A')
+  })
+
+  it('split off: new visitors get A, ?p= is ignored, an existing B cookie is kept (priced as A elsewhere)', () => {
+    const off = { ...opts, splitEnabled: false }
+    expect(startCookies(q(''), {}, off).variant).toBe('A')
+    expect(startCookies(q('p=B'), {}, off).variant).toBe('A')
+    expect(startCookies(q(''), { variant: 'B' }, off).variant).toBe('B')
   })
 })

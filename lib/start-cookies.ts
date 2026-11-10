@@ -9,7 +9,7 @@ import {
   sanitizeAttribution,
   type Attribution,
 } from '@/lib/funnel-shared'
-import { PRICE_VARIANT_COOKIE, parsePriceVariant, randomPriceVariant, type PriceVariant } from '@/lib/pricing'
+import { PRICE_VARIANT_COOKIE, parsePriceVariant, priceSplitEnabled, randomPriceVariant, type PriceVariant } from '@/lib/pricing'
 
 export interface StartCookies {
   anonId: string
@@ -25,6 +25,8 @@ export interface StartCookies {
  *   cookie (a later visit without params doesn't wipe the original source);
  * - price variant: ?p=A|B (preview/local only — ignored on production, so a
  *   shared link can't pick the price), else the existing cookie, else 50/50.
+ *   With the split off (PRICE_SPLIT_ENABLED), ?p= is ignored and new visitors
+ *   get A; an existing B cookie is kept but priced as A (see effectiveVariant).
  */
 export function startCookies(
   search: URLSearchParams,
@@ -33,6 +35,7 @@ export function startCookies(
     random = Math.random,
     newId = () => crypto.randomUUID(),
     allowVariantParam = process.env.VERCEL_ENV !== 'production',
+    splitEnabled = priceSplitEnabled(),
   } = {}
 ): StartCookies {
   const anonId = sanitizeAnonId(existing.anonId) ?? newId()
@@ -48,8 +51,8 @@ export function startCookies(
     : kept
   const attribution = { ...raw, angle: parseAngle(fromUrl ? search.get('a') : raw.angle) ?? DEFAULT_ANGLE }
 
-  const fromParam = allowVariantParam ? parsePriceVariant(search.get('p')) : null
-  const variant = fromParam ?? parsePriceVariant(existing.variant) ?? randomPriceVariant(random)
+  const fromParam = allowVariantParam && splitEnabled ? parsePriceVariant(search.get('p')) : null
+  const variant = fromParam ?? parsePriceVariant(existing.variant) ?? randomPriceVariant(random, splitEnabled)
 
   return { anonId, attribution, variant }
 }
