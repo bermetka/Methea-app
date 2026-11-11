@@ -10,6 +10,7 @@ import PaywallLock from '@/components/paywall/PaywallLock'
 import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
 import MethodologyChainView from './MethodologyChain'
 import type { Project } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 // Claude runs while this page renders or in its server actions, which execute
 // on this route — allow up to 60s instead of the platform default.
@@ -20,7 +21,7 @@ export const metadata = { title: 'Your methodology — Methea' }
 export default async function MethodologyPage({ params }: { params: { id: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const { data: project } = await supabase
     .from('projects')

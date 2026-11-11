@@ -6,11 +6,12 @@ import { requireFullAccess } from '@/lib/access'
 import { updateResearchContext } from '@/lib/research-context'
 import { resolveProjectTheories } from '@/lib/project-theories'
 import { codeTranscript } from '@/lib/prompts/analysis'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export async function runTranscriptAnalysis(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const projectId = formData.get('projectId') as string
   const file = formData.get('transcript') as File | null
@@ -92,7 +93,7 @@ export async function runTranscriptAnalysis(formData: FormData) {
 export async function confirmThemes(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const projectId = formData.get('projectId') as string
   const confirmedIds: string[] = JSON.parse(formData.get('confirmedIds') as string)

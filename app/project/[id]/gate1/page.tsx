@@ -43,6 +43,7 @@ export default async function Gate1Page({ params }: { params: { id: string } }) 
           initialAnswers={gate1?.responses ?? {}}
           initialContextNote={gate1?.context_note ?? ''}
           completed={!!gate1?.completed}
+          refinedQuestion={gate1?.refined?.question ?? null}
         />
       </div>
     </main>

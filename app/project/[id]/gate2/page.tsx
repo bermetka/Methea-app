@@ -12,6 +12,7 @@ import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import { gateStudentList, gateTheoryReading } from '@/lib/reading-gate'
 import Gate2View, { type Gate2Theory } from './Gate2View'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export const metadata = { title: 'Reading — Methea' }
 // Server actions on this page (list check: parse + lookups + tagging) can take a while.
@@ -20,7 +21,7 @@ export const maxDuration = 60
 export default async function Gate2Page({ params }: { params: { id: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const { data: project } = await supabase
     .from('projects')

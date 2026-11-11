@@ -6,6 +6,7 @@ import { hasFullAccess } from '@/lib/entitlement'
 import { getUnlockInfo } from '@/lib/checkout'
 import ExportView from './ExportView'
 import type { Project, ResearchContext } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export async function generateMetadata() {
   return { title: 'Export proposal — Methea' }
@@ -14,7 +15,7 @@ export async function generateMetadata() {
 export default async function ExportPage({ params }: { params: { id: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const { data: project } = await supabase
     .from('projects')

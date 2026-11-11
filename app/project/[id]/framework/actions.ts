@@ -6,11 +6,12 @@ import { updateResearchContext } from '@/lib/research-context'
 import { accessOptions } from '@/lib/access'
 import { hasFullAccess } from '@/lib/entitlement'
 import type { FrameworkEdge, FrameworkCitation } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export async function saveFramework(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const projectId          = formData.get('projectId') as string
   const layout             = formData.get('layout') as 'hierarchy' | 'hub-and-spoke' | 'linear'

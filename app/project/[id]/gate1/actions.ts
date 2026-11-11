@@ -4,6 +4,8 @@ import { redirect } from 'next/navigation'
 import { trackEvent } from '@/lib/funnel'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
+import { answerValues } from '@/lib/gate1-answers'
+import type { Gate1Answer } from '@/types/database'
 
 export async function submitGate1(formData: FormData) {
   const supabase = createClient()
@@ -11,7 +13,7 @@ export async function submitGate1(formData: FormData) {
   if (!user) redirect('/login')
 
   const projectId   = formData.get('projectId') as string
-  const answers     = JSON.parse(formData.get('answers') as string) as Record<string, string>
+  const answers     = parseAnswers(formData.get('answers'))
   const contextNote = ((formData.get('contextNote') as string) ?? '').trim()
 
   const { data: project } = await supabase
@@ -53,10 +55,24 @@ export async function submitGate1(formData: FormData) {
     supabase
   )
 
-  await trackEvent('gate1_done', { once: projectId })
-  // Return the next step instead of redirecting, so the client navigates and the
-  // theories loading screen shows at once. Mirrors the project page's routing.
-  return project.research_context?.theories?.selected_ids?.length
-    ? `/project/${projectId}`
-    : `/project/${projectId}/theories`
+  await trackEvent('gate1_done', { props: { guest: !!user.is_anonymous }, once: projectId })
+  // Next: the "question refined" screen (before/after), which makes the refined
+  // question and links on to theories — or, for a guest, asks for an email.
+  // Returned instead of redirecting, so the client navigates and its loading screen shows at once.
+  return `/project/${projectId}/refined`
+}
+
+/** Answers from the form: a value per question, or a list for a multi question. Anything else is dropped. */
+function parseAnswers(raw: FormDataEntryValue | null): Record<string, Gate1Answer> {
+  let parsed: unknown
+  try { parsed = JSON.parse(typeof raw === 'string' ? raw : '{}') } catch { return {} }
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return {}
+  const out: Record<string, Gate1Answer> = {}
+  for (const [id, value] of Object.entries(parsed as Record<string, unknown>)) {
+    if (!/^q\d$/.test(id)) continue
+    const values = answerValues(value as Gate1Answer)
+    if (!values.length) continue
+    out[id] = Array.isArray(value) ? values.slice(0, 6) : values[0]
+  }
+  return out
 }

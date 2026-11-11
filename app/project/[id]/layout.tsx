@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import AppHeader from '@/components/nav/AppHeader'
+import GuestHeader from '@/components/nav/GuestHeader'
 import { hasLockedProjects } from '@/lib/access'
 import type { ResearchContext } from '@/types/database'
 
@@ -9,6 +10,7 @@ export default async function ProjectLayout({ children, params }: { children: Re
 
   // Pages handle the redirect to /login and notFound themselves.
   if (!user) return <>{children}</>
+  if (user.is_anonymous) return <><GuestHeader />{children}</>
 
   const { data: project } = await supabase
     .from('projects')

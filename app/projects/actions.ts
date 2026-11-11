@@ -3,11 +3,12 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { enforceFreeProjectCap } from '@/lib/project-cap'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export async function createProject(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   await enforceFreeProjectCap(supabase, user.id)
 
@@ -33,7 +34,7 @@ export async function createProject(formData: FormData) {
 export async function archiveProject(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const projectId = formData.get('projectId') as string
   await supabase

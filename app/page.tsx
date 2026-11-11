@@ -16,7 +16,7 @@ const CTA_LABEL = 'Check my research for free'
 export default async function LandingPage() {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (user) redirect('/projects')
+  if (user && !user.is_anonymous) redirect('/projects')
 
   return (
     <div style={s.root}>

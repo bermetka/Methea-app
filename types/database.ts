@@ -10,6 +10,18 @@ export interface ClarificationQuestion {
   id: string
   prompt: string
   options: { value: string; title: string; description: string }[]
+  /** Several answers can be true at once (Gate 1 q3, access): checkboxes, answer is a string[]. */
+  multi?: boolean
+}
+
+/** One Gate 1 answer: an option value, or several for a multi question. Old projects only have strings. */
+export type Gate1Answer = string | string[]
+
+/** The question after Gate 1 — shown before/after on the "question refined" screen. */
+export interface RefinedQuestion {
+  question: string
+  changes: string[]       // 2-3 short lines: what got narrower and why
+  source: string          // the Gate 1 answers + note it was made from; regenerated when they change
 }
 
 export interface BriefExtraction {
@@ -153,10 +165,13 @@ export interface ResearchContext {
   brief?: BriefExtraction
   socratic_gate_1?: {
     completed: boolean
-    responses: Record<string, string>
+    responses: Record<string, Gate1Answer>
     questions?: ClarificationQuestion[]
     context_note?: string              // optional free-text nuance folded into downstream generation
+    refined?: RefinedQuestion          // the sharpened question, made after the answers
   }
+  /** Guest projects only: AI runs used per step (see GUEST_RUN_LIMIT). */
+  guest_usage?: Record<string, number>
   theories?: {
     selected_ids: string[]
     reading_list_items: ReadingListItem[]

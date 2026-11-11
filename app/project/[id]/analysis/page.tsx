@@ -7,6 +7,7 @@ import PaywallLock from '@/components/paywall/PaywallLock'
 import ViewOnlyNotice from '@/components/paywall/ViewOnlyNotice'
 import UploadForm from './UploadForm'
 import FindingsView from './FindingsView'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 // Claude runs while this page renders or in its server actions, which execute
 // on this route — allow up to 60s instead of the platform default.
@@ -17,7 +18,7 @@ export const metadata = { title: 'Transcript analysis — Methea' }
 export default async function AnalysisPage({ params }: { params: { id: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const { data: project } = await supabase
     .from('projects')

@@ -6,6 +6,7 @@ import { accessUntil, hasFullAccess, isAccessExpired, isPaywallActive, isProject
 import { formatAccessDate, getUserPriceVariant } from '@/lib/checkout'
 import { priceForVariant, FREE_FEATURES, PAID_FEATURES } from '@/lib/pricing'
 import type { Project } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export const metadata = { title: 'Plan & billing — Methea' }
 
@@ -14,7 +15,7 @@ type Row = Pick<Project, 'id' | 'title' | 'paid_at'>
 export default async function AccountPage({ searchParams }: { searchParams: { preview?: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
 
   const { data } = await supabase
     .from('projects')
