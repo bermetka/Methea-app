@@ -1,5 +1,6 @@
 import { generateJSON } from '@/lib/claude'
 import type { ResearchContext, Theory, TheoryFitResult } from '@/types/database'
+import { formatGate1Answers } from '@/lib/gate1-answers'
 
 const MAX_CUSTOM_SUGGESTIONS = 3
 
@@ -29,12 +30,13 @@ export async function suggestTheories(
 
   const userPrompt = `Student's research context:
 Topic: ${brief.topic}
-Research question: ${brief.research_question}
+Research question: ${gate1?.refined?.question ?? brief.research_question}
+${gate1?.refined?.question ? `(Sharpened after the student's clarifying answers; their first version was: ${brief.research_question})` : ''}
 Research type: ${brief.research_type}
 Discipline: ${brief.discipline}
 Degree level: ${brief.degree_level}
 ${brief.constraints?.length ? `Constraints: ${brief.constraints.join('; ')}` : ''}
-${gate1?.responses ? `Clarification answers: ${JSON.stringify(gate1.responses)}` : ''}
+${gate1?.responses ? `Clarification answers:\n${formatGate1Answers(gate1.questions, gate1.responses)}` : ''}
 ${gate1?.context_note ? `Student's added context (weight this nuance in your reasoning): ${gate1.context_note}` : ''}
 
 The theory library is in the system prompt (you MUST only suggest IDs from it).

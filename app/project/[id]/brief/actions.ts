@@ -5,6 +5,7 @@ import { trackEvent } from '@/lib/funnel'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
 import { extractBrief, generateSocraticQuestions } from '@/lib/prompts/brief'
+import { GUEST_RUN_LIMIT, guestRunsUsed } from '@/lib/guest'
 
 export async function submitBrief(formData: FormData): Promise<{ error: string } | void> {
   const supabase = createClient()
@@ -44,6 +45,11 @@ export async function submitBrief(formData: FormData): Promise<{ error: string }
 
   if (!project) redirect('/onboarding')
 
+  // Guests: a few AI runs per project, so ads and bots can't burn the API.
+  const guest = !!user.is_anonymous
+  const briefRuns = guestRunsUsed(project.research_context?.guest_usage, 'brief')
+  if (guest && briefRuns >= GUEST_RUN_LIMIT) return { error: 'GUEST_LIMIT' }
+
   // Re-submitting brief invalidates downstream blocks if theories already selected
   const existingCtx = project.research_context
   const currentOutdated: string[] = existingCtx?.outdated_blocks ?? []
@@ -69,6 +75,7 @@ export async function submitBrief(formData: FormData): Promise<{ error: string }
     return { error: 'AI_GENERATION_FAILED' }
   }
   if (readingList) briefExtraction.reading_list_raw = readingList
+  briefExtraction.input_topic = topic.trim().slice(0, 2000)
 
   // 3. Save both to research_context in one update
   await updateResearchContext(
@@ -83,11 +90,12 @@ export async function submitBrief(formData: FormData): Promise<{ error: string }
       },
       outdated_blocks: outdatedBlocks,
       file_extraction_empty: fileExtractionEmpty,
+      ...(guest ? { guest_usage: { ...project.research_context?.guest_usage, brief: briefRuns + 1 } } : {}),
     },
     supabase
   )
 
-  await trackEvent('brief_submitted', { once: projectId })
+  await trackEvent('brief_submitted', { props: { guest }, once: projectId })
   redirect(`/project/${projectId}/gate1`)
 }
 

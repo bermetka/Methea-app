@@ -6,6 +6,7 @@ import { accessUntil, hasFullAccess, isAccessExpired, isPaywallActive, isProject
 import { formatAccessDate, getUserPriceVariant } from '@/lib/checkout'
 import { priceForVariant, FREE_FEATURES, PAID_FEATURES } from '@/lib/pricing'
 import type { Project } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export const metadata = { title: 'Plan & billing — Methea' }
 
@@ -15,6 +16,8 @@ export default async function AccountPage({ searchParams }: { searchParams: { pr
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const { data } = await supabase
     .from('projects')

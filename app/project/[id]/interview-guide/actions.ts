@@ -5,11 +5,14 @@ import { createClient } from '@/lib/supabase/server'
 import { requireFullAccess } from '@/lib/access'
 import { updateResearchContext } from '@/lib/research-context'
 import type { InterviewQuestion } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export async function confirmEthics(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const projectId = formData.get('projectId') as string
 
@@ -21,6 +24,8 @@ export async function saveInterviewGuide(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const projectId = formData.get('projectId') as string
   const questions: InterviewQuestion[] = JSON.parse(formData.get('questions') as string)

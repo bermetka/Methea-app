@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { createFirstProject } from './actions'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export const metadata = { title: 'Start your project — Methea' }
 
@@ -8,6 +9,8 @@ export default async function OnboardingPage() {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user, { strict: true })
+  if (memberRedirect) redirect(memberRedirect)
 
   // Onboarding is now handled by /projects
   redirect('/projects')

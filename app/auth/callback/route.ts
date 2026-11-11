@@ -12,6 +12,8 @@ import { CHECK_COOKIE } from '@/lib/check'
 import { startProjectFromCheck } from '@/lib/check-project'
 import { ANALYTICS_OFF_COOKIE, SIGNUP_EVENT_COOKIE, analyticsOffCookieOptions } from '@/lib/consent'
 import { isExcludedFromAnalytics } from '@/lib/analytics-exclusion'
+import { GUEST_CLAIM_COOKIE } from '@/lib/guest'
+import { claimGuestProject } from '@/lib/guest-claim'
 
 const EMAIL_OTP_TYPES: EmailOtpType[] = ['email', 'magiclink', 'signup', 'invite', 'recovery', 'email_change']
 
@@ -26,6 +28,8 @@ export async function GET(request: Request) {
   const otpType = EMAIL_OTP_TYPES.find(t => t === searchParams.get('type'))
   const rawNext = searchParams.get('next') ?? '/projects'
   const next = rawNext.startsWith('/') && !rawNext.startsWith('//') ? rawNext : '/projects'
+  // Came from the guest save screen (guest → account, or sign-in to an existing account).
+  const fromGuest = searchParams.get('from') === 'guest'
 
   if (code || (tokenHash && otpType)) {
     const cookieStore = cookies()
@@ -67,7 +71,7 @@ export async function GET(request: Request) {
           })
           // Service role: the new session cookie isn't readable within this request yet.
           await trackServerEvent('signup', data.user.id, {
-            props: { ...visit.attribution, price_variant: variant },
+            props: { ...visit.attribution, price_variant: variant, ...(fromGuest ? { from: 'guest' } : {}) },
             once: data.user.id,
           })
         }
@@ -94,7 +98,12 @@ export async function GET(request: Request) {
       // Came from /check: start their first project from the question they typed.
       // Only for the default landing, so other sign-in flows keep their `next`.
       let dest = next
-      if (visit.check && next === '/projects') {
+      // Signed in to an existing account from a guest project: bring the project along.
+      if (searchParams.get('claim') === '1') {
+        const claimed = await claimGuestProject(supabase, data.user.id, cookieStore.get(GUEST_CLAIM_COOKIE)?.value)
+        if (claimed) dest = claimed
+        cookieStore.set(GUEST_CLAIM_COOKIE, '', { path: '/', maxAge: 0 })
+      } else if (visit.check && next === '/projects') {
         dest = await startProjectFromCheck(supabase, data.user.id, visit.check)
         if (dest.startsWith('/project/')) cookieStore.set(CHECK_COOKIE, '', { path: '/', maxAge: 0 })
       }

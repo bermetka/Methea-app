@@ -4,36 +4,48 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import PendingSteps from '@/components/ui/PendingSteps'
 import RadioCard from '@/components/ui/RadioCard'
+import CheckCard from '@/components/ui/CheckCard'
+import { answerText, answerValues, isAnswered } from '@/lib/gate1-answers'
 import GlossaryTooltip from '@/components/ui/GlossaryTooltip'
 import { glossaryTerm } from '@/lib/glossary'
 import { submitGate1 } from './actions'
-import type { ClarificationQuestion, BriefExtraction } from '@/types/database'
+import type { ClarificationQuestion, BriefExtraction, Gate1Answer } from '@/types/database'
 
 interface Props {
   projectId: string
   questions: ClarificationQuestion[]
   brief: BriefExtraction
-  initialAnswers?: Record<string, string>
+  initialAnswers?: Record<string, Gate1Answer>
+  refinedQuestion?: string | null
   initialContextNote?: string
   completed?: boolean
 }
 
 export default function Gate1Form({
-  projectId, questions, brief, initialAnswers, initialContextNote, completed,
+  projectId, questions, brief, initialAnswers, initialContextNote, completed, refinedQuestion,
 }: Props) {
   // A completed gate opens in review mode; editing reveals the wizard.
   const [editing, setEditing]       = useState(!completed)
   const [step, setStep]             = useState(0)
-  const [answers, setAnswers]       = useState<Record<string, string>>(initialAnswers ?? {})
+  const [answers, setAnswers]       = useState<Record<string, Gate1Answer>>(initialAnswers ?? {})
   const [contextNote, setContextNote] = useState(initialContextNote ?? '')
   const [submitting, setSubmitting] = useState(false)
   const router = useRouter()
 
   const current  = questions[step]
-  const selected = answers[current.id]
+  const selected = isAnswered(answers[current.id])
   const isLast   = step === questions.length - 1
 
   function selectOption(value: string) {
+    if (current.multi) {
+      // Checkboxes: toggle this value in the list.
+      setAnswers(prev => {
+        const values = answerValues(prev[current.id])
+        const next = values.includes(value) ? values.filter(v => v !== value) : [...values, value]
+        return { ...prev, [current.id]: next }
+      })
+      return
+    }
     setAnswers(prev => ({ ...prev, [current.id]: value }))
   }
 
@@ -67,14 +79,13 @@ export default function Gate1Form({
       <div style={s.container}>
         <div style={s.reviewCard}>
           <p style={s.reviewHeading}>Research question refined</p>
+          {refinedQuestion && <p style={s.reviewRefined}>{refinedQuestion}</p>}
           <p style={s.reviewSub}>Your answers to these questions shaped your final research question.</p>
           <div style={s.divider} />
           {questions.map(q => (
             <div key={q.id} style={s.qaRow}>
               <p style={s.qLabel}>{q.prompt}</p>
-              <p style={s.aText}>
-                {q.options.find(o => o.value === answers[q.id])?.title ?? answers[q.id] ?? '—'}
-              </p>
+              <p style={s.aText}>{answerText(q, answers[q.id])}</p>
             </div>
           ))}
           {contextNote.trim() && (
@@ -135,11 +146,19 @@ export default function Gate1Form({
 
       {/* Radio cards */}
       <div style={s.options}>
-        {current.options.map(opt => (
+        {current.multi && <p style={s.multiHint}>Pick all that apply</p>}
+        {current.options.map(opt => current.multi ? (
+          <CheckCard
+            key={opt.value}
+            option={opt}
+            selected={answerValues(answers[current.id]).includes(opt.value)}
+            onSelect={() => selectOption(opt.value)}
+          />
+        ) : (
           <RadioCard
             key={opt.value}
             option={opt}
-            selected={selected === opt.value}
+            selected={answers[current.id] === opt.value}
             onSelect={() => selectOption(opt.value)}
           />
         ))}
@@ -248,6 +267,8 @@ const s: Record<string, React.CSSProperties> = {
   reviewCard:    { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem' },
   reviewHeading: { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.125rem', fontWeight: 400, color: 'var(--ink)' },
   reviewSub:     { fontSize: '0.875rem', color: 'var(--pencil)', marginTop: '-0.5rem' },
+  reviewRefined: { fontSize: '1rem', fontWeight: 600, color: 'var(--ink)', lineHeight: 1.45 },
+  multiHint:     { fontSize: '0.8125rem', color: 'var(--pencil)', margin: '0 0 -0.25rem' },
   divider:       { borderTop: '1px solid var(--stone-soft)' },
   qaRow:         { display: 'flex', flexDirection: 'column' as const, gap: '0.25rem' },
   qLabel:        { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--pencil)' },

@@ -81,8 +81,11 @@ export function formatAccessDate(date: Date): string {
  */
 export async function getUnlockInfo(
   project: Pick<Project, 'id' | 'paid_at'>,
-  user: { id: string; email?: string }
+  user: { id: string; email?: string; is_anonymous?: boolean; new_email?: string | null }
 ): Promise<UnlockInfo> {
   await trackEvent('paywall_view', { once: project.id })
-  return { kind: 'checkout', ...(await getCheckoutContext(user)) }
+  const context = await getCheckoutContext(user)
+  // Guests pay only after confirming the email they gave (Paddle needs a real customer).
+  if (user.is_anonymous) return { kind: 'checkout', ...context, confirmEmailFirst: user.new_email ?? '' }
+  return { kind: 'checkout', ...context }
 }

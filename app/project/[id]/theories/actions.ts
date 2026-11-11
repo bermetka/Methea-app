@@ -7,6 +7,7 @@ import { updateResearchContext } from '@/lib/research-context'
 import { isCustomId, newCustomTheoryId } from '@/lib/project-theories'
 import { verifyCitation } from '@/lib/openalex'
 import type { ReadingListItem, TheorySuggestion, CustomTheory } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 function normDoi(raw: string): string {
   return raw.trim().replace(/^https?:\/\/(dx\.)?doi\.org\//i, '').replace(/^doi:/i, '').toLowerCase()
@@ -19,6 +20,8 @@ export async function saveTheorySelection(formData: FormData): Promise<string> {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const projectId    = formData.get('projectId') as string
   const selectedIds  = JSON.parse(formData.get('selectedIds') as string) as string[]
@@ -214,6 +217,8 @@ export async function removeCustomTheory(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const projectId = formData.get('projectId') as string
   const customId  = formData.get('customId') as string

@@ -10,7 +10,7 @@ export const metadata = { title: 'Sign in — Methea' }
 export default async function LoginPage() {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (user) redirect('/projects')
+  if (user && !user.is_anonymous) redirect('/projects')
 
   // Signed into the sign-in link, so the sales-page visit survives opening the
   // email on another device (restored in /auth/callback).

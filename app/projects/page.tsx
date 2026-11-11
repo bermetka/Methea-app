@@ -6,6 +6,7 @@ import { FREE_CAP_ERROR, FREE_CAP_MESSAGE } from '@/lib/project-cap'
 import { getUserPriceVariant } from '@/lib/checkout'
 import { priceForVariant } from '@/lib/pricing'
 import type { Project } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export const metadata = { title: 'My projects — Methea' }
 
@@ -13,6 +14,8 @@ export default async function ProjectsPage({ searchParams }: { searchParams: { e
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const { data: projects } = await supabase
     .from('projects')

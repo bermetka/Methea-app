@@ -6,6 +6,7 @@ import { accessUntil, hasFullAccess, isProjectPaid } from '@/lib/entitlement'
 import { formatAccessDate, getUnlockInfo } from '@/lib/checkout'
 import ProjectDashboard from './ProjectDashboard'
 import type { Project } from '@/types/database'
+import { memberOnlyRedirect } from '@/lib/guest'
 
 export async function generateMetadata() {
   return { title: 'Project — Methea' }
@@ -15,6 +16,8 @@ export default async function ProjectPage({ params }: { params: { id: string } }
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const { data: project } = await supabase
     .from('projects')
