@@ -387,9 +387,11 @@ export default function Gate2View(p: Props) {
         <p style={s.label}>Check before you build</p>
         <h2 id="gate2q" style={s.h2}>
           You chose {p.theories.length} {p.theories.length === 1 ? 'theory' : 'theories'}
-          {coreTotal ? ` with ${coreTotal} core readings` : ''}
-          {p.constraints.length ? `, and your brief mentions: ${p.constraints.join('; ')}` : ''}. Can you read and apply {p.theories.length === 1 ? 'it' : 'them'} in the time you have?
+          {coreTotal ? ` with ${coreTotal} core readings` : ''}. Can you read and apply {p.theories.length === 1 ? 'it' : 'them'} in the time you have?
         </h2>
+        {p.constraints.length > 0 && (
+          <p style={s.muted}>Keep in mind from your brief: {p.constraints.slice(0, 3).join('; ')}{p.constraints.length > 3 ? '…' : ''}</p>
+        )}
         {mustReads.length > 0 && (
           <p style={s.muted}>You&apos;ve marked {readCount} of {mustReads.length} core readings as read. You can continue now and come back to them.</p>
         )}
