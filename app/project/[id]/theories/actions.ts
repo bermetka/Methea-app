@@ -19,7 +19,9 @@ function normText(raw: string): string {
 export async function saveTheorySelection(formData: FormData): Promise<string> {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
+  if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const projectId    = formData.get('projectId') as string
   const selectedIds  = JSON.parse(formData.get('selectedIds') as string) as string[]
@@ -214,7 +216,9 @@ export async function addCustomTheory(
 export async function removeCustomTheory(formData: FormData) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
+  if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const projectId = formData.get('projectId') as string
   const customId  = formData.get('customId') as string

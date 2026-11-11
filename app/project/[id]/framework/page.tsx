@@ -54,7 +54,9 @@ async function saveFrameworkEdgesOnly(
 export default async function FrameworkPage({ params }: { params: { id: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
+  if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const { data: project } = await supabase
     .from('projects')

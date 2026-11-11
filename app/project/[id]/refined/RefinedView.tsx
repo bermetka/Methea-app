@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { saveGuestEmail } from './actions'
 
 interface Props {
@@ -73,13 +74,14 @@ export default function RefinedView({ projectId, before, after, changes, guest, 
       </div>
 
       {guest && sheetOpen && (
-        <SaveSheet projectId={projectId} question={after ?? before} onClose={() => setSheetOpen(false)} />
+        <SaveSheet projectId={projectId} question={after ?? before} nextHref={nextHref} onClose={() => setSheetOpen(false)} />
       )}
     </>
   )
 }
 
-function SaveSheet({ projectId, question, onClose }: { projectId: string; question: string; onClose: () => void }) {
+function SaveSheet({ projectId, question, nextHref, onClose }: { projectId: string; question: string; nextHref: string; onClose: () => void }) {
+  const router = useRouter()
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
   const [existing, setExisting] = useState(false)
@@ -89,8 +91,13 @@ function SaveSheet({ projectId, question, onClose }: { projectId: string; questi
     e.preventDefault()
     setStatus('sending')
     const res = await saveGuestEmail(projectId, email)
-    if (res.ok) {
-      setExisting(res.existing)
+    if (res.ok && !res.existing) {
+      // Saved: straight on to theories. The confirmation link can wait until they pay.
+      setStatus('sent')
+      router.push(nextHref)
+    } else if (res.ok) {
+      // The email already has an account: they have to sign in with the link.
+      setExisting(true)
       setStatus('sent')
     } else {
       setError(SAVE_ERRORS[res.error] ?? SAVE_ERRORS.FAILED)
@@ -102,7 +109,12 @@ function SaveSheet({ projectId, question, onClose }: { projectId: string; questi
     <div style={s.overlay} role="dialog" aria-modal="true" aria-labelledby="save-title" onClick={onClose}>
       <div style={s.sheet} onClick={e => e.stopPropagation()}>
         <div style={s.handle} aria-hidden="true" />
-        {status === 'sent' ? (
+        {status === 'sent' && !existing ? (
+          <>
+            <h2 id="save-title" style={s.sheetTitle}>Saved</h2>
+            <p style={s.sheetText}>Taking you to the theories that fit your question…</p>
+          </>
+        ) : status === 'sent' ? (
           <>
             <h2 id="save-title" style={s.sheetTitle}>Check your email</h2>
             <p style={s.sheetText}>
@@ -116,7 +128,7 @@ function SaveSheet({ projectId, question, onClose }: { projectId: string; questi
           <form onSubmit={submit} style={s.form}>
             <h2 id="save-title" style={s.sheetTitle}>Keep your question</h2>
             <p style={s.sheetQuestion}>{question}</p>
-            <p style={s.sheetText}>Add your email to save this project and see theories that fit it. We send a sign-in link, no password.</p>
+            <p style={s.sheetText}>Add your email to save this project. You go straight on to theories; we also send a link so you can come back from any device.</p>
             <div style={s.ticks}>
               {['Your brief and refined question are saved', 'Next: 3–5 theories for your question, free', 'Come back from any device'].map(t => (
                 <div key={t} style={s.tick}><span style={s.tickMark} aria-hidden="true">✓</span><span>{t}</span></div>
@@ -136,10 +148,10 @@ function SaveSheet({ projectId, question, onClose }: { projectId: string; questi
             </label>
             {status === 'error' && <p style={s.error} role="alert">{error}</p>}
             <button type="submit" disabled={status === 'sending'} style={s.cta} aria-busy={status === 'sending'}>
-              {status === 'sending' ? 'Sending…' : 'Send me the link'}
+              {status === 'sending' ? 'Saving…' : 'Save and see theories →'}
             </button>
             <p style={s.notNow}>
-              Without email the project stays on this device for 7 days.{' '}
+              No password. Confirm your email from the link any time before you pay.{' '}
               <button type="button" onClick={onClose} style={s.linkBtn}>Not now</button>
             </p>
           </form>
@@ -152,7 +164,7 @@ function SaveSheet({ projectId, question, onClose }: { projectId: string; questi
 const s: Record<string, React.CSSProperties> = {
   head:         { display: 'flex', flexDirection: 'column', gap: '0.25rem' },
   eyebrow:      { fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--pencil)' },
-  heading:      { fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: 400, letterSpacing: '-0.015em', color: 'var(--ink)', lineHeight: 1.2 },
+  heading:      { margin: 0, fontFamily: "'Schibsted Grotesk', system-ui, sans-serif", fontSize: 'clamp(1.6rem, 5.5vw, 2.1rem)', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--ink)', lineHeight: 1.15 },
   before:       { background: 'var(--error-bg)', border: '1px solid #EDBBA8', borderRadius: 'var(--radius-lg)', padding: '1rem 1.25rem', display: 'flex', flexDirection: 'column', gap: '0.375rem' },
   beforeLabel:  { fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--error)' },
   beforeText:   { fontSize: '0.9375rem', lineHeight: 1.5, color: 'var(--graphite)', textDecoration: 'line-through', textDecorationColor: '#C8705A' },
@@ -173,7 +185,7 @@ const s: Record<string, React.CSSProperties> = {
   sheet:        { width: '100%', maxWidth: 560, background: 'var(--paper)', borderRadius: '20px 20px 0 0', padding: '0.75rem 1.25rem 1.75rem', maxHeight: '92vh', overflowY: 'auto' },
   handle:       { width: 40, height: 4, borderRadius: 2, background: 'var(--stone)', margin: '0 auto 1rem' },
   form:         { display: 'flex', flexDirection: 'column', gap: '0.875rem' },
-  sheetTitle:   { fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.5rem', fontWeight: 400, color: 'var(--ink)', margin: 0 },
+  sheetTitle:   { fontFamily: "'Schibsted Grotesk', system-ui, sans-serif", fontSize: '1.5rem', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--ink)', margin: 0 },
   sheetQuestion:{ fontSize: '0.9375rem', fontWeight: 600, color: 'var(--ink)', lineHeight: 1.45, background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius)', padding: '0.75rem 0.875rem' },
   sheetText:    { fontSize: '0.9375rem', lineHeight: 1.5, color: 'var(--graphite)' },
   ticks:        { display: 'flex', flexDirection: 'column', gap: '0.375rem', fontSize: '0.875rem', lineHeight: 1.4, color: 'var(--ink)' },

@@ -32,6 +32,8 @@ export interface BriefExtraction {
   degree_level: string
   discipline: string
   reading_list_raw?: string
+  /** What the student typed, word for word — the "before" on the question-refined screen. */
+  input_topic?: string
 }
 
 export interface TheorySuggestion {

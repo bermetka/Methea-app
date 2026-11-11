@@ -22,7 +22,7 @@ export async function refineQuestion(
   contextNote: string | undefined
 ): Promise<RefinedQuestion> {
   const userPrompt = `Student's brief:
-Topic: ${brief.topic}
+${brief.input_topic ? `What they wrote, in their words: ${brief.input_topic}\n` : ''}Topic: ${brief.topic}
 Their research question: ${brief.research_question}
 Research type: ${brief.research_type}
 Discipline: ${brief.discipline}
@@ -33,12 +33,17 @@ Their answers to the clarifying questions:
 ${formatGate1Answers(questions, responses) || '(none)'}
 ${contextNote?.trim() ? `\nTheir added context: ${contextNote.trim()}` : ''}
 
-Rewrite their research question so it is researchable: one group they can describe in a sentence, a place or setting they can actually reach (from their access answers), and one idea a theory can attach to. Keep their topic and their words where you can.
+Rewrite their research question so it is researchable. The result must be clearly narrower than what they wrote — a reader should see the difference at a glance:
+- ONE specific group they can describe in a sentence (not "people", "students", "entrepreneurs" in general),
+- ONE place or setting they can actually reach, taken from their access answers (a city, a district, an organisation — not a whole region or country unless that is all they gave),
+- ONE idea or mechanism a theory can attach to (e.g. "decide whether to try", "trust", "household income"), not a list of outcomes,
+- a time frame or stage if their answers give one.
+Keep their topic and their words where you can. Never add a theory name, author or citation.
 
 Return this exact JSON shape:
 {
   "refined_question": "one question, one sentence, ending with a question mark, under 30 words",
-  "changes": ["2-3 short lines (under 14 words each) on what got narrower and why, each starting with what is now fixed, e.g. 'A group you can reach: women already running a business'"]
+  "changes": ["exactly 3 short lines (under 14 words each), one per thing that got narrower — who, where, which idea — each starting with what is now fixed, e.g. 'A group you can reach: women already running a business', 'One place: Bishkek, not all of Central Asia'"]
 }`
 
   const raw = await generateJSON<{ refined_question?: unknown; changes?: unknown }>(SYSTEM, userPrompt, 400)

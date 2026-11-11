@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { initializePaddle, CheckoutEventNames, type CheckoutEventsData, type Paddle } from '@paddle/paddle-js'
 import { foundingBannerText, priceFromLabel, type CheckoutContext } from '@/lib/pricing'
 import { trackUnlockClick } from '@/app/actions/funnel'
+import { resendGuestConfirmation } from '@/app/actions/guest'
 import { pushConversion } from '@/lib/consent'
 
 interface Props {
@@ -20,7 +21,34 @@ interface Props {
 // token/config) so the button never sits in a clickable-but-silently-broken state.
 type Status = 'loading' | 'idle' | 'opening' | 'finalizing' | 'error'
 
-export default function UnlockButton({ projectId, checkout, compact, label: customLabel }: Props) {
+export default function UnlockButton(props: Props) {
+  // A guest who gave an email but hasn't confirmed it: confirm first, then pay.
+  if (props.checkout.confirmEmailFirst != null) {
+    return <ConfirmEmailFirst projectId={props.projectId} email={props.checkout.confirmEmailFirst} />
+  }
+  return <CheckoutButton {...props} />
+}
+
+function ConfirmEmailFirst({ projectId, email }: { projectId: string; email: string }) {
+  const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
+  async function resend() {
+    setState('sending')
+    const res = await resendGuestConfirmation(projectId)
+    setState(res.ok ? 'sent' : 'error')
+  }
+  return (
+    <div style={s.confirm}>
+      <p style={s.confirmText}>
+        To unlock, confirm your email first: open the link we sent{email ? <> to <strong>{email}</strong></> : ''}. You&apos;ll come straight back here.
+      </p>
+      <button type="button" onClick={resend} disabled={state === 'sending' || state === 'sent'} style={s.resendBtn}>
+        {state === 'sending' ? 'Sending…' : state === 'sent' ? 'Sent — check your inbox' : state === 'error' ? 'Couldn’t send — try again' : 'Send the link again'}
+      </button>
+    </div>
+  )
+}
+
+function CheckoutButton({ projectId, checkout, compact, label: customLabel }: Props) {
   const label = customLabel
     ? `${customLabel} — ${checkout.priceLabel} →`
     : compact
@@ -49,6 +77,10 @@ export default function UnlockButton({ projectId, checkout, compact, label: cust
             value: event.data?.totals.total ?? listPrice,
             currency: event.data?.currency_code ?? 'USD',
           })
+        }
+        // Closed without paying: the button works again (it used to stay disabled until a reload).
+        if (event.name === CheckoutEventNames.CHECKOUT_CLOSED) {
+          setStatus(prev => (prev === 'opening' ? 'idle' : prev))
         }
         if (event.name === CheckoutEventNames.CHECKOUT_COMPLETED) {
           if (event.data) pushPurchase(event.data)
@@ -86,7 +118,9 @@ export default function UnlockButton({ projectId, checkout, compact, label: cust
   }
 
   const text =
-    status === 'loading'
+    status === 'opening'
+      ? 'Opening checkout…'
+      : status === 'loading'
       ? 'Loading checkout…'
       : status === 'error'
         ? 'Checkout unavailable — refresh to retry'
@@ -97,7 +131,14 @@ export default function UnlockButton({ projectId, checkout, compact, label: cust
   return (
     <div style={s.wrap}>
       {checkout.discountCode && <p style={s.founding}>{foundingBannerText()}</p>}
-      <button type="button" onClick={handleClick} disabled={status !== 'idle'} style={s.btn}>
+      <button
+        type="button"
+        onClick={handleClick}
+        disabled={status !== 'idle'}
+        aria-busy={status === 'opening' || status === 'loading' || status === 'finalizing'}
+        className={status === 'opening' || status === 'finalizing' ? 'methea-busy' : undefined}
+        style={{ ...s.btn, ...(status === 'opening' || status === 'loading' ? s.btnBusy : {}) }}
+      >
         {text}
       </button>
     </div>
@@ -139,6 +180,10 @@ function pollForUnlock(projectId: string, onUnlocked: () => void, attempt = 0) {
 }
 
 const s: Record<string, React.CSSProperties> = {
+  confirm: { display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.5rem', background: '#FFF6D6', border: '1px solid #EBD98F', borderRadius: 'var(--radius)', padding: '0.75rem 0.875rem' },
+  confirmText: { fontSize: '0.875rem', lineHeight: 1.5, color: '#5A4A10' },
+  resendBtn: { background: 'none', border: 'none', padding: 0, color: 'var(--ink-blue)', textDecoration: 'underline', cursor: 'pointer', font: 'inherit', fontSize: '0.875rem', fontWeight: 600 },
+  btnBusy: { opacity: 0.85, cursor: 'progress' },
   wrap: { display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '0.375rem' },
   founding: { fontSize: '0.8125rem', fontWeight: 600, color: 'var(--moss)', background: 'var(--mint)', padding: '2px 8px', borderRadius: 'var(--radius-sm)' },
   btn: {

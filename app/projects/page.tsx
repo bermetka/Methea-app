@@ -13,7 +13,9 @@ export const metadata = { title: 'My projects — Methea' }
 export default async function ProjectsPage({ searchParams }: { searchParams: { error?: string; how?: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
+  if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const { data: projects } = await supabase
     .from('projects')

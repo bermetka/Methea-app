@@ -21,7 +21,9 @@ export const maxDuration = 60
 export default async function Gate2Page({ params }: { params: { id: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
+  if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const { data: project } = await supabase
     .from('projects')
@@ -76,6 +78,7 @@ export default async function Gate2Page({ params }: { params: { id: string } }) 
         recent: gated.recent,
         lockedReads: gated.lockedReads,
         lockedRecent: gated.lockedRecent,
+        lockedGuide: gated.lockedGuide,
       }
     })
   )

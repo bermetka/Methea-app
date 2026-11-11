@@ -15,24 +15,42 @@ export const GUEST_RUN_LIMIT = 3
 /** A guest has one project. */
 export const GUEST_PROJECT_LIMIT = 1
 
-/** Anonymous users who never gave an email are deleted after this many days. */
+/** Anonymous users who never gave an email are deleted after this many days… */
 export const GUEST_TTL_DAYS = 7
+/** …and those who gave one but never confirmed it, after this many. */
+export const PENDING_GUEST_TTL_DAYS = 30
 
 /** Short-lived cookie: the guest project to move to an existing account after its sign-in link. */
 export const GUEST_CLAIM_COOKIE = 'methea_guest_claim'
 export const GUEST_CLAIM_TTL_SECONDS = 60 * 60 * 24
 
-export function isGuest(user: Pick<User, 'is_anonymous'> | null | undefined): boolean {
+type GuestFields = Pick<User, 'is_anonymous'> & { new_email?: string | null }
+
+export function isGuest(user: GuestFields | null | undefined): boolean {
   return !!user?.is_anonymous
 }
 
 /**
- * Where a page that needs a real account sends someone who doesn't have one:
- * nobody → sign-in; a guest → /guest, which finds their project.
+ * A guest who gave their email on the save screen but hasn't opened the link
+ * yet. They keep going (theories, reading, framework…) without leaving for
+ * their inbox; confirming is needed only to pay or to start more projects.
  */
-export function memberOnlyRedirect(user: Pick<User, 'is_anonymous'> | null | undefined): string | null {
+export function isPendingMember(user: GuestFields | null | undefined): boolean {
+  return !!user?.is_anonymous && !!user.new_email
+}
+
+/**
+ * Where a page that needs an account sends someone who doesn't have one:
+ * nobody → sign-in; a guest → /guest, which finds their project. A guest who
+ * already gave their email may use project pages; `strict` (creating projects,
+ * onboarding) needs a confirmed account.
+ */
+export function memberOnlyRedirect(
+  user: GuestFields | null | undefined,
+  { strict = false }: { strict?: boolean } = {}
+): string | null {
   if (!user) return '/login'
-  if (user.is_anonymous) return '/guest'
+  if (user.is_anonymous && (strict || !user.new_email)) return '/guest'
   return null
 }
 

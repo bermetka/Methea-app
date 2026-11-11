@@ -96,6 +96,8 @@ export interface CheckoutContext {
   priceLabel: string
   discountCode: string | null
   customerEmail: string | null
+  /** A guest who gave this email but hasn't confirmed it yet: confirm before checkout. */
+  confirmEmailFirst?: string | null
 }
 
 /** What to show where an unlock button would go. */

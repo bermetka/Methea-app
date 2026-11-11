@@ -40,7 +40,8 @@ export async function saveGuestEmail(projectId: string, rawEmail: string): Promi
 
   const origin = siteOrigin()
   // The email templates append `&token_hash=…&type=…` to this URL ({{ .RedirectTo }}).
-  const convertParams = new URLSearchParams({ next: `/project/${projectId}/theories`, from: 'guest' })
+  // They keep going right away; the link (opened whenever) confirms the account and lands on the project.
+  const convertParams = new URLSearchParams({ next: `/project/${projectId}`, from: 'guest' })
   const { error } = await supabase.auth.updateUser(
     { email },
     { emailRedirectTo: `${origin}/auth/callback?${convertParams}` }

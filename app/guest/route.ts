@@ -14,5 +14,7 @@ export async function GET(request: Request) {
 
   const project = await findGuestProject(supabase, user.id)
   if (!project) return NextResponse.redirect(`${origin}/check`)
+  // Gave their email already: carry on in the project (only checkout waits for the confirmation).
+  if (user.new_email && project.gate1Done) return NextResponse.redirect(`${origin}/project/${project.id}`)
   return NextResponse.redirect(`${origin}${guestProjectPath(project.id, project.gate1Done)}`)
 }

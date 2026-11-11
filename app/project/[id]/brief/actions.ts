@@ -75,6 +75,7 @@ export async function submitBrief(formData: FormData): Promise<{ error: string }
     return { error: 'AI_GENERATION_FAILED' }
   }
   if (readingList) briefExtraction.reading_list_raw = readingList
+  briefExtraction.input_topic = topic.trim().slice(0, 2000)
 
   // 3. Save both to research_context in one update
   await updateResearchContext(

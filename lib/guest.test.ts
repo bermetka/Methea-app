@@ -4,6 +4,7 @@ import {
   guestProjectPath,
   guestRunsUsed,
   isGuest,
+  isPendingMember,
   memberOnlyRedirect,
   signGuestClaim,
   verifyGuestClaim,
@@ -20,6 +21,14 @@ describe('who may use member-only pages', () => {
     expect(memberOnlyRedirect({ is_anonymous: true })).toBe('/guest')
     expect(memberOnlyRedirect({ is_anonymous: false })).toBeNull()
     expect(memberOnlyRedirect({} as { is_anonymous?: boolean })).toBeNull()
+  })
+  it('lets a guest who gave an email use project pages, but not create projects', () => {
+    const pending = { is_anonymous: true, new_email: 'a@b.co' }
+    expect(memberOnlyRedirect(pending)).toBeNull()
+    expect(memberOnlyRedirect(pending, { strict: true })).toBe('/guest')
+    expect(isPendingMember(pending)).toBe(true)
+    expect(isPendingMember({ is_anonymous: true })).toBe(false)
+    expect(isPendingMember({ is_anonymous: false, new_email: 'a@b.co' })).toBe(false)
   })
   it('knows a guest', () => {
     expect(isGuest({ is_anonymous: true })).toBe(true)

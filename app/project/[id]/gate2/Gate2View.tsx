@@ -8,7 +8,7 @@ import type { CardWork, TheoryCardContent } from '@/lib/literature/theory-conten
 import { checkReadingList, toggleRead, completeGate2 } from './actions'
 import UnlockSlot from '@/components/paywall/UnlockSlot'
 import type { UnlockInfo } from '@/lib/pricing'
-import type { ListPreview } from '@/lib/reading-gate'
+import type { ListPreview, LockedGuide } from '@/lib/reading-gate'
 
 export interface Gate2Theory {
   id: string
@@ -23,6 +23,8 @@ export interface Gate2Theory {
   /** Unpaid: core readings beyond the free ones (titles only) and how many recent works are locked. */
   lockedReads: CardWork[]
   lockedRecent: number
+  /** Unpaid: what the full guide holds (counts + a teaser); null when paid or no card. */
+  lockedGuide: LockedGuide | null
 }
 
 interface Props {
@@ -152,7 +154,9 @@ export default function Gate2View(p: Props) {
   const mustReads = p.theories.flatMap(t => t.card?.must_read ?? [])
   const readCount = mustReads.filter(m => marks.has(keyOf(m.work))).length
   const coreTotal = mustReads.length + p.theories.reduce((n, t) => n + t.lockedReads.length, 0)
-  const anyLockedReading = locked && p.theories.some(t => t.lockedReads.length > 0 || t.lockedRecent > 0)
+  const anyLockedReading = locked && p.theories.some(t => t.lockedReads.length > 0 || t.lockedRecent > 0 || !!t.lockedGuide)
+  const lockedCore = p.theories.reduce((n, t) => n + t.lockedReads.length, 0)
+  const lockedRecentTotal = p.theories.reduce((n, t) => n + t.lockedRecent, 0)
 
   return (
     <div style={s.wrap}>
@@ -236,6 +240,10 @@ export default function Gate2View(p: Props) {
               <>
                 <p style={s.body}>{c.core_idea}</p>
 
+                {t.lockedGuide && p.unlock ? (
+                  <LockedGuidePanel guide={t.lockedGuide} reads={t.lockedReads.length} recent={t.lockedRecent} projectId={p.projectId} unlock={p.unlock} />
+                ) : (
+                <>
                 <details style={s.details}>
                   <summary style={s.summary}>How it developed</summary>
                   <ol style={s.timeline}>
@@ -277,6 +285,8 @@ export default function Gate2View(p: Props) {
                   <p style={s.label}>Common mistakes</p>
                   <ul style={s.plainList}>{c.common_mistakes.map((x, i) => <li key={i} style={s.point}>{x}</li>)}</ul>
                 </details>
+                </>
+                )}
               </>
             ) : (
               <>
@@ -342,12 +352,17 @@ export default function Gate2View(p: Props) {
 
       {anyLockedReading && p.unlock && (
         <section style={s.unlockCard} aria-labelledby="unlockreading">
-          <h2 id="unlockreading" style={s.h2}>Get the full reading guide for your theories</h2>
-          <p style={s.unlockText}>
-            What to read for in every core reading, the rest of the recent work on your topic
-            {list ? ', and how each work on your own list fits your theories' : ''}. It&apos;s part of
-            your project unlock, together with the framework narrative, methodology and interview guide.
-          </p>
+          <h2 id="unlockreading" style={s.h2}>Unlock this project</h2>
+          <p style={s.unlockText}>One payment for this project, 6 months access. You get:</p>
+          <ul style={s.unlockList}>
+            <li>✓ The full guide for any theory you pick from the library: critiques, how it developed, common mistakes</li>
+            <li>✓ {lockedCore > 0 ? `${lockedCore} core readings` : 'Core readings'} with what to read each one for{lockedRecentTotal > 0 ? ` + ${lockedRecentTotal} more recent studies on your topic` : ''}</li>
+            {list && <li>✓ How each work on your own list fits your theories</li>}
+            <li>✓ Framework narrative with verified citations</li>
+            <li>✓ Methodology and interview guide tied to your framework</li>
+            <li>✓ Unlimited iterations: change your question or theories and rebuild as often as you need</li>
+            <li>✓ Export to Word and PNG</li>
+          </ul>
           <UnlockSlot projectId={p.projectId} unlock={p.unlock} label="Unlock this project" />
         </section>
       )}
@@ -401,6 +416,55 @@ function BlurBars({ widths }: { widths: number[] }) {
   )
 }
 
+/** Unpaid: the full theory guide as a locked panel — what's in it, a teaser, and the way in. */
+function LockedGuidePanel({ guide, reads, recent, projectId, unlock }: {
+  guide: LockedGuide; reads: number; recent: number; projectId: string; unlock: UnlockInfo
+}) {
+  const plural = (n: number, one: string, many = `${one}s`) => `${n} ${n === 1 ? one : many}`
+  const rows = [
+    guide.strengths + guide.critiques > 0 && {
+      title: 'Strengths and critiques',
+      note: `${plural(guide.strengths, 'strength')}, ${plural(guide.critiques, 'critique')}, each with its source`,
+      teaser: guide.teaser,
+    },
+    guide.development + guide.strands > 0 && {
+      title: 'How it developed',
+      note: `${plural(guide.development, 'key work')} from the first statement to today${guide.strands ? `, ${plural(guide.strands, 'school')}` : ''}`,
+    },
+    guide.whenToUse + guide.mistakes > 0 && {
+      title: 'When to use it, and common mistakes',
+      note: `When it fits, and ${plural(guide.mistakes, 'common mistake')} in proposals`,
+    },
+    reads + recent > 0 && {
+      title: 'What to read, and what to read it for',
+      note: [reads ? plural(reads, 'core work') : '', recent ? `${recent} more recent ${recent === 1 ? 'study' : 'studies'} on your topic` : ''].filter(Boolean).join(' + '),
+    },
+  ].filter(Boolean) as { title: string; note: string; teaser?: string | null }[]
+
+  return (
+    <div style={s.guide}>
+      <p style={s.guideEyebrow}>Full theory guide</p>
+      {rows.map((r, i) => (
+        <div key={r.title} style={{ ...s.guideRow, ...(i === 0 ? { borderTop: 'none' } : {}) }}>
+          <div style={s.guideRowHead}>
+            <div>
+              <p style={s.guideTitle}>{r.title}</p>
+              <p style={s.guideNote}>{r.note}</p>
+            </div>
+            <span style={s.lockTag}>Locked</span>
+          </div>
+          {r.teaser && (
+            <p style={s.teaser}>
+              <span>{r.teaser}</span> <span style={s.teaserBlur} aria-hidden="true">sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt</span>
+            </p>
+          )}
+        </div>
+      ))}
+      <UnlockSlot projectId={projectId} unlock={unlock} compact label="Open the full guide" />
+    </div>
+  )
+}
+
 function LockedLines({ n, note }: { n: number; note: string }) {
   return (
     <div style={s.lockedRow}>
@@ -441,6 +505,16 @@ function ListItemLine({ item, theoryId }: { item: StudentListItem; theoryId?: st
 }
 
 const s: Record<string, React.CSSProperties> = {
+  guide:        { background: 'var(--sheet)', border: '1.5px solid var(--ink-blue)', borderRadius: 'var(--radius-lg)', padding: '0.5rem 1rem 1rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' },
+  guideEyebrow: { fontSize: '0.6875rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink-blue)', padding: '0.5rem 0 0.125rem' },
+  guideRow:     { borderTop: '1px solid var(--stone-soft)', padding: '0.625rem 0' },
+  guideRowHead: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.75rem' },
+  guideTitle:   { fontSize: '0.9375rem', fontWeight: 600, color: 'var(--ink)' },
+  guideNote:    { fontSize: '0.8125rem', color: 'var(--pencil)', lineHeight: 1.4 },
+  lockTag:      { flexShrink: 0, fontSize: '0.6875rem', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--ink-blue)', background: '#E6EEF3', borderRadius: 999, padding: '3px 8px' },
+  teaser:       { fontSize: '0.875rem', lineHeight: 1.5, color: 'var(--ink)', marginTop: '0.375rem' },
+  teaserBlur:   { filter: 'blur(4px)', userSelect: 'none', color: 'var(--graphite)' },
+  unlockList:   { listStyle: 'none', padding: 0, margin: '0 0 0.75rem', display: 'flex', flexDirection: 'column', gap: '0.375rem', fontSize: '0.9375rem', lineHeight: 1.45, color: 'var(--ink)' },
   wrap:        { display: 'flex', flexDirection: 'column', gap: '1.5rem', minWidth: 0, overflowWrap: 'anywhere' },
   head:        { display: 'flex', flexDirection: 'column', gap: '0.5rem' },
   h1:          { margin: 0, fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 400, fontSize: '1.75rem', letterSpacing: '-0.025em', color: 'var(--ink)' },

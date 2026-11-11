@@ -15,7 +15,9 @@ type Row = Pick<Project, 'id' | 'title' | 'paid_at'>
 export default async function AccountPage({ searchParams }: { searchParams: { preview?: string } }) {
   const supabase = createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user || user.is_anonymous) redirect(memberOnlyRedirect(user) ?? '/login')
+  if (!user) redirect('/login')
+  const memberRedirect = memberOnlyRedirect(user)
+  if (memberRedirect) redirect(memberRedirect)
 
   const { data } = await supabase
     .from('projects')

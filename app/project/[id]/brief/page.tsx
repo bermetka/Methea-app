@@ -69,8 +69,9 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
     <main style={styles.page}>
       <div style={styles.container}>
         <div style={styles.header}>
-          <h2 style={styles.heading}>Tell me what you&apos;re researching</h2>
-          <p style={styles.sub}>A sentence or two is enough to start.</p>
+          <p style={styles.eyebrow}>Step 1 of 3 · Your topic</p>
+          <h1 style={styles.heading}>What are you researching?</h1>
+          <p style={styles.sub}>A sentence or two is enough. Methea asks three quick questions next and sharpens it into a research question.</p>
         </div>
         <BriefForm projectId={params.id} initialTopic={p.research_context?.seed?.topic ?? ''} />
       </div>
@@ -81,9 +82,10 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
 const styles: Record<string, React.CSSProperties> = {
   page:        { minHeight: '100vh', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', padding: '2.5rem 1rem', background: 'var(--paper)' },
   container:   { width: '100%', maxWidth: '600px', display: 'flex', flexDirection: 'column', gap: '1.5rem' },
-  header:      { display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '0.5rem' },
-  heading:     { fontFamily: "'Playfair Display', Georgia, serif", fontSize: 'clamp(1.5rem, 4vw, 2rem)', fontWeight: 400, letterSpacing: '-0.015em', color: 'var(--ink)', lineHeight: 1.2 },
-  sub:         { fontSize: '0.9375rem', color: 'var(--pencil)' },
+  header:      { display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', gap: '0.5rem' },
+  eyebrow:     { fontSize: '0.78rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink-blue)' },
+  heading:     { margin: 0, fontFamily: "'Schibsted Grotesk', system-ui, sans-serif", fontSize: 'clamp(1.75rem, 6vw, 2.25rem)', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--ink)', lineHeight: 1.15 },
+  sub:         { fontSize: '1rem', lineHeight: 1.55, color: 'var(--graphite)' },
   reviewCard:  { background: 'var(--sheet)', border: '1px solid var(--stone-soft)', borderRadius: 'var(--radius-lg)', padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem' },
   reviewLabel: { fontSize: '0.6875rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' as const, color: 'var(--pencil)', marginBottom: '0.25rem' },
   reviewText:  { fontSize: '0.9375rem', color: 'var(--ink)', lineHeight: 1.6 },

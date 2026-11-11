@@ -26,6 +26,8 @@ export default async function RefinedPage({
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
   const guest = !!user.is_anonymous
+  // A guest who already gave their email carries on like a member (confirming is needed only to pay).
+  const needsEmail = guest && !user.new_email
 
   const { data: project } = await supabase
     .from('projects')
@@ -74,12 +76,13 @@ export default async function RefinedPage({
       <div style={styles.container}>
         <RefinedView
           projectId={params.id}
-          before={ctx.brief.research_question || ctx.brief.topic}
+          // Their own words, not the question Methea already tidied up from the brief.
+          before={ctx.brief.input_topic || ctx.seed?.topic || ctx.brief.research_question || ctx.brief.topic}
           after={refined?.question ?? null}
           changes={refined?.changes ?? []}
-          guest={guest}
+          guest={needsEmail}
           nextHref={nextHref}
-          openSave={guest && searchParams.save === '1'}
+          openSave={needsEmail && searchParams.save === '1'}
         />
       </div>
     </main>
