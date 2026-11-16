@@ -1,3 +1,4 @@
+import Logo from '@/components/ui/Logo'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { createFirstProject } from './actions'
@@ -18,7 +19,7 @@ export default async function OnboardingPage() {
   return (
     <main style={styles.page}>
       <div style={styles.container}>
-        <span style={styles.wordmark}>Methea</span>
+        <Logo size="sm" />
         <h1 style={styles.heading}>Start your research project</h1>
         <p style={styles.sub}>
           Give it a working title — you can change this any time.

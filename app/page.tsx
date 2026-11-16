@@ -1,3 +1,4 @@
+import Logo from '@/components/ui/Logo'
 import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { FREE_FEATURES, PAID_FEATURES, fromPriceLabel } from '@/lib/pricing'
@@ -23,7 +24,7 @@ export default async function LandingPage() {
 
       {/* ── Nav ── */}
       <nav style={s.nav}>
-        <span style={s.wordmark}>Methea</span>
+        <a href="/" aria-label="Methea home"><Logo size="sm" /></a>
         <div style={s.navLinks}>
           <a href="/blog" style={s.navLink}>Blog</a>
           <a href="/login" style={s.navCta}>Sign in →</a>
@@ -277,7 +278,7 @@ export default async function LandingPage() {
       {/* ── Footer ── */}
       <footer style={s.footer}>
         <div style={s.footerInner}>
-          <span style={s.footerWordmark}>Methea</span>
+          <Logo size="xs" tone="paper" />
           <p style={s.footerTagline}>Your research, methodically.</p>
           <p style={s.footerNote}>
             Methea is a thinking tool, not a writing tool. Students remain the authors of their own research.

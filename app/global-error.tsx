@@ -1,5 +1,6 @@
 'use client'
 
+import Logo from '@/components/ui/Logo'
 import { useEffect } from 'react'
 
 /**
@@ -16,7 +17,7 @@ export default function GlobalError({ error, reset }: { error: Error & { digest?
     <html lang="en">
       <body style={s.body}>
         <main style={s.container}>
-          <p style={s.wordmark}>Methea</p>
+          <Logo size="sm" />
           <div style={s.card}>
             <p style={s.title}>Something went wrong</p>
             <p style={s.text}>

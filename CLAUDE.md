@@ -144,6 +144,11 @@ Source Serif 4 (long-form reading). Logo wordmark uses tight tracking
 marker-stroke SVG underline — never recolour it, never use the stroke
 without the word except as favicon.
 
+**Logo (approved 16.11.2026, permanent):** always render it with `components/ui/Logo.tsx`
+(`size` xs/sm/md, `tone="paper"` on dark footers). It is the word as SVG outlines plus the
+lime stroke centred on the lowercase letters, so it never depends on a font loading. Never
+write "Methea" as styled text in place of the logo. Files for outside use: `public/brand/`.
+
 **Colour roles — strict, ~70% paper / ~25% ink / ~5% marker:**
 - Paper (`#F6F2E8` family): backgrounds only
 - Ink (`#1C1C1C`, `#4A4A47`, `#11425D`): text, logo, buttons

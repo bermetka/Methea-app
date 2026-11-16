@@ -1,3 +1,4 @@
+import Logo from '@/components/ui/Logo'
 import Link from 'next/link'
 import styles from '@/app/blog/blog.module.css'
 import CookieSettingsLink, { CookieSettingsDot } from '@/components/consent/CookieSettingsLink'
@@ -5,7 +6,7 @@ import CookieSettingsLink, { CookieSettingsDot } from '@/components/consent/Cook
 export function BlogNav() {
   return (
     <nav className={styles.nav} aria-label="Main">
-      <Link href="/" className={styles.wordmark}>Methea</Link>
+      <Link href="/" aria-label="Methea home"><Logo size="sm" /></Link>
       <div className={styles.navLinks}>
         <Link href="/blog" className={styles.navLink}>Blog</Link>
         <Link href="/check" className={styles.navLink}>Free check</Link>
@@ -19,7 +20,7 @@ export function BlogFooter() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
-        <span className={styles.footerWordmark}>Methea</span>
+        <Logo size="xs" tone="paper" />
         <p className={styles.footerTagline}>Your research, methodically.</p>
         <p className={styles.footerNote}>
           Methea is a thinking tool, not a writing tool. Students remain the authors of their own research.

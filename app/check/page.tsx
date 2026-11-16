@@ -1,3 +1,4 @@
+import Logo from '@/components/ui/Logo'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { priceLabel } from '@/lib/pricing'
@@ -21,7 +22,7 @@ export default function CheckPage() {
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" />
       <nav className={styles.nav} aria-label="Main">
-        <Link href="/" className={styles.wordmark}>Methea</Link>
+        <Link href="/" aria-label="Methea home"><Logo size="sm" /></Link>
         <div className={styles.navLinks}>
           <Link href="/blog" className={styles.navLink}>Blog</Link>
           <Link href="/login" className={styles.navCta}>Sign in →</Link>
@@ -32,7 +33,7 @@ export default function CheckPage() {
       </main>
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <span className={styles.footerWordmark}>Methea</span>
+          <Logo size="xs" tone="paper" />
           <p className={styles.footerNote}>Methea is a thinking tool, not a writing tool. Students remain the authors of their own research.</p>
           <div className={styles.footerLinks}>
             <Link href="/blog">Blog</Link><span aria-hidden>·</span>
