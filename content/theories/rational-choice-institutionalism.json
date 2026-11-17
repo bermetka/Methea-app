@@ -1,0 +1,372 @@
+{
+  "theory_id": null,
+  "library_name": "Rational choice institutionalism",
+  "slug": "rational-choice-institutionalism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Kenneth A. Shepsle"
+    ],
+    "year": 1989,
+    "title": "Studying Institutions",
+    "type": "article",
+    "venue": "Journal of Theoretical Politics",
+    "doi": "10.1177/0951692889001002002",
+    "openalex_id": "W2026904251",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2026904251",
+  "core_idea": "Institutions are rules that structure the strategic choices of self-interested actors. They produce stable outcomes and persist because actors benefit from them.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do rules shape actors' strategies in elections or legislatures?",
+    "Why are institutions designed as they are?",
+    "Typical data: formal modelling, comparative analysis, case study."
+  ],
+  "common_mistakes": [
+    "Assuming actors are fully rational without justification.",
+    "Ignoring informal rules.",
+    "Functionalist explanations of origins."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Barry R.VE Weingast",
+          "William Marshall"
+        ],
+        "year": 1988,
+        "title": "The Industrial Organization of Congress; or, Why Legislatures, Like Firms, Are Not Organized as Markets",
+        "type": "article",
+        "venue": "Journal of Political Economy",
+        "doi": "10.1086/261528",
+        "openalex_id": "W1981719767",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Committees as solutions."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Tsebelis"
+        ],
+        "year": 1990,
+        "title": "Nested Games",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520076518",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1990
+      },
+      "adds": "Games in multiple arenas."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Peter A. Hall",
+          "Rosemary C. R. Taylor"
+        ],
+        "year": 1996,
+        "title": "Political Science and the Three New Institutionalisms",
+        "type": "article",
+        "venue": "Political Studies",
+        "doi": "10.1111/j.1467-9248.1996.tb00343.x",
+        "openalex_id": "W1561018600",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/11858/00-001M-0000-0012-59C1-5"
+      },
+      "adds": "Compares three institutionalisms."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Legislative studies",
+      "summary": "Committees and agenda control.",
+      "defining_work": {
+        "authors": [
+          "Barry R.VE Weingast",
+          "William Marshall"
+        ],
+        "year": 1988,
+        "title": "The Industrial Organization of Congress; or, Why Legislatures, Like Firms, Are Not Organized as Markets",
+        "type": "article",
+        "venue": "Journal of Political Economy",
+        "doi": "10.1086/261528",
+        "openalex_id": "W1981719767",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Comparative RCI",
+      "summary": "Nested games.",
+      "defining_work": {
+        "authors": [
+          "Tsebelis"
+        ],
+        "year": 1990,
+        "title": "Nested Games",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520076518",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1990
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Precise, testable predictions.",
+      "source": {
+        "authors": [
+          "Barry R.VE Weingast",
+          "William Marshall"
+        ],
+        "year": 1988,
+        "title": "The Industrial Organization of Congress; or, Why Legislatures, Like Firms, Are Not Organized as Markets",
+        "type": "article",
+        "venue": "Journal of Political Economy",
+        "doi": "10.1086/261528",
+        "openalex_id": "W1981719767",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Clear micro-foundations.",
+      "source": {
+        "authors": [
+          "Kenneth A. Shepsle"
+        ],
+        "year": 1989,
+        "title": "Studying Institutions",
+        "type": "article",
+        "venue": "Journal of Theoretical Politics",
+        "doi": "10.1177/0951692889001002002",
+        "openalex_id": "W2026904251",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Rational choice yields few robust findings.",
+      "source": {
+        "authors": [
+          "Green"
+        ],
+        "year": 1994,
+        "title": "Pathologies of Rational Choice Theory",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780300066364",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1996
+      }
+    },
+    {
+      "point": "Functionalist about origins.",
+      "source": {
+        "authors": [
+          "Peter A. Hall",
+          "Rosemary C. R. Taylor"
+        ],
+        "year": 1996,
+        "title": "Political Science and the Three New Institutionalisms",
+        "type": "article",
+        "venue": "Political Studies",
+        "doi": "10.1111/j.1467-9248.1996.tb00343.x",
+        "openalex_id": "W1561018600",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/11858/00-001M-0000-0012-59C1-5"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Kenneth A. Shepsle"
+        ],
+        "year": 1989,
+        "title": "Studying Institutions",
+        "type": "article",
+        "venue": "Journal of Theoretical Politics",
+        "doi": "10.1177/0951692889001002002",
+        "openalex_id": "W2026904251",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "What rules shape strategies?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Tsebelis"
+        ],
+        "year": 1990,
+        "title": "Nested Games",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520076518",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1990
+      },
+      "chapter": null,
+      "why_read": "Comparative.",
+      "reading_question": "Which arenas?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Peter A. Hall",
+          "Rosemary C. R. Taylor"
+        ],
+        "year": 1996,
+        "title": "Political Science and the Three New Institutionalisms",
+        "type": "article",
+        "venue": "Political Studies",
+        "doi": "10.1111/j.1467-9248.1996.tb00343.x",
+        "openalex_id": "W1561018600",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/11858/00-001M-0000-0012-59C1-5"
+      },
+      "chapter": null,
+      "why_read": "Comparison.",
+      "reading_question": "Why RCI?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "rational choice institutionalism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3122957629",
+        "title": "Does Social Trust Affect International Contracting? Evidence from Foreign Bond Covenants",
+        "year": 2018,
+        "authors": [
+          "Paul Brockman",
+          "Sadok El Ghoul",
+          "Omrane Guedhami",
+          "Ying Zheng"
+        ],
+        "cited_by": 86,
+        "oa_url": "https://doi.org/10.2139/ssrn.3118727"
+      },
+      {
+        "openalex_id": "W2525738589",
+        "title": "Theorizing the resilience of the Indian Act",
+        "year": 2016,
+        "authors": [
+          "Michael Morden"
+        ],
+        "cited_by": 16,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2939726188",
+        "title": "Evolutionary institutionalism",
+        "year": 2016,
+        "authors": [
+          "Kai Fürstenberg"
+        ],
+        "cited_by": 13,
+        "oa_url": "https://doi.org/10.1017/pls.2016.8"
+      },
+      {
+        "openalex_id": "W2465616281",
+        "title": "Why do malfunctioning institutions persist? A case study of the Kingdom of the Netherlands",
+        "year": 2016,
+        "authors": [
+          "Wouter P. Veenendaal"
+        ],
+        "cited_by": 10,
+        "oa_url": "https://pure.knaw.nl/portal/en/publications/63dbeaaa-8c8c-419c-b2af-5daaac69ca0a"
+      },
+      {
+        "openalex_id": "W2774730579",
+        "title": "The Creation of the Fiscal Council in Estonia: Exploring the Explanations for Its Institutional Design",
+        "year": 2017,
+        "authors": [
+          "Ringa Raudla",
+          "Kati Keel",
+          "Mari Pajussaar"
+        ],
+        "cited_by": 3,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "theory_id": null,
+  "library_name": "Ritual process and liminality",
+  "slug": "ritual-liminality",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Turner"
+    ],
+    "year": 1969,
+    "title": "The Ritual Process: Structure and Anti-Structure",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780202011905",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1969
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Rites of passage move people through separation, a liminal in-between phase and reincorporation. In liminality normal structure is suspended and communitas, intense equality and bonding, can arise.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people go through transitions such as weddings, initiation, migration, entering university?",
+    "What happens in in-between states?",
+    "Typical data: ethnography, interviews."
+  ],
+  "common_mistakes": [
+    "Calling every change 'liminal'.",
+    "Ignoring the three phases.",
+    "Forgetting communitas."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Arnold van Gennep",
+          "Monika B. Vizedom",
+          "Gabrielle L. Caffee"
+        ],
+        "year": 1961,
+        "title": "The Rites Of Passage",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781315017594",
+        "openalex_id": "W1601938470",
+        "isbn": "9780226027180",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1960
+      },
+      "adds": "Three phases of rites of passage."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Turner"
+        ],
+        "year": 1967,
+        "title": "The Forest of Symbols: Aspects of Ndembu Ritual",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1967
+      },
+      "adds": "Liminality 'betwixt and between'."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Ritual studies",
+      "summary": "Classic ritual analysis.",
+      "defining_work": {
+        "authors": [
+          "Turner"
+        ],
+        "year": 1969,
+        "title": "The Ritual Process: Structure and Anti-Structure",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780202011905",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1969
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Grounded in fieldwork.",
+      "source": {
+        "authors": [
+          "Turner"
+        ],
+        "year": 1969,
+        "title": "The Ritual Process: Structure and Anti-Structure",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780202011905",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1969
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Communitas overstated; rituals also reinforce hierarchy.",
+      "source": {
+        "authors": [
+          "Bell"
+        ],
+        "year": 1992,
+        "title": "Ritual Theory, Ritual Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781283348843",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1992
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Turner"
+        ],
+        "year": 1969,
+        "title": "The Ritual Process: Structure and Anti-Structure",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780202011905",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1969
+      },
+      "chapter": null,
+      "why_read": "Communitas and liminality.",
+      "reading_question": "What phase are your participants in?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Arnold van Gennep",
+          "Monika B. Vizedom",
+          "Gabrielle L. Caffee"
+        ],
+        "year": 1961,
+        "title": "The Rites Of Passage",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781315017594",
+        "openalex_id": "W1601938470",
+        "isbn": "9780226027180",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1960
+      },
+      "chapter": null,
+      "why_read": "Foundation.",
+      "reading_question": "Separation, liminality or reincorporation?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Bell"
+        ],
+        "year": 1992,
+        "title": "Ritual Theory, Ritual Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781283348843",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1992
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Does ritual unite or divide here?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "liminality",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Liminality and Experience: Structuring transitory situations and transformative events. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 0 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "theory_id": null,
+  "library_name": "Feminist IR",
+  "slug": "feminist-ir",
+  "status": "published",
+  "original": {
+    "authors": [
+      "CYNTHIA HOLDEN ENLOE"
+    ],
+    "year": 1990,
+    "title": "Bananas, Beaches and Bases",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W3208758076",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W3208758076",
+  "core_idea": "International politics depends on gendered relations and on women's often invisible labour, from military bases to tourism and diplomacy. Asking 'where are the women?' changes what counts as IR.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does gender shape security, migration or peacekeeping?",
+    "Where are women in a foreign policy process?",
+    "Typical data: interviews, discourse analysis, ethnography."
+  ],
+  "common_mistakes": [
+    "Adding women as a variable only.",
+    "Ignoring masculinities.",
+    "Treating feminism as one approach."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Tickner"
+        ],
+        "year": 1992,
+        "title": "Gender in International Relations",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780231075398",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1992
+      },
+      "adds": "Feminist critique of IR theories."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Carol Cohn"
+        ],
+        "year": 1987,
+        "title": "Sex and Death in the Rational World of Defense Intellectuals",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/494362",
+        "openalex_id": "W1992964621",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Gendered language of security."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Feminist security studies",
+      "summary": "Gender and war.",
+      "defining_work": {
+        "authors": [
+          "Carol Cohn"
+        ],
+        "year": 1987,
+        "title": "Sex and Death in the Rational World of Defense Intellectuals",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/494362",
+        "openalex_id": "W1992964621",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Feminist IR theory",
+      "summary": "Critique of mainstream.",
+      "defining_work": {
+        "authors": [
+          "Tickner"
+        ],
+        "year": 1992,
+        "title": "Gender in International Relations",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780231075398",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1992
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Reveals hidden gendered power.",
+      "source": {
+        "authors": [
+          "Carol Cohn"
+        ],
+        "year": 1987,
+        "title": "Sex and Death in the Rational World of Defense Intellectuals",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/494362",
+        "openalex_id": "W1992964621",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Rich empirical tradition.",
+      "source": {
+        "authors": [
+          "CYNTHIA HOLDEN ENLOE"
+        ],
+        "year": 1990,
+        "title": "Bananas, Beaches and Bases",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W3208758076",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Mainstream asks for testable hypotheses.",
+      "source": {
+        "authors": [
+          "Robert O. Keohane"
+        ],
+        "year": 1989,
+        "title": "International Relations Theory: Contributions of a Feminist Standpoint",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298890180021001",
+        "openalex_id": "W1997074989",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Communication gap with mainstream.",
+      "source": {
+        "authors": [
+          "J. Ann Tickner"
+        ],
+        "year": 1997,
+        "title": "You Just Don't Understand: Troubled Engagements Between Feminists and IR Theorists",
+        "type": "article",
+        "venue": "International Studies Quarterly",
+        "doi": "10.1111/1468-2478.00060",
+        "openalex_id": "W2131142880",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "CYNTHIA HOLDEN ENLOE"
+        ],
+        "year": 1990,
+        "title": "Bananas, Beaches and Bases",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W3208758076",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Classic.",
+      "reading_question": "Where are the women in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Tickner"
+        ],
+        "year": 1992,
+        "title": "Gender in International Relations",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780231075398",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1992
+      },
+      "chapter": null,
+      "why_read": "Theory.",
+      "reading_question": "Which feminist approach?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "J. Ann Tickner"
+        ],
+        "year": 1997,
+        "title": "You Just Don't Understand: Troubled Engagements Between Feminists and IR Theorists",
+        "type": "article",
+        "venue": "International Studies Quarterly",
+        "doi": "10.1111/1468-2478.00060",
+        "openalex_id": "W2131142880",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Debate.",
+      "reading_question": "How will you answer mainstream critics?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "feminist international relations",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2522984401",
+        "title": "Reevaluating Gender and IR Scholarship",
+        "year": 2016,
+        "authors": [
+          "Laura Sjoberg",
+          "Kelly M. Kadera",
+          "Cameron G. Thies"
+        ],
+        "cited_by": 45,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2565129339",
+        "title": "Flick of the Skirt: A Feminist Challenge to IR’s Coherent Narrative",
+        "year": 2016,
+        "authors": [
+          "CYNTHIA HOLDEN ENLOE"
+        ],
+        "cited_by": 20,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4391614103",
+        "title": "Feminist Encounters in Statebuilding",
+        "year": 2024,
+        "authors": [
+          "Vjosa Musliu",
+          "Itziar Mujika Chao"
+        ],
+        "cited_by": 8,
+        "oa_url": "https://doi.org/10.4324/9781003412960"
+      },
+      {
+        "openalex_id": "W3199620948",
+        "title": "Eating Identity: Theorizing the Everyday Foreign Policy Assemblage",
+        "year": 2021,
+        "authors": [
+          "Elizaveta Gaufman"
+        ],
+        "cited_by": 6,
+        "oa_url": "https://doi.org/10.1093/isagsq/ksab019"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 2 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

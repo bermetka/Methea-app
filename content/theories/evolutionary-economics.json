@@ -1,0 +1,323 @@
+{
+  "theory_id": null,
+  "library_name": "Evolutionary economics",
+  "slug": "evolutionary-economics",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Nelson"
+    ],
+    "year": 1982,
+    "title": "An Evolutionary Theory of Economic Change",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780674272279",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1982
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Firms act through routines rather than optimisation. Economic change happens through variation, selection and retention of routines, much like evolution.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do firms innovate and change capabilities?",
+    "How do industries or technologies evolve?",
+    "Typical data: case study, longitudinal analysis."
+  ],
+  "common_mistakes": [
+    "Using 'evolution' loosely.",
+    "Ignoring routines.",
+    "No selection mechanism."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "M. D. COHEN",
+          "Roger M. Burkhart",
+          "Giovanni Dosi A",
+          "Massimo Egidi",
+          "Luigi Marengo B",
+          "Massimo Warglien"
+        ],
+        "year": 1996,
+        "title": "Routines and Other Recurring Action Patterns of Organizations: Contemporary Research Issues",
+        "type": "article",
+        "venue": "Industrial and Corporate Change",
+        "doi": "10.1093/icc/5.3.653",
+        "openalex_id": "W2268683859",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://pure.iiasa.ac.at/id/eprint/5001/1/WP-96-025.pdf"
+      },
+      "adds": "Develops the concept of organisational routines at the core of the theory."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Richard R. Nelson",
+          "Sidney G. Winter"
+        ],
+        "year": 2002,
+        "title": "Evolutionary Theorizing in Economics",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/0895330027247",
+        "openalex_id": "W1966871598",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Update by the authors."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "David J. Teece",
+          "Gary Paul Pisano",
+          "Amy Shuen"
+        ],
+        "year": 1997,
+        "title": "Dynamic capabilities and strategic management",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/(sici)1097-0266(199708)18:7<509::aid-smj882>3.0.co;2-z",
+        "openalex_id": "W2123709218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Dynamic capabilities (library entry)."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Innovation studies",
+      "summary": "Technology trajectories.",
+      "defining_work": {
+        "authors": [
+          "Giovanni Dosi A"
+        ],
+        "year": 1982,
+        "title": "Technological paradigms and technological trajectories",
+        "type": "article",
+        "venue": "Research Policy",
+        "doi": "10.1016/0048-7333(82)90016-6",
+        "openalex_id": "W1535129021",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Capabilities in strategy",
+      "summary": "Dynamic capabilities.",
+      "defining_work": {
+        "authors": [
+          "David J. Teece",
+          "Gary Paul Pisano",
+          "Amy Shuen"
+        ],
+        "year": 1997,
+        "title": "Dynamic capabilities and strategic management",
+        "type": "article",
+        "venue": "Strategic Management Journal",
+        "doi": "10.1002/(sici)1097-0266(199708)18:7<509::aid-smj882>3.0.co;2-z",
+        "openalex_id": "W2123709218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Realistic account of firms.",
+      "source": {
+        "authors": [
+          "Richard R. Nelson",
+          "Sidney G. Winter"
+        ],
+        "year": 2002,
+        "title": "Evolutionary Theorizing in Economics",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/0895330027247",
+        "openalex_id": "W1966871598",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Influential in innovation research.",
+      "source": {
+        "authors": [
+          "Giovanni Dosi A"
+        ],
+        "year": 1982,
+        "title": "Technological paradigms and technological trajectories",
+        "type": "article",
+        "venue": "Research Policy",
+        "doi": "10.1016/0048-7333(82)90016-6",
+        "openalex_id": "W1535129021",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Routines lack microfoundations.",
+      "source": {
+        "authors": [
+          "Teppo Felin",
+          "Nicolai J. Foss"
+        ],
+        "year": 2009,
+        "title": "Organizational routines and capabilities: Historical drift and a course-correction toward microfoundations",
+        "type": "article",
+        "venue": "Scandinavian Journal of Management",
+        "doi": "10.1016/j.scaman.2009.02.003",
+        "openalex_id": "W2089410790",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Biological analogy is loose.",
+      "source": {
+        "authors": [
+          "Geoffrey Martin Hodgson",
+          "Thorbjørn Knudsen"
+        ],
+        "year": 2004,
+        "title": "The firm as an interactor: firms as vehicles for habits and routines",
+        "type": "article",
+        "venue": "Journal of Evolutionary Economics",
+        "doi": "10.1007/s00191-004-0192-1",
+        "openalex_id": "W2138577079",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2299/407"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Nelson"
+        ],
+        "year": 1982,
+        "title": "An Evolutionary Theory of Economic Change",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780674272279",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1982
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Which routines change?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Richard R. Nelson",
+          "Sidney G. Winter"
+        ],
+        "year": 2002,
+        "title": "Evolutionary Theorizing in Economics",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/0895330027247",
+        "openalex_id": "W1966871598",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Update.",
+      "reading_question": "What selects?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Teppo Felin",
+          "Nicolai J. Foss"
+        ],
+        "year": 2009,
+        "title": "Organizational routines and capabilities: Historical drift and a course-correction toward microfoundations",
+        "type": "article",
+        "venue": "Scandinavian Journal of Management",
+        "doi": "10.1016/j.scaman.2009.02.003",
+        "openalex_id": "W2089410790",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Routines or individuals?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "evolutionary economics",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

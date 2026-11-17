@@ -1,0 +1,325 @@
+{
+  "theory_id": null,
+  "library_name": "Political process theory",
+  "slug": "political-process-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "McAdam"
+    ],
+    "year": 1982,
+    "title": "Political Process and the Development of Black Insurgency, 1930-1970",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781428823266",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 2007,
+    "note": "Library record's first publication year is 2007; 1982 is the edition or translation cited here."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Movements emerge when political opportunities open, when aggrieved groups have organisational resources, and when people come to see their situation as unjust and changeable (cognitive liberation).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why did protest or activism emerge at a particular time?",
+    "How do political opportunities shape civil society in hybrid regimes?",
+    "Typical data: case study, protest event analysis, interviews, process tracing."
+  ],
+  "common_mistakes": [
+    "Treating any change in politics as an 'opportunity' after the fact.",
+    "Ignoring the cultural side (framing, cognitive liberation).",
+    "Applying US-democracy assumptions to authoritarian settings unchanged."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "McAdam"
+        ],
+        "year": 1996,
+        "title": "Comparative Perspectives on Social Movements",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521480390",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1996
+      },
+      "adds": "Synthesis of opportunities, mobilising structures and framing."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "William A. Gamson",
+          "David S. Meyer"
+        ],
+        "year": 1996,
+        "title": "Framing political opportunity",
+        "type": "chapter",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511803987.014",
+        "openalex_id": "W1481552200",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Shows how political opportunities are framed by movements."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Doug McAdam",
+          "Sidney Tarrow",
+          "Charles Tilly"
+        ],
+        "year": 2001,
+        "title": "Dynamics of Contention",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511805431",
+        "openalex_id": "W2083729314",
+        "isbn": "9780511805431",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001
+      },
+      "adds": "Mechanism-based approach to contention."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Political opportunity structure",
+      "summary": "Openness of the political system.",
+      "defining_work": {
+        "authors": [
+          "Tarrow"
+        ],
+        "year": 1998,
+        "title": "Power in Movement: Social Movements and Contentious Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521620727",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1994,
+        "note": "Library record's first publication year is 1994; 1998 is the edition or translation cited here."
+      }
+    },
+    {
+      "name": "Contentious politics",
+      "summary": "Mechanisms and processes.",
+      "defining_work": {
+        "authors": [
+          "Doug McAdam",
+          "Sidney Tarrow",
+          "Charles Tilly"
+        ],
+        "year": 2001,
+        "title": "Dynamics of Contention",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511805431",
+        "openalex_id": "W2083729314",
+        "isbn": "9780511805431",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Integrates structural and cultural factors.",
+      "source": {
+        "authors": [
+          "McAdam"
+        ],
+        "year": 1996,
+        "title": "Comparative Perspectives on Social Movements",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521480390",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1996
+      }
+    },
+    {
+      "point": "Widely used comparative framework.",
+      "source": {
+        "authors": [
+          "Tarrow"
+        ],
+        "year": 1998,
+        "title": "Power in Movement: Social Movements and Contentious Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521620727",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1994,
+        "note": "Library record's first publication year is 1994; 1998 is the edition or translation cited here."
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Political opportunity is so broad it explains everything and nothing.",
+      "source": {
+        "authors": [],
+        "year": 2003,
+        "title": "Caught in a Winding, Snarling Vine: The Structural Bias of Political Process Theory",
+        "type": "chapter",
+        "venue": "Rowman & Littlefield Publishers eBooks",
+        "doi": "10.5040/9798216411024.ch-001",
+        "openalex_id": "W4417396575",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint chapter (2003, Rethinking Social Movements) of the 1999 Sociological Forum article."
+      }
+    },
+    {
+      "point": "Opportunity is a 'sponge' concept.",
+      "source": {
+        "authors": [
+          "D. S. Meyer",
+          "Debra Minkoff"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Political Opportunity",
+        "type": "article",
+        "venue": "Social Forces",
+        "doi": "10.1353/sof.2004.0082",
+        "openalex_id": "W2140991242",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "McAdam"
+        ],
+        "year": 1982,
+        "title": "Political Process and the Development of Black Insurgency, 1930-1970",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781428823266",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2007,
+        "note": "Library record's first publication year is 2007; 1982 is the edition or translation cited here."
+      },
+      "chapter": null,
+      "why_read": "The theory.",
+      "reading_question": "What opportunity opened in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "McAdam"
+        ],
+        "year": 1996,
+        "title": "Comparative Perspectives on Social Movements",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521480390",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1996
+      },
+      "chapter": null,
+      "why_read": "Synthesis.",
+      "reading_question": "Which of the three factors is central?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "D. S. Meyer",
+          "Debra Minkoff"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Political Opportunity",
+        "type": "article",
+        "venue": "Social Forces",
+        "doi": "10.1353/sof.2004.0082",
+        "openalex_id": "W2140991242",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique and review.",
+      "reading_question": "How will you define opportunity before seeing outcomes?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "political opportunity",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Caught in a Winding, Snarling Vine: The Structural Bias of Political Process Theory. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 2 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "theory_id": null,
+  "library_name": "Governmentality",
+  "slug": "governmentality",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Burchell"
+    ],
+    "year": 1991,
+    "title": "The Foucault Effect: Studies in Governmentality",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780226080451",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL19850964W, first published 1991). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1991
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Modern government works less by command than by shaping how people conduct themselves. It relies on rationalities (ways of thinking about rule) and technologies (statistics, audits, programmes) that make populations governable.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do development programmes, NGOs or policies shape people's self-conduct?",
+    "How do audits, indicators or rankings govern institutions?",
+    "Typical data: discourse and document analysis, ethnography."
+  ],
+  "common_mistakes": [
+    "Using governmentality as a synonym for government.",
+    "Describing technologies without the rationality behind them.",
+    "Ignoring resistance and how people use programmes."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Nikolas Rose",
+          "Peter Miller"
+        ],
+        "year": 1992,
+        "title": "Political Power beyond the State: Problematics of Government",
+        "type": "article",
+        "venue": "British Journal of Sociology",
+        "doi": "10.2307/591464",
+        "openalex_id": "W4253150158",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Rationalities and technologies of government."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Tania Murray Li"
+        ],
+        "year": 2007,
+        "title": "The Will to Improve: Governmentality, Development, and the Practice of Politics",
+        "type": "chapter",
+        "venue": "TSpace (University of Toronto)",
+        "doi": null,
+        "openalex_id": "W597757997",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1807/105518"
+      },
+      "adds": "Governmentality of development."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Anglo-Foucauldian governmentality studies",
+      "summary": "Advanced liberal government.",
+      "defining_work": {
+        "authors": [
+          "Nikolas Rose",
+          "Peter Miller"
+        ],
+        "year": 1992,
+        "title": "Political Power beyond the State: Problematics of Government",
+        "type": "article",
+        "venue": "British Journal of Sociology",
+        "doi": "10.2307/591464",
+        "openalex_id": "W4253150158",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Anthropology of development",
+      "summary": "Development programmes as government.",
+      "defining_work": {
+        "authors": [
+          "Tania Murray Li"
+        ],
+        "year": 2007,
+        "title": "The Will to Improve: Governmentality, Development, and the Practice of Politics",
+        "type": "chapter",
+        "venue": "TSpace (University of Toronto)",
+        "doi": null,
+        "openalex_id": "W597757997",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1807/105518"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Powerful tool to study neoliberal policy.",
+      "source": {
+        "authors": [
+          "Nikolas Rose",
+          "Pat O’Malley",
+          "Mariana Valverde"
+        ],
+        "year": 2006,
+        "title": "Governmentality",
+        "type": "article",
+        "venue": "Annual Review of Law and Social Science",
+        "doi": "10.1146/annurev.lawsocsci.2.081805.105900",
+        "openalex_id": "W4245285958",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1146/annurev.lawsocsci.2.081805.105900"
+      }
+    },
+    {
+      "point": "Fits development and NGO studies.",
+      "source": {
+        "authors": [
+          "Tania Murray Li"
+        ],
+        "year": 2007,
+        "title": "The Will to Improve: Governmentality, Development, and the Practice of Politics",
+        "type": "chapter",
+        "venue": "TSpace (University of Toronto)",
+        "doi": null,
+        "openalex_id": "W597757997",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1807/105518"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Tends to read policy texts and neglect practice and resistance.",
+      "source": {
+        "authors": [
+          "Kim McKee"
+        ],
+        "year": 2009,
+        "title": "Post-Foucauldian governmentality: What does it offer critical social policy analysis?",
+        "type": "article",
+        "venue": "Critical Social Policy",
+        "doi": "10.1177/0261018309105180",
+        "openalex_id": "W2021899545",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Risk of applying it as a formula.",
+      "source": {
+        "authors": [
+          "Nikolas Rose",
+          "Pat O’Malley",
+          "Mariana Valverde"
+        ],
+        "year": 2006,
+        "title": "Governmentality",
+        "type": "article",
+        "venue": "Annual Review of Law and Social Science",
+        "doi": "10.1146/annurev.lawsocsci.2.081805.105900",
+        "openalex_id": "W4245285958",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1146/annurev.lawsocsci.2.081805.105900"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Burchell"
+        ],
+        "year": 1991,
+        "title": "The Foucault Effect: Studies in Governmentality",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226080451",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL19850964W, first published 1991). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1991
+      },
+      "chapter": null,
+      "why_read": "Founding volume.",
+      "reading_question": "Which rationality of rule do you see?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Nikolas Rose",
+          "Peter Miller"
+        ],
+        "year": 1992,
+        "title": "Political Power beyond the State: Problematics of Government",
+        "type": "article",
+        "venue": "British Journal of Sociology",
+        "doi": "10.2307/591464",
+        "openalex_id": "W4253150158",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Key development.",
+      "reading_question": "Which technologies are at work?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Kim McKee"
+        ],
+        "year": 2009,
+        "title": "Post-Foucauldian governmentality: What does it offer critical social policy analysis?",
+        "type": "article",
+        "venue": "Critical Social Policy",
+        "doi": "10.1177/0261018309105180",
+        "openalex_id": "W2021899545",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Will you study practice as well as texts?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "governmentality",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

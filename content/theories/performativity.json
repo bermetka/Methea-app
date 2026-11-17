@@ -1,0 +1,318 @@
+{
+  "theory_id": null,
+  "library_name": "Performativity",
+  "slug": "performativity",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Butler"
+    ],
+    "year": 1990,
+    "title": "Gender Trouble: Feminism and the Subversion of Identity",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781136783234",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1989
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Gender is not something we are but something we repeatedly do. Repeated acts make gender look natural, and variations in repetition can unsettle norms.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How are gender or other identities produced in everyday practice?",
+    "How do people subvert norms?",
+    "Typical data: discourse analysis, ethnography, interviews."
+  ],
+  "common_mistakes": [
+    "Confusing performativity with theatrical performance.",
+    "Assuming people freely choose gender.",
+    "Ignoring norms and constraint."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Austin"
+        ],
+        "year": 1962,
+        "title": "How to Do Things with Words",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9788070071335",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1962
+      },
+      "adds": "Performative speech acts."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Butler"
+        ],
+        "year": 1993,
+        "title": "Bodies That Matter: On the Discursive Limits of \"Sex\"",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781136807176",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1993
+      },
+      "adds": "Materiality and citation."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Candace West",
+          "Don H. Zimmerman"
+        ],
+        "year": 1987,
+        "title": "Doing Gender",
+        "type": "article",
+        "venue": "Gender & Society",
+        "doi": "10.1177/0891243287001002002",
+        "openalex_id": "W4229864382",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Related interactionist account."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Butlerian performativity",
+      "summary": "Discursive production.",
+      "defining_work": {
+        "authors": [
+          "Butler"
+        ],
+        "year": 1990,
+        "title": "Gender Trouble: Feminism and the Subversion of Identity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781136783234",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1989
+      }
+    },
+    {
+      "name": "Doing gender",
+      "summary": "Interactionist accountability.",
+      "defining_work": {
+        "authors": [
+          "Candace West",
+          "Don H. Zimmerman"
+        ],
+        "year": 1987,
+        "title": "Doing Gender",
+        "type": "article",
+        "venue": "Gender & Society",
+        "doi": "10.1177/0891243287001002002",
+        "openalex_id": "W4229864382",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Changed gender and queer studies.",
+      "source": {
+        "authors": [
+          "Butler"
+        ],
+        "year": 1993,
+        "title": "Bodies That Matter: On the Discursive Limits of \"Sex\"",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781136807176",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1993
+      }
+    },
+    {
+      "point": "Explains how norms are reproduced.",
+      "source": {
+        "authors": [
+          "Butler"
+        ],
+        "year": 1990,
+        "title": "Gender Trouble: Feminism and the Subversion of Identity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781136783234",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1989
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Too abstract and leaves little room for agency or materiality.",
+      "source": {
+        "authors": [
+          "Martha C. Nussbaum"
+        ],
+        "year": 1999,
+        "title": "The Professor of Parody: The Hip Defeatism of Judith Butler",
+        "type": "article",
+        "venue": "The new republic/The New republic",
+        "doi": null,
+        "openalex_id": "W3122100077",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Interactionist accounts explain everyday gender more concretely.",
+      "source": {
+        "authors": [
+          "Candace West",
+          "Don H. Zimmerman"
+        ],
+        "year": 1987,
+        "title": "Doing Gender",
+        "type": "article",
+        "venue": "Gender & Society",
+        "doi": "10.1177/0891243287001002002",
+        "openalex_id": "W4229864382",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Butler"
+        ],
+        "year": 1990,
+        "title": "Gender Trouble: Feminism and the Subversion of Identity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781136783234",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1989
+      },
+      "chapter": null,
+      "why_read": "Theory.",
+      "reading_question": "Which repeated acts produce identity in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Butler"
+        ],
+        "year": 1993,
+        "title": "Bodies That Matter: On the Discursive Limits of \"Sex\"",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781136807176",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1993
+      },
+      "chapter": null,
+      "why_read": "Response to critics.",
+      "reading_question": "How do you treat materiality?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Candace West",
+          "Don H. Zimmerman"
+        ],
+        "year": 1987,
+        "title": "Doing Gender",
+        "type": "article",
+        "venue": "Gender & Society",
+        "doi": "10.1177/0891243287001002002",
+        "openalex_id": "W4229864382",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Alternative.",
+      "reading_question": "Performativity or doing gender?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "performativity",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

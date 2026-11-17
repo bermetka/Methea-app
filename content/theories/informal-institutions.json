@@ -1,0 +1,370 @@
+{
+  "theory_id": null,
+  "library_name": "Informal institutions",
+  "slug": "informal-institutions",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Gretchen Helmke",
+      "Steven Levitsky"
+    ],
+    "year": 2004,
+    "title": "Informal Institutions and Comparative Politics: A Research Agenda",
+    "type": "article",
+    "venue": "Perspectives on Politics",
+    "doi": "10.1017/s1537592704040472",
+    "openalex_id": "W2168283218",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://figshare.com/articles/online_resource/Informal_Institutions_and_Comparative_Politics_A_Research_Agenda/26126200"
+  },
+  "citation_anchor_openalex_id": "W2168283218",
+  "core_idea": "Unwritten rules shape politics alongside formal ones. Informal institutions can be complementary, accommodating, competing or substitutive, depending on how they relate to formal rules and whether formal rules are effective.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do clan networks, informal payments or patronage shape governance?",
+    "Why do formal rules work differently in practice?",
+    "Typical data: interviews, case study, ethnography."
+  ],
+  "common_mistakes": [
+    "Calling any behaviour an informal institution.",
+    "Ignoring enforcement.",
+    "Not using the typology."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Douglass C. North"
+        ],
+        "year": 1990,
+        "title": "Institutions, Institutional Change and Economic Performance",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511808678",
+        "openalex_id": "W4298413470",
+        "isbn": "9780511808678",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1990
+      },
+      "adds": "Formal and informal constraints."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Helmke"
+        ],
+        "year": 2006,
+        "title": "Informal Institutions and Democracy: Lessons from Latin America",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780801883521",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2006
+      },
+      "adds": "Edited applications."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Anna M. Grzymała-Busse"
+        ],
+        "year": 2010,
+        "title": "The Best Laid Plans: The Impact of Informal Rules on Formal Institutions in Transitional Regimes",
+        "type": "article",
+        "venue": "Studies in Comparative International Development",
+        "doi": "10.1007/s12116-010-9071-y",
+        "openalex_id": "W2079175662",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Informal rules in transitions."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Typology approach",
+      "summary": "Four types.",
+      "defining_work": {
+        "authors": [
+          "Gretchen Helmke",
+          "Steven Levitsky"
+        ],
+        "year": 2004,
+        "title": "Informal Institutions and Comparative Politics: A Research Agenda",
+        "type": "article",
+        "venue": "Perspectives on Politics",
+        "doi": "10.1017/s1537592704040472",
+        "openalex_id": "W2168283218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/online_resource/Informal_Institutions_and_Comparative_Politics_A_Research_Agenda/26126200"
+      }
+    },
+    {
+      "name": "Post-communist informality",
+      "summary": "Transitional regimes.",
+      "defining_work": {
+        "authors": [
+          "Anna M. Grzymała-Busse"
+        ],
+        "year": 2010,
+        "title": "The Best Laid Plans: The Impact of Informal Rules on Formal Institutions in Transitional Regimes",
+        "type": "article",
+        "venue": "Studies in Comparative International Development",
+        "doi": "10.1007/s12116-010-9071-y",
+        "openalex_id": "W2079175662",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear typology.",
+      "source": {
+        "authors": [
+          "Gretchen Helmke",
+          "Steven Levitsky"
+        ],
+        "year": 2004,
+        "title": "Informal Institutions and Comparative Politics: A Research Agenda",
+        "type": "article",
+        "venue": "Perspectives on Politics",
+        "doi": "10.1017/s1537592704040472",
+        "openalex_id": "W2168283218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/online_resource/Informal_Institutions_and_Comparative_Politics_A_Research_Agenda/26126200"
+      }
+    },
+    {
+      "point": "Fits post-Soviet politics.",
+      "source": {
+        "authors": [
+          "Anna M. Grzymała-Busse"
+        ],
+        "year": 2010,
+        "title": "The Best Laid Plans: The Impact of Informal Rules on Formal Institutions in Transitional Regimes",
+        "type": "article",
+        "venue": "Studies in Comparative International Development",
+        "doi": "10.1007/s12116-010-9071-y",
+        "openalex_id": "W2079175662",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Informal institutions also adapt and drive change.",
+      "source": {
+        "authors": [
+          "Kellee S. Tsai"
+        ],
+        "year": 2006,
+        "title": "Adaptive Informal Institutions and Endogenous Institutional Change in China",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1353/wp.2007.0018",
+        "openalex_id": "W1980659435",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Hard to observe.",
+      "source": {
+        "authors": [
+          "Helmke"
+        ],
+        "year": 2006,
+        "title": "Informal Institutions and Democracy: Lessons from Latin America",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780801883521",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2006
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Gretchen Helmke",
+          "Steven Levitsky"
+        ],
+        "year": 2004,
+        "title": "Informal Institutions and Comparative Politics: A Research Agenda",
+        "type": "article",
+        "venue": "Perspectives on Politics",
+        "doi": "10.1017/s1537592704040472",
+        "openalex_id": "W2168283218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/online_resource/Informal_Institutions_and_Comparative_Politics_A_Research_Agenda/26126200"
+      },
+      "chapter": null,
+      "why_read": "Agenda.",
+      "reading_question": "Which type fits your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Anna M. Grzymała-Busse"
+        ],
+        "year": 2010,
+        "title": "The Best Laid Plans: The Impact of Informal Rules on Formal Institutions in Transitional Regimes",
+        "type": "article",
+        "venue": "Studies in Comparative International Development",
+        "doi": "10.1007/s12116-010-9071-y",
+        "openalex_id": "W2079175662",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Transitions.",
+      "reading_question": "How will you observe informal rules?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Kellee S. Tsai"
+        ],
+        "year": 2006,
+        "title": "Adaptive Informal Institutions and Endogenous Institutional Change in China",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1353/wp.2007.0018",
+        "openalex_id": "W1980659435",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Change.",
+      "reading_question": "Stable or adaptive?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "informal institutions",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2725438742",
+        "title": "Making Bureaucracy Work: Patronage Networks, Performance Incentives, and Economic Development in China",
+        "year": 2018,
+        "authors": [
+          "Junyan Jiang"
+        ],
+        "cited_by": 407,
+        "oa_url": "https://doi.org/10.2139/ssrn.2992104"
+      },
+      {
+        "openalex_id": "W4362554094",
+        "title": "International business in the digital age: Global strategies in a world of national institutions",
+        "year": 2023,
+        "authors": [
+          "Klaus E. Meyer",
+          "Jiatao Li",
+          "Keith D. Brouthers",
+          "Ruey‐Jer “Bryan” Jean"
+        ],
+        "cited_by": 311,
+        "oa_url": "https://doi.org/10.1057/s41267-023-00618-x"
+      },
+      {
+        "openalex_id": "W2344826344",
+        "title": "Comparing Candidate Selection: A Feminist Institutionalist Approach",
+        "year": 2016,
+        "authors": [
+          "Elin Bjarnegård",
+          "Meryl Kenny"
+        ],
+        "cited_by": 223,
+        "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-289268"
+      },
+      {
+        "openalex_id": "W2917866415",
+        "title": "Pro-market institutions and global strategy: The pendulum of pro-market reforms and reversals",
+        "year": 2019,
+        "authors": [
+          "Álvaro Cuervo-Cazurra",
+          "Ajai Singh Gaur",
+          "Deeksha A Singh"
+        ],
+        "cited_by": 202,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2800137988",
+        "title": "Tax morale and institutional theory: a systematic review",
+        "year": 2018,
+        "authors": [
+          "Ioana Alexandra Horodnic"
+        ],
+        "cited_by": 200,
+        "oa_url": "https://doi.org/10.1108/ijssp-03-2018-0039"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

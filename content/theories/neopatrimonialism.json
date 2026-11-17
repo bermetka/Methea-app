@@ -1,0 +1,352 @@
+{
+  "theory_id": null,
+  "library_name": "Neopatrimonialism",
+  "slug": "neopatrimonialism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Gero Erdmann",
+      "Ulf Engel"
+    ],
+    "year": 2007,
+    "title": "Neopatrimonialism Reconsidered: Critical Review and Elaboration of an Elusive Concept",
+    "type": "article",
+    "venue": "Commonwealth and Comparative Politics",
+    "doi": "10.1080/14662040601135813",
+    "openalex_id": "W1972908739",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1972908739",
+  "core_idea": "Neopatrimonial states combine formal legal-rational institutions with personal patron-client rule. Office is used for private gain, but formal rules still matter.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How are elites and resources organised in post-Soviet or African states?",
+    "How does patronage shape governance?",
+    "Typical data: case study, interviews, comparative analysis."
+  ],
+  "common_mistakes": [
+    "Using the term as a catch-all for bad governance.",
+    "Ignoring the formal side.",
+    "Cultural determinism."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Michaël Bratton",
+          "Nicolas van de Walle"
+        ],
+        "year": 1994,
+        "title": "Neopatrimonial Regimes and Political Transitions in Africa",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.2307/2950715",
+        "openalex_id": "W2025872058",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Neopatrimonialism and transitions."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Rico Isaacs"
+        ],
+        "year": 2014,
+        "title": "Neopatrimonialism and beyond: reassessing the formal and informal in the study of Central Asian politics",
+        "type": "article",
+        "venue": "Contemporary Politics",
+        "doi": "10.1080/13569775.2014.907989",
+        "openalex_id": "W1976903841",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Neopatrimonialism_and_Beyond_Reassessing_the_formal_and_informal_in_the_study_of_Central_Asian_Politics/24377719"
+      },
+      "adds": "Central Asia."
+    }
+  ],
+  "strands": [
+    {
+      "name": "African politics",
+      "summary": "Origins.",
+      "defining_work": {
+        "authors": [
+          "Michaël Bratton",
+          "Nicolas van de Walle"
+        ],
+        "year": 1994,
+        "title": "Neopatrimonial Regimes and Political Transitions in Africa",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.2307/2950715",
+        "openalex_id": "W2025872058",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Eurasian patronalism",
+      "summary": "Post-Soviet.",
+      "defining_work": {
+        "authors": [
+          "Henry E. Hale"
+        ],
+        "year": 2014,
+        "title": "Patronal Politics",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9781139683524",
+        "openalex_id": "W4253897330",
+        "isbn": "9781107423138",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2014
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Captures hybrid governance.",
+      "source": {
+        "authors": [
+          "Gero Erdmann",
+          "Ulf Engel"
+        ],
+        "year": 2007,
+        "title": "Neopatrimonialism Reconsidered: Critical Review and Elaboration of an Elusive Concept",
+        "type": "article",
+        "venue": "Commonwealth and Comparative Politics",
+        "doi": "10.1080/14662040601135813",
+        "openalex_id": "W1972908739",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Applied to Central Asia.",
+      "source": {
+        "authors": [
+          "Rico Isaacs"
+        ],
+        "year": 2014,
+        "title": "Neopatrimonialism and beyond: reassessing the formal and informal in the study of Central Asian politics",
+        "type": "article",
+        "venue": "Contemporary Politics",
+        "doi": "10.1080/13569775.2014.907989",
+        "openalex_id": "W1976903841",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Neopatrimonialism_and_Beyond_Reassessing_the_formal_and_informal_in_the_study_of_Central_Asian_Politics/24377719"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Concept is vague and overused.",
+      "source": {
+        "authors": [
+          "Anne Pitcher",
+          "Mary H. Moran",
+          "Michael O. Johnston"
+        ],
+        "year": 2009,
+        "title": "Rethinking Patrimonialism and Neopatrimonialism in Africa",
+        "type": "article",
+        "venue": "African Studies Review",
+        "doi": "10.1353/arw.0.0163",
+        "openalex_id": "W2102603946",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Does not explain economic performance.",
+      "source": {
+        "authors": [
+          "Thandika Mkandawire"
+        ],
+        "year": 2015,
+        "title": "Neopatrimonialism and the Political Economy of Economic Performance in Africa: Critical Reflections",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1017/s004388711500009x",
+        "openalex_id": "W1793218411",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Gero Erdmann",
+          "Ulf Engel"
+        ],
+        "year": 2007,
+        "title": "Neopatrimonialism Reconsidered: Critical Review and Elaboration of an Elusive Concept",
+        "type": "article",
+        "venue": "Commonwealth and Comparative Politics",
+        "doi": "10.1080/14662040601135813",
+        "openalex_id": "W1972908739",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Which formal and informal mix?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Rico Isaacs"
+        ],
+        "year": 2014,
+        "title": "Neopatrimonialism and beyond: reassessing the formal and informal in the study of Central Asian politics",
+        "type": "article",
+        "venue": "Contemporary Politics",
+        "doi": "10.1080/13569775.2014.907989",
+        "openalex_id": "W1976903841",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Neopatrimonialism_and_Beyond_Reassessing_the_formal_and_informal_in_the_study_of_Central_Asian_Politics/24377719"
+      },
+      "chapter": null,
+      "why_read": "Central Asia.",
+      "reading_question": "Neopatrimonialism or patronalism?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Anne Pitcher",
+          "Mary H. Moran",
+          "Michael O. Johnston"
+        ],
+        "year": 2009,
+        "title": "Rethinking Patrimonialism and Neopatrimonialism in Africa",
+        "type": "article",
+        "venue": "African Studies Review",
+        "doi": "10.1353/arw.0.0163",
+        "openalex_id": "W2102603946",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you avoid catch-all use?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "neopatrimonialism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2791567297",
+        "title": "The AKP after 15 years: emergence of Erdoganism in Turkey",
+        "year": 2018,
+        "authors": [
+          "İhsan Yılmaz",
+          "Galib Bashirov"
+        ],
+        "cited_by": 227,
+        "oa_url": "https://doi.org/10.1080/01436597.2018.1447371"
+      },
+      {
+        "openalex_id": "W2587714305",
+        "title": "Conflict, collusion and corruption in small-scale gold mining: Chinese miners and the state in Ghana",
+        "year": 2017,
+        "authors": [
+          "Gordon Crawford",
+          "Gabriel Botchwey"
+        ],
+        "cited_by": 190,
+        "oa_url": "https://pureportal.coventry.ac.uk/en/publications/4bbbe7c3-c644-4b67-8485-a2c9ab3c5c16"
+      },
+      {
+        "openalex_id": "W2291220400",
+        "title": "Neopatrimonialism, good governance, corruption and accounting in Africa",
+        "year": 2017,
+        "authors": [
+          "Trevor Hopper"
+        ],
+        "cited_by": 73,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2767819333",
+        "title": "Neopatrimonialism and Democracy: An Empirical Investigation of Africa's Political Regimes",
+        "year": 2017,
+        "authors": [
+          "Rachel Sigman",
+          "Staffan I. Lindberg"
+        ],
+        "cited_by": 54,
+        "oa_url": "https://doi.org/10.2139/ssrn.3066654"
+      },
+      {
+        "openalex_id": "W3138000917",
+        "title": "Management Accounting Research on Africa",
+        "year": 2021,
+        "authors": [
+          "Sinclear R. Ndemewah",
+          "Martin R. W. Hiebl"
+        ],
+        "cited_by": 50,
+        "oa_url": "https://doi.org/10.1080/09638180.2021.1897025"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 2 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

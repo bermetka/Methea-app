@@ -1,0 +1,396 @@
+{
+  "theory_id": null,
+  "library_name": "Social ecological model (health promotion)",
+  "slug": "social-ecological-model",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Kenneth R. McLeroy",
+      "Daniel L. Bibeau",
+      "Allan Steckler",
+      "Karen Glanz"
+    ],
+    "year": 1988,
+    "title": "An Ecological Perspective on Health Promotion Programs",
+    "type": "article",
+    "venue": "Health Education Quarterly",
+    "doi": "10.1177/109019818801500401",
+    "openalex_id": "W2158089900",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://doi.org/10.13016/ywf4-gmjc"
+  },
+  "citation_anchor_openalex_id": "W2158089900",
+  "core_idea": "Health behaviour is shaped at several nested levels: individual, interpersonal, organisational, community and public policy. Interventions work better when they target more than one level.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What influences a health behaviour at different levels?",
+    "How should a multi-level health intervention be designed?",
+    "Typical data: mixed methods, surveys, interviews, policy analysis."
+  ],
+  "common_mistakes": [
+    "Listing levels without analysing interactions.",
+    "Claiming a 'multi-level' study with individual data only.",
+    "Confusing it with Bronfenbrenner's developmental model (own library entry)."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Urie Bronfenbrenner"
+        ],
+        "year": 1979,
+        "title": "The Ecology of Human Development",
+        "type": "book",
+        "venue": "Harvard University Press eBooks",
+        "doi": "10.4159/9780674028845",
+        "openalex_id": "W2254735081",
+        "isbn": "9780674224575",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1979
+      },
+      "adds": "Nested ecological systems."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Daniel Stokols"
+        ],
+        "year": 1992,
+        "title": "Establishing and maintaining healthy environments: Toward a social ecology of health promotion.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.47.1.6",
+        "openalex_id": "W4236970490",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://escholarship.org/uc/item/8gn9r5bg"
+      },
+      "adds": "Earlier statement of the social ecology of health promotion."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "James F. Sallis",
+          "Neville G. Owen",
+          "Edwin B. Fisher"
+        ],
+        "year": 2008,
+        "title": "Ecological models of health behavior.",
+        "type": "article",
+        "venue": "Swinburne figshare (Swinburne University of Technology)",
+        "doi": null,
+        "openalex_id": "W1893208408",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Handbook chapter on ecological models."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Health promotion planning",
+      "summary": "Multi-level interventions.",
+      "defining_work": {
+        "authors": [
+          "Kenneth R. McLeroy",
+          "Daniel L. Bibeau",
+          "Allan Steckler",
+          "Karen Glanz"
+        ],
+        "year": 1988,
+        "title": "An Ecological Perspective on Health Promotion Programs",
+        "type": "article",
+        "venue": "Health Education Quarterly",
+        "doi": "10.1177/109019818801500401",
+        "openalex_id": "W2158089900",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.13016/ywf4-gmjc"
+      }
+    },
+    {
+      "name": "Community health",
+      "summary": "Settings and environments.",
+      "defining_work": {
+        "authors": [
+          "Daniel Stokols"
+        ],
+        "year": 1996,
+        "title": "Translating Social Ecological Theory into Guidelines for Community Health Promotion",
+        "type": "article",
+        "venue": "American Journal of Health Promotion",
+        "doi": "10.4278/0890-1171-10.4.282",
+        "openalex_id": "W2179965972",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://escholarship.org/uc/item/2bv79313"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Widely used to plan interventions.",
+      "source": {
+        "authors": [
+          "Daniel Stokols"
+        ],
+        "year": 1996,
+        "title": "Translating Social Ecological Theory into Guidelines for Community Health Promotion",
+        "type": "article",
+        "venue": "American Journal of Health Promotion",
+        "doi": "10.4278/0890-1171-10.4.282",
+        "openalex_id": "W2179965972",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://escholarship.org/uc/item/2bv79313"
+      }
+    },
+    {
+      "point": "Captures structural influences.",
+      "source": {
+        "authors": [
+          "Kenneth R. McLeroy",
+          "Daniel L. Bibeau",
+          "Allan Steckler",
+          "Karen Glanz"
+        ],
+        "year": 1988,
+        "title": "An Ecological Perspective on Health Promotion Programs",
+        "type": "article",
+        "venue": "Health Education Quarterly",
+        "doi": "10.1177/109019818801500401",
+        "openalex_id": "W2158089900",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.13016/ywf4-gmjc"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Too general to predict specific behaviour.",
+      "source": {
+        "authors": [
+          "James F. Sallis",
+          "Neville G. Owen",
+          "Edwin B. Fisher"
+        ],
+        "year": 2008,
+        "title": "Ecological models of health behavior.",
+        "type": "article",
+        "venue": "Swinburne figshare (Swinburne University of Technology)",
+        "doi": null,
+        "openalex_id": "W1893208408",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Hard to test interactions between levels.",
+      "source": {
+        "authors": [
+          "Daniel Stokols"
+        ],
+        "year": 1996,
+        "title": "Translating Social Ecological Theory into Guidelines for Community Health Promotion",
+        "type": "article",
+        "venue": "American Journal of Health Promotion",
+        "doi": "10.4278/0890-1171-10.4.282",
+        "openalex_id": "W2179965972",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://escholarship.org/uc/item/2bv79313"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Kenneth R. McLeroy",
+          "Daniel L. Bibeau",
+          "Allan Steckler",
+          "Karen Glanz"
+        ],
+        "year": 1988,
+        "title": "An Ecological Perspective on Health Promotion Programs",
+        "type": "article",
+        "venue": "Health Education Quarterly",
+        "doi": "10.1177/109019818801500401",
+        "openalex_id": "W2158089900",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.13016/ywf4-gmjc"
+      },
+      "chapter": null,
+      "why_read": "The model.",
+      "reading_question": "Which levels matter in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Daniel Stokols"
+        ],
+        "year": 1996,
+        "title": "Translating Social Ecological Theory into Guidelines for Community Health Promotion",
+        "type": "article",
+        "venue": "American Journal of Health Promotion",
+        "doi": "10.4278/0890-1171-10.4.282",
+        "openalex_id": "W2179965972",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://escholarship.org/uc/item/2bv79313"
+      },
+      "chapter": null,
+      "why_read": "Principles.",
+      "reading_question": "How do levels interact?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "James F. Sallis",
+          "Neville G. Owen",
+          "Edwin B. Fisher"
+        ],
+        "year": 2008,
+        "title": "Ecological models of health behavior.",
+        "type": "article",
+        "venue": "Swinburne figshare (Swinburne University of Technology)",
+        "doi": null,
+        "openalex_id": "W1893208408",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "How will you collect data at each level?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social ecological model health",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2901869601",
+        "title": "College Students and Eating Habits: A Study Using An Ecological Model for Healthy Behavior",
+        "year": 2018,
+        "authors": [
+          "Giovanni Sogari",
+          "Catalina Velez-Argumedo",
+          "Miguel Ignacio Gomez",
+          "Cristina Mora"
+        ],
+        "cited_by": 696,
+        "oa_url": "http://dx.doi.org/10.3390/nu10121823"
+      },
+      {
+        "openalex_id": "W2415424991",
+        "title": "A systematic review of review articles addressing factors related to physical activity participation among children and adults with physical disabilities",
+        "year": 2016,
+        "authors": [
+          "Kathleen A. Martin Ginis",
+          "Jasmin K. Ma",
+          "Amy E. Latimer‐Cheung",
+          "James Howard Rimmer"
+        ],
+        "cited_by": 470,
+        "oa_url": "http://hdl.handle.net/1974/26349"
+      },
+      {
+        "openalex_id": "W2927051625",
+        "title": "Community Interventions to Promote Mental Health and Social Equity",
+        "year": 2019,
+        "authors": [
+          "Enrico G. Castillo",
+          "Roya Ijadi‐Maghsoodi",
+          "Sonya M. Shadravan",
+          "Elizabeth M. Moore",
+          "Michael O. Mensah",
+          "Mary Jane Docherty"
+        ],
+        "cited_by": 422,
+        "oa_url": "https://doi.org/10.1007/s11920-019-1017-0"
+      },
+      {
+        "openalex_id": "W3091832406",
+        "title": "Assessing and Addressing Cardiovascular Health in LGBTQ Adults: A Scientific Statement From the American Heart Association",
+        "year": 2020,
+        "authors": [
+          "Billy A. Caceres",
+          "Carl G. Streed",
+          "Heather L. Corliss",
+          "Donald M. Lloyd‐Jones",
+          "Phoenix A. Matthews",
+          "Monica Mukherjee"
+        ],
+        "cited_by": 293,
+        "oa_url": "https://doi.org/10.1161/cir.0000000000000914"
+      },
+      {
+        "openalex_id": "W3156489184",
+        "title": "Gendered stereotypes and norms: A systematic review of interventions designed to shift attitudes and behaviour",
+        "year": 2021,
+        "authors": [
+          "Rebecca Stewart",
+          "Breanna Wright",
+          "Liam David Graham Smith",
+          "Steven Roberts",
+          "Natalie Russell"
+        ],
+        "cited_by": 261,
+        "oa_url": "https://doi.org/10.1016/j.heliyon.2021.e06660"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "theory_id": null,
+  "library_name": "Achievement goal theory",
+  "slug": "achievement-goal-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Carole Ames"
+    ],
+    "year": 1992,
+    "title": "Classrooms: Goals, structures, and student motivation.",
+    "type": "article",
+    "venue": "Journal of Educational Psychology",
+    "doi": "10.1037//0022-0663.84.3.261",
+    "openalex_id": "W2056855771",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2056855771",
+  "core_idea": "Students pursue different goals in learning: developing competence (mastery) or showing it compared with others (performance). Classroom tasks, evaluation and authority shape which goals students adopt.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do classroom practices or grading affect students' goals and motivation?",
+    "Are mastery or performance goals linked to deeper learning or cheating?",
+    "Typical data: goal orientation surveys (e.g. PALS), observation, interviews."
+  ],
+  "common_mistakes": [
+    "Using only two goals when later work splits them into approach and avoidance.",
+    "Treating goals as traits rather than responses to context.",
+    "Mixing personal goals and perceived classroom goal structure in one scale."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Carol Sorich Dweck"
+        ],
+        "year": 1986,
+        "title": "Motivational processes affecting learning.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.41.10.1040",
+        "openalex_id": "W1996652948",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Mastery vs helpless patterns and goals."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Andrew J. Elliot",
+          "Marcy A. Church"
+        ],
+        "year": 1997,
+        "title": "A hierarchical model of approach and avoidance achievement motivation.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.72.1.218",
+        "openalex_id": "W2145076773",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Splits performance goals into approach and avoidance."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Andrew J. Elliot",
+          "Holly A. McGregor"
+        ],
+        "year": 2001,
+        "title": "A 2 × 2 achievement goal framework.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.80.3.501",
+        "openalex_id": "W2013811491",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Adds mastery-avoidance goals."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Classroom goal structures",
+      "summary": "How learning environments signal goals.",
+      "defining_work": {
+        "authors": [
+          "Carole Ames"
+        ],
+        "year": 1992,
+        "title": "Classrooms: Goals, structures, and student motivation.",
+        "type": "article",
+        "venue": "Journal of Educational Psychology",
+        "doi": "10.1037//0022-0663.84.3.261",
+        "openalex_id": "W2056855771",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Approach–avoidance framework",
+      "summary": "2 × 2 and later models of goals.",
+      "defining_work": {
+        "authors": [
+          "Andrew J. Elliot",
+          "Holly A. McGregor"
+        ],
+        "year": 2001,
+        "title": "A 2 × 2 achievement goal framework.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.80.3.501",
+        "openalex_id": "W2013811491",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Mastery goals consistently relate to adaptive learning patterns.",
+      "source": {
+        "authors": [
+          "Carol Sorich Dweck"
+        ],
+        "year": 1986,
+        "title": "Motivational processes affecting learning.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.41.10.1040",
+        "openalex_id": "W1996652948",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Links classroom practices to motivation, so it informs teaching.",
+      "source": {
+        "authors": [
+          "Carole Ames"
+        ],
+        "year": 1992,
+        "title": "Classrooms: Goals, structures, and student motivation.",
+        "type": "article",
+        "venue": "Journal of Educational Psychology",
+        "doi": "10.1037//0022-0663.84.3.261",
+        "openalex_id": "W2056855771",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Performance-approach goals are not always harmful; the 'mastery good, performance bad' view is too simple.",
+      "source": {
+        "authors": [
+          "Judith M. Harackiewicz",
+          "Kenneth E. Barron",
+          "Paul R. Pintrich",
+          "Andrew J. Elliot",
+          "Todd M. Thrash"
+        ],
+        "year": 2002,
+        "title": "Revision of achievement goal theory: Necessary and illuminating.",
+        "type": "article",
+        "venue": "Journal of Educational Psychology",
+        "doi": "10.1037//0022-0663.94.3.638",
+        "openalex_id": "W2090550551",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Definitions and measures of goals vary widely across studies.",
+      "source": {
+        "authors": [
+          "Corwin Senko",
+          "Chris S. Hulleman",
+          "Judith M. Harackiewicz"
+        ],
+        "year": 2011,
+        "title": "Achievement Goal Theory at the Crossroads: Old Controversies, Current Challenges, and New Directions",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1080/00461520.2011.538646",
+        "openalex_id": "W1996933197",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Carole Ames"
+        ],
+        "year": 1992,
+        "title": "Classrooms: Goals, structures, and student motivation.",
+        "type": "article",
+        "venue": "Journal of Educational Psychology",
+        "doi": "10.1037//0022-0663.84.3.261",
+        "openalex_id": "W2056855771",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The classroom view.",
+      "reading_question": "Which classroom structures could you observe?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Andrew J. Elliot",
+          "Holly A. McGregor"
+        ],
+        "year": 2001,
+        "title": "A 2 × 2 achievement goal framework.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.80.3.501",
+        "openalex_id": "W2013811491",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Modern goal model.",
+      "reading_question": "Which goals will you measure?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Corwin Senko",
+          "Chris S. Hulleman",
+          "Judith M. Harackiewicz"
+        ],
+        "year": 2011,
+        "title": "Achievement Goal Theory at the Crossroads: Old Controversies, Current Challenges, and New Directions",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1080/00461520.2011.538646",
+        "openalex_id": "W1996933197",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Debates in the field.",
+      "reading_question": "Which controversy affects your design?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "achievement goal",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3022976661",
+        "title": "The origins, evolution, and future directions of achievement goal theory",
+        "year": 2020,
+        "authors": [
+          "Tim Urdan",
+          "Avi Kaplan"
+        ],
+        "cited_by": 415,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3097570733",
+        "title": "College Students’ Time Management: a Self-Regulated Learning Perspective",
+        "year": 2020,
+        "authors": [
+          "Christopher A. Wolters",
+          "Anna C. Brady"
+        ],
+        "cited_by": 401,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2289043780",
+        "title": "A New Look at Multiple Goal Pursuit: the Promise of a Person-Centered Approach",
+        "year": 2016,
+        "authors": [
+          "Stephanie V. Wormington",
+          "Lisa Linnenbrink‐Garcia"
+        ],
+        "cited_by": 302,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2797266847",
+        "title": "Weaving Cultural Relevance and Achievement Motivation Into Inclusive Classroom Cultures",
+        "year": 2018,
+        "authors": [
+          "Revathy Kumar",
+          "Akane Zusho",
+          "Rhonda S. Bondie"
+        ],
+        "cited_by": 300,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2789444161",
+        "title": "The Role of Epistemic Emotions in Personal Epistemology and Self-Regulated Learning",
+        "year": 2018,
+        "authors": [
+          "Krista Renee Muis",
+          "Marianne Chevrier",
+          "Cara A. Singh"
+        ],
+        "cited_by": 286,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

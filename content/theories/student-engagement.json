@@ -1,0 +1,386 @@
+{
+  "theory_id": null,
+  "library_name": "Student engagement (multidimensional)",
+  "slug": "student-engagement",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Jennifer A. Fredricks",
+      "Phyllis C. Blumenfeld",
+      "Alison H. Paris"
+    ],
+    "year": 2004,
+    "title": "School Engagement: Potential of the Concept, State of the Evidence",
+    "type": "article",
+    "venue": "Review of Educational Research",
+    "doi": "10.3102/00346543074001059",
+    "openalex_id": "W2169570446",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2169570446",
+  "core_idea": "Engagement has three linked dimensions: behavioural (participation, effort), emotional (feelings about school) and cognitive (investment in learning). It is shaped by context and can change.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does an intervention or classroom practice change engagement?",
+    "Why do some students disengage?",
+    "Typical data: surveys, observation, interviews."
+  ],
+  "common_mistakes": [
+    "Using 'engagement' without saying which dimension.",
+    "Mixing engagement with its causes (e.g. teacher support) in one scale.",
+    "Treating it as stable rather than malleable."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "James J. Appleton",
+          "Sandra L. Christenson",
+          "Michael J. Furlong"
+        ],
+        "year": 2008,
+        "title": "Student engagement with school: Critical conceptual and methodological issues of the construct",
+        "type": "article",
+        "venue": "Psychology in the Schools",
+        "doi": "10.1002/pits.20303",
+        "openalex_id": "W2021427605",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Conceptual and methodological issues in defining engagement."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Ella R. Kahu"
+        ],
+        "year": 2011,
+        "title": "Framing student engagement in higher education",
+        "type": "article",
+        "venue": "Studies in Higher Education",
+        "doi": "10.1080/03075079.2011.598505",
+        "openalex_id": "W2047706901",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/10179/15152"
+      },
+      "adds": "Four perspectives on engagement in higher education."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Sandra L. Christenson",
+          "Amy L. Reschly",
+          "Cathy Wylie"
+        ],
+        "year": 2012,
+        "title": "Handbook of Research on Student Engagement",
+        "type": "book",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-1-4614-2018-7",
+        "openalex_id": "W2588855640",
+        "isbn": "9783031078552",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2022,
+        "note": "Library record's first publication year is 2022; 2012 is the edition or translation cited here."
+      },
+      "adds": "Major handbook."
+    }
+  ],
+  "strands": [
+    {
+      "name": "School engagement (K-12)",
+      "summary": "Three-dimensional model.",
+      "defining_work": {
+        "authors": [
+          "Jennifer A. Fredricks",
+          "Phyllis C. Blumenfeld",
+          "Alison H. Paris"
+        ],
+        "year": 2004,
+        "title": "School Engagement: Potential of the Concept, State of the Evidence",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.3102/00346543074001059",
+        "openalex_id": "W2169570446",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Higher education engagement",
+      "summary": "Psychosocial and sociocultural views.",
+      "defining_work": {
+        "authors": [
+          "Ella R. Kahu"
+        ],
+        "year": 2011,
+        "title": "Framing student engagement in higher education",
+        "type": "article",
+        "venue": "Studies in Higher Education",
+        "doi": "10.1080/03075079.2011.598505",
+        "openalex_id": "W2047706901",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/10179/15152"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Integrates scattered research into one framework.",
+      "source": {
+        "authors": [
+          "Jennifer A. Fredricks",
+          "Phyllis C. Blumenfeld",
+          "Alison H. Paris"
+        ],
+        "year": 2004,
+        "title": "School Engagement: Potential of the Concept, State of the Evidence",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.3102/00346543074001059",
+        "openalex_id": "W2169570446",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Supported by a large handbook-level literature.",
+      "source": {
+        "authors": [
+          "Sandra L. Christenson",
+          "Amy L. Reschly",
+          "Cathy Wylie"
+        ],
+        "year": 2012,
+        "title": "Handbook of Research on Student Engagement",
+        "type": "book",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-1-4614-2018-7",
+        "openalex_id": "W2588855640",
+        "isbn": "9783031078552",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2022,
+        "note": "Library record's first publication year is 2022; 2012 is the edition or translation cited here."
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Definitions and measures are inconsistent across studies.",
+      "source": {
+        "authors": [
+          "Roger Azevedo"
+        ],
+        "year": 2015,
+        "title": "Defining and Measuring Engagement and Learning in Science: Conceptual, Theoretical, Methodological, and Analytical Issues",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1080/00461520.2015.1004069",
+        "openalex_id": "W2129514660",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Behavioural focus hides sociocultural context.",
+      "source": {
+        "authors": [
+          "Ella R. Kahu"
+        ],
+        "year": 2011,
+        "title": "Framing student engagement in higher education",
+        "type": "article",
+        "venue": "Studies in Higher Education",
+        "doi": "10.1080/03075079.2011.598505",
+        "openalex_id": "W2047706901",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/10179/15152"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Jennifer A. Fredricks",
+          "Phyllis C. Blumenfeld",
+          "Alison H. Paris"
+        ],
+        "year": 2004,
+        "title": "School Engagement: Potential of the Concept, State of the Evidence",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.3102/00346543074001059",
+        "openalex_id": "W2169570446",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The three dimensions.",
+      "reading_question": "Which dimension will you measure?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Johnmarshall Reeve",
+          "Ching-Mei Tseng"
+        ],
+        "year": 2011,
+        "title": "Agency as a fourth aspect of students’ engagement during learning activities",
+        "type": "article",
+        "venue": "Contemporary Educational Psychology",
+        "doi": "10.1016/j.cedpsych.2011.05.002",
+        "openalex_id": "W2018176383",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Fourth dimension.",
+      "reading_question": "Does agency matter in your setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Roger Azevedo"
+        ],
+        "year": 2015,
+        "title": "Defining and Measuring Engagement and Learning in Science: Conceptual, Theoretical, Methodological, and Analytical Issues",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1080/00461520.2015.1004069",
+        "openalex_id": "W2129514660",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Measurement issues.",
+      "reading_question": "How will you define engagement?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "student engagement",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3014646985",
+        "title": "Mapping research in student engagement and educational technology in higher education: a systematic evidence map",
+        "year": 2020,
+        "authors": [
+          "Melissa Bond",
+          "Katja Buntins",
+          "Svenja Bedenlier",
+          "Olaf Zawacki‐Richter",
+          "Michael Kerres"
+        ],
+        "cited_by": 1504,
+        "oa_url": "https://doi.org/10.1186/s41239-019-0176-8"
+      },
+      {
+        "openalex_id": "W2729369333",
+        "title": "Student engagement in the educational interface: understanding the mechanisms of student success",
+        "year": 2017,
+        "authors": [
+          "Ella R. Kahu",
+          "Karen J. Nelson"
+        ],
+        "cited_by": 1301,
+        "oa_url": "https://hdl.handle.net/10179/15151"
+      },
+      {
+        "openalex_id": "W2286110194",
+        "title": "Student engagement, context, and adjustment: Addressing definitional, measurement, and methodological issues",
+        "year": 2016,
+        "authors": [
+          "Jennifer A. Fredricks",
+          "Michael Filsecker",
+          "Michael A. Lawson"
+        ],
+        "cited_by": 954,
+        "oa_url": "https://doi.org/10.1016/j.learninstruc.2016.02.002"
+      },
+      {
+        "openalex_id": "W3203800336",
+        "title": "Adaptive e-learning environment based on learning styles and its impact on development students' engagement",
+        "year": 2021,
+        "authors": [
+          "Hassan A. El-Sabagh"
+        ],
+        "cited_by": 763,
+        "oa_url": "https://doi.org/10.1186/s41239-021-00289-4"
+      },
+      {
+        "openalex_id": "W2947655140",
+        "title": "The relationships between school belonging and students’ motivational, social-emotional, behavioural, and academic outcomes in secondary education: a meta-analytic review",
+        "year": 2019,
+        "authors": [
+          "Hanke Korpershoek",
+          "Esther T. Canrinus",
+          "Marjon Fokkens-Bruinsma",
+          "Hester de Boer"
+        ],
+        "cited_by": 745,
+        "oa_url": "https://doi.org/10.1080/02671522.2019.1615116"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

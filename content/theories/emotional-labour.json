@@ -1,0 +1,315 @@
+{
+  "theory_id": null,
+  "library_name": "Emotional labour",
+  "slug": "emotional-labour",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Hochschild"
+    ],
+    "year": 1983,
+    "title": "The Managed Heart: Commercialization of Human Feeling",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780520239333",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL2627283W, first published 1983). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1983
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "In many jobs workers must manage their feelings to display the emotions the employer requires. They do it through surface acting (faking) or deep acting (changing what they feel), with costs such as estrangement and burnout.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do service, care or teaching workers manage emotions at work?",
+    "Is emotional labour linked to burnout?",
+    "Typical data: interviews, observation, surveys."
+  ],
+  "common_mistakes": [
+    "Using emotional labour for any emotion at work; it means emotion managed for a wage.",
+    "Mixing feeling rules and display rules.",
+    "Assuming all emotional labour is harmful."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Arlie Russell Hochschild"
+        ],
+        "year": 1979,
+        "title": "Emotion Work, Feeling Rules, and Social Structure",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/227049",
+        "openalex_id": "W1987154081",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Feeling rules and emotion work."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Blake E. Ashforth",
+          "Ronald H. Humphrey"
+        ],
+        "year": 1993,
+        "title": "Emotional Labor in Service Roles: The Influence of Identity",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/258824",
+        "openalex_id": "W2026329655",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Identity and emotional labour."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Alicia A. Grandey"
+        ],
+        "year": 2000,
+        "title": "Emotional regulation in the workplace: A new way to conceptualize emotional labor.",
+        "type": "article",
+        "venue": "Journal of Occupational Health Psychology",
+        "doi": "10.1037//1076-8998.5.1.95",
+        "openalex_id": "W2022472850",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Emotional labour as emotion regulation."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Sociological strand",
+      "summary": "Commercialisation of feeling.",
+      "defining_work": {
+        "authors": [
+          "Hochschild"
+        ],
+        "year": 1983,
+        "title": "The Managed Heart: Commercialization of Human Feeling",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520239333",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL2627283W, first published 1983). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1983
+      }
+    },
+    {
+      "name": "Psychological strand",
+      "summary": "Emotion regulation and outcomes.",
+      "defining_work": {
+        "authors": [
+          "Alicia A. Grandey"
+        ],
+        "year": 2000,
+        "title": "Emotional regulation in the workplace: A new way to conceptualize emotional labor.",
+        "type": "article",
+        "venue": "Journal of Occupational Health Psychology",
+        "doi": "10.1037//1076-8998.5.1.95",
+        "openalex_id": "W2022472850",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Surface acting is linked to burnout.",
+      "source": {
+        "authors": [
+          "Céleste M. Brotheridge",
+          "Alicia A. Grandey"
+        ],
+        "year": 2002,
+        "title": "Emotional Labor and Burnout: Comparing Two Perspectives of “People Work”",
+        "type": "article",
+        "venue": "Journal of Vocational Behavior",
+        "doi": "10.1006/jvbe.2001.1815",
+        "openalex_id": "W2156330953",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Large sociological literature.",
+      "source": {
+        "authors": [
+          "Amy Wharton"
+        ],
+        "year": 2009,
+        "title": "The Sociology of Emotional Labor",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev-soc-070308-115944",
+        "openalex_id": "W2101803419",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Hochschild underplays workers' skill and agency.",
+      "source": {
+        "authors": [
+          "Sharon C. Bolton",
+          "Carol J. Boyd"
+        ],
+        "year": 2003,
+        "title": "Trolley Dolly or Skilled Emotion Manager? Moving on from Hochschild's Managed Heart",
+        "type": "article",
+        "venue": "Work Employment and Society",
+        "doi": "10.1177/0950017003017002004",
+        "openalex_id": "W2133188052",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Concepts are measured inconsistently.",
+      "source": {
+        "authors": [
+          "Amy Wharton"
+        ],
+        "year": 2009,
+        "title": "The Sociology of Emotional Labor",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev-soc-070308-115944",
+        "openalex_id": "W2101803419",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Hochschild"
+        ],
+        "year": 1983,
+        "title": "The Managed Heart: Commercialization of Human Feeling",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520239333",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL2627283W, first published 1983). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1983
+      },
+      "chapter": null,
+      "why_read": "Classic study.",
+      "reading_question": "What feeling rules apply in your job setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Alicia A. Grandey"
+        ],
+        "year": 2000,
+        "title": "Emotional regulation in the workplace: A new way to conceptualize emotional labor.",
+        "type": "article",
+        "venue": "Journal of Occupational Health Psychology",
+        "doi": "10.1037//1076-8998.5.1.95",
+        "openalex_id": "W2022472850",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Psychological model.",
+      "reading_question": "Sociological or psychological approach?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Amy Wharton"
+        ],
+        "year": 2009,
+        "title": "The Sociology of Emotional Labor",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev-soc-070308-115944",
+        "openalex_id": "W2101803419",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Which outcomes will you look at?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "emotional labor",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

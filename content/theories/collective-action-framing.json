@@ -1,0 +1,371 @@
+{
+  "theory_id": null,
+  "library_name": "Collective action framing",
+  "slug": "collective-action-framing",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Robert D. Benford",
+      "David A. Snow"
+    ],
+    "year": 2000,
+    "title": "Framing Processes and Social Movements: An Overview and Assessment",
+    "type": "article",
+    "venue": "Annual Review of Sociology",
+    "doi": "10.1146/annurev.soc.26.1.611",
+    "openalex_id": "W2134310663",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2134310663",
+  "core_idea": "Movements create frames that diagnose a problem, propose solutions and motivate action. Frames mobilise when they resonate with people's experience and culture.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do activists or NGOs present an issue to mobilise supporters?",
+    "Why do some campaigns resonate and others don't?",
+    "Typical data: frame analysis of texts, interviews, content analysis."
+  ],
+  "common_mistakes": [
+    "Confusing movement framing with media framing.",
+    "Listing frames without diagnostic, prognostic and motivational tasks.",
+    "Ignoring frame contests with opponents."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Goffman"
+        ],
+        "year": 1974,
+        "title": "Frame Analysis: An Essay on the Organization of Experience",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780060903725",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1974
+      },
+      "adds": "Frames from sociology."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "David A. Snow",
+          "E. Burke Rochford",
+          "Steven K. Worden",
+          "Robert D. Benford"
+        ],
+        "year": 1986,
+        "title": "Frame Alignment Processes, Micromobilization, and Movement Participation",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095581",
+        "openalex_id": "W1988345431",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Frame alignment processes."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Frame alignment",
+      "summary": "Bridging, amplification, extension, transformation.",
+      "defining_work": {
+        "authors": [
+          "David A. Snow",
+          "E. Burke Rochford",
+          "Steven K. Worden",
+          "Robert D. Benford"
+        ],
+        "year": 1986,
+        "title": "Frame Alignment Processes, Micromobilization, and Movement Participation",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095581",
+        "openalex_id": "W1988345431",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Frame resonance",
+      "summary": "Credibility and salience.",
+      "defining_work": {
+        "authors": [
+          "David A. Snow",
+          "E. Burke Rochford",
+          "Steven K. Worden",
+          "Robert D. Benford"
+        ],
+        "year": 1986,
+        "title": "Frame Alignment Processes, Micromobilization, and Movement Participation",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095581",
+        "openalex_id": "W1988345431",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "note": "Defining work changed from Snow & Benford 1988 (no reliable record) to Snow et al. 1986."
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Central perspective in movement studies with a clear toolkit.",
+      "source": {
+        "authors": [
+          "Robert D. Benford",
+          "David A. Snow"
+        ],
+        "year": 2000,
+        "title": "Framing Processes and Social Movements: An Overview and Assessment",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.26.1.611",
+        "openalex_id": "W2134310663",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Links meaning-making to mobilisation.",
+      "source": {
+        "authors": [
+          "David A. Snow",
+          "E. Burke Rochford",
+          "Steven K. Worden",
+          "Robert D. Benford"
+        ],
+        "year": 1986,
+        "title": "Frame Alignment Processes, Micromobilization, and Movement Participation",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095581",
+        "openalex_id": "W1988345431",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Framing became too cognitive and static, losing ideology.",
+      "source": {
+        "authors": [
+          "Pamela Elaine Oliver",
+          "Hank Johnston"
+        ],
+        "year": 2000,
+        "title": "What a Good Idea! Ideologies and Frames in Social Movement Research",
+        "type": "article",
+        "venue": "Mobilization An International Quarterly",
+        "doi": "10.17813/maiq.5.1.g54k222086346251",
+        "openalex_id": "W2109192887",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Frames are often identified post hoc.",
+      "source": {
+        "authors": [
+          "Robert D. Benford",
+          "David A. Snow"
+        ],
+        "year": 2000,
+        "title": "Framing Processes and Social Movements: An Overview and Assessment",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.26.1.611",
+        "openalex_id": "W2134310663",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Robert D. Benford",
+          "David A. Snow"
+        ],
+        "year": 2000,
+        "title": "Framing Processes and Social Movements: An Overview and Assessment",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.26.1.611",
+        "openalex_id": "W2134310663",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Overview.",
+      "reading_question": "Which framing task is your focus?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "David A. Snow",
+          "E. Burke Rochford",
+          "Steven K. Worden",
+          "Robert D. Benford"
+        ],
+        "year": 1986,
+        "title": "Frame Alignment Processes, Micromobilization, and Movement Participation",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095581",
+        "openalex_id": "W1988345431",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Alignment.",
+      "reading_question": "How do frames connect with supporters' views?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Pamela Elaine Oliver",
+          "Hank Johnston"
+        ],
+        "year": 2000,
+        "title": "What a Good Idea! Ideologies and Frames in Social Movement Research",
+        "type": "article",
+        "venue": "Mobilization An International Quarterly",
+        "doi": "10.17813/maiq.5.1.g54k222086346251",
+        "openalex_id": "W2109192887",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Frame or ideology?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "collective action frames",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2806281488",
+        "title": "Understanding community-based participatory research through a social movement framework: a case study of the Kahnawake Schools Diabetes Prevention Project",
+        "year": 2018,
+        "authors": [
+          "Marie‐Claude Tremblay",
+          "Debbie H. Martin",
+          "Alex M. McComber",
+          "Amelia McGregor",
+          "Ann C. Macaulay"
+        ],
+        "cited_by": 161,
+        "oa_url": "https://doi.org/10.1186/s12889-018-5412-y"
+      },
+      {
+        "openalex_id": "W2939134643",
+        "title": "The Immigrant as Bogeyman: Examining Donald Trump and the Right’s Anti-immigrant, Anti-PC Rhetoric",
+        "year": 2019,
+        "authors": [
+          "Laura L. Finley",
+          "Luigi Esposito"
+        ],
+        "cited_by": 128,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3216089179",
+        "title": "Framing the Global Youth Climate Movement: A Qualitative Content Analysis of Greta Thunberg’s Moral, Hopeful, and Motivational Framing on Instagram",
+        "year": 2021,
+        "authors": [
+          "Amanda L. Molder",
+          "Alexandra Lakind",
+          "Zoe E. Clemmons",
+          "Kaiping Chen"
+        ],
+        "cited_by": 100,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3014900003",
+        "title": "Microfoundations of Framing: The Interactional Production of Collective Action Frames in the Occupy Movement",
+        "year": 2020,
+        "authors": [
+          "Juliane Reinecke",
+          "Shahzad Shaz Ansari"
+        ],
+        "cited_by": 96,
+        "oa_url": "https://kclpure.kcl.ac.uk/portal/en/publications/89b6165a-36cd-492f-88b4-2222b5af9f02"
+      },
+      {
+        "openalex_id": "W3116210457",
+        "title": "Sustainable HRM: An extension of the paradox perspective",
+        "year": 2020,
+        "authors": [
+          "Teresa Shuk-Ching Poon",
+          "Kuok Kei Law"
+        ],
+        "cited_by": 88,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Ideology, frame resonance, and participant mobilization. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

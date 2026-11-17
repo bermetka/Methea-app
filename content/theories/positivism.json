@@ -1,0 +1,367 @@
+{
+  "theory_id": null,
+  "library_name": "Positivism",
+  "slug": "positivism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Émile Durkheim"
+    ],
+    "year": 1982,
+    "title": "The Rules of Sociological Method",
+    "type": "book",
+    "venue": null,
+    "doi": "10.1007/978-1-349-16939-9",
+    "openalex_id": "W1967288024",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1967288024",
+  "core_idea": "Social facts can be studied like things: observed from outside, measured and explained by general laws. Valid knowledge comes from systematic observation, not from the researcher's interpretation or values.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Does X cause or predict Y across many cases?",
+    "Testing hypotheses derived from a theory with measurable variables.",
+    "Typical designs: surveys, experiments, statistical analysis of existing data."
+  ],
+  "common_mistakes": [
+    "Calling any quantitative study 'positivist'; most researchers today work from post-positivism.",
+    "Using 'positivist' only as an insult instead of describing a position.",
+    "Claiming value-free objectivity without discussing measurement and researcher choices."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Carl G. Hempel",
+          "Paul Oppenheim"
+        ],
+        "year": 1948,
+        "title": "Studies in the Logic of Explanation",
+        "type": "article",
+        "venue": "Philosophy of Science",
+        "doi": "10.1086/286983",
+        "openalex_id": "W1983870751",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The covering-law model: to explain is to derive the event from general laws."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Milton Friedman"
+        ],
+        "year": 2009,
+        "title": "The methodology of positive economics (1953)",
+        "type": "chapter",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511581427.002",
+        "openalex_id": "W1588142672",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint (2009, Cambridge University Press) of the 1953 essay from Essays in Positive Economics."
+      },
+      "adds": "Theories are judged by predictions, not by realism of assumptions."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "R. Burke Johnson",
+          "Anthony John Onwuegbuzie"
+        ],
+        "year": 2004,
+        "title": "Mixed Methods Research: A Research Paradigm Whose Time Has Come",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x033007014",
+        "openalex_id": "W2122838852",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Compares the positivist (quantitative) and constructivist (qualitative) paradigms and their mix."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Classical positivism",
+      "summary": "Durkheim's sociology of social facts.",
+      "defining_work": {
+        "authors": [
+          "Émile Durkheim"
+        ],
+        "year": 1982,
+        "title": "The Rules of Sociological Method",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1007/978-1-349-16939-9",
+        "openalex_id": "W1967288024",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Logical empiricism",
+      "summary": "Formal models of scientific explanation.",
+      "defining_work": {
+        "authors": [
+          "Carl G. Hempel",
+          "Paul Oppenheim"
+        ],
+        "year": 1948,
+        "title": "Studies in the Logic of Explanation",
+        "type": "article",
+        "venue": "Philosophy of Science",
+        "doi": "10.1086/286983",
+        "openalex_id": "W1983870751",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives clear criteria for explanation and testing.",
+      "source": {
+        "authors": [
+          "Carl G. Hempel",
+          "Paul Oppenheim"
+        ],
+        "year": 1948,
+        "title": "Studies in the Logic of Explanation",
+        "type": "article",
+        "venue": "Philosophy of Science",
+        "doi": "10.1086/286983",
+        "openalex_id": "W1983870751",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Underpins the strengths of quantitative research: precision, generalisation, replication.",
+      "source": {
+        "authors": [
+          "R. Burke Johnson",
+          "Anthony John Onwuegbuzie"
+        ],
+        "year": 2004,
+        "title": "Mixed Methods Research: A Research Paradigm Whose Time Has Come",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x033007014",
+        "openalex_id": "W2122838852",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Science does not progress by accumulating neutral observations; observation is theory-laden.",
+      "source": {
+        "authors": [
+          "Ts. Kuhn",
+          "David Hawkins"
+        ],
+        "year": 1963,
+        "title": "The Structure of Scientific Revolutions",
+        "type": "chapter",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400831296-024",
+        "openalex_id": "W2752443224",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://www.gbv.de/dms/bowker/toc/9780226458120.pdf"
+      }
+    },
+    {
+      "point": "Social reality differs from nature: meanings cannot be observed from outside.",
+      "source": {
+        "authors": [
+          "Lincoln"
+        ],
+        "year": 1985,
+        "title": "Naturalistic Inquiry",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780803924314",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1985
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Émile Durkheim"
+        ],
+        "year": 1982,
+        "title": "The Rules of Sociological Method",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1007/978-1-349-16939-9",
+        "openalex_id": "W1967288024",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The classic statement: treat social facts as things.",
+      "reading_question": "Which 'social facts' does your study measure?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Carl G. Hempel",
+          "Paul Oppenheim"
+        ],
+        "year": 1948,
+        "title": "Studies in the Logic of Explanation",
+        "type": "article",
+        "venue": "Philosophy of Science",
+        "doi": "10.1086/286983",
+        "openalex_id": "W1983870751",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "What explanation means in this paradigm.",
+      "reading_question": "What general law would explain your result?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "R. Burke Johnson",
+          "Anthony John Onwuegbuzie"
+        ],
+        "year": 2004,
+        "title": "Mixed Methods Research: A Research Paradigm Whose Time Has Come",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x033007014",
+        "openalex_id": "W2122838852",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Positions the paradigm against its alternatives.",
+      "reading_question": "Is your study positivist, post-positivist or pragmatic?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "positivism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2941407932",
+        "title": "Auguste Comte and Positivism",
+        "year": 2019,
+        "authors": [
+          "Mary Pickering"
+        ],
+        "cited_by": 155,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3119237000",
+        "title": "A power-critique of academic rankings: Beyond managers, institutions, and positivism",
+        "year": 2021,
+        "authors": [
+          "John Welsh"
+        ],
+        "cited_by": 11,
+        "oa_url": "https://doi.org/10.1177/1757743820986173"
+      },
+      {
+        "openalex_id": "W2807599232",
+        "title": "Orientalism and Enlightenment Positivism: A Critique of Anglophone Sinology, Comparative Literature, and Philosophy",
+        "year": 2018,
+        "authors": [
+          "Shuchen Xiang"
+        ],
+        "cited_by": 6,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4280641708",
+        "title": "Comte’s posthumanist social science",
+        "year": 2022,
+        "authors": [
+          "Florence Chiew"
+        ],
+        "cited_by": 3,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2796041018",
+        "title": "Historical Truth in the Hermeneutics of T. S. Eliot",
+        "year": 2018,
+        "authors": [
+          "Ryan R. Holston"
+        ],
+        "cited_by": 2,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Naturalistic Inquiry; The Methodology of Positive Economics. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

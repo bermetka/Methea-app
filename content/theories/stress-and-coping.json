@@ -1,0 +1,335 @@
+{
+  "theory_id": null,
+  "library_name": "Transactional model of stress and coping",
+  "slug": "stress-and-coping",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Lazarus"
+    ],
+    "year": 1984,
+    "title": "Stress, Appraisal, and Coping",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780826141903",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL1841147W, first published 1984). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1984
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Stress depends on how a person appraises a situation (is it a threat?) and their resources to cope. Coping can focus on solving the problem or managing the emotion.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do students, workers or patients experience and cope with stress?",
+    "Which coping strategies relate to well-being?",
+    "Typical data: surveys (e.g. Ways of Coping, Brief COPE), interviews, diaries."
+  ],
+  "common_mistakes": [
+    "Treating stress as only the event or only the response.",
+    "Labelling coping strategies as always good or bad.",
+    "Measuring coping once when it is a process."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Susan Folkman",
+          "Richard S. Lazarus"
+        ],
+        "year": 1980,
+        "title": "An Analysis of Coping in a Middle-Aged Community Sample",
+        "type": "article",
+        "venue": "Journal of Health and Social Behavior",
+        "doi": "10.2307/2136617",
+        "openalex_id": "W2313987504",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Problem- vs emotion-focused coping."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Charles S. Carver",
+          "M F Scheier",
+          "Jagdish Kumari Weintraub"
+        ],
+        "year": 1989,
+        "title": "Assessing coping strategies: A theoretically based approach.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.56.2.267",
+        "openalex_id": "W2165167678",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The COPE inventory."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "PETER PAUL VITALIANO",
+          "Joan E. Russo",
+          "John E. Carr",
+          "Roland D. Maiuro",
+          "Joseph Becker"
+        ],
+        "year": 1985,
+        "title": "The Ways of Coping Checklist: Revision and Psychometric Properties",
+        "type": "article",
+        "venue": "Multivariate Behavioral Research",
+        "doi": "10.1207/s15327906mbr2001_1",
+        "openalex_id": "W2123180639",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Revises the Ways of Coping measure and its structure."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Coping measurement",
+      "summary": "Instruments.",
+      "defining_work": {
+        "authors": [
+          "Charles S. Carver",
+          "M F Scheier",
+          "Jagdish Kumari Weintraub"
+        ],
+        "year": 1989,
+        "title": "Assessing coping strategies: A theoretically based approach.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.56.2.267",
+        "openalex_id": "W2165167678",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Meaning-focused coping",
+      "summary": "Positive affect.",
+      "defining_work": {
+        "authors": [
+          "Susan Folkman",
+          "Judith T. Moskowitz"
+        ],
+        "year": 2000,
+        "title": "Positive affect and the other side of coping.",
+        "type": "article",
+        "venue": "American Psychologist",
+        "doi": "10.1037//0003-066x.55.6.647",
+        "openalex_id": "W2094832470",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Dominant framework in stress research.",
+      "source": {
+        "authors": [
+          "Charles S. Carver",
+          "M F Scheier",
+          "Jagdish Kumari Weintraub"
+        ],
+        "year": 1989,
+        "title": "Assessing coping strategies: A theoretically based approach.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.56.2.267",
+        "openalex_id": "W2165167678",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Explains individual differences in stress.",
+      "source": {
+        "authors": [
+          "Lazarus"
+        ],
+        "year": 1984,
+        "title": "Stress, Appraisal, and Coping",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780826141903",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL1841147W, first published 1984). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1984
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Coping categories are too broad.",
+      "source": {
+        "authors": [
+          "Ellen A. Skinner",
+          "Kathleen Edge",
+          "Jeffrey Altman",
+          "Hayley Sherwood"
+        ],
+        "year": 2003,
+        "title": "Searching for the structure of coping: A review and critique of category systems for classifying ways of coping.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037/0033-2909.129.2.216",
+        "openalex_id": "W2019754640",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Self-report measures are limited.",
+      "source": {
+        "authors": [
+          "Ellen A. Skinner",
+          "Kathleen Edge",
+          "Jeffrey Altman",
+          "Hayley Sherwood"
+        ],
+        "year": 2003,
+        "title": "Searching for the structure of coping: A review and critique of category systems for classifying ways of coping.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037/0033-2909.129.2.216",
+        "openalex_id": "W2019754640",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Lazarus"
+        ],
+        "year": 1984,
+        "title": "Stress, Appraisal, and Coping",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780826141903",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL1841147W, first published 1984). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1984
+      },
+      "chapter": null,
+      "why_read": "The model.",
+      "reading_question": "What appraisal do your participants make?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Charles S. Carver",
+          "M F Scheier",
+          "Jagdish Kumari Weintraub"
+        ],
+        "year": 1989,
+        "title": "Assessing coping strategies: A theoretically based approach.",
+        "type": "article",
+        "venue": "Journal of Personality and Social Psychology",
+        "doi": "10.1037//0022-3514.56.2.267",
+        "openalex_id": "W2165167678",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Measurement.",
+      "reading_question": "Which instrument fits?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Ellen A. Skinner",
+          "Kathleen Edge",
+          "Jeffrey Altman",
+          "Hayley Sherwood"
+        ],
+        "year": 2003,
+        "title": "Searching for the structure of coping: A review and critique of category systems for classifying ways of coping.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037/0033-2909.129.2.216",
+        "openalex_id": "W2019754640",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Which coping categories will you use?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "stress and coping",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

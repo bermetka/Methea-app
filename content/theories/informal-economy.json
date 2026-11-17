@@ -1,0 +1,349 @@
+{
+  "theory_id": null,
+  "library_name": "Informal economy",
+  "slug": "informal-economy",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Keith Hart"
+    ],
+    "year": 1973,
+    "title": "Informal Income Opportunities and Urban Employment in Ghana",
+    "type": "article",
+    "venue": "The Journal of Modern African Studies",
+    "doi": "10.1017/s0022278x00008089",
+    "openalex_id": "W2129874640",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2129874640",
+  "core_idea": "Much urban work happens outside formal employment and regulation. The informal sector is a source of livelihoods and enterprise, not just a sign of economic failure.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do bazaar traders, street vendors or informal workers make a living?",
+    "How do formal and informal economies link?",
+    "Typical data: ethnography, interviews, surveys."
+  ],
+  "common_mistakes": [
+    "Treating informality as illegality.",
+    "Ignoring formal–informal links.",
+    "Not choosing among dualist, structuralist and legalist views."
+  ],
+  "development": [
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Portes"
+        ],
+        "year": 1989,
+        "title": "The Informal Economy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780801837357",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1989
+      },
+      "adds": "Structuralist view."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Rafael La Porta",
+          "Andrei Shleifer"
+        ],
+        "year": 2014,
+        "title": "Informality and Development",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w20205",
+        "openalex_id": "W3122525679",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w20205"
+      },
+      "adds": "Dualist view."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Legalist",
+      "summary": "Regulation.",
+      "defining_work": {
+        "authors": [
+          "de Soto"
+        ],
+        "year": 1989,
+        "title": "The Other Path",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780465016105",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1989
+      }
+    },
+    {
+      "name": "Structuralist",
+      "summary": "Subordination to formal capital.",
+      "defining_work": {
+        "authors": [
+          "Portes"
+        ],
+        "year": 1989,
+        "title": "The Informal Economy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780801837357",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1989
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Recognises informal livelihoods.",
+      "source": {
+        "authors": [
+          "Keith Hart"
+        ],
+        "year": 1973,
+        "title": "Informal Income Opportunities and Urban Employment in Ghana",
+        "type": "article",
+        "venue": "The Journal of Modern African Studies",
+        "doi": "10.1017/s0022278x00008089",
+        "openalex_id": "W2129874640",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Large empirical literature.",
+      "source": {
+        "authors": [
+          "Rafael La Porta",
+          "Andrei Shleifer"
+        ],
+        "year": 2014,
+        "title": "Informality and Development",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w20205",
+        "openalex_id": "W3122525679",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w20205"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Formal–informal dichotomy is too simple.",
+      "source": {
+        "authors": [
+          "Guha-Khasnobis"
+        ],
+        "year": 2006,
+        "title": "Linking the Formal and Informal Economy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780191525483",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2006
+      }
+    },
+    {
+      "point": "Views disagree on causes and policy.",
+      "source": {
+        "authors": [
+          "Rafael La Porta",
+          "Andrei Shleifer"
+        ],
+        "year": 2014,
+        "title": "Informality and Development",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w20205",
+        "openalex_id": "W3122525679",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w20205"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Keith Hart"
+        ],
+        "year": 1973,
+        "title": "Informal Income Opportunities and Urban Employment in Ghana",
+        "type": "article",
+        "venue": "The Journal of Modern African Studies",
+        "doi": "10.1017/s0022278x00008089",
+        "openalex_id": "W2129874640",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "Which informal activities?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Rafael La Porta",
+          "Andrei Shleifer"
+        ],
+        "year": 2014,
+        "title": "Informality and Development",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w20205",
+        "openalex_id": "W3122525679",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w20205"
+      },
+      "chapter": null,
+      "why_read": "Dualist evidence.",
+      "reading_question": "Which view do you take?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Guha-Khasnobis"
+        ],
+        "year": 2006,
+        "title": "Linking the Formal and Informal Economy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780191525483",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2006
+      },
+      "chapter": null,
+      "why_read": "Linkages.",
+      "reading_question": "How are sectors linked?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "informal economy",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2912398589",
+        "title": "Urban Informality as a Site of Critical Analysis",
+        "year": 2019,
+        "authors": [
+          "Nicola Banks",
+          "Melanie Lombard",
+          "Diana Mitlin"
+        ],
+        "cited_by": 420,
+        "oa_url": "https://doi.org/10.1080/00220388.2019.1577384"
+      },
+      {
+        "openalex_id": "W2585710748",
+        "title": "The hustle economy",
+        "year": 2017,
+        "authors": [
+          "Tatiana Adeline Thieme"
+        ],
+        "cited_by": 298,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2886574992",
+        "title": "Precarity, Precariousness, and Vulnerability",
+        "year": 2018,
+        "authors": [
+          "Clara Han"
+        ],
+        "cited_by": 269,
+        "oa_url": "https://doi.org/10.1146/annurev-anthro-102116-041644"
+      },
+      {
+        "openalex_id": "W4200402671",
+        "title": "Theories and definitions of the informal economy: A survey",
+        "year": 2021,
+        "authors": [
+          "Roberto Dell’Anno"
+        ],
+        "cited_by": 242,
+        "oa_url": "https://doi.org/10.1111/joes.12487"
+      },
+      {
+        "openalex_id": "W3113341629",
+        "title": "A Value Theory of Inclusion: Informal Labour, the Homeworker, and the Social Reproduction of Value",
+        "year": 2020,
+        "authors": [
+          "Alessandra Mezzadri"
+        ],
+        "cited_by": 212,
+        "oa_url": "https://soas-repository.worktribe.com/output/351223"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 6 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

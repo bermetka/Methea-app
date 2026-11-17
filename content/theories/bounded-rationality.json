@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Bounded rationality",
+  "slug": "bounded-rationality",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Herbert A. Simon"
+    ],
+    "year": 1955,
+    "title": "A BEHAVIORAL MODEL OF RATIONAL CHOICE",
+    "type": "article",
+    "venue": "The Quarterly Journal of Economics",
+    "doi": "10.2307/1884852",
+    "openalex_id": "W2148962857",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2148962857",
+  "core_idea": "People cannot optimise because their information and cognitive capacity are limited. They satisfice: they search until they find an option that is good enough.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do managers, officials or households actually decide?",
+    "Which heuristics do people use?",
+    "Typical data: interviews, case study, experiments, think-aloud."
+  ],
+  "common_mistakes": [
+    "Using bounded rationality to mean irrationality.",
+    "Ignoring the environment, half of Simon's 'scissors'.",
+    "No clear decision process."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "H. A. Simon"
+        ],
+        "year": 1956,
+        "title": "Rational choice and the structure of the environment.",
+        "type": "article",
+        "venue": "Psychological Review",
+        "doi": "10.1037/h0042769",
+        "openalex_id": "W1989388297",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Environment and satisficing."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Cyert"
+        ],
+        "year": 1963,
+        "title": "A Behavioral Theory of the Firm",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781614275329",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1963
+      },
+      "adds": "Behavioural theory of the firm."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Gerd Gigerenzer",
+          "Daniel G. Goldstein"
+        ],
+        "year": 1996,
+        "title": "Reasoning the fast and frugal way: Models of bounded rationality.",
+        "type": "article",
+        "venue": "Psychological Review",
+        "doi": "10.1037//0033-295x.103.4.650",
+        "openalex_id": "W2159071801",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/21.11116/0000-0000-B771-2"
+      },
+      "adds": "Fast and frugal heuristics."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Behavioural organisation theory",
+      "summary": "Firms as decision systems.",
+      "defining_work": {
+        "authors": [
+          "Cyert"
+        ],
+        "year": 1963,
+        "title": "A Behavioral Theory of the Firm",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781614275329",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1963
+      }
+    },
+    {
+      "name": "Ecological rationality",
+      "summary": "Heuristics that work.",
+      "defining_work": {
+        "authors": [
+          "Gerd Gigerenzer",
+          "Daniel G. Goldstein"
+        ],
+        "year": 1996,
+        "title": "Reasoning the fast and frugal way: Models of bounded rationality.",
+        "type": "article",
+        "venue": "Psychological Review",
+        "doi": "10.1037//0033-295x.103.4.650",
+        "openalex_id": "W2159071801",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/21.11116/0000-0000-B771-2"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Realistic account of decisions.",
+      "source": {
+        "authors": [
+          "John Conlisk"
+        ],
+        "year": 1996,
+        "title": "Why Bounded Rationality",
+        "type": "article",
+        "venue": "RePEc: Research Papers in Economics",
+        "doi": null,
+        "openalex_id": "W1526813172",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Rich research programme on heuristics.",
+      "source": {
+        "authors": [
+          "Gerd Gigerenzer",
+          "Wolfgang Gaissmaier"
+        ],
+        "year": 2010,
+        "title": "Heuristic Decision Making",
+        "type": "article",
+        "venue": "Annual Review of Psychology",
+        "doi": "10.1146/annurev-psych-120709-145346",
+        "openalex_id": "W2096016260",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/11858/00-001M-0000-0024-F16D-5"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Hard to model formally; many versions.",
+      "source": {
+        "authors": [
+          "John Conlisk"
+        ],
+        "year": 1996,
+        "title": "Why Bounded Rationality",
+        "type": "article",
+        "venue": "RePEc: Research Papers in Economics",
+        "doi": null,
+        "openalex_id": "W1526813172",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Heuristics-and-biases view differs on whether heuristics fail.",
+      "source": {
+        "authors": [
+          "Daniel J. Kahneman"
+        ],
+        "year": 2003,
+        "title": "Maps of Bounded Rationality: Psychology for Behavioral Economics",
+        "type": "article",
+        "venue": "American Economic Review",
+        "doi": "10.1257/000282803322655392",
+        "openalex_id": "W2043787485",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Herbert A. Simon"
+        ],
+        "year": 1955,
+        "title": "A BEHAVIORAL MODEL OF RATIONAL CHOICE",
+        "type": "article",
+        "venue": "The Quarterly Journal of Economics",
+        "doi": "10.2307/1884852",
+        "openalex_id": "W2148962857",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "How do your actors search?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Gerd Gigerenzer",
+          "Wolfgang Gaissmaier"
+        ],
+        "year": 2010,
+        "title": "Heuristic Decision Making",
+        "type": "article",
+        "venue": "Annual Review of Psychology",
+        "doi": "10.1146/annurev-psych-120709-145346",
+        "openalex_id": "W2096016260",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/11858/00-001M-0000-0024-F16D-5"
+      },
+      "chapter": null,
+      "why_read": "Heuristics.",
+      "reading_question": "Which heuristics?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "John Conlisk"
+        ],
+        "year": 1996,
+        "title": "Why Bounded Rationality",
+        "type": "article",
+        "venue": "RePEc: Research Papers in Economics",
+        "doi": null,
+        "openalex_id": "W1526813172",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Why not full rationality?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "bounded rationality",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2883884789",
+        "title": "The Role of Accelerator Designs in Mitigating Bounded Rationality in New Ventures",
+        "year": 2018,
+        "authors": [
+          "Susan L. Cohen",
+          "Christopher B. Bingham",
+          "Benjamin L. Hallen"
+        ],
+        "cited_by": 341,
+        "oa_url": "https://doi.org/10.1177/0001839218782131"
+      },
+      {
+        "openalex_id": "W2613289252",
+        "title": "The anchoring bias reflects rational use of cognitive resources",
+        "year": 2017,
+        "authors": [
+          "Falk Lieder",
+          "Thomas L. Griffiths",
+          "Quentin J. M. Huys",
+          "Noah D. Goodman"
+        ],
+        "cited_by": 244,
+        "oa_url": "https://doi.org/10.3758/s13423-017-1286-8"
+      },
+      {
+        "openalex_id": "W2970794097",
+        "title": "Applying and advancing internalization theory: The multinational enterprise in the twenty-first century",
+        "year": 2019,
+        "authors": [
+          "Rajneesh Narula",
+          "Christian Geisler Asmussen",
+          "Tailan Chi",
+          "Sumit K. Kundu"
+        ],
+        "cited_by": 191,
+        "oa_url": "https://doi.org/10.1057/s41267-019-00260-6"
+      },
+      {
+        "openalex_id": "W2776886510",
+        "title": "Non-Equilibrium Relations for Bounded Rational Decision-Making in Changing Environments",
+        "year": 2017,
+        "authors": [
+          "Jordi Grau-Moya",
+          "Matthias Krüger",
+          "Daniel A. Braun"
+        ],
+        "cited_by": 181,
+        "oa_url": "https://doi.org/10.3390/e20010001"
+      },
+      {
+        "openalex_id": "W2256492139",
+        "title": "Boundedly rational route choice behavior: A review of models and methodologies",
+        "year": 2016,
+        "authors": [
+          "Xuan Sharon Di",
+          "Henry  X. Liu"
+        ],
+        "cited_by": 178,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

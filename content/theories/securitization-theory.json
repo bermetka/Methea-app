@@ -1,0 +1,310 @@
+{
+  "theory_id": null,
+  "library_name": "Securitization theory",
+  "slug": "securitization-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Buzan"
+    ],
+    "year": 1998,
+    "title": "Security: A New Framework for Analysis",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781555876036",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1997
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "An issue becomes a security issue when an actor presents it as an existential threat to a referent object and an audience accepts that extraordinary measures are justified.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do governments securitise migration, religion, health or borders?",
+    "Who accepts securitising moves?",
+    "Typical data: discourse analysis, case study."
+  ],
+  "common_mistakes": [
+    "Calling any security talk securitisation.",
+    "Ignoring the audience.",
+    "Only analysing speeches without context."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Thierry Balzacq"
+        ],
+        "year": 2005,
+        "title": "The Three Faces of Securitization: Political Agency, Audience and Context",
+        "type": "article",
+        "venue": "European Journal of International Relations",
+        "doi": "10.1177/1354066105052960",
+        "openalex_id": "W2121708947",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Context and audience."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Holger Stritzel"
+        ],
+        "year": 2007,
+        "title": "Towards a Theory of Securitization: Copenhagen and Beyond",
+        "type": "article",
+        "venue": "European Journal of International Relations",
+        "doi": "10.1177/1354066107080128",
+        "openalex_id": "W2128709903",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Embeddedness."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Didier Bigo"
+        ],
+        "year": 2002,
+        "title": "Security and Immigration: Toward a Critique of the Governmentality of Unease",
+        "type": "article",
+        "venue": "Alternatives Global Local Political",
+        "doi": "10.1177/03043754020270s105",
+        "openalex_id": "W2104983586",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Paris School: practices."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Copenhagen School",
+      "summary": "Speech acts.",
+      "defining_work": {
+        "authors": [
+          "Buzan"
+        ],
+        "year": 1998,
+        "title": "Security: A New Framework for Analysis",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781555876036",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1997
+      }
+    },
+    {
+      "name": "Paris School",
+      "summary": "Security practices.",
+      "defining_work": {
+        "authors": [
+          "Didier Bigo"
+        ],
+        "year": 2002,
+        "title": "Security and Immigration: Toward a Critique of the Governmentality of Unease",
+        "type": "article",
+        "venue": "Alternatives Global Local Political",
+        "doi": "10.1177/03043754020270s105",
+        "openalex_id": "W2104983586",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Widely used to study non-military security.",
+      "source": {
+        "authors": [
+          "Thierry Balzacq"
+        ],
+        "year": 2005,
+        "title": "The Three Faces of Securitization: Political Agency, Audience and Context",
+        "type": "article",
+        "venue": "European Journal of International Relations",
+        "doi": "10.1177/1354066105052960",
+        "openalex_id": "W2121708947",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Clear analytical steps.",
+      "source": {
+        "authors": [
+          "Buzan"
+        ],
+        "year": 1998,
+        "title": "Security: A New Framework for Analysis",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781555876036",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1997
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Too narrow focus on speech acts.",
+      "source": {
+        "authors": [
+          "Matt McDonald"
+        ],
+        "year": 2008,
+        "title": "Securitization and the Construction of Security",
+        "type": "article",
+        "venue": "European Journal of International Relations",
+        "doi": "10.1177/1354066108097553",
+        "openalex_id": "W2156829840",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Silences gender.",
+      "source": {
+        "authors": [
+          "Lene Hansen"
+        ],
+        "year": 2000,
+        "title": "The Little Mermaid's Silent Security Dilemma and the Absence of Gender in the Copenhagen School",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298000290020501",
+        "openalex_id": "W2031652656",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Buzan"
+        ],
+        "year": 1998,
+        "title": "Security: A New Framework for Analysis",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781555876036",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1997
+      },
+      "chapter": null,
+      "why_read": "Framework.",
+      "reading_question": "Who securitises what?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Thierry Balzacq"
+        ],
+        "year": 2005,
+        "title": "The Three Faces of Securitization: Political Agency, Audience and Context",
+        "type": "article",
+        "venue": "European Journal of International Relations",
+        "doi": "10.1177/1354066105052960",
+        "openalex_id": "W2121708947",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Context.",
+      "reading_question": "Who is the audience?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Matt McDonald"
+        ],
+        "year": 2008,
+        "title": "Securitization and the Construction of Security",
+        "type": "article",
+        "venue": "European Journal of International Relations",
+        "doi": "10.1177/1354066108097553",
+        "openalex_id": "W2156829840",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Speech or practice?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "securitization",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

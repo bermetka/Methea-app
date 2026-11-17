@@ -1,0 +1,324 @@
+{
+  "theory_id": null,
+  "library_name": "Post-development theory",
+  "slug": "post-development",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Escobar"
+    ],
+    "year": 1995,
+    "title": "Encountering Development: The Making and Unmaking of the Third World",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781283267465",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Library record's first publication year is 2001; 1995 is the edition or translation cited here.",
+    "first_publish_year": 2001
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "'Development' is a discourse created after 1945 that made the Global South appear lacking and in need of expert intervention. Post-development looks for local and social-movement alternatives.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do donor or NGO discourses construct a problem?",
+    "What alternatives to development do communities propose?",
+    "Typical data: discourse analysis, ethnography."
+  ],
+  "common_mistakes": [
+    "Rejecting all improvement as 'development'.",
+    "Romanticising local communities.",
+    "No empirical analysis of discourse."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Ferguson"
+        ],
+        "year": 1990,
+        "title": "The Anti-Politics Machine",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780816624379",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/books/OL19902514M, first published 1990). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1990
+      },
+      "adds": "Development as depoliticising."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sachs"
+        ],
+        "year": 1992,
+        "title": "The Development Dictionary",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781350359840",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL17964758W, first published 1992). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1992
+      },
+      "adds": "Key concepts deconstructed."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jan Nederveen Pieterse"
+        ],
+        "year": 2000,
+        "title": "After post-development",
+        "type": "article",
+        "venue": "Third World Quarterly",
+        "doi": "10.1080/01436590050004300",
+        "openalex_id": "W1982453437",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Critical appraisal."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Discourse critique",
+      "summary": "Escobar and Ferguson.",
+      "defining_work": {
+        "authors": [
+          "Ferguson"
+        ],
+        "year": 1990,
+        "title": "The Anti-Politics Machine",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780816624379",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/books/OL19902514M, first published 1990). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1990
+      }
+    },
+    {
+      "name": "Alternatives",
+      "summary": "Buen vivir, degrowth.",
+      "defining_work": {
+        "authors": [
+          "Sachs"
+        ],
+        "year": 1992,
+        "title": "The Development Dictionary",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781350359840",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL17964758W, first published 1992). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1992
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Shows how development discourse works.",
+      "source": {
+        "authors": [
+          "Ferguson"
+        ],
+        "year": 1990,
+        "title": "The Anti-Politics Machine",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780816624379",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/books/OL19902514M, first published 1990). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1990
+      }
+    },
+    {
+      "point": "Opens space for alternatives.",
+      "source": {
+        "authors": [
+          "Escobar"
+        ],
+        "year": 1995,
+        "title": "Encountering Development: The Making and Unmaking of the Third World",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781283267465",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2001; 1995 is the edition or translation cited here.",
+        "first_publish_year": 2001
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Offers critique without alternatives.",
+      "source": {
+        "authors": [
+          "Jan Nederveen Pieterse"
+        ],
+        "year": 2000,
+        "title": "After post-development",
+        "type": "article",
+        "venue": "Third World Quarterly",
+        "doi": "10.1080/01436590050004300",
+        "openalex_id": "W1982453437",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Ignores people's own demands for development.",
+      "source": {
+        "authors": [
+          "Sally Matthews"
+        ],
+        "year": 2004,
+        "title": "Post-development theory and the question of alternatives: a view from Africa",
+        "type": "article",
+        "venue": "Third World Quarterly",
+        "doi": "10.1080/0143659042000174860",
+        "openalex_id": "W2000343916",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Escobar"
+        ],
+        "year": 1995,
+        "title": "Encountering Development: The Making and Unmaking of the Third World",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781283267465",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2001; 1995 is the edition or translation cited here.",
+        "first_publish_year": 2001
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "How is the problem constructed?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Ferguson"
+        ],
+        "year": 1990,
+        "title": "The Anti-Politics Machine",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780816624379",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/books/OL19902514M, first published 1990). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1990
+      },
+      "chapter": null,
+      "why_read": "Case study.",
+      "reading_question": "What does the project depoliticise?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jan Nederveen Pieterse"
+        ],
+        "year": 2000,
+        "title": "After post-development",
+        "type": "article",
+        "venue": "Third World Quarterly",
+        "doi": "10.1080/01436590050004300",
+        "openalex_id": "W1982453437",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "What alternatives exist?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "post-development",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

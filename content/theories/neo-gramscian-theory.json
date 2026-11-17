@@ -1,0 +1,366 @@
+{
+  "theory_id": null,
+  "library_name": "Neo-Gramscian critical theory",
+  "slug": "neo-gramscian-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Robert W. Cox"
+    ],
+    "year": 1981,
+    "title": "Social Forces, States and World Orders: Beyond International Relations Theory",
+    "type": "article",
+    "venue": "Millennium Journal of International Studies",
+    "doi": "10.1177/03058298810100020501",
+    "openalex_id": "W2025962218",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2025962218",
+  "core_idea": "Theory is always for someone and for some purpose. World orders rest on configurations of material capabilities, ideas and institutions, and hegemony combines consent with coercion.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do global institutions reproduce power structures?",
+    "How did neoliberalism become hegemonic?",
+    "Typical data: historical analysis, discourse analysis."
+  ],
+  "common_mistakes": [
+    "Using 'hegemony' to mean dominance only.",
+    "Ignoring the critical vs problem-solving distinction.",
+    "No historical structure analysis."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Robert W. Cox"
+        ],
+        "year": 1983,
+        "title": "Gramsci, Hegemony and International Relations : An Essay in Method",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298830120020701",
+        "openalex_id": "W1973179602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Gramscian method."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Stephen R. Gill"
+        ],
+        "year": 1995,
+        "title": "Globalisation, Market Civilisation, and Disciplinary Neoliberalism",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298950240030801",
+        "openalex_id": "W2154145040",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Disciplinary neoliberalism."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Gill"
+        ],
+        "year": 1993,
+        "title": "Gramsci, Historical Materialism and International Relations",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781139240710",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2011,
+        "note": "Library record's first publication year is 2011; 1993 is the edition or translation cited here."
+      },
+      "adds": "Edited volume."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Neo-Gramscian IPE",
+      "summary": "Hegemony and world order.",
+      "defining_work": {
+        "authors": [
+          "Robert W. Cox"
+        ],
+        "year": 1983,
+        "title": "Gramsci, Hegemony and International Relations : An Essay in Method",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298830120020701",
+        "openalex_id": "W1973179602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Critical globalisation studies",
+      "summary": "Neoliberal discipline.",
+      "defining_work": {
+        "authors": [
+          "Stephen R. Gill"
+        ],
+        "year": 1995,
+        "title": "Globalisation, Market Civilisation, and Disciplinary Neoliberalism",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298950240030801",
+        "openalex_id": "W2154145040",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Famous distinction of critical vs problem-solving theory.",
+      "source": {
+        "authors": [
+          "Robert W. Cox"
+        ],
+        "year": 1981,
+        "title": "Social Forces, States and World Orders: Beyond International Relations Theory",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298810100020501",
+        "openalex_id": "W2025962218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Explains consent-based hegemony.",
+      "source": {
+        "authors": [
+          "Robert W. Cox"
+        ],
+        "year": 1983,
+        "title": "Gramsci, Hegemony and International Relations : An Essay in Method",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298830120020701",
+        "openalex_id": "W1973179602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Misreads Gramsci's national focus.",
+      "source": {
+        "authors": [
+          "Randall Germain",
+          "Michael Kenny"
+        ],
+        "year": 1998,
+        "title": "Engaging Gramsci: international relations theory and the new Gramscians",
+        "type": "article",
+        "venue": "Review of International Studies",
+        "doi": "10.1017/s0260210598000035",
+        "openalex_id": "W2166850471",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Hard to operationalise.",
+      "source": {
+        "authors": [
+          "Randall Germain",
+          "Michael Kenny"
+        ],
+        "year": 1998,
+        "title": "Engaging Gramsci: international relations theory and the new Gramscians",
+        "type": "article",
+        "venue": "Review of International Studies",
+        "doi": "10.1017/s0260210598000035",
+        "openalex_id": "W2166850471",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Robert W. Cox"
+        ],
+        "year": 1981,
+        "title": "Social Forces, States and World Orders: Beyond International Relations Theory",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298810100020501",
+        "openalex_id": "W2025962218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "Is your theory problem-solving or critical?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Robert W. Cox"
+        ],
+        "year": 1983,
+        "title": "Gramsci, Hegemony and International Relations : An Essay in Method",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298830120020701",
+        "openalex_id": "W1973179602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Method.",
+      "reading_question": "Consent or coercion?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Randall Germain",
+          "Michael Kenny"
+        ],
+        "year": 1998,
+        "title": "Engaging Gramsci: international relations theory and the new Gramscians",
+        "type": "article",
+        "venue": "Review of International Studies",
+        "doi": "10.1017/s0260210598000035",
+        "openalex_id": "W2166850471",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How do you read Gramsci?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "neo-gramscian",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2344961830",
+        "title": "The formation of the Eurasian Economic Union: How successful is the Russian regional hegemony?",
+        "year": 2016,
+        "authors": [
+          "Ksenia Kirkham"
+        ],
+        "cited_by": 116,
+        "oa_url": "https://doi.org/10.1016/j.euras.2015.06.002"
+      },
+      {
+        "openalex_id": "W3007554926",
+        "title": "Accounting, Ideological and Political Work and Chinese multinational operations: A neo-Gramscian perspective",
+        "year": 2020,
+        "authors": [
+          "Xinxiang Li",
+          "Teerooven Soobaroyen"
+        ],
+        "cited_by": 32,
+        "oa_url": "https://doi.org/10.1016/j.cpa.2020.102160"
+      },
+      {
+        "openalex_id": "W2524000078",
+        "title": "Imagining another Europe: Building a pan-European counter-hegemonic bloc around an anti-austerity master frame",
+        "year": 2016,
+        "authors": [
+          "Christian Schöll",
+          "Annette Freyberg‐Inan"
+        ],
+        "cited_by": 27,
+        "oa_url": "https://doi.org/10.1057/s41295-016-0070-x"
+      },
+      {
+        "openalex_id": "W2530131628",
+        "title": "The transatlantic dialogue on Iran: the European subaltern and hegemonic constraints in the implementation of the 2015 nuclear agreement with Iran",
+        "year": 2016,
+        "authors": [
+          "Moritz Pieper"
+        ],
+        "cited_by": 26,
+        "oa_url": "http://usir.salford.ac.uk/id/eprint/40337/1/AAM%20Pieper_ES%2010_16.docx"
+      },
+      {
+        "openalex_id": "W2843479192",
+        "title": "Organizing the Environmental Governance of the Rare-Earth Industry: China’s passive revolution",
+        "year": 2018,
+        "authors": [
+          "Le Bo",
+          "Steffen Böhm",
+          "Noelia‐Sarah Reynolds"
+        ],
+        "cited_by": 20,
+        "oa_url": "https://doi.org/10.1177/0170840618782278"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

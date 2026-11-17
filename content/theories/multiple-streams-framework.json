@@ -1,0 +1,333 @@
+{
+  "theory_id": null,
+  "library_name": "Multiple streams framework",
+  "slug": "multiple-streams-framework",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Kingdon"
+    ],
+    "year": 1984,
+    "title": "Agendas, Alternatives, and Public Policies",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781292039206",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1984
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Policy change happens when three independent streams, problems, policies and politics, come together during a policy window, often with a policy entrepreneur.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why did a policy get on the agenda at a certain moment?",
+    "Who are the policy entrepreneurs?",
+    "Typical data: case study, process tracing, interviews."
+  ],
+  "common_mistakes": [
+    "Listing streams without showing independence.",
+    "Seeing every change as a window.",
+    "Ignoring decision stage."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Nicole Herweg",
+          "Christian Huß",
+          "Reimut Zohlnhöfer"
+        ],
+        "year": 2015,
+        "title": "Straightening the three streams: Theorising extensions of the multiple streams framework",
+        "type": "article",
+        "venue": "European Journal of Political Research",
+        "doi": "10.1111/1475-6765.12089",
+        "openalex_id": "W1605454420",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Extends to decision-making."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Michael D. Jones",
+          "Holly L. Peterson",
+          "Jonathan J. Pierce",
+          "Nicole Herweg",
+          "Amiel Bernal",
+          "Holly Lamberta Raney"
+        ],
+        "year": 2015,
+        "title": "A River Runs Through It: A Multiple Streams Meta‐Review",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/psj.12115",
+        "openalex_id": "W1942414756",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/psj.12115"
+      },
+      "adds": "Meta-review."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Paul Cairney",
+          "Michael D. Jones"
+        ],
+        "year": 2015,
+        "title": "K ingdon's Multiple Streams Approach: What Is the Empirical Impact of this Universal Theory?",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/psj.12111",
+        "openalex_id": "W2148804058",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Empirical impact."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Agenda-setting MSF",
+      "summary": "Original.",
+      "defining_work": {
+        "authors": [
+          "Kingdon"
+        ],
+        "year": 1984,
+        "title": "Agendas, Alternatives, and Public Policies",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781292039206",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1984
+      }
+    },
+    {
+      "name": "Decision-making MSF",
+      "summary": "Extensions.",
+      "defining_work": {
+        "authors": [
+          "Nicole Herweg",
+          "Christian Huß",
+          "Reimut Zohlnhöfer"
+        ],
+        "year": 2015,
+        "title": "Straightening the three streams: Theorising extensions of the multiple streams framework",
+        "type": "article",
+        "venue": "European Journal of Political Research",
+        "doi": "10.1111/1475-6765.12089",
+        "openalex_id": "W1605454420",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Widely applied across countries.",
+      "source": {
+        "authors": [
+          "Michael D. Jones",
+          "Holly L. Peterson",
+          "Jonathan J. Pierce",
+          "Nicole Herweg",
+          "Amiel Bernal",
+          "Holly Lamberta Raney"
+        ],
+        "year": 2015,
+        "title": "A River Runs Through It: A Multiple Streams Meta‐Review",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/psj.12115",
+        "openalex_id": "W1942414756",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/psj.12115"
+      }
+    },
+    {
+      "point": "Explains timing.",
+      "source": {
+        "authors": [
+          "Kingdon"
+        ],
+        "year": 1984,
+        "title": "Agendas, Alternatives, and Public Policies",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781292039206",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1984
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Streams not independent; concepts vague.",
+      "source": {
+        "authors": [
+          "Gary Mucciaroni"
+        ],
+        "year": 1992,
+        "title": "The Garbage Can Model & the Study of Policy Making: A Critique",
+        "type": "article",
+        "venue": "Polity",
+        "doi": "10.2307/3235165",
+        "openalex_id": "W2333567635",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Applications rarely test hypotheses.",
+      "source": {
+        "authors": [
+          "Paul Cairney",
+          "Michael D. Jones"
+        ],
+        "year": 2015,
+        "title": "K ingdon's Multiple Streams Approach: What Is the Empirical Impact of this Universal Theory?",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/psj.12111",
+        "openalex_id": "W2148804058",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Kingdon"
+        ],
+        "year": 1984,
+        "title": "Agendas, Alternatives, and Public Policies",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781292039206",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1984
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "When did the window open?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Nicole Herweg",
+          "Christian Huß",
+          "Reimut Zohlnhöfer"
+        ],
+        "year": 2015,
+        "title": "Straightening the three streams: Theorising extensions of the multiple streams framework",
+        "type": "article",
+        "venue": "European Journal of Political Research",
+        "doi": "10.1111/1475-6765.12089",
+        "openalex_id": "W1605454420",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Update.",
+      "reading_question": "Agenda or decision?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Michael D. Jones",
+          "Holly L. Peterson",
+          "Jonathan J. Pierce",
+          "Nicole Herweg",
+          "Amiel Bernal",
+          "Holly Lamberta Raney"
+        ],
+        "year": 2015,
+        "title": "A River Runs Through It: A Multiple Streams Meta‐Review",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/psj.12115",
+        "openalex_id": "W1942414756",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/psj.12115"
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "How will you show streams coupled?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "multiple streams",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 2 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

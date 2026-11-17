@@ -1,0 +1,325 @@
+{
+  "theory_id": null,
+  "library_name": "Structural anthropology",
+  "slug": "structural-anthropology",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Lévi-Strauss"
+    ],
+    "year": 1963,
+    "title": "Structural Anthropology",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "isbn": "9780140138214",
+    "first_publish_year": 1967,
+    "note": "Library record's first publication year is 1967; 1963 is the edition or translation cited here."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Behind varied myths, kinship systems and rituals lie universal structures of the human mind, often binary oppositions. Analysis looks for these underlying structures rather than surface content.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What patterns recur in myths, folklore or symbolic systems?",
+    "How are kinship and exchange organised?",
+    "Typical data: structural analysis of texts, comparative analysis."
+  ],
+  "common_mistakes": [
+    "Finding binaries everywhere without justification.",
+    "Ignoring history and change.",
+    "Treating it as a method for any text."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Saussure"
+        ],
+        "year": 1959,
+        "title": "Course in General Linguistics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781912281732",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1959
+      },
+      "adds": "Structural linguistics."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Claude Lévi‐Strauss"
+        ],
+        "year": 1969,
+        "title": "The elementary structures of kinship : (Les structures élémentaires de la parenté)",
+        "type": "book",
+        "venue": "Beacon Press eBooks",
+        "doi": null,
+        "openalex_id": "W1530697405",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1969
+      },
+      "adds": "Kinship as exchange."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Claude Lévi‐Strauss"
+        ],
+        "year": 1969,
+        "title": "The Raw and the Cooked: Introduction to a Science of Mythology. Vol. 1",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2075309044",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1964,
+        "note": "Library record's first publication year is 1964; 1969 is the edition or translation cited here."
+      },
+      "adds": "Myth analysis."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Kinship structuralism",
+      "summary": "Alliance theory.",
+      "defining_work": {
+        "authors": [
+          "Claude Lévi‐Strauss"
+        ],
+        "year": 1969,
+        "title": "The elementary structures of kinship : (Les structures élémentaires de la parenté)",
+        "type": "book",
+        "venue": "Beacon Press eBooks",
+        "doi": null,
+        "openalex_id": "W1530697405",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1969
+      }
+    },
+    {
+      "name": "Myth analysis",
+      "summary": "Structures of myths.",
+      "defining_work": {
+        "authors": [
+          "Claude Lévi‐Strauss"
+        ],
+        "year": 1969,
+        "title": "The Raw and the Cooked: Introduction to a Science of Mythology. Vol. 1",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2075309044",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1964,
+        "note": "Library record's first publication year is 1964; 1969 is the edition or translation cited here."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Reveals hidden order in symbolic systems.",
+      "source": {
+        "authors": [
+          "Lévi-Strauss"
+        ],
+        "year": 1963,
+        "title": "Structural Anthropology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "isbn": "9780140138214",
+        "first_publish_year": 1967,
+        "note": "Library record's first publication year is 1967; 1963 is the edition or translation cited here."
+      }
+    },
+    {
+      "point": "Shaped semiotics and cultural studies.",
+      "source": {
+        "authors": [
+          "Saussure"
+        ],
+        "year": 1959,
+        "title": "Course in General Linguistics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781912281732",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1959
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Ignores practice and agency.",
+      "source": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1977,
+        "title": "Outline of a Theory of Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521291644",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1977
+      }
+    },
+    {
+      "point": "Ahistorical.",
+      "source": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1977,
+        "title": "Outline of a Theory of Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521291644",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1977
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Lévi-Strauss"
+        ],
+        "year": 1963,
+        "title": "Structural Anthropology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "isbn": "9780140138214",
+        "first_publish_year": 1967,
+        "note": "Library record's first publication year is 1967; 1963 is the edition or translation cited here."
+      },
+      "chapter": null,
+      "why_read": "Essays.",
+      "reading_question": "What structure underlies your material?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Claude Lévi‐Strauss"
+        ],
+        "year": 1969,
+        "title": "The Raw and the Cooked: Introduction to a Science of Mythology. Vol. 1",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2075309044",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1964,
+        "note": "Library record's first publication year is 1964; 1969 is the edition or translation cited here."
+      },
+      "chapter": null,
+      "why_read": "Myth.",
+      "reading_question": "Which oppositions will you test?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1977,
+        "title": "Outline of a Theory of Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521291644",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1977
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Structure or practice?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "structuralism anthropology",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 0 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

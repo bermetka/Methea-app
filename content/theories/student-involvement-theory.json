@@ -1,0 +1,313 @@
+{
+  "theory_id": null,
+  "library_name": "Student involvement theory (Astin)",
+  "slug": "student-involvement-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Alexander W. Astin"
+    ],
+    "year": 2014,
+    "title": "Student Involvement: A Developmental Theory for Higher Education",
+    "type": "chapter",
+    "venue": "Routledge eBooks",
+    "doi": "10.4324/9781315051888-15",
+    "openalex_id": "W121643928",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "note": "Reprint chapter (2014) of the 1984 Journal of College Student Personnel article."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Students learn and develop in proportion to the physical and psychological energy they invest in academic and campus life. Involvement has quantity and quality.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does involvement in activities relate to student outcomes?",
+    "What campus conditions encourage involvement?",
+    "Typical data: surveys, institutional data, interviews."
+  ],
+  "common_mistakes": [
+    "Counting hours in activities and ignoring quality.",
+    "Confusing involvement (what students do) with engagement as institutions measure it.",
+    "Treating it as causal without controlling for input characteristics (Astin's I-E-O model)."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Astin"
+        ],
+        "year": 1991,
+        "title": "Assessment for Excellence: The Philosophy and Practice of Assessment and Evaluation in Higher Education",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780028970226",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1990
+      },
+      "adds": "The input–environment–outcome model."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Astin"
+        ],
+        "year": 1993,
+        "title": "What Matters in College? Four Critical Years Revisited",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781555424923",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1992
+      },
+      "adds": "Large-scale evidence on involvement."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "George D. Kuh"
+        ],
+        "year": 2001,
+        "title": "Assessing What Really Matters to Student LearningInside The National Survey of Student Engagement",
+        "type": "article",
+        "venue": "Change The Magazine of Higher Learning",
+        "doi": "10.1080/00091380109601795",
+        "openalex_id": "W2074724594",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2022/23814"
+      },
+      "adds": "Engagement and NSSE build on involvement."
+    }
+  ],
+  "strands": [
+    {
+      "name": "I-E-O model",
+      "summary": "Input, environment, outcome logic for college impact.",
+      "defining_work": {
+        "authors": [
+          "Astin"
+        ],
+        "year": 1991,
+        "title": "Assessment for Excellence: The Philosophy and Practice of Assessment and Evaluation in Higher Education",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780028970226",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1990
+      }
+    },
+    {
+      "name": "Student engagement (NSSE)",
+      "summary": "Institutional measurement of engagement.",
+      "defining_work": {
+        "authors": [
+          "George D. Kuh"
+        ],
+        "year": 2001,
+        "title": "Assessing What Really Matters to Student LearningInside The National Survey of Student Engagement",
+        "type": "article",
+        "venue": "Change The Magazine of Higher Learning",
+        "doi": "10.1080/00091380109601795",
+        "openalex_id": "W2074724594",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2022/23814"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Supported by large national datasets.",
+      "source": {
+        "authors": [
+          "Astin"
+        ],
+        "year": 1993,
+        "title": "What Matters in College? Four Critical Years Revisited",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781555424923",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1992
+      }
+    },
+    {
+      "point": "Simple and practical for institutions.",
+      "source": {
+        "authors": [
+          "George D. Kuh"
+        ],
+        "year": 2001,
+        "title": "Assessing What Really Matters to Student LearningInside The National Survey of Student Engagement",
+        "type": "article",
+        "venue": "Change The Magazine of Higher Learning",
+        "doi": "10.1080/00091380109601795",
+        "openalex_id": "W2074724594",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2022/23814"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Behavioural view misses emotional and sociocultural sides of engagement.",
+      "source": {
+        "authors": [
+          "Ella R. Kahu"
+        ],
+        "year": 2011,
+        "title": "Framing student engagement in higher education",
+        "type": "article",
+        "venue": "Studies in Higher Education",
+        "doi": "10.1080/03075079.2011.598505",
+        "openalex_id": "W2047706901",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/10179/15152"
+      }
+    },
+    {
+      "point": "Built on traditional US residential students.",
+      "source": {
+        "authors": [
+          "William G. Tierney"
+        ],
+        "year": 1992,
+        "title": "An Anthropological Analysis of Student Participation in College",
+        "type": "article",
+        "venue": "The Journal of Higher Education",
+        "doi": "10.1080/00221546.1992.11778391",
+        "openalex_id": "W1969539831",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Alexander W. Astin"
+        ],
+        "year": 2014,
+        "title": "Student Involvement: A Developmental Theory for Higher Education",
+        "type": "chapter",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9781315051888-15",
+        "openalex_id": "W121643928",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint chapter (2014) of the 1984 Journal of College Student Personnel article."
+      },
+      "chapter": null,
+      "why_read": "The theory.",
+      "reading_question": "Which forms of involvement matter for your outcome?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Astin"
+        ],
+        "year": 1993,
+        "title": "What Matters in College? Four Critical Years Revisited",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781555424923",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1992
+      },
+      "chapter": null,
+      "why_read": "Evidence.",
+      "reading_question": "What inputs must you control for?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Ella R. Kahu"
+        ],
+        "year": 2011,
+        "title": "Framing student engagement in higher education",
+        "type": "article",
+        "venue": "Studies in Higher Education",
+        "doi": "10.1080/03075079.2011.598505",
+        "openalex_id": "W2047706901",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/10179/15152"
+      },
+      "chapter": null,
+      "why_read": "Engagement perspectives.",
+      "reading_question": "Involvement or engagement: which do you study?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "student involvement",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Student Involvement: A Developmental Theory for Higher Education. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

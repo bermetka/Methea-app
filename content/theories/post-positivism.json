@@ -1,0 +1,302 @@
+{
+  "theory_id": null,
+  "library_name": "Post-positivism",
+  "slug": "post-positivism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Popper"
+    ],
+    "year": 1959,
+    "title": "The Logic of Scientific Discovery",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780226675480",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1935,
+    "note": "Open Library lists this work under its original title 'Logik der Forschung' (1935); 1959 is the English edition cited here. The ISBN belongs to one edition of that work."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Reality exists independently of us, but we can know it only imperfectly. Theories can never be proven, only tested and falsified, and observation is always shaped by theory, so claims are warranted conjectures open to revision.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Testing a hypothesis while admitting measurement error and bias.",
+    "Most quantitative and many mixed-methods designs.",
+    "Typical designs: experiments and quasi-experiments, surveys, triangulation."
+  ],
+  "common_mistakes": [
+    "Writing 'positivism' in the methodology chapter when the position described is post-positivist.",
+    "Treating a non-rejected hypothesis as proven.",
+    "Ignoring how theory shaped what was measured."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Ts. Kuhn",
+          "David Hawkins"
+        ],
+        "year": 1963,
+        "title": "The Structure of Scientific Revolutions",
+        "type": "chapter",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400831296-024",
+        "openalex_id": "W2752443224",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://www.gbv.de/dms/bowker/toc/9780226458120.pdf"
+      },
+      "adds": "Science works within paradigms; observation is theory-laden."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Denis C. Phillips",
+          "Nicholas C. Burbules"
+        ],
+        "year": 2000,
+        "title": "Postpositivism And Educational Research",
+        "type": "book",
+        "venue": "Rowman & Littlefield Publishers eBooks",
+        "doi": "10.5040/9798216410935",
+        "openalex_id": "W4417379764",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Clear statement of post-positivism for social and educational research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Critical rationalism",
+      "summary": "Falsification as the criterion of science.",
+      "defining_work": {
+        "authors": [
+          "Popper"
+        ],
+        "year": 1959,
+        "title": "The Logic of Scientific Discovery",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226675480",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1935,
+        "note": "Open Library lists this work under its original title 'Logik der Forschung' (1935); 1959 is the English edition cited here. The ISBN belongs to one edition of that work."
+      }
+    },
+    {
+      "name": "Historical turn",
+      "summary": "Paradigms and research programmes.",
+      "defining_work": {
+        "authors": [
+          "Ts. Kuhn",
+          "David Hawkins"
+        ],
+        "year": 1963,
+        "title": "The Structure of Scientific Revolutions",
+        "type": "chapter",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400831296-024",
+        "openalex_id": "W2752443224",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://www.gbv.de/dms/bowker/toc/9780226458120.pdf"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Keeps the goal of objective knowledge while accepting fallibility.",
+      "source": {
+        "authors": [
+          "Denis C. Phillips",
+          "Nicholas C. Burbules"
+        ],
+        "year": 2000,
+        "title": "Postpositivism And Educational Research",
+        "type": "book",
+        "venue": "Rowman & Littlefield Publishers eBooks",
+        "doi": "10.5040/9798216410935",
+        "openalex_id": "W4417379764",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Gives a logic for experimental and quasi-experimental design.",
+      "source": {
+        "authors": [
+          "Thomas D. Cook",
+          "Donald T. Campbell"
+        ],
+        "year": 1979,
+        "title": "Quasi-Experimentation: Design & Analysis Issues for Field Settings",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1491087240",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "No single scientific method exists; methodological rules are regularly and fruitfully broken.",
+      "source": {
+        "authors": [
+          "Feyerabend"
+        ],
+        "year": 1975,
+        "title": "Against Method",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9782020099950",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1975
+      }
+    },
+    {
+      "point": "Realities are multiple and constructed, so inquiry cannot be detached from the inquirer.",
+      "source": {
+        "authors": [
+          "Lincoln"
+        ],
+        "year": 1985,
+        "title": "Naturalistic Inquiry",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780803924314",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1985
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Popper"
+        ],
+        "year": 1959,
+        "title": "The Logic of Scientific Discovery",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226675480",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1935,
+        "note": "Open Library lists this work under its original title 'Logik der Forschung' (1935); 1959 is the English edition cited here. The ISBN belongs to one edition of that work."
+      },
+      "chapter": null,
+      "why_read": "Falsification.",
+      "reading_question": "How could your hypothesis be shown false?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Ts. Kuhn",
+          "David Hawkins"
+        ],
+        "year": 1963,
+        "title": "The Structure of Scientific Revolutions",
+        "type": "chapter",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400831296-024",
+        "openalex_id": "W2752443224",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://www.gbv.de/dms/bowker/toc/9780226458120.pdf"
+      },
+      "chapter": null,
+      "why_read": "Paradigms and theory-laden observation.",
+      "reading_question": "What assumptions does your field take for granted?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Denis C. Phillips",
+          "Nicholas C. Burbules"
+        ],
+        "year": 2000,
+        "title": "Postpositivism And Educational Research",
+        "type": "book",
+        "venue": "Rowman & Littlefield Publishers eBooks",
+        "doi": "10.5040/9798216410935",
+        "openalex_id": "W4417379764",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Accessible overview.",
+      "reading_question": "How do you warrant your claims?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "postpositivism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Against Method; Naturalistic Inquiry; The Logic of Scientific Discovery. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

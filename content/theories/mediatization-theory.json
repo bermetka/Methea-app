@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Mediatization theory",
+  "slug": "mediatization-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Stig Hjarvard"
+    ],
+    "year": 2008,
+    "title": "The Mediatization of Society",
+    "type": "article",
+    "venue": "Nordicom review/NORDICOM review",
+    "doi": "10.1515/nor-2017-0181",
+    "openalex_id": "W2100212414",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://doi.org/10.1515/nor-2017-0181"
+  },
+  "citation_anchor_openalex_id": "W2100212414",
+  "core_idea": "Social institutions such as politics, religion and education increasingly depend on and adapt to the media and their logic, which changes how these institutions work.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do politics, religion or universities change because of media and social media?",
+    "How do organisations adapt to media logic?",
+    "Typical data: case studies, interviews, document analysis, longitudinal analysis."
+  ],
+  "common_mistakes": [
+    "Using mediatization to mean 'media are important'.",
+    "Not specifying which institution and which media logic.",
+    "Ignoring long-term change, which the concept is about."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Gianpietro Mazzoleni",
+          "Winfried Schulz"
+        ],
+        "year": 1999,
+        "title": "\"Mediatization\" of Politics: A Challenge for Democracy?",
+        "type": "article",
+        "venue": "Political Communication",
+        "doi": "10.1080/105846099198613",
+        "openalex_id": "W2038007619",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Mediatization of politics."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jesper Strömbäck"
+        ],
+        "year": 2008,
+        "title": "Four Phases of Mediatization: An Analysis of the Mediatization of Politics",
+        "type": "article",
+        "venue": "The International Journal of Press/Politics",
+        "doi": "10.1177/1940161208319097",
+        "openalex_id": "W2147160422",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Four phases model."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Nick Couldry",
+          "Andreas Hepp"
+        ],
+        "year": 2013,
+        "title": "Conceptualizing Mediatization: Contexts, Traditions, Arguments",
+        "type": "article",
+        "venue": "Communication Theory",
+        "doi": "10.1111/comt.12019",
+        "openalex_id": "W2160619691",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://media.suub.uni-bremen.de/handle/elib/23862"
+      },
+      "adds": "Institutional vs social-constructivist traditions."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Institutional tradition",
+      "summary": "Media logic and institutions.",
+      "defining_work": {
+        "authors": [
+          "Stig Hjarvard"
+        ],
+        "year": 2008,
+        "title": "The Mediatization of Society",
+        "type": "article",
+        "venue": "Nordicom review/NORDICOM review",
+        "doi": "10.1515/nor-2017-0181",
+        "openalex_id": "W2100212414",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1515/nor-2017-0181"
+      }
+    },
+    {
+      "name": "Social-constructivist tradition",
+      "summary": "Everyday communicative construction of reality.",
+      "defining_work": {
+        "authors": [
+          "Nick Couldry",
+          "Andreas Hepp"
+        ],
+        "year": 2013,
+        "title": "Conceptualizing Mediatization: Contexts, Traditions, Arguments",
+        "type": "article",
+        "venue": "Communication Theory",
+        "doi": "10.1111/comt.12019",
+        "openalex_id": "W2160619691",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://media.suub.uni-bremen.de/handle/elib/23862"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Captures long-term media-related change.",
+      "source": {
+        "authors": [
+          "Nick Couldry",
+          "Andreas Hepp"
+        ],
+        "year": 2013,
+        "title": "Conceptualizing Mediatization: Contexts, Traditions, Arguments",
+        "type": "article",
+        "venue": "Communication Theory",
+        "doi": "10.1111/comt.12019",
+        "openalex_id": "W2160619691",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://media.suub.uni-bremen.de/handle/elib/23862"
+      }
+    },
+    {
+      "point": "Clear phase model for politics.",
+      "source": {
+        "authors": [
+          "Jesper Strömbäck"
+        ],
+        "year": 2008,
+        "title": "Four Phases of Mediatization: An Analysis of the Mediatization of Politics",
+        "type": "article",
+        "venue": "The International Journal of Press/Politics",
+        "doi": "10.1177/1940161208319097",
+        "openalex_id": "W2147160422",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "A conceptual bandwagon with weak empirical grounding.",
+      "source": {
+        "authors": [
+          "David Deacon",
+          "James Stanyer"
+        ],
+        "year": 2014,
+        "title": "Mediatization: key concept or conceptual bandwagon?",
+        "type": "article",
+        "venue": "Media Culture & Society",
+        "doi": "10.1177/0163443714542218",
+        "openalex_id": "W2010555362",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://dspace.lboro.ac.uk/2134/16178"
+      }
+    },
+    {
+      "point": "Questioned as a new paradigm for the field.",
+      "source": {
+        "authors": [
+          "Peter Lunt",
+          "Sonia Livingstone"
+        ],
+        "year": 2016,
+        "title": "Is ‘mediatization’ the new paradigm for our field? A commentary on Deacon and Stanyer (2014, 2015) and Hepp, Hjarvard and Lundby (2015)",
+        "type": "article",
+        "venue": "Media Culture & Society",
+        "doi": "10.1177/0163443716631288",
+        "openalex_id": "W1838585558",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://orcid.org/0000-0002-3248-9862>"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Stig Hjarvard"
+        ],
+        "year": 2008,
+        "title": "The Mediatization of Society",
+        "type": "article",
+        "venue": "Nordicom review/NORDICOM review",
+        "doi": "10.1515/nor-2017-0181",
+        "openalex_id": "W2100212414",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1515/nor-2017-0181"
+      },
+      "chapter": null,
+      "why_read": "The theory.",
+      "reading_question": "Which institution do you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jesper Strömbäck"
+        ],
+        "year": 2008,
+        "title": "Four Phases of Mediatization: An Analysis of the Mediatization of Politics",
+        "type": "article",
+        "venue": "The International Journal of Press/Politics",
+        "doi": "10.1177/1940161208319097",
+        "openalex_id": "W2147160422",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Phases.",
+      "reading_question": "Which phase is your case in?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "David Deacon",
+          "James Stanyer"
+        ],
+        "year": 2014,
+        "title": "Mediatization: key concept or conceptual bandwagon?",
+        "type": "article",
+        "venue": "Media Culture & Society",
+        "doi": "10.1177/0163443714542218",
+        "openalex_id": "W2010555362",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://dspace.lboro.ac.uk/2134/16178"
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you show change over time?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "mediatization",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2789688102",
+        "title": "The Mediatization and the Politicization of the “Refugee Crisis” in Europe",
+        "year": 2018,
+        "authors": [
+          "Michał Krzyżanowski",
+          "Anna Triandafyllidou",
+          "Ruth Wodak"
+        ],
+        "cited_by": 461,
+        "oa_url": "https://doi.org/10.1080/15562948.2017.1353189"
+      },
+      {
+        "openalex_id": "W2792977984",
+        "title": "From Mediatized Emotion to Digital Affect Cultures: New Technologies and Global Flows of Emotion",
+        "year": 2018,
+        "authors": [
+          "Katrin Döveling",
+          "Anu A. Harju",
+          "Denise Sommer"
+        ],
+        "cited_by": 251,
+        "oa_url": "https://doi.org/10.1177/2056305117743141"
+      },
+      {
+        "openalex_id": "W2516289991",
+        "title": "Three tasks for mediatization research: contributions to an open agenda",
+        "year": 2016,
+        "authors": [
+          "Mats Ekström",
+          "Johan Fornäs",
+          "André Jansson",
+          "Anne Jerslev"
+        ],
+        "cited_by": 108,
+        "oa_url": "https://researchprofiles.ku.dk/da/publications/451d7b39-80c1-4ae6-8278-126aefc9ee39"
+      },
+      {
+        "openalex_id": "W2754323150",
+        "title": "Family Dynamics in Digital Homes: The Role Played by Parental Mediation in Young Children’s Digital Practices Around 14 European Countries",
+        "year": 2017,
+        "authors": [
+          "Rita Brito",
+          "Rita Francisco",
+          "Patrícia Dias",
+          "Chaudron Stéphane"
+        ],
+        "cited_by": 105,
+        "oa_url": "http://hdl.handle.net/10400.14/36430"
+      },
+      {
+        "openalex_id": "W2590202502",
+        "title": "Towards a theory of digital media",
+        "year": 2017,
+        "authors": [
+          "Ralph Schroeder"
+        ],
+        "cited_by": 89,
+        "oa_url": "https://ora.ox.ac.uk/objects/uuid:31a89853-b3ae-4442-84ab-468e2e91fbc1"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 3 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

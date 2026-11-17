@@ -1,0 +1,294 @@
+{
+  "theory_id": null,
+  "library_name": "Moral economy",
+  "slug": "moral-economy",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Scott"
+    ],
+    "year": 1976,
+    "title": "The Moral Economy of the Peasant",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780300185553",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1976
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Peasants judge economic arrangements by a shared sense of justice built on the right to subsistence. When elites or states violate it, resistance follows, not because of poverty alone.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people judge fairness in markets, prices or state policies?",
+    "Why do reforms provoke protest?",
+    "Typical data: ethnography, historical analysis, interviews."
+  ],
+  "common_mistakes": [
+    "Using 'moral economy' as any values in economics.",
+    "Romanticising community.",
+    "Ignoring Thompson's historical version."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "E. P. Thompson"
+        ],
+        "year": 1971,
+        "title": "THE MORAL ECONOMY OF THE ENGLISH CROWD IN THE EIGHTEENTH CENTURY",
+        "type": "article",
+        "venue": "Past & Present",
+        "doi": "10.1093/past/50.1.76",
+        "openalex_id": "W2043699734",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The original concept."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Popkin"
+        ],
+        "year": 1979,
+        "title": "The Rational Peasant",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520035614",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1979
+      },
+      "adds": "Rational-actor counterpoint."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Thompson-Scott tradition",
+      "summary": "Subsistence and fairness.",
+      "defining_work": {
+        "authors": [
+          "E. P. Thompson"
+        ],
+        "year": 1971,
+        "title": "THE MORAL ECONOMY OF THE ENGLISH CROWD IN THE EIGHTEENTH CENTURY",
+        "type": "article",
+        "venue": "Past & Present",
+        "doi": "10.1093/past/50.1.76",
+        "openalex_id": "W2043699734",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Rational choice critique",
+      "summary": "Peasants as rational actors.",
+      "defining_work": {
+        "authors": [
+          "Popkin"
+        ],
+        "year": 1979,
+        "title": "The Rational Peasant",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520035614",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1979
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains protest over fairness.",
+      "source": {
+        "authors": [
+          "E. P. Thompson"
+        ],
+        "year": 1971,
+        "title": "THE MORAL ECONOMY OF THE ENGLISH CROWD IN THE EIGHTEENTH CENTURY",
+        "type": "article",
+        "venue": "Past & Present",
+        "doi": "10.1093/past/50.1.76",
+        "openalex_id": "W2043699734",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Influential across disciplines.",
+      "source": {
+        "authors": [
+          "Scott"
+        ],
+        "year": 1976,
+        "title": "The Moral Economy of the Peasant",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780300185553",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1976
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Peasants act as rational individuals, not moral communities.",
+      "source": {
+        "authors": [
+          "Popkin"
+        ],
+        "year": 1979,
+        "title": "The Rational Peasant",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520035614",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1979
+      }
+    },
+    {
+      "point": "Concept stretched beyond its origin.",
+      "source": {
+        "authors": [
+          "E. P. Thompson"
+        ],
+        "year": 1971,
+        "title": "THE MORAL ECONOMY OF THE ENGLISH CROWD IN THE EIGHTEENTH CENTURY",
+        "type": "article",
+        "venue": "Past & Present",
+        "doi": "10.1093/past/50.1.76",
+        "openalex_id": "W2043699734",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Scott"
+        ],
+        "year": 1976,
+        "title": "The Moral Economy of the Peasant",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780300185553",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1976
+      },
+      "chapter": null,
+      "why_read": "The theory.",
+      "reading_question": "What fairness norm is at stake?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "E. P. Thompson"
+        ],
+        "year": 1971,
+        "title": "THE MORAL ECONOMY OF THE ENGLISH CROWD IN THE EIGHTEENTH CENTURY",
+        "type": "article",
+        "venue": "Past & Present",
+        "doi": "10.1093/past/50.1.76",
+        "openalex_id": "W2043699734",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Origin.",
+      "reading_question": "Historical or contemporary?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Popkin"
+        ],
+        "year": 1979,
+        "title": "The Rational Peasant",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520035614",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1979
+      },
+      "chapter": null,
+      "why_read": "Counterargument.",
+      "reading_question": "Moral or rational?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "moral economy",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Moral economies. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 0 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "theory_id": null,
+  "library_name": "Entitlement approach",
+  "slug": "entitlement-approach",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Amartya Kumar Sen"
+    ],
+    "year": 1983,
+    "title": "Poverty and Famines",
+    "type": "book",
+    "venue": null,
+    "doi": "10.1093/0198284632.001.0001",
+    "openalex_id": "W2321036786",
+    "isbn": "9780198284635",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "first_publish_year": 1981
+  },
+  "citation_anchor_openalex_id": "W2321036786",
+  "core_idea": "Famines and hunger result less from a fall in food supply than from people losing their entitlements: the legal and economic means to command food through production, trade, labour or transfers.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do people go hungry when food is available?",
+    "How do prices, wages or transfers affect food access?",
+    "Typical data: case study, household data, historical analysis."
+  ],
+  "common_mistakes": [
+    "Confusing entitlements with rights in a legal sense only.",
+    "Ignoring the capability approach that followed.",
+    "Using it without analysing exchange entitlement mapping."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jean Drèze",
+          "Amartya Kumar Sen"
+        ],
+        "year": 1991,
+        "title": "Hunger and Public Action",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0198283652.001.0001",
+        "openalex_id": "W4312115578",
+        "isbn": "9780198286349",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1093/0198283652.001.0001",
+        "first_publish_year": 1989
+      },
+      "adds": "Public action against hunger."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sen"
+        ],
+        "year": 1999,
+        "title": "Development as Freedom",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780195655261",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL116534W, first published 1999). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1999
+      },
+      "adds": "Capabilities (own library entry)."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Melissa Leach",
+          "Robin Mearns",
+          "Ian Scoones"
+        ],
+        "year": 1999,
+        "title": "Environmental Entitlements: Dynamics and Institutions in Community-Based Natural Resource Management",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(98)00141-7",
+        "openalex_id": "W1984081800",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/s0305-750x(98)00141-7"
+      },
+      "adds": "Extends entitlements to environment."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Food security",
+      "summary": "Access-based view.",
+      "defining_work": {
+        "authors": [
+          "Jean Drèze",
+          "Amartya Kumar Sen"
+        ],
+        "year": 1991,
+        "title": "Hunger and Public Action",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0198283652.001.0001",
+        "openalex_id": "W4312115578",
+        "isbn": "9780198286349",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1093/0198283652.001.0001",
+        "first_publish_year": 1989
+      }
+    },
+    {
+      "name": "Environmental entitlements",
+      "summary": "Institutions and resources.",
+      "defining_work": {
+        "authors": [
+          "Melissa Leach",
+          "Robin Mearns",
+          "Ian Scoones"
+        ],
+        "year": 1999,
+        "title": "Environmental Entitlements: Dynamics and Institutions in Community-Based Natural Resource Management",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(98)00141-7",
+        "openalex_id": "W1984081800",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/s0305-750x(98)00141-7"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Changed famine analysis.",
+      "source": {
+        "authors": [
+          "Jean Drèze",
+          "Amartya Kumar Sen"
+        ],
+        "year": 1991,
+        "title": "Hunger and Public Action",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0198283652.001.0001",
+        "openalex_id": "W4312115578",
+        "isbn": "9780198286349",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1093/0198283652.001.0001",
+        "first_publish_year": 1989
+      }
+    },
+    {
+      "point": "Extended to environment.",
+      "source": {
+        "authors": [
+          "Melissa Leach",
+          "Robin Mearns",
+          "Ian Scoones"
+        ],
+        "year": 1999,
+        "title": "Environmental Entitlements: Dynamics and Institutions in Community-Based Natural Resource Management",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(98)00141-7",
+        "openalex_id": "W1984081800",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/s0305-750x(98)00141-7"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Ignores extra-legal entitlements and politics.",
+      "source": {
+        "authors": [
+          "Stephen Devereux"
+        ],
+        "year": 2001,
+        "title": "Sen's Entitlement Approach: Critiques and Counter-critiques",
+        "type": "article",
+        "venue": "Oxford Development Studies",
+        "doi": "10.1080/13600810120088859",
+        "openalex_id": "W2097959235",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Too focused on legal economy.",
+      "source": {
+        "authors": [
+          "Melissa Leach",
+          "Robin Mearns",
+          "Ian Scoones"
+        ],
+        "year": 1999,
+        "title": "Environmental Entitlements: Dynamics and Institutions in Community-Based Natural Resource Management",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(98)00141-7",
+        "openalex_id": "W1984081800",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/s0305-750x(98)00141-7"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Amartya Kumar Sen"
+        ],
+        "year": 1983,
+        "title": "Poverty and Famines",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0198284632.001.0001",
+        "openalex_id": "W2321036786",
+        "isbn": "9780198284635",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1981
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Which entitlements failed?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jean Drèze",
+          "Amartya Kumar Sen"
+        ],
+        "year": 1991,
+        "title": "Hunger and Public Action",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0198283652.001.0001",
+        "openalex_id": "W4312115578",
+        "isbn": "9780198286349",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1093/0198283652.001.0001",
+        "first_publish_year": 1989
+      },
+      "chapter": null,
+      "why_read": "Policy.",
+      "reading_question": "What public action is relevant?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Melissa Leach",
+          "Robin Mearns",
+          "Ian Scoones"
+        ],
+        "year": 1999,
+        "title": "Environmental Entitlements: Dynamics and Institutions in Community-Based Natural Resource Management",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(98)00141-7",
+        "openalex_id": "W1984081800",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/s0305-750x(98)00141-7"
+      },
+      "chapter": null,
+      "why_read": "Extension.",
+      "reading_question": "Legal or customary entitlements?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "entitlement approach",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2964671725",
+        "title": "The Political Economy of Hunger",
+        "year": 2019,
+        "authors": [
+          "Amartya Kumar Sen"
+        ],
+        "cited_by": 636,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3041803822",
+        "title": "Conceptualising COVID-19’s impacts on household food security",
+        "year": 2020,
+        "authors": [
+          "Stephen Devereux",
+          "Christophe Béné",
+          "John Frederick Hoddinott"
+        ],
+        "cited_by": 457,
+        "oa_url": "https://doi.org/10.1007/s12571-020-01085-0"
+      },
+      {
+        "openalex_id": "W2580941054",
+        "title": "Politics of ‘Leaving No One Behind’: Contesting the 2030 Sustainable Development Goals Agenda",
+        "year": 2017,
+        "authors": [
+          "Heloise Weber"
+        ],
+        "cited_by": 210,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2342194478",
+        "title": "Empowering through entitlement? The micro-politics of food access in rural Maharashtra, India",
+        "year": 2016,
+        "authors": [
+          "Pronoy Rai",
+          "Thomas A. Smucker"
+        ],
+        "cited_by": 31,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3191673373",
+        "title": "Household Vulnerability to Food Insecurity and the Regional Food Insecurity Gap in Kenya",
+        "year": 2021,
+        "authors": [
+          "Lilian Korir",
+          "Marian Rizov",
+          "Eric Ruto",
+          "Patrick Paul Walsh"
+        ],
+        "cited_by": 25,
+        "oa_url": "https://doi.org/10.3390/su13169022"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

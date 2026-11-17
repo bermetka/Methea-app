@@ -1,0 +1,389 @@
+{
+  "theory_id": null,
+  "library_name": "Transnationalism",
+  "slug": "transnationalism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Nina Glick Schiller",
+      "Linda Basch",
+      "Cristina Blanc‐Szanton"
+    ],
+    "year": 1992,
+    "title": "Transnationalism: A New Analytic Framework for Understanding Migration",
+    "type": "article",
+    "venue": "Annals of the New York Academy of Sciences",
+    "doi": "10.1111/j.1749-6632.1992.tb33484.x",
+    "openalex_id": "W1926262856",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1926262856",
+  "core_idea": "Migrants build social fields that link their country of origin and settlement. They live across borders, keeping economic, family and political ties in both places at once.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do labour migrants keep ties with home (remittances, families, politics)?",
+    "How do diasporas organise across borders?",
+    "Typical data: multi-sited ethnography, interviews, surveys."
+  ],
+  "common_mistakes": [
+    "Assuming all migrants are transnational.",
+    "Ignoring the state, which still matters.",
+    "Methodological nationalism: studying only one side."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Alejandro Portes",
+          "Luis Eduardo Guarnizo",
+          "Patricia Landolt"
+        ],
+        "year": 1999,
+        "title": "The study of transnationalism: pitfalls and promise of an emergent research field",
+        "type": "article",
+        "venue": "Ethnic and Racial Studies",
+        "doi": "10.1080/014198799329468",
+        "openalex_id": "W1990441538",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1807/16704"
+      },
+      "adds": "Clarifies scope and pitfalls."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Peggy Levitt",
+          "Nina Glick Schiller"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Simultaneity: A Transnational Social Field Perspective on Society",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2004.tb00227.x",
+        "openalex_id": "W2303700668",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Social fields and simultaneity."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Andreas Wimmer",
+          "Nina Glick Schiller"
+        ],
+        "year": 2002,
+        "title": "Methodological nationalism and beyond: nation–state building, migration and the social sciences",
+        "type": "article",
+        "venue": "Global Networks",
+        "doi": "10.1111/1471-0374.00043",
+        "openalex_id": "W2164039506",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Critique of methodological nationalism."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Transnational social fields",
+      "summary": "Ways of being and belonging.",
+      "defining_work": {
+        "authors": [
+          "Peggy Levitt",
+          "Nina Glick Schiller"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Simultaneity: A Transnational Social Field Perspective on Society",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2004.tb00227.x",
+        "openalex_id": "W2303700668",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Economic transnationalism",
+      "summary": "Entrepreneurs and remittances.",
+      "defining_work": {
+        "authors": [
+          "Alejandro Portes",
+          "Luis Eduardo Guarnizo",
+          "Patricia Landolt"
+        ],
+        "year": 1999,
+        "title": "The study of transnationalism: pitfalls and promise of an emergent research field",
+        "type": "article",
+        "venue": "Ethnic and Racial Studies",
+        "doi": "10.1080/014198799329468",
+        "openalex_id": "W1990441538",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1807/16704"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Captures migrants' lives across borders.",
+      "source": {
+        "authors": [
+          "Peggy Levitt",
+          "Nina Glick Schiller"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Simultaneity: A Transnational Social Field Perspective on Society",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2004.tb00227.x",
+        "openalex_id": "W2303700668",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Challenges methodological nationalism.",
+      "source": {
+        "authors": [
+          "Andreas Wimmer",
+          "Nina Glick Schiller"
+        ],
+        "year": 2002,
+        "title": "Methodological nationalism and beyond: nation–state building, migration and the social sciences",
+        "type": "article",
+        "venue": "Global Networks",
+        "doi": "10.1111/1471-0374.00043",
+        "openalex_id": "W2164039506",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Overused; not all cross-border ties are transnationalism.",
+      "source": {
+        "authors": [
+          "Alejandro Portes",
+          "Luis Eduardo Guarnizo",
+          "Patricia Landolt"
+        ],
+        "year": 1999,
+        "title": "The study of transnationalism: pitfalls and promise of an emergent research field",
+        "type": "article",
+        "venue": "Ethnic and Racial Studies",
+        "doi": "10.1080/014198799329468",
+        "openalex_id": "W1990441538",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1807/16704"
+      }
+    },
+    {
+      "point": "Risk of overstating novelty.",
+      "source": {
+        "authors": [
+          "Alejandro Portes",
+          "Luis Eduardo Guarnizo",
+          "Patricia Landolt"
+        ],
+        "year": 1999,
+        "title": "The study of transnationalism: pitfalls and promise of an emergent research field",
+        "type": "article",
+        "venue": "Ethnic and Racial Studies",
+        "doi": "10.1080/014198799329468",
+        "openalex_id": "W1990441538",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1807/16704"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Nina Glick Schiller",
+          "Linda Basch",
+          "Cristina Blanc‐Szanton"
+        ],
+        "year": 1992,
+        "title": "Transnationalism: A New Analytic Framework for Understanding Migration",
+        "type": "article",
+        "venue": "Annals of the New York Academy of Sciences",
+        "doi": "10.1111/j.1749-6632.1992.tb33484.x",
+        "openalex_id": "W1926262856",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Founding statement.",
+      "reading_question": "What ties do your migrants keep?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Peggy Levitt",
+          "Nina Glick Schiller"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Simultaneity: A Transnational Social Field Perspective on Society",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2004.tb00227.x",
+        "openalex_id": "W2303700668",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Social fields.",
+      "reading_question": "Ways of being or belonging?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Alejandro Portes",
+          "Luis Eduardo Guarnizo",
+          "Patricia Landolt"
+        ],
+        "year": 1999,
+        "title": "The study of transnationalism: pitfalls and promise of an emergent research field",
+        "type": "article",
+        "venue": "Ethnic and Racial Studies",
+        "doi": "10.1080/014198799329468",
+        "openalex_id": "W1990441538",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1807/16704"
+      },
+      "chapter": null,
+      "why_read": "Pitfalls.",
+      "reading_question": "How will you define transnational?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "transnationalism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3047643623",
+        "title": "Transnationalism: current debates and new perspectives",
+        "year": 2020,
+        "authors": [
+          "Miriam Tedeschi",
+          "Ekaterina Vorobeva",
+          "Jussi Sakari Jauhiainen"
+        ],
+        "cited_by": 206,
+        "oa_url": "https://doi.org/10.1007/s10708-020-10271-8"
+      },
+      {
+        "openalex_id": "W2734370786",
+        "title": "The missing link: Social network analysis in migration and transnationalism",
+        "year": 2017,
+        "authors": [
+          "Başak Bilecen",
+          "Markus Gamper",
+          "Miranda J. Lubbers"
+        ],
+        "cited_by": 180,
+        "oa_url": "https://ddd.uab.cat/record/318950"
+      },
+      {
+        "openalex_id": "W2523388113",
+        "title": "A personal network approach to the study of immigrant structural assimilation and transnationalism",
+        "year": 2016,
+        "authors": [
+          "Raffaele Vacca",
+          "Giacomo Solano",
+          "Miranda J. Lubbers",
+          "José Luís Molina",
+          "Christopher McCarty"
+        ],
+        "cited_by": 127,
+        "oa_url": "https://www.scopus.com/pages/publications/84995549294"
+      },
+      {
+        "openalex_id": "W2604647015",
+        "title": "The determinants of transnational entrepreneurship and transnational ties’ dynamics among immigrant entrepreneurs in ICT sector in Italy",
+        "year": 2017,
+        "authors": [
+          "Jan Brzozowski",
+          "Marco Cucculelli",
+          "Aleksander Surdej"
+        ],
+        "cited_by": 119,
+        "oa_url": "https://doi.org/10.1111/imig.12335"
+      },
+      {
+        "openalex_id": "W2755579030",
+        "title": "Refugees, asylum-seekers and undocumented migrants and the experience of parenthood: a synthesis of the qualitative literature",
+        "year": 2017,
+        "authors": [
+          "Lisa A. Merry",
+          "Sandra Peláez",
+          "Nancy C. Edwards"
+        ],
+        "cited_by": 115,
+        "oa_url": "https://doi.org/10.1186/s12992-017-0299-4"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

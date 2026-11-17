@@ -1,0 +1,333 @@
+{
+  "theory_id": null,
+  "library_name": "Punctuated equilibrium theory",
+  "slug": "punctuated-equilibrium",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Baumgartner"
+    ],
+    "year": 1993,
+    "title": "Agendas and Instability in American Politics",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780226039534",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1993
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Policies stay stable for long periods and then change suddenly when an issue's image shifts and it moves to a new venue of attention.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why did a policy change abruptly after long stability?",
+    "How do budgets change over time?",
+    "Typical data: longitudinal document or budget data, case study."
+  ],
+  "common_mistakes": [
+    "Calling any change a punctuation.",
+    "No long time series.",
+    "Ignoring venues."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bryan D. Jones"
+        ],
+        "year": 2005,
+        "title": "The politics of attention",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2999915437",
+        "isbn": "9780226406534",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      },
+      "adds": "Attention and information processing."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Frank R. Baumgartner",
+          "Christian Breunig",
+          "Christoffer Green‐Pedersen",
+          "Bryan D. Jones",
+          "Peter Bjerre Mortensen",
+          "Michiel Nuytemans"
+        ],
+        "year": 2009,
+        "title": "Punctuated Equilibrium in Comparative Perspective",
+        "type": "article",
+        "venue": "American Journal of Political Science",
+        "doi": "10.1111/j.1540-5907.2009.00389.x",
+        "openalex_id": "W2169495003",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Cross-national evidence."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bryan D. Jones",
+          "Frank R. Baumgartner"
+        ],
+        "year": 2012,
+        "title": "From There to Here: Punctuated Equilibrium to the General Punctuation Thesis to a Theory of Government Information Processing",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2011.00431.x",
+        "openalex_id": "W2140186016",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "General punctuation thesis."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Agenda studies",
+      "summary": "Policy images and venues.",
+      "defining_work": {
+        "authors": [
+          "Baumgartner"
+        ],
+        "year": 1993,
+        "title": "Agendas and Instability in American Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226039534",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1993
+      }
+    },
+    {
+      "name": "Budget punctuations",
+      "summary": "Distributions of change.",
+      "defining_work": {
+        "authors": [
+          "Frank R. Baumgartner",
+          "Christian Breunig",
+          "Christoffer Green‐Pedersen",
+          "Bryan D. Jones",
+          "Peter Bjerre Mortensen",
+          "Michiel Nuytemans"
+        ],
+        "year": 2009,
+        "title": "Punctuated Equilibrium in Comparative Perspective",
+        "type": "article",
+        "venue": "American Journal of Political Science",
+        "doi": "10.1111/j.1540-5907.2009.00389.x",
+        "openalex_id": "W2169495003",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Strong cross-national evidence.",
+      "source": {
+        "authors": [
+          "Frank R. Baumgartner",
+          "Christian Breunig",
+          "Christoffer Green‐Pedersen",
+          "Bryan D. Jones",
+          "Peter Bjerre Mortensen",
+          "Michiel Nuytemans"
+        ],
+        "year": 2009,
+        "title": "Punctuated Equilibrium in Comparative Perspective",
+        "type": "article",
+        "venue": "American Journal of Political Science",
+        "doi": "10.1111/j.1540-5907.2009.00389.x",
+        "openalex_id": "W2169495003",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Explains stability and change.",
+      "source": {
+        "authors": [
+          "Baumgartner"
+        ],
+        "year": 1993,
+        "title": "Agendas and Instability in American Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226039534",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1993
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Biological metaphor imported loosely.",
+      "source": {
+        "authors": [
+          "David F. Prindle"
+        ],
+        "year": 2012,
+        "title": "Importing Concepts from Biology into Political Science: The Case of Punctuated Equilibrium",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2011.00432.x",
+        "openalex_id": "W1590752826",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Describes more than explains.",
+      "source": {
+        "authors": [
+          "Bryan D. Jones",
+          "Frank R. Baumgartner"
+        ],
+        "year": 2012,
+        "title": "From There to Here: Punctuated Equilibrium to the General Punctuation Thesis to a Theory of Government Information Processing",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2011.00431.x",
+        "openalex_id": "W2140186016",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Baumgartner"
+        ],
+        "year": 1993,
+        "title": "Agendas and Instability in American Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226039534",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1993
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Was there a punctuation?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Frank R. Baumgartner",
+          "Christian Breunig",
+          "Christoffer Green‐Pedersen",
+          "Bryan D. Jones",
+          "Peter Bjerre Mortensen",
+          "Michiel Nuytemans"
+        ],
+        "year": 2009,
+        "title": "Punctuated Equilibrium in Comparative Perspective",
+        "type": "article",
+        "venue": "American Journal of Political Science",
+        "doi": "10.1111/j.1540-5907.2009.00389.x",
+        "openalex_id": "W2169495003",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Comparative.",
+      "reading_question": "Do you have long data?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "David F. Prindle"
+        ],
+        "year": 2012,
+        "title": "Importing Concepts from Biology into Political Science: The Case of Punctuated Equilibrium",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2011.00432.x",
+        "openalex_id": "W1590752826",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Explain or describe?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "punctuated equilibrium policy",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

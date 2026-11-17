@@ -1,0 +1,379 @@
+{
+  "theory_id": null,
+  "library_name": "Cultivation theory",
+  "slug": "cultivation-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "George Gerbner",
+      "Larry P. Gross"
+    ],
+    "year": 1976,
+    "title": "Living with Television: The Violence Profile",
+    "type": "article",
+    "venue": "Journal of Communication",
+    "doi": "10.1111/j.1460-2466.1976.tb01397.x",
+    "openalex_id": "W2072761879",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2072761879",
+  "core_idea": "Heavy long-term exposure to television's repeated messages cultivates beliefs about social reality that match the TV world, such as seeing the world as more dangerous.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Does heavy media use relate to perceptions of crime, gender roles or migrants?",
+    "Do streaming and social media cultivate as TV did?",
+    "Typical data: content analysis combined with surveys."
+  ],
+  "common_mistakes": [
+    "Studying one programme; cultivation is about total exposure to a system of messages.",
+    "Treating correlations as proof of causation.",
+    "Ignoring control variables, the key early critique."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "George Gerbner",
+          "Larry P. Gross",
+          "Michael Morgan",
+          "Nancy Signorielli"
+        ],
+        "year": 1980,
+        "title": "The “Mainstreaming” of America: Violence Profile No. 11",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1980.tb01987.x",
+        "openalex_id": "W2029493508",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Adds mainstreaming and resonance."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "L. J. Shrum"
+        ],
+        "year": 1995,
+        "title": "Assessing the Social Influence of Television",
+        "type": "article",
+        "venue": "Communication Research",
+        "doi": "10.1177/009365095022004002",
+        "openalex_id": "W2093097460",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Cognitive mechanism (accessibility)."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Michael Morgan",
+          "James E. Shanahan"
+        ],
+        "year": 2010,
+        "title": "The State of Cultivation",
+        "type": "article",
+        "venue": "Journal of Broadcasting & Electronic Media",
+        "doi": "10.1080/08838151003735018",
+        "openalex_id": "W2092782180",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review of cultivation research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Mainstreaming and resonance",
+      "summary": "Group differences in cultivation.",
+      "defining_work": {
+        "authors": [
+          "George Gerbner",
+          "Larry P. Gross",
+          "Michael Morgan",
+          "Nancy Signorielli"
+        ],
+        "year": 1980,
+        "title": "The “Mainstreaming” of America: Violence Profile No. 11",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1980.tb01987.x",
+        "openalex_id": "W2029493508",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Psychological processes",
+      "summary": "How cultivation works in memory.",
+      "defining_work": {
+        "authors": [
+          "L. J. Shrum"
+        ],
+        "year": 1995,
+        "title": "Assessing the Social Influence of Television",
+        "type": "article",
+        "venue": "Communication Research",
+        "doi": "10.1177/009365095022004002",
+        "openalex_id": "W2093097460",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Small but consistent effects across studies.",
+      "source": {
+        "authors": [
+          "Michael Morgan",
+          "James E. Shanahan"
+        ],
+        "year": 2010,
+        "title": "The State of Cultivation",
+        "type": "article",
+        "venue": "Journal of Broadcasting & Electronic Media",
+        "doi": "10.1080/08838151003735018",
+        "openalex_id": "W2092782180",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Combines content and audience data.",
+      "source": {
+        "authors": [
+          "George Gerbner",
+          "Larry P. Gross"
+        ],
+        "year": 1976,
+        "title": "Living with Television: The Violence Profile",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1976.tb01397.x",
+        "openalex_id": "W2072761879",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Effects vanish when controls are applied.",
+      "source": {
+        "authors": [
+          "Paul M. Hirsch"
+        ],
+        "year": 1980,
+        "title": "The “Scary World” of the Nonviewer and Other Anomalies",
+        "type": "article",
+        "venue": "Communication Research",
+        "doi": "10.1177/009365028000700401",
+        "openalex_id": "W2254697626",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Conceptual and methodological problems remain.",
+      "source": {
+        "authors": [
+          "W. James Potter"
+        ],
+        "year": 2014,
+        "title": "A Critical Analysis of Cultivation Theory",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/jcom.12128",
+        "openalex_id": "W1918101540",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "George Gerbner",
+          "Larry P. Gross"
+        ],
+        "year": 1976,
+        "title": "Living with Television: The Violence Profile",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1976.tb01397.x",
+        "openalex_id": "W2072761879",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Founding study.",
+      "reading_question": "Which beliefs might your media cultivate?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Michael Morgan",
+          "James E. Shanahan"
+        ],
+        "year": 2010,
+        "title": "The State of Cultivation",
+        "type": "article",
+        "venue": "Journal of Broadcasting & Electronic Media",
+        "doi": "10.1080/08838151003735018",
+        "openalex_id": "W2092782180",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Does cultivation apply to your medium?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "W. James Potter"
+        ],
+        "year": 2014,
+        "title": "A Critical Analysis of Cultivation Theory",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/jcom.12128",
+        "openalex_id": "W1918101540",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you handle causality?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "cultivation",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3123742815",
+        "title": "Does government social media promote users' information security behavior towards COVID-19 scams? Cultivation effects and protective motivations",
+        "year": 2021,
+        "authors": [
+          "Zhenya Robin Tang",
+          "Andrew S. Miller",
+          "Zhongyun Zhou",
+          "Merrill E. Warkentin"
+        ],
+        "cited_by": 144,
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/9188430"
+      },
+      {
+        "openalex_id": "W2593914779",
+        "title": "Cultivation Theory: Effects and Underlying Processes",
+        "year": 2017,
+        "authors": [
+          "L. J. Shrum"
+        ],
+        "cited_by": 119,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4318262065",
+        "title": "Integrating social media variables as predictors, mediators, and moderators within body image frameworks: Potential mechanisms of action to consider in future research",
+        "year": 2023,
+        "authors": [
+          "Tracy L. Tylka",
+          "Rachel Florence Rodgers",
+          "Rachel M. Calogero",
+          "Joel Kevin Thompson",
+          "Jennifer Ann Harriger"
+        ],
+        "cited_by": 114,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2768622398",
+        "title": "Cultivating Conceptions of Masculinity: Television and Perceptions of Masculine Gender Role Norms",
+        "year": 2017,
+        "authors": [
+          "Erica Scharrer",
+          "Greg Blackburn"
+        ],
+        "cited_by": 82,
+        "oa_url": "https://hdl.handle.net/20.500.14394/8414"
+      },
+      {
+        "openalex_id": "W4383620836",
+        "title": "Cultivation and social media: A meta-analysis",
+        "year": 2023,
+        "authors": [
+          "Erik Hermann",
+          "Michael Morgan",
+          "James E. Shanahan"
+        ],
+        "cited_by": 66,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

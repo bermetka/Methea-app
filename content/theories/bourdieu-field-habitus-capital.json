@@ -1,0 +1,305 @@
+{
+  "theory_id": null,
+  "library_name": "Bourdieu's theory of field, habitus and capital",
+  "slug": "bourdieu-field-habitus-capital",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Bourdieu"
+    ],
+    "year": 1984,
+    "title": "Distinction: A Social Critique of the Judgement of Taste",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780674212770",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL527924W, first published 1979). ISBN is one edition's; cite the edition you read."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Social life is made of fields, arenas where people compete for different forms of capital: economic, cultural, social and symbolic. Habitus, durable dispositions acquired through upbringing, shapes tastes and choices so that inequality tends to reproduce itself.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does family background shape educational choices or success?",
+    "How do taste and lifestyle mark class?",
+    "Typical data: interviews, ethnography, multiple correspondence analysis, surveys."
+  ],
+  "common_mistakes": [
+    "Using only one concept (e.g. cultural capital) without field and habitus.",
+    "Treating habitus as fixed destiny.",
+    "Measuring cultural capital as 'highbrow' participation only."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1977,
+        "title": "Outline of a Theory of Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521291644",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL527998W, first published 1977). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1977
+      },
+      "adds": "Introduces habitus and practice."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1992,
+        "title": "An Invitation to Reflexive Sociology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745610320",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL527993W, first published 1992). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1992
+      },
+      "adds": "Clarifies field, habitus and reflexivity."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Cultural capital in education",
+      "summary": "Class and schooling.",
+      "defining_work": {
+        "authors": [
+          "Annette P. Lareau",
+          "Elliot B. Weininger"
+        ],
+        "year": 2003,
+        "title": "Cultural capital in educational research: A critical assessment",
+        "type": "article",
+        "venue": "Theory and Society",
+        "doi": "10.1023/b:ryso.0000004951.04408.b0",
+        "openalex_id": "W2069774107",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Field theory",
+      "summary": "Fields as arenas of struggle.",
+      "defining_work": {
+        "authors": [
+          "Neil Fligstein",
+          "Doug McAdam"
+        ],
+        "year": 2011,
+        "title": "Toward a General Theory of Strategic Action Fields",
+        "type": "article",
+        "venue": "Sociological Theory",
+        "doi": "10.1111/j.1467-9558.2010.01385.x",
+        "openalex_id": "W2113929081",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://escholarship.org/uc/item/0bw0w4j8"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A large body of education research uses it, though with varied definitions.",
+      "source": {
+        "authors": [
+          "Annette P. Lareau",
+          "Elliot B. Weininger"
+        ],
+        "year": 2003,
+        "title": "Cultural capital in educational research: A critical assessment",
+        "type": "article",
+        "venue": "Theory and Society",
+        "doi": "10.1023/b:ryso.0000004951.04408.b0",
+        "openalex_id": "W2069774107",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Used to map class in contemporary societies.",
+      "source": {
+        "authors": [
+          "Mike Savage",
+          "Fiona Devine",
+          "Niall Cunningham",
+          "Mark Taylor",
+          "Yaojun Li",
+          "Johannes Hjellbrekke"
+        ],
+        "year": 2013,
+        "title": "A New Model of Social Class? Findings from the BBC’s Great British Class Survey Experiment",
+        "type": "article",
+        "venue": "Sociology",
+        "doi": "10.1177/0038038513481128",
+        "openalex_id": "W2141028849",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1177/0038038513481128"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Critics say the theory is deterministic and leaves little room for change.",
+      "source": {
+        "authors": [
+          "Richard Jenkins"
+        ],
+        "year": 1982,
+        "title": "Pierre Bourdieu and the Reproduction of Determinism",
+        "type": "article",
+        "venue": "Sociology",
+        "doi": "10.1177/0038038582016002008",
+        "openalex_id": "W1996724386",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Cultural capital is often narrowed to highbrow taste.",
+      "source": {
+        "authors": [
+          "Annette P. Lareau",
+          "Elliot B. Weininger"
+        ],
+        "year": 2003,
+        "title": "Cultural capital in educational research: A critical assessment",
+        "type": "article",
+        "venue": "Theory and Society",
+        "doi": "10.1023/b:ryso.0000004951.04408.b0",
+        "openalex_id": "W2069774107",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1984,
+        "title": "Distinction: A Social Critique of the Judgement of Taste",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780674212770",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL527924W, first published 1979). ISBN is one edition's; cite the edition you read."
+      },
+      "chapter": null,
+      "why_read": "Main empirical work.",
+      "reading_question": "Which capital matters in your field?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1992,
+        "title": "An Invitation to Reflexive Sociology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745610320",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL527993W, first published 1992). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1992
+      },
+      "chapter": null,
+      "why_read": "Accessible statement.",
+      "reading_question": "How will you define your field?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Annette P. Lareau",
+          "Elliot B. Weininger"
+        ],
+        "year": 2003,
+        "title": "Cultural capital in educational research: A critical assessment",
+        "type": "article",
+        "venue": "Theory and Society",
+        "doi": "10.1023/b:ryso.0000004951.04408.b0",
+        "openalex_id": "W2069774107",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critical assessment.",
+      "reading_question": "Which definition of cultural capital do you use?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "Bourdieu habitus",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

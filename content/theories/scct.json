@@ -1,0 +1,375 @@
+{
+  "theory_id": null,
+  "library_name": "Situational crisis communication theory (SCCT)",
+  "slug": "scct",
+  "status": "published",
+  "original": {
+    "authors": [
+      "W. Timothy Coombs"
+    ],
+    "year": 2007,
+    "title": "Protecting Organization Reputations During a Crisis: The Development and Application of Situational Crisis Communication Theory",
+    "type": "article",
+    "venue": "Corporate Reputation Review",
+    "doi": "10.1057/palgrave.crr.1550049",
+    "openalex_id": "W1998511687",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://doi.org/10.1057/palgrave.crr.1550049"
+  },
+  "citation_anchor_openalex_id": "W1998511687",
+  "core_idea": "How much responsibility the public attributes to an organisation for a crisis should guide its response. Greater responsibility calls for more accommodating strategies such as apology and compensation.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How should an organisation respond to a scandal or crisis?",
+    "How do publics react to different crisis responses?",
+    "Typical data: experiments, content analysis, case studies."
+  ],
+  "common_mistakes": [
+    "Choosing strategies without assessing crisis type and history.",
+    "Testing only with students and fictional companies.",
+    "Ignoring social media dynamics."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Bernard L. Weiner"
+        ],
+        "year": 1986,
+        "title": "An Attributional Theory of Achievement Motivation and Emotion",
+        "type": "chapter",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-1-4612-4948-1_6",
+        "openalex_id": "W4233496654",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Attribution theory behind SCCT."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "W. Timothy Coombs",
+          "Sherry Jean Holladay"
+        ],
+        "year": 2002,
+        "title": "Helping Crisis Managers Protect Reputational Assets",
+        "type": "article",
+        "venue": "Management Communication Quarterly",
+        "doi": "10.1177/089331802237233",
+        "openalex_id": "W2141902981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Initial tests of SCCT."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "William Lyon Benoit"
+        ],
+        "year": 1997,
+        "title": "Image repair discourse and crisis communication",
+        "type": "article",
+        "venue": "Public Relations Review",
+        "doi": "10.1016/s0363-8111(97)90023-0",
+        "openalex_id": "W2019894798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Image repair strategies (related tradition)."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Attribution-based SCCT",
+      "summary": "Responsibility and response.",
+      "defining_work": {
+        "authors": [
+          "W. Timothy Coombs"
+        ],
+        "year": 2007,
+        "title": "Protecting Organization Reputations During a Crisis: The Development and Application of Situational Crisis Communication Theory",
+        "type": "article",
+        "venue": "Corporate Reputation Review",
+        "doi": "10.1057/palgrave.crr.1550049",
+        "openalex_id": "W1998511687",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1057/palgrave.crr.1550049"
+      }
+    },
+    {
+      "name": "Image repair theory",
+      "summary": "Typology of repair strategies.",
+      "defining_work": {
+        "authors": [
+          "William Lyon Benoit"
+        ],
+        "year": 1997,
+        "title": "Image repair discourse and crisis communication",
+        "type": "article",
+        "venue": "Public Relations Review",
+        "doi": "10.1016/s0363-8111(97)90023-0",
+        "openalex_id": "W2019894798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear, testable guidelines for practice.",
+      "source": {
+        "authors": [
+          "W. Timothy Coombs"
+        ],
+        "year": 2007,
+        "title": "Protecting Organization Reputations During a Crisis: The Development and Application of Situational Crisis Communication Theory",
+        "type": "article",
+        "venue": "Corporate Reputation Review",
+        "doi": "10.1057/palgrave.crr.1550049",
+        "openalex_id": "W1998511687",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1057/palgrave.crr.1550049"
+      }
+    },
+    {
+      "point": "Supported by experimental tests.",
+      "source": {
+        "authors": [
+          "W. Timothy Coombs",
+          "Sherry Jean Holladay"
+        ],
+        "year": 2002,
+        "title": "Helping Crisis Managers Protect Reputational Assets",
+        "type": "article",
+        "venue": "Management Communication Quarterly",
+        "doi": "10.1177/089331802237233",
+        "openalex_id": "W2141902981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Crisis communication research is mostly case-based and Western.",
+      "source": {
+        "authors": [
+          "Elizabeth Johnson Avery",
+          "Ruthann Weaver Lariscy",
+          "Sora Kim",
+          "Tatjana M. Hocke"
+        ],
+        "year": 2010,
+        "title": "A quantitative review of crisis communication research in public relations from 1991 to 2009",
+        "type": "article",
+        "venue": "Public Relations Review",
+        "doi": "10.1016/j.pubrev.2010.01.001",
+        "openalex_id": "W2043603997",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Medium matters as much as message in crises.",
+      "source": {
+        "authors": [
+          "Friederike Schultz",
+          "Sonja Utz",
+          "Anja S. Göritz"
+        ],
+        "year": 2011,
+        "title": "Is the medium the message? Perceptions of and reactions to crisis communication via twitter, blogs and traditional media",
+        "type": "article",
+        "venue": "Public Relations Review",
+        "doi": "10.1016/j.pubrev.2010.12.001",
+        "openalex_id": "W2148174543",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "W. Timothy Coombs"
+        ],
+        "year": 2007,
+        "title": "Protecting Organization Reputations During a Crisis: The Development and Application of Situational Crisis Communication Theory",
+        "type": "article",
+        "venue": "Corporate Reputation Review",
+        "doi": "10.1057/palgrave.crr.1550049",
+        "openalex_id": "W1998511687",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1057/palgrave.crr.1550049"
+      },
+      "chapter": null,
+      "why_read": "The theory.",
+      "reading_question": "What crisis type is your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "W. Timothy Coombs",
+          "Sherry Jean Holladay"
+        ],
+        "year": 2002,
+        "title": "Helping Crisis Managers Protect Reputational Assets",
+        "type": "article",
+        "venue": "Management Communication Quarterly",
+        "doi": "10.1177/089331802237233",
+        "openalex_id": "W2141902981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Tests.",
+      "reading_question": "Experiment or case study?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Elizabeth Johnson Avery",
+          "Ruthann Weaver Lariscy",
+          "Sora Kim",
+          "Tatjana M. Hocke"
+        ],
+        "year": 2010,
+        "title": "A quantitative review of crisis communication research in public relations from 1991 to 2009",
+        "type": "article",
+        "venue": "Public Relations Review",
+        "doi": "10.1016/j.pubrev.2010.01.001",
+        "openalex_id": "W2043603997",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Field review.",
+      "reading_question": "What gap does your study fill?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "crisis communication",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2561516266",
+        "title": "Crises and Crisis Management: Integration, Interpretation, and Research Development",
+        "year": 2016,
+        "authors": [
+          "Jonathan Nicholas Bundy",
+          "Michael D. Pfarrer",
+          "Cole Evan Short",
+          "W. Timothy Coombs"
+        ],
+        "cited_by": 1418,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2548695187",
+        "title": "How Social Media Is Changing Crisis Communication Strategies: Evidence from the Updated Literature",
+        "year": 2016,
+        "authors": [
+          "Yang Cheng"
+        ],
+        "cited_by": 252,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2404502499",
+        "title": "Effects of attributed responsibility and response strategies on organizational reputation: A meta-analysis of situational crisis communication theory research",
+        "year": 2016,
+        "authors": [
+          "Liang Ma",
+          "Mengqi Monica Zhan"
+        ],
+        "cited_by": 219,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2401829318",
+        "title": "Understanding the use of social media by organisations for crisis communication",
+        "year": 2016,
+        "authors": [
+          "Mina Roshan",
+          "Matthew J. Warren",
+          "Rodney A. Carr"
+        ],
+        "cited_by": 168,
+        "oa_url": "https://figshare.com/articles/journal_contribution/Understanding_the_use_of_social_media_by_organisations_for_crisis_communication/20879779"
+      },
+      {
+        "openalex_id": "W2764295932",
+        "title": "The Role of CSR in Crises: Integration of Situational Crisis Communication Theory and the Persuasion Knowledge Model",
+        "year": 2017,
+        "authors": [
+          "Chang-Dae Ham",
+          "Jeesun Kim"
+        ],
+        "cited_by": 162,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

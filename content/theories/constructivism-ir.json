@@ -1,0 +1,365 @@
+{
+  "theory_id": null,
+  "library_name": "Constructivism in IR",
+  "slug": "constructivism-ir",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Alexander E. Wendt"
+    ],
+    "year": 1992,
+    "title": "Anarchy is what states make of it: the social construction of power politics",
+    "type": "article",
+    "venue": "International Organization",
+    "doi": "10.1017/s0020818300027764",
+    "openalex_id": "W2150518915",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2150518915",
+  "core_idea": "International politics is shaped by shared ideas, identities and norms, not only by material power. Anarchy has no fixed logic: it depends on how states understand themselves and each other.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does national identity shape foreign policy?",
+    "How do international norms spread?",
+    "Typical data: discourse analysis, case study, process tracing."
+  ],
+  "common_mistakes": [
+    "Saying 'ideas matter' without showing how.",
+    "Ignoring material factors entirely.",
+    "Mixing conventional and critical constructivism."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Alexander E. Wendt"
+        ],
+        "year": 1999,
+        "title": "Social Theory of International Politics",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511612183",
+        "openalex_id": "W1978918752",
+        "isbn": "9780511612183",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1811/31969",
+        "first_publish_year": 1999
+      },
+      "adds": "Full statement."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Martha Finnemore",
+          "Kathryn Sikkink"
+        ],
+        "year": 1998,
+        "title": "International Norm Dynamics and Political Change",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081898550789",
+        "openalex_id": "W2164304100",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Norm life cycle."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Emanuel Adler"
+        ],
+        "year": 1997,
+        "title": "Seizing the Middle Ground:",
+        "type": "article",
+        "venue": "European Journal of International Relations",
+        "doi": "10.1177/1354066197003003003",
+        "openalex_id": "W2159854289",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Positions constructivism as a middle ground between rationalism and reflectivism."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Norms research",
+      "summary": "Norm dynamics.",
+      "defining_work": {
+        "authors": [
+          "Martha Finnemore",
+          "Kathryn Sikkink"
+        ],
+        "year": 1998,
+        "title": "International Norm Dynamics and Political Change",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081898550789",
+        "openalex_id": "W2164304100",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Identity research",
+      "summary": "National identity in foreign policy.",
+      "defining_work": {
+        "authors": [
+          "Ted Hopf"
+        ],
+        "year": 1998,
+        "title": "The Promise of Constructivism in International Relations Theory",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.1162/isec.23.1.171",
+        "openalex_id": "W2106260203",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains change realism misses.",
+      "source": {
+        "authors": [
+          "Ted Hopf"
+        ],
+        "year": 1998,
+        "title": "The Promise of Constructivism in International Relations Theory",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.1162/isec.23.1.171",
+        "openalex_id": "W2106260203",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Productive norm research programme.",
+      "source": {
+        "authors": [
+          "Martha Finnemore",
+          "Kathryn Sikkink"
+        ],
+        "year": 1998,
+        "title": "International Norm Dynamics and Political Change",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081898550789",
+        "openalex_id": "W2164304100",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Ideas lack independent causal weight.",
+      "source": {
+        "authors": [
+          "John J. Mearsheimer"
+        ],
+        "year": 1994,
+        "title": "The False Promise of International Institutions",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2539078",
+        "openalex_id": "W4248020846",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Wendt's statism is too narrow.",
+      "source": {
+        "authors": [
+          "Zehfuss"
+        ],
+        "year": 2002,
+        "title": "Constructivism in International Relations: The Politics of Reality",
+        "type": "book",
+        "venue": "Research Explorer (The University of Manchester)",
+        "doi": "10.2277/0521815444",
+        "openalex_id": "W3151803030",
+        "isbn": "9781280434228",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2002
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Alexander E. Wendt"
+        ],
+        "year": 1992,
+        "title": "Anarchy is what states make of it: the social construction of power politics",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027764",
+        "openalex_id": "W2150518915",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "Which identities shape your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Martha Finnemore",
+          "Kathryn Sikkink"
+        ],
+        "year": 1998,
+        "title": "International Norm Dynamics and Political Change",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081898550789",
+        "openalex_id": "W2164304100",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Norms.",
+      "reading_question": "Which stage of the norm life cycle?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Ted Hopf"
+        ],
+        "year": 1998,
+        "title": "The Promise of Constructivism in International Relations Theory",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.1162/isec.23.1.171",
+        "openalex_id": "W2106260203",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Overview.",
+      "reading_question": "Conventional or critical?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "constructivism international relations",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2309677236",
+        "title": "A Relational Theory of World Politics",
+        "year": 2018,
+        "authors": [
+          "Qin Yaqing"
+        ],
+        "cited_by": 406,
+        "oa_url": "https://doi.org/10.1017/9781316869505"
+      },
+      {
+        "openalex_id": "W2527700866",
+        "title": "Practice Theory and Relationalism as the New Constructivism",
+        "year": 2016,
+        "authors": [
+          "David M. McCourt"
+        ],
+        "cited_by": 384,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4221118195",
+        "title": "The MNE and its subsidiaries at times of global disruptions: An international relations perspective",
+        "year": 2022,
+        "authors": [
+          "Klaus E. Meyer",
+          "Chengguang Li"
+        ],
+        "cited_by": 119,
+        "oa_url": "https://doi.org/10.1002/gsj.1436"
+      },
+      {
+        "openalex_id": "W2924930925",
+        "title": "Social Practices of Rule-Making in World Politics",
+        "year": 2019,
+        "authors": [
+          "Mark Raymond"
+        ],
+        "cited_by": 69,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3105142084",
+        "title": "Covid-19 and international cooperation: IR paradigms at odds",
+        "year": 2020,
+        "authors": [
+          "Rajesh M. Basrur",
+          "Frederick Kliem"
+        ],
+        "cited_by": 45,
+        "oa_url": "https://doi.org/10.1007/s43545-020-00006-4"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

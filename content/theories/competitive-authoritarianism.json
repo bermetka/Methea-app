@@ -1,0 +1,379 @@
+{
+  "theory_id": null,
+  "library_name": "Competitive authoritarianism",
+  "slug": "competitive-authoritarianism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Steven Levitsky",
+      "Lucan A. Way"
+    ],
+    "year": 2002,
+    "title": "Elections Without Democracy: The Rise of Competitive Authoritarianism",
+    "type": "article",
+    "venue": "Journal of democracy",
+    "doi": "10.1353/jod.2002.0026",
+    "openalex_id": "W2148388782",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2148388782",
+  "core_idea": "Competitive authoritarian regimes hold real elections, but incumbents tilt the playing field so heavily that the opposition can compete yet rarely win. They are neither democracies nor full autocracies.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What kind of regime is my country, and how do elections work in it?",
+    "Why do hybrid regimes democratise or not?",
+    "Typical data: comparative case study, process tracing."
+  ],
+  "common_mistakes": [
+    "Using 'hybrid' without criteria.",
+    "Ignoring the uneven playing field.",
+    "Assuming hybrids are transitional."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Steven Levitsky",
+          "Lucan A. Way"
+        ],
+        "year": 2010,
+        "title": "Competitive Authoritarianism",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511781353",
+        "openalex_id": "W4300022765",
+        "isbn": "9780511900686",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001,
+        "note": "Library record's first publication year is 2001; 2010 is the edition or translation cited here."
+      },
+      "adds": "Linkage and leverage."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Larry Jay Diamond"
+        ],
+        "year": 2002,
+        "title": "Elections Without Democracy: Thinking About Hybrid Regimes",
+        "type": "article",
+        "venue": "Journal of democracy",
+        "doi": "10.1353/jod.2002.0025",
+        "openalex_id": "W2107559193",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Hybrid regime types."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Jennifer Gandhi",
+          "Ellen Lust"
+        ],
+        "year": 2009,
+        "title": "Elections Under Authoritarianism",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.11.060106.095434",
+        "openalex_id": "W2138772657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review of authoritarian elections."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Hybrid regime research",
+      "summary": "Types.",
+      "defining_work": {
+        "authors": [
+          "Larry Jay Diamond"
+        ],
+        "year": 2002,
+        "title": "Elections Without Democracy: Thinking About Hybrid Regimes",
+        "type": "article",
+        "venue": "Journal of democracy",
+        "doi": "10.1353/jod.2002.0025",
+        "openalex_id": "W2107559193",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Authoritarian elections",
+      "summary": "Functions of elections.",
+      "defining_work": {
+        "authors": [
+          "Jennifer Gandhi",
+          "Ellen Lust"
+        ],
+        "year": 2009,
+        "title": "Elections Under Authoritarianism",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.11.060106.095434",
+        "openalex_id": "W2138772657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear criteria for classification.",
+      "source": {
+        "authors": [
+          "Steven Levitsky",
+          "Lucan A. Way"
+        ],
+        "year": 2002,
+        "title": "Elections Without Democracy: The Rise of Competitive Authoritarianism",
+        "type": "article",
+        "venue": "Journal of democracy",
+        "doi": "10.1353/jod.2002.0026",
+        "openalex_id": "W2148388782",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Explains divergent paths with linkage and leverage.",
+      "source": {
+        "authors": [
+          "Steven Levitsky",
+          "Lucan A. Way"
+        ],
+        "year": 2010,
+        "title": "Competitive Authoritarianism",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511781353",
+        "openalex_id": "W4300022765",
+        "isbn": "9780511900686",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001,
+        "note": "Library record's first publication year is 2001; 2010 is the edition or translation cited here."
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Hybrid regime concepts overlap and are unclear.",
+      "source": {
+        "authors": [
+          "Leah Gilbert",
+          "Payam Mohseni"
+        ],
+        "year": 2011,
+        "title": "Beyond Authoritarianism: The Conceptualization of Hybrid Regimes",
+        "type": "article",
+        "venue": "Studies in Comparative International Development",
+        "doi": "10.1007/s12116-011-9088-x",
+        "openalex_id": "W2070185744",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The model must be updated for new authoritarianism.",
+      "source": {
+        "authors": [
+          "Steven Levitsky",
+          "Lucan A. Way"
+        ],
+        "year": 2020,
+        "title": "The New Competitive Authoritarianism",
+        "type": "article",
+        "venue": "Journal of democracy",
+        "doi": "10.1353/jod.2020.0004",
+        "openalex_id": "W2998802771",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1353/jod.2020.0004"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Steven Levitsky",
+          "Lucan A. Way"
+        ],
+        "year": 2002,
+        "title": "Elections Without Democracy: The Rise of Competitive Authoritarianism",
+        "type": "article",
+        "venue": "Journal of democracy",
+        "doi": "10.1353/jod.2002.0026",
+        "openalex_id": "W2148388782",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "Is the playing field uneven?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Steven Levitsky",
+          "Lucan A. Way"
+        ],
+        "year": 2010,
+        "title": "Competitive Authoritarianism",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511781353",
+        "openalex_id": "W4300022765",
+        "isbn": "9780511900686",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001,
+        "note": "Library record's first publication year is 2001; 2010 is the edition or translation cited here."
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Linkage or leverage?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Leah Gilbert",
+          "Payam Mohseni"
+        ],
+        "year": 2011,
+        "title": "Beyond Authoritarianism: The Conceptualization of Hybrid Regimes",
+        "type": "article",
+        "venue": "Studies in Comparative International Development",
+        "doi": "10.1007/s12116-011-9088-x",
+        "openalex_id": "W2070185744",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Concepts.",
+      "reading_question": "Which regime concept?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "competitive authoritarianism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2293201281",
+        "title": "Rising competitive authoritarianism in Turkey",
+        "year": 2016,
+        "authors": [
+          "Berk Esen",
+          "Şebnem Gümüşçü"
+        ],
+        "cited_by": 799,
+        "oa_url": "http://hdl.handle.net/11693/36632"
+      },
+      {
+        "openalex_id": "W2998802771",
+        "title": "The New Competitive Authoritarianism",
+        "year": 2020,
+        "authors": [
+          "Steven Levitsky",
+          "Lucan A. Way"
+        ],
+        "cited_by": 314,
+        "oa_url": "https://doi.org/10.1353/jod.2020.0004"
+      },
+      {
+        "openalex_id": "W2184779475",
+        "title": "Deliberate Disengagement: How Education Can Decrease Political Participation in Electoral Authoritarian Regimes",
+        "year": 2016,
+        "authors": [
+          "Kevin G. Croke",
+          "Guy Grossman",
+          "Horacio Larreguy",
+          "John Marshall"
+        ],
+        "cited_by": 209,
+        "oa_url": "https://hdl.handle.net/10986/25398"
+      },
+      {
+        "openalex_id": "W2974787732",
+        "title": "Turkey’s tamed civil society: Containment and appropriation under a competitive authoritarian regime",
+        "year": 2019,
+        "authors": [
+          "Bilge Yabancı"
+        ],
+        "cited_by": 116,
+        "oa_url": "https://doi.org/10.1080/17448689.2019.1668627"
+      },
+      {
+        "openalex_id": "W2804118995",
+        "title": "Toward a new political regime in Turkey: From competitive toward full authoritarianism",
+        "year": 2018,
+        "authors": [
+          "Koray Çalışkan"
+        ],
+        "cited_by": 104,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

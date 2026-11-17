@@ -1,0 +1,371 @@
+{
+  "theory_id": null,
+  "library_name": "English School (international society)",
+  "slug": "english-school",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Hedley Bull"
+    ],
+    "year": 1977,
+    "title": "The Anarchical Society",
+    "type": "book",
+    "venue": null,
+    "doi": "10.1007/978-0-230-39340-0",
+    "openalex_id": "W2483029534",
+    "isbn": "9780231127622",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "first_publish_year": 1977
+  },
+  "citation_anchor_openalex_id": "W2483029534",
+  "core_idea": "States form an international society: they share rules and institutions such as diplomacy, international law and the balance of power, creating order without world government.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How is order maintained in a region?",
+    "How do sovereignty norms or diplomacy work?",
+    "Typical data: historical analysis, case study."
+  ],
+  "common_mistakes": [
+    "Confusing international system and society.",
+    "Ignoring the pluralism-solidarism debate.",
+    "Treating it as purely normative."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Martin Wight"
+        ],
+        "year": 1977,
+        "title": "Systems of states",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W649811592",
+        "isbn": "9780718511531",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1977
+      },
+      "adds": "Historical states systems."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Barry G. Buzan"
+        ],
+        "year": 2004,
+        "title": "From International to World Society?",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511616617",
+        "openalex_id": "W4211146152",
+        "isbn": "9780511187742",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2004
+      },
+      "adds": "Structural reformulation."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Nicholas J. Wheeler"
+        ],
+        "year": 2002,
+        "title": "Saving Strangers",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0199253102.001.0001",
+        "openalex_id": "W4254388437",
+        "isbn": "9780198296218",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2000
+      },
+      "adds": "Solidarism and humanitarian intervention."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Pluralism",
+      "summary": "Coexistence of states.",
+      "defining_work": {
+        "authors": [
+          "Hedley Bull"
+        ],
+        "year": 1977,
+        "title": "The Anarchical Society",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1007/978-0-230-39340-0",
+        "openalex_id": "W2483029534",
+        "isbn": "9780231127622",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1977
+      }
+    },
+    {
+      "name": "Solidarism",
+      "summary": "Shared values and intervention.",
+      "defining_work": {
+        "authors": [
+          "Nicholas J. Wheeler"
+        ],
+        "year": 2002,
+        "title": "Saving Strangers",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0199253102.001.0001",
+        "openalex_id": "W4254388437",
+        "isbn": "9780198296218",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2000
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Bridges realism and liberalism.",
+      "source": {
+        "authors": [
+          "Barry G. Buzan"
+        ],
+        "year": 2004,
+        "title": "From International to World Society?",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511616617",
+        "openalex_id": "W4211146152",
+        "isbn": "9780511187742",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2004
+      }
+    },
+    {
+      "point": "Rich historical grounding.",
+      "source": {
+        "authors": [
+          "Martin Wight"
+        ],
+        "year": 1977,
+        "title": "Systems of states",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W649811592",
+        "isbn": "9780718511531",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1977
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Methods are unclear.",
+      "source": {
+        "authors": [
+          "Martha Finnemore"
+        ],
+        "year": 2001,
+        "title": "Exporting the English School?",
+        "type": "article",
+        "venue": "Review of International Studies",
+        "doi": "10.1017/s0260210501005095",
+        "openalex_id": "W2110445772",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Eurocentric.",
+      "source": {
+        "authors": [
+          "Barry G. Buzan"
+        ],
+        "year": 2004,
+        "title": "From International to World Society?",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511616617",
+        "openalex_id": "W4211146152",
+        "isbn": "9780511187742",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2004
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Hedley Bull"
+        ],
+        "year": 1977,
+        "title": "The Anarchical Society",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1007/978-0-230-39340-0",
+        "openalex_id": "W2483029534",
+        "isbn": "9780231127622",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1977
+      },
+      "chapter": null,
+      "why_read": "Classic.",
+      "reading_question": "What rules make your region a society?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Barry G. Buzan"
+        ],
+        "year": 2004,
+        "title": "From International to World Society?",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511616617",
+        "openalex_id": "W4211146152",
+        "isbn": "9780511187742",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2004
+      },
+      "chapter": null,
+      "why_read": "Update.",
+      "reading_question": "Pluralist or solidarist?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Martha Finnemore"
+        ],
+        "year": 2001,
+        "title": "Exporting the English School?",
+        "type": "article",
+        "venue": "Review of International Studies",
+        "doi": "10.1017/s0260210501005095",
+        "openalex_id": "W2110445772",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "What is your method?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "international society",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W4234827554",
+        "title": "Global International Society",
+        "year": 2018,
+        "authors": [
+          "Barry G. Buzan",
+          "Laust Schouenborg"
+        ],
+        "cited_by": 153,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2770066018",
+        "title": "The emergence of environmental stewardship as a primary institution of global international society",
+        "year": 2017,
+        "authors": [
+          "Robert Falkner",
+          "Barry G. Buzan"
+        ],
+        "cited_by": 147,
+        "oa_url": "https://orcid.org/0000-0001-9990-6926>"
+      },
+      {
+        "openalex_id": "W2777257367",
+        "title": "Cyber-diplomacy: the making of an international society in the digital age",
+        "year": 2017,
+        "authors": [
+          "André Barrinha",
+          "Thomas Renard"
+        ],
+        "cited_by": 123,
+        "oa_url": "https://doi.org/10.1080/23340460.2017.1414924"
+      },
+      {
+        "openalex_id": "W2897522590",
+        "title": "State transformation and populism: From the internationalized to the neo-sovereign state?",
+        "year": 2018,
+        "authors": [
+          "Angelos Chryssogelos"
+        ],
+        "cited_by": 116,
+        "oa_url": "https://kclpure.kcl.ac.uk/portal/en/publications/e86660f0-df53-48cf-9051-f6400ab76c7a"
+      },
+      {
+        "openalex_id": "W4211189280",
+        "title": "The World Imagined",
+        "year": 2020,
+        "authors": [
+          "Hendrik Spruyt"
+        ],
+        "cited_by": 111,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 6 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

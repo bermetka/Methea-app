@@ -1,0 +1,380 @@
+{
+  "theory_id": null,
+  "library_name": "Sociocultural theory",
+  "slug": "sociocultural-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "L. S. Vygotsky"
+    ],
+    "year": 1978,
+    "title": "Mind in Society: The Development of Higher Psychological Processes",
+    "type": "book",
+    "venue": "기초학문자료센터(KRM) (Korea Research Foundation)",
+    "doi": null,
+    "openalex_id": "W2135943618",
+    "isbn": "9780674576292",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://www.krm.or.kr/krmts/link.html?metaDataId=4b76f6df60df48a30160e3d3b88d0471",
+    "first_publish_year": 1978
+  },
+  "citation_anchor_openalex_id": "W2135943618",
+  "core_idea": "Learning starts between people and only then becomes part of individual thinking. Language and other cultural tools mediate how we think. Learners can do more with guidance than alone, and the gap between the two is the zone of proximal development.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does classroom talk, tutoring or peer work shape what students learn?",
+    "How do teachers or tools scaffold learners within their zone of proximal development?",
+    "Typical data: recorded interaction, observation, discourse analysis, design-based research."
+  ],
+  "common_mistakes": [
+    "Using 'scaffolding' as a loose word for any help. Wood, Bruner and Ross defined it as contingent support that is withdrawn as competence grows.",
+    "Treating the ZPD as a fixed level a learner 'has' rather than something that emerges in interaction.",
+    "Citing Vygotsky but measuring only individual outcomes, with no data on the social interaction itself."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "David Wood",
+          "Jerome S. Bruner",
+          "Gail S. Ross"
+        ],
+        "year": 1976,
+        "title": "THE ROLE OF TUTORING IN PROBLEM SOLVING *",
+        "type": "article",
+        "venue": "Journal of Child Psychology and Psychiatry",
+        "doi": "10.1111/j.1469-7610.1976.tb00381.x",
+        "openalex_id": "W1970209023",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1469-7610.1976.tb00381.x"
+      },
+      "adds": "Introduces 'scaffolding' as tutor support for learners, later tied to the ZPD."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Rogoff"
+        ],
+        "year": 1990,
+        "title": "Apprenticeship in Thinking: Cognitive Development in Social Context",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780195059731",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4777950W, first published 1990). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1990
+      },
+      "adds": "Guided participation: learning as taking part in cultural activities with others."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jean Lave",
+          "Étienne Wenger"
+        ],
+        "year": 1991,
+        "title": "Situated Learning",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511815355",
+        "openalex_id": "W4245961435",
+        "isbn": "9781139632270",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1991
+      },
+      "adds": "Learning as legitimate peripheral participation in communities of practice."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Neo-Vygotskian learning research",
+      "summary": "Studies of dialogue, guided participation and scaffolding in classrooms.",
+      "defining_work": {
+        "authors": [
+          "Rogoff"
+        ],
+        "year": 1990,
+        "title": "Apprenticeship in Thinking: Cognitive Development in Social Context",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780195059731",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4777950W, first published 1990). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1990
+      }
+    },
+    {
+      "name": "Cultural-historical activity theory",
+      "summary": "Extends mediation from the individual to whole activity systems (own library entry).",
+      "defining_work": {
+        "authors": [
+          "Yrjö Engeström"
+        ],
+        "year": 2001,
+        "title": "Expansive Learning at Work: Toward an activity theoretical reconceptualization",
+        "type": "article",
+        "venue": "Journal of Education and Work",
+        "doi": "10.1080/13639080020028747",
+        "openalex_id": "W2139894798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/13639080123238"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains why dialogue and guided support matter for learning, backing a large body of classroom discourse research.",
+      "source": {
+        "authors": [
+          "David Wood",
+          "Jerome S. Bruner",
+          "Gail S. Ross"
+        ],
+        "year": 1976,
+        "title": "THE ROLE OF TUTORING IN PROBLEM SOLVING *",
+        "type": "article",
+        "venue": "Journal of Child Psychology and Psychiatry",
+        "doi": "10.1111/j.1469-7610.1976.tb00381.x",
+        "openalex_id": "W1970209023",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1469-7610.1976.tb00381.x"
+      }
+    },
+    {
+      "point": "Gives learning research a social unit of analysis rather than only the individual mind.",
+      "source": {
+        "authors": [
+          "Rogoff"
+        ],
+        "year": 1990,
+        "title": "Apprenticeship in Thinking: Cognitive Development in Social Context",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780195059731",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4777950W, first published 1990). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1990
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The ZPD is often applied loosely; Chaiklin argues most uses ignore Vygotsky's link to developmental periods.",
+      "source": {
+        "authors": [
+          "Seth Chaiklin"
+        ],
+        "year": 2003,
+        "title": "The Zone of Proximal Development in Vygotsky's Analysis of Learning and Instruction",
+        "type": "chapter",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511840975.004",
+        "openalex_id": "W2288663400",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Two-sided learning metaphors: Sfard warns that relying only on a participation metaphor loses what acquisition explains.",
+      "source": {
+        "authors": [
+          "Anna Sfard"
+        ],
+        "year": 1998,
+        "title": "On Two Metaphors for Learning and the Dangers of Choosing Just One",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.2307/1176193",
+        "openalex_id": "W2152597554",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "L. S. Vygotsky"
+        ],
+        "year": 1978,
+        "title": "Mind in Society: The Development of Higher Psychological Processes",
+        "type": "book",
+        "venue": "기초학문자료센터(KRM) (Korea Research Foundation)",
+        "doi": null,
+        "openalex_id": "W2135943618",
+        "isbn": "9780674576292",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.krm.or.kr/krmts/link.html?metaDataId=4b76f6df60df48a30160e3d3b88d0471",
+        "first_publish_year": 1978
+      },
+      "chapter": null,
+      "why_read": "The source of the ZPD and mediation.",
+      "reading_question": "Where in your setting does learning happen with someone's guidance rather than alone?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "David Wood",
+          "Jerome S. Bruner",
+          "Gail S. Ross"
+        ],
+        "year": 1976,
+        "title": "THE ROLE OF TUTORING IN PROBLEM SOLVING *",
+        "type": "article",
+        "venue": "Journal of Child Psychology and Psychiatry",
+        "doi": "10.1111/j.1469-7610.1976.tb00381.x",
+        "openalex_id": "W1970209023",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1469-7610.1976.tb00381.x"
+      },
+      "chapter": null,
+      "why_read": "Defines scaffolding precisely.",
+      "reading_question": "Which of the tutoring functions can you observe in your data?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Anna Sfard"
+        ],
+        "year": 1998,
+        "title": "On Two Metaphors for Learning and the Dangers of Choosing Just One",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.2307/1176193",
+        "openalex_id": "W2152597554",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Places sociocultural theory against acquisition views.",
+      "reading_question": "Which metaphor does your research question assume?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "sociocultural theory",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2763911586",
+        "title": "Bronfenbrenner’s Bioecological Theory Revision: Moving Culture From the Macro Into the Micro",
+        "year": 2017,
+        "authors": [
+          "Nicole M Vélez Agosto",
+          "José G. Soto-Crespo",
+          "Mónica Vizcarrondo-Oppenheimer",
+          "Stephanie Vega-Molina",
+          "Cynthia García Coll"
+        ],
+        "cited_by": 475,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2915343025",
+        "title": "Engagement in science through citizen science: Moving beyond data collection",
+        "year": 2019,
+        "authors": [
+          "Tina Phillips",
+          "Heidi L. Ballard",
+          "Bruce V. Lewenstein",
+          "Rick E. Bonney"
+        ],
+        "cited_by": 314,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3007217700",
+        "title": "Reconsidering student feedback literacy from an ecological perspective",
+        "year": 2020,
+        "authors": [
+          "Sin Wang Chong"
+        ],
+        "cited_by": 257,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2552938701",
+        "title": "Applications of Vygotsky’s sociocultural approach for teachers’ professional development",
+        "year": 2016,
+        "authors": [
+          "Karim Shabani"
+        ],
+        "cited_by": 236,
+        "oa_url": "https://doi.org/10.1080/2331186x.2016.1252177"
+      },
+      {
+        "openalex_id": "W3091113085",
+        "title": "A Sociocultural Theory of Creativity: Bridging the Social, the Material, and the Psychological",
+        "year": 2020,
+        "authors": [
+          "Vlad Petre Glăveanu"
+        ],
+        "cited_by": 227,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

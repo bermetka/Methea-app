@@ -1,0 +1,304 @@
+{
+  "theory_id": null,
+  "library_name": "Transformational leadership",
+  "slug": "transformational-leadership",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Bass"
+    ],
+    "year": 1985,
+    "title": "Leadership and Performance Beyond Expectations",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780029018101",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL2421691W, first published 1985). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1985
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Transformational leaders raise followers' motivation and commitment beyond self-interest through idealised influence, inspiration, intellectual stimulation and individual consideration. Transactional leaders rely on exchange and rewards.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does a principal's or manager's leadership style relate to staff commitment or performance?",
+    "Does transformational leadership work the same in schools as in firms?",
+    "Typical data: MLQ surveys, interviews, case studies."
+  ],
+  "common_mistakes": [
+    "Treating transformational leadership as the only good style.",
+    "Using the MLQ without checking its factor structure in your context.",
+    "Assuming the leader causes outcomes when data are cross-sectional."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Burns"
+        ],
+        "year": 1978,
+        "title": "Leadership",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780060105884",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL30484W, first published 1978). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1978
+      },
+      "adds": "Introduces transforming vs transactional leadership in politics."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Timothy A. Judge",
+          "Ronald F. Piccolo"
+        ],
+        "year": 2004,
+        "title": "Transformational and Transactional Leadership: A Meta-Analytic Test of Their Relative Validity.",
+        "type": "article",
+        "venue": "Journal of Applied Psychology",
+        "doi": "10.1037/0021-9010.89.5.755",
+        "openalex_id": "W2041204043",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Meta-analysis of effects."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Full range leadership model",
+      "summary": "Bass and Avolio's model with transactional and laissez-faire styles.",
+      "defining_work": {
+        "authors": [
+          "Bass"
+        ],
+        "year": 1985,
+        "title": "Leadership and Performance Beyond Expectations",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780029018101",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL2421691W, first published 1985). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1985
+      }
+    },
+    {
+      "name": "Transformational school leadership",
+      "summary": "Leithwood's school version.",
+      "defining_work": {
+        "authors": [
+          "Kenneth A. Leithwood",
+          "Doris Jantzi"
+        ],
+        "year": 2006,
+        "title": "Transformational school leadership for large-scale reform: Effects on students, teachers, and their classroom practices",
+        "type": "article",
+        "venue": "School Effectiveness and School Improvement",
+        "doi": "10.1080/09243450600565829",
+        "openalex_id": "W2131756214",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Consistent links with follower satisfaction and performance.",
+      "source": {
+        "authors": [
+          "Timothy A. Judge",
+          "Ronald F. Piccolo"
+        ],
+        "year": 2004,
+        "title": "Transformational and Transactional Leadership: A Meta-Analytic Test of Their Relative Validity.",
+        "type": "article",
+        "venue": "Journal of Applied Psychology",
+        "doi": "10.1037/0021-9010.89.5.755",
+        "openalex_id": "W2041204043",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Widely used in school leadership research.",
+      "source": {
+        "authors": [
+          "Kenneth A. Leithwood",
+          "Doris Jantzi"
+        ],
+        "year": 2006,
+        "title": "Transformational school leadership for large-scale reform: Effects on students, teachers, and their classroom practices",
+        "type": "article",
+        "venue": "School Effectiveness and School Improvement",
+        "doi": "10.1080/09243450600565829",
+        "openalex_id": "W2131756214",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The concept mixes causes and effects and has weak definitions.",
+      "source": {
+        "authors": [
+          "Daan van Knippenberg",
+          "Sim B. Sitkin"
+        ],
+        "year": 2013,
+        "title": "A Critical Assessment of Charismatic—Transformational Leadership Research: Back to the Drawing Board?",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.1080/19416520.2013.759433",
+        "openalex_id": "W4232157136",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "In schools, instructional leadership shows larger effects on student outcomes.",
+      "source": {
+        "authors": [
+          "Viviane Robinson",
+          "Claire A. Lloyd",
+          "Ken Rowe"
+        ],
+        "year": 2008,
+        "title": "The Impact of Leadership on Student Outcomes: An Analysis of the Differential Effects of Leadership Types",
+        "type": "article",
+        "venue": "Educational Administration Quarterly",
+        "doi": "10.1177/0013161x08321509",
+        "openalex_id": "W2114859194",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Bass"
+        ],
+        "year": 1985,
+        "title": "Leadership and Performance Beyond Expectations",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780029018101",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL2421691W, first published 1985). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1985
+      },
+      "chapter": null,
+      "why_read": "The full model.",
+      "reading_question": "Which of the four 'I's will you look for?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Kenneth A. Leithwood",
+          "Doris Jantzi"
+        ],
+        "year": 2006,
+        "title": "Transformational school leadership for large-scale reform: Effects on students, teachers, and their classroom practices",
+        "type": "article",
+        "venue": "School Effectiveness and School Improvement",
+        "doi": "10.1080/09243450600565829",
+        "openalex_id": "W2131756214",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "School version.",
+      "reading_question": "Does your setting resemble this?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Daan van Knippenberg",
+          "Sim B. Sitkin"
+        ],
+        "year": 2013,
+        "title": "A Critical Assessment of Charismatic—Transformational Leadership Research: Back to the Drawing Board?",
+        "type": "article",
+        "venue": "Academy of Management Annals",
+        "doi": "10.1080/19416520.2013.759433",
+        "openalex_id": "W4232157136",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The main critique.",
+      "reading_question": "How will your design avoid the problems it lists?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "transformational leadership",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 2 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

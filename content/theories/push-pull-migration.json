@@ -1,0 +1,383 @@
+{
+  "theory_id": null,
+  "library_name": "Push-pull theory of migration",
+  "slug": "push-pull-migration",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Everett S. Lee"
+    ],
+    "year": 1966,
+    "title": "A theory of migration",
+    "type": "article",
+    "venue": "Demography",
+    "doi": "10.2307/2060063",
+    "openalex_id": "W2053207976",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2053207976",
+  "core_idea": "Migration results from factors at origin that push people out, factors at destination that pull them, intervening obstacles such as distance and cost, and personal factors.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do people leave a place and choose a destination?",
+    "Typical data: surveys, interviews.",
+    "Often used as a starting point before more structural theories."
+  ],
+  "common_mistakes": [
+    "Listing push and pull factors without explaining selection.",
+    "Ignoring obstacles and personal factors.",
+    "Treating it as a full explanation."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "E. G. Ravenstein"
+        ],
+        "year": 1885,
+        "title": "The Laws of Migration",
+        "type": "article",
+        "venue": "Journal of the Statistical Society of London",
+        "doi": "10.2307/2979181",
+        "openalex_id": "W648968271",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Early laws of migration."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Douglas S. Massey",
+          "Joaquín Arango",
+          "Graeme John Hugo",
+          "Ali Kouaouci",
+          "Adéla Pellegrino",
+          "J. Edward Taylor"
+        ],
+        "year": 1993,
+        "title": "Theories of International Migration: A Review and Appraisal",
+        "type": "article",
+        "venue": "Population and Development Review",
+        "doi": "10.2307/2938462",
+        "openalex_id": "W2125705164",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review of migration theories."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Hein de Haas"
+        ],
+        "year": 2010,
+        "title": "Migration and Development: A Theoretical Perspective",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2009.00804.x",
+        "openalex_id": "W2052783657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4744987"
+      },
+      "adds": "Aspirations–capabilities framework."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Classical push-pull",
+      "summary": "Lee.",
+      "defining_work": {
+        "authors": [
+          "Everett S. Lee"
+        ],
+        "year": 1966,
+        "title": "A theory of migration",
+        "type": "article",
+        "venue": "Demography",
+        "doi": "10.2307/2060063",
+        "openalex_id": "W2053207976",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Aspirations-capabilities",
+      "summary": "De Haas's update.",
+      "defining_work": {
+        "authors": [
+          "Hein de Haas"
+        ],
+        "year": 2010,
+        "title": "Migration and Development: A Theoretical Perspective",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2009.00804.x",
+        "openalex_id": "W2052783657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4744987"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Simple and intuitive.",
+      "source": {
+        "authors": [
+          "Everett S. Lee"
+        ],
+        "year": 1966,
+        "title": "A theory of migration",
+        "type": "article",
+        "venue": "Demography",
+        "doi": "10.2307/2060063",
+        "openalex_id": "W2053207976",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Starting point for many studies.",
+      "source": {
+        "authors": [
+          "Douglas S. Massey",
+          "Joaquín Arango",
+          "Graeme John Hugo",
+          "Ali Kouaouci",
+          "Adéla Pellegrino",
+          "J. Edward Taylor"
+        ],
+        "year": 1993,
+        "title": "Theories of International Migration: A Review and Appraisal",
+        "type": "article",
+        "venue": "Population and Development Review",
+        "doi": "10.2307/2938462",
+        "openalex_id": "W2125705164",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Too mechanical, ignores structure.",
+      "source": {
+        "authors": [
+          "Hein de Haas"
+        ],
+        "year": 2010,
+        "title": "Migration and Development: A Theoretical Perspective",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2009.00804.x",
+        "openalex_id": "W2052783657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4744987"
+      }
+    },
+    {
+      "point": "Cannot explain why some migrate and others not.",
+      "source": {
+        "authors": [
+          "Douglas S. Massey",
+          "Joaquín Arango",
+          "Graeme John Hugo",
+          "Ali Kouaouci",
+          "Adéla Pellegrino",
+          "J. Edward Taylor"
+        ],
+        "year": 1993,
+        "title": "Theories of International Migration: A Review and Appraisal",
+        "type": "article",
+        "venue": "Population and Development Review",
+        "doi": "10.2307/2938462",
+        "openalex_id": "W2125705164",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Everett S. Lee"
+        ],
+        "year": 1966,
+        "title": "A theory of migration",
+        "type": "article",
+        "venue": "Demography",
+        "doi": "10.2307/2060063",
+        "openalex_id": "W2053207976",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Theory.",
+      "reading_question": "Which factors push and pull in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Hein de Haas"
+        ],
+        "year": 2010,
+        "title": "Migration and Development: A Theoretical Perspective",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2009.00804.x",
+        "openalex_id": "W2052783657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4744987"
+      },
+      "chapter": null,
+      "why_read": "Update.",
+      "reading_question": "Aspirations and capabilities?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Douglas S. Massey",
+          "Joaquín Arango",
+          "Graeme John Hugo",
+          "Ali Kouaouci",
+          "Adéla Pellegrino",
+          "J. Edward Taylor"
+        ],
+        "year": 1993,
+        "title": "Theories of International Migration: A Review and Appraisal",
+        "type": "article",
+        "venue": "Population and Development Review",
+        "doi": "10.2307/2938462",
+        "openalex_id": "W2125705164",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Why push-pull?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "push pull migration",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2766733498",
+        "title": "Push-pull plus: reconsidering the drivers of migration",
+        "year": 2017,
+        "authors": [
+          "Nicholas Van Hear",
+          "Oliver Bakewell",
+          "Katy Long"
+        ],
+        "cited_by": 471,
+        "oa_url": "https://research.manchester.ac.uk/en/publications/b5add8a7-d7c1-4969-ae16-f1db594bd7e2"
+      },
+      {
+        "openalex_id": "W2883113426",
+        "title": "Drivers of migration: why do people move?",
+        "year": 2018,
+        "authors": [
+          "Francesco Castelli"
+        ],
+        "cited_by": 439,
+        "oa_url": "https://doi.org/10.1093/jtm/tay040"
+      },
+      {
+        "openalex_id": "W2491706684",
+        "title": "Travelers' switching behavior in the airline industry from the perspective of the push-pull-mooring framework",
+        "year": 2016,
+        "authors": [
+          "Jishim Jung",
+          "Heesup Han",
+          "Mihae Oh"
+        ],
+        "cited_by": 252,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2898850804",
+        "title": "An empirical investigation of users’ voluntary switching intention for mobile personal cloud storage services based on the push-pull-mooring framework",
+        "year": 2018,
+        "authors": [
+          "Shuang Cheng",
+          "Sang-Joon Lee",
+          "Beomjin Choi"
+        ],
+        "cited_by": 188,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2949508735",
+        "title": "Globalization, migration, and ethnicity",
+        "year": 2019,
+        "authors": [
+          "Uma A. Segal"
+        ],
+        "cited_by": 116,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

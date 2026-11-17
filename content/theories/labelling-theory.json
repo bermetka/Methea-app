@@ -1,0 +1,328 @@
+{
+  "theory_id": null,
+  "library_name": "Labelling theory",
+  "slug": "labelling-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Becker"
+    ],
+    "year": 1963,
+    "title": "Outsiders: Studies in the Sociology of Deviance",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781982106225",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL2674332W, first published 1963). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1963
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Deviance is created when others apply a label to an act or person. Being labelled can change a person's identity and opportunities and lead to a deviant career.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do schools, courts or clinics label people, and with what effects?",
+    "Does official labelling increase later deviance?",
+    "Typical data: interviews, ethnography, longitudinal data."
+  ],
+  "common_mistakes": [
+    "Claiming labelling causes all deviance.",
+    "Ignoring who has the power to label.",
+    "Studying labels without their consequences."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Lemert"
+        ],
+        "year": 1951,
+        "title": "Social Pathology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL1346582W, first published 1951). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1951
+      },
+      "adds": "Primary and secondary deviance."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bruce G. Link",
+          "Francis T. Cullen",
+          "Elmer L. Struening",
+          "Patrick E. Shrout",
+          "Bruce P. Dohrenwend"
+        ],
+        "year": 1989,
+        "title": "A Modified Labeling Theory Approach to Mental Disorders: An Empirical Assessment",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095613",
+        "openalex_id": "W1971000297",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Modified labelling theory."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jón Gunnar Bernburg",
+          "Marvin D. Krohn"
+        ],
+        "year": 2003,
+        "title": "LABELING, LIFE CHANCES, AND ADULT CRIME: THE DIRECT AND INDIRECT EFFECTS OF OFFICIAL INTERVENTION IN ADOLESCENCE ON CRIME IN EARLY ADULTHOOD*",
+        "type": "article",
+        "venue": "Criminology",
+        "doi": "10.1111/j.1745-9125.2003.tb01020.x",
+        "openalex_id": "W2169667421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Labelling through blocked opportunities."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Criminology",
+      "summary": "Labelling and offending.",
+      "defining_work": {
+        "authors": [
+          "Jón Gunnar Bernburg",
+          "Marvin D. Krohn"
+        ],
+        "year": 2003,
+        "title": "LABELING, LIFE CHANCES, AND ADULT CRIME: THE DIRECT AND INDIRECT EFFECTS OF OFFICIAL INTERVENTION IN ADOLESCENCE ON CRIME IN EARLY ADULTHOOD*",
+        "type": "article",
+        "venue": "Criminology",
+        "doi": "10.1111/j.1745-9125.2003.tb01020.x",
+        "openalex_id": "W2169667421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Mental health",
+      "summary": "Modified labelling.",
+      "defining_work": {
+        "authors": [
+          "Bruce G. Link",
+          "Francis T. Cullen",
+          "Elmer L. Struening",
+          "Patrick E. Shrout",
+          "Bruce P. Dohrenwend"
+        ],
+        "year": 1989,
+        "title": "A Modified Labeling Theory Approach to Mental Disorders: An Empirical Assessment",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095613",
+        "openalex_id": "W1971000297",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Evidence links official labelling to later crime.",
+      "source": {
+        "authors": [
+          "Jón Gunnar Bernburg",
+          "Marvin D. Krohn"
+        ],
+        "year": 2003,
+        "title": "LABELING, LIFE CHANCES, AND ADULT CRIME: THE DIRECT AND INDIRECT EFFECTS OF OFFICIAL INTERVENTION IN ADOLESCENCE ON CRIME IN EARLY ADULTHOOD*",
+        "type": "article",
+        "venue": "Criminology",
+        "doi": "10.1111/j.1745-9125.2003.tb01020.x",
+        "openalex_id": "W2169667421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Shifts focus to institutions' power.",
+      "source": {
+        "authors": [
+          "Becker"
+        ],
+        "year": 1963,
+        "title": "Outsiders: Studies in the Sociology of Deviance",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781982106225",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL2674332W, first published 1963). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1963
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Evidence for societal reaction as cause is weak.",
+      "source": {
+        "authors": [
+          "Walter R. Gove"
+        ],
+        "year": 1970,
+        "title": "Societal Reaction as an Explanation of Mental Illness: An Evaluation",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2093298",
+        "openalex_id": "W4298410433",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Earlier tests were poorly specified.",
+      "source": {
+        "authors": [
+          "Raymond Paternoster",
+          "LeeAnn Iovanni"
+        ],
+        "year": 1989,
+        "title": "The Labeling perspective and delinquency: An elaboration of the theory and an assessment of the evidence",
+        "type": "article",
+        "venue": "Justice Quarterly",
+        "doi": "10.1080/07418828900090261",
+        "openalex_id": "W2052334556",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Becker"
+        ],
+        "year": 1963,
+        "title": "Outsiders: Studies in the Sociology of Deviance",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781982106225",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL2674332W, first published 1963). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1963
+      },
+      "chapter": null,
+      "why_read": "Classic.",
+      "reading_question": "Who labels whom in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jón Gunnar Bernburg",
+          "Marvin D. Krohn"
+        ],
+        "year": 2003,
+        "title": "LABELING, LIFE CHANCES, AND ADULT CRIME: THE DIRECT AND INDIRECT EFFECTS OF OFFICIAL INTERVENTION IN ADOLESCENCE ON CRIME IN EARLY ADULTHOOD*",
+        "type": "article",
+        "venue": "Criminology",
+        "doi": "10.1111/j.1745-9125.2003.tb01020.x",
+        "openalex_id": "W2169667421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Mechanism.",
+      "reading_question": "What consequences of labelling will you trace?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Raymond Paternoster",
+          "LeeAnn Iovanni"
+        ],
+        "year": 1989,
+        "title": "The Labeling perspective and delinquency: An elaboration of the theory and an assessment of the evidence",
+        "type": "article",
+        "venue": "Justice Quarterly",
+        "doi": "10.1080/07418828900090261",
+        "openalex_id": "W2052334556",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Assessment.",
+      "reading_question": "How will you test it?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "labeling theory",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "theory_id": null,
+  "library_name": "Soft power",
+  "slug": "soft-power",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Nye"
+    ],
+    "year": 2004,
+    "title": "Soft Power: The Means to Success in World Politics",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781586482251",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 2004
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "States can get what they want through attraction rather than coercion or payment. Soft power rests on culture, political values and foreign policies seen as legitimate.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do states use culture, education or media abroad (e.g. China, Russia, Turkey in Central Asia)?",
+    "Does public diplomacy change perceptions?",
+    "Typical data: case study, discourse analysis, surveys."
+  ],
+  "common_mistakes": [
+    "Equating soft power with any cultural activity.",
+    "Assuming attraction leads to outcomes.",
+    "Ignoring the target audience."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Joseph S. Nye"
+        ],
+        "year": 1990,
+        "title": "Soft Power",
+        "type": "article",
+        "venue": "Foreign Policy",
+        "doi": "10.2307/1148580",
+        "openalex_id": "W4243551531",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "First article."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Joseph S. Nye"
+        ],
+        "year": 2008,
+        "title": "Public Diplomacy and Soft Power",
+        "type": "article",
+        "venue": "The Annals of the American Academy of Political and Social Science",
+        "doi": "10.1177/0002716207311699",
+        "openalex_id": "W2114608955",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:11738397"
+      },
+      "adds": "Public diplomacy."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jan Melissen"
+        ],
+        "year": 2005,
+        "title": "The New Public Diplomacy",
+        "type": "book",
+        "venue": "Palgrave Macmillan UK eBooks",
+        "doi": "10.1057/9780230554931",
+        "openalex_id": "W2478155083",
+        "isbn": "9781403945167",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      },
+      "adds": "Public diplomacy practice."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Public diplomacy",
+      "summary": "Programmes and media.",
+      "defining_work": {
+        "authors": [
+          "Joseph S. Nye"
+        ],
+        "year": 2008,
+        "title": "Public Diplomacy and Soft Power",
+        "type": "article",
+        "venue": "The Annals of the American Academy of Political and Social Science",
+        "doi": "10.1177/0002716207311699",
+        "openalex_id": "W2114608955",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:11738397"
+      }
+    },
+    {
+      "name": "Sharp power debates",
+      "summary": "Authoritarian influence.",
+      "defining_work": {
+        "authors": [
+          "Jan Melissen"
+        ],
+        "year": 2005,
+        "title": "The New Public Diplomacy",
+        "type": "book",
+        "venue": "Palgrave Macmillan UK eBooks",
+        "doi": "10.1057/9780230554931",
+        "openalex_id": "W2478155083",
+        "isbn": "9781403945167",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Popular and policy-relevant.",
+      "source": {
+        "authors": [
+          "Joseph S. Nye"
+        ],
+        "year": 2008,
+        "title": "Public Diplomacy and Soft Power",
+        "type": "article",
+        "venue": "The Annals of the American Academy of Political and Social Science",
+        "doi": "10.1177/0002716207311699",
+        "openalex_id": "W2114608955",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:11738397"
+      }
+    },
+    {
+      "point": "Highlights non-material power.",
+      "source": {
+        "authors": [
+          "Nye"
+        ],
+        "year": 2004,
+        "title": "Soft Power: The Means to Success in World Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781586482251",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Attraction is constructed and can be coercive.",
+      "source": {
+        "authors": [
+          "Janice Bially Mattern"
+        ],
+        "year": 2005,
+        "title": "Why `Soft Power' Isn't So Soft: Representational Force and the Sociolinguistic Construction of Attraction in World Politics",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298050330031601",
+        "openalex_id": "W2069352116",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Hard to measure effects.",
+      "source": {
+        "authors": [
+          "David W. Kearn"
+        ],
+        "year": 2011,
+        "title": "The hard truths about soft power",
+        "type": "article",
+        "venue": "Journal of Political Power",
+        "doi": "10.1080/2158379x.2011.556869",
+        "openalex_id": "W2032726279",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Nye"
+        ],
+        "year": 2004,
+        "title": "Soft Power: The Means to Success in World Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781586482251",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Which source of soft power?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Joseph S. Nye"
+        ],
+        "year": 2008,
+        "title": "Public Diplomacy and Soft Power",
+        "type": "article",
+        "venue": "The Annals of the American Academy of Political and Social Science",
+        "doi": "10.1177/0002716207311699",
+        "openalex_id": "W2114608955",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:11738397"
+      },
+      "chapter": null,
+      "why_read": "Practice.",
+      "reading_question": "How will you measure attraction?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Janice Bially Mattern"
+        ],
+        "year": 2005,
+        "title": "Why `Soft Power' Isn't So Soft: Representational Force and the Sociolinguistic Construction of Attraction in World Politics",
+        "type": "article",
+        "venue": "Millennium Journal of International Studies",
+        "doi": "10.1177/03058298050330031601",
+        "openalex_id": "W2069352116",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Is attraction really soft?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "soft power",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

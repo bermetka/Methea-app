@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Critical race theory in education",
+  "slug": "critical-race-theory-education",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Gloria J Ladson-Billings",
+      "William F. Tate"
+    ],
+    "year": 1995,
+    "title": "Toward a Critical Race Theory of Education",
+    "type": "article",
+    "venue": "Teachers College Record The Voice of Scholarship in Education",
+    "doi": "10.1177/016146819509700104",
+    "openalex_id": "W4210990419",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W4210990419",
+  "core_idea": "Racism is ordinary and built into institutions, including schools. CRT in education examines how apparently neutral policies and practices reproduce racial inequality and centres the voices of people of colour.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do school policies, discipline or curriculum reproduce racial inequality?",
+    "How do students of colour experience higher education?",
+    "Typical data: counter-narratives, interviews, policy analysis."
+  ],
+  "common_mistakes": [
+    "Using CRT only as a label without its tenets (permanence of racism, interest convergence, whiteness as property).",
+    "Applying US racial categories to other countries without adaptation.",
+    "Treating counter-stories as anecdotes rather than as a method with its own logic."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Derrick A. Bell"
+        ],
+        "year": 1980,
+        "title": "Brown v. Board of Education and the Interest-Convergence Dilemma",
+        "type": "article",
+        "venue": "Harvard Law Review",
+        "doi": "10.2307/1340546",
+        "openalex_id": "W143173597",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Interest convergence from legal CRT."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Daniel G. Solórzano",
+          "Tara J. Yosso"
+        ],
+        "year": 2002,
+        "title": "Critical Race Methodology: Counter-Storytelling as an Analytical Framework for Education Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800402008001003",
+        "openalex_id": "W2166105101",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Counter-storytelling as method."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "William F. Tate"
+        ],
+        "year": 1997,
+        "title": "Chapter 4: Critical Race Theory and Education: History, Theory, and Implications",
+        "type": "article",
+        "venue": "Review of Research in Education",
+        "doi": "10.2307/1167376",
+        "openalex_id": "W2000369070",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Sets out the history, tenets and implications of CRT for education research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Critical race methodology",
+      "summary": "Counter-storytelling in research.",
+      "defining_work": {
+        "authors": [
+          "Daniel G. Solórzano",
+          "Tara J. Yosso"
+        ],
+        "year": 2002,
+        "title": "Critical Race Methodology: Counter-Storytelling as an Analytical Framework for Education Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800402008001003",
+        "openalex_id": "W2166105101",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "LatCrit and asset frameworks",
+      "summary": "Extensions to Latinx experience and community wealth.",
+      "defining_work": {
+        "authors": [
+          "Tara J. Yosso"
+        ],
+        "year": 2005,
+        "title": "Whose culture has capital? A critical race theory discussion of community cultural wealth",
+        "type": "article",
+        "venue": "Race Ethnicity and Education",
+        "doi": "10.1080/1361332052000341006",
+        "openalex_id": "W2111647798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Makes structural racism visible where neutral frameworks don't.",
+      "source": {
+        "authors": [
+          "Gloria J Ladson-Billings",
+          "William F. Tate"
+        ],
+        "year": 1995,
+        "title": "Toward a Critical Race Theory of Education",
+        "type": "article",
+        "venue": "Teachers College Record The Voice of Scholarship in Education",
+        "doi": "10.1177/016146819509700104",
+        "openalex_id": "W4210990419",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Comes with its own methodology.",
+      "source": {
+        "authors": [
+          "Daniel G. Solórzano",
+          "Tara J. Yosso"
+        ],
+        "year": 2002,
+        "title": "Critical Race Methodology: Counter-Storytelling as an Analytical Framework for Education Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800402008001003",
+        "openalex_id": "W2166105101",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Ladson-Billings herself warns CRT in education risks becoming a superficial label.",
+      "source": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 1998,
+        "title": "Just what is critical race theory and what's it doing in a nice field like education?",
+        "type": "article",
+        "venue": "International Journal of Qualitative Studies in Education",
+        "doi": "10.1080/095183998236863",
+        "openalex_id": "W1977093588",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Critics argue storytelling methods weaken claims to generalisation.",
+      "source": {
+        "authors": [
+          "Daniel A. Farber",
+          "Suzanna Sherry"
+        ],
+        "year": 1993,
+        "title": "Telling Stories out of School: An Essay on Legal Narratives",
+        "type": "article",
+        "venue": "Stanford Law Review",
+        "doi": "10.2307/1229198",
+        "openalex_id": "W1919568173",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Gloria J Ladson-Billings",
+          "William F. Tate"
+        ],
+        "year": 1995,
+        "title": "Toward a Critical Race Theory of Education",
+        "type": "article",
+        "venue": "Teachers College Record The Voice of Scholarship in Education",
+        "doi": "10.1177/016146819509700104",
+        "openalex_id": "W4210990419",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "Which tenet is central to your study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Daniel G. Solórzano",
+          "Tara J. Yosso"
+        ],
+        "year": 2002,
+        "title": "Critical Race Methodology: Counter-Storytelling as an Analytical Framework for Education Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800402008001003",
+        "openalex_id": "W2166105101",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Method.",
+      "reading_question": "Will you use counter-stories?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 1998,
+        "title": "Just what is critical race theory and what's it doing in a nice field like education?",
+        "type": "article",
+        "venue": "International Journal of Qualitative Studies in Education",
+        "doi": "10.1080/095183998236863",
+        "openalex_id": "W1977093588",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Reflection and warnings.",
+      "reading_question": "How will you avoid superficial use?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "critical race theory",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2556989739",
+        "title": "Conceptualizing color-evasiveness: using dis/ability critical race theory to expand a color-blind racial ideology in education and society",
+        "year": 2016,
+        "authors": [
+          "Subini Ancy Annamma",
+          "Darrell D. Jackson",
+          "Deb Morrison"
+        ],
+        "cited_by": 748,
+        "oa_url": "https://doi.org/10.1080/13613324.2016.1248837"
+      },
+      {
+        "openalex_id": "W2619691923",
+        "title": "QuantCrit: education, policy, ‘Big Data’ and principles for a critical race theory of statistics",
+        "year": 2017,
+        "authors": [
+          "David A. Gillborn",
+          "Paul Warmington",
+          "Sean Demack"
+        ],
+        "cited_by": 722,
+        "oa_url": "http://orcid.org/0000-0002-2953-1337>"
+      },
+      {
+        "openalex_id": "W2327503965",
+        "title": "“Be Real Black for Me”",
+        "year": 2016,
+        "authors": [
+          "Michael J. Dumas",
+          "Kihana Miraya Ross"
+        ],
+        "cited_by": 683,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2759487722",
+        "title": "QuantCrit: rectifying quantitative methods through critical race theory",
+        "year": 2017,
+        "authors": [
+          "Nichole Margarita Garcia",
+          "Nancy López",
+          "Verónica Nelly Vélez"
+        ],
+        "cited_by": 503,
+        "oa_url": "https://doi.org/10.1080/13613324.2017.1377675"
+      },
+      {
+        "openalex_id": "W2795859071",
+        "title": "Disability Critical Race Theory: Exploring the Intersectional Lineage, Emergence, and Potential Futures of DisCrit in Education",
+        "year": 2018,
+        "authors": [
+          "Subini Ancy Annamma",
+          "Beth A. Ferri",
+          "David J. Connor"
+        ],
+        "cited_by": 344,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

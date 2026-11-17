@@ -1,0 +1,373 @@
+{
+  "theory_id": null,
+  "library_name": "Student integration model (Tinto)",
+  "slug": "student-integration-model",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Vincent Tinto"
+    ],
+    "year": 1975,
+    "title": "Dropout from Higher Education: A Theoretical Synthesis of Recent Research",
+    "type": "article",
+    "venue": "Review of Educational Research",
+    "doi": "10.2307/1170024",
+    "openalex_id": "W2162897826",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2162897826",
+  "core_idea": "Students arrive with background traits and goals. Whether they stay depends on how far they become integrated into the academic and social systems of the university, which strengthens their commitment.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do students drop out or persist?",
+    "How does first-year experience or belonging affect retention?",
+    "Typical data: longitudinal surveys, institutional data, interviews."
+  ],
+  "common_mistakes": [
+    "Assuming integration means students must adapt to the institution, the point critics attack.",
+    "Measuring only social integration.",
+    "Applying the residential US model unchanged to commuter or online students."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Tinto"
+        ],
+        "year": 1993,
+        "title": "Leaving College: Rethinking the Causes and Cures of Student Attrition",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226804491",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1987,
+        "note": "Library record's first publication year is 1987; 1993 is the edition or translation cited here."
+      },
+      "adds": "Second edition adds stages and community colleges."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Vincent Tinto"
+        ],
+        "year": 1997,
+        "title": "Classrooms as Communities",
+        "type": "article",
+        "venue": "The Journal of Higher Education",
+        "doi": "10.1080/00221546.1997.11779003",
+        "openalex_id": "W2032464227",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Classroom as the centre of integration."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Braxton"
+        ],
+        "year": 2000,
+        "title": "Reworking the Student Departure Puzzle",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780826513083",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2000
+      },
+      "adds": "Tests and revisions of the model."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Interactionalist model",
+      "summary": "Tinto's integration framework.",
+      "defining_work": {
+        "authors": [
+          "Vincent Tinto"
+        ],
+        "year": 1975,
+        "title": "Dropout from Higher Education: A Theoretical Synthesis of Recent Research",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.2307/1170024",
+        "openalex_id": "W2162897826",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Sense of belonging",
+      "summary": "Shift from integration to belonging.",
+      "defining_work": {
+        "authors": [
+          "Sylvia Hurtado",
+          "Deborah Faye Carter"
+        ],
+        "year": 1997,
+        "title": "Effects of College Transition and Perceptions of the Campus Racial Climate on Latino College Students' Sense of Belonging",
+        "type": "article",
+        "venue": "Sociology of Education",
+        "doi": "10.2307/2673270",
+        "openalex_id": "W2028798782",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Early empirical tests supported parts of the model.",
+      "source": {
+        "authors": [
+          "Ernest T. Pascarella",
+          "Patrick T. Terenzini"
+        ],
+        "year": 1980,
+        "title": "Predicting Freshman Persistence and Voluntary Dropout Decisions from a Theoretical Model",
+        "type": "article",
+        "venue": "The Journal of Higher Education",
+        "doi": "10.1080/00221546.1980.11780030",
+        "openalex_id": "W2020057512",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Became the most used framework in retention research.",
+      "source": {
+        "authors": [
+          "Braxton"
+        ],
+        "year": 2000,
+        "title": "Reworking the Student Departure Puzzle",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780826513083",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2000
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Assumes minority students must separate from their cultures to integrate.",
+      "source": {
+        "authors": [
+          "William G. Tierney"
+        ],
+        "year": 1992,
+        "title": "An Anthropological Analysis of Student Participation in College",
+        "type": "article",
+        "venue": "The Journal of Higher Education",
+        "doi": "10.1080/00221546.1992.11778391",
+        "openalex_id": "W1969539831",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Belonging is a better concept for minority students than integration.",
+      "source": {
+        "authors": [
+          "Sylvia Hurtado",
+          "Deborah Faye Carter"
+        ],
+        "year": 1997,
+        "title": "Effects of College Transition and Perceptions of the Campus Racial Climate on Latino College Students' Sense of Belonging",
+        "type": "article",
+        "venue": "Sociology of Education",
+        "doi": "10.2307/2673270",
+        "openalex_id": "W2028798782",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Vincent Tinto"
+        ],
+        "year": 1975,
+        "title": "Dropout from Higher Education: A Theoretical Synthesis of Recent Research",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.2307/1170024",
+        "openalex_id": "W2162897826",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The model.",
+      "reading_question": "Which integration do you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Vincent Tinto"
+        ],
+        "year": 1997,
+        "title": "Classrooms as Communities",
+        "type": "article",
+        "venue": "The Journal of Higher Education",
+        "doi": "10.1080/00221546.1997.11779003",
+        "openalex_id": "W2032464227",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Classroom focus.",
+      "reading_question": "Is your setting residential or not?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "William G. Tierney"
+        ],
+        "year": 1992,
+        "title": "An Anthropological Analysis of Student Participation in College",
+        "type": "article",
+        "venue": "The Journal of Higher Education",
+        "doi": "10.1080/00221546.1992.11778391",
+        "openalex_id": "W1969539831",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Main critique.",
+      "reading_question": "Does your design assume students must assimilate?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "student retention",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2920286416",
+        "title": "Student retention and engagement in higher education",
+        "year": 2019,
+        "authors": [
+          "Malcolm Tight"
+        ],
+        "cited_by": 352,
+        "oa_url": "https://doi.org/10.1080/0309877x.2019.1576860"
+      },
+      {
+        "openalex_id": "W2279294491",
+        "title": "A Comprehensive Review of the Major Studies and Theoretical Models of Student Retention in Higher Education",
+        "year": 2016,
+        "authors": [
+          "Othman Aljohani"
+        ],
+        "cited_by": 274,
+        "oa_url": "https://doi.org/10.5539/hes.v6n2p1"
+      },
+      {
+        "openalex_id": "W2468316412",
+        "title": "Predicting Student Dropout in Higher Education",
+        "year": 2016,
+        "authors": [
+          "Lovenoor S. Aulck",
+          "Nishant Velagapudi",
+          "Joshua Evan Blumenstock",
+          "Jevin D. West"
+        ],
+        "cited_by": 226,
+        "oa_url": "http://arxiv.org/abs/1606.06364"
+      },
+      {
+        "openalex_id": "W3000339898",
+        "title": "Reassessing Disparities in Online Learner Student Engagement in Higher Education",
+        "year": 2020,
+        "authors": [
+          "Justin Paulsen",
+          "Alexander C. McCormick"
+        ],
+        "cited_by": 200,
+        "oa_url": "http://hdl.handle.net/20.500.12323/4406"
+      },
+      {
+        "openalex_id": "W3033432616",
+        "title": "Optimizing Students’ Mental Health and Academic Performance: AI-Enhanced Life Crafting",
+        "year": 2020,
+        "authors": [
+          "Izaak Dekker",
+          "Elisabeth M. de Jong",
+          "Michaéla C. Schippers",
+          "Monique de Bruijn-Smolders",
+          "Andreas Alexiou",
+          "Bas Giesbers"
+        ],
+        "cited_by": 192,
+        "oa_url": "https://doi.org/10.3389/fpsyg.2020.01063"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "theory_id": null,
+  "library_name": "Universal Design for Learning (UDL)",
+  "slug": "universal-design-for-learning",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Rose"
+    ],
+    "year": 2002,
+    "title": "Teaching Every Student in the Digital Age: Universal Design for Learning",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780871205995",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 2002
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Design teaching from the start for the full range of learners instead of adapting it later. UDL gives three principles: multiple means of engagement, of representation, and of action and expression.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do teachers apply UDL in courses or classrooms?",
+    "Does UDL-based design improve access or outcomes for disabled students?",
+    "Typical data: design-based research, case study, surveys, document analysis."
+  ],
+  "common_mistakes": [
+    "Equating UDL with 'using technology'.",
+    "Claiming UDL effects without defining what was implemented.",
+    "Treating the guidelines as a checklist rather than design principles."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Anne E. Meyer",
+          "David H. Rose",
+          "David Gordon"
+        ],
+        "year": 2013,
+        "title": "Universal Design for Learning: Theory and Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2466165444",
+        "isbn": "9781930583542",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2015
+      },
+      "adds": "Updated framework and guidelines."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Kavita Rao",
+          "Min Wook Ok",
+          "Brian R. Bryant"
+        ],
+        "year": 2014,
+        "title": "A Review of Research on Universal Design Educational Models",
+        "type": "article",
+        "venue": "Remedial and Special Education",
+        "doi": "10.1177/0741932513518980",
+        "openalex_id": "W2134691063",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reviews research on UDL and related models."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Matthew James Capp"
+        ],
+        "year": 2017,
+        "title": "The effectiveness of universal design for learning: a meta-analysis of literature between 2013 and 2016",
+        "type": "article",
+        "venue": "International Journal of Inclusive Education",
+        "doi": "10.1080/13603116.2017.1325074",
+        "openalex_id": "W2613305305",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Meta-analysis of outcomes."
+    }
+  ],
+  "strands": [
+    {
+      "name": "UDL in K-12",
+      "summary": "School implementation.",
+      "defining_work": {
+        "authors": [
+          "Anne E. Meyer",
+          "David H. Rose",
+          "David Gordon"
+        ],
+        "year": 2013,
+        "title": "Universal Design for Learning: Theory and Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2466165444",
+        "isbn": "9781930583542",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2015
+      }
+    },
+    {
+      "name": "UDL in higher education",
+      "summary": "Postsecondary course design.",
+      "defining_work": {
+        "authors": [
+          "Kavita Rao",
+          "Min Wook Ok",
+          "Brian R. Bryant"
+        ],
+        "year": 2014,
+        "title": "A Review of Research on Universal Design Educational Models",
+        "type": "article",
+        "venue": "Remedial and Special Education",
+        "doi": "10.1177/0741932513518980",
+        "openalex_id": "W2134691063",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Positive effects reported across studies.",
+      "source": {
+        "authors": [
+          "Matthew James Capp"
+        ],
+        "year": 2017,
+        "title": "The effectiveness of universal design for learning: a meta-analysis of literature between 2013 and 2016",
+        "type": "article",
+        "venue": "International Journal of Inclusive Education",
+        "doi": "10.1080/13603116.2017.1325074",
+        "openalex_id": "W2613305305",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Shifts the problem from the learner to the design.",
+      "source": {
+        "authors": [
+          "Rose"
+        ],
+        "year": 2002,
+        "title": "Teaching Every Student in the Digital Age: Universal Design for Learning",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780871205995",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2002
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "UDL is defined so broadly that it is hard to recognise or test.",
+      "source": {
+        "authors": [
+          "Dave L. Edyburn"
+        ],
+        "year": 2010,
+        "title": "Would You Recognize Universal Design for Learning if You Saw it? Ten Propositions for New Directions for the Second Decade of UDL",
+        "type": "article",
+        "venue": "Learning Disability Quarterly",
+        "doi": "10.1177/073194871003300103",
+        "openalex_id": "W2126301306",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Evidence is thin and studies rarely isolate UDL.",
+      "source": {
+        "authors": [
+          "Kavita Rao",
+          "Min Wook Ok",
+          "Brian R. Bryant"
+        ],
+        "year": 2014,
+        "title": "A Review of Research on Universal Design Educational Models",
+        "type": "article",
+        "venue": "Remedial and Special Education",
+        "doi": "10.1177/0741932513518980",
+        "openalex_id": "W2134691063",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Rose"
+        ],
+        "year": 2002,
+        "title": "Teaching Every Student in the Digital Age: Universal Design for Learning",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780871205995",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2002
+      },
+      "chapter": null,
+      "why_read": "The founding book.",
+      "reading_question": "Which principle is your study about?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Anne E. Meyer",
+          "David H. Rose",
+          "David Gordon"
+        ],
+        "year": 2013,
+        "title": "Universal Design for Learning: Theory and Practice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2466165444",
+        "isbn": "9781930583542",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2015
+      },
+      "chapter": null,
+      "why_read": "Current version.",
+      "reading_question": "Which guideline version will you cite?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Dave L. Edyburn"
+        ],
+        "year": 2010,
+        "title": "Would You Recognize Universal Design for Learning if You Saw it? Ten Propositions for New Directions for the Second Decade of UDL",
+        "type": "article",
+        "venue": "Learning Disability Quarterly",
+        "doi": "10.1177/073194871003300103",
+        "openalex_id": "W2126301306",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Key critique.",
+      "reading_question": "How will you show UDL was really implemented?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "universal design for learning",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 3 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

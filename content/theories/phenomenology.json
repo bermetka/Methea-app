@@ -1,0 +1,308 @@
+{
+  "theory_id": null,
+  "library_name": "Phenomenology",
+  "slug": "phenomenology",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Merleau-Ponty"
+    ],
+    "year": 1962,
+    "title": "Phenomenology of Perception",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1962
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Phenomenology studies experience as it is lived, before theories explain it. The researcher sets aside assumptions (bracketing) to describe what a phenomenon is like for those who live it; interpretive strands add that such description is always already interpretation.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What is it like to live through an experience (illness, migration, becoming a teacher)?",
+    "Small, homogeneous samples studied in depth.",
+    "Typical designs: phenomenological interviews, IPA, descriptive phenomenological analysis."
+  ],
+  "common_mistakes": [
+    "Calling any interview study 'phenomenological'.",
+    "Mixing descriptive (Husserl, Giorgi) and interpretive (Heidegger, IPA) versions without saying which.",
+    "Claiming complete bracketing of one's assumptions."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Amedeo Giorgi"
+        ],
+        "year": 1997,
+        "title": "The Theory, Practice, and Evaluation of the Phenomenological Method as a Qualitative Research Procedure",
+        "type": "article",
+        "venue": "Journal of Phenomenological Psychology",
+        "doi": "10.1163/156916297x00103",
+        "openalex_id": "W1981653122",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://philarchive.org/rec/GIOTTP"
+      },
+      "adds": "Descriptive phenomenological method for psychology."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jonathan Ashley Smith"
+        ],
+        "year": 1996,
+        "title": "Beyond the divide between cognition and discourse: Using interpretative phenomenological analysis in health psychology",
+        "type": "article",
+        "venue": "Psychology and Health",
+        "doi": "10.1080/08870449608400256",
+        "openalex_id": "W2089548147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Interpretative phenomenological analysis (IPA)."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Linda Finlay"
+        ],
+        "year": 2009,
+        "title": "Debating Phenomenological Research Methods",
+        "type": "article",
+        "venue": "Phenomenology & Practice",
+        "doi": "10.29173/pandpr19818",
+        "openalex_id": "W2140103930",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.29173/pandpr19818"
+      },
+      "adds": "Maps the debates between phenomenological research methods."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Descriptive phenomenology",
+      "summary": "Husserl, Giorgi: essences through reduction.",
+      "defining_work": {
+        "authors": [
+          "Amedeo Giorgi"
+        ],
+        "year": 1997,
+        "title": "The Theory, Practice, and Evaluation of the Phenomenological Method as a Qualitative Research Procedure",
+        "type": "article",
+        "venue": "Journal of Phenomenological Psychology",
+        "doi": "10.1163/156916297x00103",
+        "openalex_id": "W1981653122",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://philarchive.org/rec/GIOTTP"
+      }
+    },
+    {
+      "name": "Interpretive phenomenology",
+      "summary": "Heidegger, van Manen, IPA: lived experience interpreted.",
+      "defining_work": {
+        "authors": [
+          "Jonathan Ashley Smith"
+        ],
+        "year": 1996,
+        "title": "Beyond the divide between cognition and discourse: Using interpretative phenomenological analysis in health psychology",
+        "type": "article",
+        "venue": "Psychology and Health",
+        "doi": "10.1080/08870449608400256",
+        "openalex_id": "W2089548147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives rigorous procedures for studying lived experience.",
+      "source": {
+        "authors": [
+          "Amedeo Giorgi"
+        ],
+        "year": 1997,
+        "title": "The Theory, Practice, and Evaluation of the Phenomenological Method as a Qualitative Research Procedure",
+        "type": "article",
+        "venue": "Journal of Phenomenological Psychology",
+        "doi": "10.1163/156916297x00103",
+        "openalex_id": "W1981653122",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://philarchive.org/rec/GIOTTP"
+      }
+    },
+    {
+      "point": "IPA made phenomenology practical for health and psychology research.",
+      "source": {
+        "authors": [
+          "Jonathan Ashley Smith"
+        ],
+        "year": 1996,
+        "title": "Beyond the divide between cognition and discourse: Using interpretative phenomenological analysis in health psychology",
+        "type": "article",
+        "venue": "Psychology and Health",
+        "doi": "10.1080/08870449608400256",
+        "openalex_id": "W2089548147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Much nursing phenomenology misreads Husserl and is not phenomenological in his sense.",
+      "source": {
+        "authors": [
+          "John Paley"
+        ],
+        "year": 1997,
+        "title": "Husserl, phenomenology and nursing",
+        "type": "article",
+        "venue": "Journal of Advanced Nursing",
+        "doi": "10.1046/j.1365-2648.1997.1997026187.x",
+        "openalex_id": "W2160773500",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Popular research versions get the philosophy wrong.",
+      "source": {
+        "authors": [
+          "Dan Zahavi"
+        ],
+        "year": 2018,
+        "title": "Getting It Quite Wrong: Van Manen and Smith on Phenomenology",
+        "type": "article",
+        "venue": "Qualitative Health Research",
+        "doi": "10.1177/1049732318817547",
+        "openalex_id": "W2904171441",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://researchprofiles.ku.dk/da/publications/597ea18c-e3a8-4bb4-a437-a0d8f79373c5"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Merleau-Ponty"
+        ],
+        "year": 1962,
+        "title": "Phenomenology of Perception",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1962
+      },
+      "chapter": null,
+      "why_read": "Read the Preface.",
+      "reading_question": "What experience is your study about, and whose?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jonathan Ashley Smith"
+        ],
+        "year": 1996,
+        "title": "Beyond the divide between cognition and discourse: Using interpretative phenomenological analysis in health psychology",
+        "type": "article",
+        "venue": "Psychology and Health",
+        "doi": "10.1080/08870449608400256",
+        "openalex_id": "W2089548147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "IPA.",
+      "reading_question": "Descriptive or interpretive?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Linda Finlay"
+        ],
+        "year": 2009,
+        "title": "Debating Phenomenological Research Methods",
+        "type": "article",
+        "venue": "Phenomenology & Practice",
+        "doi": "10.29173/pandpr19818",
+        "openalex_id": "W2140103930",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.29173/pandpr19818"
+      },
+      "chapter": null,
+      "why_read": "The methodological debates.",
+      "reading_question": "Which version of phenomenology do you follow, and why?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "phenomenological research",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Phenomenology of Perception. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

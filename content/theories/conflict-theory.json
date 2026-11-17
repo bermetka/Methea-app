@@ -1,0 +1,322 @@
+{
+  "theory_id": null,
+  "library_name": "Conflict theory",
+  "slug": "conflict-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Dahrendorf"
+    ],
+    "year": 1959,
+    "title": "Class and Class Conflict in Industrial Society",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780804705615",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL18431381W, first published 1959). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1959
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Society is held together by power and constraint as much as by consensus. Groups with and without authority have opposing interests, and conflict between them drives change.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What interests and power relations drive a dispute or reform?",
+    "How does conflict produce social change in organisations?",
+    "Typical data: case study, historical analysis, interviews."
+  ],
+  "common_mistakes": [
+    "Reducing all conflict to class.",
+    "Ignoring the functions of conflict (integration as well as change).",
+    "Using it as a general stance without specifying groups and interests."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Coser"
+        ],
+        "year": 1956,
+        "title": "The Functions of Social Conflict",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780029068106",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4978399W, first published 1956). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1956
+      },
+      "adds": "Conflict can integrate groups."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Ralf Dahrendorf"
+        ],
+        "year": 1958,
+        "title": "Toward a theory of social conflict",
+        "type": "article",
+        "venue": "Journal of Conflict Resolution",
+        "doi": "10.1177/002200275800200204",
+        "openalex_id": "W2066562475",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Short statement of the theory."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Collins"
+        ],
+        "year": 1975,
+        "title": "Conflict Sociology: Toward an Explanatory Science",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781317262152",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2015; 1975 is the edition or translation cited here.",
+        "first_publish_year": 2015
+      },
+      "adds": "Broad conflict sociology."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Authority-based conflict theory",
+      "summary": "Dahrendorf.",
+      "defining_work": {
+        "authors": [
+          "Dahrendorf"
+        ],
+        "year": 1959,
+        "title": "Class and Class Conflict in Industrial Society",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780804705615",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL18431381W, first published 1959). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1959
+      }
+    },
+    {
+      "name": "Functionalist conflict theory",
+      "summary": "Coser.",
+      "defining_work": {
+        "authors": [
+          "Coser"
+        ],
+        "year": 1956,
+        "title": "The Functions of Social Conflict",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780029068106",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4978399W, first published 1956). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1956
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear alternative to consensus theories.",
+      "source": {
+        "authors": [
+          "Ralf Dahrendorf"
+        ],
+        "year": 1958,
+        "title": "Toward a theory of social conflict",
+        "type": "article",
+        "venue": "Journal of Conflict Resolution",
+        "doi": "10.1177/002200275800200204",
+        "openalex_id": "W2066562475",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Explains change through interests.",
+      "source": {
+        "authors": [
+          "Collins"
+        ],
+        "year": 1975,
+        "title": "Conflict Sociology: Toward an Explanatory Science",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781317262152",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2015; 1975 is the edition or translation cited here.",
+        "first_publish_year": 2015
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Dahrendorf's theory mirrors the functionalism it attacks.",
+      "source": {
+        "authors": [
+          "Peter Weingart"
+        ],
+        "year": 1969,
+        "title": "Beyond Parsons? A Critique of Ralf Dahrendorf's Conflict Theory",
+        "type": "article",
+        "venue": "Social Forces",
+        "doi": "10.1093/sf/48.2.151",
+        "openalex_id": "W2103720763",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Conflict can integrate as well as divide.",
+      "source": {
+        "authors": [
+          "Coser"
+        ],
+        "year": 1956,
+        "title": "The Functions of Social Conflict",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780029068106",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4978399W, first published 1956). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1956
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Dahrendorf"
+        ],
+        "year": 1959,
+        "title": "Class and Class Conflict in Industrial Society",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780804705615",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL18431381W, first published 1959). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1959
+      },
+      "chapter": null,
+      "why_read": "The theory.",
+      "reading_question": "Which groups and interests are in conflict?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Ralf Dahrendorf"
+        ],
+        "year": 1958,
+        "title": "Toward a theory of social conflict",
+        "type": "article",
+        "venue": "Journal of Conflict Resolution",
+        "doi": "10.1177/002200275800200204",
+        "openalex_id": "W2066562475",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Concise version.",
+      "reading_question": "How is authority distributed?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Peter Weingart"
+        ],
+        "year": 1969,
+        "title": "Beyond Parsons? A Critique of Ralf Dahrendorf's Conflict Theory",
+        "type": "article",
+        "venue": "Social Forces",
+        "doi": "10.1093/sf/48.2.151",
+        "openalex_id": "W2103720763",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Why conflict theory rather than another lens?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social conflict",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

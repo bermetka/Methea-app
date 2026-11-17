@@ -1,0 +1,300 @@
+{
+  "theory_id": null,
+  "library_name": "Hermeneutics",
+  "slug": "hermeneutics",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Gadamer"
+    ],
+    "year": 1975,
+    "title": "Truth and Method",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781306720366",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 2004,
+    "note": "Library record's first publication year is 2004; 1975 is the edition or translation cited here."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Understanding is interpretation. We grasp a text, action or person by moving between part and whole (the hermeneutic circle), and always from within our own historical horizon; understanding happens when the interpreter's horizon and that of the text meet.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Interpreting texts, documents, policies or interview accounts in depth.",
+    "Studies where the researcher's own pre-understanding is part of the analysis.",
+    "Typical designs: hermeneutic text analysis, narrative analysis, hermeneutic phenomenology."
+  ],
+  "common_mistakes": [
+    "Treating the hermeneutic circle as a step-by-step technique.",
+    "Hiding the researcher's pre-understanding instead of working with it.",
+    "Using 'hermeneutic' as a synonym for 'qualitative'."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Heidegger"
+        ],
+        "year": 1962,
+        "title": "Being and Time",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9789354997174",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2023,
+        "note": "Library record's first publication year is 2023; 1962 is the edition or translation cited here."
+      },
+      "adds": "Understanding as a basic way of being, not only a method."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Susann M. Laverty"
+        ],
+        "year": 2003,
+        "title": "Hermeneutic Phenomenology and Phenomenology: A Comparison of Historical and Methodological Considerations",
+        "type": "article",
+        "venue": "International Journal of Qualitative Methods",
+        "doi": "10.1177/160940690300200303",
+        "openalex_id": "W2146203034",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1177/160940690300200303"
+      },
+      "adds": "Compares hermeneutic phenomenology with descriptive phenomenology for researchers."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Philosophical hermeneutics",
+      "summary": "Gadamer: fusion of horizons.",
+      "defining_work": {
+        "authors": [
+          "Gadamer"
+        ],
+        "year": 1975,
+        "title": "Truth and Method",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781306720366",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004,
+        "note": "Library record's first publication year is 2004; 1975 is the edition or translation cited here."
+      }
+    },
+    {
+      "name": "Critical hermeneutics",
+      "summary": "Ricoeur: distanciation and suspicion.",
+      "defining_work": {
+        "authors": [
+          "Ricoeur"
+        ],
+        "year": 1981,
+        "title": "Hermeneutics and the Human Sciences",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521234979",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1981
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "The hermeneutic circle is a core principle for interpretive field research.",
+      "source": {
+        "authors": [
+          "Heinz Karl Klein",
+          "Michael David Myers"
+        ],
+        "year": 1999,
+        "title": "A Set of Principles for Conducting and Evaluating Interpretive Field Studies in Information Systems1",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.2307/249410",
+        "openalex_id": "W2148277253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Clarifies how interpretation differs from description in research practice.",
+      "source": {
+        "authors": [
+          "Susann M. Laverty"
+        ],
+        "year": 2003,
+        "title": "Hermeneutic Phenomenology and Phenomenology: A Comparison of Historical and Methodological Considerations",
+        "type": "article",
+        "venue": "International Journal of Qualitative Methods",
+        "doi": "10.1177/160940690300200303",
+        "openalex_id": "W2146203034",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1177/160940690300200303"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Without authorial intention there is no criterion of valid interpretation.",
+      "source": {
+        "authors": [
+          "E. D. Hirsch"
+        ],
+        "year": 1967,
+        "title": "Validity in Interpretation",
+        "type": "book",
+        "venue": "Bloomsbury Publishing Plc eBooks",
+        "doi": "10.5040/9781350928510",
+        "openalex_id": "W4300448215",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Tradition can carry distortion and domination; understanding needs critique of ideology.",
+      "source": {
+        "authors": [
+          "Habermas"
+        ],
+        "year": 1988,
+        "title": "On the Logic of the Social Sciences",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780585336251",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1967,
+        "note": "Open Library lists this work under its original title 'Zur Logik der Sozialwissenschaften' (1967); 1988 is the English edition cited here. The ISBN belongs to one edition of that work."
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Gadamer"
+        ],
+        "year": 1975,
+        "title": "Truth and Method",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781306720366",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004,
+        "note": "Library record's first publication year is 2004; 1975 is the edition or translation cited here."
+      },
+      "chapter": null,
+      "why_read": "Read the sections on the hermeneutic circle and prejudice.",
+      "reading_question": "What pre-understanding do you bring to your material?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Ricoeur"
+        ],
+        "year": 1981,
+        "title": "Hermeneutics and the Human Sciences",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521234979",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1981
+      },
+      "chapter": null,
+      "why_read": "From text to action.",
+      "reading_question": "Can your 'text' be an action or a practice?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Susann M. Laverty"
+        ],
+        "year": 2003,
+        "title": "Hermeneutic Phenomenology and Phenomenology: A Comparison of Historical and Methodological Considerations",
+        "type": "article",
+        "venue": "International Journal of Qualitative Methods",
+        "doi": "10.1177/160940690300200303",
+        "openalex_id": "W2146203034",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1177/160940690300200303"
+      },
+      "chapter": null,
+      "why_read": "Practical comparison.",
+      "reading_question": "Hermeneutic or descriptive approach?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "hermeneutics",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Being and Time; Hermeneutics and the Human Sciences; On the Logic of the Social Sciences; Truth and Method. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

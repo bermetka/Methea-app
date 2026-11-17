@@ -1,0 +1,381 @@
+{
+  "theory_id": null,
+  "library_name": "Signalling theory",
+  "slug": "signalling-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Michael Spence"
+    ],
+    "year": 1973,
+    "title": "Job Market Signaling",
+    "type": "article",
+    "venue": "The Quarterly Journal of Economics",
+    "doi": "10.2307/1882010",
+    "openalex_id": "W2115747715",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2115747715",
+  "core_idea": "When one party knows more than the other, it can send costly signals, such as a degree, to show its quality. Signals work if they are harder to fake for low-quality types.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do employers value credentials?",
+    "How do firms signal quality to investors or customers?",
+    "Typical data: surveys, experiments, case study."
+  ],
+  "common_mistakes": [
+    "Calling any information a signal.",
+    "Ignoring cost differences.",
+    "Confusing with screening."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Joseph Eugène Stiglitz"
+        ],
+        "year": 1975,
+        "title": "The Theory of Screening, Education, and the Distribution of Income",
+        "type": "article",
+        "venue": "Columbia Academic Commons (Columbia University)",
+        "doi": "10.7916/d8pg22pm",
+        "openalex_id": "W1900002979",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.7916/d8pg22pm"
+      },
+      "adds": "Screening."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Brian L. Connelly",
+          "S. Trevis Certo",
+          "R. Duane Ireland",
+          "Christopher Ray Reutzel"
+        ],
+        "year": 2010,
+        "title": "Signaling Theory: A Review and Assessment",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206310388419",
+        "openalex_id": "W2112256230",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Signaling_theory_A_review_and_assessment/20617896"
+      },
+      "adds": "Review in management."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Andrew Weiss"
+        ],
+        "year": 1995,
+        "title": "Human Capital vs. Signalling Explanations of Wages",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/jep.9.4.133",
+        "openalex_id": "W2087457888",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1257/jep.9.4.133"
+      },
+      "adds": "Signalling vs human capital."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Labour markets",
+      "summary": "Credentials.",
+      "defining_work": {
+        "authors": [
+          "Michael Spence"
+        ],
+        "year": 1973,
+        "title": "Job Market Signaling",
+        "type": "article",
+        "venue": "The Quarterly Journal of Economics",
+        "doi": "10.2307/1882010",
+        "openalex_id": "W2115747715",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Management",
+      "summary": "Signals to investors.",
+      "defining_work": {
+        "authors": [
+          "Brian L. Connelly",
+          "S. Trevis Certo",
+          "R. Duane Ireland",
+          "Christopher Ray Reutzel"
+        ],
+        "year": 2010,
+        "title": "Signaling Theory: A Review and Assessment",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206310388419",
+        "openalex_id": "W2112256230",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Signaling_theory_A_review_and_assessment/20617896"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains credential value.",
+      "source": {
+        "authors": [
+          "Andrew Weiss"
+        ],
+        "year": 1995,
+        "title": "Human Capital vs. Signalling Explanations of Wages",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/jep.9.4.133",
+        "openalex_id": "W2087457888",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1257/jep.9.4.133"
+      }
+    },
+    {
+      "point": "Widely used in management.",
+      "source": {
+        "authors": [
+          "Brian L. Connelly",
+          "S. Trevis Certo",
+          "R. Duane Ireland",
+          "Christopher Ray Reutzel"
+        ],
+        "year": 2010,
+        "title": "Signaling Theory: A Review and Assessment",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206310388419",
+        "openalex_id": "W2112256230",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Signaling_theory_A_review_and_assessment/20617896"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Hard to separate from human capital empirically.",
+      "source": {
+        "authors": [
+          "Andrew Weiss"
+        ],
+        "year": 1995,
+        "title": "Human Capital vs. Signalling Explanations of Wages",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/jep.9.4.133",
+        "openalex_id": "W2087457888",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1257/jep.9.4.133"
+      }
+    },
+    {
+      "point": "Concepts used loosely in management.",
+      "source": {
+        "authors": [
+          "Brian L. Connelly",
+          "S. Trevis Certo",
+          "R. Duane Ireland",
+          "Christopher Ray Reutzel"
+        ],
+        "year": 2010,
+        "title": "Signaling Theory: A Review and Assessment",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206310388419",
+        "openalex_id": "W2112256230",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Signaling_theory_A_review_and_assessment/20617896"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Michael Spence"
+        ],
+        "year": 1973,
+        "title": "Job Market Signaling",
+        "type": "article",
+        "venue": "The Quarterly Journal of Economics",
+        "doi": "10.2307/1882010",
+        "openalex_id": "W2115747715",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "What is the signal and its cost?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Brian L. Connelly",
+          "S. Trevis Certo",
+          "R. Duane Ireland",
+          "Christopher Ray Reutzel"
+        ],
+        "year": 2010,
+        "title": "Signaling Theory: A Review and Assessment",
+        "type": "article",
+        "venue": "Journal of Management",
+        "doi": "10.1177/0149206310388419",
+        "openalex_id": "W2112256230",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/Signaling_theory_A_review_and_assessment/20617896"
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Who sends and receives?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Andrew Weiss"
+        ],
+        "year": 1995,
+        "title": "Human Capital vs. Signalling Explanations of Wages",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/jep.9.4.133",
+        "openalex_id": "W2087457888",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1257/jep.9.4.133"
+      },
+      "chapter": null,
+      "why_read": "Debate.",
+      "reading_question": "Signal or skill?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "signaling theory",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2789981453",
+        "title": "On the Financing Benefits of Supply Chain Transparency and Blockchain Adoption",
+        "year": 2020,
+        "authors": [
+          "Jiri Chod",
+          "Nikolaos Trichakis",
+          "Gerry Tsoukalas",
+          "Henry Aspegren",
+          "Mark Weber"
+        ],
+        "cited_by": 671,
+        "oa_url": "https://hdl.handle.net/1721.1/130455"
+      },
+      {
+        "openalex_id": "W4402225069",
+        "title": "Signaling Theory: State of the Theory and Its Future",
+        "year": 2024,
+        "authors": [
+          "Brian L. Connelly",
+          "S. Trevis Certo",
+          "Christopher Ray Reutzel",
+          "Mark R. DesJardine",
+          "Yi Shi Zhou"
+        ],
+        "cited_by": 571,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2897981143",
+        "title": "Initial coin offerings (ICOs) to finance new ventures",
+        "year": 2018,
+        "authors": [
+          "Christian O. Fisch"
+        ],
+        "cited_by": 533,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2896095309",
+        "title": "Diversity Initiative Effectiveness: A Typological Theory of Unintended Consequences",
+        "year": 2018,
+        "authors": [
+          "Lisa Michelle Leslie"
+        ],
+        "cited_by": 472,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3201408471",
+        "title": "Stock market reactions to adverse ESG disclosure via media channels",
+        "year": 2021,
+        "authors": [
+          "Jin Boon Wong",
+          "Qin Zhang"
+        ],
+        "cited_by": 417,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

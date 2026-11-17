@@ -1,0 +1,376 @@
+{
+  "theory_id": null,
+  "library_name": "Two-level games",
+  "slug": "two-level-games",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Robert D. Putnam"
+    ],
+    "year": 1988,
+    "title": "Diplomacy and domestic politics: the logic of two-level games",
+    "type": "article",
+    "venue": "International Organization",
+    "doi": "10.1017/s0020818300027697",
+    "openalex_id": "W2153031274",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2153031274",
+  "core_idea": "Negotiators bargain at two levels: with foreign counterparts and with domestic groups who must ratify the deal. An agreement must fall inside both sides' win-sets.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do domestic politics shape international agreements?",
+    "Why do negotiations fail at ratification?",
+    "Typical data: case study, process tracing, interviews."
+  ],
+  "common_mistakes": [
+    "Using the metaphor without defining win-sets.",
+    "Ignoring the negotiator's own preferences.",
+    "Assuming domestic actors are unified."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Peter B. Evans",
+          "Harold K. Jacobson",
+          "Robert D. Putnam"
+        ],
+        "year": 1993,
+        "title": "Double-Edged Diplomacy",
+        "type": "book",
+        "venue": "University of California Press eBooks",
+        "doi": "10.1525/9780520912106",
+        "openalex_id": "W4253651357",
+        "isbn": "9780520076822",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1993
+      },
+      "adds": "Case studies applying the model."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Andrew M. Moravcsik"
+        ],
+        "year": 1997,
+        "title": "Taking Preferences Seriously: A Liberal Theory of International Politics",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081897550447",
+        "openalex_id": "W2100666645",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Liberal theory of preferences."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Helen V. Milner"
+        ],
+        "year": 1998,
+        "title": "Interests, Institutions, and Information",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9780691214498",
+        "openalex_id": "W4247817352",
+        "isbn": "9780691011769",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1997
+      },
+      "adds": "Domestic politics and cooperation."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Liberal intergovernmentalism",
+      "summary": "Domestic preferences.",
+      "defining_work": {
+        "authors": [
+          "Andrew M. Moravcsik"
+        ],
+        "year": 1997,
+        "title": "Taking Preferences Seriously: A Liberal Theory of International Politics",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081897550447",
+        "openalex_id": "W2100666645",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Domestic institutions",
+      "summary": "Ratification rules.",
+      "defining_work": {
+        "authors": [
+          "Helen V. Milner"
+        ],
+        "year": 1998,
+        "title": "Interests, Institutions, and Information",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9780691214498",
+        "openalex_id": "W4247817352",
+        "isbn": "9780691011769",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1997
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Bridges domestic and international politics.",
+      "source": {
+        "authors": [
+          "Robert D. Putnam"
+        ],
+        "year": 1988,
+        "title": "Diplomacy and domestic politics: the logic of two-level games",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027697",
+        "openalex_id": "W2153031274",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Widely applied.",
+      "source": {
+        "authors": [
+          "Peter B. Evans",
+          "Harold K. Jacobson",
+          "Robert D. Putnam"
+        ],
+        "year": 1993,
+        "title": "Double-Edged Diplomacy",
+        "type": "book",
+        "venue": "University of California Press eBooks",
+        "doi": "10.1525/9780520912106",
+        "openalex_id": "W4253651357",
+        "isbn": "9780520076822",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1993
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "More metaphor than theory.",
+      "source": {
+        "authors": [
+          "Peter B. Evans",
+          "Harold K. Jacobson",
+          "Robert D. Putnam"
+        ],
+        "year": 1993,
+        "title": "Double-Edged Diplomacy",
+        "type": "book",
+        "venue": "University of California Press eBooks",
+        "doi": "10.1525/9780520912106",
+        "openalex_id": "W4253651357",
+        "isbn": "9780520076822",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1993
+      }
+    },
+    {
+      "point": "Uncertainty changes predictions.",
+      "source": {
+        "authors": [
+          "Keisuke Iida"
+        ],
+        "year": 1993,
+        "title": "When and How Do Domestic Constraints Matter?",
+        "type": "article",
+        "venue": "Journal of Conflict Resolution",
+        "doi": "10.1177/0022002793037003001",
+        "openalex_id": "W2124857988",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Robert D. Putnam"
+        ],
+        "year": 1988,
+        "title": "Diplomacy and domestic politics: the logic of two-level games",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027697",
+        "openalex_id": "W2153031274",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "What are the win-sets?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Andrew M. Moravcsik"
+        ],
+        "year": 1997,
+        "title": "Taking Preferences Seriously: A Liberal Theory of International Politics",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1162/002081897550447",
+        "openalex_id": "W2100666645",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Theory.",
+      "reading_question": "Where do preferences come from?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Peter B. Evans",
+          "Harold K. Jacobson",
+          "Robert D. Putnam"
+        ],
+        "year": 1993,
+        "title": "Double-Edged Diplomacy",
+        "type": "book",
+        "venue": "University of California Press eBooks",
+        "doi": "10.1525/9780520912106",
+        "openalex_id": "W4253651357",
+        "isbn": "9780520076822",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1993
+      },
+      "chapter": null,
+      "why_read": "Applications.",
+      "reading_question": "Which case design?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "two-level games",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2260080893",
+        "title": "Decentralisation in Kenya: the governance of governors",
+        "year": 2016,
+        "authors": [
+          "Nic Cheeseman",
+          "Gabrielle Lynch",
+          "Justin Willis"
+        ],
+        "cited_by": 214,
+        "oa_url": "https://doi.org/10.1017/s0022278x1500097x"
+      },
+      {
+        "openalex_id": "W2322405207",
+        "title": "Bargaining power and negotiation strategy: examining the Greek bailouts, 2010–2015",
+        "year": 2016,
+        "authors": [
+          "Nikolaos Zahariadis"
+        ],
+        "cited_by": 82,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2755688904",
+        "title": "Competence Creep Revisited",
+        "year": 2017,
+        "authors": [
+          "Sacha Garben"
+        ],
+        "cited_by": 58,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2928010269",
+        "title": "Games borrower governments play: the implementation of economic adjustment programmes in Cyprus and Portugal",
+        "year": 2019,
+        "authors": [
+          "Susanne Lütz",
+          "Sven Hilgers",
+          "Sebastian Schneider"
+        ],
+        "cited_by": 49,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2513154307",
+        "title": "Negotiating under Political Uncertainty: National Elections and the Dynamics of International Co-operation",
+        "year": 2017,
+        "authors": [
+          "Mareike Kleine",
+          "Clement Minaudier"
+        ],
+        "cited_by": 40,
+        "oa_url": "https://orcid.org/0000-0002-7442-7328>"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "theory_id": null,
+  "library_name": "Public sphere (Habermas)",
+  "slug": "public-sphere",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Habermas"
+    ],
+    "year": 1989,
+    "title": "The Structural Transformation of the Public Sphere",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780585221991",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/books/OL7955932M, first published 1965). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1989
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "The public sphere is where private people come together to discuss matters of common concern. Its democratic value depends on open access, rational-critical debate and independence from state and market power.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Is online debate a public sphere?",
+    "How do media shape democratic deliberation?",
+    "Typical data: discourse analysis, content analysis of debates, case study."
+  ],
+  "common_mistakes": [
+    "Treating any online space as a public sphere.",
+    "Ignoring exclusion, the main critique.",
+    "Confusing the normative ideal with empirical description."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Nancy Wickwire Fraser"
+        ],
+        "year": 1990,
+        "title": "Rethinking the Public Sphere: A Contribution to the Critique of Actually Existing Democracy",
+        "type": "article",
+        "venue": "Social Text",
+        "doi": "10.2307/466240",
+        "openalex_id": "W4243728602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Multiple publics and subaltern counterpublics."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jürgen Habermas"
+        ],
+        "year": 2006,
+        "title": "Political Communication in Media Society: Does Democracy Still Enjoy an Epistemic Dimension? The Impact of Normative Theory on Empirical Research",
+        "type": "article",
+        "venue": "Communication Theory",
+        "doi": "10.1111/j.1468-2885.2006.00280.x",
+        "openalex_id": "W2105773471",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Habermas on mediated public spheres."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Counterpublics",
+      "summary": "Fraser's plural publics.",
+      "defining_work": {
+        "authors": [
+          "Nancy Wickwire Fraser"
+        ],
+        "year": 1990,
+        "title": "Rethinking the Public Sphere: A Contribution to the Critique of Actually Existing Democracy",
+        "type": "article",
+        "venue": "Social Text",
+        "doi": "10.2307/466240",
+        "openalex_id": "W4243728602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Digital public sphere",
+      "summary": "Online debate.",
+      "defining_work": {
+        "authors": [
+          "Zizi Papacharissi"
+        ],
+        "year": 2002,
+        "title": "The virtual sphere",
+        "type": "article",
+        "venue": "New Media & Society",
+        "doi": "10.1177/14614440222226244",
+        "openalex_id": "W2124467293",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives a normative standard for judging debate.",
+      "source": {
+        "authors": [
+          "Habermas"
+        ],
+        "year": 1989,
+        "title": "The Structural Transformation of the Public Sphere",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780585221991",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/books/OL7955932M, first published 1965). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1989
+      }
+    },
+    {
+      "point": "Adapted to empirical communication research.",
+      "source": {
+        "authors": [
+          "Jürgen Habermas"
+        ],
+        "year": 2006,
+        "title": "Political Communication in Media Society: Does Democracy Still Enjoy an Epistemic Dimension? The Impact of Normative Theory on Empirical Research",
+        "type": "article",
+        "venue": "Communication Theory",
+        "doi": "10.1111/j.1468-2885.2006.00280.x",
+        "openalex_id": "W2105773471",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Excludes women and subordinate groups; there are multiple publics.",
+      "source": {
+        "authors": [
+          "Nancy Wickwire Fraser"
+        ],
+        "year": 1990,
+        "title": "Rethinking the Public Sphere: A Contribution to the Critique of Actually Existing Democracy",
+        "type": "article",
+        "venue": "Social Text",
+        "doi": "10.2307/466240",
+        "openalex_id": "W4243728602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Online spaces fragment rather than unify debate.",
+      "source": {
+        "authors": [
+          "Zizi Papacharissi"
+        ],
+        "year": 2002,
+        "title": "The virtual sphere",
+        "type": "article",
+        "venue": "New Media & Society",
+        "doi": "10.1177/14614440222226244",
+        "openalex_id": "W2124467293",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Habermas"
+        ],
+        "year": 1989,
+        "title": "The Structural Transformation of the Public Sphere",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780585221991",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/books/OL7955932M, first published 1965). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1989
+      },
+      "chapter": null,
+      "why_read": "The concept.",
+      "reading_question": "What criteria of a public sphere will you apply?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Nancy Wickwire Fraser"
+        ],
+        "year": 1990,
+        "title": "Rethinking the Public Sphere: A Contribution to the Critique of Actually Existing Democracy",
+        "type": "article",
+        "venue": "Social Text",
+        "doi": "10.2307/466240",
+        "openalex_id": "W4243728602",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Key critique and extension.",
+      "reading_question": "Which publics exist in your case?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Zizi Papacharissi"
+        ],
+        "year": 2002,
+        "title": "The virtual sphere",
+        "type": "article",
+        "venue": "New Media & Society",
+        "doi": "10.1177/14614440222226244",
+        "openalex_id": "W2124467293",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Online.",
+      "reading_question": "Is your space a public sphere at all?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "public sphere",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}
