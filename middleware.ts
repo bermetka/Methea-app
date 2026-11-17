@@ -10,9 +10,9 @@ export async function middleware(request: NextRequest) {
   // anon id / attribution / price-variant cookies so the funnel credits the source.
   // Written to the request too, so the page renders with them on the very first visit.
   const path = request.nextUrl.pathname
-  const landing = path === '/start' || path === '/check' || path === '/blog' || path.startsWith('/blog/')
+  const landing = path === '/start' || path === '/proposal' || path === '/check' || path === '/blog' || path.startsWith('/blog/')
   const writes = landing
-    ? startCookieWrites(startCookies(request.nextUrl.searchParams, {
+    ? startCookieWrites(startCookies(landingParams(request), {
         anonId: request.cookies.get(ANON_ID_COOKIE)?.value,
         attribution: request.cookies.get(ATTRIBUTION_COOKIE)?.value,
         variant: request.cookies.get(PRICE_VARIANT_COOKIE)?.value,
@@ -30,6 +30,19 @@ export async function middleware(request: NextRequest) {
     response.cookies.set(ANALYTICS_OFF_COOKIE, '1', analyticsOffCookieOptions())
   }
   return response
+}
+
+/**
+ * /proposal is the proposal-angle sales page, so its angle is always `proposal`.
+ * Stamped only when this visit carries a source (utm_*) or there's no attribution
+ * yet, so a plain revisit doesn't wipe the original source.
+ */
+function landingParams(request: NextRequest): URLSearchParams {
+  const params = new URLSearchParams(request.nextUrl.searchParams)
+  if (request.nextUrl.pathname !== '/proposal' || params.has('a')) return params
+  const hasUtm = Array.from(params.keys()).some(k => k.startsWith('utm_'))
+  if (hasUtm || !request.cookies.get(ATTRIBUTION_COOKIE)) params.set('a', 'proposal')
+  return params
 }
 
 function isTestVisit(request: NextRequest): boolean {
