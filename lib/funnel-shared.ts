@@ -16,7 +16,7 @@ export const ANON_ID_COOKIE = 'methea_anon_id'
 export const ATTRIBUTION_COOKIE = 'methea_attribution'
 
 /** Sales-page hero angles (?a=), also the funnel's `angle`. */
-export const START_ANGLES = ['question', 'lens', 'deadline'] as const
+export const START_ANGLES = ['question', 'lens', 'deadline', 'proposal'] as const
 export type StartAngle = (typeof START_ANGLES)[number]
 export const DEFAULT_ANGLE: StartAngle = 'question'
 

@@ -24,6 +24,10 @@ const HEROES: Record<StartAngle, { h1: string; sub: string }> = {
     h1: 'Theoretical framework or literature review? If you’re not sure, your supervisor will notice.',
     sub: 'They sound similar. They do completely different jobs. Mixing them up is one of the fastest ways to get a proposal sent back.',
   },
+  proposal: {
+    h1: 'Your research proposal is due. Your question, theory and method still don’t line up.',
+    sub: 'Line them up tonight — before your supervisor sends it back. Methea asks the questions your supervisor would ask. You decide. You write.',
+  },
   deadline: {
     h1: 'Proposal due soon, and you still can’t explain why you chose your method?',
     sub: 'That’s the first question your committee will ask. Here’s why it’s so hard to answer — and how to fix it this week.',
