@@ -1,0 +1,298 @@
+{
+  "theory_id": null,
+  "library_name": "Discourse and power (Foucault)",
+  "slug": "foucault-discourse-power",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Foucault"
+    ],
+    "year": 1977,
+    "title": "Discipline and Punish: The Birth of the Prison",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9788412471670",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL26841W, first published 1975). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1975
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Power is not only held and imposed from above. It works through knowledge, norms and everyday practices that discipline bodies and shape what counts as normal. Discourses define what can be said, by whom and with what authority.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do institutions such as schools, hospitals or prisons regulate people?",
+    "How does a discourse construct a group (e.g. migrants, 'at-risk' youth)?",
+    "Typical data: archival and document analysis, genealogy, discourse analysis."
+  ],
+  "common_mistakes": [
+    "Using 'discourse' to mean any talk.",
+    "Citing Foucault without a method (genealogy, archaeology).",
+    "Treating power as purely repressive, which Foucault rejects."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Foucault"
+        ],
+        "year": 1978,
+        "title": "The History of Sexuality",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL36417570W, first published None). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": null
+      },
+      "adds": "Biopower and productive power."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Michel Foucault"
+        ],
+        "year": 1982,
+        "title": "The Subject and Power",
+        "type": "article",
+        "venue": "Critical Inquiry",
+        "doi": "10.1086/448181",
+        "openalex_id": "W2141022540",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Power as action on actions; subject formation."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Foucauldian discourse analysis",
+      "summary": "Analysis of discursive formations.",
+      "defining_work": {
+        "authors": [
+          "Foucault"
+        ],
+        "year": 1977,
+        "title": "Discipline and Punish: The Birth of the Prison",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9788412471670",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL26841W, first published 1975). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1975
+      }
+    },
+    {
+      "name": "Governmentality studies",
+      "summary": "Government of conduct (own library entry).",
+      "defining_work": {
+        "authors": [
+          "Nikolas Rose",
+          "Peter Miller"
+        ],
+        "year": 1992,
+        "title": "Political Power beyond the State: Problematics of Government",
+        "type": "article",
+        "venue": "British Journal of Sociology",
+        "doi": "10.2307/591464",
+        "openalex_id": "W4253150158",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Shows how knowledge and power are linked in institutions.",
+      "source": {
+        "authors": [
+          "Michel Foucault"
+        ],
+        "year": 1982,
+        "title": "The Subject and Power",
+        "type": "article",
+        "venue": "Critical Inquiry",
+        "doi": "10.1086/448181",
+        "openalex_id": "W2141022540",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Influential across sociology, education and policy studies.",
+      "source": {
+        "authors": [
+          "Nikolas Rose",
+          "Peter Miller"
+        ],
+        "year": 1992,
+        "title": "Political Power beyond the State: Problematics of Government",
+        "type": "article",
+        "venue": "British Journal of Sociology",
+        "doi": "10.2307/591464",
+        "openalex_id": "W4253150158",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Foucault's account of power leaves no ground for freedom or truth.",
+      "source": {
+        "authors": [
+          "Charles Taylor"
+        ],
+        "year": 1984,
+        "title": "Foucault on Freedom and Truth",
+        "type": "article",
+        "venue": "Political Theory",
+        "doi": "10.1177/0090591784012002002",
+        "openalex_id": "W2083669874",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://journal.iias.ac.in/ojs/index.php/shss/article/view/666"
+      }
+    },
+    {
+      "point": "Normative confusion: critique without stated standards.",
+      "source": {
+        "authors": [
+          "Jürgen Habermas"
+        ],
+        "year": 1985,
+        "title": "The Philosophical Discourse of Modernity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W217783",
+        "isbn": "9780262581028",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1987
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Foucault"
+        ],
+        "year": 1977,
+        "title": "Discipline and Punish: The Birth of the Prison",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9788412471670",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL26841W, first published 1975). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1975
+      },
+      "chapter": null,
+      "why_read": "Disciplinary power.",
+      "reading_question": "Where does surveillance or normalisation appear in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Michel Foucault"
+        ],
+        "year": 1982,
+        "title": "The Subject and Power",
+        "type": "article",
+        "venue": "Critical Inquiry",
+        "doi": "10.1086/448181",
+        "openalex_id": "W2141022540",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Short, clear essay.",
+      "reading_question": "How is the subject formed in your data?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Charles Taylor"
+        ],
+        "year": 1984,
+        "title": "Foucault on Freedom and Truth",
+        "type": "article",
+        "venue": "Political Theory",
+        "doi": "10.1177/0090591784012002002",
+        "openalex_id": "W2083669874",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://journal.iias.ac.in/ojs/index.php/shss/article/view/666"
+      },
+      "chapter": null,
+      "why_read": "Main critique.",
+      "reading_question": "What normative position does your study take?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "Foucault discourse",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

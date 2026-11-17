@@ -1,0 +1,282 @@
+{
+  "theory_id": null,
+  "library_name": "The gift (reciprocity)",
+  "slug": "the-gift",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Mauss"
+    ],
+    "year": 1990,
+    "title": "The Gift: The Form and Reason for Exchange in Archaic Societies",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 2002,
+    "note": "Library record's first publication year is 2002; 1990 is the edition or translation cited here."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Gifts are never free. They create obligations to give, to receive and to give back, and through these obligations exchange builds social relations.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do gift exchange, ceremonies or informal support networks bind people?",
+    "What obligations do remittances or hospitality create?",
+    "Typical data: ethnography, interviews."
+  ],
+  "common_mistakes": [
+    "Treating gifts as economic transactions only.",
+    "Ignoring the obligation to receive.",
+    "Using 'reciprocity' without a type (generalised, balanced, negative)."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sahlins"
+        ],
+        "year": 1972,
+        "title": "Stone Age Economics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781135649722",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1972
+      },
+      "adds": "Types of reciprocity."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Maurice Godelier",
+          "Nora E. Scott"
+        ],
+        "year": 1998,
+        "title": "The enigma of the gift",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2014068074",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "What is kept out of exchange."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Reciprocity types",
+      "summary": "Generalised, balanced, negative.",
+      "defining_work": {
+        "authors": [
+          "Sahlins"
+        ],
+        "year": 1972,
+        "title": "Stone Age Economics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781135649722",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1972
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Classic for studying moral economies of exchange.",
+      "source": {
+        "authors": [
+          "Sahlins"
+        ],
+        "year": 1972,
+        "title": "Stone Age Economics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781135649722",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1972
+      }
+    },
+    {
+      "point": "Fits ceremonies and informal networks.",
+      "source": {
+        "authors": [
+          "Mauss"
+        ],
+        "year": 1990,
+        "title": "The Gift: The Form and Reason for Exchange in Archaic Societies",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2002,
+        "note": "Library record's first publication year is 2002; 1990 is the edition or translation cited here."
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Underplays power and inequality in gifting.",
+      "source": {
+        "authors": [
+          "Maurice Godelier",
+          "Nora E. Scott"
+        ],
+        "year": 1998,
+        "title": "The enigma of the gift",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2014068074",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Romanticises 'archaic' societies.",
+      "source": {
+        "authors": [
+          "Sahlins"
+        ],
+        "year": 1972,
+        "title": "Stone Age Economics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781135649722",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1972
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Mauss"
+        ],
+        "year": 1990,
+        "title": "The Gift: The Form and Reason for Exchange in Archaic Societies",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2002,
+        "note": "Library record's first publication year is 2002; 1990 is the edition or translation cited here."
+      },
+      "chapter": null,
+      "why_read": "Classic essay.",
+      "reading_question": "What obligations does exchange create in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Sahlins"
+        ],
+        "year": 1972,
+        "title": "Stone Age Economics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781135649722",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1972
+      },
+      "chapter": null,
+      "why_read": "Reciprocity types.",
+      "reading_question": "Which type do you see?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Maurice Godelier",
+          "Nora E. Scott"
+        ],
+        "year": 1998,
+        "title": "The enigma of the gift",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2014068074",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Rethinking Mauss.",
+      "reading_question": "What is not exchanged?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "gift exchange",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Gift, Gift. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Prospect theory",
+  "slug": "prospect-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Daniel J. Kahneman",
+      "Amos Tversky"
+    ],
+    "year": 1979,
+    "title": "Prospect Theory: An Analysis of Decision under Risk",
+    "type": "article",
+    "venue": "Econometrica",
+    "doi": "10.2307/1914185",
+    "openalex_id": "W3011865677",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W3011865677",
+  "core_idea": "People judge outcomes as gains or losses relative to a reference point. Losses hurt more than equal gains please (loss aversion), and people weight probabilities non-linearly, which explains risk-seeking in losses and caution in gains.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do farmers, investors, consumers or migrants decide under risk?",
+    "Do leaders take risks to avoid losses (IR applications)?",
+    "Typical data: experiments, surveys, case study."
+  ],
+  "common_mistakes": [
+    "Ignoring the reference point.",
+    "Confusing with expected utility.",
+    "Applying to riskless choices only."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Amos Tversky",
+          "Daniel J. Kahneman"
+        ],
+        "year": 1981,
+        "title": "The Framing of Decisions and the Psychology of Choice",
+        "type": "article",
+        "venue": "Science",
+        "doi": "10.1126/science.7455683",
+        "openalex_id": "W2096452841",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Framing effects."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Amos Tversky",
+          "Daniel J. Kahneman"
+        ],
+        "year": 1992,
+        "title": "Advances in prospect theory: Cumulative representation of uncertainty",
+        "type": "article",
+        "venue": "Journal of Risk and Uncertainty",
+        "doi": "10.1007/bf00122574",
+        "openalex_id": "W2041946752",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Cumulative prospect theory."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Nicholas Barberis"
+        ],
+        "year": 2012,
+        "title": "Thirty Years of Prospect Theory in Economics: A Review and Assessment",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w18621",
+        "openalex_id": "W3125679167",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w18621"
+      },
+      "adds": "Review in economics."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Behavioural economics",
+      "summary": "Economic applications.",
+      "defining_work": {
+        "authors": [
+          "Nicholas Barberis"
+        ],
+        "year": 2012,
+        "title": "Thirty Years of Prospect Theory in Economics: A Review and Assessment",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w18621",
+        "openalex_id": "W3125679167",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w18621"
+      }
+    },
+    {
+      "name": "Political science",
+      "summary": "Risk in foreign policy.",
+      "defining_work": {
+        "authors": [
+          "Jack S. Levy"
+        ],
+        "year": 1992,
+        "title": "An introduction to prospect theory",
+        "type": "article",
+        "venue": "Political Psychology",
+        "doi": null,
+        "openalex_id": "W2255922874",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains many anomalies.",
+      "source": {
+        "authors": [
+          "Nicholas Barberis"
+        ],
+        "year": 2012,
+        "title": "Thirty Years of Prospect Theory in Economics: A Review and Assessment",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w18621",
+        "openalex_id": "W3125679167",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w18621"
+      }
+    },
+    {
+      "point": "Strong experimental base.",
+      "source": {
+        "authors": [
+          "Amos Tversky",
+          "Daniel J. Kahneman"
+        ],
+        "year": 1981,
+        "title": "The Framing of Decisions and the Psychology of Choice",
+        "type": "article",
+        "venue": "Science",
+        "doi": "10.1126/science.7455683",
+        "openalex_id": "W2096452841",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Loss aversion may be weaker than claimed.",
+      "source": {
+        "authors": [
+          "David Gal",
+          "Derek D. Rucker"
+        ],
+        "year": 2018,
+        "title": "The Loss of Loss Aversion: Will It Loom Larger Than Its Gain?",
+        "type": "article",
+        "venue": "Journal of Consumer Psychology",
+        "doi": "10.1002/jcpy.1047",
+        "openalex_id": "W2765812327",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Reference points hard to identify outside the lab.",
+      "source": {
+        "authors": [
+          "Jack S. Levy"
+        ],
+        "year": 1992,
+        "title": "An introduction to prospect theory",
+        "type": "article",
+        "venue": "Political Psychology",
+        "doi": null,
+        "openalex_id": "W2255922874",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Daniel J. Kahneman",
+          "Amos Tversky"
+        ],
+        "year": 1979,
+        "title": "Prospect Theory: An Analysis of Decision under Risk",
+        "type": "article",
+        "venue": "Econometrica",
+        "doi": "10.2307/1914185",
+        "openalex_id": "W3011865677",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "What is the reference point?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Amos Tversky",
+          "Daniel J. Kahneman"
+        ],
+        "year": 1992,
+        "title": "Advances in prospect theory: Cumulative representation of uncertainty",
+        "type": "article",
+        "venue": "Journal of Risk and Uncertainty",
+        "doi": "10.1007/bf00122574",
+        "openalex_id": "W2041946752",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Update.",
+      "reading_question": "Gains or losses frame?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "David Gal",
+          "Derek D. Rucker"
+        ],
+        "year": 2018,
+        "title": "The Loss of Loss Aversion: Will It Loom Larger Than Its Gain?",
+        "type": "article",
+        "venue": "Journal of Consumer Psychology",
+        "doi": "10.1002/jcpy.1047",
+        "openalex_id": "W2765812327",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Is loss aversion present?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "prospect theory",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2024316343",
+        "title": "Risk and Time Preferences: Linking Experimental and Household Survey Data from Vietnam",
+        "year": 2016,
+        "authors": [
+          "Tomomi Tanaka",
+          "Colin F. Camerer",
+          "Quang Nguyen"
+        ],
+        "cited_by": 742,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2739377899",
+        "title": "Prediction‐ and Control‐Based Strategies in Entrepreneurship: The Role of Information",
+        "year": 2016,
+        "authors": [
+          "Graciela Kuechle",
+          "Béatrice Boulu-Reshef",
+          "Sean Carr"
+        ],
+        "cited_by": 676,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2530583575",
+        "title": "An extended TODIM multi-criteria group decision making method for green supplier selection in interval type-2 fuzzy environment",
+        "year": 2016,
+        "authors": [
+          "Jindong Qin",
+          "Xinwang Liu",
+          "Witold Pedrycz C"
+        ],
+        "cited_by": 613,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4236699391",
+        "title": "Advances in Prospect Theory: Cumulative Representation of Uncertainty",
+        "year": 2016,
+        "authors": [
+          "Amos Tversky",
+          "Daniel J. Kahneman"
+        ],
+        "cited_by": 609,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2474022004",
+        "title": "What Drives Business Model Adaptation? The Impact of Opportunities, Threats and Strategic Orientation",
+        "year": 2016,
+        "authors": [
+          "Tina Saebi",
+          "Lasse B. Lien",
+          "Nicolai J. Foss"
+        ],
+        "cited_by": 546,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

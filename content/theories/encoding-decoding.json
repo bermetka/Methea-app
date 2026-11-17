@@ -1,0 +1,318 @@
+{
+  "theory_id": null,
+  "library_name": "Encoding/decoding model",
+  "slug": "encoding-decoding",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Hall"
+    ],
+    "year": 1980,
+    "title": "Encoding/Decoding",
+    "type": "article",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": null,
+    "verified": false,
+    "verified_in": null,
+    "oa_url": null,
+    "note": "Not found in OpenAlex/Crossref as a clean record (classic books often appear only as reviews). Check by ISBN; ? chip until then."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Media messages are encoded with a preferred meaning, but audiences decode them from their own social position. Hall names three readings: dominant, negotiated and oppositional.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do different audiences interpret the same media content?",
+    "How does social position shape reading of news or series?",
+    "Typical data: reception analysis, focus groups, interviews."
+  ],
+  "common_mistakes": [
+    "Sorting audiences into three readings mechanically.",
+    "Analysing only the text and assuming readings.",
+    "Forgetting the encoding side (production)."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Morley"
+        ],
+        "year": 1980,
+        "title": "The 'Nationwide' Audience: Structure and Decoding",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "oa_url": null,
+        "note": "Not found in OpenAlex/Crossref as a clean record (classic books often appear only as reviews). Check by ISBN; ? chip until then."
+      },
+      "adds": "First empirical test with audience groups."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Ien Ang"
+        ],
+        "year": 1985,
+        "title": "Watching Dallas: Soap Opera and the Melodramatic Imagination",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1587507869",
+        "isbn": "9781299865952",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2013,
+        "note": "Library record's first publication year is 2013; 1985 is the edition or translation cited here."
+      },
+      "adds": "Pleasure and ideology in reception."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Justin Wren-Lewis"
+        ],
+        "year": 1983,
+        "title": "The encoding / decoding model: criticisms and redevelopments for research on decoding",
+        "type": "article",
+        "venue": "Media Culture & Society",
+        "doi": "10.1177/016344378300500205",
+        "openalex_id": "W1966900789",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reworks decoding for research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Reception studies",
+      "summary": "Empirical audience research.",
+      "defining_work": {
+        "authors": [
+          "Morley"
+        ],
+        "year": 1980,
+        "title": "The 'Nationwide' Audience: Structure and Decoding",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "oa_url": null,
+        "note": "Not found in OpenAlex/Crossref as a clean record (classic books often appear only as reviews). Check by ISBN; ? chip until then."
+      }
+    },
+    {
+      "name": "Cultural studies of pleasure",
+      "summary": "Audience pleasure and identity.",
+      "defining_work": {
+        "authors": [
+          "Ien Ang"
+        ],
+        "year": 1985,
+        "title": "Watching Dallas: Soap Opera and the Melodramatic Imagination",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1587507869",
+        "isbn": "9781299865952",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2013,
+        "note": "Library record's first publication year is 2013; 1985 is the edition or translation cited here."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Made the active audience central to cultural studies.",
+      "source": {
+        "authors": [
+          "Morley"
+        ],
+        "year": 1980,
+        "title": "The 'Nationwide' Audience: Structure and Decoding",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "oa_url": null,
+        "note": "Not found in OpenAlex/Crossref as a clean record (classic books often appear only as reviews). Check by ISBN; ? chip until then."
+      }
+    },
+    {
+      "point": "Links meaning to social position.",
+      "source": {
+        "authors": [
+          "Hall"
+        ],
+        "year": 1980,
+        "title": "Encoding/Decoding",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "oa_url": null,
+        "note": "Not found in OpenAlex/Crossref as a clean record (classic books often appear only as reviews). Check by ISBN; ? chip until then."
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Three readings are too simple; class does not map neatly onto readings.",
+      "source": {
+        "authors": [
+          "Morley"
+        ],
+        "year": 1980,
+        "title": "The 'Nationwide' Audience: Structure and Decoding",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "oa_url": null,
+        "note": "Not found in OpenAlex/Crossref as a clean record (classic books often appear only as reviews). Check by ISBN; ? chip until then."
+      }
+    },
+    {
+      "point": "'Preferred reading' is hard to identify independently.",
+      "source": {
+        "authors": [
+          "Justin Wren-Lewis"
+        ],
+        "year": 1983,
+        "title": "The encoding / decoding model: criticisms and redevelopments for research on decoding",
+        "type": "article",
+        "venue": "Media Culture & Society",
+        "doi": "10.1177/016344378300500205",
+        "openalex_id": "W1966900789",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Hall"
+        ],
+        "year": 1980,
+        "title": "Encoding/Decoding",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "oa_url": null,
+        "note": "Not found in OpenAlex/Crossref as a clean record (classic books often appear only as reviews). Check by ISBN; ? chip until then."
+      },
+      "chapter": null,
+      "why_read": "The model.",
+      "reading_question": "What is the preferred reading of your text?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Morley"
+        ],
+        "year": 1980,
+        "title": "The 'Nationwide' Audience: Structure and Decoding",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": false,
+        "verified_in": null,
+        "oa_url": null,
+        "note": "Not found in OpenAlex/Crossref as a clean record (classic books often appear only as reviews). Check by ISBN; ? chip until then."
+      },
+      "chapter": null,
+      "why_read": "Empirical test.",
+      "reading_question": "Which groups will you compare?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Justin Wren-Lewis"
+        ],
+        "year": 1983,
+        "title": "The encoding / decoding model: criticisms and redevelopments for research on decoding",
+        "type": "article",
+        "venue": "Media Culture & Society",
+        "doi": "10.1177/016344378300500205",
+        "openalex_id": "W1966900789",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you identify the preferred reading?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "encoding decoding",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Encoding/Decoding; The 'Nationwide' Audience: Structure and Decoding. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

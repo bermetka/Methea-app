@@ -1,0 +1,390 @@
+{
+  "theory_id": null,
+  "library_name": "Technological pedagogical content knowledge (TPACK)",
+  "slug": "tpack",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Punya Mishra",
+      "Matthew J. Koehler"
+    ],
+    "year": 2006,
+    "title": "Technological Pedagogical Content Knowledge: A Framework for Teacher Knowledge",
+    "type": "article",
+    "venue": "Teachers College Record The Voice of Scholarship in Education",
+    "doi": "10.1111/j.1467-9620.2006.00684.x",
+    "openalex_id": "W2123184471",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2123184471",
+  "core_idea": "Teaching with technology needs three kinds of knowledge, technology, pedagogy and content, and above all the knowledge of how they interact in a given subject and context. That intersection is TPACK.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How ready are teachers to integrate technology into their subject teaching?",
+    "How does a training programme change teachers' TPACK?",
+    "Typical data: TPACK surveys, lesson plans, observation, interviews."
+  ],
+  "common_mistakes": [
+    "Measuring only general digital skills (TK) and calling it TPACK.",
+    "Treating the seven components as clearly separable when surveys often fail to separate them.",
+    "Ignoring context, which the framework itself puts around the model."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Lee S. Shulman"
+        ],
+        "year": 1986,
+        "title": "Those Who Understand: Knowledge Growth in Teaching",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.2307/1175860",
+        "openalex_id": "W2140369176",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Pedagogical content knowledge, the base TPACK extends."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Charoula Angeli",
+          "Nicos Valanides"
+        ],
+        "year": 2008,
+        "title": "Epistemological and methodological issues for the conceptualization, development, and assessment of ICT–TPCK: Advances in technological pedagogical content knowledge (TPCK)",
+        "type": "article",
+        "venue": "Computers & Education",
+        "doi": "10.1016/j.compedu.2008.07.006",
+        "openalex_id": "W1991207463",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Epistemological and measurement issues in conceptualising ICT–TPCK."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Denise Ann Schmidt",
+          "Evrim Baran",
+          "Ann D. Thompson",
+          "Punya Mishra",
+          "Matthew J. Koehler",
+          "Tae Seob Shin"
+        ],
+        "year": 2009,
+        "title": "Technological Pedagogical Content Knowledge (TPACK)",
+        "type": "article",
+        "venue": "Journal of Research on Technology in Education",
+        "doi": "10.1080/15391523.2009.10782544",
+        "openalex_id": "W1499368215",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "First widely used survey instrument."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Framework-based design",
+      "summary": "Using TPACK to design teacher education.",
+      "defining_work": {
+        "authors": [
+          "Matthew J. Koehler",
+          "Punya Mishra",
+          "William Cain"
+        ],
+        "year": 2013,
+        "title": "What is Technological Pedagogical Content Knowledge (TPACK)?",
+        "type": "article",
+        "venue": "Journal of Education",
+        "doi": "10.1177/002205741319300303",
+        "openalex_id": "W1552696371",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://revistas.unc.edu.ar/index.php/vesc/article/view/11552"
+      }
+    },
+    {
+      "name": "Measurement strand",
+      "summary": "Building and validating TPACK instruments.",
+      "defining_work": {
+        "authors": [
+          "Denise Ann Schmidt",
+          "Evrim Baran",
+          "Ann D. Thompson",
+          "Punya Mishra",
+          "Matthew J. Koehler",
+          "Tae Seob Shin"
+        ],
+        "year": 2009,
+        "title": "Technological Pedagogical Content Knowledge (TPACK)",
+        "type": "article",
+        "venue": "Journal of Research on Technology in Education",
+        "doi": "10.1080/15391523.2009.10782544",
+        "openalex_id": "W1499368215",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Extends a well-established idea, Shulman's PCK, so it fits teacher-knowledge research.",
+      "source": {
+        "authors": [
+          "Lee S. Shulman"
+        ],
+        "year": 1986,
+        "title": "Those Who Understand: Knowledge Growth in Teaching",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.2307/1175860",
+        "openalex_id": "W2140369176",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Easy to communicate and widely adopted in teacher education.",
+      "source": {
+        "authors": [
+          "Matthew J. Koehler",
+          "Punya Mishra",
+          "William Cain"
+        ],
+        "year": 2013,
+        "title": "What is Technological Pedagogical Content Knowledge (TPACK)?",
+        "type": "article",
+        "venue": "Journal of Education",
+        "doi": "10.1177/002205741319300303",
+        "openalex_id": "W1552696371",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://revistas.unc.edu.ar/index.php/vesc/article/view/11552"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The boundaries between components are fuzzy and hard to define.",
+      "source": {
+        "authors": [
+          "Charles R. Graham"
+        ],
+        "year": 2011,
+        "title": "Theoretical considerations for understanding technological pedagogical content knowledge (TPACK)",
+        "type": "article",
+        "venue": "Computers & Education",
+        "doi": "10.1016/j.compedu.2011.04.010",
+        "openalex_id": "W2118137218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Measures of TPACK are weak and mostly self-report.",
+      "source": {
+        "authors": [
+          "Jason T. Abbitt"
+        ],
+        "year": 2011,
+        "title": "Measuring Technological Pedagogical Content Knowledge in Preservice Teacher Education",
+        "type": "article",
+        "venue": "Journal of Research on Technology in Education",
+        "doi": "10.1080/15391523.2011.10782573",
+        "openalex_id": "W1537774281",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Punya Mishra",
+          "Matthew J. Koehler"
+        ],
+        "year": 2006,
+        "title": "Technological Pedagogical Content Knowledge: A Framework for Teacher Knowledge",
+        "type": "article",
+        "venue": "Teachers College Record The Voice of Scholarship in Education",
+        "doi": "10.1111/j.1467-9620.2006.00684.x",
+        "openalex_id": "W2123184471",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "Which intersection is missing for the teachers you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Matthew J. Koehler",
+          "Punya Mishra",
+          "William Cain"
+        ],
+        "year": 2013,
+        "title": "What is Technological Pedagogical Content Knowledge (TPACK)?",
+        "type": "article",
+        "venue": "Journal of Education",
+        "doi": "10.1177/002205741319300303",
+        "openalex_id": "W1552696371",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://revistas.unc.edu.ar/index.php/vesc/article/view/11552"
+      },
+      "chapter": null,
+      "why_read": "Short, cited restatement.",
+      "reading_question": "How does context enter your study?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Denise Ann Schmidt",
+          "Evrim Baran",
+          "Ann D. Thompson",
+          "Punya Mishra",
+          "Matthew J. Koehler",
+          "Tae Seob Shin"
+        ],
+        "year": 2009,
+        "title": "Technological Pedagogical Content Knowledge (TPACK)",
+        "type": "article",
+        "venue": "Journal of Research on Technology in Education",
+        "doi": "10.1080/15391523.2009.10782544",
+        "openalex_id": "W1499368215",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The standard instrument.",
+      "reading_question": "Will you adapt this survey or use qualitative data?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "TPACK",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W4293731327",
+        "title": "Towards Intelligent-TPACK: An empirical study on teachers’ professional knowledge to ethically integrate artificial intelligence (AI)-based tools into education",
+        "year": 2022,
+        "authors": [
+          "İsmail Çelik"
+        ],
+        "cited_by": 1330,
+        "oa_url": "https://doi.org/10.1016/j.chb.2022.107468"
+      },
+      {
+        "openalex_id": "W4382280288",
+        "title": "Virtual Reality in Education: A Review of Learning Theories, Approaches and Methodologies for the Last Decade",
+        "year": 2023,
+        "authors": [
+          "Andreas Marougkas",
+          "Christos Troussas",
+          "Akrivi Krouska",
+          "Cleo Sgouropoulou"
+        ],
+        "cited_by": 666,
+        "oa_url": "https://doi.org/10.3390/electronics12132832"
+      },
+      {
+        "openalex_id": "W4386069852",
+        "title": "TPACK in the age of ChatGPT and Generative AI",
+        "year": 2023,
+        "authors": [
+          "Punya Mishra",
+          "Melissa Warr",
+          "Rezwana Islam"
+        ],
+        "cited_by": 627,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2939796007",
+        "title": "Considering Contextual Knowledge: The TPACK Diagram Gets an Upgrade",
+        "year": 2019,
+        "authors": [
+          "Punya Mishra"
+        ],
+        "cited_by": 600,
+        "oa_url": "https://doi.org/10.1080/21532974.2019.1588611"
+      },
+      {
+        "openalex_id": "W2472007568",
+        "title": "Handbook of Technological Pedagogical Content Knowledge (TPACK) for Educators",
+        "year": 2016,
+        "authors": [
+          "Mary C. Herring",
+          "Matthew J. Koehler",
+          "Punya Mishra",
+          "Joshua M. Rosenberg",
+          "Jolene K. Teske"
+        ],
+        "cited_by": 476,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): What Is Technological Pedagogical Content Knowledge?. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

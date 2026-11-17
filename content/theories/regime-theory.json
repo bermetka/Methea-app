@@ -1,0 +1,379 @@
+{
+  "theory_id": null,
+  "library_name": "Regime theory",
+  "slug": "regime-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Stephen D. Krasner"
+    ],
+    "year": 1982,
+    "title": "Structural causes and regime consequences: regimes as intervening variables",
+    "type": "article",
+    "venue": "International Organization",
+    "doi": "10.1017/s0020818300018920",
+    "openalex_id": "W2164482078",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2164482078",
+  "core_idea": "International regimes are sets of principles, norms, rules and decision-making procedures around which states' expectations converge in a given issue area.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How is an issue area like water, climate or trade governed internationally?",
+    "Why do regimes form or decline?",
+    "Typical data: case study, document analysis."
+  ],
+  "common_mistakes": [
+    "Calling any agreement a regime.",
+    "Ignoring principles and norms.",
+    "Overlooking power."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Krasner"
+        ],
+        "year": 1983,
+        "title": "International Regimes",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780801415500",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1983
+      },
+      "adds": "Edited volume."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Stephan M. Haggard",
+          "Beth A. Simmons"
+        ],
+        "year": 1987,
+        "title": "Theories of international regimes",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027569",
+        "openalex_id": "W2119987440",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:3117934"
+      },
+      "adds": "Review."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Andreas Hasenclever",
+          "Peter B. Mayer",
+          "Volker Rittberger"
+        ],
+        "year": 1997,
+        "title": "Theories of International Regimes",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511521720",
+        "openalex_id": "W2002528124",
+        "isbn": "9780511521720",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1997
+      },
+      "adds": "Power, interest and knowledge approaches."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Interest-based",
+      "summary": "Rational design.",
+      "defining_work": {
+        "authors": [
+          "Stephan M. Haggard",
+          "Beth A. Simmons"
+        ],
+        "year": 1987,
+        "title": "Theories of international regimes",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027569",
+        "openalex_id": "W2119987440",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:3117934"
+      }
+    },
+    {
+      "name": "Knowledge-based",
+      "summary": "Cognitive approaches.",
+      "defining_work": {
+        "authors": [
+          "Andreas Hasenclever",
+          "Peter B. Mayer",
+          "Volker Rittberger"
+        ],
+        "year": 1997,
+        "title": "Theories of International Regimes",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511521720",
+        "openalex_id": "W2002528124",
+        "isbn": "9780511521720",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1997
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear definition used widely.",
+      "source": {
+        "authors": [
+          "Stephen D. Krasner"
+        ],
+        "year": 1982,
+        "title": "Structural causes and regime consequences: regimes as intervening variables",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300018920",
+        "openalex_id": "W2164482078",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Integrates several approaches.",
+      "source": {
+        "authors": [
+          "Andreas Hasenclever",
+          "Peter B. Mayer",
+          "Volker Rittberger"
+        ],
+        "year": 1997,
+        "title": "Theories of International Regimes",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511521720",
+        "openalex_id": "W2002528124",
+        "isbn": "9780511521720",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1997
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Regime concept is vague and faddish.",
+      "source": {
+        "authors": [
+          "Susan Strange"
+        ],
+        "year": 1982,
+        "title": "Cave! hic dragones: a critique of regime analysis",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300019020",
+        "openalex_id": "W2133878608",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Hard to measure.",
+      "source": {
+        "authors": [
+          "Stephan M. Haggard",
+          "Beth A. Simmons"
+        ],
+        "year": 1987,
+        "title": "Theories of international regimes",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027569",
+        "openalex_id": "W2119987440",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:3117934"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Stephen D. Krasner"
+        ],
+        "year": 1982,
+        "title": "Structural causes and regime consequences: regimes as intervening variables",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300018920",
+        "openalex_id": "W2164482078",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Definition.",
+      "reading_question": "What are the norms of your regime?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Stephan M. Haggard",
+          "Beth A. Simmons"
+        ],
+        "year": 1987,
+        "title": "Theories of international regimes",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027569",
+        "openalex_id": "W2119987440",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://nrs.harvard.edu/urn-3:HUL.InstRepos:3117934"
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Which approach?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Susan Strange"
+        ],
+        "year": 1982,
+        "title": "Cave! hic dragones: a critique of regime analysis",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300019020",
+        "openalex_id": "W2133878608",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Is 'regime' needed?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "international regimes",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2294463066",
+        "title": "From governance to government: The strengthened role of state bureaucracies in forest and agricultural certification",
+        "year": 2016,
+        "authors": [
+          "Lukas Gießen",
+          "Sarah Lilian Burns",
+          "Muhammad Alif K. Sahide",
+          "Agung Wibowo"
+        ],
+        "cited_by": 159,
+        "oa_url": "https://doi.org/10.1016/j.polsoc.2016.02.001"
+      },
+      {
+        "openalex_id": "W3110097646",
+        "title": "Fragmentation and the Future: Investigating Architectures for International AI Governance",
+        "year": 2020,
+        "authors": [
+          "Peter Cihon",
+          "Matthijs M. Maas",
+          "Luke Kemp"
+        ],
+        "cited_by": 122,
+        "oa_url": "https://doi.org/10.1111/1758-5899.12890"
+      },
+      {
+        "openalex_id": "W2962437407",
+        "title": "Beyond internationalisation and isomorphism – the construction of a global higher education regime",
+        "year": 2019,
+        "authors": [
+          "Mike Zapp",
+          "Francisco O. Ramírez"
+        ],
+        "cited_by": 104,
+        "oa_url": "https://orbilu.uni.lu/handle/10993/39861"
+      },
+      {
+        "openalex_id": "W2755526352",
+        "title": "Re-thinking the politics of migration. On the uses and challenges of regime perspectives for migration research",
+        "year": 2017,
+        "authors": [
+          "Kenneth Horvath",
+          "Anna Amelina",
+          "Karin Peters"
+        ],
+        "cited_by": 101,
+        "oa_url": "https://doi.org/10.1093/migration/mnx055"
+      },
+      {
+        "openalex_id": "W2911993872",
+        "title": "How viable is international arms control for military artificial intelligence? Three lessons from nuclear weapons",
+        "year": 2019,
+        "authors": [
+          "Matthijs M. Maas"
+        ],
+        "cited_by": 89,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 9 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

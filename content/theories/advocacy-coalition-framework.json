@@ -1,0 +1,379 @@
+{
+  "theory_id": null,
+  "library_name": "Advocacy coalition framework",
+  "slug": "advocacy-coalition-framework",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Paul Sabatier"
+    ],
+    "year": 1988,
+    "title": "An advocacy coalition framework of policy change and the role of policy-oriented learning therein",
+    "type": "article",
+    "venue": "Policy Sciences",
+    "doi": "10.1007/bf00136406",
+    "openalex_id": "W2067516463",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2067516463",
+  "core_idea": "Policy subsystems contain competing coalitions united by core beliefs. Policy changes through learning over long periods or after external shocks.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Who are the coalitions in a long policy debate?",
+    "How do beliefs and learning shape policy change?",
+    "Typical data: document analysis, interviews, discourse network analysis."
+  ],
+  "common_mistakes": [
+    "Defining coalitions without beliefs.",
+    "Short time frames.",
+    "Ignoring belief hierarchy."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sabatier"
+        ],
+        "year": 1993,
+        "title": "Policy Change and Learning: An Advocacy Coalition Approach",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780813316482",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1993
+      },
+      "adds": "Book."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Christopher M. Weible",
+          "Paul Sabatier",
+          "Kelly McQueen"
+        ],
+        "year": 2009,
+        "title": "Themes and Variations: Taking Stock of the Advocacy Coalition Framework",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2008.00299.x",
+        "openalex_id": "W2109332867",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Michael Mintrom",
+          "Sandra Vergari"
+        ],
+        "year": 1996,
+        "title": "Advocacy Coalitions, Policy Entrepreneurs, and Policy Change",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.1996.tb01638.x",
+        "openalex_id": "W2110961648",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Links advocacy coalitions with policy entrepreneurs as drivers of change."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Coalition analysis",
+      "summary": "Beliefs and actors.",
+      "defining_work": {
+        "authors": [
+          "Paul Sabatier"
+        ],
+        "year": 1988,
+        "title": "An advocacy coalition framework of policy change and the role of policy-oriented learning therein",
+        "type": "article",
+        "venue": "Policy Sciences",
+        "doi": "10.1007/bf00136406",
+        "openalex_id": "W2067516463",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Discourse network analysis",
+      "summary": "Measuring coalitions.",
+      "defining_work": {
+        "authors": [
+          "Christopher M. Weible",
+          "Paul Sabatier",
+          "Kelly McQueen"
+        ],
+        "year": 2009,
+        "title": "Themes and Variations: Taking Stock of the Advocacy Coalition Framework",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2008.00299.x",
+        "openalex_id": "W2109332867",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Widely tested across countries.",
+      "source": {
+        "authors": [
+          "Christopher M. Weible",
+          "Paul Sabatier",
+          "Kelly McQueen"
+        ],
+        "year": 2009,
+        "title": "Themes and Variations: Taking Stock of the Advocacy Coalition Framework",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2008.00299.x",
+        "openalex_id": "W2109332867",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Explains long-term change.",
+      "source": {
+        "authors": [
+          "Paul Sabatier"
+        ],
+        "year": 1988,
+        "title": "An advocacy coalition framework of policy change and the role of policy-oriented learning therein",
+        "type": "article",
+        "venue": "Policy Sciences",
+        "doi": "10.1007/bf00136406",
+        "openalex_id": "W2067516463",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Coalition formation under-theorised.",
+      "source": {
+        "authors": [
+          "Edella C. Schlager"
+        ],
+        "year": 1995,
+        "title": "Policy making and collective action: Defining coalitions within the advocacy coalition framework",
+        "type": "article",
+        "venue": "Policy Sciences",
+        "doi": "10.1007/bf01000289",
+        "openalex_id": "W2081091912",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Built for US pluralism.",
+      "source": {
+        "authors": [
+          "Christopher M. Weible",
+          "Paul Sabatier",
+          "Kelly McQueen"
+        ],
+        "year": 2009,
+        "title": "Themes and Variations: Taking Stock of the Advocacy Coalition Framework",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2008.00299.x",
+        "openalex_id": "W2109332867",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Paul Sabatier"
+        ],
+        "year": 1988,
+        "title": "An advocacy coalition framework of policy change and the role of policy-oriented learning therein",
+        "type": "article",
+        "venue": "Policy Sciences",
+        "doi": "10.1007/bf00136406",
+        "openalex_id": "W2067516463",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "What coalitions exist?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Christopher M. Weible",
+          "Paul Sabatier",
+          "Kelly McQueen"
+        ],
+        "year": 2009,
+        "title": "Themes and Variations: Taking Stock of the Advocacy Coalition Framework",
+        "type": "article",
+        "venue": "Policy Studies Journal",
+        "doi": "10.1111/j.1541-0072.2008.00299.x",
+        "openalex_id": "W2109332867",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Which hypotheses?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Edella C. Schlager"
+        ],
+        "year": 1995,
+        "title": "Policy making and collective action: Defining coalitions within the advocacy coalition framework",
+        "type": "article",
+        "venue": "Policy Sciences",
+        "doi": "10.1007/bf01000289",
+        "openalex_id": "W2081091912",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How do coalitions form?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "advocacy coalition",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2804139680",
+        "title": "Moving policy implementation theory forward: A multiple streams/critical juncture approach",
+        "year": 2018,
+        "authors": [
+          "Michael P. Howlett"
+        ],
+        "cited_by": 250,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2981126960",
+        "title": "So you want to be a policy entrepreneur?",
+        "year": 2019,
+        "authors": [
+          "Michael Mintrom"
+        ],
+        "cited_by": 243,
+        "oa_url": "https://doi.org/10.1080/25741292.2019.1675989"
+      },
+      {
+        "openalex_id": "W2953857718",
+        "title": "Sharpening Advocacy Coalitions",
+        "year": 2019,
+        "authors": [
+          "Christopher M. Weible",
+          "Karin Miryam Ingold",
+          "Daniel Nohrstedt",
+          "Adam Douglas Henry",
+          "Hank C. Jenkins‐Smith"
+        ],
+        "cited_by": 208,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2589042760",
+        "title": "There and Back Again: A Tale of the Advocacy Coalition Framework",
+        "year": 2017,
+        "authors": [
+          "Jonathan J. Pierce",
+          "Holly L. Peterson",
+          "Michael D. Jones",
+          "Samantha P. Garrard",
+          "Theresa Vu"
+        ],
+        "cited_by": 198,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2294696601",
+        "title": "Moving Policy Theory Forward: Connecting Multiple Stream and Advocacy Coalition Frameworks to Policy Cycle Models of Analysis",
+        "year": 2016,
+        "authors": [
+          "Michael P. Howlett",
+          "Allan McConnell",
+          "Anthony D. Perl"
+        ],
+        "cited_by": 146,
+        "oa_url": "https://doi.org/10.1111/1467-8500.12191"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "theory_id": null,
+  "library_name": "Varieties of capitalism",
+  "slug": "varieties-of-capitalism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Peter A. Hall",
+      "David W. Soskice"
+    ],
+    "year": 2001,
+    "title": "Varieties of Capitalism",
+    "type": "book",
+    "venue": null,
+    "doi": "10.1093/0199247757.001.0001",
+    "openalex_id": "W4229738978",
+    "isbn": "9780191530104",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "first_publish_year": 2001
+  },
+  "citation_anchor_openalex_id": "W4229738978",
+  "core_idea": "Capitalist economies differ systematically. Liberal market economies coordinate through markets; coordinated market economies through non-market institutions. These institutional complementarities shape firms' strategies and comparative advantage.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do national institutions shape firms or skills systems?",
+    "What kind of capitalism exists in post-Soviet states?",
+    "Typical data: comparative case study, document analysis."
+  ],
+  "common_mistakes": [
+    "Forcing countries into two types.",
+    "Ignoring change.",
+    "Firm-centred analysis without firm data."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bruno Amable"
+        ],
+        "year": 2003,
+        "title": "The Diversity of Modern Capitalism",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/019926113x.001.0001",
+        "openalex_id": "W1581235435",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Alternative typology: five models of capitalism."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Andreas Nölke",
+          "Arjan Vliegenthart"
+        ],
+        "year": 2009,
+        "title": "Enlarging the Varieties of Capitalism: The Emergence of Dependent Market Economies in East Central Europe",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1017/s0043887109990098",
+        "openalex_id": "W2112908401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/s0043887109990098"
+      },
+      "adds": "Dependent market economies."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Ben Ross Schneider"
+        ],
+        "year": 2009,
+        "title": "Hierarchical Market Economies and Varieties of Capitalism in Latin America",
+        "type": "article",
+        "venue": "Journal of Latin American Studies",
+        "doi": "10.1017/s0022216x09990186",
+        "openalex_id": "W2145042386",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1721.1/64399"
+      },
+      "adds": "Hierarchical market economies."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Dependent market economies",
+      "summary": "Post-communist Europe.",
+      "defining_work": {
+        "authors": [
+          "Andreas Nölke",
+          "Arjan Vliegenthart"
+        ],
+        "year": 2009,
+        "title": "Enlarging the Varieties of Capitalism: The Emergence of Dependent Market Economies in East Central Europe",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1017/s0043887109990098",
+        "openalex_id": "W2112908401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/s0043887109990098"
+      }
+    },
+    {
+      "name": "Hierarchical market economies",
+      "summary": "Latin America.",
+      "defining_work": {
+        "authors": [
+          "Ben Ross Schneider"
+        ],
+        "year": 2009,
+        "title": "Hierarchical Market Economies and Varieties of Capitalism in Latin America",
+        "type": "article",
+        "venue": "Journal of Latin American Studies",
+        "doi": "10.1017/s0022216x09990186",
+        "openalex_id": "W2145042386",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1721.1/64399"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear comparative framework.",
+      "source": {
+        "authors": [
+          "Peter A. Hall",
+          "David W. Soskice"
+        ],
+        "year": 2001,
+        "title": "Varieties of Capitalism",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0199247757.001.0001",
+        "openalex_id": "W4229738978",
+        "isbn": "9780191530104",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001
+      }
+    },
+    {
+      "point": "Extended to new regions.",
+      "source": {
+        "authors": [
+          "Andreas Nölke",
+          "Arjan Vliegenthart"
+        ],
+        "year": 2009,
+        "title": "Enlarging the Varieties of Capitalism: The Emergence of Dependent Market Economies in East Central Europe",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1017/s0043887109990098",
+        "openalex_id": "W2112908401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/s0043887109990098"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Static and too few types.",
+      "source": {
+        "authors": [
+          "Colin F. Crouch"
+        ],
+        "year": 2005,
+        "title": "Capitalist Diversity and Change",
+        "type": "book",
+        "venue": "Oxford University Press eBooks",
+        "doi": "10.1093/acprof:oso/9780199286652.001.0001",
+        "openalex_id": "W4256658305",
+        "isbn": "9781280903847",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      }
+    },
+    {
+      "point": "Ignores conflict and the state.",
+      "source": {
+        "authors": [
+          "Bob Hancké",
+          "Martin Rhodes",
+          "Mark Thatcher"
+        ],
+        "year": 2007,
+        "title": "Beyond Varieties of Capitalism",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/acprof:oso/9780199206483.001.0001",
+        "openalex_id": "W2483025142",
+        "isbn": "9780199547012",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2007
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Peter A. Hall",
+          "David W. Soskice"
+        ],
+        "year": 2001,
+        "title": "Varieties of Capitalism",
+        "type": "book",
+        "venue": null,
+        "doi": "10.1093/0199247757.001.0001",
+        "openalex_id": "W4229738978",
+        "isbn": "9780191530104",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001
+      },
+      "chapter": null,
+      "why_read": "Read the introduction.",
+      "reading_question": "Which coordination type?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Andreas Nölke",
+          "Arjan Vliegenthart"
+        ],
+        "year": 2009,
+        "title": "Enlarging the Varieties of Capitalism: The Emergence of Dependent Market Economies in East Central Europe",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1017/s0043887109990098",
+        "openalex_id": "W2112908401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/s0043887109990098"
+      },
+      "chapter": null,
+      "why_read": "Extension.",
+      "reading_question": "Does your country fit a type?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Colin F. Crouch"
+        ],
+        "year": 2005,
+        "title": "Capitalist Diversity and Change",
+        "type": "book",
+        "venue": "Oxford University Press eBooks",
+        "doi": "10.1093/acprof:oso/9780199286652.001.0001",
+        "openalex_id": "W4256658305",
+        "isbn": "9781280903847",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you handle change?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "varieties of capitalism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2609664987",
+        "title": "Varieties of capitalism in light of the euro crisis",
+        "year": 2017,
+        "authors": [
+          "Peter A. Hall"
+        ],
+        "cited_by": 214,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3121604306",
+        "title": "Mapping the business systems of 61 major economies: a taxonomy and implications for varieties of capitalism and business systems research",
+        "year": 2017,
+        "authors": [
+          "Michael A. Witt",
+          "Luiz Ricardo Kabbach de Castro",
+          "Kenneth Amaeshi",
+          "Sami Mahroum",
+          "Dorothee Böhle",
+          "Lawrence Sáez"
+        ],
+        "cited_by": 196,
+        "oa_url": "https://doi.org/10.1093/ser/mwx012"
+      },
+      {
+        "openalex_id": "W2802592827",
+        "title": "Theoretical and methodological pathways for research on elites",
+        "year": 2018,
+        "authors": [
+          "Bruno Cousin",
+          "Shamus Khan",
+          "Ashley Mears"
+        ],
+        "cited_by": 182,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W1901990306",
+        "title": "The Eurozone and Political Economic Institutions",
+        "year": 2016,
+        "authors": [
+          "Torben Iversen",
+          "David Soskice",
+          "David Hope"
+        ],
+        "cited_by": 179,
+        "oa_url": "https://doi.org/10.1146/annurev-polisci-022615-113243"
+      },
+      {
+        "openalex_id": "W2332699522",
+        "title": "Varieties of capitalism and clean energy transitions in the European Union: When renewable energy hits different economic logics",
+        "year": 2016,
+        "authors": [
+          "Stefan Ćetković",
+          "Áron Buzogány"
+        ],
+        "cited_by": 172,
+        "oa_url": "https://doi.org/10.1080/14693062.2015.1135778"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

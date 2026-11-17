@@ -1,0 +1,317 @@
+{
+  "theory_id": null,
+  "library_name": "Everyday resistance",
+  "slug": "everyday-resistance",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Scott"
+    ],
+    "year": 1985,
+    "title": "Weapons of the Weak: Everyday Forms of Peasant Resistance",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9787544700245",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1985
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Subordinate groups resist mostly through quiet everyday acts: foot-dragging, evasion, gossip, pilfering. Behind public deference lies a hidden transcript of critique.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do workers, students or villagers resist authority without open protest?",
+    "What is said off-stage about power?",
+    "Typical data: ethnography, interviews."
+  ],
+  "common_mistakes": [
+    "Calling every act resistance.",
+    "Ignoring intention and effects.",
+    "Studying only public transcripts."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Scott"
+        ],
+        "year": 1990,
+        "title": "Domination and the Arts of Resistance: Hidden Transcripts",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780300153569",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1990
+      },
+      "adds": "Hidden and public transcripts."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Anna Johansson",
+          "Stellan Vinthagen"
+        ],
+        "year": 2014,
+        "title": "Dimensions of Everyday Resistance: An Analytical Framework",
+        "type": "article",
+        "venue": "Critical Sociology",
+        "doi": "10.1177/0896920514524604",
+        "openalex_id": "W2050955039",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Gives an analytical framework with dimensions of everyday resistance."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Jocelyn A. Hollander",
+          "Rachel L. Einwohner"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Resistance",
+        "type": "article",
+        "venue": "Sociological Forum",
+        "doi": "10.1007/s11206-004-0694-5",
+        "openalex_id": "W4254226956",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Typology of resistance."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Hidden transcripts",
+      "summary": "Off-stage critique.",
+      "defining_work": {
+        "authors": [
+          "Scott"
+        ],
+        "year": 1990,
+        "title": "Domination and the Arts of Resistance: Hidden Transcripts",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780300153569",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1990
+      }
+    },
+    {
+      "name": "Resistance as diagnostic",
+      "summary": "Reading power through resistance.",
+      "defining_work": {
+        "authors": [
+          "Lila Abu‐Lughod"
+        ],
+        "year": 1990,
+        "title": "the romance of resistance: tracing transformations of power through Bedouin women",
+        "type": "article",
+        "venue": "American Ethnologist",
+        "doi": "10.1525/ae.1990.17.1.02a00030",
+        "openalex_id": "W1970533074",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Makes invisible politics visible.",
+      "source": {
+        "authors": [
+          "Scott"
+        ],
+        "year": 1985,
+        "title": "Weapons of the Weak: Everyday Forms of Peasant Resistance",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787544700245",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1985
+      }
+    },
+    {
+      "point": "Widely used concept.",
+      "source": {
+        "authors": [
+          "Jocelyn A. Hollander",
+          "Rachel L. Einwohner"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Resistance",
+        "type": "article",
+        "venue": "Sociological Forum",
+        "doi": "10.1007/s11206-004-0694-5",
+        "openalex_id": "W4254226956",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Risk of romanticising resistance.",
+      "source": {
+        "authors": [
+          "Lila Abu‐Lughod"
+        ],
+        "year": 1990,
+        "title": "the romance of resistance: tracing transformations of power through Bedouin women",
+        "type": "article",
+        "venue": "American Ethnologist",
+        "doi": "10.1525/ae.1990.17.1.02a00030",
+        "openalex_id": "W1970533074",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Concept too broad.",
+      "source": {
+        "authors": [
+          "Jocelyn A. Hollander",
+          "Rachel L. Einwohner"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Resistance",
+        "type": "article",
+        "venue": "Sociological Forum",
+        "doi": "10.1007/s11206-004-0694-5",
+        "openalex_id": "W4254226956",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Scott"
+        ],
+        "year": 1985,
+        "title": "Weapons of the Weak: Everyday Forms of Peasant Resistance",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787544700245",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1985
+      },
+      "chapter": null,
+      "why_read": "Classic.",
+      "reading_question": "What everyday acts do you see?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Scott"
+        ],
+        "year": 1990,
+        "title": "Domination and the Arts of Resistance: Hidden Transcripts",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780300153569",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1990
+      },
+      "chapter": null,
+      "why_read": "Hidden transcripts.",
+      "reading_question": "How will you access off-stage talk?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jocelyn A. Hollander",
+          "Rachel L. Einwohner"
+        ],
+        "year": 2004,
+        "title": "Conceptualizing Resistance",
+        "type": "article",
+        "venue": "Sociological Forum",
+        "doi": "10.1007/s11206-004-0694-5",
+        "openalex_id": "W4254226956",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Typology.",
+      "reading_question": "How will you define resistance?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "everyday resistance",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

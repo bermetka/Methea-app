@@ -1,0 +1,317 @@
+{
+  "theory_id": null,
+  "library_name": "Hierarchy of influences model",
+  "slug": "hierarchy-of-influences",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Shoemaker"
+    ],
+    "year": 1996,
+    "title": "Mediating the Message: Theories of Influences on Mass Media Content",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780801312519",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Library record's first publication year is 1991; 1996 is the edition or translation cited here.",
+    "first_publish_year": 1991
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Media content is shaped by nested levels of influence: individual journalists, media routines, organisations, extramedia forces such as sources and advertisers, and ideology.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why does media content look the way it does in a given country or outlet?",
+    "Which influences do journalists perceive as strongest?",
+    "Typical data: journalist interviews and surveys, content analysis, case study."
+  ],
+  "common_mistakes": [
+    "Studying one level and claiming to explain content.",
+    "Treating levels as independent when they are nested.",
+    "Ignoring platform-era actors."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Stephen D. Reese"
+        ],
+        "year": 2001,
+        "title": "Understanding the Global Journalist: a hierarchy-of-influences approach",
+        "type": "article",
+        "venue": "Journalism Studies",
+        "doi": "10.1080/14616700118394",
+        "openalex_id": "W2126008348",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Applies the model globally."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Stephen D. Reese",
+          "Pamela J. Shoemaker"
+        ],
+        "year": 2016,
+        "title": "A Media Sociology for the Networked Public Sphere: The Hierarchy of Influences Model",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1080/15205436.2016.1174268",
+        "openalex_id": "W2462319741",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Updates the model for networked media."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Comparative journalism",
+      "summary": "Worlds of Journalism research.",
+      "defining_work": {
+        "authors": [
+          "Thomas Hanitzsch",
+          "Maria Anikina",
+          "Rosa Berganza",
+          "İncilay Cangöz",
+          "Mihaï Coman",
+          "Basyouni Ibrahim Hamada"
+        ],
+        "year": 2010,
+        "title": "Modeling Perceived Influences on Journalism: Evidence from a Cross-National Survey of Journalists",
+        "type": "article",
+        "venue": "Journalism & Mass Communication Quarterly",
+        "doi": "10.1177/107769901008700101",
+        "openalex_id": "W2062427504",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://eprints.qut.edu.au/68292/1/2010_-_Hanitzsch_et_al_-_JMCQ_-_Modeling_Perceived_Influences.pdf"
+      }
+    },
+    {
+      "name": "Networked media sociology",
+      "summary": "Model updated for platforms.",
+      "defining_work": {
+        "authors": [
+          "Stephen D. Reese",
+          "Pamela J. Shoemaker"
+        ],
+        "year": 2016,
+        "title": "A Media Sociology for the Networked Public Sphere: The Hierarchy of Influences Model",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1080/15205436.2016.1174268",
+        "openalex_id": "W2462319741",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Organises many factors into a clear framework.",
+      "source": {
+        "authors": [
+          "Shoemaker"
+        ],
+        "year": 1996,
+        "title": "Mediating the Message: Theories of Influences on Mass Media Content",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780801312519",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 1991; 1996 is the edition or translation cited here.",
+        "first_publish_year": 1991
+      }
+    },
+    {
+      "point": "Supported by cross-national evidence.",
+      "source": {
+        "authors": [
+          "Thomas Hanitzsch",
+          "Maria Anikina",
+          "Rosa Berganza",
+          "İncilay Cangöz",
+          "Mihaï Coman",
+          "Basyouni Ibrahim Hamada"
+        ],
+        "year": 2010,
+        "title": "Modeling Perceived Influences on Journalism: Evidence from a Cross-National Survey of Journalists",
+        "type": "article",
+        "venue": "Journalism & Mass Communication Quarterly",
+        "doi": "10.1177/107769901008700101",
+        "openalex_id": "W2062427504",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://eprints.qut.edu.au/68292/1/2010_-_Hanitzsch_et_al_-_JMCQ_-_Modeling_Perceived_Influences.pdf"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Levels blur in networked media, as the authors acknowledge.",
+      "source": {
+        "authors": [
+          "Stephen D. Reese",
+          "Pamela J. Shoemaker"
+        ],
+        "year": 2016,
+        "title": "A Media Sociology for the Networked Public Sphere: The Hierarchy of Influences Model",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1080/15205436.2016.1174268",
+        "openalex_id": "W2462319741",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Perceived influences may differ from actual ones.",
+      "source": {
+        "authors": [
+          "Thomas Hanitzsch",
+          "Maria Anikina",
+          "Rosa Berganza",
+          "İncilay Cangöz",
+          "Mihaï Coman",
+          "Basyouni Ibrahim Hamada"
+        ],
+        "year": 2010,
+        "title": "Modeling Perceived Influences on Journalism: Evidence from a Cross-National Survey of Journalists",
+        "type": "article",
+        "venue": "Journalism & Mass Communication Quarterly",
+        "doi": "10.1177/107769901008700101",
+        "openalex_id": "W2062427504",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://eprints.qut.edu.au/68292/1/2010_-_Hanitzsch_et_al_-_JMCQ_-_Modeling_Perceived_Influences.pdf"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Shoemaker"
+        ],
+        "year": 1996,
+        "title": "Mediating the Message: Theories of Influences on Mass Media Content",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780801312519",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 1991; 1996 is the edition or translation cited here.",
+        "first_publish_year": 1991
+      },
+      "chapter": null,
+      "why_read": "The model.",
+      "reading_question": "Which levels matter in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Stephen D. Reese",
+          "Pamela J. Shoemaker"
+        ],
+        "year": 2016,
+        "title": "A Media Sociology for the Networked Public Sphere: The Hierarchy of Influences Model",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1080/15205436.2016.1174268",
+        "openalex_id": "W2462319741",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Update.",
+      "reading_question": "Where do platforms fit?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Thomas Hanitzsch",
+          "Maria Anikina",
+          "Rosa Berganza",
+          "İncilay Cangöz",
+          "Mihaï Coman",
+          "Basyouni Ibrahim Hamada"
+        ],
+        "year": 2010,
+        "title": "Modeling Perceived Influences on Journalism: Evidence from a Cross-National Survey of Journalists",
+        "type": "article",
+        "venue": "Journalism & Mass Communication Quarterly",
+        "doi": "10.1177/107769901008700101",
+        "openalex_id": "W2062427504",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://eprints.qut.edu.au/68292/1/2010_-_Hanitzsch_et_al_-_JMCQ_-_Modeling_Perceived_Influences.pdf"
+      },
+      "chapter": null,
+      "why_read": "Evidence.",
+      "reading_question": "Perceived or actual influences?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "hierarchy of influences",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

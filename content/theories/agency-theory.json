@@ -1,0 +1,349 @@
+{
+  "theory_id": null,
+  "library_name": "Agency theory (principal–agent)",
+  "slug": "agency-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Michael C. Jensen",
+      "William H. Meckling"
+    ],
+    "year": 1976,
+    "title": "Theory of the firm: Managerial behavior, agency costs and ownership structure",
+    "type": "article",
+    "venue": "Journal of Financial Economics",
+    "doi": "10.1016/0304-405x(76)90026-x",
+    "openalex_id": "W2752617332",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2752617332",
+  "core_idea": "When a principal delegates work to an agent whose interests differ and who knows more, agency costs arise. Contracts, monitoring and incentives try to align interests.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do incentives and monitoring work in firms, the public sector or donor-NGO relations?",
+    "Why does delegation fail?",
+    "Typical data: case study, interviews, surveys."
+  ],
+  "common_mistakes": [
+    "Assuming agents are always opportunistic.",
+    "Ignoring information asymmetry type.",
+    "Applying firm models to politics without adaptation."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Stephen A. Ross"
+        ],
+        "year": 1973,
+        "title": "The Economic Theory of Agency: The Principal's Problem.",
+        "type": "article",
+        "venue": "American Economic Review",
+        "doi": null,
+        "openalex_id": "W1527412032",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Formal principal–agent problem."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Kathleen M. Eisenhardt"
+        ],
+        "year": 1989,
+        "title": "Agency Theory: An Assessment and Review",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/258191",
+        "openalex_id": "W2095299437",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review for organisation research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Positivist agency theory",
+      "summary": "Corporate governance.",
+      "defining_work": {
+        "authors": [
+          "Michael C. Jensen",
+          "William H. Meckling"
+        ],
+        "year": 1976,
+        "title": "Theory of the firm: Managerial behavior, agency costs and ownership structure",
+        "type": "article",
+        "venue": "Journal of Financial Economics",
+        "doi": "10.1016/0304-405x(76)90026-x",
+        "openalex_id": "W2752617332",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Political principal–agent",
+      "summary": "Delegation in politics.",
+      "defining_work": {
+        "authors": [
+          "Gary J. Miller"
+        ],
+        "year": 2005,
+        "title": "THE POLITICAL EVOLUTION OF PRINCIPAL-AGENT MODELS",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.8.082103.104840",
+        "openalex_id": "W2105736111",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Useful for incentive problems.",
+      "source": {
+        "authors": [
+          "Kathleen M. Eisenhardt"
+        ],
+        "year": 1989,
+        "title": "Agency Theory: An Assessment and Review",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/258191",
+        "openalex_id": "W2095299437",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Widely applied.",
+      "source": {
+        "authors": [
+          "Gary J. Miller"
+        ],
+        "year": 2005,
+        "title": "THE POLITICAL EVOLUTION OF PRINCIPAL-AGENT MODELS",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.8.082103.104840",
+        "openalex_id": "W2105736111",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Agents may act as stewards, not opportunists.",
+      "source": {
+        "authors": [
+          "James H. Davis",
+          "F. David Schoorman",
+          "Lex Donaldson"
+        ],
+        "year": 1997,
+        "title": "TOWARD A STEWARDSHIP THEORY OF MANAGEMENT",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/259223",
+        "openalex_id": "W2041790104",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Its assumptions harm management practice.",
+      "source": {
+        "authors": [
+          "Sumantra Ghoshal"
+        ],
+        "year": 2005,
+        "title": "Bad management theories are destroying good management practices",
+        "type": "article",
+        "venue": "IEEE Engineering Management Review",
+        "doi": "10.1109/emr.2005.26768",
+        "openalex_id": "W2760977209",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Michael C. Jensen",
+          "William H. Meckling"
+        ],
+        "year": 1976,
+        "title": "Theory of the firm: Managerial behavior, agency costs and ownership structure",
+        "type": "article",
+        "venue": "Journal of Financial Economics",
+        "doi": "10.1016/0304-405x(76)90026-x",
+        "openalex_id": "W2752617332",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Article.",
+      "reading_question": "Who is principal and who is agent?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Kathleen M. Eisenhardt"
+        ],
+        "year": 1989,
+        "title": "Agency Theory: An Assessment and Review",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/258191",
+        "openalex_id": "W2095299437",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Which control mechanism?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "James H. Davis",
+          "F. David Schoorman",
+          "Lex Donaldson"
+        ],
+        "year": 1997,
+        "title": "TOWARD A STEWARDSHIP THEORY OF MANAGEMENT",
+        "type": "article",
+        "venue": "Academy of Management Review",
+        "doi": "10.2307/259223",
+        "openalex_id": "W2041790104",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Alternative.",
+      "reading_question": "Agent or steward?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "principal agent",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2896085285",
+        "title": "The impact of the blockchain on the supply chain: a theory-based research framework and a call for action",
+        "year": 2018,
+        "authors": [
+          "Horst Treiblmaier"
+        ],
+        "cited_by": 1015,
+        "oa_url": "https://doi.org/10.1108/scm-01-2018-0029"
+      },
+      {
+        "openalex_id": "W2967936587",
+        "title": "The impact of corporate governance on corporate tax avoidance—A literature review",
+        "year": 2019,
+        "authors": [
+          "Jost Kovermann",
+          "Patrick Velte"
+        ],
+        "cited_by": 485,
+        "oa_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3274498"
+      },
+      {
+        "openalex_id": "W2759849223",
+        "title": "Disrupting governance with blockchains and smart contracts",
+        "year": 2017,
+        "authors": [
+          "Shermin Voshmgir"
+        ],
+        "cited_by": 238,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3197236612",
+        "title": "Environmental, social and governance factors and assessing firm value: valuation, signalling and stakeholder perspectives",
+        "year": 2021,
+        "authors": [
+          "Danny Zhao‐Xiang Huang"
+        ],
+        "cited_by": 229,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2210928332",
+        "title": "Agency theory: the times, they are a-changin’",
+        "year": 2016,
+        "authors": [
+          "Joshua S. Bendickson",
+          "Jeff Muldoon",
+          "Eric W. Liguori",
+          "Phillip E. Davis"
+        ],
+        "cited_by": 201,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

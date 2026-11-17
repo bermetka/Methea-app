@@ -1,0 +1,311 @@
+{
+  "theory_id": null,
+  "library_name": "Structural realism",
+  "slug": "structural-realism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Waltz"
+    ],
+    "year": 1979,
+    "title": "Theory of International Politics",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780075548522",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1979
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "States exist in an anarchic system without world government, so they must rely on self-help for security. The distribution of capabilities among states (polarity) shapes their behaviour more than their domestic politics.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do great powers compete, balance or form alliances?",
+    "How do small states (e.g. in Central Asia) balance between larger ones?",
+    "Typical data: case study, process tracing, historical analysis."
+  ],
+  "common_mistakes": [
+    "Using 'realism' without distinguishing classical, structural, offensive and defensive versions.",
+    "Explaining foreign policy with a theory of international outcomes.",
+    "Ignoring domestic factors entirely when your case needs them."
+  ],
+  "development": [
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Robert L. Jervis"
+        ],
+        "year": 1978,
+        "title": "Cooperation under the Security Dilemma",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.2307/2009958",
+        "openalex_id": "W4230800277",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2027/uc1.31158011478350"
+      },
+      "adds": "Security dilemma and defensive realism."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Stephen M. Walt"
+        ],
+        "year": 1985,
+        "title": "Alliance Formation and the Balance of World Power",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2538540",
+        "openalex_id": "W2013737776",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Balance of threat."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Mearsheimer"
+        ],
+        "year": 2001,
+        "title": "The Tragedy of Great Power Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780393978391",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2001
+      },
+      "adds": "Offensive realism."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Defensive realism",
+      "summary": "States seek security.",
+      "defining_work": {
+        "authors": [
+          "Robert L. Jervis"
+        ],
+        "year": 1978,
+        "title": "Cooperation under the Security Dilemma",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.2307/2009958",
+        "openalex_id": "W4230800277",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2027/uc1.31158011478350"
+      }
+    },
+    {
+      "name": "Offensive realism",
+      "summary": "States maximise power.",
+      "defining_work": {
+        "authors": [
+          "Mearsheimer"
+        ],
+        "year": 2001,
+        "title": "The Tragedy of Great Power Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780393978391",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2001
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Parsimonious and explains recurring balancing.",
+      "source": {
+        "authors": [
+          "Stephen M. Walt"
+        ],
+        "year": 1985,
+        "title": "Alliance Formation and the Balance of World Power",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2538540",
+        "openalex_id": "W2013737776",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Clear structural logic.",
+      "source": {
+        "authors": [
+          "Waltz"
+        ],
+        "year": 1979,
+        "title": "Theory of International Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780075548522",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1979
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Cannot explain systemic change.",
+      "source": {
+        "authors": [
+          "John Gerard Ruggie"
+        ],
+        "year": 1983,
+        "title": "Continuity and Transformation in the World Polity: Toward a Neorealist Synthesis",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.2307/2010273",
+        "openalex_id": "W2153452406",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Anarchy has no fixed logic; it is socially constructed.",
+      "source": {
+        "authors": [
+          "Alexander E. Wendt"
+        ],
+        "year": 1992,
+        "title": "Anarchy is what states make of it: the social construction of power politics",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027764",
+        "openalex_id": "W2150518915",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Waltz"
+        ],
+        "year": 1979,
+        "title": "Theory of International Politics",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780075548522",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1979
+      },
+      "chapter": null,
+      "why_read": "Read chapters 5–6.",
+      "reading_question": "Is your question about outcomes or a state's policy?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Stephen M. Walt"
+        ],
+        "year": 1985,
+        "title": "Alliance Formation and the Balance of World Power",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2538540",
+        "openalex_id": "W2013737776",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Balance of threat.",
+      "reading_question": "Power or threat?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Alexander E. Wendt"
+        ],
+        "year": 1992,
+        "title": "Anarchy is what states make of it: the social construction of power politics",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027764",
+        "openalex_id": "W2150518915",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Constructivist critique.",
+      "reading_question": "Why realism and not constructivism?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "neorealism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Embodiment paradigm",
+  "slug": "embodiment",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Thomas J. Csordas"
+    ],
+    "year": 1990,
+    "title": "Embodiment as a Paradigm for Anthropology",
+    "type": "article",
+    "venue": "Ethos",
+    "doi": "10.1525/eth.1990.18.1.02a00010",
+    "openalex_id": "W2074477189",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2074477189",
+  "core_idea": "The body is not just an object shaped by culture; it is the lived ground of experience and culture. Research studies how people perceive and act through their bodies.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people experience illness, healing, pain or sport?",
+    "How are religious or work practices lived in the body?",
+    "Typical data: phenomenological interviews, ethnography."
+  ],
+  "common_mistakes": [
+    "Treating the body only as a symbol.",
+    "Ignoring perception and practice.",
+    "No phenomenological method."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Merleau-Ponty"
+        ],
+        "year": 1962,
+        "title": "Phenomenology of Perception",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780353322943",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2002,
+        "note": "Library record's first publication year is 2002; 1962 is the edition or translation cited here."
+      },
+      "adds": "Lived body."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Thomas J. Csordas"
+        ],
+        "year": 1993,
+        "title": "Somatic Modes of Attention",
+        "type": "article",
+        "venue": "Cultural Anthropology",
+        "doi": "10.1525/can.1993.8.2.02a00010",
+        "openalex_id": "W2064749916",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1525/can.1993.8.2.02a00010"
+      },
+      "adds": "Somatic modes of attention."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Nancy Scheper‐Hughes",
+          "Margaret M. Lock"
+        ],
+        "year": 1987,
+        "title": "The Mindful Body: A Prolegomenon to Future Work in Medical Anthropology",
+        "type": "article",
+        "venue": "Medical Anthropology Quarterly",
+        "doi": "10.1525/maq.1987.1.1.02a00020",
+        "openalex_id": "W2115067809",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Three bodies in medical anthropology."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Phenomenological anthropology",
+      "summary": "Lived experience.",
+      "defining_work": {
+        "authors": [
+          "Thomas J. Csordas"
+        ],
+        "year": 1993,
+        "title": "Somatic Modes of Attention",
+        "type": "article",
+        "venue": "Cultural Anthropology",
+        "doi": "10.1525/can.1993.8.2.02a00010",
+        "openalex_id": "W2064749916",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1525/can.1993.8.2.02a00010"
+      }
+    },
+    {
+      "name": "Medical anthropology",
+      "summary": "Body, illness, society.",
+      "defining_work": {
+        "authors": [
+          "Nancy Scheper‐Hughes",
+          "Margaret M. Lock"
+        ],
+        "year": 1987,
+        "title": "The Mindful Body: A Prolegomenon to Future Work in Medical Anthropology",
+        "type": "article",
+        "venue": "Medical Anthropology Quarterly",
+        "doi": "10.1525/maq.1987.1.1.02a00020",
+        "openalex_id": "W2115067809",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Central in medical anthropology.",
+      "source": {
+        "authors": [
+          "Nancy Scheper‐Hughes",
+          "Margaret M. Lock"
+        ],
+        "year": 1987,
+        "title": "The Mindful Body: A Prolegomenon to Future Work in Medical Anthropology",
+        "type": "article",
+        "venue": "Medical Anthropology Quarterly",
+        "doi": "10.1525/maq.1987.1.1.02a00020",
+        "openalex_id": "W2115067809",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Bridges experience and culture.",
+      "source": {
+        "authors": [
+          "Thomas J. Csordas"
+        ],
+        "year": 1990,
+        "title": "Embodiment as a Paradigm for Anthropology",
+        "type": "article",
+        "venue": "Ethos",
+        "doi": "10.1525/eth.1990.18.1.02a00010",
+        "openalex_id": "W2074477189",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Hard to operationalise in research.",
+      "source": {
+        "authors": [
+          "Thomas J. Csordas"
+        ],
+        "year": 1993,
+        "title": "Somatic Modes of Attention",
+        "type": "article",
+        "venue": "Cultural Anthropology",
+        "doi": "10.1525/can.1993.8.2.02a00010",
+        "openalex_id": "W2064749916",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1525/can.1993.8.2.02a00010"
+      }
+    },
+    {
+      "point": "Risk of neglecting structure.",
+      "source": {
+        "authors": [
+          "Nancy Scheper‐Hughes",
+          "Margaret M. Lock"
+        ],
+        "year": 1987,
+        "title": "The Mindful Body: A Prolegomenon to Future Work in Medical Anthropology",
+        "type": "article",
+        "venue": "Medical Anthropology Quarterly",
+        "doi": "10.1525/maq.1987.1.1.02a00020",
+        "openalex_id": "W2115067809",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Thomas J. Csordas"
+        ],
+        "year": 1990,
+        "title": "Embodiment as a Paradigm for Anthropology",
+        "type": "article",
+        "venue": "Ethos",
+        "doi": "10.1525/eth.1990.18.1.02a00010",
+        "openalex_id": "W2074477189",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Paradigm.",
+      "reading_question": "What bodily experience do you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Nancy Scheper‐Hughes",
+          "Margaret M. Lock"
+        ],
+        "year": 1987,
+        "title": "The Mindful Body: A Prolegomenon to Future Work in Medical Anthropology",
+        "type": "article",
+        "venue": "Medical Anthropology Quarterly",
+        "doi": "10.1525/maq.1987.1.1.02a00020",
+        "openalex_id": "W2115067809",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Three bodies.",
+      "reading_question": "Individual, social or political body?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Thomas J. Csordas"
+        ],
+        "year": 1993,
+        "title": "Somatic Modes of Attention",
+        "type": "article",
+        "venue": "Cultural Anthropology",
+        "doi": "10.1525/can.1993.8.2.02a00010",
+        "openalex_id": "W2064749916",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1525/can.1993.8.2.02a00010"
+      },
+      "chapter": null,
+      "why_read": "Method.",
+      "reading_question": "How will you capture embodied experience?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "embodiment",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3103741966",
+        "title": "Embodiment in Socially Interactive Robots",
+        "year": 2019,
+        "authors": [
+          "Eric Deng",
+          "Bilge Mutlu",
+          "Maja J. Matarić"
+        ],
+        "cited_by": 238,
+        "oa_url": "http://arxiv.org/abs/1912.00312"
+      },
+      {
+        "openalex_id": "W2611746604",
+        "title": "Embodiment, Enaction, and Culture",
+        "year": 2017,
+        "authors": [
+          "Christoph Durt",
+          "Thomas Fuchs",
+          "Christian Tewes"
+        ],
+        "cited_by": 182,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2772426075",
+        "title": "Embodiment in Evolution and Culture",
+        "year": 2016,
+        "authors": [
+          "Gregor Etzelmüller",
+          "Christian Tewes",
+          "Mohr Siebeck GmbH &amp; Co. KG"
+        ],
+        "cited_by": 148,
+        "oa_url": "https://doi.org/10.1628/9783161549014"
+      },
+      {
+        "openalex_id": "W2946376070",
+        "title": "Body pedagogics: embodied learning for the health professions",
+        "year": 2019,
+        "authors": [
+          "Martina Ann Kelly",
+          "Rachel Ellaway",
+          "Albert J J A Scherpbier",
+          "NIGEL MARTYN KING",
+          "Tim Dornan"
+        ],
+        "cited_by": 87,
+        "oa_url": "https://pure.qub.ac.uk/en/publications/9bf9c869-acff-4e66-82a6-b9ced8532c5a"
+      },
+      {
+        "openalex_id": "W2305391668",
+        "title": "Embodiment and the Construction of Social Knowledge: Towards an Integration of Embodiment and Social Representations Theory",
+        "year": 2016,
+        "authors": [
+          "Cliódhna O’Connor"
+        ],
+        "cited_by": 71,
+        "oa_url": "https://doi.org/10.1111/jtsb.12110"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

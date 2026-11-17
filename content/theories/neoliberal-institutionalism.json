@@ -1,0 +1,318 @@
+{
+  "theory_id": null,
+  "library_name": "Neoliberal institutionalism",
+  "slug": "neoliberal-institutionalism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Keohane"
+    ],
+    "year": 1984,
+    "title": "After Hegemony",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780691122489",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1984
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Even under anarchy states can cooperate, because international institutions reduce transaction costs, provide information and make commitments credible.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do states cooperate through organisations like the EAEU or SCO?",
+    "How do institutions shape state behaviour?",
+    "Typical data: case study, process tracing, document analysis."
+  ],
+  "common_mistakes": [
+    "Assuming institutions always work.",
+    "Ignoring distribution of gains.",
+    "Confusing with liberalism about domestic politics."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Keohane"
+        ],
+        "year": 1977,
+        "title": "Power and Interdependence",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780205250660",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1988,
+        "note": "Library record's first publication year is 1988; 1977 is the edition or translation cited here."
+      },
+      "adds": "Complex interdependence."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Robert Axelrod",
+          "Robert O. Keohane"
+        ],
+        "year": 1986,
+        "title": "Achieving Cooperation Under Anarchy: Strategies And Institutions",
+        "type": "chapter",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9780691186702-011",
+        "openalex_id": "W4255992615",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Repeated games and institutions."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Robert O. Keohane",
+          "Lisa L. Martin"
+        ],
+        "year": 1995,
+        "title": "The Promise of Institutionalist Theory",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2539214",
+        "openalex_id": "W2158616796",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reply to realist critics."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Complex interdependence",
+      "summary": "Multiple channels and issues.",
+      "defining_work": {
+        "authors": [
+          "Keohane"
+        ],
+        "year": 1977,
+        "title": "Power and Interdependence",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780205250660",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1988,
+        "note": "Library record's first publication year is 1988; 1977 is the edition or translation cited here."
+      }
+    },
+    {
+      "name": "Rational institutionalism",
+      "summary": "Institutions as solutions to cooperation problems.",
+      "defining_work": {
+        "authors": [
+          "Robert Axelrod",
+          "Robert O. Keohane"
+        ],
+        "year": 1986,
+        "title": "Achieving Cooperation Under Anarchy: Strategies And Institutions",
+        "type": "chapter",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9780691186702-011",
+        "openalex_id": "W4255992615",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains cooperation realists cannot.",
+      "source": {
+        "authors": [
+          "Robert Axelrod",
+          "Robert O. Keohane"
+        ],
+        "year": 1986,
+        "title": "Achieving Cooperation Under Anarchy: Strategies And Institutions",
+        "type": "chapter",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9780691186702-011",
+        "openalex_id": "W4255992615",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Clear mechanisms.",
+      "source": {
+        "authors": [
+          "Robert O. Keohane",
+          "Lisa L. Martin"
+        ],
+        "year": 1995,
+        "title": "The Promise of Institutionalist Theory",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2539214",
+        "openalex_id": "W2158616796",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Institutions have little independent effect.",
+      "source": {
+        "authors": [
+          "John J. Mearsheimer"
+        ],
+        "year": 1994,
+        "title": "The False Promise of International Institutions",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2539078",
+        "openalex_id": "W4248020846",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "States care about relative gains.",
+      "source": {
+        "authors": [
+          "Joseph M. Grieco"
+        ],
+        "year": 1988,
+        "title": "Anarchy and the limits of cooperation: a realist critique of the newest liberal institutionalism",
+        "type": "article",
+        "venue": "International Organization",
+        "doi": "10.1017/s0020818300027715",
+        "openalex_id": "W1971144627",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Keohane"
+        ],
+        "year": 1984,
+        "title": "After Hegemony",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780691122489",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1984
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "What problem does the institution solve?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Robert O. Keohane",
+          "Lisa L. Martin"
+        ],
+        "year": 1995,
+        "title": "The Promise of Institutionalist Theory",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2539214",
+        "openalex_id": "W2158616796",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Debate.",
+      "reading_question": "Absolute or relative gains?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "John J. Mearsheimer"
+        ],
+        "year": 1994,
+        "title": "The False Promise of International Institutions",
+        "type": "article",
+        "venue": "International Security",
+        "doi": "10.2307/2539078",
+        "openalex_id": "W4248020846",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Does the institution matter independently?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "international institutions cooperation",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

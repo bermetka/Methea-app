@@ -1,0 +1,349 @@
+{
+  "theory_id": null,
+  "library_name": "Cultural-historical activity theory (CHAT)",
+  "slug": "activity-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Yrjö Engeström"
+    ],
+    "year": 2001,
+    "title": "Expansive Learning at Work: Toward an activity theoretical reconceptualization",
+    "type": "article",
+    "venue": "Journal of Education and Work",
+    "doi": "10.1080/13639080020028747",
+    "openalex_id": "W2139894798",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://doi.org/10.1080/13639080123238"
+  },
+  "citation_anchor_openalex_id": "W2139894798",
+  "core_idea": "Human activity forms systems: a subject works on an object using tools, within rules, a community and a division of labour. Contradictions within and between activity systems drive change and expansive learning.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does a new tool, policy or practice change work in a school or organisation?",
+    "What tensions arise between groups working on a shared object?",
+    "Typical data: case study, Change Laboratory interventions, ethnography, interviews."
+  ],
+  "common_mistakes": [
+    "Drawing the triangle without analysing contradictions, the engine of the theory.",
+    "Using 'activity' to mean any task.",
+    "Ignoring history, the 'historical' in CHAT."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Engeström"
+        ],
+        "year": 1987,
+        "title": "Learning by Expanding",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781107640108",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2014,
+        "note": "Library record's first publication year is 2014; 1987 is the edition or translation cited here."
+      },
+      "adds": "The expanded activity system triangle."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Yrjö Engeström",
+          "Annalisa Sannino"
+        ],
+        "year": 2010,
+        "title": "Studies of expansive learning: Foundations, findings and future challenges",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2009.12.002",
+        "openalex_id": "W2168353148",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://forumoswiatowe.pl/index.php/czasopismo/article/view/121"
+      },
+      "adds": "Review of expansive learning research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Expansive learning / Change Laboratory",
+      "summary": "Interventionist strand.",
+      "defining_work": {
+        "authors": [
+          "Yrjö Engeström",
+          "Annalisa Sannino"
+        ],
+        "year": 2010,
+        "title": "Studies of expansive learning: Foundations, findings and future challenges",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2009.12.002",
+        "openalex_id": "W2168353148",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://forumoswiatowe.pl/index.php/czasopismo/article/view/121"
+      }
+    },
+    {
+      "name": "Activity theory in HCI and information systems",
+      "summary": "Design of tools and technology.",
+      "defining_work": {
+        "authors": [
+          "Engeström"
+        ],
+        "year": 1987,
+        "title": "Learning by Expanding",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781107640108",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2014,
+        "note": "Library record's first publication year is 2014; 1987 is the edition or translation cited here."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Strong body of intervention studies.",
+      "source": {
+        "authors": [
+          "Yrjö Engeström",
+          "Annalisa Sannino"
+        ],
+        "year": 2010,
+        "title": "Studies of expansive learning: Foundations, findings and future challenges",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2009.12.002",
+        "openalex_id": "W2168353148",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://forumoswiatowe.pl/index.php/czasopismo/article/view/121"
+      }
+    },
+    {
+      "point": "Links individual action and collective systems.",
+      "source": {
+        "authors": [
+          "Yrjö Engeström"
+        ],
+        "year": 2001,
+        "title": "Expansive Learning at Work: Toward an activity theoretical reconceptualization",
+        "type": "article",
+        "venue": "Journal of Education and Work",
+        "doi": "10.1080/13639080020028747",
+        "openalex_id": "W2139894798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/13639080123238"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Activity theory risks becoming a descriptive scheme without theory.",
+      "source": {
+        "authors": [
+          "David Bakhurst"
+        ],
+        "year": 2009,
+        "title": "Reflections on activity theory",
+        "type": "article",
+        "venue": "Educational Review",
+        "doi": "10.1080/00131910902846916",
+        "openalex_id": "W2118908845",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The triangle is often applied mechanically.",
+      "source": {
+        "authors": [
+          "David Bakhurst"
+        ],
+        "year": 2009,
+        "title": "Reflections on activity theory",
+        "type": "article",
+        "venue": "Educational Review",
+        "doi": "10.1080/00131910902846916",
+        "openalex_id": "W2118908845",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Yrjö Engeström"
+        ],
+        "year": 2001,
+        "title": "Expansive Learning at Work: Toward an activity theoretical reconceptualization",
+        "type": "article",
+        "venue": "Journal of Education and Work",
+        "doi": "10.1080/13639080020028747",
+        "openalex_id": "W2139894798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/13639080123238"
+      },
+      "chapter": null,
+      "why_read": "Third-generation CHAT.",
+      "reading_question": "What contradictions exist in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Yrjö Engeström",
+          "Annalisa Sannino"
+        ],
+        "year": 2010,
+        "title": "Studies of expansive learning: Foundations, findings and future challenges",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2009.12.002",
+        "openalex_id": "W2168353148",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://forumoswiatowe.pl/index.php/czasopismo/article/view/121"
+      },
+      "chapter": null,
+      "why_read": "Expansive learning.",
+      "reading_question": "Is your study descriptive or interventionist?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "David Bakhurst"
+        ],
+        "year": 2009,
+        "title": "Reflections on activity theory",
+        "type": "article",
+        "venue": "Educational Review",
+        "doi": "10.1080/00131910902846916",
+        "openalex_id": "W2118908845",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you go beyond the triangle?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "activity theory",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3080820004",
+        "title": "From mediated actions to heterogenous coalitions: four generations of activity-theoretical studies of work and learning",
+        "year": 2020,
+        "authors": [
+          "Yrjö Engeström",
+          "Annalisa Sannino"
+        ],
+        "cited_by": 404,
+        "oa_url": "https://doi.org/10.1080/10749039.2020.1806328"
+      },
+      {
+        "openalex_id": "W2905294339",
+        "title": "Studies in Expansive Learning",
+        "year": 2016,
+        "authors": [
+          "Yrjö Engeström"
+        ],
+        "cited_by": 304,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3045862609",
+        "title": "Learning Language, Learning Culture: Teaching Language to the Whole Student",
+        "year": 2020,
+        "authors": [
+          "Deoksoon Kim"
+        ],
+        "cited_by": 284,
+        "oa_url": "https://doi.org/10.1177/2096531120936693"
+      },
+      {
+        "openalex_id": "W3040577642",
+        "title": "Understanding digitalization and educational change in school by means of activity theory and the levels of learning concept",
+        "year": 2020,
+        "authors": [
+          "Fanny Pettersson"
+        ],
+        "cited_by": 270,
+        "oa_url": "https://doi.org/10.1007/s10639-020-10239-8"
+      },
+      {
+        "openalex_id": "W3116136585",
+        "title": "The educational response to Covid-19 across two countries: a critical examination of initial digital pedagogy adoption",
+        "year": 2020,
+        "authors": [
+          "Christine M. Greenhow",
+          "Cathy Lewin",
+          "K. Bret Staudt Willet"
+        ],
+        "cited_by": 211,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Activity, Consciousness, and Personality. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

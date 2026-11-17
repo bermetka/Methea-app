@@ -1,0 +1,373 @@
+{
+  "theory_id": null,
+  "library_name": "Intersectionality",
+  "slug": "intersectionality",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Kimberle Williams Crenshaw"
+    ],
+    "year": 1991,
+    "title": "Mapping the Margins: Intersectionality, Identity Politics, and Violence against Women of Color",
+    "type": "article",
+    "venue": "Stanford Law Review",
+    "doi": "10.2307/1229039",
+    "openalex_id": "W2337002970",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2337002970",
+  "core_idea": "Systems of power such as race, gender and class intersect. People at the intersections face forms of disadvantage that single-category analysis cannot see.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people at several social categories at once experience education, work or health care?",
+    "How do policies affect groups at intersections?",
+    "Typical data: interviews, narrative inquiry, intersectional quantitative analysis."
+  ],
+  "common_mistakes": [
+    "Listing identities without analysing power.",
+    "Adding categories as variables and calling it intersectionality.",
+    "Not saying which approach to categories you take (McCall)."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Collins"
+        ],
+        "year": 1990,
+        "title": "Black Feminist Thought: Knowledge, Consciousness, and the Politics of Empowerment",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781003245650",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL1870600W, first published 1990). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1990
+      },
+      "adds": "Matrix of domination."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Leslie McCall"
+        ],
+        "year": 2005,
+        "title": "The Complexity of Intersectionality",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/426800",
+        "openalex_id": "W1986792585",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Anti-, intra- and intercategorical approaches."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Sumi Cho",
+          "Kimberle Williams Crenshaw",
+          "Leslie McCall"
+        ],
+        "year": 2013,
+        "title": "Toward a Field of Intersectionality Studies: Theory, Applications, and Praxis",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/669608",
+        "openalex_id": "W2002213000",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://scholarship.law.columbia.edu/faculty_scholarship/3445"
+      },
+      "adds": "Maps the field."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Intercategorical (quantitative)",
+      "summary": "Comparing groups across categories.",
+      "defining_work": {
+        "authors": [
+          "Leslie McCall"
+        ],
+        "year": 2005,
+        "title": "The Complexity of Intersectionality",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/426800",
+        "openalex_id": "W1986792585",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Public health intersectionality",
+      "summary": "Health inequalities.",
+      "defining_work": {
+        "authors": [
+          "Lisa Bowleg"
+        ],
+        "year": 2012,
+        "title": "The Problem With the Phrase Women and Minorities: Intersectionality—an Important Theoretical Framework for Public Health",
+        "type": "article",
+        "venue": "American Journal of Public Health",
+        "doi": "10.2105/ajph.2012.300750",
+        "openalex_id": "W2163816615",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3477987"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Makes invisible forms of disadvantage visible.",
+      "source": {
+        "authors": [
+          "Kimberle Williams Crenshaw"
+        ],
+        "year": 1991,
+        "title": "Mapping the Margins: Intersectionality, Identity Politics, and Violence against Women of Color",
+        "type": "article",
+        "venue": "Stanford Law Review",
+        "doi": "10.2307/1229039",
+        "openalex_id": "W2337002970",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Adopted across disciplines including public health.",
+      "source": {
+        "authors": [
+          "Lisa Bowleg"
+        ],
+        "year": 2012,
+        "title": "The Problem With the Phrase Women and Minorities: Intersectionality—an Important Theoretical Framework for Public Health",
+        "type": "article",
+        "venue": "American Journal of Public Health",
+        "doi": "10.2105/ajph.2012.300750",
+        "openalex_id": "W2163816615",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3477987"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Unclear methodology and focus on Black women as the prototypical subject.",
+      "source": {
+        "authors": [
+          "Jennifer Christine Nash"
+        ],
+        "year": 2008,
+        "title": "Re-Thinking Intersectionality",
+        "type": "article",
+        "venue": "Feminist Review",
+        "doi": "10.1057/fr.2008.4",
+        "openalex_id": "W2102167286",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://philarchive.org/rec/NASRI"
+      }
+    },
+    {
+      "point": "Methodological complexity: how to handle categories is unresolved.",
+      "source": {
+        "authors": [
+          "Leslie McCall"
+        ],
+        "year": 2005,
+        "title": "The Complexity of Intersectionality",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/426800",
+        "openalex_id": "W1986792585",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Kimberle Williams Crenshaw"
+        ],
+        "year": 1991,
+        "title": "Mapping the Margins: Intersectionality, Identity Politics, and Violence against Women of Color",
+        "type": "article",
+        "venue": "Stanford Law Review",
+        "doi": "10.2307/1229039",
+        "openalex_id": "W2337002970",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Founding article.",
+      "reading_question": "Which intersections matter in your study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Leslie McCall"
+        ],
+        "year": 2005,
+        "title": "The Complexity of Intersectionality",
+        "type": "article",
+        "venue": "Signs",
+        "doi": "10.1086/426800",
+        "openalex_id": "W1986792585",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Methodology.",
+      "reading_question": "Which approach to categories will you take?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jennifer Christine Nash"
+        ],
+        "year": 2008,
+        "title": "Re-Thinking Intersectionality",
+        "type": "article",
+        "venue": "Feminist Review",
+        "doi": "10.1057/fr.2008.4",
+        "openalex_id": "W2102167286",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://philarchive.org/rec/NASRI"
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you avoid a list of identities?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "intersectionality",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2982628989",
+        "title": "Intersectionality as Critical Social Theory",
+        "year": 2019,
+        "authors": [
+          "Patrícia Hill Collins"
+        ],
+        "cited_by": 1818,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2754426660",
+        "title": "Unsettling race and language: Toward a raciolinguistic perspective",
+        "year": 2017,
+        "authors": [
+          "Jonathan Rosa",
+          "Nelson Flores"
+        ],
+        "cited_by": 1676,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3155877377",
+        "title": "Intersectionality in quantitative research: A systematic review of its emergence and applications of theory and methods",
+        "year": 2021,
+        "authors": [
+          "Greta R. Bauer",
+          "Siobhan M. Churchill",
+          "Mayuri Mahendran",
+          "Chantel Walwyn",
+          "Daniel J. Lizotte",
+          "Alma Angélica Villa-Rueda"
+        ],
+        "cited_by": 931,
+        "oa_url": "https://doi.org/10.1016/j.ssmph.2021.100798"
+      },
+      {
+        "openalex_id": "W2806119487",
+        "title": "Race and gender differences in how sense of belonging influences decisions to major in STEM",
+        "year": 2018,
+        "authors": [
+          "Katherine D. Rainey",
+          "Melissa Dancy",
+          "Roslyn Arlin Mickelson",
+          "Elizabeth Stearns",
+          "Stephanie Möller"
+        ],
+        "cited_by": 707,
+        "oa_url": "https://doi.org/10.1186/s40594-018-0115-6"
+      },
+      {
+        "openalex_id": "W2610364475",
+        "title": "Intersectional HCI",
+        "year": 2017,
+        "authors": [
+          "Ari Schlesinger",
+          "W. Keith Edwards",
+          "Rebecca E. Grinter"
+        ],
+        "cited_by": 466,
+        "oa_url": "https://doi.org/10.1145/3025453.3025766"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

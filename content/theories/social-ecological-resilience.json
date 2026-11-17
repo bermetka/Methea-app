@@ -1,0 +1,377 @@
+{
+  "theory_id": null,
+  "library_name": "Social-ecological resilience",
+  "slug": "social-ecological-resilience",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Carl Folke"
+    ],
+    "year": 2006,
+    "title": "Resilience: The emergence of a perspective for social–ecological systems analyses",
+    "type": "article",
+    "venue": "Global Environmental Change",
+    "doi": "10.1016/j.gloenvcha.2006.04.002",
+    "openalex_id": "W2084530896",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2084530896",
+  "core_idea": "People and nature form linked social-ecological systems. Resilience is the capacity to absorb disturbance, reorganise and keep core functions, and also to adapt or transform.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do communities adapt to climate change or disasters?",
+    "What makes an agricultural system resilient?",
+    "Typical data: case study, mixed methods, participatory modelling."
+  ],
+  "common_mistakes": [
+    "Using 'resilience' as bounce-back only.",
+    "Ignoring who benefits from resilience.",
+    "Not defining resilience of what to what."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Crawford S. Holling"
+        ],
+        "year": 1973,
+        "title": "Resilience and Stability of Ecological Systems",
+        "type": "article",
+        "venue": "Annual Review of Ecology and Systematics",
+        "doi": "10.1146/annurev.es.04.110173.000245",
+        "openalex_id": "W2011303397",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://pure.iiasa.ac.at/id/eprint/26/1/RP-73-003.pdf"
+      },
+      "adds": "Ecological resilience."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Brian Walker",
+          "Crawford S. Holling",
+          "Stephen R. Carpenter",
+          "Ann P. Kinzig"
+        ],
+        "year": 2004,
+        "title": "Resilience, Adaptability and Transformability in Social-ecological Systems",
+        "type": "article",
+        "venue": "Ecology and Society",
+        "doi": "10.5751/es-00650-090205",
+        "openalex_id": "W2274815048",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.5751/es-00650-090205"
+      },
+      "adds": "Adaptability and transformability."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "William Neil Adger"
+        ],
+        "year": 2000,
+        "title": "Social and ecological resilience: are they related?",
+        "type": "article",
+        "venue": "Progress in Human Geography",
+        "doi": "10.1191/030913200701540465",
+        "openalex_id": "W2096522898",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Social resilience."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Ecological resilience",
+      "summary": "Holling's tradition.",
+      "defining_work": {
+        "authors": [
+          "Crawford S. Holling"
+        ],
+        "year": 1973,
+        "title": "Resilience and Stability of Ecological Systems",
+        "type": "article",
+        "venue": "Annual Review of Ecology and Systematics",
+        "doi": "10.1146/annurev.es.04.110173.000245",
+        "openalex_id": "W2011303397",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://pure.iiasa.ac.at/id/eprint/26/1/RP-73-003.pdf"
+      }
+    },
+    {
+      "name": "Social resilience",
+      "summary": "Communities.",
+      "defining_work": {
+        "authors": [
+          "William Neil Adger"
+        ],
+        "year": 2000,
+        "title": "Social and ecological resilience: are they related?",
+        "type": "article",
+        "venue": "Progress in Human Geography",
+        "doi": "10.1191/030913200701540465",
+        "openalex_id": "W2096522898",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Integrates social and ecological dynamics.",
+      "source": {
+        "authors": [
+          "Carl Folke"
+        ],
+        "year": 2006,
+        "title": "Resilience: The emergence of a perspective for social–ecological systems analyses",
+        "type": "article",
+        "venue": "Global Environmental Change",
+        "doi": "10.1016/j.gloenvcha.2006.04.002",
+        "openalex_id": "W2084530896",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Useful for climate adaptation research.",
+      "source": {
+        "authors": [
+          "Brian Walker",
+          "Crawford S. Holling",
+          "Stephen R. Carpenter",
+          "Ann P. Kinzig"
+        ],
+        "year": 2004,
+        "title": "Resilience, Adaptability and Transformability in Social-ecological Systems",
+        "type": "article",
+        "venue": "Ecology and Society",
+        "doi": "10.5751/es-00650-090205",
+        "openalex_id": "W2274815048",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.5751/es-00650-090205"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Ignores power and politics.",
+      "source": {
+        "authors": [
+          "Muriel Côte",
+          "Andrea Joslyn Nightingale"
+        ],
+        "year": 2011,
+        "title": "Resilience thinking meets social theory",
+        "type": "article",
+        "venue": "Progress in Human Geography",
+        "doi": "10.1177/0309132511425708",
+        "openalex_id": "W2148907477",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Resilience can justify the status quo.",
+      "source": {
+        "authors": [
+          "William Neil Adger"
+        ],
+        "year": 2000,
+        "title": "Social and ecological resilience: are they related?",
+        "type": "article",
+        "venue": "Progress in Human Geography",
+        "doi": "10.1191/030913200701540465",
+        "openalex_id": "W2096522898",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Carl Folke"
+        ],
+        "year": 2006,
+        "title": "Resilience: The emergence of a perspective for social–ecological systems analyses",
+        "type": "article",
+        "venue": "Global Environmental Change",
+        "doi": "10.1016/j.gloenvcha.2006.04.002",
+        "openalex_id": "W2084530896",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Resilience of what, to what?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Brian Walker",
+          "Crawford S. Holling",
+          "Stephen R. Carpenter",
+          "Ann P. Kinzig"
+        ],
+        "year": 2004,
+        "title": "Resilience, Adaptability and Transformability in Social-ecological Systems",
+        "type": "article",
+        "venue": "Ecology and Society",
+        "doi": "10.5751/es-00650-090205",
+        "openalex_id": "W2274815048",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.5751/es-00650-090205"
+      },
+      "chapter": null,
+      "why_read": "Concepts.",
+      "reading_question": "Adapt or transform?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "William Neil Adger"
+        ],
+        "year": 2000,
+        "title": "Social and ecological resilience: are they related?",
+        "type": "article",
+        "venue": "Progress in Human Geography",
+        "doi": "10.1191/030913200701540465",
+        "openalex_id": "W2096522898",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Social side.",
+      "reading_question": "Who benefits?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social-ecological resilience",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2527125744",
+        "title": "Social-ecological resilience and biosphere-based sustainability science",
+        "year": 2016,
+        "authors": [
+          "Carl Folke",
+          "Reinette Biggs",
+          "Albert V. Norström",
+          "Belinda Reyers",
+          "Johan Rockström"
+        ],
+        "cited_by": 1338,
+        "oa_url": "https://doi.org/10.5751/es-08748-210341"
+      },
+      {
+        "openalex_id": "W4230460680",
+        "title": "Resilience (Republished)",
+        "year": 2016,
+        "authors": [
+          "Carl Folke"
+        ],
+        "cited_by": 1048,
+        "oa_url": "https://doi.org/10.5751/es-09088-210444"
+      },
+      {
+        "openalex_id": "W3134863031",
+        "title": "Two perspectives on supply chain resilience",
+        "year": 2021,
+        "authors": [
+          "Andreas Wieland",
+          "Christian Felix Durach"
+        ],
+        "cited_by": 819,
+        "oa_url": "https://research.cbs.dk/en/publications/0a703fa5-c14c-4c2a-b427-9640a30b6c09"
+      },
+      {
+        "openalex_id": "W2290623877",
+        "title": "Advancing Urban Ecology toward a Science of Cities",
+        "year": 2016,
+        "authors": [
+          "Timon McPhearson",
+          "Steward T. A. Pickett",
+          "Nancy B. Grimm",
+          "Jari K. Niemelä",
+          "Marina Alberti",
+          "Thomas Elmqvist"
+        ],
+        "cited_by": 739,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2902378522",
+        "title": "Systemic resilience: principles and processes for a science of change in contexts of adversity",
+        "year": 2018,
+        "authors": [
+          "Michael T. Ungar"
+        ],
+        "cited_by": 494,
+        "oa_url": "https://doi.org/10.5751/es-10385-230434"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

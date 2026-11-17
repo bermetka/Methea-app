@@ -1,0 +1,392 @@
+{
+  "theory_id": null,
+  "library_name": "Community of Inquiry framework",
+  "slug": "community-of-inquiry",
+  "status": "published",
+  "original": {
+    "authors": [
+      "D. Randy Garrison",
+      "Terry D. Anderson",
+      "Walter Archer"
+    ],
+    "year": 1999,
+    "title": "Critical Inquiry in a Text-Based Environment: Computer Conferencing in Higher Education",
+    "type": "article",
+    "venue": "The Internet and Higher Education",
+    "doi": "10.1016/s1096-7516(00)00016-6",
+    "openalex_id": "W2014858765",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2014858765",
+  "core_idea": "Deep online learning happens in a community of inquiry built from three overlapping presences: social presence, cognitive presence and teaching presence.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do online or blended courses support deep learning?",
+    "How does teaching presence affect students' cognitive presence?",
+    "Typical data: CoI survey, content analysis of discussion posts, interviews."
+  ],
+  "common_mistakes": [
+    "Measuring only satisfaction and calling it social presence.",
+    "Coding discussion posts without the published indicators.",
+    "Treating the presences as independent when the model stresses their overlap."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "D. Randy Garrison",
+          "Terry D. Anderson",
+          "Walter Archer"
+        ],
+        "year": 2001,
+        "title": "Critical thinking, cognitive presence, and computer conferencing in distance education",
+        "type": "article",
+        "venue": "American Journal of Distance Education",
+        "doi": "10.1080/08923640109527071",
+        "openalex_id": "W2055854942",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2149/740"
+      },
+      "adds": "Develops cognitive presence and the practical inquiry model."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "J. B. Arbaugh",
+          "Martha F. Cleveland-Innes",
+          "Sebastián Díaz",
+          "D. Randy Garrison",
+          "Philip Ice",
+          "Jennifer C Richardson"
+        ],
+        "year": 2008,
+        "title": "Developing a community of inquiry instrument: Testing a measure of the Community of Inquiry framework using a multi-institutional sample",
+        "type": "article",
+        "venue": "The Internet and Higher Education",
+        "doi": "10.1016/j.iheduc.2008.06.003",
+        "openalex_id": "W2154913500",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The CoI survey instrument."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "D. Randy Garrison",
+          "J. B. Arbaugh"
+        ],
+        "year": 2007,
+        "title": "Researching the community of inquiry framework: Review, issues, and future directions",
+        "type": "article",
+        "venue": "The Internet and Higher Education",
+        "doi": "10.1016/j.iheduc.2007.04.001",
+        "openalex_id": "W2167811808",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reviews the framework."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Content-analysis strand",
+      "summary": "Coding presences in transcripts.",
+      "defining_work": {
+        "authors": [
+          "D. Randy Garrison",
+          "Terry D. Anderson",
+          "Walter Archer"
+        ],
+        "year": 2001,
+        "title": "Critical thinking, cognitive presence, and computer conferencing in distance education",
+        "type": "article",
+        "venue": "American Journal of Distance Education",
+        "doi": "10.1080/08923640109527071",
+        "openalex_id": "W2055854942",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/2149/740"
+      }
+    },
+    {
+      "name": "Survey strand",
+      "summary": "Measuring presences with the CoI instrument.",
+      "defining_work": {
+        "authors": [
+          "J. B. Arbaugh",
+          "Martha F. Cleveland-Innes",
+          "Sebastián Díaz",
+          "D. Randy Garrison",
+          "Philip Ice",
+          "Jennifer C Richardson"
+        ],
+        "year": 2008,
+        "title": "Developing a community of inquiry instrument: Testing a measure of the Community of Inquiry framework using a multi-institutional sample",
+        "type": "article",
+        "venue": "The Internet and Higher Education",
+        "doi": "10.1016/j.iheduc.2008.06.003",
+        "openalex_id": "W2154913500",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Has a validated survey instrument.",
+      "source": {
+        "authors": [
+          "J. B. Arbaugh",
+          "Martha F. Cleveland-Innes",
+          "Sebastián Díaz",
+          "D. Randy Garrison",
+          "Philip Ice",
+          "Jennifer C Richardson"
+        ],
+        "year": 2008,
+        "title": "Developing a community of inquiry instrument: Testing a measure of the Community of Inquiry framework using a multi-institutional sample",
+        "type": "article",
+        "venue": "The Internet and Higher Education",
+        "doi": "10.1016/j.iheduc.2008.06.003",
+        "openalex_id": "W2154913500",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Widely used and reviewed.",
+      "source": {
+        "authors": [
+          "D. Randy Garrison",
+          "J. B. Arbaugh"
+        ],
+        "year": 2007,
+        "title": "Researching the community of inquiry framework: Review, issues, and future directions",
+        "type": "article",
+        "venue": "The Internet and Higher Education",
+        "doi": "10.1016/j.iheduc.2007.04.001",
+        "openalex_id": "W2167811808",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Little evidence that CoI leads to deep learning outcomes.",
+      "source": {
+        "authors": [
+          "Liam Rourke",
+          "Heather Kanuka"
+        ],
+        "year": 2009,
+        "title": "Learning in Communities of Inquiry: A Review of the Literature",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1525391024",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Social presence may matter less than claimed.",
+      "source": {
+        "authors": [
+          "David Annand"
+        ],
+        "year": 2011,
+        "title": "Social presence within the community of inquiry framework",
+        "type": "article",
+        "venue": "The International Review of Research in Open and Distributed Learning",
+        "doi": "10.19173/irrodl.v12i5.924",
+        "openalex_id": "W2156304795",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.19173/irrodl.v12i5.924"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "D. Randy Garrison",
+          "Terry D. Anderson",
+          "Walter Archer"
+        ],
+        "year": 1999,
+        "title": "Critical Inquiry in a Text-Based Environment: Computer Conferencing in Higher Education",
+        "type": "article",
+        "venue": "The Internet and Higher Education",
+        "doi": "10.1016/s1096-7516(00)00016-6",
+        "openalex_id": "W2014858765",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "Which presence is your question about?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "J. B. Arbaugh",
+          "Martha F. Cleveland-Innes",
+          "Sebastián Díaz",
+          "D. Randy Garrison",
+          "Philip Ice",
+          "Jennifer C Richardson"
+        ],
+        "year": 2008,
+        "title": "Developing a community of inquiry instrument: Testing a measure of the Community of Inquiry framework using a multi-institutional sample",
+        "type": "article",
+        "venue": "The Internet and Higher Education",
+        "doi": "10.1016/j.iheduc.2008.06.003",
+        "openalex_id": "W2154913500",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Instrument.",
+      "reading_question": "Will you use the survey or code transcripts?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Liam Rourke",
+          "Heather Kanuka"
+        ],
+        "year": 2009,
+        "title": "Learning in Communities of Inquiry: A Review of the Literature",
+        "type": "article",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1525391024",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you link presences to learning outcomes?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "community of inquiry",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3000318324",
+        "title": "Designing a Community of Inquiry in Online Courses",
+        "year": 2020,
+        "authors": [
+          "Holly S. Fiock"
+        ],
+        "cited_by": 347,
+        "oa_url": "https://doi.org/10.19173/irrodl.v20i5.3985"
+      },
+      {
+        "openalex_id": "W2796137849",
+        "title": "Exploring four decades of research in Computers & Education",
+        "year": 2018,
+        "authors": [
+          "Olaf Zawacki‐Richter",
+          "Colin Latchem"
+        ],
+        "cited_by": 250,
+        "oa_url": "https://doi.org/10.1016/j.compedu.2018.04.001"
+      },
+      {
+        "openalex_id": "W2808160436",
+        "title": "A systematic review of the Community of Inquiry survey",
+        "year": 2018,
+        "authors": [
+          "Stefan Stenbom"
+        ],
+        "cited_by": 229,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3013762540",
+        "title": "20 Years of the Community of Inquiry Framework",
+        "year": 2020,
+        "authors": [
+          "Daniela Castellanos-Reyes"
+        ],
+        "cited_by": 220,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2606137060",
+        "title": "The effect of self-regulated learning on college students' perceptions of community of inquiry and affective outcomes in online learning",
+        "year": 2017,
+        "authors": [
+          "Moon‐Heum Cho",
+          "Yanghee Anna Kim",
+          "Dongho Choi"
+        ],
+        "cited_by": 190,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Learning in Communities of Inquiry: A Review of the Literature. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

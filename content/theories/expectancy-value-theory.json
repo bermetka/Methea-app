@@ -1,0 +1,378 @@
+{
+  "theory_id": null,
+  "library_name": "Expectancy-value theory",
+  "slug": "expectancy-value-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Allan Wigfield",
+      "Jacquelynne S. Eccles"
+    ],
+    "year": 2000,
+    "title": "Expectancy–Value Theory of Achievement Motivation",
+    "type": "article",
+    "venue": "Contemporary Educational Psychology",
+    "doi": "10.1006/ceps.1999.1015",
+    "openalex_id": "W2130337868",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2130337868",
+  "core_idea": "Students' choices, effort and persistence depend on two things: whether they expect to succeed and how much they value the task. Value has four parts: interest, importance to identity, usefulness and cost.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do students choose or drop subjects such as STEM?",
+    "How do parents, teachers or culture shape students' expectancies and values?",
+    "Typical data: surveys, longitudinal studies, interviews."
+  ],
+  "common_mistakes": [
+    "Measuring 'motivation' as one score instead of separate expectancy and value.",
+    "Leaving out cost, which recent work treats as a separate dimension.",
+    "Confusing expectancy (can I do this task?) with general self-esteem."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "John W. Atkinson"
+        ],
+        "year": 1957,
+        "title": "Motivational determinants of risk-taking behavior.",
+        "type": "article",
+        "venue": "Psychological Review",
+        "doi": "10.1037/h0043445",
+        "openalex_id": "W2014114421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Original expectancy × value model of achievement."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "year": 2002,
+        "title": "Motivational Beliefs, Values, and Goals",
+        "type": "article",
+        "venue": "Annual Review of Psychology",
+        "doi": "10.1146/annurev.psych.53.100901.135153",
+        "openalex_id": "W2111638337",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reviews the model with goals and values."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "year": 2020,
+        "title": "From expectancy-value theory to situated expectancy-value theory: A developmental, social cognitive, and sociocultural perspective on motivation",
+        "type": "article",
+        "venue": "Contemporary Educational Psychology",
+        "doi": "10.1016/j.cedpsych.2020.101859",
+        "openalex_id": "W3031051743",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/j.cedpsych.2020.101859"
+      },
+      "adds": "Renames it situated EVT and stresses context."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Eccles et al. model",
+      "summary": "Socialisers and culture shaping expectancies and values.",
+      "defining_work": {
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "year": 2002,
+        "title": "Motivational Beliefs, Values, and Goals",
+        "type": "article",
+        "venue": "Annual Review of Psychology",
+        "doi": "10.1146/annurev.psych.53.100901.135153",
+        "openalex_id": "W2111638337",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Situated EVT",
+      "summary": "Values and expectancies as situated in context.",
+      "defining_work": {
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "year": 2020,
+        "title": "From expectancy-value theory to situated expectancy-value theory: A developmental, social cognitive, and sociocultural perspective on motivation",
+        "type": "article",
+        "venue": "Contemporary Educational Psychology",
+        "doi": "10.1016/j.cedpsych.2020.101859",
+        "openalex_id": "W3031051743",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/j.cedpsych.2020.101859"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Strong longitudinal evidence linking values to course and career choices.",
+      "source": {
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "year": 2002,
+        "title": "Motivational Beliefs, Values, and Goals",
+        "type": "article",
+        "venue": "Annual Review of Psychology",
+        "doi": "10.1146/annurev.psych.53.100901.135153",
+        "openalex_id": "W2111638337",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Gives a clear structure of value components for surveys.",
+      "source": {
+        "authors": [
+          "Allan Wigfield",
+          "Jacquelynne S. Eccles"
+        ],
+        "year": 2000,
+        "title": "Expectancy–Value Theory of Achievement Motivation",
+        "type": "article",
+        "venue": "Contemporary Educational Psychology",
+        "doi": "10.1006/ceps.1999.1015",
+        "openalex_id": "W2130337868",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Cost was under-theorised and needed its own measurement.",
+      "source": {
+        "authors": [
+          "Jessica Kay Flake",
+          "Kenneth E. Barron",
+          "Christopher S. Hulleman",
+          "D. Betsy McCoach",
+          "Megan E. Welsh"
+        ],
+        "year": 2015,
+        "title": "Measuring cost: The forgotten component of expectancy-value theory",
+        "type": "article",
+        "venue": "Contemporary Educational Psychology",
+        "doi": "10.1016/j.cedpsych.2015.03.002",
+        "openalex_id": "W2032829424",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://commons.lib.jmu.edu/master201019/208"
+      }
+    },
+    {
+      "point": "The model was built mostly on Western samples; situated EVT responds to that.",
+      "source": {
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "year": 2020,
+        "title": "From expectancy-value theory to situated expectancy-value theory: A developmental, social cognitive, and sociocultural perspective on motivation",
+        "type": "article",
+        "venue": "Contemporary Educational Psychology",
+        "doi": "10.1016/j.cedpsych.2020.101859",
+        "openalex_id": "W3031051743",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/j.cedpsych.2020.101859"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Allan Wigfield",
+          "Jacquelynne S. Eccles"
+        ],
+        "year": 2000,
+        "title": "Expectancy–Value Theory of Achievement Motivation",
+        "type": "article",
+        "venue": "Contemporary Educational Psychology",
+        "doi": "10.1006/ceps.1999.1015",
+        "openalex_id": "W2130337868",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Clear modern statement.",
+      "reading_question": "Which value component matters most for your participants?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "year": 2020,
+        "title": "From expectancy-value theory to situated expectancy-value theory: A developmental, social cognitive, and sociocultural perspective on motivation",
+        "type": "article",
+        "venue": "Contemporary Educational Psychology",
+        "doi": "10.1016/j.cedpsych.2020.101859",
+        "openalex_id": "W3031051743",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/j.cedpsych.2020.101859"
+      },
+      "chapter": null,
+      "why_read": "The current version.",
+      "reading_question": "How does context enter your design?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "year": 2002,
+        "title": "Motivational Beliefs, Values, and Goals",
+        "type": "article",
+        "venue": "Annual Review of Psychology",
+        "doi": "10.1146/annurev.psych.53.100901.135153",
+        "openalex_id": "W2111638337",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Overview with related theories.",
+      "reading_question": "How does EVT differ from the other motivation theories you considered?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "expectancy-value",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3031051743",
+        "title": "From expectancy-value theory to situated expectancy-value theory: A developmental, social cognitive, and sociocultural perspective on motivation",
+        "year": 2020,
+        "authors": [
+          "Jacquelynne S. Eccles",
+          "Allan Wigfield"
+        ],
+        "cited_by": 2661,
+        "oa_url": "https://doi.org/10.1016/j.cedpsych.2020.101859"
+      },
+      {
+        "openalex_id": "W2518885625",
+        "title": "Motivation to learn: an overview of contemporary theories",
+        "year": 2016,
+        "authors": [
+          "David A. Cook",
+          "Anthony R. Artino"
+        ],
+        "cited_by": 1138,
+        "oa_url": "https://doi.org/10.1111/medu.13074"
+      },
+      {
+        "openalex_id": "W4361264961",
+        "title": "Theories of Motivation in Education: an Integrative Framework",
+        "year": 2023,
+        "authors": [
+          "Detlef Urhahne",
+          "Lisette Wijnia"
+        ],
+        "cited_by": 501,
+        "oa_url": "https://doi.org/10.1007/s10648-023-09767-9"
+      },
+      {
+        "openalex_id": "W2735764871",
+        "title": "Self-Efficacy, Satisfaction, and Academic Achievement: The Mediator Role of Students' Expectancy-Value Beliefs",
+        "year": 2017,
+        "authors": [
+          "Fernando Doménech Betoret",
+          "Laura Abellán Roselló",
+          "Amparo Gómez-Artiga"
+        ],
+        "cited_by": 470,
+        "oa_url": "https://doi.org/10.3389/fpsyg.2017.01193"
+      },
+      {
+        "openalex_id": "W3005654280",
+        "title": "35 years of research on students' subjective task values and motivation: A look back and a look forward",
+        "year": 2019,
+        "authors": [
+          "Allan Wigfield",
+          "Jacquelynne S. Eccles"
+        ],
+        "cited_by": 333,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

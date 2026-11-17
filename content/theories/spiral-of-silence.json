@@ -1,0 +1,363 @@
+{
+  "theory_id": null,
+  "library_name": "Spiral of silence",
+  "slug": "spiral-of-silence",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Elisabeth Noëlle-Neumann"
+    ],
+    "year": 1974,
+    "title": "The Spiral of Silence a Theory of Public Opinion",
+    "type": "article",
+    "venue": "Journal of Communication",
+    "doi": "10.1111/j.1460-2466.1974.tb00367.x",
+    "openalex_id": "W2035381879",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2035381879",
+  "core_idea": "People fear social isolation, so they watch the climate of opinion. Those who think their view is losing tend to stay silent, which makes the dominant view seem even stronger, and the spiral continues.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Do people self-censor on controversial topics, online or offline?",
+    "How does perceived opinion climate affect willingness to speak out?",
+    "Typical data: surveys, experiments, interviews."
+  ],
+  "common_mistakes": [
+    "Measuring only opinion, not willingness to speak out.",
+    "Ignoring the 'hard core' who speak regardless.",
+    "Assuming online settings work the same as face-to-face."
+  ],
+  "development": [
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Carroll J. Glynn",
+          "Andrew F. Hayes",
+          "James E. Shanahan"
+        ],
+        "year": 1997,
+        "title": "Perceived Support for One's Opinions and Willingness to Speak Out: A Meta-Analysis of Survey Studies on the \"Spiral of Silence\"",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/297808",
+        "openalex_id": "W2066082915",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Meta-analysis."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Jörg Matthes",
+          "Johannes Knoll",
+          "Christian von Sikorski"
+        ],
+        "year": 2017,
+        "title": "The “Spiral of Silence” Revisited: A Meta-Analysis on the Relationship Between Perceptions of Opinion Support and Political Opinion Expression",
+        "type": "article",
+        "venue": "Communication Research",
+        "doi": "10.1177/0093650217745429",
+        "openalex_id": "W2775519233",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Updated meta-analysis."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Offline spiral",
+      "summary": "Classic survey studies.",
+      "defining_work": {
+        "authors": [
+          "Carroll J. Glynn",
+          "Andrew F. Hayes",
+          "James E. Shanahan"
+        ],
+        "year": 1997,
+        "title": "Perceived Support for One's Opinions and Willingness to Speak Out: A Meta-Analysis of Survey Studies on the \"Spiral of Silence\"",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/297808",
+        "openalex_id": "W2066082915",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Online expression",
+      "summary": "Social media and self-censorship.",
+      "defining_work": {
+        "authors": [
+          "Jörg Matthes",
+          "Johannes Knoll",
+          "Christian von Sikorski"
+        ],
+        "year": 2017,
+        "title": "The “Spiral of Silence” Revisited: A Meta-Analysis on the Relationship Between Perceptions of Opinion Support and Political Opinion Expression",
+        "type": "article",
+        "venue": "Communication Research",
+        "doi": "10.1177/0093650217745429",
+        "openalex_id": "W2775519233",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A small but reliable link between perceived support and speaking out.",
+      "source": {
+        "authors": [
+          "Jörg Matthes",
+          "Johannes Knoll",
+          "Christian von Sikorski"
+        ],
+        "year": 2017,
+        "title": "The “Spiral of Silence” Revisited: A Meta-Analysis on the Relationship Between Perceptions of Opinion Support and Political Opinion Expression",
+        "type": "article",
+        "venue": "Communication Research",
+        "doi": "10.1177/0093650217745429",
+        "openalex_id": "W2775519233",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Links media, perception and behaviour in one model.",
+      "source": {
+        "authors": [
+          "Elisabeth Noëlle-Neumann"
+        ],
+        "year": 1974,
+        "title": "The Spiral of Silence a Theory of Public Opinion",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1974.tb00367.x",
+        "openalex_id": "W2035381879",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Effects are weak in many studies.",
+      "source": {
+        "authors": [
+          "Carroll J. Glynn",
+          "Andrew F. Hayes",
+          "James E. Shanahan"
+        ],
+        "year": 1997,
+        "title": "Perceived Support for One's Opinions and Willingness to Speak Out: A Meta-Analysis of Survey Studies on the \"Spiral of Silence\"",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/297808",
+        "openalex_id": "W2066082915",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Key concepts like fear of isolation are rarely measured directly.",
+      "source": {
+        "authors": [
+          "Dietram A. Scheufele",
+          "Patricia Moy"
+        ],
+        "year": 2000,
+        "title": "TWENTY-FIVE YEARS OF THE SPIRAL OF SILENCE: A CONCEPTUAL REVIEW AND EMPIRICAL OUTLOOK",
+        "type": "article",
+        "venue": "International Journal of Public Opinion Research",
+        "doi": "10.1093/ijpor/12.1.3",
+        "openalex_id": "W2099668057",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Elisabeth Noëlle-Neumann"
+        ],
+        "year": 1974,
+        "title": "The Spiral of Silence a Theory of Public Opinion",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1974.tb00367.x",
+        "openalex_id": "W2035381879",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The theory.",
+      "reading_question": "What topic is controversial enough for your study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jörg Matthes",
+          "Johannes Knoll",
+          "Christian von Sikorski"
+        ],
+        "year": 2017,
+        "title": "The “Spiral of Silence” Revisited: A Meta-Analysis on the Relationship Between Perceptions of Opinion Support and Political Opinion Expression",
+        "type": "article",
+        "venue": "Communication Research",
+        "doi": "10.1177/0093650217745429",
+        "openalex_id": "W2775519233",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Evidence.",
+      "reading_question": "What effect size can you expect?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Dietram A. Scheufele",
+          "Patricia Moy"
+        ],
+        "year": 2000,
+        "title": "TWENTY-FIVE YEARS OF THE SPIRAL OF SILENCE: A CONCEPTUAL REVIEW AND EMPIRICAL OUTLOOK",
+        "type": "article",
+        "venue": "International Journal of Public Opinion Research",
+        "doi": "10.1093/ijpor/12.1.3",
+        "openalex_id": "W2099668057",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "How will you measure fear of isolation?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "spiral of silence",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3187731541",
+        "title": "Cancel Culture: Myth or Reality?",
+        "year": 2021,
+        "authors": [
+          "Pippa Norris"
+        ],
+        "cited_by": 321,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2775519233",
+        "title": "The “Spiral of Silence” Revisited: A Meta-Analysis on the Relationship Between Perceptions of Opinion Support and Political Opinion Expression",
+        "year": 2017,
+        "authors": [
+          "Jörg Matthes",
+          "Johannes Knoll",
+          "Christian von Sikorski"
+        ],
+        "cited_by": 278,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2909814166",
+        "title": "Are social bots a real threat? An agent-based model of the spiral of silence to analyse the impact of manipulative actors in social networks",
+        "year": 2019,
+        "authors": [
+          "Björn Roß",
+          "Laura Pilz",
+          "Benjamin Cabrera",
+          "Florian Brachten",
+          "German Neubaum",
+          "Stefan Stieglitz"
+        ],
+        "cited_by": 197,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2513683139",
+        "title": "Social media and political discussion: when online presence silences offline conversation",
+        "year": 2016,
+        "authors": [
+          "Keith N. Hampton",
+          "Inyoung Shin",
+          "Weixu Lu"
+        ],
+        "cited_by": 195,
+        "oa_url": "https://doi.org/10.1080/1369118x.2016.1218526"
+      },
+      {
+        "openalex_id": "W2326657680",
+        "title": "Under Surveillance",
+        "year": 2016,
+        "authors": [
+          "Elizabeth Stoycheff"
+        ],
+        "cited_by": 192,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): The Spiral of Silence: Public Opinion -- Our Social Skin. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

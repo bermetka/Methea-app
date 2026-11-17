@@ -1,0 +1,331 @@
+{
+  "theory_id": null,
+  "library_name": "Nudge theory (libertarian paternalism)",
+  "slug": "nudge-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Thaler"
+    ],
+    "year": 2008,
+    "title": "Nudge",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780143115267",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 2008
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Small changes in how choices are presented, the choice architecture, can steer people's behaviour in predictable ways without forbidding options or changing incentives.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Do defaults or reminders change behaviour in health, savings or policy?",
+    "How should a choice be designed?",
+    "Typical data: field experiments, survey experiments."
+  ],
+  "common_mistakes": [
+    "Calling any intervention a nudge.",
+    "Ignoring ethics.",
+    "Small samples with no pre-registration."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Eric J. Johnson",
+          "Suzanne B. Shu",
+          "Benedict G. C. Dellaert",
+          "Craig R. Fox",
+          "Daniel G. Goldstein",
+          "Gerald Haeubl"
+        ],
+        "year": 2012,
+        "title": "Beyond nudges: Tools of a choice architecture",
+        "type": "article",
+        "venue": "Marketing Letters",
+        "doi": "10.1007/s11002-012-9186-1",
+        "openalex_id": "W1967039550",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://ojs.unbc.ca/index.php/design/article/view/1264"
+      },
+      "adds": "Maps the wider set of choice-architecture tools beyond single nudges."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Richard H. Thaler",
+          "Shlomo Benartzi"
+        ],
+        "year": 2004,
+        "title": "Save More Tomorrow™: Using Behavioral Economics to Increase Employee Saving",
+        "type": "article",
+        "venue": "Journal of Political Economy",
+        "doi": "10.1086/380085",
+        "openalex_id": "W2108946685",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Commitment savings."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Dennis Hummel",
+          "Alexander Maedche"
+        ],
+        "year": 2019,
+        "title": "How effective is nudging? A quantitative review on the effect sizes and limits of empirical nudging studies",
+        "type": "article",
+        "venue": "Journal of Behavioral and Experimental Economics",
+        "doi": "10.1016/j.socec.2019.03.005",
+        "openalex_id": "W2921959179",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review of effects."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Defaults",
+      "summary": "Choice architecture.",
+      "defining_work": {
+        "authors": [
+          "Brigitte C. Madrian",
+          "Dennis Shea"
+        ],
+        "year": 2000,
+        "title": "The Power of Suggestion: Inertia in 401(k) Participation and Savings Behavior",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w7682",
+        "openalex_id": "W2892310370",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w7682"
+      }
+    },
+    {
+      "name": "Behavioural policy",
+      "summary": "Nudge units.",
+      "defining_work": {
+        "authors": [
+          "Dennis Hummel",
+          "Alexander Maedche"
+        ],
+        "year": 2019,
+        "title": "How effective is nudging? A quantitative review on the effect sizes and limits of empirical nudging studies",
+        "type": "article",
+        "venue": "Journal of Behavioral and Experimental Economics",
+        "doi": "10.1016/j.socec.2019.03.005",
+        "openalex_id": "W2921959179",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Defaults have large effects.",
+      "source": {
+        "authors": [
+          "Brigitte C. Madrian",
+          "Dennis Shea"
+        ],
+        "year": 2000,
+        "title": "The Power of Suggestion: Inertia in 401(k) Participation and Savings Behavior",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w7682",
+        "openalex_id": "W2892310370",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w7682"
+      }
+    },
+    {
+      "point": "Low cost.",
+      "source": {
+        "authors": [
+          "Richard H. Thaler",
+          "Shlomo Benartzi"
+        ],
+        "year": 2004,
+        "title": "Save More Tomorrow™: Using Behavioral Economics to Increase Employee Saving",
+        "type": "article",
+        "venue": "Journal of Political Economy",
+        "doi": "10.1086/380085",
+        "openalex_id": "W2108946685",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Little evidence after correcting for publication bias.",
+      "source": {
+        "authors": [
+          "Maximilian Maier",
+          "Frantis̆ek Bartos̆",
+          "T. D. Stanley",
+          "David R. Shanks",
+          "Adam J. L. Harris",
+          "Eric‐Jan Wagenmakers"
+        ],
+        "year": 2022,
+        "title": "No evidence for nudging after adjusting for publication bias",
+        "type": "article",
+        "venue": "Proceedings of the National Academy of Sciences",
+        "doi": "10.1073/pnas.2200300119",
+        "openalex_id": "W4286218562",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1073/pnas.2200300119"
+      }
+    },
+    {
+      "point": "Ethical concerns about manipulation.",
+      "source": {
+        "authors": [
+          "Daniel M. Hausman",
+          "Brynn F. Welch"
+        ],
+        "year": 2009,
+        "title": "Debate: To Nudge or Not to Nudge*",
+        "type": "article",
+        "venue": "Journal of Political Philosophy",
+        "doi": "10.1111/j.1467-9760.2009.00351.x",
+        "openalex_id": "W2020091143",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Thaler"
+        ],
+        "year": 2008,
+        "title": "Nudge",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780143115267",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2008
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "What choice architecture?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Dennis Hummel",
+          "Alexander Maedche"
+        ],
+        "year": 2019,
+        "title": "How effective is nudging? A quantitative review on the effect sizes and limits of empirical nudging studies",
+        "type": "article",
+        "venue": "Journal of Behavioral and Experimental Economics",
+        "doi": "10.1016/j.socec.2019.03.005",
+        "openalex_id": "W2921959179",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Evidence.",
+      "reading_question": "What effect size?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Maximilian Maier",
+          "Frantis̆ek Bartos̆",
+          "T. D. Stanley",
+          "David R. Shanks",
+          "Adam J. L. Harris",
+          "Eric‐Jan Wagenmakers"
+        ],
+        "year": 2022,
+        "title": "No evidence for nudging after adjusting for publication bias",
+        "type": "article",
+        "venue": "Proceedings of the National Academy of Sciences",
+        "doi": "10.1073/pnas.2200300119",
+        "openalex_id": "W4286218562",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1073/pnas.2200300119"
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you avoid bias?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "nudge",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 2 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

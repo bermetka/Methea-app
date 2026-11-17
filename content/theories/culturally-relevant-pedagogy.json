@@ -1,0 +1,366 @@
+{
+  "theory_id": null,
+  "library_name": "Culturally relevant pedagogy",
+  "slug": "culturally-relevant-pedagogy",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Gloria J Ladson-Billings"
+    ],
+    "year": 1995,
+    "title": "Toward a Theory of Culturally Relevant Pedagogy",
+    "type": "article",
+    "venue": "American Educational Research Journal",
+    "doi": "10.2307/1163320",
+    "openalex_id": "W2143565172",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2143565172",
+  "core_idea": "Effective teachers of marginalised students pursue three goals at once: academic success, cultural competence and critical consciousness.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What do effective teachers of culturally diverse students do?",
+    "How do teachers' beliefs shape culturally relevant practice?",
+    "Typical data: classroom observation, teacher interviews, case study, ethnography."
+  ],
+  "common_mistakes": [
+    "Reducing it to adding 'cultural' examples to lessons, without critical consciousness.",
+    "Treating culture as fixed traits of a group.",
+    "Using it interchangeably with culturally responsive or sustaining pedagogy without saying how they differ."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Geneva Gay"
+        ],
+        "year": 2002,
+        "title": "Preparing for Culturally Responsive Teaching",
+        "type": "article",
+        "venue": "Journal of Teacher Education",
+        "doi": "10.1177/0022487102053002003",
+        "openalex_id": "W4233020791",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Culturally responsive teaching: a close parallel strand."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Django Paris"
+        ],
+        "year": 2012,
+        "title": "Culturally Sustaining Pedagogy",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x12441244",
+        "openalex_id": "W2110218280",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3102/0013189x12441244"
+      },
+      "adds": "Culturally sustaining pedagogy: sustaining, not only using, culture."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 2014,
+        "title": "Culturally Relevant Pedagogy 2.0: a.k.a. the Remix",
+        "type": "article",
+        "venue": "Harvard Educational Review",
+        "doi": "10.17763/haer.84.1.p2rj131485484751",
+        "openalex_id": "W1931094051",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The author's own update."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Culturally responsive teaching",
+      "summary": "Gay's version focused on teaching practices.",
+      "defining_work": {
+        "authors": [
+          "Geneva Gay"
+        ],
+        "year": 2002,
+        "title": "Preparing for Culturally Responsive Teaching",
+        "type": "article",
+        "venue": "Journal of Teacher Education",
+        "doi": "10.1177/0022487102053002003",
+        "openalex_id": "W4233020791",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Culturally sustaining pedagogy",
+      "summary": "Paris's extension.",
+      "defining_work": {
+        "authors": [
+          "Django Paris"
+        ],
+        "year": 2012,
+        "title": "Culturally Sustaining Pedagogy",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x12441244",
+        "openalex_id": "W2110218280",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3102/0013189x12441244"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A synthesis finds positive outcomes across subjects.",
+      "source": {
+        "authors": [
+          "Brittany A. Aronson",
+          "Judson C. Laughter"
+        ],
+        "year": 2015,
+        "title": "The Theory and Practice of Culturally Relevant Education",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.3102/0034654315582066",
+        "openalex_id": "W2101784742",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Grounded in close study of successful teachers.",
+      "source": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 1995,
+        "title": "Toward a Theory of Culturally Relevant Pedagogy",
+        "type": "article",
+        "venue": "American Educational Research Journal",
+        "doi": "10.2307/1163320",
+        "openalex_id": "W2143565172",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "In practice it is often watered down and marginalised.",
+      "source": {
+        "authors": [
+          "Christine E. Sleeter"
+        ],
+        "year": 2012,
+        "title": "Confronting the Marginalization of Culturally Responsive Pedagogy",
+        "type": "article",
+        "venue": "Urban Education",
+        "doi": "10.1177/0042085911431472",
+        "openalex_id": "W2007647657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The author herself notes the concept was often misapplied.",
+      "source": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 2014,
+        "title": "Culturally Relevant Pedagogy 2.0: a.k.a. the Remix",
+        "type": "article",
+        "venue": "Harvard Educational Review",
+        "doi": "10.17763/haer.84.1.p2rj131485484751",
+        "openalex_id": "W1931094051",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 1995,
+        "title": "Toward a Theory of Culturally Relevant Pedagogy",
+        "type": "article",
+        "venue": "American Educational Research Journal",
+        "doi": "10.2307/1163320",
+        "openalex_id": "W2143565172",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The three goals.",
+      "reading_question": "Which goal is hardest to observe in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Gloria J Ladson-Billings"
+        ],
+        "year": 2014,
+        "title": "Culturally Relevant Pedagogy 2.0: a.k.a. the Remix",
+        "type": "article",
+        "venue": "Harvard Educational Review",
+        "doi": "10.17763/haer.84.1.p2rj131485484751",
+        "openalex_id": "W1931094051",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The update.",
+      "reading_question": "Do you use the 1995 or the updated version?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Brittany A. Aronson",
+          "Judson C. Laughter"
+        ],
+        "year": 2015,
+        "title": "The Theory and Practice of Culturally Relevant Education",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.3102/0034654315582066",
+        "openalex_id": "W2101784742",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Evidence base.",
+      "reading_question": "What outcomes will you look at?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "culturally relevant pedagogy",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2198365544",
+        "title": "The Causal Effects of Cultural Relevance",
+        "year": 2016,
+        "authors": [
+          "Thomas Sean Dee",
+          "Emily K. Penner"
+        ],
+        "cited_by": 431,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2889151250",
+        "title": "Moving Culturally Relevant Pedagogy From Theory to Practice: Exploring Teachers’ Application of Culturally Relevant Education in Science and Mathematics",
+        "year": 2018,
+        "authors": [
+          "Bryan A. Brown",
+          "Phillip A. Boda",
+          "Catherine Lemmi",
+          "Xavier J. Monroe"
+        ],
+        "cited_by": 197,
+        "oa_url": "https://figshare.com/articles/journal_contribution/Moving_Culturally_Relevant_Pedagogy_From_Theory_to_Practice_Exploring_Teachers_Application_of_Culturally_Relevant_Education_in_Science_and_Mathematics/21526230"
+      },
+      {
+        "openalex_id": "W2930639378",
+        "title": "Culturally Responsive Mathematics Teaching: A Research Synthesis",
+        "year": 2019,
+        "authors": [
+          "Naheed A. Abdulrahim",
+          "Michael John Orosco"
+        ],
+        "cited_by": 158,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2767566183",
+        "title": "Culturally Relevant Pedagogy 20 Years Later: Progress or Pontificating? What Have We Learned, and Where Do We Go?",
+        "year": 2017,
+        "authors": [
+          "Tyrone C. Howard",
+          "Andréa C. Minkoff"
+        ],
+        "cited_by": 138,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2966482230",
+        "title": "Illuminating political clarity in culturally relevant science instruction",
+        "year": 2019,
+        "authors": [
+          "Tia C. Madkins",
+          "Maxine McKinney de Royston"
+        ],
+        "cited_by": 126,
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10588766"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

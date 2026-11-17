@@ -1,0 +1,372 @@
+{
+  "theory_id": null,
+  "library_name": "Uses and gratifications theory",
+  "slug": "uses-and-gratifications",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Elihu Katz",
+      "Jay G. Blumler",
+      "Michael Gurevitch"
+    ],
+    "year": 1973,
+    "title": "Uses and Gratifications Research",
+    "type": "article",
+    "venue": "Public Opinion Quarterly",
+    "doi": "10.1086/268109",
+    "openalex_id": "W2159516798",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2159516798",
+  "core_idea": "Audiences are active. People choose media to satisfy needs such as information, identity, social connection or entertainment, and the gratifications they seek explain their media use.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do people use a platform, app or medium?",
+    "Do gratifications sought match gratifications obtained?",
+    "Typical data: surveys, interviews, focus groups."
+  ],
+  "common_mistakes": [
+    "Listing motives without linking them to needs or outcomes.",
+    "Reusing old TV motive scales for new media without adapting them.",
+    "Assuming people can always report their motives accurately."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "ALAN M. RUBIN"
+        ],
+        "year": 1983,
+        "title": "Television uses and gratifications: The interactions of viewing patterns and motivations",
+        "type": "article",
+        "venue": "Journal of Broadcasting",
+        "doi": "10.1080/08838158309386471",
+        "openalex_id": "W2111056473",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Ritualised vs instrumental use."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Thomas E. Ruggiero"
+        ],
+        "year": 2000,
+        "title": "Uses and Gratifications Theory in the 21st Century",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1207/s15327825mcs0301_02",
+        "openalex_id": "W2071141511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Brings U&G to the internet."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "S. Shyam Sundar",
+          "Anthony M. Limperos"
+        ],
+        "year": 2013,
+        "title": "Uses and Grats 2.0: New Gratifications for New Media",
+        "type": "article",
+        "venue": "Journal of Broadcasting & Electronic Media",
+        "doi": "10.1080/08838151.2013.845827",
+        "openalex_id": "W2020266303",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Gratifications from technology affordances."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Gratifications sought vs obtained",
+      "summary": "Comparing expected and actual satisfaction.",
+      "defining_work": {
+        "authors": [
+          "ALAN M. RUBIN"
+        ],
+        "year": 1983,
+        "title": "Television uses and gratifications: The interactions of viewing patterns and motivations",
+        "type": "article",
+        "venue": "Journal of Broadcasting",
+        "doi": "10.1080/08838158309386471",
+        "openalex_id": "W2111056473",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "U&G 2.0",
+      "summary": "Affordance-based gratifications.",
+      "defining_work": {
+        "authors": [
+          "S. Shyam Sundar",
+          "Anthony M. Limperos"
+        ],
+        "year": 2013,
+        "title": "Uses and Grats 2.0: New Gratifications for New Media",
+        "type": "article",
+        "venue": "Journal of Broadcasting & Electronic Media",
+        "doi": "10.1080/08838151.2013.845827",
+        "openalex_id": "W2020266303",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Fits new media research where users choose actively.",
+      "source": {
+        "authors": [
+          "Thomas E. Ruggiero"
+        ],
+        "year": 2000,
+        "title": "Uses and Gratifications Theory in the 21st Century",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1207/s15327825mcs0301_02",
+        "openalex_id": "W2071141511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Flexible across platforms.",
+      "source": {
+        "authors": [
+          "S. Shyam Sundar",
+          "Anthony M. Limperos"
+        ],
+        "year": 2013,
+        "title": "Uses and Grats 2.0: New Gratifications for New Media",
+        "type": "article",
+        "venue": "Journal of Broadcasting & Electronic Media",
+        "doi": "10.1080/08838151.2013.845827",
+        "openalex_id": "W2020266303",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Too individualistic and descriptive, weak in explaining.",
+      "source": {
+        "authors": [
+          "David L. Swanson"
+        ],
+        "year": 1977,
+        "title": "THE USES AND MISUSES OF USES AND GRATIFICATIONS",
+        "type": "article",
+        "venue": "Human Communication Research",
+        "doi": "10.1111/j.1468-2958.1977.tb00519.x",
+        "openalex_id": "W1988476883",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Relies on self-report of motives.",
+      "source": {
+        "authors": [
+          "Thomas E. Ruggiero"
+        ],
+        "year": 2000,
+        "title": "Uses and Gratifications Theory in the 21st Century",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1207/s15327825mcs0301_02",
+        "openalex_id": "W2071141511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Elihu Katz",
+          "Jay G. Blumler",
+          "Michael Gurevitch"
+        ],
+        "year": 1973,
+        "title": "Uses and Gratifications Research",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/268109",
+        "openalex_id": "W2159516798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Classic statement.",
+      "reading_question": "Which needs might your platform satisfy?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "S. Shyam Sundar",
+          "Anthony M. Limperos"
+        ],
+        "year": 2013,
+        "title": "Uses and Grats 2.0: New Gratifications for New Media",
+        "type": "article",
+        "venue": "Journal of Broadcasting & Electronic Media",
+        "doi": "10.1080/08838151.2013.845827",
+        "openalex_id": "W2020266303",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "New media.",
+      "reading_question": "Are your gratifications tied to features?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Thomas E. Ruggiero"
+        ],
+        "year": 2000,
+        "title": "Uses and Gratifications Theory in the 21st Century",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1207/s15327825mcs0301_02",
+        "openalex_id": "W2071141511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Overview and critiques.",
+      "reading_question": "How will you avoid a bare list of motives?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "uses and gratifications",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2201558745",
+        "title": "Instagram: Motives for its use and relationship to narcissism and contextual age",
+        "year": 2016,
+        "authors": [
+          "Pavica Sheldon",
+          "Katherine Bryant"
+        ],
+        "cited_by": 1136,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2588479716",
+        "title": "A Tale of Four Platforms: Motivations and Uses of Facebook, Twitter, Instagram, and Snapchat Among College Students?",
+        "year": 2017,
+        "authors": [
+          "Saleem Alhabash",
+          "Mengyan Ma"
+        ],
+        "cited_by": 883,
+        "oa_url": "https://doi.org/10.1177/2056305117691544"
+      },
+      {
+        "openalex_id": "W2606471054",
+        "title": "Smartphones and Cognition: A Review of Research Exploring the Links between Mobile Technology Habits and Cognitive Functioning",
+        "year": 2017,
+        "authors": [
+          "Henry H. Wilmer",
+          "Lauren E. Sherman",
+          "Jason M. Chein"
+        ],
+        "cited_by": 801,
+        "oa_url": "https://doi.org/10.3389/fpsyg.2017.00605"
+      },
+      {
+        "openalex_id": "W3137356575",
+        "title": "On the Psychology of TikTok Use: A First Glimpse From Empirical Findings",
+        "year": 2021,
+        "authors": [
+          "Christian Montag",
+          "Haibo Yang",
+          "Jon D. Elhai"
+        ],
+        "cited_by": 710,
+        "oa_url": "https://doi.org/10.3389/fpubh.2021.641673"
+      },
+      {
+        "openalex_id": "W2803475921",
+        "title": "Influence of parasocial relationship between digital celebrities and their followers on followers’ purchase and electronic word-of-mouth intentions, and persuasion knowledge",
+        "year": 2018,
+        "authors": [
+          "Kumju Hwang",
+          "Qi Zhang"
+        ],
+        "cited_by": 706,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

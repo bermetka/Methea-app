@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Distributed leadership",
+  "slug": "distributed-leadership",
+  "status": "published",
+  "original": {
+    "authors": [
+      "James P. Spillane",
+      "Richard Halverson",
+      "John B. Diamond"
+    ],
+    "year": 2004,
+    "title": "Towards a theory of leadership practice: a distributed perspective",
+    "type": "article",
+    "venue": "Journal of Curriculum Studies",
+    "doi": "10.1080/0022027032000106726",
+    "openalex_id": "W2133527607",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2133527607",
+  "core_idea": "Leadership is not only what the head does. It is a practice stretched across leaders, followers and the situation, including tools and routines.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How is leadership shared among teachers, teams and heads in a school?",
+    "How do routines and tools shape leadership practice?",
+    "Typical data: case studies, observation, social network analysis, interviews."
+  ],
+  "common_mistakes": [
+    "Using 'distributed' to mean 'delegated' or 'democratic'.",
+    "Studying only formal roles and missing informal leaders.",
+    "Ignoring the situation, which the theory treats as part of leadership."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Peter Gronn"
+        ],
+        "year": 2002,
+        "title": "Distributed leadership as a unit of analysis",
+        "type": "article",
+        "venue": "The Leadership Quarterly",
+        "doi": "10.1016/s1048-9843(02)00120-0",
+        "openalex_id": "W1994173157",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Proposes distributed leadership as a unit of analysis."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Spillane"
+        ],
+        "year": 2006,
+        "title": "Distributed Leadership",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780470589762",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL5826160W, first published 2006). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 2006
+      },
+      "adds": "Book-length statement of the practice view."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Richard Bolden"
+        ],
+        "year": 2011,
+        "title": "Distributed Leadership in Organizations: A Review of Theory and Research",
+        "type": "article",
+        "venue": "International Journal of Management Reviews",
+        "doi": "10.1111/j.1468-2370.2011.00306.x",
+        "openalex_id": "W1810872147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1468-2370.2011.00306.x"
+      },
+      "adds": "Reviews the field and its critiques."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Practice perspective (Spillane)",
+      "summary": "Leadership as interaction of leaders, followers and situation.",
+      "defining_work": {
+        "authors": [
+          "James P. Spillane",
+          "Richard Halverson",
+          "John B. Diamond"
+        ],
+        "year": 2004,
+        "title": "Towards a theory of leadership practice: a distributed perspective",
+        "type": "article",
+        "venue": "Journal of Curriculum Studies",
+        "doi": "10.1080/0022027032000106726",
+        "openalex_id": "W2133527607",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Unit-of-analysis view (Gronn)",
+      "summary": "Concertive action and conjoint agency.",
+      "defining_work": {
+        "authors": [
+          "Peter Gronn"
+        ],
+        "year": 2002,
+        "title": "Distributed leadership as a unit of analysis",
+        "type": "article",
+        "venue": "The Leadership Quarterly",
+        "doi": "10.1016/s1048-9843(02)00120-0",
+        "openalex_id": "W1994173157",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Fits the reality of schools where many people lead.",
+      "source": {
+        "authors": [
+          "Richard Bolden"
+        ],
+        "year": 2011,
+        "title": "Distributed Leadership in Organizations: A Review of Theory and Research",
+        "type": "article",
+        "venue": "International Journal of Management Reviews",
+        "doi": "10.1111/j.1468-2370.2011.00306.x",
+        "openalex_id": "W1810872147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1468-2370.2011.00306.x"
+      }
+    },
+    {
+      "point": "Shifts attention from heroic leaders to practice.",
+      "source": {
+        "authors": [
+          "James P. Spillane",
+          "Richard Halverson",
+          "John B. Diamond"
+        ],
+        "year": 2004,
+        "title": "Towards a theory of leadership practice: a distributed perspective",
+        "type": "article",
+        "venue": "Journal of Curriculum Studies",
+        "doi": "10.1080/0022027032000106726",
+        "openalex_id": "W2133527607",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The term is used in many inconsistent ways.",
+      "source": {
+        "authors": [
+          "Richard Bolden"
+        ],
+        "year": 2011,
+        "title": "Distributed Leadership in Organizations: A Review of Theory and Research",
+        "type": "article",
+        "venue": "International Journal of Management Reviews",
+        "doi": "10.1111/j.1468-2370.2011.00306.x",
+        "openalex_id": "W1810872147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1468-2370.2011.00306.x"
+      }
+    },
+    {
+      "point": "It can hide power relations and hierarchy.",
+      "source": {
+        "authors": [
+          "Jacky Lumby"
+        ],
+        "year": 2013,
+        "title": "Distributed Leadership",
+        "type": "article",
+        "venue": "Educational Management Administration & Leadership",
+        "doi": "10.1177/1741143213489288",
+        "openalex_id": "W2109637381",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "James P. Spillane",
+          "Richard Halverson",
+          "John B. Diamond"
+        ],
+        "year": 2004,
+        "title": "Towards a theory of leadership practice: a distributed perspective",
+        "type": "article",
+        "venue": "Journal of Curriculum Studies",
+        "doi": "10.1080/0022027032000106726",
+        "openalex_id": "W2133527607",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The founding article.",
+      "reading_question": "Which routines will you observe?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Peter Gronn"
+        ],
+        "year": 2002,
+        "title": "Distributed leadership as a unit of analysis",
+        "type": "article",
+        "venue": "The Leadership Quarterly",
+        "doi": "10.1016/s1048-9843(02)00120-0",
+        "openalex_id": "W1994173157",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "An alternative version.",
+      "reading_question": "Which version do you use?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Richard Bolden"
+        ],
+        "year": 2011,
+        "title": "Distributed Leadership in Organizations: A Review of Theory and Research",
+        "type": "article",
+        "venue": "International Journal of Management Reviews",
+        "doi": "10.1111/j.1468-2370.2011.00306.x",
+        "openalex_id": "W1810872147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1468-2370.2011.00306.x"
+      },
+      "chapter": null,
+      "why_read": "Map and critiques.",
+      "reading_question": "Which critique do you need to answer?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "distributed leadership",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2905639678",
+        "title": "Distributed leadership, professional collaboration, and teachers’ job satisfaction in U.S. schools",
+        "year": 2018,
+        "authors": [
+          "Darlene García Torres"
+        ],
+        "cited_by": 288,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3111269541",
+        "title": "Does school leadership matter for teachers’ classroom practice? The influence of instructional leadership and distributed leadership on instructional quality",
+        "year": 2020,
+        "authors": [
+          "Mehmet Şükrü Bellibaş",
+          "Sedat Gümüş",
+          "Yan Liu"
+        ],
+        "cited_by": 257,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4306922707",
+        "title": "Distributed leadership: taking a retrospective and contemporary view of the evidence base",
+        "year": 2022,
+        "authors": [
+          "Alma Harris",
+          "Michelle Suzette Jones",
+          "Nashwa Ismail"
+        ],
+        "cited_by": 244,
+        "oa_url": "https://doi.org/10.1080/13632434.2022.2109620"
+      },
+      {
+        "openalex_id": "W2537997257",
+        "title": "School leadership and management from a distributed perspective",
+        "year": 2016,
+        "authors": [
+          "John B. Diamond",
+          "James P. Spillane"
+        ],
+        "cited_by": 208,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2964800235",
+        "title": "Taking a distributed perspective on leading professional learning networks",
+        "year": 2019,
+        "authors": [
+          "Cecilia María Azorín Abellán",
+          "Alma Harris",
+          "Michelle Suzette Jones"
+        ],
+        "cited_by": 184,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

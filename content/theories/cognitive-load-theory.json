@@ -1,0 +1,384 @@
+{
+  "theory_id": null,
+  "library_name": "Cognitive load theory",
+  "slug": "cognitive-load-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "John Sweller"
+    ],
+    "year": 1988,
+    "title": "Cognitive Load During Problem Solving: Effects on Learning",
+    "type": "article",
+    "venue": "Cognitive Science",
+    "doi": "10.1016/0364-0213(88)90023-7",
+    "openalex_id": "W2130736456",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2130736456",
+  "core_idea": "Working memory can hold only a few new elements at once, while long-term memory stores schemas without limit. Instruction works when it avoids load that does not serve learning and helps learners build schemas.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Does a format (worked examples, multimedia, split attention) help or hinder learning?",
+    "How should complex material be sequenced for novices?",
+    "Typical data: experiments with learning tests, subjective load ratings, eye-tracking."
+  ],
+  "common_mistakes": [
+    "Using the three-part split (intrinsic, extraneous, germane) as if germane load were settled; Sweller later reworked it.",
+    "Measuring load with one self-report item and treating it as precise.",
+    "Ignoring expertise: what helps novices can hurt experts (expertise reversal)."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "John Sweller",
+          "Jeroen J. G. van Merriënboer",
+          "FRED G. W. C. PAAS"
+        ],
+        "year": 1998,
+        "title": "Cognitive Architecture and Instructional Design",
+        "type": "article",
+        "venue": "Educational Psychology Review",
+        "doi": "10.1023/a:1022193728205",
+        "openalex_id": "W2096036274",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Sets out the three types of load and design effects."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Slava Kalyuga",
+          "Paul Ayres",
+          "Paul Chandler",
+          "John Sweller"
+        ],
+        "year": 2003,
+        "title": "The Expertise Reversal Effect",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1207/s15326985ep3801_4",
+        "openalex_id": "W2001468118",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://handle.unsw.edu.au/1959.4/42177"
+      },
+      "adds": "Shows that guidance helping novices can harm experts."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "John Sweller",
+          "Jeroen J. G. van Merriënboer",
+          "FRED G. W. C. PAAS"
+        ],
+        "year": 2019,
+        "title": "Cognitive Architecture and Instructional Design: 20 Years Later",
+        "type": "article",
+        "venue": "Educational Psychology Review",
+        "doi": "10.1007/s10648-019-09465-5",
+        "openalex_id": "W2913144876",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1007/s10648-019-09465-5"
+      },
+      "adds": "Updates the theory and its effects."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Worked-example research",
+      "summary": "Studying from worked examples vs problem solving.",
+      "defining_work": {
+        "authors": [
+          "John Sweller",
+          "Jeroen J. G. van Merriënboer",
+          "FRED G. W. C. PAAS"
+        ],
+        "year": 1998,
+        "title": "Cognitive Architecture and Instructional Design",
+        "type": "article",
+        "venue": "Educational Psychology Review",
+        "doi": "10.1023/a:1022193728205",
+        "openalex_id": "W2096036274",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Multimedia learning",
+      "summary": "Overlaps with Mayer's cognitive theory of multimedia learning.",
+      "defining_work": {
+        "authors": [
+          "Richard E. Mayer",
+          "Roxana Moreno"
+        ],
+        "year": 2003,
+        "title": "Nine Ways to Reduce Cognitive Load in Multimedia Learning",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1207/s15326985ep3801_6",
+        "openalex_id": "W2126153334",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Many replicated design effects, such as worked examples and split attention.",
+      "source": {
+        "authors": [
+          "John Sweller",
+          "Jeroen J. G. van Merriënboer",
+          "FRED G. W. C. PAAS"
+        ],
+        "year": 2019,
+        "title": "Cognitive Architecture and Instructional Design: 20 Years Later",
+        "type": "article",
+        "venue": "Educational Psychology Review",
+        "doi": "10.1007/s10648-019-09465-5",
+        "openalex_id": "W2913144876",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1007/s10648-019-09465-5"
+      }
+    },
+    {
+      "point": "Gives clear, testable design guidance.",
+      "source": {
+        "authors": [
+          "Richard E. Mayer",
+          "Roxana Moreno"
+        ],
+        "year": 2003,
+        "title": "Nine Ways to Reduce Cognitive Load in Multimedia Learning",
+        "type": "article",
+        "venue": "Educational Psychologist",
+        "doi": "10.1207/s15326985ep3801_6",
+        "openalex_id": "W2126153334",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Cognitive load is hard to measure and its types are hard to separate.",
+      "source": {
+        "authors": [
+          "FRED G. W. C. PAAS",
+          "Alexander Renkl",
+          "John Sweller"
+        ],
+        "year": 2004,
+        "title": "Cognitive Load Theory: Instructional Implications of the Interaction between Information Structures and Cognitive Architecture",
+        "type": "article",
+        "venue": "Instructional Science",
+        "doi": "10.1023/b:truc.0000021806.17516.d0",
+        "openalex_id": "W2016546280",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The theory risks being unfalsifiable because load types are inferred after the fact.",
+      "source": {
+        "authors": [
+          "Ton de Jong"
+        ],
+        "year": 2009,
+        "title": "Cognitive load theory, educational research, and instructional design: some food for thought",
+        "type": "article",
+        "venue": "Instructional Science",
+        "doi": "10.1007/s11251-009-9110-0",
+        "openalex_id": "W2145114078",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1007/s11251-009-9110-0"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "John Sweller"
+        ],
+        "year": 1988,
+        "title": "Cognitive Load During Problem Solving: Effects on Learning",
+        "type": "article",
+        "venue": "Cognitive Science",
+        "doi": "10.1016/0364-0213(88)90023-7",
+        "openalex_id": "W2130736456",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The starting experiments.",
+      "reading_question": "What in your materials might overload novices?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "John Sweller",
+          "Jeroen J. G. van Merriënboer",
+          "FRED G. W. C. PAAS"
+        ],
+        "year": 1998,
+        "title": "Cognitive Architecture and Instructional Design",
+        "type": "article",
+        "venue": "Educational Psychology Review",
+        "doi": "10.1023/a:1022193728205",
+        "openalex_id": "W2096036274",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The classic full statement.",
+      "reading_question": "Which design effect does your study test?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "John Sweller",
+          "Jeroen J. G. van Merriënboer",
+          "FRED G. W. C. PAAS"
+        ],
+        "year": 2019,
+        "title": "Cognitive Architecture and Instructional Design: 20 Years Later",
+        "type": "article",
+        "venue": "Educational Psychology Review",
+        "doi": "10.1007/s10648-019-09465-5",
+        "openalex_id": "W2913144876",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1007/s10648-019-09465-5"
+      },
+      "chapter": null,
+      "why_read": "Current state.",
+      "reading_question": "How will you measure load?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "cognitive load",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2913144876",
+        "title": "Cognitive Architecture and Instructional Design: 20 Years Later",
+        "year": 2019,
+        "authors": [
+          "John Sweller",
+          "Jeroen J. G. van Merriënboer",
+          "FRED G. W. C. PAAS"
+        ],
+        "cited_by": 2829,
+        "oa_url": "https://doi.org/10.1007/s10648-019-09465-5"
+      },
+      {
+        "openalex_id": "W2545284422",
+        "title": "Effective Educational Videos: Principles and Guidelines for Maximizing Student Learning from Video Content",
+        "year": 2016,
+        "authors": [
+          "Cynthia Jan Brame"
+        ],
+        "cited_by": 1271,
+        "oa_url": "https://doi.org/10.1187/cbe.16-03-0125"
+      },
+      {
+        "openalex_id": "W3204718649",
+        "title": "Chatbots for language learning—Are they really useful? A systematic review of chatbot‐supported language learning",
+        "year": 2021,
+        "authors": [
+          "Weijiao Huang",
+          "Khe Foon Hew",
+          "Luke K. Fryer"
+        ],
+        "cited_by": 1002,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3176376210",
+        "title": "Understanding Cognitive Load in Digital and Online Learning: a New Perspective on Extraneous Cognitive Load",
+        "year": 2021,
+        "authors": [
+          "Alexander Skulmowski",
+          "Kate M. Xu"
+        ],
+        "cited_by": 895,
+        "oa_url": "https://doi.org/10.1007/s10648-021-09624-7"
+      },
+      {
+        "openalex_id": "W2800397035",
+        "title": "From Cognitive Load Theory to Collaborative Cognitive Load Theory",
+        "year": 2018,
+        "authors": [
+          "Paul A. Kirschner",
+          "John Sweller",
+          "Femke Kirschner",
+          "Jimmy Zambrano R."
+        ],
+        "cited_by": 663,
+        "oa_url": "https://doi.org/10.1007/s11412-018-9277-y"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

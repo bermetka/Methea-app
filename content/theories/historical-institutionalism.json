@@ -1,0 +1,377 @@
+{
+  "theory_id": null,
+  "library_name": "Historical institutionalism",
+  "slug": "historical-institutionalism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Paul Pierson"
+    ],
+    "year": 2004,
+    "title": "Politics in Time",
+    "type": "book",
+    "venue": "Princeton University Press eBooks",
+    "doi": "10.1515/9781400841080",
+    "openalex_id": "W1509292812",
+    "isbn": "9781400841080",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "first_publish_year": 2011,
+    "note": "Library record's first publication year is 2011; 2004 is the edition or translation cited here."
+  },
+  "citation_anchor_openalex_id": "W1509292812",
+  "core_idea": "Timing and sequence matter. Early choices create path dependence through increasing returns, so institutions persist, and they change mostly at critical junctures or gradually.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do post-Soviet institutions persist?",
+    "When and how do institutions change?",
+    "Typical data: process tracing, comparative historical analysis."
+  ],
+  "common_mistakes": [
+    "Calling any persistence path dependence.",
+    "Identifying critical junctures after the fact.",
+    "Ignoring gradual change."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Paul Pierson"
+        ],
+        "year": 2000,
+        "title": "Increasing Returns, Path Dependence, and the Study of Politics",
+        "type": "article",
+        "venue": "American Political Science Review",
+        "doi": "10.2307/2586011",
+        "openalex_id": "W2147111138",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1814/23648"
+      },
+      "adds": "Increasing returns."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Giovanni Capoccia",
+          "R. Daniel Kelemen"
+        ],
+        "year": 2007,
+        "title": "The Study of Critical Junctures: Theory, Narrative, and Counterfactuals in Historical Institutionalism",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1017/s0043887100020852",
+        "openalex_id": "W2016204775",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Critical junctures."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "James Mahoney",
+          "Kathleen Thelen"
+        ],
+        "year": 2009,
+        "title": "Explaining Institutional Change",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511806414",
+        "openalex_id": "W2143749883",
+        "isbn": "9780511656583",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2009
+      },
+      "adds": "Gradual change: layering, drift, conversion."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Path dependence",
+      "summary": "Increasing returns.",
+      "defining_work": {
+        "authors": [
+          "Paul Pierson"
+        ],
+        "year": 2000,
+        "title": "Increasing Returns, Path Dependence, and the Study of Politics",
+        "type": "article",
+        "venue": "American Political Science Review",
+        "doi": "10.2307/2586011",
+        "openalex_id": "W2147111138",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/1814/23648"
+      }
+    },
+    {
+      "name": "Gradual change",
+      "summary": "Layering and drift.",
+      "defining_work": {
+        "authors": [
+          "James Mahoney",
+          "Kathleen Thelen"
+        ],
+        "year": 2009,
+        "title": "Explaining Institutional Change",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511806414",
+        "openalex_id": "W2143749883",
+        "isbn": "9780511656583",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2009
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains persistence and timing.",
+      "source": {
+        "authors": [
+          "Kathleen Thelen"
+        ],
+        "year": 1999,
+        "title": "HISTORICAL INSTITUTIONALISM IN COMPARATIVE POLITICS",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.2.1.369",
+        "openalex_id": "W3151872007",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Rigorous concepts.",
+      "source": {
+        "authors": [
+          "Giovanni Capoccia",
+          "R. Daniel Kelemen"
+        ],
+        "year": 2007,
+        "title": "The Study of Critical Junctures: Theory, Narrative, and Counterfactuals in Historical Institutionalism",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1017/s0043887100020852",
+        "openalex_id": "W2016204775",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Better at stability than change.",
+      "source": {
+        "authors": [
+          "James Mahoney",
+          "Kathleen Thelen"
+        ],
+        "year": 2009,
+        "title": "Explaining Institutional Change",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511806414",
+        "openalex_id": "W2143749883",
+        "isbn": "9780511656583",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2009
+      }
+    },
+    {
+      "point": "Concepts used loosely.",
+      "source": {
+        "authors": [
+          "Peter A. Hall",
+          "Rosemary C. R. Taylor"
+        ],
+        "year": 1996,
+        "title": "Political Science and the Three New Institutionalisms",
+        "type": "article",
+        "venue": "Political Studies",
+        "doi": "10.1111/j.1467-9248.1996.tb00343.x",
+        "openalex_id": "W1561018600",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/11858/00-001M-0000-0012-59C1-5"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Paul Pierson"
+        ],
+        "year": 2004,
+        "title": "Politics in Time",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400841080",
+        "openalex_id": "W1509292812",
+        "isbn": "9781400841080",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2011,
+        "note": "Library record's first publication year is 2011; 2004 is the edition or translation cited here."
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "What sequence matters?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Giovanni Capoccia",
+          "R. Daniel Kelemen"
+        ],
+        "year": 2007,
+        "title": "The Study of Critical Junctures: Theory, Narrative, and Counterfactuals in Historical Institutionalism",
+        "type": "article",
+        "venue": "World Politics",
+        "doi": "10.1017/s0043887100020852",
+        "openalex_id": "W2016204775",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Junctures.",
+      "reading_question": "Is there a juncture?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Peter A. Hall",
+          "Rosemary C. R. Taylor"
+        ],
+        "year": 1996,
+        "title": "Political Science and the Three New Institutionalisms",
+        "type": "article",
+        "venue": "Political Studies",
+        "doi": "10.1111/j.1467-9248.1996.tb00343.x",
+        "openalex_id": "W1561018600",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://hdl.handle.net/11858/00-001M-0000-0012-59C1-5"
+      },
+      "chapter": null,
+      "why_read": "Three institutionalisms.",
+      "reading_question": "Why historical?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "historical institutionalism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2230261230",
+        "title": "When Do Institutions “Bite”? Historical Institutionalism and the Politics of Institutional Change",
+        "year": 2016,
+        "authors": [
+          "Giovanni Capoccia"
+        ],
+        "cited_by": 347,
+        "oa_url": "https://ora.ox.ac.uk/objects/uuid:016cb8c2-ede6-4d6f-b2b1-e3cc7c4fc01a"
+      },
+      {
+        "openalex_id": "W2474129394",
+        "title": "Historical institutionalism and the politics of sustainable energy transitions: A research agenda",
+        "year": 2016,
+        "authors": [
+          "Matthew Lockwood",
+          "Caroline Kuzemko",
+          "Catherine Mitchell",
+          "Richard Hoggett"
+        ],
+        "cited_by": 268,
+        "oa_url": "https://figshare.com/articles/journal_contribution/Historical_institutionalism_and_the_politics_of_sustainable_energy_transitions_a_research_agenda/23464925"
+      },
+      {
+        "openalex_id": "W2227694760",
+        "title": "Applying institutional theory to the low-carbon energy transition",
+        "year": 2016,
+        "authors": [
+          "Philip Andrews‐Speed"
+        ],
+        "cited_by": 268,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2943245787",
+        "title": "Varieties of Policy Feedback Research: Looking Backward, Moving Forward",
+        "year": 2019,
+        "authors": [
+          "Daniel Béland",
+          "Edella C. Schlager"
+        ],
+        "cited_by": 211,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2905899571",
+        "title": "Conditions for politically accelerated transitions: Historical institutionalism, the multi-level perspective, and two historical case studies in transport and agriculture",
+        "year": 2018,
+        "authors": [
+          "Cameron Roberts",
+          "Frank Willem Geels"
+        ],
+        "cited_by": 189,
+        "oa_url": "https://research.manchester.ac.uk/en/publications/3771038f-626e-4d65-8164-66d4ea807c2e"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

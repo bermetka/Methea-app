@@ -1,0 +1,437 @@
+{
+  "theory_id": null,
+  "library_name": "Normalization process theory",
+  "slug": "normalization-process-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Carl R May",
+      "Tracy L Finch"
+    ],
+    "year": 2009,
+    "title": "Implementing, Embedding, and Integrating Practices: An Outline of Normalization Process Theory",
+    "type": "article",
+    "venue": "Sociology",
+    "doi": "10.1177/0038038509103208",
+    "openalex_id": "W2085637447",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://doi.org/10.25405/ncl.34587993"
+  },
+  "citation_anchor_openalex_id": "W2085637447",
+  "core_idea": "New practices become routine when people make sense of them (coherence), commit to them (cognitive participation), work on them together (collective action) and appraise them (reflexive monitoring).",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why does a new practice, technology or guideline become routine or fail?",
+    "How do staff engage with an implementation?",
+    "Typical data: interviews, case study, NoMAD survey."
+  ],
+  "common_mistakes": [
+    "Coding data into four constructs without explaining mechanisms.",
+    "Using it only after implementation, not to design it.",
+    "Ignoring context."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Carl R May",
+          "Frances S Mair",
+          "Tracy L Finch",
+          "Anne E. MacFarlane",
+          "Christopher F Dowrick",
+          "Shaun P. Treweek"
+        ],
+        "year": 2009,
+        "title": "Development of a theory of implementation and integration: Normalization Process Theory",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/1748-5908-4-29",
+        "openalex_id": "W2124199620",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/1748-5908-4-29"
+      },
+      "adds": "Formal statement."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Elizabeth Murray",
+          "Shaun P. Treweek",
+          "Catherine J. Pope",
+          "Anne E. MacFarlane",
+          "Luciana Ballini",
+          "Christopher F Dowrick"
+        ],
+        "year": 2010,
+        "title": "Normalisation process theory: a framework for developing, evaluating and implementing complex interventions",
+        "type": "article",
+        "venue": "BMC Medicine",
+        "doi": "10.1186/1741-7015-8-63",
+        "openalex_id": "W2144185507",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/1741-7015-8-63"
+      },
+      "adds": "Use in intervention design."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Carl R May",
+          "Amanda J. Cummings",
+          "Melissa Girling",
+          "Mike Bracher",
+          "Frances S Mair",
+          "Christine May"
+        ],
+        "year": 2018,
+        "title": "Using Normalization Process Theory in feasibility studies and process evaluations of complex healthcare interventions: a systematic review",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/s13012-018-0758-1",
+        "openalex_id": "W2807684088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/s13012-018-0758-1"
+      },
+      "adds": "Systematic review of use."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Implementation evaluation",
+      "summary": "Process evaluations.",
+      "defining_work": {
+        "authors": [
+          "Carl R May",
+          "Amanda J. Cummings",
+          "Melissa Girling",
+          "Mike Bracher",
+          "Frances S Mair",
+          "Christine May"
+        ],
+        "year": 2018,
+        "title": "Using Normalization Process Theory in feasibility studies and process evaluations of complex healthcare interventions: a systematic review",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/s13012-018-0758-1",
+        "openalex_id": "W2807684088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/s13012-018-0758-1"
+      }
+    },
+    {
+      "name": "Intervention design",
+      "summary": "Prospective use.",
+      "defining_work": {
+        "authors": [
+          "Elizabeth Murray",
+          "Shaun P. Treweek",
+          "Catherine J. Pope",
+          "Anne E. MacFarlane",
+          "Luciana Ballini",
+          "Christopher F Dowrick"
+        ],
+        "year": 2010,
+        "title": "Normalisation process theory: a framework for developing, evaluating and implementing complex interventions",
+        "type": "article",
+        "venue": "BMC Medicine",
+        "doi": "10.1186/1741-7015-8-63",
+        "openalex_id": "W2144185507",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/1741-7015-8-63"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains implementation processes, as a systematic review shows.",
+      "source": {
+        "authors": [
+          "Carl R May",
+          "Amanda J. Cummings",
+          "Melissa Girling",
+          "Mike Bracher",
+          "Frances S Mair",
+          "Christine May"
+        ],
+        "year": 2018,
+        "title": "Using Normalization Process Theory in feasibility studies and process evaluations of complex healthcare interventions: a systematic review",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/s13012-018-0758-1",
+        "openalex_id": "W2807684088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/s13012-018-0758-1"
+      }
+    },
+    {
+      "point": "Has a measurement tool.",
+      "source": {
+        "authors": [
+          "Elizabeth Murray",
+          "Shaun P. Treweek",
+          "Catherine J. Pope",
+          "Anne E. MacFarlane",
+          "Luciana Ballini",
+          "Christopher F Dowrick"
+        ],
+        "year": 2010,
+        "title": "Normalisation process theory: a framework for developing, evaluating and implementing complex interventions",
+        "type": "article",
+        "venue": "BMC Medicine",
+        "doi": "10.1186/1741-7015-8-63",
+        "openalex_id": "W2144185507",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/1741-7015-8-63"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Constructs can be hard to apply and overlap.",
+      "source": {
+        "authors": [
+          "Carl R May",
+          "Amanda J. Cummings",
+          "Melissa Girling",
+          "Mike Bracher",
+          "Frances S Mair",
+          "Christine May"
+        ],
+        "year": 2018,
+        "title": "Using Normalization Process Theory in feasibility studies and process evaluations of complex healthcare interventions: a systematic review",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/s13012-018-0758-1",
+        "openalex_id": "W2807684088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/s13012-018-0758-1"
+      }
+    },
+    {
+      "point": "Focuses on agency, less on context.",
+      "source": {
+        "authors": [
+          "Carl R May",
+          "Frances S Mair",
+          "Tracy L Finch",
+          "Anne E. MacFarlane",
+          "Christopher F Dowrick",
+          "Shaun P. Treweek"
+        ],
+        "year": 2009,
+        "title": "Development of a theory of implementation and integration: Normalization Process Theory",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/1748-5908-4-29",
+        "openalex_id": "W2124199620",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/1748-5908-4-29"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Carl R May",
+          "Tracy L Finch"
+        ],
+        "year": 2009,
+        "title": "Implementing, Embedding, and Integrating Practices: An Outline of Normalization Process Theory",
+        "type": "article",
+        "venue": "Sociology",
+        "doi": "10.1177/0038038509103208",
+        "openalex_id": "W2085637447",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.25405/ncl.34587993"
+      },
+      "chapter": null,
+      "why_read": "Outline.",
+      "reading_question": "What practice are you implementing?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Elizabeth Murray",
+          "Shaun P. Treweek",
+          "Catherine J. Pope",
+          "Anne E. MacFarlane",
+          "Luciana Ballini",
+          "Christopher F Dowrick"
+        ],
+        "year": 2010,
+        "title": "Normalisation process theory: a framework for developing, evaluating and implementing complex interventions",
+        "type": "article",
+        "venue": "BMC Medicine",
+        "doi": "10.1186/1741-7015-8-63",
+        "openalex_id": "W2144185507",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/1741-7015-8-63"
+      },
+      "chapter": null,
+      "why_read": "Use.",
+      "reading_question": "Design or evaluation?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Carl R May",
+          "Amanda J. Cummings",
+          "Melissa Girling",
+          "Mike Bracher",
+          "Frances S Mair",
+          "Christine May"
+        ],
+        "year": 2018,
+        "title": "Using Normalization Process Theory in feasibility studies and process evaluations of complex healthcare interventions: a systematic review",
+        "type": "article",
+        "venue": "Implementation Science",
+        "doi": "10.1186/s13012-018-0758-1",
+        "openalex_id": "W2807684088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1186/s13012-018-0758-1"
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Which construct is weakest in your case?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "normalization process theory",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2807684088",
+        "title": "Using Normalization Process Theory in feasibility studies and process evaluations of complex healthcare interventions: a systematic review",
+        "year": 2018,
+        "authors": [
+          "Carl R May",
+          "Amanda J. Cummings",
+          "Melissa Girling",
+          "Mike Bracher",
+          "Frances S Mair",
+          "Christine May"
+        ],
+        "cited_by": 684,
+        "oa_url": "https://doi.org/10.1186/s13012-018-0758-1"
+      },
+      {
+        "openalex_id": "W2518961151",
+        "title": "Understanding factors affecting patient and public engagement and recruitment to digital health interventions: a systematic review of qualitative studies",
+        "year": 2016,
+        "authors": [
+          "Siobhán O’Connor",
+          "Peter Hanlon",
+          "Catherine A. O’Donnell",
+          "Sonia Garcia Gonzalez-Moral",
+          "Julie Glanville",
+          "Frances S Mair"
+        ],
+        "cited_by": 621,
+        "oa_url": "https://doi.org/10.1186/s12911-016-0359-3"
+      },
+      {
+        "openalex_id": "W2899423852",
+        "title": "Improving the normalization of complex interventions: part 2 - validation of the NoMAD instrument for assessing implementation work based on normalization process theory (NPT)",
+        "year": 2018,
+        "authors": [
+          "Tracy L Finch",
+          "Melissa Girling",
+          "Carl R May",
+          "Frances S Mair",
+          "Elizabeth Murray",
+          "Shaun P. Treweek"
+        ],
+        "cited_by": 338,
+        "oa_url": "https://doi.org/10.1186/s12874-018-0591-x"
+      },
+      {
+        "openalex_id": "W2588144700",
+        "title": "Readiness for Delivering Digital Health at Scale: Lessons From a Longitudinal Qualitative Evaluation of a National Digital Health Innovation Program in the United Kingdom",
+        "year": 2017,
+        "authors": [
+          "Marilyn Lennon",
+          "Matt-Mouley Bouamrane",
+          "Alison M. Devlin",
+          "Siobhán O’Connor",
+          "Catherine A. O’Donnell",
+          "Ula Chetty"
+        ],
+        "cited_by": 262,
+        "oa_url": "https://doi.org/10.2196/jmir.6900"
+      },
+      {
+        "openalex_id": "W2914884711",
+        "title": "Sustainability of public health interventions: where are the gaps?",
+        "year": 2019,
+        "authors": [
+          "David Roger Walugembe",
+          "Shannon L. Sibbald",
+          "Marlene Janzen Le Ber",
+          "Anita R. Kothari"
+        ],
+        "cited_by": 206,
+        "oa_url": "https://doi.org/10.1186/s12961-018-0405-y"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 6 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

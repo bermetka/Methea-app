@@ -1,0 +1,368 @@
+{
+  "theory_id": null,
+  "library_name": "Agenda-setting theory",
+  "slug": "agenda-setting-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Maxwell McCombs",
+      "Donald Lewis Shaw"
+    ],
+    "year": 1972,
+    "title": "The Agenda-Setting Function of Mass Media",
+    "type": "article",
+    "venue": "Public Opinion Quarterly",
+    "doi": "10.1086/267990",
+    "openalex_id": "W2150957645",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2150957645",
+  "core_idea": "The media may not tell people what to think, but they are stunningly successful in telling them what to think about. Issues that get more coverage become more salient on the public agenda. Second-level agenda-setting adds that media also shape which attributes of an issue stand out.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Which issues do media cover, and does that match what the public sees as important?",
+    "How do media shape the salience of attributes of candidates or issues?",
+    "Typical data: content analysis matched with surveys, time-series."
+  ],
+  "common_mistakes": [
+    "Confusing agenda-setting (what to think about) with framing (how to think about it).",
+    "Comparing media and public agendas without a time order.",
+    "Ignoring social media and intermedia agenda-setting."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Iyengar"
+        ],
+        "year": 1987,
+        "title": "News That Matters: Television and American Opinion",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226388601",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL15507833W, first published 1987). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1987
+      },
+      "adds": "Adds priming: salient issues shape how people judge leaders."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Maxwell McCombs",
+          "Donald Lewis Shaw"
+        ],
+        "year": 1993,
+        "title": "The Evolution of Agenda-Setting Research: Twenty-Five Years in the Marketplace of Ideas",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1993.tb01262.x",
+        "openalex_id": "W2047157082",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reviews 25 years of the theory."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Attribute agenda-setting",
+      "summary": "Media shape salient attributes.",
+      "defining_work": {
+        "authors": [
+          "Maxwell McCombs",
+          "Juan Pablo Llamas",
+          "Esteban López‐Escobar",
+          "Federico Rey"
+        ],
+        "year": 1997,
+        "title": "Candidate Images in Spanish Elections: Second-Level Agenda-Setting Effects",
+        "type": "article",
+        "venue": "Journalism & Mass Communication Quarterly",
+        "doi": "10.1177/107769909707400404",
+        "openalex_id": "W2090579727",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Priming",
+      "summary": "Salience shapes evaluation criteria.",
+      "defining_work": {
+        "authors": [
+          "Iyengar"
+        ],
+        "year": 1987,
+        "title": "News That Matters: Television and American Opinion",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226388601",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL15507833W, first published 1987). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1987
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Hundreds of studies support the basic effect.",
+      "source": {
+        "authors": [
+          "Maxwell McCombs",
+          "Donald Lewis Shaw"
+        ],
+        "year": 1993,
+        "title": "The Evolution of Agenda-Setting Research: Twenty-Five Years in the Marketplace of Ideas",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1993.tb01262.x",
+        "openalex_id": "W2047157082",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Simple to operationalise with content analysis and surveys.",
+      "source": {
+        "authors": [
+          "Maxwell McCombs",
+          "Donald Lewis Shaw"
+        ],
+        "year": 1972,
+        "title": "The Agenda-Setting Function of Mass Media",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/267990",
+        "openalex_id": "W2150957645",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Second-level agenda-setting overlaps with framing; the boundary is unclear.",
+      "source": {
+        "authors": [
+          "Dietram A. Scheufele",
+          "David H. Tewksbury"
+        ],
+        "year": 2006,
+        "title": "Framing, Agenda Setting, and Priming: The Evolution of Three Media Effects Models",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.0021-9916.2007.00326.x",
+        "openalex_id": "W2002781392",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Cognitive mechanisms differ between agenda-setting, priming and framing.",
+      "source": {
+        "authors": [
+          "Dietram A. Scheufele"
+        ],
+        "year": 2000,
+        "title": "Agenda-Setting, Priming, and Framing Revisited: Another Look at Cognitive Effects of Political Communication",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1207/s15327825mcs0323_07",
+        "openalex_id": "W1973082961",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Maxwell McCombs",
+          "Donald Lewis Shaw"
+        ],
+        "year": 1972,
+        "title": "The Agenda-Setting Function of Mass Media",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/267990",
+        "openalex_id": "W2150957645",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Chapel Hill study.",
+      "reading_question": "Which agendas will you compare?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Maxwell McCombs",
+          "Juan Pablo Llamas",
+          "Esteban López‐Escobar",
+          "Federico Rey"
+        ],
+        "year": 1997,
+        "title": "Candidate Images in Spanish Elections: Second-Level Agenda-Setting Effects",
+        "type": "article",
+        "venue": "Journalism & Mass Communication Quarterly",
+        "doi": "10.1177/107769909707400404",
+        "openalex_id": "W2090579727",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Attributes.",
+      "reading_question": "First or second level?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Dietram A. Scheufele",
+          "David H. Tewksbury"
+        ],
+        "year": 2006,
+        "title": "Framing, Agenda Setting, and Priming: The Evolution of Three Media Effects Models",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.0021-9916.2007.00326.x",
+        "openalex_id": "W2002781392",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "How agenda-setting relates to framing and priming.",
+      "reading_question": "Which effect does your question really ask about?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "agenda setting",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2801847939",
+        "title": "Rethinking Political Communication in a Time of Disrupted Public Spheres",
+        "year": 2018,
+        "authors": [
+          "W. Lance Bennett",
+          "Barbara Pfetsch"
+        ],
+        "cited_by": 576,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2956747517",
+        "title": "Who Leads? Who Follows? Measuring Issue Attention and Agenda Setting by Legislators and the Mass Public Using Social Media Data",
+        "year": 2019,
+        "authors": [
+          "Pablo Barberá",
+          "Andreu Casas",
+          "Jonathan Nagler",
+          "Patrick J Egan",
+          "Richard Bonneau",
+          "John T. Jost"
+        ],
+        "cited_by": 544,
+        "oa_url": "https://doi.org/10.1017/s0003055419000352"
+      },
+      {
+        "openalex_id": "W2780410304",
+        "title": "Agenda Setting through Social Media: The Importance of Incidental News Exposure and Social Filtering in the Digital Era",
+        "year": 2017,
+        "authors": [
+          "Jessica T. Feezell"
+        ],
+        "cited_by": 466,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3158066160",
+        "title": "Social Media and Political Agenda Setting",
+        "year": 2021,
+        "authors": [
+          "Fabrizio Gilardi",
+          "Theresa Gessler",
+          "Maël Kubli",
+          "Stefan Müller"
+        ],
+        "cited_by": 459,
+        "oa_url": "https://doi.org/10.1080/10584609.2021.1910390"
+      },
+      {
+        "openalex_id": "W2964826255",
+        "title": "Media Coverage of Firms: Background, Integration, and Directions for Future Research",
+        "year": 2019,
+        "authors": [
+          "Lorenz Graf‐Vlachy",
+          "Abbie Griffith Oliver",
+          "Richard Banfield",
+          "Andreas Sebastian Konig",
+          "Jonathan Nicholas Bundy"
+        ],
+        "cited_by": 259,
+        "oa_url": "https://doi.org/10.1177/0149206319864155"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

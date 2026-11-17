@@ -1,0 +1,311 @@
+{
+  "theory_id": null,
+  "library_name": "Pragmatism",
+  "slug": "pragmatism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Dewey"
+    ],
+    "year": 1938,
+    "title": "Logic: The Theory of Inquiry",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780030052507",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1938
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Inquiry starts from a real problem and is judged by its consequences: an idea is warranted if acting on it resolves the problem. The research question, not a prior commitment to one paradigm, decides which methods to use.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Research driven by a practical problem that needs both numbers and meanings.",
+    "Justifying a mixed-methods design.",
+    "Typical designs: mixed methods, action research, design-based research, evaluation."
+  ],
+  "common_mistakes": [
+    "Using pragmatism as 'anything goes' to avoid philosophical justification.",
+    "Naming pragmatism without linking it to the research problem and its consequences.",
+    "Reducing it to 'what works' and ignoring Dewey's account of inquiry."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "David L. Morgan"
+        ],
+        "year": 2007,
+        "title": "Paradigms Lost and Pragmatism Regained: Methodological Implications of Combining Qualitative and Quantitative Methods",
+        "type": "article",
+        "venue": "Journal of Mixed Methods Research",
+        "doi": "10.1177/2345678906292462",
+        "openalex_id": "W2169805800",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Pragmatism as the alternative to the paradigm wars: abduction, intersubjectivity, transferability."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "R. Burke Johnson",
+          "Anthony John Onwuegbuzie"
+        ],
+        "year": 2004,
+        "title": "Mixed Methods Research: A Research Paradigm Whose Time Has Come",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x033007014",
+        "openalex_id": "W2122838852",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Pragmatism as the philosophical partner of mixed methods research."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "David L. Morgan"
+        ],
+        "year": 2014,
+        "title": "Pragmatism as a Paradigm for Social Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800413513733",
+        "openalex_id": "W2125369131",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Returns to Dewey: pragmatism as a paradigm for all social research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Classical pragmatism",
+      "summary": "Dewey, James, Peirce: inquiry and experience.",
+      "defining_work": {
+        "authors": [
+          "Dewey"
+        ],
+        "year": 1938,
+        "title": "Logic: The Theory of Inquiry",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780030052507",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1938
+      }
+    },
+    {
+      "name": "Mixed-methods pragmatism",
+      "summary": "Pragmatism as methodological justification.",
+      "defining_work": {
+        "authors": [
+          "David L. Morgan"
+        ],
+        "year": 2007,
+        "title": "Paradigms Lost and Pragmatism Regained: Methodological Implications of Combining Qualitative and Quantitative Methods",
+        "type": "article",
+        "venue": "Journal of Mixed Methods Research",
+        "doi": "10.1177/2345678906292462",
+        "openalex_id": "W2169805800",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Frees researchers to combine methods according to the question.",
+      "source": {
+        "authors": [
+          "Martina Feilzer"
+        ],
+        "year": 2009,
+        "title": "Doing Mixed Methods Research Pragmatically: Implications for the Rediscovery of Pragmatism as a Research Paradigm",
+        "type": "article",
+        "venue": "Journal of Mixed Methods Research",
+        "doi": "10.1177/1558689809349691",
+        "openalex_id": "W2141063421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Provides a coherent philosophy for mixed methods.",
+      "source": {
+        "authors": [
+          "R. Burke Johnson",
+          "Anthony John Onwuegbuzie"
+        ],
+        "year": 2004,
+        "title": "Mixed Methods Research: A Research Paradigm Whose Time Has Come",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x033007014",
+        "openalex_id": "W2122838852",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Mixed-methods pragmatism is thin: it sidesteps politics and the classical tradition.",
+      "source": {
+        "authors": [
+          "Norman K. Denzin"
+        ],
+        "year": 2010,
+        "title": "Moments, Mixed Methods, and Paradigm Dialogs",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800410364608",
+        "openalex_id": "W2118620435",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "'What works' leaves open: works for whom and to what end?",
+      "source": {
+        "authors": [
+          "Donna M. Mertens"
+        ],
+        "year": 2007,
+        "title": "Transformative Paradigm: Mixed Methods and Social Justice",
+        "type": "article",
+        "venue": "Journal of Mixed Methods Research",
+        "doi": "10.1177/1558689807302811",
+        "openalex_id": "W2134583000",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Dewey"
+        ],
+        "year": 1938,
+        "title": "Logic: The Theory of Inquiry",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780030052507",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1938
+      },
+      "chapter": null,
+      "why_read": "Inquiry as problem-solving.",
+      "reading_question": "What problem starts your inquiry?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "David L. Morgan"
+        ],
+        "year": 2007,
+        "title": "Paradigms Lost and Pragmatism Regained: Methodological Implications of Combining Qualitative and Quantitative Methods",
+        "type": "article",
+        "venue": "Journal of Mixed Methods Research",
+        "doi": "10.1177/2345678906292462",
+        "openalex_id": "W2169805800",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The key methodological statement.",
+      "reading_question": "How do you move between data and theory?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "David L. Morgan"
+        ],
+        "year": 2014,
+        "title": "Pragmatism as a Paradigm for Social Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800413513733",
+        "openalex_id": "W2125369131",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Beyond 'what works'.",
+      "reading_question": "What consequences would count as success?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "pragmatism research paradigm",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Logic: The Theory of Inquiry. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

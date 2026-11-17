@@ -1,0 +1,385 @@
+{
+  "theory_id": null,
+  "library_name": "Public choice theory",
+  "slug": "public-choice-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "James McGill Buchanan",
+      "Gordon Tullock"
+    ],
+    "year": 1960,
+    "title": "The Calculus of Consent",
+    "type": "book",
+    "venue": "University of Michigan Press eBooks",
+    "doi": "10.3998/mpub.7687",
+    "openalex_id": "W4234963003",
+    "isbn": "9780472091003",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "first_publish_year": 1962
+  },
+  "citation_anchor_openalex_id": "W4234963003",
+  "core_idea": "Politicians, voters and bureaucrats are self-interested like market actors. This explains rent-seeking, logrolling and government failure, and the choice of constitutional rules.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do policies favour particular interests?",
+    "Why do reforms fail?",
+    "Typical data: case study, formal analysis."
+  ],
+  "common_mistakes": [
+    "Assuming only self-interest without evidence.",
+    "Ignoring ideas and institutions.",
+    "Using it as ideology rather than analysis."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Gordon Tullock"
+        ],
+        "year": 1967,
+        "title": "THE WELFARE COSTS OF TARIFFS, MONOPOLIES, AND THEFT",
+        "type": "article",
+        "venue": "Economic Inquiry",
+        "doi": "10.1111/j.1465-7295.1967.tb01923.x",
+        "openalex_id": "W2092793969",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Rent-seeking."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Anne O. Krueger"
+        ],
+        "year": 2008,
+        "title": "The Political Economy of the Rent-Seeking Society",
+        "type": "chapter",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-3-540-79247-5_8",
+        "openalex_id": "W1486212401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint record (2008 collection) of the 1974 American Economic Review article."
+      },
+      "adds": "Rent-seeking in trade."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "William A. Niskanen"
+        ],
+        "year": 1971,
+        "title": "Bureaucracy and Representative Government",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2043285762",
+        "isbn": "9781138519909",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2017,
+        "note": "Library record's first publication year is 2017; 1971 is the edition or translation cited here."
+      },
+      "adds": "Budget-maximising bureaucrats."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Rent-seeking",
+      "summary": "Costs of lobbying.",
+      "defining_work": {
+        "authors": [
+          "Anne O. Krueger"
+        ],
+        "year": 2008,
+        "title": "The Political Economy of the Rent-Seeking Society",
+        "type": "chapter",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-3-540-79247-5_8",
+        "openalex_id": "W1486212401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint record (2008 collection) of the 1974 American Economic Review article."
+      }
+    },
+    {
+      "name": "Bureaucracy",
+      "summary": "Budget maximisation.",
+      "defining_work": {
+        "authors": [
+          "William A. Niskanen"
+        ],
+        "year": 1971,
+        "title": "Bureaucracy and Representative Government",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2043285762",
+        "isbn": "9781138519909",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2017,
+        "note": "Library record's first publication year is 2017; 1971 is the edition or translation cited here."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains government failure.",
+      "source": {
+        "authors": [
+          "Anne O. Krueger"
+        ],
+        "year": 2008,
+        "title": "The Political Economy of the Rent-Seeking Society",
+        "type": "chapter",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-3-540-79247-5_8",
+        "openalex_id": "W1486212401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint record (2008 collection) of the 1974 American Economic Review article."
+      }
+    },
+    {
+      "point": "Clear assumptions.",
+      "source": {
+        "authors": [
+          "James McGill Buchanan",
+          "Gordon Tullock"
+        ],
+        "year": 1960,
+        "title": "The Calculus of Consent",
+        "type": "book",
+        "venue": "University of Michigan Press eBooks",
+        "doi": "10.3998/mpub.7687",
+        "openalex_id": "W4234963003",
+        "isbn": "9780472091003",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1962
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Weak empirical support for rational choice in politics.",
+      "source": {
+        "authors": [
+          "Green"
+        ],
+        "year": 1994,
+        "title": "Pathologies of Rational Choice Theory",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780300066364",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1996
+      }
+    },
+    {
+      "point": "Budget-maximising bureaucrat not supported.",
+      "source": {
+        "authors": [
+          "William A. Niskanen"
+        ],
+        "year": 1971,
+        "title": "Bureaucracy and Representative Government",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2043285762",
+        "isbn": "9781138519909",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2017,
+        "note": "Library record's first publication year is 2017; 1971 is the edition or translation cited here."
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "James McGill Buchanan",
+          "Gordon Tullock"
+        ],
+        "year": 1960,
+        "title": "The Calculus of Consent",
+        "type": "book",
+        "venue": "University of Michigan Press eBooks",
+        "doi": "10.3998/mpub.7687",
+        "openalex_id": "W4234963003",
+        "isbn": "9780472091003",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1962
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Whose interests drive the policy?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Anne O. Krueger"
+        ],
+        "year": 2008,
+        "title": "The Political Economy of the Rent-Seeking Society",
+        "type": "chapter",
+        "venue": "Springer eBooks",
+        "doi": "10.1007/978-3-540-79247-5_8",
+        "openalex_id": "W1486212401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint record (2008 collection) of the 1974 American Economic Review article."
+      },
+      "chapter": null,
+      "why_read": "Rents.",
+      "reading_question": "Is there rent-seeking?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Green"
+        ],
+        "year": 1994,
+        "title": "Pathologies of Rational Choice Theory",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780300066364",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1996
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you test it?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "public choice",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2295894398",
+        "title": "Economics of Blockchain",
+        "year": 2016,
+        "authors": [
+          "Sinclair Davidson",
+          "Primavera De Filippi",
+          "Jason Potts"
+        ],
+        "cited_by": 357,
+        "oa_url": "https://doi.org/10.2139/ssrn.2744751"
+      },
+      {
+        "openalex_id": "W2962866258",
+        "title": "The effect of fiscal transparency on corruption: A panel cross‐country analysis",
+        "year": 2019,
+        "authors": [
+          "Can Chen",
+          "Milena I. Neshkova"
+        ],
+        "cited_by": 124,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2300909158",
+        "title": "Blockchains and the Boundaries of Self-Organized Economies: Predictions for the Future of Banking",
+        "year": 2016,
+        "authors": [
+          "Trent MacDonald",
+          "Darcy W E Allen",
+          "Jason Potts"
+        ],
+        "cited_by": 123,
+        "oa_url": "https://doi.org/10.2139/ssrn.2749514"
+      },
+      {
+        "openalex_id": "W2516805755",
+        "title": "Public policy for academic entrepreneurship initiatives: a review and critical discussion",
+        "year": 2016,
+        "authors": [
+          "Christian G. Sandström",
+          "Karl J. Wennberg",
+          "Martin W. Wallin",
+          "Yulia Zherlygina"
+        ],
+        "cited_by": 107,
+        "oa_url": "https://doi.org/10.1007/s10961-016-9536-x"
+      },
+      {
+        "openalex_id": "W2892304446",
+        "title": "Convening for Consensus: Simulating Stakeholder Agreement in Collaborative Governance Processes Under Different Network Conditions",
+        "year": 2018,
+        "authors": [
+          "Tyler A. Scott",
+          "Craig W. Thomas",
+          "José Manuel Magallanes Reyes"
+        ],
+        "cited_by": 69,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): The Political Economy of the Rent-Seeking Society. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 6 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

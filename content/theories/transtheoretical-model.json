@@ -1,0 +1,390 @@
+{
+  "theory_id": null,
+  "library_name": "Transtheoretical model (stages of change)",
+  "slug": "transtheoretical-model",
+  "status": "published",
+  "original": {
+    "authors": [
+      "James O. Prochaska",
+      "Carlo C. DiClemente"
+    ],
+    "year": 1983,
+    "title": "Stages and processes of self-change of smoking: Toward an integrative model of change.",
+    "type": "article",
+    "venue": "Journal of Consulting and Clinical Psychology",
+    "doi": "10.1037//0022-006x.51.3.390",
+    "openalex_id": "W2021604300",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/572"
+  },
+  "citation_anchor_openalex_id": "W2021604300",
+  "core_idea": "People change behaviour by moving through stages: precontemplation, contemplation, preparation, action and maintenance. Different processes of change help at different stages.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How ready are people to change a behaviour?",
+    "Do stage-matched interventions work better?",
+    "Typical data: stage questionnaires, longitudinal surveys, interviews."
+  ],
+  "common_mistakes": [
+    "Using stages without processes of change.",
+    "Assuming linear movement; relapse is common.",
+    "Using the model for behaviours it wasn't built for without adaptation."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "James O. Prochaska",
+          "Carlo C. DiClemente",
+          "John C. Norcross"
+        ],
+        "year": 1993,
+        "title": "In Search of How People Change: Applications to Addictive Behaviors",
+        "type": "article",
+        "venue": "Journal of Addictions Nursing",
+        "doi": "10.3109/10884609309149692",
+        "openalex_id": "W2222598890",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/521"
+      },
+      "adds": "Applies the model to addictions."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "James O. Prochaska",
+          "Wayne F. Velicer"
+        ],
+        "year": 1997,
+        "title": "The Transtheoretical Model of Health Behavior Change",
+        "type": "article",
+        "venue": "American Journal of Health Promotion",
+        "doi": "10.4278/0890-1171-12.1.38",
+        "openalex_id": "W2142912849",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/500"
+      },
+      "adds": "Overview of constructs."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Jean M Adams"
+        ],
+        "year": 2004,
+        "title": "Why don't stage-based activity promotion interventions work?",
+        "type": "article",
+        "venue": "Health Education Research",
+        "doi": "10.1093/her/cyg105",
+        "openalex_id": "W2159057010",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.25405/ncl.34620258"
+      },
+      "adds": "Tests stage-matched interventions."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Addiction research",
+      "summary": "Smoking, alcohol.",
+      "defining_work": {
+        "authors": [
+          "James O. Prochaska",
+          "Carlo C. DiClemente",
+          "John C. Norcross"
+        ],
+        "year": 1993,
+        "title": "In Search of How People Change: Applications to Addictive Behaviors",
+        "type": "article",
+        "venue": "Journal of Addictions Nursing",
+        "doi": "10.3109/10884609309149692",
+        "openalex_id": "W2222598890",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/521"
+      }
+    },
+    {
+      "name": "Health promotion",
+      "summary": "Exercise, diet.",
+      "defining_work": {
+        "authors": [
+          "James O. Prochaska",
+          "Wayne F. Velicer"
+        ],
+        "year": 1997,
+        "title": "The Transtheoretical Model of Health Behavior Change",
+        "type": "article",
+        "venue": "American Journal of Health Promotion",
+        "doi": "10.4278/0890-1171-12.1.38",
+        "openalex_id": "W2142912849",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/500"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Intuitive and widely used in practice.",
+      "source": {
+        "authors": [
+          "James O. Prochaska",
+          "Wayne F. Velicer"
+        ],
+        "year": 1997,
+        "title": "The Transtheoretical Model of Health Behavior Change",
+        "type": "article",
+        "venue": "American Journal of Health Promotion",
+        "doi": "10.4278/0890-1171-12.1.38",
+        "openalex_id": "W2142912849",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/500"
+      }
+    },
+    {
+      "point": "Recognises readiness differences.",
+      "source": {
+        "authors": [
+          "James O. Prochaska",
+          "Carlo C. DiClemente",
+          "John C. Norcross"
+        ],
+        "year": 1993,
+        "title": "In Search of How People Change: Applications to Addictive Behaviors",
+        "type": "article",
+        "venue": "Journal of Addictions Nursing",
+        "doi": "10.3109/10884609309149692",
+        "openalex_id": "W2222598890",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/521"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Stages are arbitrary and the model should be abandoned.",
+      "source": {
+        "authors": [
+          "Robert West"
+        ],
+        "year": 2005,
+        "title": "Time for a change: putting the Transtheoretical (Stages of Change) Model to rest",
+        "type": "article",
+        "venue": "Addiction",
+        "doi": "10.1111/j.1360-0443.2005.01139.x",
+        "openalex_id": "W1569910090",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1360-0443.2005.01139.x"
+      }
+    },
+    {
+      "point": "Evidence for stage-matched interventions is weak.",
+      "source": {
+        "authors": [
+          "Rob Riemsma",
+          "Jill Pattenden",
+          "Christopher Bridle",
+          "Amanda J Sowden",
+          "Lisa Mather",
+          "Ian S Watt"
+        ],
+        "year": 2003,
+        "title": "Systematic review of the effectiveness of stage based interventions to promote smoking cessation",
+        "type": "article",
+        "venue": "BMJ",
+        "doi": "10.1136/bmj.326.7400.1175",
+        "openalex_id": "W2148349675",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1136/bmj.326.7400.1175"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "James O. Prochaska",
+          "Carlo C. DiClemente"
+        ],
+        "year": 1983,
+        "title": "Stages and processes of self-change of smoking: Toward an integrative model of change.",
+        "type": "article",
+        "venue": "Journal of Consulting and Clinical Psychology",
+        "doi": "10.1037//0022-006x.51.3.390",
+        "openalex_id": "W2021604300",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/572"
+      },
+      "chapter": null,
+      "why_read": "Origin.",
+      "reading_question": "Which stage are your participants in?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "James O. Prochaska",
+          "Wayne F. Velicer"
+        ],
+        "year": 1997,
+        "title": "The Transtheoretical Model of Health Behavior Change",
+        "type": "article",
+        "venue": "American Journal of Health Promotion",
+        "doi": "10.4278/0890-1171-12.1.38",
+        "openalex_id": "W2142912849",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://digitalcommons.uri.edu/psy_facpubs/500"
+      },
+      "chapter": null,
+      "why_read": "Constructs.",
+      "reading_question": "Will you measure processes too?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Robert West"
+        ],
+        "year": 2005,
+        "title": "Time for a change: putting the Transtheoretical (Stages of Change) Model to rest",
+        "type": "article",
+        "venue": "Addiction",
+        "doi": "10.1111/j.1360-0443.2005.01139.x",
+        "openalex_id": "W1569910090",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/j.1360-0443.2005.01139.x"
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Why stages rather than continuum models?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "stages of change",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3084366678",
+        "title": "Physical Activity and Sedentary Lifestyle in University Students: Changes during Confinement Due to the COVID-19 Pandemic",
+        "year": 2020,
+        "authors": [
+          "Cristina Romero",
+          "Julián Rodríguez‐Almagro",
+          "María Dolores Onieva Zafra",
+          "María Laura Parra-Fernández",
+          "María del Carmen Prado-Laguna",
+          "Antonio Hernández‐Martínez"
+        ],
+        "cited_by": 532,
+        "oa_url": "https://doi.org/10.3390/ijerph17186567"
+      },
+      {
+        "openalex_id": "W2525627827",
+        "title": "Transforming Experience: The Potential of Augmented Reality and Virtual Reality for Enhancing Personal and Clinical Change",
+        "year": 2016,
+        "authors": [
+          "Giuseppe Riva",
+          "Rosa Baños",
+          "Cristina Botella",
+          "Fabrizia Mantovani",
+          "Andrea Gaggioli"
+        ],
+        "cited_by": 431,
+        "oa_url": "https://doi.org/10.3389/fpsyt.2016.00164"
+      },
+      {
+        "openalex_id": "W3012948937",
+        "title": "Transtheoretical Model of Behavior Change",
+        "year": 2018,
+        "authors": [
+          "James O. Prochaska"
+        ],
+        "cited_by": 297,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2196653212",
+        "title": "The Precaution Adoption Process Model",
+        "year": 2020,
+        "authors": [
+          "Neil D. Weinstein",
+          "Peter M. Sandman",
+          "Susan J. Blalock"
+        ],
+        "cited_by": 271,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2901490785",
+        "title": "The Use of Wearable Activity Trackers Among Older Adults: Focus Group Study of Tracker Perceptions, Motivators, and Barriers in the Maintenance Stage of Behavior Change",
+        "year": 2018,
+        "authors": [
+          "Anastasia G. Kononova",
+          "Lin Li",
+          "Kendra Kamp",
+          "Marie Bowen",
+          "R. V. Rikard",
+          "Shelia R. Cotten"
+        ],
+        "cited_by": 224,
+        "oa_url": "https://doi.org/10.2196/mhealth.9832"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

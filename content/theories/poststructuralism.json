@@ -1,0 +1,315 @@
+{
+  "theory_id": null,
+  "library_name": "Poststructuralism",
+  "slug": "poststructuralism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Lyotard"
+    ],
+    "year": 1984,
+    "title": "The Postmodern Condition: A Report on Knowledge",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9789986403043",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1979,
+    "note": "Open Library lists this work under its original title 'La condition postmoderne' (1979); 1984 is the English edition cited here. The ISBN belongs to one edition of that work."
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Meaning is not fixed by structures or by reality; it is produced in language and discourse and is always unstable. Knowledge and power are entangled, so research examines how categories, subjects and truths are constructed rather than taking them as given.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How is a category or identity (e.g. 'at-risk student', 'migrant') produced in discourse?",
+    "Questioning what is taken for granted in a field or policy.",
+    "Typical designs: discourse analysis, deconstruction, genealogy."
+  ],
+  "common_mistakes": [
+    "Using poststructuralism as a label while coding data for stable themes.",
+    "Treating 'discourse' as just talk.",
+    "Equating it with relativism: 'anything is true'."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Michel Foucault",
+          "Alan Sheridan"
+        ],
+        "year": 1972,
+        "title": "The archaeology of knowledge ; and, The discourse on language",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1592182057",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Discursive formations: rules that make statements possible."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Elizabeth Adams St. Pierre"
+        ],
+        "year": 2000,
+        "title": "Poststructural feminism in education: An overview",
+        "type": "article",
+        "venue": "International Journal of Qualitative Studies in Education",
+        "doi": "10.1080/09518390050156422",
+        "openalex_id": "W2090983681",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/09518390050156422"
+      },
+      "adds": "What poststructural concepts do in education research."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Ben Agger"
+        ],
+        "year": 1991,
+        "title": "Critical Theory, Poststructuralism, Postmodernism: Their Sociological Relevance",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.so.17.080191.000541",
+        "openalex_id": "W2148662151",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Explains critical theory, poststructuralism and postmodernism for sociologists."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Deconstruction",
+      "summary": "Derrida: reading texts against themselves.",
+      "defining_work": {
+        "authors": [
+          "Derrida"
+        ],
+        "year": 1976,
+        "title": "Of Grammatology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781421419961",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2013,
+        "note": "Library record's first publication year is 2013; 1976 is the edition or translation cited here."
+      }
+    },
+    {
+      "name": "Discourse and genealogy",
+      "summary": "Foucault: knowledge and power.",
+      "defining_work": {
+        "authors": [
+          "Michel Foucault",
+          "Alan Sheridan"
+        ],
+        "year": 1972,
+        "title": "The archaeology of knowledge ; and, The discourse on language",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1592182057",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Opens taken-for-granted categories to analysis.",
+      "source": {
+        "authors": [
+          "Elizabeth Adams St. Pierre"
+        ],
+        "year": 2000,
+        "title": "Poststructural feminism in education: An overview",
+        "type": "article",
+        "venue": "International Journal of Qualitative Studies in Education",
+        "doi": "10.1080/09518390050156422",
+        "openalex_id": "W2090983681",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/09518390050156422"
+      }
+    },
+    {
+      "point": "Offers social science tools to study discourse and power.",
+      "source": {
+        "authors": [
+          "Ben Agger"
+        ],
+        "year": 1991,
+        "title": "Critical Theory, Poststructuralism, Postmodernism: Their Sociological Relevance",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.so.17.080191.000541",
+        "openalex_id": "W2148662151",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "By rejecting reason it undermines the ground of its own critique.",
+      "source": {
+        "authors": [
+          "Jürgen Habermas"
+        ],
+        "year": 1985,
+        "title": "The Philosophical Discourse of Modernity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W217783",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Its scepticism leaves social science without criteria for knowledge.",
+      "source": {
+        "authors": [
+          "Pauline Marie Rosenau"
+        ],
+        "year": 1991,
+        "title": "Post-Modernism and the Social Sciences: Insights, Inroads, and Intrusions",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.2307/j.ctt7shqp",
+        "openalex_id": "W4300663951",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1515/9781400820610"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Lyotard"
+        ],
+        "year": 1984,
+        "title": "The Postmodern Condition: A Report on Knowledge",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9789986403043",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1979,
+        "note": "Open Library lists this work under its original title 'La condition postmoderne' (1979); 1984 is the English edition cited here. The ISBN belongs to one edition of that work."
+      },
+      "chapter": null,
+      "why_read": "Incredulity toward metanarratives.",
+      "reading_question": "Which grand narrative does your field rely on?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Michel Foucault",
+          "Alan Sheridan"
+        ],
+        "year": 1972,
+        "title": "The archaeology of knowledge ; and, The discourse on language",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1592182057",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Discourse.",
+      "reading_question": "What rules decide what can be said in your field?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Ben Agger"
+        ],
+        "year": 1991,
+        "title": "Critical Theory, Poststructuralism, Postmodernism: Their Sociological Relevance",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.so.17.080191.000541",
+        "openalex_id": "W2148662151",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Accessible map.",
+      "reading_question": "Critical theory or poststructuralism: which fits your question?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "poststructuralism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Of Grammatology; The Postmodern Condition: A Report on Knowledge. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

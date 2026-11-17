@@ -1,0 +1,368 @@
+{
+  "theory_id": null,
+  "library_name": "Self-regulated learning",
+  "slug": "self-regulated-learning",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Barry J. Zimmerman"
+    ],
+    "year": 2002,
+    "title": "Becoming a Self-Regulated Learner: An Overview",
+    "type": "article",
+    "venue": "Theory Into Practice",
+    "doi": "10.1207/s15430421tip4102_2",
+    "openalex_id": "W2117766479",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2117766479",
+  "core_idea": "Self-regulated learners take charge of their own learning. They set goals and plan (forethought), monitor and control what they do (performance), and judge and adjust afterwards (self-reflection), in a repeating cycle.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do students plan, monitor and evaluate their study, e.g. online or independent learning?",
+    "Which strategies or feedback help students become more self-regulated?",
+    "Typical data: questionnaires such as the MSLQ, think-aloud protocols, learning analytics, interviews."
+  ],
+  "common_mistakes": [
+    "Treating SRL as a stable trait measured once, when the models describe a changing process.",
+    "Picking one model's phases without saying which model you use (Zimmerman, Pintrich, Winne and Hadwin, Boekaerts differ).",
+    "Measuring only strategy use and ignoring motivation and emotion, which all main models include."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Barry J. Zimmerman"
+        ],
+        "year": 1989,
+        "title": "A social cognitive view of self-regulated academic learning.",
+        "type": "article",
+        "venue": "Journal of Educational Psychology",
+        "doi": "10.1037//0022-0663.81.3.329",
+        "openalex_id": "W2062251337",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Grounds SRL in social cognitive theory: person, behaviour and environment."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Paul R. Pintrich"
+        ],
+        "year": 2000,
+        "title": "The Role of Goal Orientation in Self-Regulated Learning",
+        "type": "chapter",
+        "venue": "Elsevier eBooks",
+        "doi": "10.1016/b978-012109890-2/50043-3",
+        "openalex_id": "W1741890539",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Adds motivation and goal orientation to the SRL model."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Ernesto Panadero"
+        ],
+        "year": 2017,
+        "title": "A Review of Self-regulated Learning: Six Models and Four Directions for Research",
+        "type": "article",
+        "venue": "Frontiers in Psychology",
+        "doi": "10.3389/fpsyg.2017.00422",
+        "openalex_id": "W2597900308",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3389/fpsyg.2017.00422"
+      },
+      "adds": "Compares six SRL models and maps open questions."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Social cognitive SRL (Zimmerman)",
+      "summary": "Cyclical phases of forethought, performance and self-reflection.",
+      "defining_work": {
+        "authors": [
+          "Barry J. Zimmerman"
+        ],
+        "year": 1989,
+        "title": "A social cognitive view of self-regulated academic learning.",
+        "type": "article",
+        "venue": "Journal of Educational Psychology",
+        "doi": "10.1037//0022-0663.81.3.329",
+        "openalex_id": "W2062251337",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Motivational SRL (Pintrich)",
+      "summary": "Integrates goals, motivation and cognition.",
+      "defining_work": {
+        "authors": [
+          "Paul R. Pintrich"
+        ],
+        "year": 2000,
+        "title": "The Role of Goal Orientation in Self-Regulated Learning",
+        "type": "chapter",
+        "venue": "Elsevier eBooks",
+        "doi": "10.1016/b978-012109890-2/50043-3",
+        "openalex_id": "W1741890539",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Strategy instruction based on SRL improves achievement, according to meta-analysis.",
+      "source": {
+        "authors": [
+          "Charlotte Dignath",
+          "Gerhard Buettner",
+          "Hans‐Peter Langfeldt"
+        ],
+        "year": 2008,
+        "title": "How can primary school students learn self-regulated learning strategies most effectively?",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2008.02.003",
+        "openalex_id": "W1828171833",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Gives a shared language across many models, compared systematically in reviews.",
+      "source": {
+        "authors": [
+          "Ernesto Panadero"
+        ],
+        "year": 2017,
+        "title": "A Review of Self-regulated Learning: Six Models and Four Directions for Research",
+        "type": "article",
+        "venue": "Frontiers in Psychology",
+        "doi": "10.3389/fpsyg.2017.00422",
+        "openalex_id": "W2597900308",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3389/fpsyg.2017.00422"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Self-report questionnaires capture SRL poorly as a process; trace and think-aloud data tell a different story.",
+      "source": {
+        "authors": [
+          "Philip H. Winne",
+          "Nancy E. Perry"
+        ],
+        "year": 2000,
+        "title": "Measuring Self-Regulated Learning",
+        "type": "chapter",
+        "venue": "Elsevier eBooks",
+        "doi": "10.1016/b978-012109890-2/50045-7",
+        "openalex_id": "W2494899296",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Models differ so much that 'SRL' can mean different things in different studies.",
+      "source": {
+        "authors": [
+          "Ernesto Panadero"
+        ],
+        "year": 2017,
+        "title": "A Review of Self-regulated Learning: Six Models and Four Directions for Research",
+        "type": "article",
+        "venue": "Frontiers in Psychology",
+        "doi": "10.3389/fpsyg.2017.00422",
+        "openalex_id": "W2597900308",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3389/fpsyg.2017.00422"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Barry J. Zimmerman"
+        ],
+        "year": 2002,
+        "title": "Becoming a Self-Regulated Learner: An Overview",
+        "type": "article",
+        "venue": "Theory Into Practice",
+        "doi": "10.1207/s15430421tip4102_2",
+        "openalex_id": "W2117766479",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Short, clear statement of the cyclical model.",
+      "reading_question": "Which phase is weakest for the learners you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Paul R. Pintrich"
+        ],
+        "year": 2000,
+        "title": "The Role of Goal Orientation in Self-Regulated Learning",
+        "type": "chapter",
+        "venue": "Elsevier eBooks",
+        "doi": "10.1016/b978-012109890-2/50043-3",
+        "openalex_id": "W1741890539",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The motivational strand.",
+      "reading_question": "Does motivation enter your design, or only strategies?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Ernesto Panadero"
+        ],
+        "year": 2017,
+        "title": "A Review of Self-regulated Learning: Six Models and Four Directions for Research",
+        "type": "article",
+        "venue": "Frontiers in Psychology",
+        "doi": "10.3389/fpsyg.2017.00422",
+        "openalex_id": "W2597900308",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3389/fpsyg.2017.00422"
+      },
+      "chapter": null,
+      "why_read": "Map of the models.",
+      "reading_question": "Which model fits your data collection best?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "self-regulated learning",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W1526122805",
+        "title": "Handbook of Self-Regulation of Learning and Performance",
+        "year": 2017,
+        "authors": [],
+        "cited_by": 1917,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4405211386",
+        "title": "Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance",
+        "year": 2024,
+        "authors": [
+          "Yizhou Fan",
+          "Luzhen Tang",
+          "Huixiao Le",
+          "Kejie Shen",
+          "Shufang Tan",
+          "Yueying Zhao"
+        ],
+        "cited_by": 1121,
+        "oa_url": "https://doi.org/10.1111/bjet.13544"
+      },
+      {
+        "openalex_id": "W2389127339",
+        "title": "A self-regulated flipped classroom approach to improving students’ learning performance in a mathematics course",
+        "year": 2016,
+        "authors": [
+          "Chiu‐Lin Lai",
+          "Gwo‐Jen Hwang"
+        ],
+        "cited_by": 884,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4398243313",
+        "title": "A scoping review on how generative artificial intelligence transforms assessment in higher education",
+        "year": 2024,
+        "authors": [
+          "Qi Xia",
+          "Xiaojing Weng",
+          "Fan Ouyang",
+          "Tzung‐Jin Lin",
+          "Thomas K. F. Chiu"
+        ],
+        "cited_by": 723,
+        "oa_url": "https://doi.org/10.1186/s41239-024-00468-z"
+      },
+      {
+        "openalex_id": "W3160045617",
+        "title": "Self-regulated learning training programs enhance university students’ academic performance, self-regulated learning strategies, and motivation: A meta-analysis",
+        "year": 2021,
+        "authors": [
+          "Maria Theobald"
+        ],
+        "cited_by": 641,
+        "oa_url": "https://doi.org/10.31234/osf.io/tf8nk"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "theory_id": null,
+  "library_name": "Human capital theory",
+  "slug": "human-capital-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Becker"
+    ],
+    "year": 1964,
+    "title": "Human Capital",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780870145131",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1964
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Education and training are investments that raise productivity and earnings, just like investment in machines. People invest until returns equal costs.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What are the returns to education or training?",
+    "Why do people invest in skills or migrate?",
+    "Typical data: surveys, earnings analysis, interviews."
+  ],
+  "common_mistakes": [
+    "Treating education only as investment.",
+    "Ignoring signalling.",
+    "Using returns without controlling for ability."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Gary S. Becker"
+        ],
+        "year": 1962,
+        "title": "Investment in Human Capital: A Theoretical Analysis",
+        "type": "article",
+        "venue": "Journal of Political Economy",
+        "doi": "10.1086/258724",
+        "openalex_id": "W1971310904",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Formal theoretical analysis of investment in human capital and on-the-job training."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jacob Mincer"
+        ],
+        "year": 1974,
+        "title": "Schooling, Experience, and Earnings",
+        "type": "book",
+        "venue": "RePEc: Research Papers in Economics",
+        "doi": null,
+        "openalex_id": "W1538443123",
+        "isbn": "9780870142659",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1974
+      },
+      "adds": "Earnings function."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "George Psacharopoulos",
+          "Harry Anthony Patrinos"
+        ],
+        "year": 2004,
+        "title": "Returns to investment in education: a further update",
+        "type": "article",
+        "venue": "Education Economics",
+        "doi": "10.1080/0964529042000239140",
+        "openalex_id": "W2146607332",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Global returns."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Returns to schooling",
+      "summary": "Mincerian research.",
+      "defining_work": {
+        "authors": [
+          "Jacob Mincer"
+        ],
+        "year": 1974,
+        "title": "Schooling, Experience, and Earnings",
+        "type": "book",
+        "venue": "RePEc: Research Papers in Economics",
+        "doi": null,
+        "openalex_id": "W1538443123",
+        "isbn": "9780870142659",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1974
+      }
+    },
+    {
+      "name": "Development economics",
+      "summary": "Education and growth.",
+      "defining_work": {
+        "authors": [
+          "George Psacharopoulos",
+          "Harry Anthony Patrinos"
+        ],
+        "year": 2004,
+        "title": "Returns to investment in education: a further update",
+        "type": "article",
+        "venue": "Education Economics",
+        "doi": "10.1080/0964529042000239140",
+        "openalex_id": "W2146607332",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Large evidence base on returns.",
+      "source": {
+        "authors": [
+          "George Psacharopoulos",
+          "Harry Anthony Patrinos"
+        ],
+        "year": 2004,
+        "title": "Returns to investment in education: a further update",
+        "type": "article",
+        "venue": "Education Economics",
+        "doi": "10.1080/0964529042000239140",
+        "openalex_id": "W2146607332",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Simple, powerful logic.",
+      "source": {
+        "authors": [
+          "Gary S. Becker"
+        ],
+        "year": 1962,
+        "title": "Investment in Human Capital: A Theoretical Analysis",
+        "type": "article",
+        "venue": "Journal of Political Economy",
+        "doi": "10.1086/258724",
+        "openalex_id": "W1971310904",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Schooling reproduces class rather than building skill.",
+      "source": {
+        "authors": [
+          "Bowles"
+        ],
+        "year": 1976,
+        "title": "Schooling in Capitalist America",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781608461318",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1976
+      }
+    },
+    {
+      "point": "Too narrow for higher education.",
+      "source": {
+        "authors": [
+          "Simon Marginson"
+        ],
+        "year": 2017,
+        "title": "Limitations of human capital theory",
+        "type": "article",
+        "venue": "Studies in Higher Education",
+        "doi": "10.1080/03075079.2017.1359823",
+        "openalex_id": "W2745033783",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://discovery.ucl.ac.uk/id/eprint/1571564/"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Becker"
+        ],
+        "year": 1964,
+        "title": "Human Capital",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780870145131",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1964
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "What investment do you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "George Psacharopoulos",
+          "Harry Anthony Patrinos"
+        ],
+        "year": 2004,
+        "title": "Returns to investment in education: a further update",
+        "type": "article",
+        "venue": "Education Economics",
+        "doi": "10.1080/0964529042000239140",
+        "openalex_id": "W2146607332",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Evidence.",
+      "reading_question": "What return can you expect?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Simon Marginson"
+        ],
+        "year": 2017,
+        "title": "Limitations of human capital theory",
+        "type": "article",
+        "venue": "Studies in Higher Education",
+        "doi": "10.1080/03075079.2017.1359823",
+        "openalex_id": "W2745033783",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://discovery.ucl.ac.uk/id/eprint/1571564/"
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Why human capital lens?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "human capital",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Investment in Human Capital. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 2 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

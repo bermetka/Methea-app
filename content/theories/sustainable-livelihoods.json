@@ -1,0 +1,375 @@
+{
+  "theory_id": null,
+  "library_name": "Sustainable livelihoods framework",
+  "slug": "sustainable-livelihoods",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Ian Scoones"
+    ],
+    "year": 1998,
+    "title": "Sustainable Rural Livelihoods: A Framework for Analysis",
+    "type": "article",
+    "venue": "OpenDocs (Institute of Development Studies)",
+    "doi": null,
+    "openalex_id": "W1538934614",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "http://opendocs.ids.ac.uk/opendocs/handle/123456789/3390"
+  },
+  "citation_anchor_openalex_id": "W1538934614",
+  "core_idea": "Households build livelihoods from five capitals (natural, physical, human, financial, social) within a vulnerability context and institutions. Their strategies produce outcomes such as income, security and well-being.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do rural or migrant households make a living and cope with shocks?",
+    "How do institutions shape access to assets?",
+    "Typical data: household surveys, interviews, participatory methods."
+  ],
+  "common_mistakes": [
+    "Using the five capitals as a checklist without institutions and power.",
+    "Ignoring the vulnerability context.",
+    "Treating households as harmonious units."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Robert Chambers",
+          "Gordon Conway"
+        ],
+        "year": 1991,
+        "title": "Sustainable rural livelihoods: Practical concepts for the 21st century",
+        "type": "article",
+        "venue": "RePEc: Research Papers in Economics",
+        "doi": null,
+        "openalex_id": "W1543889784",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://opendocs.ids.ac.uk/opendocs/handle/123456789/775"
+      },
+      "adds": "The original concept."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Anthony Bebbington"
+        ],
+        "year": 1999,
+        "title": "Capitals and Capabilities: A Framework for Analyzing Peasant Viability, Rural Livelihoods and Poverty",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(99)00104-7",
+        "openalex_id": "W2172195481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Assets as capabilities."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Ian Scoones"
+        ],
+        "year": 2009,
+        "title": "Livelihoods perspectives and rural development",
+        "type": "article",
+        "venue": "The Journal of Peasant Studies",
+        "doi": "10.1080/03066150902820503",
+        "openalex_id": "W2135295898",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/03066150902820503"
+      },
+      "adds": "Critical review and politics."
+    }
+  ],
+  "strands": [
+    {
+      "name": "DFID framework",
+      "summary": "Applied policy version.",
+      "defining_work": {
+        "authors": [
+          "Ian Scoones"
+        ],
+        "year": 1998,
+        "title": "Sustainable Rural Livelihoods: A Framework for Analysis",
+        "type": "article",
+        "venue": "OpenDocs (Institute of Development Studies)",
+        "doi": null,
+        "openalex_id": "W1538934614",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://opendocs.ids.ac.uk/opendocs/handle/123456789/3390"
+      }
+    },
+    {
+      "name": "Capabilities strand",
+      "summary": "Bebbington's assets as agency.",
+      "defining_work": {
+        "authors": [
+          "Anthony Bebbington"
+        ],
+        "year": 1999,
+        "title": "Capitals and Capabilities: A Framework for Analyzing Peasant Viability, Rural Livelihoods and Poverty",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(99)00104-7",
+        "openalex_id": "W2172195481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Holistic household view widely used in development.",
+      "source": {
+        "authors": [
+          "Ian Scoones"
+        ],
+        "year": 2009,
+        "title": "Livelihoods perspectives and rural development",
+        "type": "article",
+        "venue": "The Journal of Peasant Studies",
+        "doi": "10.1080/03066150902820503",
+        "openalex_id": "W2135295898",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/03066150902820503"
+      }
+    },
+    {
+      "point": "Connects assets and agency.",
+      "source": {
+        "authors": [
+          "Anthony Bebbington"
+        ],
+        "year": 1999,
+        "title": "Capitals and Capabilities: A Framework for Analyzing Peasant Viability, Rural Livelihoods and Poverty",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(99)00104-7",
+        "openalex_id": "W2172195481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Neglects politics, power and long-term change.",
+      "source": {
+        "authors": [
+          "Ian Scoones"
+        ],
+        "year": 2009,
+        "title": "Livelihoods perspectives and rural development",
+        "type": "article",
+        "venue": "The Journal of Peasant Studies",
+        "doi": "10.1080/03066150902820503",
+        "openalex_id": "W2135295898",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/03066150902820503"
+      }
+    },
+    {
+      "point": "Capitals metaphor economises social life.",
+      "source": {
+        "authors": [
+          "Anthony Bebbington"
+        ],
+        "year": 1999,
+        "title": "Capitals and Capabilities: A Framework for Analyzing Peasant Viability, Rural Livelihoods and Poverty",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(99)00104-7",
+        "openalex_id": "W2172195481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Ian Scoones"
+        ],
+        "year": 1998,
+        "title": "Sustainable Rural Livelihoods: A Framework for Analysis",
+        "type": "article",
+        "venue": "OpenDocs (Institute of Development Studies)",
+        "doi": null,
+        "openalex_id": "W1538934614",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://opendocs.ids.ac.uk/opendocs/handle/123456789/3390"
+      },
+      "chapter": null,
+      "why_read": "Framework.",
+      "reading_question": "Which capitals matter most?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Anthony Bebbington"
+        ],
+        "year": 1999,
+        "title": "Capitals and Capabilities: A Framework for Analyzing Peasant Viability, Rural Livelihoods and Poverty",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(99)00104-7",
+        "openalex_id": "W2172195481",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Agency.",
+      "reading_question": "Assets or capabilities?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Ian Scoones"
+        ],
+        "year": 2009,
+        "title": "Livelihoods perspectives and rural development",
+        "type": "article",
+        "venue": "The Journal of Peasant Studies",
+        "doi": "10.1080/03066150902820503",
+        "openalex_id": "W2135295898",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/03066150902820503"
+      },
+      "chapter": null,
+      "why_read": "Author's critique.",
+      "reading_question": "How will you include power?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "sustainable livelihoods",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W4280547040",
+        "title": "A sustainable livelihoods framework for the 21st century",
+        "year": 2022,
+        "authors": [
+          "Nithya Natarajan",
+          "Andrew Newsham",
+          "Jonathan D. Rigg",
+          "Diana Suhardiman"
+        ],
+        "cited_by": 617,
+        "oa_url": "https://doi.org/10.1016/j.worlddev.2022.105898"
+      },
+      {
+        "openalex_id": "W2897442070",
+        "title": "Livelihood sustainability in a rural tourism destination - Hetu Town, Anhui Province, China",
+        "year": 2018,
+        "authors": [
+          "Ming M. Su",
+          "Geoffrey C. Wall",
+          "Yanan Wang",
+          "Min Jin"
+        ],
+        "cited_by": 342,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3111241897",
+        "title": "Community-based tourism homestays' capacity to advance the Sustainable Development Goals: A holistic sustainable livelihood perspective",
+        "year": 2020,
+        "authors": [
+          "Khamsavay Pasanchay",
+          "Christian Schott"
+        ],
+        "cited_by": 277,
+        "oa_url": "https://figshare.com/articles/journal_contribution/Community-based_tourism_homestays_capacity_to_advance_the_Sustainable_Development_Goals_A_holistic_sustainable_livelihood_perspective/19523590"
+      },
+      {
+        "openalex_id": "W4382238330",
+        "title": "Perspectives on aquaculture's contribution to the Sustainable Development Goals for improved human and planetary health",
+        "year": 2023,
+        "authors": [
+          "Max Fredrik Troell",
+          "Barry Antonio Costa-Pierce",
+          "Selina Marguerite Stead",
+          "Richard S. Cottrell",
+          "Cécile Brugere",
+          "Anna K. Farmery"
+        ],
+        "cited_by": 226,
+        "oa_url": "https://doi.org/10.1111/jwas.12946"
+      },
+      {
+        "openalex_id": "W3179435658",
+        "title": "Developing sustainable small-scale fisheries livelihoods in Indonesia: Trends, enabling and constraining factors, and future opportunities",
+        "year": 2021,
+        "authors": [
+          "Natasha Stacey",
+          "Emily Gibson",
+          "Neil R. Loneragan",
+          "C. F. S. Warren",
+          "Budy Wiryawan",
+          "Dedi Supriadi Adhuri"
+        ],
+        "cited_by": 223,
+        "oa_url": "https://doi.org/10.1016/j.marpol.2021.104654"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

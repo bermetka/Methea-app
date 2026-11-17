@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Instructional leadership",
+  "slug": "instructional-leadership",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Philip Hallinger",
+      "Joseph Murphy"
+    ],
+    "year": 1985,
+    "title": "Assessing the Instructional Management Behavior of Principals",
+    "type": "article",
+    "venue": "The Elementary School Journal",
+    "doi": "10.1086/461445",
+    "openalex_id": "W1970152625",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1970152625",
+  "core_idea": "Principals improve learning by focusing on teaching and learning: defining the school's mission, managing the instructional programme and promoting a positive learning climate.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What do principals do to improve teaching and learning?",
+    "How do leadership models compare in their effect on student outcomes?",
+    "Typical data: PIMRS surveys, interviews, observation, case study."
+  ],
+  "common_mistakes": [
+    "Treating instructional leadership as the principal's job alone.",
+    "Using it as a synonym for any 'good' leadership.",
+    "Ignoring context: what works in a small school differs from a large one."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Philip Hallinger"
+        ],
+        "year": 2003,
+        "title": "Leading Educational Change: reflections on the practice of instructional and transformational leadership",
+        "type": "article",
+        "venue": "Cambridge Journal of Education",
+        "doi": "10.1080/0305764032000122005",
+        "openalex_id": "W2114522175",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Compares instructional and transformational leadership."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Viviane Robinson",
+          "Claire A. Lloyd",
+          "Ken Rowe"
+        ],
+        "year": 2008,
+        "title": "The Impact of Leadership on Student Outcomes: An Analysis of the Differential Effects of Leadership Types",
+        "type": "article",
+        "venue": "Educational Administration Quarterly",
+        "doi": "10.1177/0013161x08321509",
+        "openalex_id": "W2114859194",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Meta-analysis favouring instructional leadership."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Philip Hallinger"
+        ],
+        "year": 2005,
+        "title": "Instructional Leadership and the School Principal: A Passing Fancy that Refuses to Fade Away",
+        "type": "article",
+        "venue": "Leadership and Policy in Schools",
+        "doi": "10.1080/15700760500244793",
+        "openalex_id": "W1995295010",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reviews 25 years of research."
+    }
+  ],
+  "strands": [
+    {
+      "name": "PIMRS tradition",
+      "summary": "Measurement with the Principal Instructional Management Rating Scale.",
+      "defining_work": {
+        "authors": [
+          "Philip Hallinger",
+          "Joseph Murphy"
+        ],
+        "year": 1985,
+        "title": "Assessing the Instructional Management Behavior of Principals",
+        "type": "article",
+        "venue": "The Elementary School Journal",
+        "doi": "10.1086/461445",
+        "openalex_id": "W1970152625",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Leadership for learning",
+      "summary": "Broader integration of instructional and shared leadership.",
+      "defining_work": {
+        "authors": [
+          "Philip Hallinger"
+        ],
+        "year": 2003,
+        "title": "Leading Educational Change: reflections on the practice of instructional and transformational leadership",
+        "type": "article",
+        "venue": "Cambridge Journal of Education",
+        "doi": "10.1080/0305764032000122005",
+        "openalex_id": "W2114522175",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Larger effects on student outcomes than transformational leadership in meta-analysis.",
+      "source": {
+        "authors": [
+          "Viviane Robinson",
+          "Claire A. Lloyd",
+          "Ken Rowe"
+        ],
+        "year": 2008,
+        "title": "The Impact of Leadership on Student Outcomes: An Analysis of the Differential Effects of Leadership Types",
+        "type": "article",
+        "venue": "Educational Administration Quarterly",
+        "doi": "10.1177/0013161x08321509",
+        "openalex_id": "W2114859194",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Has a long-used, validated instrument.",
+      "source": {
+        "authors": [
+          "Philip Hallinger"
+        ],
+        "year": 2005,
+        "title": "Instructional Leadership and the School Principal: A Passing Fancy that Refuses to Fade Away",
+        "type": "article",
+        "venue": "Leadership and Policy in Schools",
+        "doi": "10.1080/15700760500244793",
+        "openalex_id": "W1995295010",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Too focused on the principal and on directive control.",
+      "source": {
+        "authors": [
+          "Philip Hallinger"
+        ],
+        "year": 2003,
+        "title": "Leading Educational Change: reflections on the practice of instructional and transformational leadership",
+        "type": "article",
+        "venue": "Cambridge Journal of Education",
+        "doi": "10.1080/0305764032000122005",
+        "openalex_id": "W2114522175",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Evidence relies heavily on self-reports and US elementary schools.",
+      "source": {
+        "authors": [
+          "Philip Hallinger"
+        ],
+        "year": 2005,
+        "title": "Instructional Leadership and the School Principal: A Passing Fancy that Refuses to Fade Away",
+        "type": "article",
+        "venue": "Leadership and Policy in Schools",
+        "doi": "10.1080/15700760500244793",
+        "openalex_id": "W1995295010",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Philip Hallinger",
+          "Joseph Murphy"
+        ],
+        "year": 1985,
+        "title": "Assessing the Instructional Management Behavior of Principals",
+        "type": "article",
+        "venue": "The Elementary School Journal",
+        "doi": "10.1086/461445",
+        "openalex_id": "W1970152625",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Model and instrument.",
+      "reading_question": "Which dimension fits your question?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Philip Hallinger"
+        ],
+        "year": 2003,
+        "title": "Leading Educational Change: reflections on the practice of instructional and transformational leadership",
+        "type": "article",
+        "venue": "Cambridge Journal of Education",
+        "doi": "10.1080/0305764032000122005",
+        "openalex_id": "W2114522175",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Compares models.",
+      "reading_question": "Why this model and not transformational?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Viviane Robinson",
+          "Claire A. Lloyd",
+          "Ken Rowe"
+        ],
+        "year": 2008,
+        "title": "The Impact of Leadership on Student Outcomes: An Analysis of the Differential Effects of Leadership Types",
+        "type": "article",
+        "venue": "Educational Administration Quarterly",
+        "doi": "10.1177/0013161x08321509",
+        "openalex_id": "W2114859194",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The key evidence.",
+      "reading_question": "What effect size can you expect?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "instructional leadership",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3010987518",
+        "title": "The Effect of Instructional Leadership and Distributed Leadership on Teacher Self-efficacy and Job Satisfaction: Mediating Roles of Supportive School Culture and Teacher Collaboration",
+        "year": 2020,
+        "authors": [
+          "Yan Liu",
+          "Mehmet Şükrü Bellibaş",
+          "Sedat Gümüş"
+        ],
+        "cited_by": 617,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2521331134",
+        "title": "A systematic review of studies on leadership models in educational research from 1980 to 2014",
+        "year": 2016,
+        "authors": [
+          "Sedat Gümüş",
+          "Mehmet Şükrü Bellibaş",
+          "Murat Esen",
+          "Emine Gümüş"
+        ],
+        "cited_by": 607,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4393317860",
+        "title": "Status of Instructional Leadership Practices in Botswana's Public Technical and Vocational Education and Training: A Case of Brigades",
+        "year": 2024,
+        "authors": [
+          "Baemedi Monthusi Kaisara"
+        ],
+        "cited_by": 455,
+        "oa_url": "https://doi.org/10.38124/ijisrt/ijisrt24mar1339"
+      },
+      {
+        "openalex_id": "W2796615902",
+        "title": "Principal Instructional Leadership, Teacher Self-Efficacy, and Teacher Professional Learning in China: Testing a Mediated-Effects Model",
+        "year": 2018,
+        "authors": [
+          "Shengnan Liu",
+          "Philip Hallinger"
+        ],
+        "cited_by": 423,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3003772570",
+        "title": "'Are principals instructional leaders yet?' A science map of the knowledge base on instructional leadership, 1940–2018",
+        "year": 2020,
+        "authors": [
+          "Philip Hallinger",
+          "Sedat Gümüş",
+          "Mehmet Şükrü Bellibaş"
+        ],
+        "cited_by": 298,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

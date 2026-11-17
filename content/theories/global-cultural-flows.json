@@ -1,0 +1,312 @@
+{
+  "theory_id": null,
+  "library_name": "Global cultural flows (scapes)",
+  "slug": "global-cultural-flows",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Appadurai"
+    ],
+    "year": 1996,
+    "title": "Modernity at Large: Cultural Dimensions of Globalization",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780816627936",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1996
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Globalisation consists of disjunctive flows of people, media, technology, money and ideas: ethnoscapes, mediascapes, technoscapes, financescapes and ideoscapes. Imagination becomes a social practice.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do global media or migration reshape local culture?",
+    "How do diasporas imagine home?",
+    "Typical data: multi-sited ethnography, media analysis."
+  ],
+  "common_mistakes": [
+    "Listing scapes without analysing disjunctures.",
+    "Assuming homogenisation.",
+    "Ignoring the imagination as practice."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Arjun Appadurai"
+        ],
+        "year": 1990,
+        "title": "Disjuncture and Difference in the Global Cultural Economy",
+        "type": "article",
+        "venue": "Public Culture",
+        "doi": "10.1215/08992363-2-2-1",
+        "openalex_id": "W2004436699",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The scapes framework."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "George E. Marcus"
+        ],
+        "year": 1995,
+        "title": "Ethnography In/Of the World System: The Emergence of Multi-Sited Ethnography",
+        "type": "article",
+        "venue": "Annual Review of Anthropology",
+        "doi": "10.1146/annurev.an.24.100195.000523",
+        "openalex_id": "W2121679873",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Multi-sited ethnography."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Tsing"
+        ],
+        "year": 2005,
+        "title": "Friction: An Ethnography of Global Connection",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780691120645",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      },
+      "adds": "Friction in global connections."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Multi-sited ethnography",
+      "summary": "Following flows.",
+      "defining_work": {
+        "authors": [
+          "George E. Marcus"
+        ],
+        "year": 1995,
+        "title": "Ethnography In/Of the World System: The Emergence of Multi-Sited Ethnography",
+        "type": "article",
+        "venue": "Annual Review of Anthropology",
+        "doi": "10.1146/annurev.an.24.100195.000523",
+        "openalex_id": "W2121679873",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Friction",
+      "summary": "Global meets local.",
+      "defining_work": {
+        "authors": [
+          "Tsing"
+        ],
+        "year": 2005,
+        "title": "Friction: An Ethnography of Global Connection",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780691120645",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Useful vocabulary for globalisation studies.",
+      "source": {
+        "authors": [
+          "Arjun Appadurai"
+        ],
+        "year": 1990,
+        "title": "Disjuncture and Difference in the Global Cultural Economy",
+        "type": "article",
+        "venue": "Public Culture",
+        "doi": "10.1215/08992363-2-2-1",
+        "openalex_id": "W2004436699",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Inspired new methods.",
+      "source": {
+        "authors": [
+          "George E. Marcus"
+        ],
+        "year": 1995,
+        "title": "Ethnography In/Of the World System: The Emergence of Multi-Sited Ethnography",
+        "type": "article",
+        "venue": "Annual Review of Anthropology",
+        "doi": "10.1146/annurev.an.24.100195.000523",
+        "openalex_id": "W2121679873",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Overstates fluidity and underplays structures.",
+      "source": {
+        "authors": [
+          "Tsing"
+        ],
+        "year": 2005,
+        "title": "Friction: An Ethnography of Global Connection",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780691120645",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      }
+    },
+    {
+      "point": "Scapes are hard to operationalise.",
+      "source": {
+        "authors": [
+          "George E. Marcus"
+        ],
+        "year": 1995,
+        "title": "Ethnography In/Of the World System: The Emergence of Multi-Sited Ethnography",
+        "type": "article",
+        "venue": "Annual Review of Anthropology",
+        "doi": "10.1146/annurev.an.24.100195.000523",
+        "openalex_id": "W2121679873",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Appadurai"
+        ],
+        "year": 1996,
+        "title": "Modernity at Large: Cultural Dimensions of Globalization",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780816627936",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1996
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Which scapes meet in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Tsing"
+        ],
+        "year": 2005,
+        "title": "Friction: An Ethnography of Global Connection",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780691120645",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      },
+      "chapter": null,
+      "why_read": "Alternative.",
+      "reading_question": "Flow or friction?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "George E. Marcus"
+        ],
+        "year": 1995,
+        "title": "Ethnography In/Of the World System: The Emergence of Multi-Sited Ethnography",
+        "type": "article",
+        "venue": "Annual Review of Anthropology",
+        "doi": "10.1146/annurev.an.24.100195.000523",
+        "openalex_id": "W2121679873",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Method.",
+      "reading_question": "Where are your sites?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "globalization culture",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

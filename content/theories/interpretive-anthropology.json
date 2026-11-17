@@ -1,0 +1,319 @@
+{
+  "theory_id": null,
+  "library_name": "Interpretive anthropology (thick description)",
+  "slug": "interpretive-anthropology",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Geertz"
+    ],
+    "year": 1973,
+    "title": "The Interpretation of Cultures",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9787208030275",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1973
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Culture is a web of meanings that people spin. The researcher's task is thick description: interpreting what actions and symbols mean to those who perform them, as one reads a text.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "What do rituals, practices or symbols mean in a community?",
+    "How do people interpret an event or institution?",
+    "Typical data: ethnography, participant observation, interviews."
+  ],
+  "common_mistakes": [
+    "Using 'thick description' to mean long description.",
+    "Imposing the researcher's meanings.",
+    "Ignoring power behind meanings."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1983,
+        "title": "Local Knowledge: Further Essays in Interpretive Anthropology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780465041626",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1983
+      },
+      "adds": "Local knowledge essays."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Clifford"
+        ],
+        "year": 1986,
+        "title": "Writing Culture: The Poetics and Politics of Ethnography",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520056527",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1986
+      },
+      "adds": "Reflexive turn on writing ethnography."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Marcus"
+        ],
+        "year": 1986,
+        "title": "Anthropology as Cultural Critique",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226504490",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1986
+      },
+      "adds": "Experimental ethnography."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Symbolic anthropology",
+      "summary": "Culture as symbols and meaning.",
+      "defining_work": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1973,
+        "title": "The Interpretation of Cultures",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787208030275",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1973
+      }
+    },
+    {
+      "name": "Writing Culture / reflexive turn",
+      "summary": "Ethnography as text and politics.",
+      "defining_work": {
+        "authors": [
+          "Clifford"
+        ],
+        "year": 1986,
+        "title": "Writing Culture: The Poetics and Politics of Ethnography",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520056527",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1986
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Model for interpretive qualitative research.",
+      "source": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1973,
+        "title": "The Interpretation of Cultures",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787208030275",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1973
+      }
+    },
+    {
+      "point": "Shaped ethnographic writing across disciplines.",
+      "source": {
+        "authors": [
+          "Clifford"
+        ],
+        "year": 1986,
+        "title": "Writing Culture: The Poetics and Politics of Ethnography",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520056527",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1986
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Neglects power and history in meaning.",
+      "source": {
+        "authors": [
+          "Talal Asad"
+        ],
+        "year": 1993,
+        "title": "Genealogies of Religion",
+        "type": "book",
+        "venue": "Johns Hopkins University Press eBooks",
+        "doi": "10.1353/book.16014",
+        "openalex_id": "W4241356111",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Asad's critique of Geertz is the chapter \"The Construction of Religion as an Anthropological Category\" in this book."
+      }
+    },
+    {
+      "point": "Authority of the interpreter is unexamined.",
+      "source": {
+        "authors": [
+          "Clifford"
+        ],
+        "year": 1986,
+        "title": "Writing Culture: The Poetics and Politics of Ethnography",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520056527",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1986
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1973,
+        "title": "The Interpretation of Cultures",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787208030275",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1973
+      },
+      "chapter": null,
+      "why_read": "Read chapter 1 'Thick Description'.",
+      "reading_question": "What meanings will you interpret?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Clifford"
+        ],
+        "year": 1986,
+        "title": "Writing Culture: The Poetics and Politics of Ethnography",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780520056527",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1986
+      },
+      "chapter": null,
+      "why_read": "Reflexivity.",
+      "reading_question": "How will you handle your own position?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1983,
+        "title": "Local Knowledge: Further Essays in Interpretive Anthropology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780465041626",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1983
+      },
+      "chapter": null,
+      "why_read": "Later essays.",
+      "reading_question": "Local or general claims?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "thick description",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): The Construction of Religion as an Anthropological Category. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 0 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

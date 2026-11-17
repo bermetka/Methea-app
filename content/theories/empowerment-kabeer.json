@@ -1,0 +1,393 @@
+{
+  "theory_id": null,
+  "library_name": "Empowerment (resources, agency, achievements)",
+  "slug": "empowerment-kabeer",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Naila Kabeer"
+    ],
+    "year": 1999,
+    "title": "Resources, Agency, Achievements: Reflections on the Measurement of Women's Empowerment",
+    "type": "article",
+    "venue": "Development and Change",
+    "doi": "10.1111/1467-7660.00125",
+    "openalex_id": "W2117701253",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2117701253",
+  "core_idea": "Empowerment is the expansion of people's ability to make strategic life choices where this ability was denied. It has three linked dimensions: resources, agency and achievements.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Does microfinance or a programme empower women?",
+    "Who makes decisions in households?",
+    "Typical data: surveys, interviews, mixed methods."
+  ],
+  "common_mistakes": [
+    "Measuring only resources.",
+    "Ignoring the 'previously denied' condition.",
+    "Using one index without validity."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Solava Ibrahim",
+          "Sabina Alkire"
+        ],
+        "year": 2007,
+        "title": "Agency and Empowerment: A Proposal for Internationally Comparable Indicators",
+        "type": "article",
+        "venue": "Oxford Development Studies",
+        "doi": "10.1080/13600810701701897",
+        "openalex_id": "W3126082266",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://ora.ox.ac.uk/objects/uuid:11044e72-d7bc-4d03-9aca-f3dde2914e98/files/mff4bb4e1ac7725e185879a952dab080a"
+      },
+      "adds": "Turns agency and empowerment into internationally comparable indicators."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sabina Alkire"
+        ],
+        "year": 2005,
+        "title": "Subjective Quantitative Studies of Human Agency",
+        "type": "article",
+        "venue": "Social Indicators Research",
+        "doi": "10.1007/s11205-005-6525-0",
+        "openalex_id": "W2080165656",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Measurement of agency."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Sabina Alkire",
+          "Ruth Suseela Meinzen-Dick",
+          "Amber Peterman",
+          "Agnes R Quisumbing",
+          "Greg Seymour",
+          "Ana Vaz"
+        ],
+        "year": 2013,
+        "title": "The Women's Empowerment in Agriculture Index",
+        "type": "article",
+        "venue": "University of Oxford",
+        "doi": "10.35648/20.500.12413/11781/ii033",
+        "openalex_id": "W4213192306",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.35648/20.500.12413/11781/ii033"
+      },
+      "adds": "WEAI index."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Agency measurement",
+      "summary": "Indicators.",
+      "defining_work": {
+        "authors": [
+          "Sabina Alkire",
+          "Ruth Suseela Meinzen-Dick",
+          "Amber Peterman",
+          "Agnes R Quisumbing",
+          "Greg Seymour",
+          "Ana Vaz"
+        ],
+        "year": 2013,
+        "title": "The Women's Empowerment in Agriculture Index",
+        "type": "article",
+        "venue": "University of Oxford",
+        "doi": "10.35648/20.500.12413/11781/ii033",
+        "openalex_id": "W4213192306",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.35648/20.500.12413/11781/ii033"
+      }
+    },
+    {
+      "name": "Gender and development",
+      "summary": "Policy use.",
+      "defining_work": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 2005,
+        "title": "Gender equality and women's empowerment: A critical analysis of the third millennium development goal 1",
+        "type": "article",
+        "venue": "Gender & Development",
+        "doi": "10.1080/13552070512331332273",
+        "openalex_id": "W2048104434",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear multidimensional framework.",
+      "source": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 1999,
+        "title": "Resources, Agency, Achievements: Reflections on the Measurement of Women's Empowerment",
+        "type": "article",
+        "venue": "Development and Change",
+        "doi": "10.1111/1467-7660.00125",
+        "openalex_id": "W2117701253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Basis for widely used indices.",
+      "source": {
+        "authors": [
+          "Sabina Alkire",
+          "Ruth Suseela Meinzen-Dick",
+          "Amber Peterman",
+          "Agnes R Quisumbing",
+          "Greg Seymour",
+          "Ana Vaz"
+        ],
+        "year": 2013,
+        "title": "The Women's Empowerment in Agriculture Index",
+        "type": "article",
+        "venue": "University of Oxford",
+        "doi": "10.35648/20.500.12413/11781/ii033",
+        "openalex_id": "W4213192306",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.35648/20.500.12413/11781/ii033"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Agency is hard to measure; indicators are proxies.",
+      "source": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 1999,
+        "title": "Resources, Agency, Achievements: Reflections on the Measurement of Women's Empowerment",
+        "type": "article",
+        "venue": "Development and Change",
+        "doi": "10.1111/1467-7660.00125",
+        "openalex_id": "W2117701253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Instrumentalised in development policy.",
+      "source": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 2005,
+        "title": "Gender equality and women's empowerment: A critical analysis of the third millennium development goal 1",
+        "type": "article",
+        "venue": "Gender & Development",
+        "doi": "10.1080/13552070512331332273",
+        "openalex_id": "W2048104434",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 1999,
+        "title": "Resources, Agency, Achievements: Reflections on the Measurement of Women's Empowerment",
+        "type": "article",
+        "venue": "Development and Change",
+        "doi": "10.1111/1467-7660.00125",
+        "openalex_id": "W2117701253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Framework.",
+      "reading_question": "Which dimension will you measure?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Sabina Alkire",
+          "Ruth Suseela Meinzen-Dick",
+          "Amber Peterman",
+          "Agnes R Quisumbing",
+          "Greg Seymour",
+          "Ana Vaz"
+        ],
+        "year": 2013,
+        "title": "The Women's Empowerment in Agriculture Index",
+        "type": "article",
+        "venue": "University of Oxford",
+        "doi": "10.35648/20.500.12413/11781/ii033",
+        "openalex_id": "W4213192306",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.35648/20.500.12413/11781/ii033"
+      },
+      "chapter": null,
+      "why_read": "Index.",
+      "reading_question": "Index or qualitative?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 2005,
+        "title": "Gender equality and women's empowerment: A critical analysis of the third millennium development goal 1",
+        "type": "article",
+        "venue": "Gender & Development",
+        "doi": "10.1080/13552070512331332273",
+        "openalex_id": "W2048104434",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critical use.",
+      "reading_question": "Strategic choices or everyday ones?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "women empowerment",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2333572177",
+        "title": "Women's Empowerment: What Works?",
+        "year": 2016,
+        "authors": [
+          "Andréa Cornwall"
+        ],
+        "cited_by": 702,
+        "oa_url": "https://doi.org/10.1002/jid.3210"
+      },
+      {
+        "openalex_id": "W2508023701",
+        "title": "Associations between quantitative measures of women's empowerment and access to care and health status for mothers and their children: A systematic review of evidence from the developing world",
+        "year": 2016,
+        "authors": [
+          "Pierre Pratley"
+        ],
+        "cited_by": 433,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2944734466",
+        "title": "Development of the project-level Women’s Empowerment in Agriculture Index (pro-WEAI)",
+        "year": 2019,
+        "authors": [
+          "Hazel Malapit",
+          "Agnes R Quisumbing",
+          "Ruth Suseela Meinzen-Dick",
+          "Greg Seymour",
+          "Elena M. Martinez",
+          "Jessica Heckert"
+        ],
+        "cited_by": 334,
+        "oa_url": "https://doi.org/10.1016/j.worlddev.2019.06.018"
+      },
+      {
+        "openalex_id": "W4220927925",
+        "title": "Strengthening women's empowerment and gender equality in fragile contexts towards peaceful and inclusive societies: A systematic review and meta-analysis",
+        "year": 2022,
+        "authors": [
+          "Etienne Lwamba",
+          "Shannon Shisler",
+          "Will Ridlehoover",
+          "Meital Kupfer",
+          "Nkululeko Tshabalala",
+          "Promise M. Nduku"
+        ],
+        "cited_by": 266,
+        "oa_url": "https://doi.org/10.1002/cl2.1214"
+      },
+      {
+        "openalex_id": "W2568680231",
+        "title": "WOMEN’S EMPOWERMENT AND FAMILY PLANNING: A REVIEW OF THE LITERATURE",
+        "year": 2017,
+        "authors": [
+          "Ndola Prata",
+          "Ashley E. Fraser",
+          "Megan J. Huchko",
+          "Jessica D. Gipson",
+          "Mellissa H. Withers",
+          "Shayna Lewis"
+        ],
+        "cited_by": 253,
+        "oa_url": "https://doi.org/10.1017/s0021932016000663"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

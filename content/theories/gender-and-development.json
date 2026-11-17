@@ -1,0 +1,374 @@
+{
+  "theory_id": null,
+  "library_name": "Gender and development (GAD)",
+  "slug": "gender-and-development",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Caroline O. N. Moser"
+    ],
+    "year": 1989,
+    "title": "Gender planning in the third world: Meeting practical and strategic gender needs",
+    "type": "article",
+    "venue": "World Development",
+    "doi": "10.1016/0305-750x(89)90201-5",
+    "openalex_id": "W2086508981",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2086508981",
+  "core_idea": "Development must address gender relations, not just add women to projects. Practical gender needs arise from women's current roles; strategic needs challenge their subordination.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does a project address gender relations?",
+    "Which gender needs does a policy meet?",
+    "Typical data: gender analysis, case study, interviews."
+  ],
+  "common_mistakes": [
+    "Equating gender with women.",
+    "Meeting practical needs and claiming strategic change.",
+    "Ignoring men and masculinities."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Boserup"
+        ],
+        "year": 1970,
+        "title": "Women's Role in Economic Development",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780312886554",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 1974; 1970 is the edition or translation cited here.",
+        "first_publish_year": 1974
+      },
+      "adds": "Women in development origin."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Maxine Molyneux"
+        ],
+        "year": 1985,
+        "title": "Mobilization without Emancipation? Women's Interests, the State, and Revolution in Nicaragua",
+        "type": "article",
+        "venue": "Feminist Studies",
+        "doi": "10.2307/3177922",
+        "openalex_id": "W2795893590",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Practical and strategic interests."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 1994,
+        "title": "Reversed Realities: Gender Hierarchies in Development Thought",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2058737110",
+        "isbn": "9780860915843",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1994
+      },
+      "adds": "Social relations approach."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Gender planning",
+      "summary": "Moser framework.",
+      "defining_work": {
+        "authors": [
+          "Caroline O. N. Moser"
+        ],
+        "year": 1989,
+        "title": "Gender planning in the third world: Meeting practical and strategic gender needs",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/0305-750x(89)90201-5",
+        "openalex_id": "W2086508981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Social relations approach",
+      "summary": "Kabeer.",
+      "defining_work": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 1994,
+        "title": "Reversed Realities: Gender Hierarchies in Development Thought",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2058737110",
+        "isbn": "9780860915843",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1994
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear planning tools.",
+      "source": {
+        "authors": [
+          "Caroline O. N. Moser"
+        ],
+        "year": 1989,
+        "title": "Gender planning in the third world: Meeting practical and strategic gender needs",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/0305-750x(89)90201-5",
+        "openalex_id": "W2086508981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Shifts focus to gender relations.",
+      "source": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 1994,
+        "title": "Reversed Realities: Gender Hierarchies in Development Thought",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2058737110",
+        "isbn": "9780860915843",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1994
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Practical/strategic split is too rigid.",
+      "source": {
+        "authors": [
+          "Maxine Molyneux"
+        ],
+        "year": 1985,
+        "title": "Mobilization without Emancipation? Women's Interests, the State, and Revolution in Nicaragua",
+        "type": "article",
+        "venue": "Feminist Studies",
+        "doi": "10.2307/3177922",
+        "openalex_id": "W2795893590",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Gender mainstreaming has been depoliticised.",
+      "source": {
+        "authors": [
+          "Sylvia Walby"
+        ],
+        "year": 2005,
+        "title": "Gender Mainstreaming: Productive Tensions in Theory and Practice",
+        "type": "article",
+        "venue": "Social Politics International Studies in Gender State & Society",
+        "doi": "10.1093/sp/jxi018",
+        "openalex_id": "W2166550519",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Caroline O. N. Moser"
+        ],
+        "year": 1989,
+        "title": "Gender planning in the third world: Meeting practical and strategic gender needs",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/0305-750x(89)90201-5",
+        "openalex_id": "W2086508981",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Framework.",
+      "reading_question": "Practical or strategic needs?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Maxine Molyneux"
+        ],
+        "year": 1985,
+        "title": "Mobilization without Emancipation? Women's Interests, the State, and Revolution in Nicaragua",
+        "type": "article",
+        "venue": "Feminist Studies",
+        "doi": "10.2307/3177922",
+        "openalex_id": "W2795893590",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Origin of distinction.",
+      "reading_question": "Whose interests?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Naila Kabeer"
+        ],
+        "year": 1994,
+        "title": "Reversed Realities: Gender Hierarchies in Development Thought",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2058737110",
+        "isbn": "9780860915843",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1994
+      },
+      "chapter": null,
+      "why_read": "Alternative.",
+      "reading_question": "Which approach do you use?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "gender and development",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2601808013",
+        "title": "Female empowerment and tourism: a focus on businesses in a Fijian village",
+        "year": 2017,
+        "authors": [
+          "Apisalome Movono",
+          "Heidi Dahles"
+        ],
+        "cited_by": 145,
+        "oa_url": "https://figshare.com/articles/journal_contribution/Female_empowerment_and_tourism_a_focus_on_businesses_in_a_Fijian_village/23000255"
+      },
+      {
+        "openalex_id": "W2901080487",
+        "title": "Gender, culture and energy transitions in rural Africa",
+        "year": 2018,
+        "authors": [
+          "Oliver Johnson",
+          "Vanessa Gerber",
+          "Cassilde Muhoza"
+        ],
+        "cited_by": 123,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W4295895107",
+        "title": "Gender-transformative approaches in international development: A brief history and five uniting principles",
+        "year": 2022,
+        "authors": [
+          "Jess MacArthur",
+          "Naomi Carrard",
+          "Federico Davila",
+          "Melita Grant",
+          "T Megaw",
+          "Juliet Willetts"
+        ],
+        "cited_by": 99,
+        "oa_url": "https://doi.org/10.1016/j.wsif.2022.102635"
+      },
+      {
+        "openalex_id": "W4402012152",
+        "title": "Women empowerment: challenges and opportunities for sustainable development goals",
+        "year": 2024,
+        "authors": [
+          "Suraksha Gupta",
+          "Mingxue Wei",
+          "Nektarios Tzempelikos",
+          "Matthew Minsuk Shin"
+        ],
+        "cited_by": 68,
+        "oa_url": "https://ualresearchonline.arts.ac.uk/view/creators/Gupta=3ASuraksha=3A=3A.html>"
+      },
+      {
+        "openalex_id": "W2610287613",
+        "title": "Women/Gender and Development: the Growing Gap Between Theory and Practice",
+        "year": 2017,
+        "authors": [
+          "Jane S. Jaquette"
+        ],
+        "cited_by": 67,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

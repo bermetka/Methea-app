@@ -1,0 +1,321 @@
+{
+  "theory_id": null,
+  "library_name": "Dramaturgical theory (Goffman)",
+  "slug": "dramaturgy-goffman",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Goffman"
+    ],
+    "year": 1959,
+    "title": "The Presentation of Self in Everyday Life",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780670573912",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Library record's first publication year is 1952; 1959 is the edition or translation cited here.",
+    "first_publish_year": 1952
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Social life is like theatre. People manage the impressions they give others through performances on a front stage, and relax or prepare in back stage regions.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do professionals, students or service workers present themselves?",
+    "How do people manage impressions online?",
+    "Typical data: observation, interviews, ethnography, digital ethnography."
+  ],
+  "common_mistakes": [
+    "Using 'performance' to mean fake behaviour.",
+    "Ignoring regions and teams, key parts of the model.",
+    "Applying it online without adapting (no co-present audience)."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Goffman"
+        ],
+        "year": 1967,
+        "title": "Interaction Ritual: Essays on Face-to-Face Behavior",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781351512084",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL3282041W, first published 1967). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1967
+      },
+      "adds": "Face-work and interaction order."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Mark R. Leary",
+          "Robin Marie Kowalski"
+        ],
+        "year": 1990,
+        "title": "Impression management: A literature review and two-component model.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037//0033-2909.107.1.34",
+        "openalex_id": "W2124668684",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Psychology of impression management."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bernie Hogan"
+        ],
+        "year": 2010,
+        "title": "The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online",
+        "type": "article",
+        "venue": "Bulletin of Science Technology & Society",
+        "doi": "10.1177/0270467610385893",
+        "openalex_id": "W2105773622",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Online self-presentation as exhibition."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Impression management",
+      "summary": "Psychological and organisational strand.",
+      "defining_work": {
+        "authors": [
+          "Mark R. Leary",
+          "Robin Marie Kowalski"
+        ],
+        "year": 1990,
+        "title": "Impression management: A literature review and two-component model.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037//0033-2909.107.1.34",
+        "openalex_id": "W2124668684",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Online self-presentation",
+      "summary": "Social media.",
+      "defining_work": {
+        "authors": [
+          "Bernie Hogan"
+        ],
+        "year": 2010,
+        "title": "The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online",
+        "type": "article",
+        "venue": "Bulletin of Science Technology & Society",
+        "doi": "10.1177/0270467610385893",
+        "openalex_id": "W2105773622",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Rich concepts for micro-level interaction.",
+      "source": {
+        "authors": [
+          "Goffman"
+        ],
+        "year": 1967,
+        "title": "Interaction Ritual: Essays on Face-to-Face Behavior",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781351512084",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL3282041W, first published 1967). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1967
+      }
+    },
+    {
+      "point": "Adapted well to digital settings.",
+      "source": {
+        "authors": [
+          "Bernie Hogan"
+        ],
+        "year": 2010,
+        "title": "The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online",
+        "type": "article",
+        "venue": "Bulletin of Science Technology & Society",
+        "doi": "10.1177/0270467610385893",
+        "openalex_id": "W2105773622",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The theatre metaphor blurs what is real and what is staged.",
+      "source": {
+        "authors": [
+          "Sheldon L. Messinger",
+          "Harold Sampson",
+          "Robert D. Towne"
+        ],
+        "year": 1962,
+        "title": "Life as Theater: Some Notes on the Dramaturgic Approach to Social Reality",
+        "type": "article",
+        "venue": "Sociometry",
+        "doi": "10.2307/2786040",
+        "openalex_id": "W2769866237",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Neglects power and social structure.",
+      "source": {
+        "authors": [
+          "Mark R. Leary",
+          "Robin Marie Kowalski"
+        ],
+        "year": 1990,
+        "title": "Impression management: A literature review and two-component model.",
+        "type": "article",
+        "venue": "Psychological Bulletin",
+        "doi": "10.1037//0033-2909.107.1.34",
+        "openalex_id": "W2124668684",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Goffman"
+        ],
+        "year": 1959,
+        "title": "The Presentation of Self in Everyday Life",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780670573912",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 1952; 1959 is the edition or translation cited here.",
+        "first_publish_year": 1952
+      },
+      "chapter": null,
+      "why_read": "Classic.",
+      "reading_question": "What is front and back stage in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Bernie Hogan"
+        ],
+        "year": 2010,
+        "title": "The Presentation of Self in the Age of Social Media: Distinguishing Performances and Exhibitions Online",
+        "type": "article",
+        "venue": "Bulletin of Science Technology & Society",
+        "doi": "10.1177/0270467610385893",
+        "openalex_id": "W2105773622",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Online version.",
+      "reading_question": "Performance or exhibition?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Sheldon L. Messinger",
+          "Harold Sampson",
+          "Robert D. Towne"
+        ],
+        "year": 1962,
+        "title": "Life as Theater: Some Notes on the Dramaturgic Approach to Social Reality",
+        "type": "article",
+        "venue": "Sociometry",
+        "doi": "10.2307/2786040",
+        "openalex_id": "W2769866237",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How literally do you take the metaphor?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "impression management",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "theory_id": null,
+  "library_name": "Liquid modernity",
+  "slug": "liquid-modernity",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Bauman"
+    ],
+    "year": 2000,
+    "title": "Liquid Modernity",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780745624105",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL527224W, first published 2000). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 2000
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Social forms such as work, relationships and identity no longer hold their shape for long. Security and solidarity weaken, and individuals must keep adapting and carry the uncertainty themselves.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people experience precarious work or changing identities?",
+    "How does consumerism shape everyday life?",
+    "Typical data: interviews, narrative inquiry."
+  ],
+  "common_mistakes": [
+    "Using it as a metaphor without a specific object.",
+    "Treating it as a testable hypothesis.",
+    "Ignoring Bauman's moral critique."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bauman"
+        ],
+        "year": 2007,
+        "title": "Liquid Times: Living in an Age of Uncertainty",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745673288",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2013; 2007 is the edition or translation cited here.",
+        "first_publish_year": 2013
+      },
+      "adds": "Fear and uncertainty in liquid times."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bauman"
+        ],
+        "year": 1998,
+        "title": "Work, Consumerism and the New Poor",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780335215980",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL527265W, first published 1998). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1998
+      },
+      "adds": "Consumer society and poverty."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Consumer society",
+      "summary": "Identity through consumption.",
+      "defining_work": {
+        "authors": [
+          "Bauman"
+        ],
+        "year": 1998,
+        "title": "Work, Consumerism and the New Poor",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780335215980",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL527265W, first published 1998). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1998
+      }
+    },
+    {
+      "name": "Precarity",
+      "summary": "Insecure work.",
+      "defining_work": {
+        "authors": [
+          "Standing"
+        ],
+        "year": 2011,
+        "title": "The Precariat: The New Dangerous Class",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781474294164",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2014; 2011 is the edition or translation cited here.",
+        "first_publish_year": 2014
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Resonates with experiences of insecurity.",
+      "source": {
+        "authors": [
+          "Bauman"
+        ],
+        "year": 2007,
+        "title": "Liquid Times: Living in an Age of Uncertainty",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745673288",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2013; 2007 is the edition or translation cited here.",
+        "first_publish_year": 2013
+      }
+    },
+    {
+      "point": "Connects work, consumption and identity.",
+      "source": {
+        "authors": [
+          "Bauman"
+        ],
+        "year": 2000,
+        "title": "Liquid Modernity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745624105",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL527224W, first published 2000). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 2000
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Too general and Eurocentric for developing contexts.",
+      "source": {
+        "authors": [
+          "Raymond L. M. Lee"
+        ],
+        "year": 2005,
+        "title": "Bauman, Liquid Modernity and Dilemmas of Development",
+        "type": "article",
+        "venue": "Thesis Eleven",
+        "doi": "10.1177/0725513605057137",
+        "openalex_id": "W2055446433",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "More essay than empirical theory.",
+      "source": {
+        "authors": [
+          "Raymond L. M. Lee"
+        ],
+        "year": 2005,
+        "title": "Bauman, Liquid Modernity and Dilemmas of Development",
+        "type": "article",
+        "venue": "Thesis Eleven",
+        "doi": "10.1177/0725513605057137",
+        "openalex_id": "W2055446433",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Bauman"
+        ],
+        "year": 2000,
+        "title": "Liquid Modernity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745624105",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL527224W, first published 2000). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 2000
+      },
+      "chapter": null,
+      "why_read": "The thesis.",
+      "reading_question": "Which 'solid' form has become liquid in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Bauman"
+        ],
+        "year": 2007,
+        "title": "Liquid Times: Living in an Age of Uncertainty",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745673288",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2013; 2007 is the edition or translation cited here.",
+        "first_publish_year": 2013
+      },
+      "chapter": null,
+      "why_read": "Update.",
+      "reading_question": "How do participants handle uncertainty?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Raymond L. M. Lee"
+        ],
+        "year": 2005,
+        "title": "Bauman, Liquid Modernity and Dilemmas of Development",
+        "type": "article",
+        "venue": "Thesis Eleven",
+        "doi": "10.1177/0725513605057137",
+        "openalex_id": "W2055446433",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Does it fit your country context?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "liquid modernity",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

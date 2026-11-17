@@ -1,0 +1,355 @@
+{
+  "theory_id": null,
+  "library_name": "Social representations theory",
+  "slug": "social-representations-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Serge Moscovici"
+    ],
+    "year": 1988,
+    "title": "Notes towards a description of Social Representations",
+    "type": "article",
+    "venue": "European Journal of Social Psychology",
+    "doi": "10.1002/ejsp.2420180303",
+    "openalex_id": "W2091914786",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2091914786",
+  "core_idea": "Groups make unfamiliar ideas familiar by turning them into shared common sense. They anchor new things in existing categories and objectify them in concrete images.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does a group understand a new idea such as AI, a disease or climate change?",
+    "How do media shape lay knowledge?",
+    "Typical data: interviews, focus groups, free association, media analysis."
+  ],
+  "common_mistakes": [
+    "Using 'representation' to mean any opinion.",
+    "Skipping anchoring and objectification.",
+    "Ignoring the group level."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Gerard Duveen",
+          "Serge Moscovici"
+        ],
+        "year": 2000,
+        "title": "Social Representations: Explorations in Social Psychology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1481770629",
+        "isbn": "9780745622255",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2000,
+        "note": "Library record's first publication year is 2005; 2000 is the edition or translation cited here."
+      },
+      "adds": "Collected essays."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Wolfgang Wagner",
+          "Gerard Duveen",
+          "Robert M. Farr",
+          "Sandra Jovchelovitch",
+          "Fabio Lorenzi‐Cioldi",
+          "Ivana S. Marková"
+        ],
+        "year": 1999,
+        "title": "Theory and Method of Social Representations",
+        "type": "article",
+        "venue": "Asian Journal Of Social Psychology",
+        "doi": "10.1111/1467-839x.00028",
+        "openalex_id": "W2146788157",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/1467-839x.00028"
+      },
+      "adds": "Review of theory and methods."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Dialogical approach",
+      "summary": "Communication-based tradition.",
+      "defining_work": {
+        "authors": [
+          "Gerard Duveen",
+          "Serge Moscovici"
+        ],
+        "year": 2000,
+        "title": "Social Representations: Explorations in Social Psychology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1481770629",
+        "isbn": "9780745622255",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2000,
+        "note": "Library record's first publication year is 2005; 2000 is the edition or translation cited here."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Links society and individual cognition.",
+      "source": {
+        "authors": [
+          "Wolfgang Wagner",
+          "Gerard Duveen",
+          "Robert M. Farr",
+          "Sandra Jovchelovitch",
+          "Fabio Lorenzi‐Cioldi",
+          "Ivana S. Marková"
+        ],
+        "year": 1999,
+        "title": "Theory and Method of Social Representations",
+        "type": "article",
+        "venue": "Asian Journal Of Social Psychology",
+        "doi": "10.1111/1467-839x.00028",
+        "openalex_id": "W2146788157",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/1467-839x.00028"
+      }
+    },
+    {
+      "point": "Flexible across methods.",
+      "source": {
+        "authors": [
+          "Wolfgang Wagner",
+          "Gerard Duveen",
+          "Robert M. Farr",
+          "Sandra Jovchelovitch",
+          "Fabio Lorenzi‐Cioldi",
+          "Ivana S. Marková"
+        ],
+        "year": 1999,
+        "title": "Theory and Method of Social Representations",
+        "type": "article",
+        "venue": "Asian Journal Of Social Psychology",
+        "doi": "10.1111/1467-839x.00028",
+        "openalex_id": "W2146788157",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1111/1467-839x.00028"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The concept is vague and hard to falsify.",
+      "source": {
+        "authors": [
+          "Gustav Jahoda"
+        ],
+        "year": 1988,
+        "title": "Critical notes and reflections on ‘social representations’",
+        "type": "article",
+        "venue": "European Journal of Social Psychology",
+        "doi": "10.1002/ejsp.2420180302",
+        "openalex_id": "W2096207431",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Unclear what counts as a 'group'.",
+      "source": {
+        "authors": [
+          "Gustav Jahoda"
+        ],
+        "year": 1988,
+        "title": "Critical notes and reflections on ‘social representations’",
+        "type": "article",
+        "venue": "European Journal of Social Psychology",
+        "doi": "10.1002/ejsp.2420180302",
+        "openalex_id": "W2096207431",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Serge Moscovici"
+        ],
+        "year": 1988,
+        "title": "Notes towards a description of Social Representations",
+        "type": "article",
+        "venue": "European Journal of Social Psychology",
+        "doi": "10.1002/ejsp.2420180303",
+        "openalex_id": "W2091914786",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Statement.",
+      "reading_question": "What new idea does your group make sense of?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Gerard Duveen",
+          "Serge Moscovici"
+        ],
+        "year": 2000,
+        "title": "Social Representations: Explorations in Social Psychology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1481770629",
+        "isbn": "9780745622255",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2000,
+        "note": "Library record's first publication year is 2005; 2000 is the edition or translation cited here."
+      },
+      "chapter": null,
+      "why_read": "Moscovici’s collected essays: the full theory in his own words.",
+      "reading_question": "How do anchoring and objectification work in your case?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Gustav Jahoda"
+        ],
+        "year": 1988,
+        "title": "Critical notes and reflections on ‘social representations’",
+        "type": "article",
+        "venue": "European Journal of Social Psychology",
+        "doi": "10.1002/ejsp.2420180302",
+        "openalex_id": "W2096207431",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you define the group?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "social representations",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3175026956",
+        "title": "The perceived relationship between digitalization and ecological, economic, and social sustainability",
+        "year": 2021,
+        "authors": [
+          "Barbara L. Brenner",
+          "Barbara Hartl"
+        ],
+        "cited_by": 263,
+        "oa_url": "https://doi.org/10.1016/j.jclepro.2021.128128"
+      },
+      {
+        "openalex_id": "W2527975090",
+        "title": "Methods for Studying the Structure of Social Representations: A Critical Review and Agenda for Future Research",
+        "year": 2016,
+        "authors": [
+          "Grégory Lo Monaco",
+          "Anthony Piermattéo",
+          "Patrick Rateau",
+          "Jean‐Louis Tavani"
+        ],
+        "cited_by": 221,
+        "oa_url": "https://hal.science/hal-01433582"
+      },
+      {
+        "openalex_id": "W3045825772",
+        "title": "Gender Stereotypes in Natural Language: Word Embeddings Show Robust Consistency Across Child and Adult Language Corpora of More Than 65 Million Words",
+        "year": 2021,
+        "authors": [
+          "Tessa Elizabeth Sadie Charlesworth",
+          "Victor Yang",
+          "Thomas C. Mann",
+          "Benedek Kurdi",
+          "Mahzarin R. Banaji"
+        ],
+        "cited_by": 165,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2895907847",
+        "title": "Social representations and culture in food studies",
+        "year": 2018,
+        "authors": [
+          "Grégory Lo Monaco",
+          "Éric Bonetto"
+        ],
+        "cited_by": 99,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2469512028",
+        "title": "Developing a critical agenda to understand pro‐environmental actions: contributions from Social Representations and Social Practices Theories",
+        "year": 2016,
+        "authors": [
+          "Susana Batel",
+          "Paula Castro",
+          "Patrick Devine‐Wright",
+          "Caroline Howarth"
+        ],
+        "cited_by": 95,
+        "oa_url": "https://doi.org/10.1002/wcc.417"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Structure and transformation of social representations. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

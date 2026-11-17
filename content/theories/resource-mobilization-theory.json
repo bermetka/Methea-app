@@ -1,0 +1,375 @@
+{
+  "theory_id": null,
+  "library_name": "Resource mobilization theory",
+  "slug": "resource-mobilization-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "John D. McCarthy",
+      "Mayer N. Zald"
+    ],
+    "year": 1977,
+    "title": "Resource Mobilization and Social Movements: A Partial Theory",
+    "type": "article",
+    "venue": "American Journal of Sociology",
+    "doi": "10.1086/226464",
+    "openalex_id": "W2070283890",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2070283890",
+  "core_idea": "Movements succeed less because grievances are strong than because they can gather and deploy resources: money, members, organisations, skills and networks. Social movement organisations act like firms in a movement industry.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do some NGOs or activist groups grow and others don't?",
+    "How does donor funding shape civil society?",
+    "Typical data: organisational case studies, interviews, document analysis."
+  ],
+  "common_mistakes": [
+    "Ignoring grievances entirely.",
+    "Counting money only, not people and networks.",
+    "Forgetting that external resources can co-opt movements."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Mancur Olson"
+        ],
+        "year": 1965,
+        "title": "The Logic of Collective Action",
+        "type": "book",
+        "venue": "Harvard University Press eBooks",
+        "doi": "10.4159/9780674041660",
+        "openalex_id": "W4391965190",
+        "isbn": "9780674537514",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1965
+      },
+      "adds": "Free-rider problem behind mobilisation."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "David A. Snow",
+          "Louis A. Zürcher",
+          "Sheldon Ekland-Olson"
+        ],
+        "year": 1980,
+        "title": "Social Networks and Social Movements: A Microstructural Approach to Differential Recruitment",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2094895",
+        "openalex_id": "W2319223839",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Social networks as the mechanism of recruitment into movements."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bert Klandermans"
+        ],
+        "year": 1984,
+        "title": "Mobilization and Participation: Social-Psychological Expansisons of Resource Mobilization Theory",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095417",
+        "openalex_id": "W2124611802",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Adds social-psychological motives."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Organisational strand",
+      "summary": "SMOs and movement industries.",
+      "defining_work": {
+        "authors": [
+          "John D. McCarthy",
+          "Mayer N. Zald"
+        ],
+        "year": 1977,
+        "title": "Resource Mobilization and Social Movements: A Partial Theory",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/226464",
+        "openalex_id": "W2070283890",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Social-psychological strand",
+      "summary": "Individual participation.",
+      "defining_work": {
+        "authors": [
+          "Bert Klandermans"
+        ],
+        "year": 1984,
+        "title": "Mobilization and Participation: Social-Psychological Expansisons of Resource Mobilization Theory",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095417",
+        "openalex_id": "W2124611802",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains variation in organisational success.",
+      "source": {
+        "authors": [
+          "Bob Edwards",
+          "John D. McCarthy"
+        ],
+        "year": 2007,
+        "title": "Resources and Social Movement Mobilization",
+        "type": "chapter",
+        "venue": "Blackwell Publishing Ltd eBooks",
+        "doi": "10.1002/9780470999103.ch6",
+        "openalex_id": "W1577144590",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Clear, testable focus on resources.",
+      "source": {
+        "authors": [
+          "John D. McCarthy",
+          "Mayer N. Zald"
+        ],
+        "year": 1977,
+        "title": "Resource Mobilization and Social Movements: A Partial Theory",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/226464",
+        "openalex_id": "W2070283890",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Neglects culture, identity and emotion.",
+      "source": {
+        "authors": [
+          "Jeff Goodwin",
+          "James M. Jasper",
+          "Francesca Polletta"
+        ],
+        "year": 2000,
+        "title": "The Return of The Repressed: The Fall and Rise of Emotions in Social Movement Theory",
+        "type": "article",
+        "venue": "Mobilization An International Quarterly",
+        "doi": "10.17813/maiq.5.1.74u39102m107g748",
+        "openalex_id": "W201352011",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Biased towards professional organisations.",
+      "source": {
+        "authors": [
+          "Bert Klandermans"
+        ],
+        "year": 1984,
+        "title": "Mobilization and Participation: Social-Psychological Expansisons of Resource Mobilization Theory",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2095417",
+        "openalex_id": "W2124611802",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "John D. McCarthy",
+          "Mayer N. Zald"
+        ],
+        "year": 1977,
+        "title": "Resource Mobilization and Social Movements: A Partial Theory",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/226464",
+        "openalex_id": "W2070283890",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Founding article.",
+      "reading_question": "Which resources matter in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Bob Edwards",
+          "John D. McCarthy"
+        ],
+        "year": 2007,
+        "title": "Resources and Social Movement Mobilization",
+        "type": "chapter",
+        "venue": "Blackwell Publishing Ltd eBooks",
+        "doi": "10.1002/9780470999103.ch6",
+        "openalex_id": "W1577144590",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Typology.",
+      "reading_question": "How will you measure resources?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jeff Goodwin",
+          "James M. Jasper",
+          "Francesca Polletta"
+        ],
+        "year": 2000,
+        "title": "The Return of The Repressed: The Fall and Rise of Emotions in Social Movement Theory",
+        "type": "article",
+        "venue": "Mobilization An International Quarterly",
+        "doi": "10.17813/maiq.5.1.74u39102m107g748",
+        "openalex_id": "W201352011",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Cultural critique.",
+      "reading_question": "What role do emotions play?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "resource mobilization",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2411095244",
+        "title": "Digital Action Repertoires and Transforming a Social Movement Organization1",
+        "year": 2016,
+        "authors": [
+          "Lisen Selander",
+          "Sirkka L. Järvenpää"
+        ],
+        "cited_by": 251,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2966348560",
+        "title": "What Kind of Movement is Black Lives Matter? The View from Twitter",
+        "year": 2019,
+        "authors": [
+          "Alvin Bernard Tillery"
+        ],
+        "cited_by": 169,
+        "oa_url": "https://doi.org/10.1017/rep.2019.17"
+      },
+      {
+        "openalex_id": "W2988713607",
+        "title": "Varieties of Political Capital and Power in Organizations: A Review and Integrative Framework",
+        "year": 2019,
+        "authors": [
+          "William C. Ocasio",
+          "Jo‐Ellen Pozner",
+          "Daniel Milner"
+        ],
+        "cited_by": 86,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2561558342",
+        "title": "Media as a core political resource: the young feminist movements in China",
+        "year": 2017,
+        "authors": [
+          "Jun Li",
+          "Xiaoqin Li"
+        ],
+        "cited_by": 71,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W112197567",
+        "title": "The Political Economy of Social Movement Sectors",
+        "year": 2017,
+        "authors": [
+          "Ash Garner Roberta",
+          "N. Zald Mayer"
+        ],
+        "cited_by": 67,
+        "oa_url": "https://doi.org/10.4324/9781315129648-12"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "theory_id": null,
+  "library_name": "Stigma (Goffman)",
+  "slug": "stigma-goffman",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Goffman"
+    ],
+    "year": 1963,
+    "title": "Stigma: Notes on the Management of Spoiled Identity",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780140552454",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL3282007W, first published 1963). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1963
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "A stigma is an attribute that deeply discredits a person in the eyes of others. Stigmatised people manage information about it through passing, covering and selective disclosure.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people live with a stigmatised condition or identity?",
+    "How does stigma affect health care use?",
+    "Typical data: interviews, narrative inquiry, stigma scales, ethnography."
+  ],
+  "common_mistakes": [
+    "Treating stigma as an individual trait rather than a social relation.",
+    "Ignoring power, which later work makes central.",
+    "Using 'stigma' loosely for any negative attitude."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Bruce G. Link",
+          "Jo Carol Phelan"
+        ],
+        "year": 2001,
+        "title": "Conceptualizing Stigma",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.27.1.363",
+        "openalex_id": "W4213367093",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Stigma as labelling, stereotyping, separation, status loss and discrimination under power."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Richard Guy Parker",
+          "Peter Aggleton"
+        ],
+        "year": 2003,
+        "title": "HIV and AIDS-related stigma and discrimination: a conceptual framework and implications for action",
+        "type": "article",
+        "venue": "Social Science & Medicine",
+        "doi": "10.1016/s0277-9536(02)00304-0",
+        "openalex_id": "W1997753689",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Stigma linked to power and social inequality."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Mark L. Hatzenbuehler",
+          "Jo Carol Phelan",
+          "Bruce G. Link"
+        ],
+        "year": 2013,
+        "title": "Stigma as a Fundamental Cause of Population Health Inequalities",
+        "type": "article",
+        "venue": "American Journal of Public Health",
+        "doi": "10.2105/ajph.2012.301069",
+        "openalex_id": "W1976985160",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3682466"
+      },
+      "adds": "Stigma as a cause of health inequalities."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Health stigma",
+      "summary": "HIV, mental illness and health.",
+      "defining_work": {
+        "authors": [
+          "Richard Guy Parker",
+          "Peter Aggleton"
+        ],
+        "year": 2003,
+        "title": "HIV and AIDS-related stigma and discrimination: a conceptual framework and implications for action",
+        "type": "article",
+        "venue": "Social Science & Medicine",
+        "doi": "10.1016/s0277-9536(02)00304-0",
+        "openalex_id": "W1997753689",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Structural stigma",
+      "summary": "Laws and institutions.",
+      "defining_work": {
+        "authors": [
+          "Mark L. Hatzenbuehler",
+          "Jo Carol Phelan",
+          "Bruce G. Link"
+        ],
+        "year": 2013,
+        "title": "Stigma as a Fundamental Cause of Population Health Inequalities",
+        "type": "article",
+        "venue": "American Journal of Public Health",
+        "doi": "10.2105/ajph.2012.301069",
+        "openalex_id": "W1976985160",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3682466"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Widely used framework with measurable components.",
+      "source": {
+        "authors": [
+          "Bruce G. Link",
+          "Jo Carol Phelan"
+        ],
+        "year": 2001,
+        "title": "Conceptualizing Stigma",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.27.1.363",
+        "openalex_id": "W4213367093",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Links stigma to health outcomes.",
+      "source": {
+        "authors": [
+          "Mark L. Hatzenbuehler",
+          "Jo Carol Phelan",
+          "Bruce G. Link"
+        ],
+        "year": 2013,
+        "title": "Stigma as a Fundamental Cause of Population Health Inequalities",
+        "type": "article",
+        "venue": "American Journal of Public Health",
+        "doi": "10.2105/ajph.2012.301069",
+        "openalex_id": "W1976985160",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3682466"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Goffman's focus on interaction neglects power.",
+      "source": {
+        "authors": [
+          "Bruce G. Link",
+          "Jo Carol Phelan"
+        ],
+        "year": 2001,
+        "title": "Conceptualizing Stigma",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.27.1.363",
+        "openalex_id": "W4213367093",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The sociology of stigma needs to account for who produces stigma and why.",
+      "source": {
+        "authors": [
+          "Imogen Tyler",
+          "Tom Slater"
+        ],
+        "year": 2018,
+        "title": "Rethinking the sociology of stigma",
+        "type": "article",
+        "venue": "The Sociological Review",
+        "doi": "10.1177/0038026118777425",
+        "openalex_id": "W2807891614",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://eprints.lancs.ac.uk/id/eprint/126493/1/introduction_the_sociology_of_stigma_final_1_.pdf"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Goffman"
+        ],
+        "year": 1963,
+        "title": "Stigma: Notes on the Management of Spoiled Identity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780140552454",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL3282007W, first published 1963). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1963
+      },
+      "chapter": null,
+      "why_read": "The concept.",
+      "reading_question": "How do your participants manage information?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Bruce G. Link",
+          "Jo Carol Phelan"
+        ],
+        "year": 2001,
+        "title": "Conceptualizing Stigma",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.27.1.363",
+        "openalex_id": "W4213367093",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Modern model.",
+      "reading_question": "Which component will you study?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Imogen Tyler",
+          "Tom Slater"
+        ],
+        "year": 2018,
+        "title": "Rethinking the sociology of stigma",
+        "type": "article",
+        "venue": "The Sociological Review",
+        "doi": "10.1177/0038026118777425",
+        "openalex_id": "W2807891614",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://eprints.lancs.ac.uk/id/eprint/126493/1/introduction_the_sociology_of_stigma_final_1_.pdf"
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Who produces stigma in your case?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "stigma",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

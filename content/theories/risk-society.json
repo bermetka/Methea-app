@@ -1,0 +1,320 @@
+{
+  "theory_id": null,
+  "library_name": "Risk society",
+  "slug": "risk-society",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Beck"
+    ],
+    "year": 1992,
+    "title": "Risk Society: Towards a New Modernity",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781848608986",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Library record's first publication year is 2013; 1992 is the edition or translation cited here.",
+    "first_publish_year": 2013
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Modern societies increasingly organise around risks they themselves produce, such as environmental, technological and health hazards. Distributing these risks becomes as central as distributing wealth, and modernity becomes reflexive.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people perceive environmental, health or technological risks?",
+    "How do institutions manage manufactured risks?",
+    "Typical data: interviews, discourse analysis, surveys."
+  ],
+  "common_mistakes": [
+    "Using 'risk society' for any risk.",
+    "Ignoring reflexive modernisation and individualisation.",
+    "Assuming risks are equally distributed, which Beck disputes."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Beck"
+        ],
+        "year": 1994,
+        "title": "Reflexive Modernization: Politics, Tradition and Aesthetics in the Modern Social Order",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780804724722",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL796424W, first published 1994). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1994
+      },
+      "adds": "Reflexive modernisation with Giddens and Lash."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Ulrich Beck"
+        ],
+        "year": 2006,
+        "title": "Living in the world risk society",
+        "type": "article",
+        "venue": "Economy and Society",
+        "doi": "10.1080/03085140600844902",
+        "openalex_id": "W1565072287",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "World risk society."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Lupton"
+        ],
+        "year": 1999,
+        "title": "Risk",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781032327013",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2012; 1999 is the edition or translation cited here.",
+        "first_publish_year": 2012
+      },
+      "adds": "Overview of risk theories."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Reflexive modernisation",
+      "summary": "Modernity confronting its own effects.",
+      "defining_work": {
+        "authors": [
+          "Beck"
+        ],
+        "year": 1994,
+        "title": "Reflexive Modernization: Politics, Tradition and Aesthetics in the Modern Social Order",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780804724722",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL796424W, first published 1994). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1994
+      }
+    },
+    {
+      "name": "Cultural and governmentality approaches to risk",
+      "summary": "Alternative risk theories.",
+      "defining_work": {
+        "authors": [
+          "Lupton"
+        ],
+        "year": 1999,
+        "title": "Risk",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781032327013",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2012; 1999 is the edition or translation cited here.",
+        "first_publish_year": 2012
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Captures global and environmental risks.",
+      "source": {
+        "authors": [
+          "Ulrich Beck"
+        ],
+        "year": 2006,
+        "title": "Living in the world risk society",
+        "type": "article",
+        "venue": "Economy and Society",
+        "doi": "10.1080/03085140600844902",
+        "openalex_id": "W1565072287",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Widely used across disciplines.",
+      "source": {
+        "authors": [
+          "Lupton"
+        ],
+        "year": 1999,
+        "title": "Risk",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781032327013",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2012; 1999 is the edition or translation cited here.",
+        "first_publish_year": 2012
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Overgeneralises and lacks empirical grounding.",
+      "source": {
+        "authors": [
+          "Anthony Elliott"
+        ],
+        "year": 2002,
+        "title": "Beck's Sociology of Risk: A Critical Assessment",
+        "type": "article",
+        "venue": "Sociology",
+        "doi": "10.1177/0038038502036002004",
+        "openalex_id": "W2063521246",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The thesis is too broad to test.",
+      "source": {
+        "authors": [
+          "Gabe Mythen"
+        ],
+        "year": 2007,
+        "title": "Reappraising the Risk Society Thesis",
+        "type": "article",
+        "venue": "Current Sociology",
+        "doi": "10.1177/0011392107081986",
+        "openalex_id": "W2323772522",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Beck"
+        ],
+        "year": 1992,
+        "title": "Risk Society: Towards a New Modernity",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781848608986",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2013; 1992 is the edition or translation cited here.",
+        "first_publish_year": 2013
+      },
+      "chapter": null,
+      "why_read": "The thesis.",
+      "reading_question": "Which manufactured risk do you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Ulrich Beck"
+        ],
+        "year": 2006,
+        "title": "Living in the world risk society",
+        "type": "article",
+        "venue": "Economy and Society",
+        "doi": "10.1080/03085140600844902",
+        "openalex_id": "W1565072287",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Update.",
+      "reading_question": "Local or global risk?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Anthony Elliott"
+        ],
+        "year": 2002,
+        "title": "Beck's Sociology of Risk: A Critical Assessment",
+        "type": "article",
+        "venue": "Sociology",
+        "doi": "10.1177/0038038502036002004",
+        "openalex_id": "W2063521246",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you ground it empirically?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "risk society",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

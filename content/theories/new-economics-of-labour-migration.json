@@ -1,0 +1,394 @@
+{
+  "theory_id": null,
+  "library_name": "New economics of labour migration",
+  "slug": "new-economics-of-labour-migration",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Oded Stark",
+      "David E. Bloom"
+    ],
+    "year": 1985,
+    "title": "The new economics of labor migration",
+    "type": "article",
+    "venue": "American Economic Review",
+    "doi": null,
+    "openalex_id": "W1572874895",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W1572874895",
+  "core_idea": "Migration is a household strategy, not only an individual choice. Households send members abroad to spread risk and overcome missing credit and insurance markets; remittances link migrants and home.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why do households send members abroad (e.g. Kyrgyzstan to Russia)?",
+    "How are remittances used?",
+    "Typical data: household surveys, interviews."
+  ],
+  "common_mistakes": [
+    "Treating migration as individual income maximisation.",
+    "Ignoring relative deprivation.",
+    "Studying migrants without their households."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Michael P. Todaro"
+        ],
+        "year": 1995,
+        "title": "A Model of Labor Migration and Urban Unemployment in Less Developed Countries",
+        "type": "chapter",
+        "venue": "Edward Elgar Publishing eBooks",
+        "doi": "10.4337/9781035362813.00009",
+        "openalex_id": "W1537245944",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "note": "Reprint record (1995 collection) of the 1969 American Economic Review article."
+      },
+      "adds": "Neoclassical model NELM challenges."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Oded Stark",
+          "J. Edward Taylor"
+        ],
+        "year": 1989,
+        "title": "Relative deprivation and international migration oded stark",
+        "type": "article",
+        "venue": "Demography",
+        "doi": "10.2307/2061490",
+        "openalex_id": "W4293179717",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.2307/2061490"
+      },
+      "adds": "Relative deprivation."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Douglas S. Massey",
+          "Joaquín Arango",
+          "Graeme John Hugo",
+          "Ali Kouaouci",
+          "Adéla Pellegrino",
+          "J. Edward Taylor"
+        ],
+        "year": 1993,
+        "title": "Theories of International Migration: A Review and Appraisal",
+        "type": "article",
+        "venue": "Population and Development Review",
+        "doi": "10.2307/2938462",
+        "openalex_id": "W2125705164",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review of migration theories."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Household strategies",
+      "summary": "Risk diversification.",
+      "defining_work": {
+        "authors": [
+          "Oded Stark",
+          "David E. Bloom"
+        ],
+        "year": 1985,
+        "title": "The new economics of labor migration",
+        "type": "article",
+        "venue": "American Economic Review",
+        "doi": null,
+        "openalex_id": "W1572874895",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Relative deprivation",
+      "summary": "Comparison with neighbours.",
+      "defining_work": {
+        "authors": [
+          "Oded Stark",
+          "J. Edward Taylor"
+        ],
+        "year": 1989,
+        "title": "Relative deprivation and international migration oded stark",
+        "type": "article",
+        "venue": "Demography",
+        "doi": "10.2307/2061490",
+        "openalex_id": "W4293179717",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.2307/2061490"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains migration without wage gaps.",
+      "source": {
+        "authors": [
+          "Douglas S. Massey",
+          "Joaquín Arango",
+          "Graeme John Hugo",
+          "Ali Kouaouci",
+          "Adéla Pellegrino",
+          "J. Edward Taylor"
+        ],
+        "year": 1993,
+        "title": "Theories of International Migration: A Review and Appraisal",
+        "type": "article",
+        "venue": "Population and Development Review",
+        "doi": "10.2307/2938462",
+        "openalex_id": "W2125705164",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Links migration to remittances.",
+      "source": {
+        "authors": [
+          "Oded Stark",
+          "David E. Bloom"
+        ],
+        "year": 1985,
+        "title": "The new economics of labor migration",
+        "type": "article",
+        "venue": "American Economic Review",
+        "doi": null,
+        "openalex_id": "W1572874895",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Households are not harmonious units.",
+      "source": {
+        "authors": [
+          "Hein de Haas"
+        ],
+        "year": 2010,
+        "title": "Migration and Development: A Theoretical Perspective",
+        "type": "article",
+        "venue": "International Migration Review",
+        "doi": "10.1111/j.1747-7379.2009.00804.x",
+        "openalex_id": "W2052783657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4744987"
+      }
+    },
+    {
+      "point": "Hard to separate from other theories empirically.",
+      "source": {
+        "authors": [
+          "Douglas S. Massey",
+          "Joaquín Arango",
+          "Graeme John Hugo",
+          "Ali Kouaouci",
+          "Adéla Pellegrino",
+          "J. Edward Taylor"
+        ],
+        "year": 1993,
+        "title": "Theories of International Migration: A Review and Appraisal",
+        "type": "article",
+        "venue": "Population and Development Review",
+        "doi": "10.2307/2938462",
+        "openalex_id": "W2125705164",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Oded Stark",
+          "David E. Bloom"
+        ],
+        "year": 1985,
+        "title": "The new economics of labor migration",
+        "type": "article",
+        "venue": "American Economic Review",
+        "doi": null,
+        "openalex_id": "W1572874895",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Statement.",
+      "reading_question": "Who decides migration in your households?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Oded Stark",
+          "J. Edward Taylor"
+        ],
+        "year": 1989,
+        "title": "Relative deprivation and international migration oded stark",
+        "type": "article",
+        "venue": "Demography",
+        "doi": "10.2307/2061490",
+        "openalex_id": "W4293179717",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.2307/2061490"
+      },
+      "chapter": null,
+      "why_read": "Mechanism.",
+      "reading_question": "Does relative deprivation matter?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Douglas S. Massey",
+          "Joaquín Arango",
+          "Graeme John Hugo",
+          "Ali Kouaouci",
+          "Adéla Pellegrino",
+          "J. Edward Taylor"
+        ],
+        "year": 1993,
+        "title": "Theories of International Migration: A Review and Appraisal",
+        "type": "article",
+        "venue": "Population and Development Review",
+        "doi": "10.2307/2938462",
+        "openalex_id": "W2125705164",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Why NELM over other theories?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "labor migration remittances",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2183911273",
+        "title": "Internal Labor Migration as a Shock Coping Strategy: Evidence from a Typhoon",
+        "year": 2016,
+        "authors": [
+          "André Gröger",
+          "Yanos Zylberberg"
+        ],
+        "cited_by": 194,
+        "oa_url": "https://doi.org/10.1257/app.20140362"
+      },
+      {
+        "openalex_id": "W2955109593",
+        "title": "Migration, crop production and non-farm labor diversification in rural Vietnam",
+        "year": 2019,
+        "authors": [
+          "Duc Loc Nguyen",
+          "Ulrike Grote",
+          "Trung Thành Nguyễn"
+        ],
+        "cited_by": 83,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2804485201",
+        "title": "The impact of foreign remittances on poverty in Nepal: A panel study of household survey data, 1996–2011",
+        "year": 2018,
+        "authors": [
+          "Udaya R. Waglé",
+          "Satis Devkota"
+        ],
+        "cited_by": 80,
+        "oa_url": "https://digitalcommons.morris.umn.edu/economics/1"
+      },
+      {
+        "openalex_id": "W2799562190",
+        "title": "Drivers of rural-urban migration and impact on food security in rural Tanzania",
+        "year": 2018,
+        "authors": [
+          "Isabell Duda",
+          "Anja Faße",
+          "Ulrike Grote"
+        ],
+        "cited_by": 59,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2912819517",
+        "title": "Development impacts of migration and remittances on migrant-sending communities: Evidence from Ethiopia",
+        "year": 2019,
+        "authors": [
+          "Misgina Asmelash Redehegn",
+          "Dingqiang Sun",
+          "Aseres Mamo Eshetie",
+          "Castro Ngumbu Gichuki"
+        ],
+        "cited_by": 58,
+        "oa_url": "https://doi.org/10.1371/journal.pone.0210034"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): A Model of Labor Migration and Urban Unemployment in Less Developed Countries. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "theory_id": null,
+  "library_name": "Governing the commons (Ostrom)",
+  "slug": "governing-the-commons",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Elinor Ostrom B"
+    ],
+    "year": 1990,
+    "title": "Governing the Commons",
+    "type": "book",
+    "venue": "Cambridge University Press eBooks",
+    "doi": "10.1017/cbo9780511807763",
+    "openalex_id": "W4233654598",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W4233654598",
+  "core_idea": "Communities can manage shared resources sustainably without state control or privatisation. Successful institutions share design principles such as clear boundaries, local rules, monitoring and graduated sanctions.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How are pastures, irrigation or forests governed by communities?",
+    "Why do some commons last and others collapse?",
+    "Typical data: case study, institutional analysis (IAD), interviews."
+  ],
+  "common_mistakes": [
+    "Using the design principles as a checklist.",
+    "Ignoring the wider institutional context.",
+    "Assuming tragedy of the commons is inevitable."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Garrett Hardin"
+        ],
+        "year": 1968,
+        "title": "The Tragedy of the Commons",
+        "type": "article",
+        "venue": "Science",
+        "doi": "10.1126/science.162.3859.1243",
+        "openalex_id": "W2226396244",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The claim Ostrom refutes."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Elinor Ostrom B"
+        ],
+        "year": 2006,
+        "title": "Understanding Institutional Diversity",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400831739",
+        "openalex_id": "W4299610040",
+        "isbn": "9781282458673",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      },
+      "adds": "IAD framework."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Elinor Ostrom B"
+        ],
+        "year": 2009,
+        "title": "A General Framework for Analyzing Sustainability of Social-Ecological Systems",
+        "type": "article",
+        "venue": "Science",
+        "doi": "10.1126/science.1172133",
+        "openalex_id": "W2034994370",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "SES framework."
+    }
+  ],
+  "strands": [
+    {
+      "name": "IAD framework",
+      "summary": "Institutional analysis.",
+      "defining_work": {
+        "authors": [
+          "Elinor Ostrom B"
+        ],
+        "year": 2006,
+        "title": "Understanding Institutional Diversity",
+        "type": "book",
+        "venue": "Princeton University Press eBooks",
+        "doi": "10.1515/9781400831739",
+        "openalex_id": "W4299610040",
+        "isbn": "9781282458673",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      }
+    },
+    {
+      "name": "SES framework",
+      "summary": "Social-ecological systems.",
+      "defining_work": {
+        "authors": [
+          "Elinor Ostrom B"
+        ],
+        "year": 2009,
+        "title": "A General Framework for Analyzing Sustainability of Social-Ecological Systems",
+        "type": "article",
+        "venue": "Science",
+        "doi": "10.1126/science.1172133",
+        "openalex_id": "W2034994370",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Design principles supported across many cases.",
+      "source": {
+        "authors": [
+          "Michael E. Cox",
+          "Gwen Arnold",
+          "Sergio Villamayor‐Tomás"
+        ],
+        "year": 2010,
+        "title": "A Review of Design Principles for Community-based Natural Resource Management",
+        "type": "article",
+        "venue": "Ecology and Society",
+        "doi": "10.5751/es-03704-150438",
+        "openalex_id": "W2326322218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.5751/es-03704-150438"
+      }
+    },
+    {
+      "point": "Nobel-recognised empirical programme.",
+      "source": {
+        "authors": [
+          "Elinor Ostrom B"
+        ],
+        "year": 2009,
+        "title": "A General Framework for Analyzing Sustainability of Social-Ecological Systems",
+        "type": "article",
+        "venue": "Science",
+        "doi": "10.1126/science.1172133",
+        "openalex_id": "W2034994370",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Design principles need refinement and context.",
+      "source": {
+        "authors": [
+          "Michael E. Cox",
+          "Gwen Arnold",
+          "Sergio Villamayor‐Tomás"
+        ],
+        "year": 2010,
+        "title": "A Review of Design Principles for Community-based Natural Resource Management",
+        "type": "article",
+        "venue": "Ecology and Society",
+        "doi": "10.5751/es-03704-150438",
+        "openalex_id": "W2326322218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.5751/es-03704-150438"
+      }
+    },
+    {
+      "point": "Underplays power and inequality in communities.",
+      "source": {
+        "authors": [
+          "Arun Agrawal",
+          "Clark C. Gibson"
+        ],
+        "year": 1999,
+        "title": "Enchantment and Disenchantment: The Role of Community in Natural Resource Conservation",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/s0305-750x(98)00161-2",
+        "openalex_id": "W2146826537",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1016/s0305-750x(98)00161-2"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Elinor Ostrom B"
+        ],
+        "year": 1990,
+        "title": "Governing the Commons",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511807763",
+        "openalex_id": "W4233654598",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Which design principles apply?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Elinor Ostrom B"
+        ],
+        "year": 2009,
+        "title": "A General Framework for Analyzing Sustainability of Social-Ecological Systems",
+        "type": "article",
+        "venue": "Science",
+        "doi": "10.1126/science.1172133",
+        "openalex_id": "W2034994370",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "SES.",
+      "reading_question": "Which variables will you study?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Michael E. Cox",
+          "Gwen Arnold",
+          "Sergio Villamayor‐Tomás"
+        ],
+        "year": 2010,
+        "title": "A Review of Design Principles for Community-based Natural Resource Management",
+        "type": "article",
+        "venue": "Ecology and Society",
+        "doi": "10.5751/es-03704-150438",
+        "openalex_id": "W2326322218",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.5751/es-03704-150438"
+      },
+      "chapter": null,
+      "why_read": "Evidence.",
+      "reading_question": "Which principle is missing in your case?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "commons governance",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2745243245",
+        "title": "Polycentric Systems of Governance: A Theoretical Model for the Commons",
+        "year": 2017,
+        "authors": [
+          "Keith M. Carlisle",
+          "Rebecca L. Gruby"
+        ],
+        "cited_by": 766,
+        "oa_url": "https://doi.org/10.1111/psj.12212"
+      },
+      {
+        "openalex_id": "W2507160277",
+        "title": "Explaining success and failure in the commons: the configural nature of Ostrom's institutional design principles",
+        "year": 2016,
+        "authors": [
+          "Jacopo Alessandro Baggio",
+          "Allain J. Barnett",
+          "Irene Pérez",
+          "Ute Brady",
+          "Elicia Ratajczyk",
+          "Nathan D. Rollins"
+        ],
+        "cited_by": 221,
+        "oa_url": "https://doi.org/10.18352/ijc.634"
+      },
+      {
+        "openalex_id": "W2974342567",
+        "title": "Against Sovereignty in Cyberspace",
+        "year": 2019,
+        "authors": [
+          "Milton Mueller"
+        ],
+        "cited_by": 204,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2906180434",
+        "title": "When Ostrom Meets Blockchain: Exploring the Potentials of Blockchain for Commons Governance",
+        "year": 2018,
+        "authors": [
+          "David Rozas",
+          "Antonio Tenorio-Fornés",
+          "Silvia Díaz-Molina",
+          "Samer Hassan"
+        ],
+        "cited_by": 189,
+        "oa_url": "https://doi.org/10.1177/21582440211002526"
+      },
+      {
+        "openalex_id": "W4391092032",
+        "title": "The planetary commons: A new paradigm for safeguarding Earth-regulating systems in the Anthropocene",
+        "year": 2024,
+        "authors": [
+          "Johan Rockström",
+          "Louis Jacobus Kotze",
+          "Svetlana Milutinović",
+          "Frank Biermann",
+          "Victor A. Brovkin",
+          "Jonathan F. Donges"
+        ],
+        "cited_by": 185,
+        "oa_url": "https://doi.org/10.1073/pnas.2301531121"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

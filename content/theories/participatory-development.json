@@ -1,0 +1,367 @@
+{
+  "theory_id": null,
+  "library_name": "Participatory development",
+  "slug": "participatory-development",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Robert Chambers"
+    ],
+    "year": 1994,
+    "title": "The origins and practice of participatory rural appraisal",
+    "type": "article",
+    "venue": "World Development",
+    "doi": "10.1016/0305-750x(94)90141-4",
+    "openalex_id": "W2143286669",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://figshare.com/articles/journal_contribution/The_origins_and_practice_of_participatory_rural_appraisal/26515705"
+  },
+  "citation_anchor_openalex_id": "W2143286669",
+  "core_idea": "Local people are experts on their own lives. Participatory approaches reverse roles so communities analyse their situation and plan action, with outsiders as facilitators.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How does participation work in development projects?",
+    "Who participates and who is excluded?",
+    "Typical data: participatory rural appraisal, focus groups, case study."
+  ],
+  "common_mistakes": [
+    "Calling consultation 'participation'.",
+    "Ignoring power within communities.",
+    "Using PRA tools without the reversal of roles."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Chambers"
+        ],
+        "year": 1983,
+        "title": "Rural Development: Putting the Last First",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781317868989",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 1995; 1983 is the edition or translation cited here.",
+        "first_publish_year": 1995
+      },
+      "adds": "Putting the last first."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sherry R. Arnstein"
+        ],
+        "year": 1969,
+        "title": "A Ladder Of Citizen Participation",
+        "type": "article",
+        "venue": "Journal of the American Institute of Planners",
+        "doi": "10.1080/01944366908977225",
+        "openalex_id": "W2008251417",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Ladder of participation."
+    }
+  ],
+  "strands": [
+    {
+      "name": "PRA tradition",
+      "summary": "Participatory tools.",
+      "defining_work": {
+        "authors": [
+          "Robert Chambers"
+        ],
+        "year": 1994,
+        "title": "The origins and practice of participatory rural appraisal",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/0305-750x(94)90141-4",
+        "openalex_id": "W2143286669",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/The_origins_and_practice_of_participatory_rural_appraisal/26515705"
+      }
+    },
+    {
+      "name": "Critical participation",
+      "summary": "Power and tyranny.",
+      "defining_work": {
+        "authors": [
+          "W. T. Cooke",
+          "Uma Kothari"
+        ],
+        "year": 2001,
+        "title": "Participation: the new tyranny? (eds.)",
+        "type": "book",
+        "venue": "Research Explorer (The University of Manchester)",
+        "doi": null,
+        "openalex_id": "W3214621507",
+        "isbn": "9781856497947",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Changed development practice.",
+      "source": {
+        "authors": [
+          "Robert Chambers"
+        ],
+        "year": 1994,
+        "title": "The origins and practice of participatory rural appraisal",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/0305-750x(94)90141-4",
+        "openalex_id": "W2143286669",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/The_origins_and_practice_of_participatory_rural_appraisal/26515705"
+      }
+    },
+    {
+      "point": "Offers degrees of participation.",
+      "source": {
+        "authors": [
+          "Sherry R. Arnstein"
+        ],
+        "year": 1969,
+        "title": "A Ladder Of Citizen Participation",
+        "type": "article",
+        "venue": "Journal of the American Institute of Planners",
+        "doi": "10.1080/01944366908977225",
+        "openalex_id": "W2008251417",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Participation can be tyrannical and hide power.",
+      "source": {
+        "authors": [
+          "W. T. Cooke",
+          "Uma Kothari"
+        ],
+        "year": 2001,
+        "title": "Participation: the new tyranny? (eds.)",
+        "type": "book",
+        "venue": "Research Explorer (The University of Manchester)",
+        "doi": null,
+        "openalex_id": "W3214621507",
+        "isbn": "9781856497947",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001
+      }
+    },
+    {
+      "point": "Elites capture participatory spaces.",
+      "source": {
+        "authors": [
+          "W. T. Cooke",
+          "Uma Kothari"
+        ],
+        "year": 2001,
+        "title": "Participation: the new tyranny? (eds.)",
+        "type": "book",
+        "venue": "Research Explorer (The University of Manchester)",
+        "doi": null,
+        "openalex_id": "W3214621507",
+        "isbn": "9781856497947",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Robert Chambers"
+        ],
+        "year": 1994,
+        "title": "The origins and practice of participatory rural appraisal",
+        "type": "article",
+        "venue": "World Development",
+        "doi": "10.1016/0305-750x(94)90141-4",
+        "openalex_id": "W2143286669",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://figshare.com/articles/journal_contribution/The_origins_and_practice_of_participatory_rural_appraisal/26515705"
+      },
+      "chapter": null,
+      "why_read": "PRA.",
+      "reading_question": "What level of participation exists?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Sherry R. Arnstein"
+        ],
+        "year": 1969,
+        "title": "A Ladder Of Citizen Participation",
+        "type": "article",
+        "venue": "Journal of the American Institute of Planners",
+        "doi": "10.1080/01944366908977225",
+        "openalex_id": "W2008251417",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Ladder.",
+      "reading_question": "Where does your case sit?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "W. T. Cooke",
+          "Uma Kothari"
+        ],
+        "year": 2001,
+        "title": "Participation: the new tyranny? (eds.)",
+        "type": "book",
+        "venue": "Research Explorer (The University of Manchester)",
+        "doi": null,
+        "openalex_id": "W3214621507",
+        "isbn": "9781856497947",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2001
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Whose voices are missing?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "participatory development",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W4367182096",
+        "title": "Participatory action research",
+        "year": 2023,
+        "authors": [
+          "Flora Cornish",
+          "Nancy Nyutsem Breton",
+          "Ulises Moreno-Tabarez",
+          "Jenna Delgado",
+          "Mohi Robert Rua",
+          "Ama de‐Graft Aikins"
+        ],
+        "cited_by": 992,
+        "oa_url": "https://orcid.org/0000-0002-3404-9385>,"
+      },
+      {
+        "openalex_id": "W4296405185",
+        "title": "Power to the People? Opportunities and Challenges for Participatory AI",
+        "year": 2022,
+        "authors": [
+          "Abeba Birhane",
+          "William Isaac",
+          "Vinodkumar Prabhakaran",
+          "Mark Díaz",
+          "Madeleine Clare Elish",
+          "Iason Gabriel"
+        ],
+        "cited_by": 357,
+        "oa_url": "https://doi.org/10.1145/3551624.3555290"
+      },
+      {
+        "openalex_id": "W2888904997",
+        "title": "Uncovering ‘Community’: Challenging an Elusive Concept in Development and Disaster Related Work",
+        "year": 2018,
+        "authors": [
+          "Alexandra Titz",
+          "Terry Cannon",
+          "Fred Krüger"
+        ],
+        "cited_by": 171,
+        "oa_url": "http://dx.doi.org/10.3390/soc8030071"
+      },
+      {
+        "openalex_id": "W2982417164",
+        "title": "Participatory Rural Appraisal (PRA) untuk Pengembangan Desa Wisata di Pedukuhan Pucung, Desa Wukirsari, Bantul",
+        "year": 2019,
+        "authors": [
+          "Bambang Hudayana",
+          "Pande Made Kutanegara",
+          "Setiadi Setiadi",
+          "Agus Indiyanto",
+          "Muhammad Zamzam Fauzanafi",
+          "Mubarika Dyah F. Nugraheni"
+        ],
+        "cited_by": 142,
+        "oa_url": "https://doi.org/10.22146/bb.50890"
+      },
+      {
+        "openalex_id": "W3086769507",
+        "title": "Citizen science breathes new life into participatory agricultural research. A review",
+        "year": 2020,
+        "authors": [
+          "Jeske van de Gevel",
+          "Jacob van Etten",
+          "Sebastian Deterding"
+        ],
+        "cited_by": 105,
+        "oa_url": "https://doi.org/10.1007/s13593-020-00636-1"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

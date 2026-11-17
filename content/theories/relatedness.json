@@ -1,0 +1,314 @@
+{
+  "theory_id": null,
+  "library_name": "Relatedness (new kinship studies)",
+  "slug": "relatedness",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Carsten"
+    ],
+    "year": 2000,
+    "title": "Cultures of Relatedness: New Approaches to the Study of Kinship",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780521656276",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 2000
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Kinship is made through everyday practices such as feeding, living together and caring, not only through birth and marriage.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do families form and maintain kin ties, including through migration or adoption?",
+    "What makes someone 'family'?",
+    "Typical data: ethnography, interviews."
+  ],
+  "common_mistakes": [
+    "Treating kinship as biological facts.",
+    "Using relatedness so broadly that it means any relationship.",
+    "Ignoring power and obligation in kinship."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "David M. Schneider"
+        ],
+        "year": 1984,
+        "title": "A Critique of the Study of Kinship",
+        "type": "book",
+        "venue": "University of Michigan Press eBooks",
+        "doi": "10.3998/mpub.7203",
+        "openalex_id": "W613684057",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Critique of kinship studies."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Janet Carsten"
+        ],
+        "year": 1995,
+        "title": "the substance of kinship and the heat of the hearth: feeding, personhood, and relatedness among Malays in Pulau Langkawi",
+        "type": "article",
+        "venue": "American Ethnologist",
+        "doi": "10.1525/ae.1995.22.2.02a00010",
+        "openalex_id": "W2115767058",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Kinship through feeding and living together."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Marshall Sahlins"
+        ],
+        "year": 2013,
+        "title": "What Kinship Is-And Is Not",
+        "type": "book",
+        "venue": "University of Chicago Press eBooks",
+        "doi": "10.7208/chicago/9780226925134.001.0001",
+        "openalex_id": "W1961380578",
+        "isbn": "9780226214290",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doaj.org/article/56a5f30341f3460ab1fedb48dfabf9ca",
+        "first_publish_year": 2013
+      },
+      "adds": "Kinship as mutuality of being."
+    }
+  ],
+  "strands": [
+    {
+      "name": "New kinship studies",
+      "summary": "Practice-based kinship.",
+      "defining_work": {
+        "authors": [
+          "Carsten"
+        ],
+        "year": 2000,
+        "title": "Cultures of Relatedness: New Approaches to the Study of Kinship",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521656276",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2000
+      }
+    },
+    {
+      "name": "Mutuality of being",
+      "summary": "Sahlins's account.",
+      "defining_work": {
+        "authors": [
+          "Marshall Sahlins"
+        ],
+        "year": 2013,
+        "title": "What Kinship Is-And Is Not",
+        "type": "book",
+        "venue": "University of Chicago Press eBooks",
+        "doi": "10.7208/chicago/9780226925134.001.0001",
+        "openalex_id": "W1961380578",
+        "isbn": "9780226214290",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doaj.org/article/56a5f30341f3460ab1fedb48dfabf9ca",
+        "first_publish_year": 2013
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Captures non-biological ties.",
+      "source": {
+        "authors": [
+          "Janet Carsten"
+        ],
+        "year": 1995,
+        "title": "the substance of kinship and the heat of the hearth: feeding, personhood, and relatedness among Malays in Pulau Langkawi",
+        "type": "article",
+        "venue": "American Ethnologist",
+        "doi": "10.1525/ae.1995.22.2.02a00010",
+        "openalex_id": "W2115767058",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Influential after Schneider's critique.",
+      "source": {
+        "authors": [
+          "David M. Schneider"
+        ],
+        "year": 1984,
+        "title": "A Critique of the Study of Kinship",
+        "type": "book",
+        "venue": "University of Michigan Press eBooks",
+        "doi": "10.3998/mpub.7203",
+        "openalex_id": "W613684057",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Relatedness is too broad.",
+      "source": {
+        "authors": [
+          "Marshall Sahlins"
+        ],
+        "year": 2013,
+        "title": "What Kinship Is-And Is Not",
+        "type": "book",
+        "venue": "University of Chicago Press eBooks",
+        "doi": "10.7208/chicago/9780226925134.001.0001",
+        "openalex_id": "W1961380578",
+        "isbn": "9780226214290",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doaj.org/article/56a5f30341f3460ab1fedb48dfabf9ca",
+        "first_publish_year": 2013
+      }
+    },
+    {
+      "point": "May underplay obligation and hierarchy.",
+      "source": {
+        "authors": [
+          "Marshall Sahlins"
+        ],
+        "year": 2013,
+        "title": "What Kinship Is-And Is Not",
+        "type": "book",
+        "venue": "University of Chicago Press eBooks",
+        "doi": "10.7208/chicago/9780226925134.001.0001",
+        "openalex_id": "W1961380578",
+        "isbn": "9780226214290",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doaj.org/article/56a5f30341f3460ab1fedb48dfabf9ca",
+        "first_publish_year": 2013
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Carsten"
+        ],
+        "year": 2000,
+        "title": "Cultures of Relatedness: New Approaches to the Study of Kinship",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780521656276",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2000
+      },
+      "chapter": null,
+      "why_read": "Edited volume.",
+      "reading_question": "How is kinship made in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Janet Carsten"
+        ],
+        "year": 1995,
+        "title": "the substance of kinship and the heat of the hearth: feeding, personhood, and relatedness among Malays in Pulau Langkawi",
+        "type": "article",
+        "venue": "American Ethnologist",
+        "doi": "10.1525/ae.1995.22.2.02a00010",
+        "openalex_id": "W2115767058",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Ethnographic basis.",
+      "reading_question": "Which practices create kin?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Marshall Sahlins"
+        ],
+        "year": 2013,
+        "title": "What Kinship Is-And Is Not",
+        "type": "book",
+        "venue": "University of Chicago Press eBooks",
+        "doi": "10.7208/chicago/9780226925134.001.0001",
+        "openalex_id": "W1961380578",
+        "isbn": "9780226214290",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doaj.org/article/56a5f30341f3460ab1fedb48dfabf9ca",
+        "first_publish_year": 2013
+      },
+      "chapter": null,
+      "why_read": "Alternative.",
+      "reading_question": "Relatedness or mutuality?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "kinship relatedness",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): What Kinship Is All About. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

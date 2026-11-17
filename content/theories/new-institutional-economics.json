@@ -1,0 +1,373 @@
+{
+  "theory_id": null,
+  "library_name": "New institutional economics",
+  "slug": "new-institutional-economics",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Douglass C. North"
+    ],
+    "year": 1990,
+    "title": "Institutions, Institutional Change and Economic Performance",
+    "type": "book",
+    "venue": "Cambridge University Press eBooks",
+    "doi": "10.1017/cbo9780511808678",
+    "openalex_id": "W4298413470",
+    "isbn": "9780511808678",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "first_publish_year": 1990
+  },
+  "citation_anchor_openalex_id": "W4298413470",
+  "core_idea": "Institutions are the formal and informal rules of the game. They shape economic performance by structuring incentives and lowering transaction costs. Institutional change is incremental and path-dependent.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do property rights, rules or informal norms affect business and markets?",
+    "Why do some economies develop and others not?",
+    "Typical data: case study, comparative analysis, interviews, cross-country data."
+  ],
+  "common_mistakes": [
+    "Using 'institutions' for organisations.",
+    "Ignoring enforcement.",
+    "Assuming institutions are designed for efficiency."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Douglass C. North"
+        ],
+        "year": 1991,
+        "title": "Institutions",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/jep.5.1.97",
+        "openalex_id": "W4256216147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Short statement."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Oliver E. Williamson"
+        ],
+        "year": 2000,
+        "title": "The New Institutional Economics: Taking Stock, Looking Ahead",
+        "type": "article",
+        "venue": "Journal of Economic Literature",
+        "doi": "10.1257/jel.38.3.595",
+        "openalex_id": "W2136823593",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Levels of institutional analysis."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Sue E. S. Crawford",
+          "Elinor Ostrom B"
+        ],
+        "year": 1995,
+        "title": "A Grammar of Institutions",
+        "type": "article",
+        "venue": "American Political Science Review",
+        "doi": "10.2307/2082975",
+        "openalex_id": "W2037627831",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "A 'grammar of institutions' to analyse rules, norms and strategies."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Transaction cost economics",
+      "summary": "Williamson's governance (library entry).",
+      "defining_work": {
+        "authors": [
+          "Oliver E. Williamson"
+        ],
+        "year": 2000,
+        "title": "The New Institutional Economics: Taking Stock, Looking Ahead",
+        "type": "article",
+        "venue": "Journal of Economic Literature",
+        "doi": "10.1257/jel.38.3.595",
+        "openalex_id": "W2136823593",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Institutions and development",
+      "summary": "Empirical growth research.",
+      "defining_work": {
+        "authors": [
+          "Daron Acemoğlu",
+          "Simon Johnson",
+          "James A. Robinson"
+        ],
+        "year": 2000,
+        "title": "The Colonial Origins of Comparative Development: An Empirical Investigation",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w7771",
+        "openalex_id": "W4300848461",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w7771"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Strong empirical programme on institutions and growth.",
+      "source": {
+        "authors": [
+          "Daron Acemoğlu",
+          "Simon Johnson",
+          "James A. Robinson"
+        ],
+        "year": 2000,
+        "title": "The Colonial Origins of Comparative Development: An Empirical Investigation",
+        "type": "article",
+        "venue": "National Bureau of Economic Research",
+        "doi": "10.3386/w7771",
+        "openalex_id": "W4300848461",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3386/w7771"
+      }
+    },
+    {
+      "point": "Integrates informal norms.",
+      "source": {
+        "authors": [
+          "Douglass C. North"
+        ],
+        "year": 1991,
+        "title": "Institutions",
+        "type": "article",
+        "venue": "The Journal of Economic Perspectives",
+        "doi": "10.1257/jep.5.1.97",
+        "openalex_id": "W4256216147",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Definition of institutions is unclear.",
+      "source": {
+        "authors": [
+          "Geoffrey Martin Hodgson"
+        ],
+        "year": 2007,
+        "title": "What Are Institutions?",
+        "type": "article",
+        "venue": "Voprosy Ekonomiki",
+        "doi": "10.32609/0042-8736-2007-8-28-48",
+        "openalex_id": "W1590298215",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Institution-first policies ignore history.",
+      "source": {
+        "authors": [
+          "Ha‐Joon Chang"
+        ],
+        "year": 2010,
+        "title": "Institutions and economic development: theory, policy and history",
+        "type": "article",
+        "venue": "Journal of Institutional Economics",
+        "doi": "10.1017/s1744137410000378",
+        "openalex_id": "W2084538889",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1017/s1744137410000378"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Douglass C. North"
+        ],
+        "year": 1990,
+        "title": "Institutions, Institutional Change and Economic Performance",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511808678",
+        "openalex_id": "W4298413470",
+        "isbn": "9780511808678",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1990
+      },
+      "chapter": null,
+      "why_read": "Book.",
+      "reading_question": "Which rules of the game matter?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Oliver E. Williamson"
+        ],
+        "year": 2000,
+        "title": "The New Institutional Economics: Taking Stock, Looking Ahead",
+        "type": "article",
+        "venue": "Journal of Economic Literature",
+        "doi": "10.1257/jel.38.3.595",
+        "openalex_id": "W2136823593",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Map.",
+      "reading_question": "Which level do you study?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Geoffrey Martin Hodgson"
+        ],
+        "year": 2007,
+        "title": "What Are Institutions?",
+        "type": "article",
+        "venue": "Voprosy Ekonomiki",
+        "doi": "10.32609/0042-8736-2007-8-28-48",
+        "openalex_id": "W1590298215",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you define institutions?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "institutions economic performance",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3122104099",
+        "title": "The Dynamics of Political Embeddedness in China",
+        "year": 2016,
+        "authors": [
+          "Heather A. Haveman",
+          "Nan Jia",
+          "Jing Shi",
+          "Yongxiang Wang"
+        ],
+        "cited_by": 466,
+        "oa_url": "https://doi.org/10.2139/ssrn.2021690"
+      },
+      {
+        "openalex_id": "W2994639602",
+        "title": "Does entrepreneurial activity matter for economic growth in developing countries? The role of the institutional environment",
+        "year": 2019,
+        "authors": [
+          "David Urbano",
+          "David Bruce Audretsch",
+          "Sebastián Aparicio",
+          "María Noguera"
+        ],
+        "cited_by": 252,
+        "oa_url": "https://durham-repository.worktribe.com/file/1274595/1/Accepted%20Journal%20Article"
+      },
+      {
+        "openalex_id": "W2274239535",
+        "title": "Institutions and emerging markets: effects and implications for multinational corporations",
+        "year": 2016,
+        "authors": [
+          "Daniel Rottig"
+        ],
+        "cited_by": 236,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2917866415",
+        "title": "Pro-market institutions and global strategy: The pendulum of pro-market reforms and reversals",
+        "year": 2019,
+        "authors": [
+          "Álvaro Cuervo-Cazurra",
+          "Ajai Singh Gaur",
+          "Deeksha A Singh"
+        ],
+        "cited_by": 202,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3047034506",
+        "title": "The pathway toward pollution mitigation: Does institutional quality make a difference?",
+        "year": 2020,
+        "authors": [
+          "Danish Khan",
+          "Recep Ulucak"
+        ],
+        "cited_by": 185,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

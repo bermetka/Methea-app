@@ -1,0 +1,302 @@
+{
+  "theory_id": null,
+  "library_name": "Symbolic interactionism",
+  "slug": "symbolic-interactionism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Blumer"
+    ],
+    "year": 1969,
+    "title": "Symbolic Interactionism: Perspective and Method",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780138799243",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL511137W, first published 1969). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1969
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "People act towards things on the basis of the meanings those things have for them. Meanings arise in social interaction and are handled and changed through interpretation.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people make sense of roles, identities or situations?",
+    "How are meanings negotiated in interaction (e.g. classrooms, clinics)?",
+    "Typical data: interviews, participant observation, grounded theory."
+  ],
+  "common_mistakes": [
+    "Using it as a vague 'people make meaning' stance without its premises.",
+    "Ignoring the self as process.",
+    "Assuming it cannot address structure (see the structural version)."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Mead"
+        ],
+        "year": 1934,
+        "title": "Mind, Self, and Society",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780226516677",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL2677791W, first published 1934). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1934
+      },
+      "adds": "The self and symbols from pragmatism."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Sheldon Stryker"
+        ],
+        "year": 1980,
+        "title": "Symbolic Interactionism: A Social Structural Version",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2031615586",
+        "isbn": "9781930665484",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1980
+      },
+      "adds": "Structural symbolic interactionism."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Chicago school (Blumer)",
+      "summary": "Interpretive, qualitative.",
+      "defining_work": {
+        "authors": [
+          "Blumer"
+        ],
+        "year": 1969,
+        "title": "Symbolic Interactionism: Perspective and Method",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780138799243",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL511137W, first published 1969). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1969
+      }
+    },
+    {
+      "name": "Structural SI / identity theory",
+      "summary": "Role identities and social structure.",
+      "defining_work": {
+        "authors": [
+          "Sheldon Stryker",
+          "Peter J. Burke"
+        ],
+        "year": 2000,
+        "title": "The Past, Present, and Future of an Identity Theory",
+        "type": "article",
+        "venue": "Social Psychology Quarterly",
+        "doi": "10.2307/2695840",
+        "openalex_id": "W2039827470",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Foundation for much qualitative research and grounded theory.",
+      "source": {
+        "authors": [
+          "Blumer"
+        ],
+        "year": 1969,
+        "title": "Symbolic Interactionism: Perspective and Method",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780138799243",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL511137W, first published 1969). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1969
+      }
+    },
+    {
+      "point": "Developed into testable identity theory.",
+      "source": {
+        "authors": [
+          "Sheldon Stryker",
+          "Peter J. Burke"
+        ],
+        "year": 2000,
+        "title": "The Past, Present, and Future of an Identity Theory",
+        "type": "article",
+        "venue": "Social Psychology Quarterly",
+        "doi": "10.2307/2695840",
+        "openalex_id": "W2039827470",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Bias towards emergent meaning neglects power and structure.",
+      "source": {
+        "authors": [
+          "Joan Huber"
+        ],
+        "year": 1973,
+        "title": "Symbolic Interaction as a Pragmatic Perspective: The Bias of Emergent Theory",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2094400",
+        "openalex_id": "W2326433325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Micro focus misses social structure, as structural interactionists argue.",
+      "source": {
+        "authors": [
+          "Sheldon Stryker"
+        ],
+        "year": 1980,
+        "title": "Symbolic Interactionism: A Social Structural Version",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2031615586",
+        "isbn": "9781930665484",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1980
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Blumer"
+        ],
+        "year": 1969,
+        "title": "Symbolic Interactionism: Perspective and Method",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780138799243",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL511137W, first published 1969). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1969
+      },
+      "chapter": null,
+      "why_read": "Three premises.",
+      "reading_question": "Which meanings are central in your setting?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Sheldon Stryker",
+          "Peter J. Burke"
+        ],
+        "year": 2000,
+        "title": "The Past, Present, and Future of an Identity Theory",
+        "type": "article",
+        "venue": "Social Psychology Quarterly",
+        "doi": "10.2307/2695840",
+        "openalex_id": "W2039827470",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Structural strand.",
+      "reading_question": "Interpretive or structural version?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Joan Huber"
+        ],
+        "year": 1973,
+        "title": "Symbolic Interaction as a Pragmatic Perspective: The Bias of Emergent Theory",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2094400",
+        "openalex_id": "W2326433325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "How will you account for power?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "symbolic interactionism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

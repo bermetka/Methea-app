@@ -1,0 +1,385 @@
+{
+  "theory_id": null,
+  "library_name": "Transformative paradigm",
+  "slug": "transformative-paradigm",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Donna M. Mertens"
+    ],
+    "year": 2007,
+    "title": "Transformative Paradigm: Mixed Methods and Social Justice",
+    "type": "article",
+    "venue": "Journal of Mixed Methods Research",
+    "doi": "10.1177/1558689807302811",
+    "openalex_id": "W2134583000",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2134583000",
+  "core_idea": "Research with marginalised communities should serve human rights and social justice. Realities are shaped by power and privilege, so the researcher works with the community, attends to whose version of reality is accepted, and designs the study to support change.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Research with groups that face discrimination or exclusion.",
+    "Evaluation of programmes where power differences shape results.",
+    "Typical designs: participatory and mixed-methods designs with community involvement at each stage."
+  ],
+  "common_mistakes": [
+    "Naming the paradigm without involving the community in the design.",
+    "Treating it as a method; it is a set of assumptions that guides any method.",
+    "Assuming the researcher knows what change the community wants."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Donna M. Mertens"
+        ],
+        "year": 2010,
+        "title": "Transformative Mixed Methods Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800410364612",
+        "openalex_id": "W2113810910",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "How the paradigm's assumptions shape mixed-methods designs."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "David Sweetman",
+          "Manijeh Badiee",
+          "John W. Creswell"
+        ],
+        "year": 2010,
+        "title": "Use of the Transformative Framework in Mixed Methods Studies",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800410364610",
+        "openalex_id": "W2162781826",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Criteria for judging transformative mixed-methods studies."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Donna M. Mertens"
+        ],
+        "year": 2012,
+        "title": "Transformative Mixed Methods: Addressing Inequities",
+        "type": "article",
+        "venue": "American Behavioral Scientist",
+        "doi": "10.1177/0002764211433797",
+        "openalex_id": "W2125598596",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Overview with examples of addressing inequities."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Transformative evaluation",
+      "summary": "Inclusive, rights-based evaluation.",
+      "defining_work": {
+        "authors": [
+          "Donna M. Mertens"
+        ],
+        "year": 1999,
+        "title": "Inclusive Evaluation: Implications of Transformative Theory for Evaluation",
+        "type": "article",
+        "venue": "American Journal of Evaluation",
+        "doi": "10.1177/109821409902000102",
+        "openalex_id": "W2075517967",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Transformative mixed methods",
+      "summary": "Cyclical designs with community involvement.",
+      "defining_work": {
+        "authors": [
+          "Donna M. Mertens"
+        ],
+        "year": 2010,
+        "title": "Transformative Mixed Methods Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800410364612",
+        "openalex_id": "W2113810910",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives explicit criteria for socially just research designs.",
+      "source": {
+        "authors": [
+          "David Sweetman",
+          "Manijeh Badiee",
+          "John W. Creswell"
+        ],
+        "year": 2010,
+        "title": "Use of the Transformative Framework in Mixed Methods Studies",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800410364610",
+        "openalex_id": "W2162781826",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Links philosophical assumptions directly to design decisions.",
+      "source": {
+        "authors": [
+          "Donna M. Mertens"
+        ],
+        "year": 2010,
+        "title": "Transformative Mixed Methods Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800410364612",
+        "openalex_id": "W2113810910",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Needs a more relational, Indigenous-informed account of knowing.",
+      "source": {
+        "authors": [
+          "Norma R. A. Romm"
+        ],
+        "year": 2015,
+        "title": "Reviewing the Transformative Paradigm: A Critical Systemic and Relational (Indigenous) Lens",
+        "type": "article",
+        "venue": "Systemic Practice and Action Research",
+        "doi": "10.1007/s11213-015-9344-5",
+        "openalex_id": "W2057705295",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Paradigm talk in mixed methods remains contested.",
+      "source": {
+        "authors": [
+          "Norman K. Denzin"
+        ],
+        "year": 2010,
+        "title": "Moments, Mixed Methods, and Paradigm Dialogs",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800410364608",
+        "openalex_id": "W2118620435",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Donna M. Mertens"
+        ],
+        "year": 2007,
+        "title": "Transformative Paradigm: Mixed Methods and Social Justice",
+        "type": "article",
+        "venue": "Journal of Mixed Methods Research",
+        "doi": "10.1177/1558689807302811",
+        "openalex_id": "W2134583000",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The paradigm's four sets of assumptions.",
+      "reading_question": "Whose reality is privileged in your field?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "David Sweetman",
+          "Manijeh Badiee",
+          "John W. Creswell"
+        ],
+        "year": 2010,
+        "title": "Use of the Transformative Framework in Mixed Methods Studies",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800410364610",
+        "openalex_id": "W2162781826",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Ten criteria.",
+      "reading_question": "How many criteria does your design meet?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Norma R. A. Romm"
+        ],
+        "year": 2015,
+        "title": "Reviewing the Transformative Paradigm: A Critical Systemic and Relational (Indigenous) Lens",
+        "type": "article",
+        "venue": "Systemic Practice and Action Research",
+        "doi": "10.1007/s11213-015-9344-5",
+        "openalex_id": "W2057705295",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critical review.",
+      "reading_question": "How is the community involved in your study?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "transformative paradigm",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W4295895107",
+        "title": "Gender-transformative approaches in international development: A brief history and five uniting principles",
+        "year": 2022,
+        "authors": [
+          "Jess MacArthur",
+          "Naomi Carrard",
+          "Federico Davila",
+          "Melita Grant",
+          "T Megaw",
+          "Juliet Willetts"
+        ],
+        "cited_by": 116,
+        "oa_url": "https://doi.org/10.1016/j.wsif.2022.102635"
+      },
+      {
+        "openalex_id": "W4226458063",
+        "title": "Digital resilience in higher education in response to COVID-19 pandemic: Student Perceptions from Asia and Australia",
+        "year": 2021,
+        "authors": [
+          "Rajaraman D. Eri",
+          "Prasad Gudimetla",
+          "Shaun Star",
+          "Josh Rowlands",
+          "Anit Girgla",
+          "Loeurt To"
+        ],
+        "cited_by": 113,
+        "oa_url": "https://doi.org/10.53761/1.18.5.7"
+      },
+      {
+        "openalex_id": "W2762626272",
+        "title": "Using the transformative paradigm to conduct a mixed methods needs assessment of a marginalized community: Methodological lessons and implications",
+        "year": 2017,
+        "authors": [
+          "Karen Moran Jackson",
+          "Suzy Pukys",
+          "Andrene J. Castro",
+          "Lorna Hermosura",
+          "Joanna Mendez",
+          "Shetal Vohra-Gupta"
+        ],
+        "cited_by": 86,
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10371208"
+      },
+      {
+        "openalex_id": "W3179072345",
+        "title": "“Conversion Therapy” Experiences in Their Social Contexts: A Qualitative Study of Sexual Orientation and Gender Identity and Expression Change Efforts in Canada",
+        "year": 2021,
+        "authors": [
+          "David J. Kinitz",
+          "Trevor Goodyear",
+          "Élisabeth Dromer",
+          "Dionne Gesink",
+          "Olivier Ferlatte",
+          "Rod Knight"
+        ],
+        "cited_by": 58,
+        "oa_url": "https://doi.org/10.1177/07067437211030498"
+      },
+      {
+        "openalex_id": "W4313250643",
+        "title": "Integrating Transformative Considerations and Quantitative Results Through a Participant Selection Joint Display in Explanatory Sequential Mixed Methods Studies",
+        "year": 2022,
+        "authors": [
+          "Tyler Glenn James",
+          "Melissa J. DeJonckheere",
+          "Timothy C. Guetterman"
+        ],
+        "cited_by": 46,
+        "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10857753"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

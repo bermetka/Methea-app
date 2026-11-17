@@ -1,0 +1,318 @@
+{
+  "theory_id": null,
+  "library_name": "Andragogy (adult learning theory)",
+  "slug": "andragogy",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Knowles"
+    ],
+    "year": 1980,
+    "title": "The Modern Practice of Adult Education: From Pedagogy to Andragogy",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780695814724",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Library record's first publication year is 1970; 1980 is the edition or translation cited here.",
+    "first_publish_year": 1970
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Adults learn differently from children. Knowles's assumptions: adults are self-directed, bring experience, learn when it meets a real need, prefer problem-centred learning and are motivated from within.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do adult learners experience a training or degree programme?",
+    "How should professional development be designed for adults?",
+    "Typical data: interviews, surveys, programme evaluation."
+  ],
+  "common_mistakes": [
+    "Treating the assumptions as proven facts about all adults rather than as a set of design assumptions.",
+    "Opposing andragogy to pedagogy as if children never learn this way.",
+    "Ignoring culture: the self-directed learner is a Western ideal."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Daniel D. Pratt"
+        ],
+        "year": 1993,
+        "title": "Andragogy after twenty‐five years",
+        "type": "article",
+        "venue": "New Directions for Adult and Continuing Education",
+        "doi": "10.1002/ace.36719935704",
+        "openalex_id": "W2070210186",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Assesses andragogy after 25 years and what it does and does not explain."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Knowles"
+        ],
+        "year": 1998,
+        "title": "The Adult Learner",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780367417659",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2005; 1998 is the edition or translation cited here.",
+        "first_publish_year": 2005
+      },
+      "adds": "Later editions add motivation and the need to know."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Sharan B. Merriam"
+        ],
+        "year": 2001,
+        "title": "Andragogy and Self‐Directed Learning: Pillars of Adult Learning Theory",
+        "type": "article",
+        "venue": "New Directions for Adult and Continuing Education",
+        "doi": "10.1002/ace.3",
+        "openalex_id": "W2109605276",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reviews andragogy alongside self-directed learning."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Self-directed learning",
+      "summary": "Adults directing their own learning.",
+      "defining_work": {
+        "authors": [
+          "Sharan B. Merriam"
+        ],
+        "year": 2001,
+        "title": "Andragogy and Self‐Directed Learning: Pillars of Adult Learning Theory",
+        "type": "article",
+        "venue": "New Directions for Adult and Continuing Education",
+        "doi": "10.1002/ace.3",
+        "openalex_id": "W2109605276",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Andragogy in practice",
+      "summary": "Programme design for adult learners.",
+      "defining_work": {
+        "authors": [
+          "Knowles"
+        ],
+        "year": 1998,
+        "title": "The Adult Learner",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780367417659",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2005; 1998 is the edition or translation cited here.",
+        "first_publish_year": 2005
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives practitioners a usable set of design principles.",
+      "source": {
+        "authors": [
+          "Sharan B. Merriam"
+        ],
+        "year": 2001,
+        "title": "Andragogy and Self‐Directed Learning: Pillars of Adult Learning Theory",
+        "type": "article",
+        "venue": "New Directions for Adult and Continuing Education",
+        "doi": "10.1002/ace.3",
+        "openalex_id": "W2109605276",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Puts experience at the centre of adult learning.",
+      "source": {
+        "authors": [
+          "Knowles"
+        ],
+        "year": 1980,
+        "title": "The Modern Practice of Adult Education: From Pedagogy to Andragogy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780695814724",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 1970; 1980 is the edition or translation cited here.",
+        "first_publish_year": 1970
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Andragogy is a set of assumptions, not a tested theory.",
+      "source": {
+        "authors": [
+          "Anne Hartree"
+        ],
+        "year": 1984,
+        "title": "Malcolm Knowles’ Theory of Andragogy: A Critique",
+        "type": "article",
+        "venue": "International Journal of Lifelong Education",
+        "doi": "10.1080/0260137840030304",
+        "openalex_id": "W2080216387",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "It ignores social context and power in adult learning.",
+      "source": {
+        "authors": [
+          "Sharan B. Merriam"
+        ],
+        "year": 2001,
+        "title": "Andragogy and Self‐Directed Learning: Pillars of Adult Learning Theory",
+        "type": "article",
+        "venue": "New Directions for Adult and Continuing Education",
+        "doi": "10.1002/ace.3",
+        "openalex_id": "W2109605276",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Knowles"
+        ],
+        "year": 1980,
+        "title": "The Modern Practice of Adult Education: From Pedagogy to Andragogy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780695814724",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 1970; 1980 is the edition or translation cited here.",
+        "first_publish_year": 1970
+      },
+      "chapter": null,
+      "why_read": "The assumptions in Knowles's words.",
+      "reading_question": "Which assumption holds for your learners, and which doesn't?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Knowles"
+        ],
+        "year": 1998,
+        "title": "The Adult Learner",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780367417659",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Library record's first publication year is 2005; 1998 is the edition or translation cited here.",
+        "first_publish_year": 2005
+      },
+      "chapter": null,
+      "why_read": "Updated model.",
+      "reading_question": "Does your design test an assumption or take it for granted?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Sharan B. Merriam"
+        ],
+        "year": 2001,
+        "title": "Andragogy and Self‐Directed Learning: Pillars of Adult Learning Theory",
+        "type": "article",
+        "venue": "New Directions for Adult and Continuing Education",
+        "doi": "10.1002/ace.3",
+        "openalex_id": "W2109605276",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critical overview.",
+      "reading_question": "Which critique matters for your context?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "andragogy",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Andragogy, Not Pedagogy. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

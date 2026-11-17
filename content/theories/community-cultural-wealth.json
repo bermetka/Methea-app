@@ -1,0 +1,368 @@
+{
+  "theory_id": null,
+  "library_name": "Community cultural wealth",
+  "slug": "community-cultural-wealth",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Tara J. Yosso"
+    ],
+    "year": 2005,
+    "title": "Whose culture has capital? A critical race theory discussion of community cultural wealth",
+    "type": "article",
+    "venue": "Race Ethnicity and Education",
+    "doi": "10.1080/1361332052000341006",
+    "openalex_id": "W2111647798",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2111647798",
+  "core_idea": "Deficit views say marginalised students lack the 'right' cultural capital. Yosso argues their communities hold six forms of capital: aspirational, linguistic, familial, social, navigational and resistant.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do first-generation, migrant or minority students draw on their communities to navigate education?",
+    "Which forms of capital help students persist?",
+    "Typical data: interviews, narrative inquiry, focus groups."
+  ],
+  "common_mistakes": [
+    "Using the six capitals as a checklist to code anything positive.",
+    "Forgetting the CRT basis and using it as a generic 'strengths' frame.",
+    "Measuring the capitals with ad hoc survey items without validation."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1977,
+        "title": "Reproduction in Education, Society and Culture",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780803983205",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1977
+      },
+      "adds": "The cultural capital view Yosso critiques."
+    },
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Daniel G. Solórzano",
+          "Tara J. Yosso"
+        ],
+        "year": 2002,
+        "title": "Critical Race Methodology: Counter-Storytelling as an Analytical Framework for Education Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800402008001003",
+        "openalex_id": "W2166105101",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The CRT methodology it builds on."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Django Paris"
+        ],
+        "year": 2012,
+        "title": "Culturally Sustaining Pedagogy",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x12441244",
+        "openalex_id": "W2110218280",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3102/0013189x12441244"
+      },
+      "adds": "Asset-based stance extended to pedagogy."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Asset-based pedagogies",
+      "summary": "From deficit to asset views of students' cultures.",
+      "defining_work": {
+        "authors": [
+          "Django Paris"
+        ],
+        "year": 2012,
+        "title": "Culturally Sustaining Pedagogy",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x12441244",
+        "openalex_id": "W2110218280",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3102/0013189x12441244"
+      }
+    },
+    {
+      "name": "Critical race methodology",
+      "summary": "Counter-stories as evidence.",
+      "defining_work": {
+        "authors": [
+          "Daniel G. Solórzano",
+          "Tara J. Yosso"
+        ],
+        "year": 2002,
+        "title": "Critical Race Methodology: Counter-Storytelling as an Analytical Framework for Education Research",
+        "type": "article",
+        "venue": "Qualitative Inquiry",
+        "doi": "10.1177/1077800402008001003",
+        "openalex_id": "W2166105101",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Shifts analysis from what students lack to what they bring.",
+      "source": {
+        "authors": [
+          "Tara J. Yosso"
+        ],
+        "year": 2005,
+        "title": "Whose culture has capital? A critical race theory discussion of community cultural wealth",
+        "type": "article",
+        "venue": "Race Ethnicity and Education",
+        "doi": "10.1080/1361332052000341006",
+        "openalex_id": "W2111647798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Fits with a growing asset-based literature.",
+      "source": {
+        "authors": [
+          "Django Paris"
+        ],
+        "year": 2012,
+        "title": "Culturally Sustaining Pedagogy",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x12441244",
+        "openalex_id": "W2110218280",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3102/0013189x12441244"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Quantifying CRT-based constructs like these is difficult and contested.",
+      "source": {
+        "authors": [
+          "Jenna R. Sablan"
+        ],
+        "year": 2018,
+        "title": "Can You Really Measure That? Combining Critical Race Theory and Quantitative Methods",
+        "type": "article",
+        "venue": "American Educational Research Journal",
+        "doi": "10.3102/0002831218798325",
+        "openalex_id": "W2893482578",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Bourdieu's own concept is relational; reading capital as 'assets' changes its meaning.",
+      "source": {
+        "authors": [
+          "Bourdieu"
+        ],
+        "year": 1977,
+        "title": "Reproduction in Education, Society and Culture",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780803983205",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1977
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Tara J. Yosso"
+        ],
+        "year": 2005,
+        "title": "Whose culture has capital? A critical race theory discussion of community cultural wealth",
+        "type": "article",
+        "venue": "Race Ethnicity and Education",
+        "doi": "10.1080/1361332052000341006",
+        "openalex_id": "W2111647798",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The six capitals.",
+      "reading_question": "Which capitals appear in your participants' stories?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Django Paris"
+        ],
+        "year": 2012,
+        "title": "Culturally Sustaining Pedagogy",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x12441244",
+        "openalex_id": "W2110218280",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.3102/0013189x12441244"
+      },
+      "chapter": null,
+      "why_read": "Asset-based pedagogy.",
+      "reading_question": "Does your study stop at description or also look at practice?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Jenna R. Sablan"
+        ],
+        "year": 2018,
+        "title": "Can You Really Measure That? Combining Critical Race Theory and Quantitative Methods",
+        "type": "article",
+        "venue": "American Educational Research Journal",
+        "doi": "10.3102/0002831218798325",
+        "openalex_id": "W2893482578",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Measurement issues.",
+      "reading_question": "Qualitative or quantitative design?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "community cultural wealth",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2893482578",
+        "title": "Can You Really Measure That? Combining Critical Race Theory and Quantitative Methods",
+        "year": 2018,
+        "authors": [
+          "Jenna R. Sablan"
+        ],
+        "cited_by": 240,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3038223354",
+        "title": "Research literature on women of color in undergraduate engineering education: A systematic thematic synthesis",
+        "year": 2020,
+        "authors": [
+          "Maria Ong",
+          "Nuria Jaumot‐Pascual",
+          "Lily T. Ko"
+        ],
+        "cited_by": 164,
+        "oa_url": "https://doi.org/10.1002/jee.20345"
+      },
+      {
+        "openalex_id": "W3020610839",
+        "title": "Community cultural wealth in science, technology, engineering, and mathematics education: A systematic review",
+        "year": 2020,
+        "authors": [
+          "Maya Denton",
+          "Maura J. Borrego",
+          "Audrey Boklage"
+        ],
+        "cited_by": 142,
+        "oa_url": "https://doi.org/10.1002/jee.20322"
+      },
+      {
+        "openalex_id": "W2348146563",
+        "title": "Assistant professors of color confront the inequitable terrain of academia: a community cultural wealth perspective",
+        "year": 2016,
+        "authors": [
+          "Melissa Ann Martinez",
+          "Aurora Chang",
+          "Anjalé D. Welton"
+        ],
+        "cited_by": 106,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3164948934",
+        "title": "An Overview of Community Cultural Wealth: Toward a Protective Factor Against Racism",
+        "year": 2021,
+        "authors": [
+          "Nancy Acevedo",
+          "Daniel G. Solórzano"
+        ],
+        "cited_by": 101,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Reproduction in Education, Society and Culture. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

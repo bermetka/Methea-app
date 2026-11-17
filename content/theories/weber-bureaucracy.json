@@ -1,0 +1,316 @@
+{
+  "theory_id": null,
+  "library_name": "Weber's theory of bureaucracy and rationalisation",
+  "slug": "weber-bureaucracy",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Weber"
+    ],
+    "year": 1978,
+    "title": "Economy and Society: An Outline of Interpretive Sociology",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780674240827",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL20157300W, first published 1978). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1978
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Modern organisations rest on legal-rational authority: written rules, hierarchy, records and trained officials. Rationalisation spreads efficiency and predictability but can trap people in an 'iron cage'.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do public bodies or universities work through rules and hierarchy?",
+    "Does a 'Weberian' civil service affect governance outcomes?",
+    "Typical data: case study, document analysis, interviews, cross-national data."
+  ],
+  "common_mistakes": [
+    "Using 'bureaucracy' as an insult; for Weber it is an ideal type.",
+    "Ignoring the three types of authority.",
+    "Forgetting that ideal types are analytical tools, not descriptions."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "R. K. Merton"
+        ],
+        "year": 1940,
+        "title": "Bureaucratic Structure and Personality",
+        "type": "article",
+        "venue": "Social Forces",
+        "doi": "10.2307/2570634",
+        "openalex_id": "W1980685039",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Dysfunctions of bureaucracy."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Peter Evans",
+          "James E. Rauch"
+        ],
+        "year": 1999,
+        "title": "Bureaucracy and Growth: A Cross-National Analysis of the Effects of \"Weberian\" State Structures on Economic Growth",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.1177/000312249906400508",
+        "openalex_id": "W2107986666",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Weberian state and development."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "George Ritzer"
+        ],
+        "year": 1983,
+        "title": "The “McDonaldization” of Society",
+        "type": "article",
+        "venue": "The Journal of American Culture",
+        "doi": "10.1111/j.1542-734x.1983.0601_100.x",
+        "openalex_id": "W2771298662",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Rationalisation in services."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Organisation studies",
+      "summary": "Bureaucracy and its dysfunctions.",
+      "defining_work": {
+        "authors": [
+          "R. K. Merton"
+        ],
+        "year": 1940,
+        "title": "Bureaucratic Structure and Personality",
+        "type": "article",
+        "venue": "Social Forces",
+        "doi": "10.2307/2570634",
+        "openalex_id": "W1980685039",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Weberian state research",
+      "summary": "State capacity and growth.",
+      "defining_work": {
+        "authors": [
+          "Peter Evans",
+          "James E. Rauch"
+        ],
+        "year": 1999,
+        "title": "Bureaucracy and Growth: A Cross-National Analysis of the Effects of \"Weberian\" State Structures on Economic Growth",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.1177/000312249906400508",
+        "openalex_id": "W2107986666",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Weberian state structures predict growth.",
+      "source": {
+        "authors": [
+          "Peter Evans",
+          "James E. Rauch"
+        ],
+        "year": 1999,
+        "title": "Bureaucracy and Growth: A Cross-National Analysis of the Effects of \"Weberian\" State Structures on Economic Growth",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.1177/000312249906400508",
+        "openalex_id": "W2107986666",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Ideal type gives a clear benchmark.",
+      "source": {
+        "authors": [
+          "Weber"
+        ],
+        "year": 1978,
+        "title": "Economy and Society: An Outline of Interpretive Sociology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780674240827",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL20157300W, first published 1978). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1978
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Bureaucracy breeds rigidity and goal displacement.",
+      "source": {
+        "authors": [
+          "R. K. Merton"
+        ],
+        "year": 1940,
+        "title": "Bureaucratic Structure and Personality",
+        "type": "article",
+        "venue": "Social Forces",
+        "doi": "10.2307/2570634",
+        "openalex_id": "W1980685039",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Rationalisation produces irrational outcomes.",
+      "source": {
+        "authors": [
+          "George Ritzer"
+        ],
+        "year": 1983,
+        "title": "The “McDonaldization” of Society",
+        "type": "article",
+        "venue": "The Journal of American Culture",
+        "doi": "10.1111/j.1542-734x.1983.0601_100.x",
+        "openalex_id": "W2771298662",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Weber"
+        ],
+        "year": 1978,
+        "title": "Economy and Society: An Outline of Interpretive Sociology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780674240827",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL20157300W, first published 1978). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1978
+      },
+      "chapter": null,
+      "why_read": "Ideal type (read the bureaucracy chapter).",
+      "reading_question": "Which features of the ideal type exist in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "R. K. Merton"
+        ],
+        "year": 1940,
+        "title": "Bureaucratic Structure and Personality",
+        "type": "article",
+        "venue": "Social Forces",
+        "doi": "10.2307/2570634",
+        "openalex_id": "W1980685039",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Dysfunctions.",
+      "reading_question": "Do you see goal displacement?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Peter Evans",
+          "James E. Rauch"
+        ],
+        "year": 1999,
+        "title": "Bureaucracy and Growth: A Cross-National Analysis of the Effects of \"Weberian\" State Structures on Economic Growth",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.1177/000312249906400508",
+        "openalex_id": "W2107986666",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Modern use.",
+      "reading_question": "What outcome do you link to bureaucracy?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "bureaucracy Weber",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "theory_id": null,
+  "library_name": "Critical theory (Frankfurt School)",
+  "slug": "critical-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Horkheimer"
+    ],
+    "year": 1972,
+    "title": "Critical Theory: Selected Essays",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780070737792",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1972
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Research is never neutral. Traditional theory describes society as it is; critical theory asks whose interests that order serves and aims to free people from domination, including the ideologies that make domination look natural.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do institutions, discourses or technologies reproduce domination?",
+    "Research that aims at emancipation, not only description.",
+    "Typical designs: critical discourse analysis, critical ethnography, participatory action research."
+  ],
+  "common_mistakes": [
+    "Using 'critical' to mean simply 'evaluative' or 'negative'.",
+    "Confusing Frankfurt School critical theory with critical thinking or critical realism.",
+    "Stating an emancipatory aim with no account of how the research contributes to it."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Habermas"
+        ],
+        "year": 1971,
+        "title": "Knowledge and Human Interests",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745693248",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1968,
+        "note": "Open Library lists this work under its original title 'Erkenntnis und Interesse' (1968); 1971 is the English edition cited here. The ISBN belongs to one edition of that work."
+      },
+      "adds": "Three knowledge interests: technical, practical and emancipatory."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Habermas"
+        ],
+        "year": 1984,
+        "title": "The Theory of Communicative Action",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745605395",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1988,
+        "note": "Library record's first publication year is 1988; 1984 is the edition or translation cited here."
+      },
+      "adds": "Communicative rationality and the colonisation of the lifeworld."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Raymond Geuss"
+        ],
+        "year": 1981,
+        "title": "The Idea of a Critical Theory: Habermas and the Frankfurt School",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W622724666",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Clear philosophical account of what a critical theory is."
+    }
+  ],
+  "strands": [
+    {
+      "name": "First generation",
+      "summary": "Horkheimer, Adorno, Marcuse: critique of instrumental reason.",
+      "defining_work": {
+        "authors": [
+          "Horkheimer"
+        ],
+        "year": 1972,
+        "title": "Critical Theory: Selected Essays",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780070737792",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1972
+      }
+    },
+    {
+      "name": "Habermas",
+      "summary": "Communicative action and knowledge interests.",
+      "defining_work": {
+        "authors": [
+          "Habermas"
+        ],
+        "year": 1971,
+        "title": "Knowledge and Human Interests",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745693248",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1968,
+        "note": "Open Library lists this work under its original title 'Erkenntnis und Interesse' (1968); 1971 is the English edition cited here. The ISBN belongs to one edition of that work."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Makes the interests behind knowledge explicit.",
+      "source": {
+        "authors": [
+          "Habermas"
+        ],
+        "year": 1971,
+        "title": "Knowledge and Human Interests",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745693248",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1968,
+        "note": "Open Library lists this work under its original title 'Erkenntnis und Interesse' (1968); 1971 is the English edition cited here. The ISBN belongs to one edition of that work."
+      }
+    },
+    {
+      "point": "Gives management and organisation research a way to study power.",
+      "source": {
+        "authors": [
+          "Mats G Alvesson",
+          "Stanley A. Deetz"
+        ],
+        "year": 2000,
+        "title": "Doing Critical Management Research",
+        "type": "book",
+        "venue": "SAGE Publications Ltd eBooks",
+        "doi": "10.4135/9781849208918",
+        "openalex_id": "W1536953681",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Habermas's framework is blind to gender.",
+      "source": {
+        "authors": [
+          "Nancy Wickwire Fraser"
+        ],
+        "year": 1985,
+        "title": "What's Critical about Critical Theory? The Case of Habermas and Gender",
+        "type": "article",
+        "venue": "New German Critique",
+        "doi": "10.2307/488202",
+        "openalex_id": "W4232074181",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Critique has become a routine gesture that no longer protects matters of concern.",
+      "source": {
+        "authors": [
+          "Bruno Latour"
+        ],
+        "year": 2004,
+        "title": "Why Has Critique Run out of Steam? From Matters of Fact to Matters of Concern",
+        "type": "article",
+        "venue": "Critical Inquiry",
+        "doi": "10.2307/1344358",
+        "openalex_id": "W1983188187",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Horkheimer"
+        ],
+        "year": 1972,
+        "title": "Critical Theory: Selected Essays",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780070737792",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1972
+      },
+      "chapter": null,
+      "why_read": "Read 'Traditional and Critical Theory'.",
+      "reading_question": "Whose interests does existing knowledge on your topic serve?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Habermas"
+        ],
+        "year": 1971,
+        "title": "Knowledge and Human Interests",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780745693248",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1968,
+        "note": "Open Library lists this work under its original title 'Erkenntnis und Interesse' (1968); 1971 is the English edition cited here. The ISBN belongs to one edition of that work."
+      },
+      "chapter": null,
+      "why_read": "Knowledge interests.",
+      "reading_question": "Which interest guides your study?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Raymond Geuss"
+        ],
+        "year": 1981,
+        "title": "The Idea of a Critical Theory: Habermas and the Frankfurt School",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W622724666",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "What makes a theory critical.",
+      "reading_question": "How does your study aim at change?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "critical theory Frankfurt School",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Critical Theory: Selected Essays; Knowledge and Human Interests; The Theory of Communicative Action. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

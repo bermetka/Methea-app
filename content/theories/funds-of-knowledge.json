@@ -1,0 +1,379 @@
+{
+  "theory_id": null,
+  "library_name": "Funds of knowledge",
+  "slug": "funds-of-knowledge",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Luis C. Moll",
+      "Cathy Amanti",
+      "Deborah A. Neff",
+      "Norma E. González"
+    ],
+    "year": 1992,
+    "title": "Funds of knowledge for teaching: Using a qualitative approach to connect homes and classrooms",
+    "type": "article",
+    "venue": "Theory Into Practice",
+    "doi": "10.1080/00405849209543534",
+    "openalex_id": "W2115114178",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2115114178",
+  "core_idea": "Households, including working-class and migrant ones, hold bodies of knowledge and skills built through work and daily life. Teachers who visit and learn from families can build teaching on this knowledge.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How can teachers use students' home knowledge in the classroom?",
+    "How do migrant or rural families support learning?",
+    "Typical data: ethnographic home visits, interviews, classroom case studies."
+  ],
+  "common_mistakes": [
+    "Reducing funds of knowledge to students' hobbies or cultural food.",
+    "Skipping the ethnographic stance of teachers as learners.",
+    "Assuming all household knowledge is positive and easy to bring into school."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Carlos G. Vélez‐Ibáñez"
+        ],
+        "year": 1992,
+        "title": "Formation and Transformation of Funds of Knowledge Among U.S.‐Mexican Households",
+        "type": "article",
+        "venue": "Anthropology & Education Quarterly",
+        "doi": "10.1525/aeq.1992.23.4.05x1582v",
+        "openalex_id": "W19608559",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Anthropological origin of the concept."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "González"
+        ],
+        "year": 2005,
+        "title": "Funds of Knowledge: Theorizing Practices in Households, Communities, and Classrooms",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780805849189",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": null
+      },
+      "adds": "Book-length development."
+    },
+    {
+      "kind": "strand",
+      "work": {
+        "authors": [
+          "Moisès Esteban‐Guitart",
+          "Luis C. Moll"
+        ],
+        "year": 2014,
+        "title": "Funds of Identity: A new concept based on the Funds of Knowledge approach",
+        "type": "article",
+        "venue": "Culture & Psychology",
+        "doi": "10.1177/1354067x13515934",
+        "openalex_id": "W2146742838",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Funds of identity."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Funds of identity",
+      "summary": "Resources people use to define themselves.",
+      "defining_work": {
+        "authors": [
+          "Moisès Esteban‐Guitart",
+          "Luis C. Moll"
+        ],
+        "year": 2014,
+        "title": "Funds of Identity: A new concept based on the Funds of Knowledge approach",
+        "type": "article",
+        "venue": "Culture & Psychology",
+        "doi": "10.1177/1354067x13515934",
+        "openalex_id": "W2146742838",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Teacher-as-ethnographer practice",
+      "summary": "Teachers researching households.",
+      "defining_work": {
+        "authors": [
+          "González"
+        ],
+        "year": 2005,
+        "title": "Funds of Knowledge: Theorizing Practices in Households, Communities, and Classrooms",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780805849189",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "A coherent body of research uses the concept, as a review shows.",
+      "source": {
+        "authors": [
+          "Linda Hogg"
+        ],
+        "year": 2010,
+        "title": "Funds of Knowledge: An investigation of coherence within the literature",
+        "type": "article",
+        "venue": "Teaching and Teacher Education",
+        "doi": "10.1016/j.tate.2010.11.005",
+        "openalex_id": "W2035784275",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Challenges deficit views of families.",
+      "source": {
+        "authors": [
+          "Luis C. Moll",
+          "Cathy Amanti",
+          "Deborah A. Neff",
+          "Norma E. González"
+        ],
+        "year": 1992,
+        "title": "Funds of knowledge for teaching: Using a qualitative approach to connect homes and classrooms",
+        "type": "article",
+        "venue": "Theory Into Practice",
+        "doi": "10.1080/00405849209543534",
+        "openalex_id": "W2115114178",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "It underplays power and the 'dark' knowledge from hardship.",
+      "source": {
+        "authors": [
+          "Lew Zipin"
+        ],
+        "year": 2009,
+        "title": "Dark funds of knowledge, deep funds of pedagogy: exploring boundaries between lifeworlds and schools",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/01596300903037044",
+        "openalex_id": "W2067573234",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Applications vary so much that coherence is a concern.",
+      "source": {
+        "authors": [
+          "Linda Hogg"
+        ],
+        "year": 2010,
+        "title": "Funds of Knowledge: An investigation of coherence within the literature",
+        "type": "article",
+        "venue": "Teaching and Teacher Education",
+        "doi": "10.1016/j.tate.2010.11.005",
+        "openalex_id": "W2035784275",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Luis C. Moll",
+          "Cathy Amanti",
+          "Deborah A. Neff",
+          "Norma E. González"
+        ],
+        "year": 1992,
+        "title": "Funds of knowledge for teaching: Using a qualitative approach to connect homes and classrooms",
+        "type": "article",
+        "venue": "Theory Into Practice",
+        "doi": "10.1080/00405849209543534",
+        "openalex_id": "W2115114178",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The original study.",
+      "reading_question": "What knowledge do your participants' households hold?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Moisès Esteban‐Guitart",
+          "Luis C. Moll"
+        ],
+        "year": 2014,
+        "title": "Funds of Identity: A new concept based on the Funds of Knowledge approach",
+        "type": "article",
+        "venue": "Culture & Psychology",
+        "doi": "10.1177/1354067x13515934",
+        "openalex_id": "W2146742838",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Identity extension.",
+      "reading_question": "Knowledge or identity: which fits your question?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Linda Hogg"
+        ],
+        "year": 2010,
+        "title": "Funds of Knowledge: An investigation of coherence within the literature",
+        "type": "article",
+        "venue": "Teaching and Teacher Education",
+        "doi": "10.1016/j.tate.2010.11.005",
+        "openalex_id": "W2035784275",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Map of uses.",
+      "reading_question": "How will you define the concept?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "funds of knowledge",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2532649665",
+        "title": "Funds of knowledge in 21st century societies: inclusive educational practices for under-represented students. A literature review",
+        "year": 2016,
+        "authors": [
+          "Mariona Llopart",
+          "Moisès Esteban‐Guitart"
+        ],
+        "cited_by": 195,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2810522685",
+        "title": "Preservice teachers’ experiences of STEM integration: challenges and implications for integrated STEM teacher preparation",
+        "year": 2018,
+        "authors": [
+          "Minjung Ryu",
+          "Nathan Mentzer",
+          "Neil A. Knobloch"
+        ],
+        "cited_by": 187,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2549612727",
+        "title": "Latina/o Adolescents' Funds of Knowledge Related to Engineering",
+        "year": 2016,
+        "authors": [
+          "Amy Wilson‐Lopez",
+          "Joel Alejandro Mejia",
+          "Indhira Hasbún",
+          "G. Sue Kasun"
+        ],
+        "cited_by": 161,
+        "oa_url": "https://doi.org/10.1002/jee.20117"
+      },
+      {
+        "openalex_id": "W2316683241",
+        "title": "Invisible innovators: how low-income, first-generation students use their funds of knowledge to belong in engineering",
+        "year": 2016,
+        "authors": [
+          "Jessica M. Smith",
+          "Juan C. Lucena"
+        ],
+        "cited_by": 148,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3092838131",
+        "title": "A Synthesis of Funds of Identity Research: Purposes, Tools, Pedagogical Approaches, and Outcomes",
+        "year": 2020,
+        "authors": [
+          "Linda Hogg",
+          "Monique L. L. Volman"
+        ],
+        "cited_by": 139,
+        "oa_url": "https://handle.uba.uva.nl/personal/pure/en/publications/a-synthesis-of-funds-of-identity-research-purposes-tools-pedagogical-approaches-and-outcomes(0b700d30-a495-4b93-9690-a103963f4cb3).html"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Funds of Knowledge: Theorizing Practices in Households, Communities, and Classrooms. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

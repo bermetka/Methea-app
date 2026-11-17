@@ -1,0 +1,319 @@
+{
+  "theory_id": null,
+  "library_name": "Political ecology",
+  "slug": "political-ecology",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Blaikie"
+    ],
+    "year": 1987,
+    "title": "Land Degradation and Society",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780415065979",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1987
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Environmental problems are political. Who controls land and resources, and how markets, states and power shape their use, explains degradation better than population growth or ignorance.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Why are pastures, water or forests degraded or contested?",
+    "How do policies change access to resources?",
+    "Typical data: case study, interviews, mixed methods, historical analysis."
+  ],
+  "common_mistakes": [
+    "Treating political ecology as environmental studies in general.",
+    "Ignoring scale (chains of explanation).",
+    "Leaving out ecology itself."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Blaikie"
+        ],
+        "year": 1985,
+        "title": "The Political Economy of Soil Erosion in Developing Countries",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780582300897",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1985
+      },
+      "adds": "Origin."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Peet"
+        ],
+        "year": 1996,
+        "title": "Liberation Ecologies: Environment, Development, Social Movements",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781134382910",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2002,
+        "note": "Library record's first publication year is 2002; 1996 is the edition or translation cited here."
+      },
+      "adds": "Post-structural political ecology."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Robbins"
+        ],
+        "year": 2004,
+        "title": "Political Ecology: A Critical Introduction",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780470794623",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      },
+      "adds": "Overview textbook."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Structural political ecology",
+      "summary": "Political economy of environment.",
+      "defining_work": {
+        "authors": [
+          "Blaikie"
+        ],
+        "year": 1987,
+        "title": "Land Degradation and Society",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780415065979",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1987
+      }
+    },
+    {
+      "name": "Post-structural political ecology",
+      "summary": "Discourse and knowledge.",
+      "defining_work": {
+        "authors": [
+          "Peet"
+        ],
+        "year": 1996,
+        "title": "Liberation Ecologies: Environment, Development, Social Movements",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781134382910",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2002,
+        "note": "Library record's first publication year is 2002; 1996 is the edition or translation cited here."
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Explains degradation through power.",
+      "source": {
+        "authors": [
+          "Robbins"
+        ],
+        "year": 2004,
+        "title": "Political Ecology: A Critical Introduction",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780470794623",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      }
+    },
+    {
+      "point": "Multi-scale analysis.",
+      "source": {
+        "authors": [
+          "Blaikie"
+        ],
+        "year": 1987,
+        "title": "Land Degradation and Society",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780415065979",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1987
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "'Politics without ecology': ecology neglected.",
+      "source": {
+        "authors": [
+          "Peter A. Walker"
+        ],
+        "year": 2005,
+        "title": "Political ecology: where is the ecology?",
+        "type": "article",
+        "venue": "Progress in Human Geography",
+        "doi": "10.1191/0309132505ph530pr",
+        "openalex_id": "W2146638929",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Too broad to be one theory.",
+      "source": {
+        "authors": [
+          "Robbins"
+        ],
+        "year": 2004,
+        "title": "Political Ecology: A Critical Introduction",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780470794623",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Blaikie"
+        ],
+        "year": 1987,
+        "title": "Land Degradation and Society",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780415065979",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1987
+      },
+      "chapter": null,
+      "why_read": "Chains of explanation.",
+      "reading_question": "What chain links your local case to wider forces?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Robbins"
+        ],
+        "year": 2004,
+        "title": "Political Ecology: A Critical Introduction",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780470794623",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2004
+      },
+      "chapter": null,
+      "why_read": "Overview.",
+      "reading_question": "Which theses fit your case?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Peter A. Walker"
+        ],
+        "year": 2005,
+        "title": "Political ecology: where is the ecology?",
+        "type": "article",
+        "venue": "Progress in Human Geography",
+        "doi": "10.1191/0309132505ph530pr",
+        "openalex_id": "W2146638929",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Where is ecology in your design?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "political ecology",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

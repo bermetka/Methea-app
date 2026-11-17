@@ -1,0 +1,394 @@
+{
+  "theory_id": null,
+  "library_name": "Framing theory",
+  "slug": "framing-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Robert M. Entman"
+    ],
+    "year": 1993,
+    "title": "Framing: Toward Clarification of a Fractured Paradigm",
+    "type": "article",
+    "venue": "Journal of Communication",
+    "doi": "10.1111/j.1460-2466.1993.tb01304.x",
+    "openalex_id": "W2001442493",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2001442493",
+  "core_idea": "To frame is to select some aspects of a perceived reality and make them more salient, so as to promote a particular problem definition, causal interpretation, moral evaluation and treatment recommendation.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do media or politicians frame an issue?",
+    "Do different frames change people's opinions (framing effects)?",
+    "Typical data: content analysis, discourse analysis, survey experiments."
+  ],
+  "common_mistakes": [
+    "Calling any topic or theme a 'frame'.",
+    "Not saying whether you study frames in communication or frames in thought.",
+    "Using inductive frames without a clear coding procedure."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Goffman"
+        ],
+        "year": 1974,
+        "title": "Frame Analysis: An Essay on the Organization of Experience",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780060903725",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL3282038W, first published 1974). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1974
+      },
+      "adds": "Sociological origin of frames."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "William A. Gamson",
+          "Andre Modigliani"
+        ],
+        "year": 1989,
+        "title": "Media Discourse and Public Opinion on Nuclear Power: A Constructionist Approach",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/229213",
+        "openalex_id": "W2064601539",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Interpretive packages and media discourse."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Dietram A. Scheufele"
+        ],
+        "year": 1999,
+        "title": "Framing as a Theory of Media Effects",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1093/joc/49.1.103",
+        "openalex_id": "W2055957857",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Process model of framing effects."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Dennis Chong",
+          "James N. Druckman"
+        ],
+        "year": 2007,
+        "title": "Framing Theory",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.10.072805.103054",
+        "openalex_id": "W4212765250",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review of framing effects in political science."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Sociological / constructionist framing",
+      "summary": "Frames in media discourse.",
+      "defining_work": {
+        "authors": [
+          "William A. Gamson",
+          "Andre Modigliani"
+        ],
+        "year": 1989,
+        "title": "Media Discourse and Public Opinion on Nuclear Power: A Constructionist Approach",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/229213",
+        "openalex_id": "W2064601539",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Psychological framing effects",
+      "summary": "Experiments on equivalence and emphasis frames.",
+      "defining_work": {
+        "authors": [
+          "Dennis Chong",
+          "James N. Druckman"
+        ],
+        "year": 2007,
+        "title": "Framing Theory",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.10.072805.103054",
+        "openalex_id": "W4212765250",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Gives a clear definition with four functions to code.",
+      "source": {
+        "authors": [
+          "Robert M. Entman"
+        ],
+        "year": 1993,
+        "title": "Framing: Toward Clarification of a Fractured Paradigm",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1993.tb01304.x",
+        "openalex_id": "W2001442493",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Strong experimental evidence of framing effects.",
+      "source": {
+        "authors": [
+          "Dennis Chong",
+          "James N. Druckman"
+        ],
+        "year": 2007,
+        "title": "Framing Theory",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.10.072805.103054",
+        "openalex_id": "W4212765250",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Framing is multiparadigmatic; a single definition is neither possible nor desirable.",
+      "source": {
+        "authors": [
+          "Paul D’Angelo"
+        ],
+        "year": 2002,
+        "title": "News Framing as a Multiparadigmatic Research Program: A Response to Entman",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1093/joc/52.4.870",
+        "openalex_id": "W2158480064",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "The concept has become so broad it overlaps with agenda-setting and persuasion.",
+      "source": {
+        "authors": [
+          "Michael A. Cacciatore",
+          "Dietram A. Scheufele",
+          "Shanto Iyengar"
+        ],
+        "year": 2015,
+        "title": "The End of Framing as we Know it … and the Future of Media Effects",
+        "type": "article",
+        "venue": "Mass Communication & Society",
+        "doi": "10.1080/15205436.2015.1068811",
+        "openalex_id": "W1882499247",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Robert M. Entman"
+        ],
+        "year": 1993,
+        "title": "Framing: Toward Clarification of a Fractured Paradigm",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1111/j.1460-2466.1993.tb01304.x",
+        "openalex_id": "W2001442493",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The definition.",
+      "reading_question": "Which of the four functions will you code?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Dietram A. Scheufele"
+        ],
+        "year": 1999,
+        "title": "Framing as a Theory of Media Effects",
+        "type": "article",
+        "venue": "Journal of Communication",
+        "doi": "10.1093/joc/49.1.103",
+        "openalex_id": "W2055957857",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Process model.",
+      "reading_question": "Frame building or frame setting?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Dennis Chong",
+          "James N. Druckman"
+        ],
+        "year": 2007,
+        "title": "Framing Theory",
+        "type": "article",
+        "venue": "Annual Review of Political Science",
+        "doi": "10.1146/annurev.polisci.10.072805.103054",
+        "openalex_id": "W4212765250",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Equivalence or emphasis frames?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "framing",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2471027768",
+        "title": "Media representation of Muslims and Islam from 2000 to 2015: A meta-analysis",
+        "year": 2016,
+        "authors": [
+          "Saifuddin Ahmed",
+          "Jörg Matthes"
+        ],
+        "cited_by": 575,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2554549814",
+        "title": "Legitimate to whom? The challenge of audience diversity and new venture legitimacy",
+        "year": 2016,
+        "authors": [
+          "Greg Fisher",
+          "Donald F. Kuratko",
+          "James M. Bloodgood",
+          "Jeffrey S. Hornsby"
+        ],
+        "cited_by": 527,
+        "oa_url": "https://doi.org/10.1016/j.jbusvent.2016.10.005"
+      },
+      {
+        "openalex_id": "W2584273466",
+        "title": "Shifting the refugee narrative? An automated frame analysis of Europe’s 2015 refugee crisis",
+        "year": 2017,
+        "authors": [
+          "Esther Greussing",
+          "Hajo G. Boomgaarden"
+        ],
+        "cited_by": 487,
+        "oa_url": "https://doi.org/10.1080/1369183x.2017.1282813"
+      },
+      {
+        "openalex_id": "W2806111584",
+        "title": "Framing Climate Change: Exploring the Role of Emotion in Generating Advocacy Behavior",
+        "year": 2018,
+        "authors": [
+          "Robin L. Nabi",
+          "Abel Gustafson",
+          "Risa Jensen"
+        ],
+        "cited_by": 461,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W3160860426",
+        "title": "Rhetoric and frame analysis of ExxonMobil's climate change communications",
+        "year": 2021,
+        "authors": [
+          "Geoffrey J. Supran",
+          "Наоми Орескес"
+        ],
+        "cited_by": 402,
+        "oa_url": "https://doi.org/10.1016/j.oneear.2021.04.014"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 6 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

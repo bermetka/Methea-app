@@ -1,0 +1,369 @@
+{
+  "theory_id": null,
+  "library_name": "Gatekeeping theory",
+  "slug": "gatekeeping-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Pamela J. Shoemaker",
+      "Tim P. Vos"
+    ],
+    "year": 2009,
+    "title": "Gatekeeping Theory",
+    "type": "book",
+    "venue": "Routledge eBooks",
+    "doi": "10.4324/9780203931653",
+    "openalex_id": "W4254342372",
+    "isbn": "9780203931653",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "first_publish_year": 2009
+  },
+  "citation_anchor_openalex_id": "W4254342372",
+  "core_idea": "Of the countless events each day, only a few become news. Gatekeeping explains this selection through forces at several levels: individuals, routines, organisations, social institutions and the social system.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do newsrooms select and filter stories?",
+    "How do platforms and users act as gatekeepers?",
+    "Typical data: newsroom ethnography, interviews, content analysis."
+  ],
+  "common_mistakes": [
+    "Focusing only on individual editors.",
+    "Ignoring audiences and algorithms as gatekeepers.",
+    "Studying output only, without the selection process."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "David Manning White"
+        ],
+        "year": 1950,
+        "title": "The “Gate Keeper”: A Case Study in the Selection of News",
+        "type": "article",
+        "venue": "Journalism Quarterly",
+        "doi": "10.1177/107769905002700403",
+        "openalex_id": "W2735093927",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The 'Mr. Gates' study of a wire editor."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Axel Bruns"
+        ],
+        "year": 2005,
+        "title": "Gatewatching: Collaborative Online News Production (Digital Formations)",
+        "type": "book",
+        "venue": "Peter Lang eBooks",
+        "doi": null,
+        "openalex_id": "W100256008",
+        "isbn": "9780820474328",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      },
+      "adds": "Gatewatching in online news."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Jane B. Singer"
+        ],
+        "year": 2013,
+        "title": "User-generated visibility: Secondary gatekeeping in a shared media space",
+        "type": "article",
+        "venue": "New Media & Society",
+        "doi": "10.1177/1461444813477833",
+        "openalex_id": "W2108805652",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Users as secondary gatekeepers."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Newsroom gatekeeping",
+      "summary": "Selection by journalists and editors.",
+      "defining_work": {
+        "authors": [
+          "David Manning White"
+        ],
+        "year": 1950,
+        "title": "The “Gate Keeper”: A Case Study in the Selection of News",
+        "type": "article",
+        "venue": "Journalism Quarterly",
+        "doi": "10.1177/107769905002700403",
+        "openalex_id": "W2735093927",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Networked gatekeeping",
+      "summary": "Users and platforms.",
+      "defining_work": {
+        "authors": [
+          "Jane B. Singer"
+        ],
+        "year": 2013,
+        "title": "User-generated visibility: Secondary gatekeeping in a shared media space",
+        "type": "article",
+        "venue": "New Media & Society",
+        "doi": "10.1177/1461444813477833",
+        "openalex_id": "W2108805652",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Long tradition with clear levels of analysis.",
+      "source": {
+        "authors": [
+          "Pamela J. Shoemaker",
+          "Tim P. Vos"
+        ],
+        "year": 2009,
+        "title": "Gatekeeping Theory",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203931653",
+        "openalex_id": "W4254342372",
+        "isbn": "9780203931653",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2009
+      }
+    },
+    {
+      "point": "Adapts to digital media.",
+      "source": {
+        "authors": [
+          "Jane B. Singer"
+        ],
+        "year": 2013,
+        "title": "User-generated visibility: Secondary gatekeeping in a shared media space",
+        "type": "article",
+        "venue": "New Media & Society",
+        "doi": "10.1177/1461444813477833",
+        "openalex_id": "W2108805652",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "The classic model no longer fits digital news; a new model is needed.",
+      "source": {
+        "authors": [
+          "Julian Wallace"
+        ],
+        "year": 2017,
+        "title": "Modelling Contemporary Gatekeeping",
+        "type": "article",
+        "venue": "Digital Journalism",
+        "doi": "10.1080/21670811.2017.1343648",
+        "openalex_id": "W2734389702",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.zora.uzh.ch/id/eprint/138774/1/138774.pdf"
+      }
+    },
+    {
+      "point": "Gatewatching replaces gatekeeping online.",
+      "source": {
+        "authors": [
+          "Axel Bruns"
+        ],
+        "year": 2005,
+        "title": "Gatewatching: Collaborative Online News Production (Digital Formations)",
+        "type": "book",
+        "venue": "Peter Lang eBooks",
+        "doi": null,
+        "openalex_id": "W100256008",
+        "isbn": "9780820474328",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2005
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Pamela J. Shoemaker",
+          "Tim P. Vos"
+        ],
+        "year": 2009,
+        "title": "Gatekeeping Theory",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203931653",
+        "openalex_id": "W4254342372",
+        "isbn": "9780203931653",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 2009
+      },
+      "chapter": null,
+      "why_read": "The full theory.",
+      "reading_question": "Which level of gatekeeping do you study?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Jane B. Singer"
+        ],
+        "year": 2013,
+        "title": "User-generated visibility: Secondary gatekeeping in a shared media space",
+        "type": "article",
+        "venue": "New Media & Society",
+        "doi": "10.1177/1461444813477833",
+        "openalex_id": "W2108805652",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Digital update.",
+      "reading_question": "Who are the gatekeepers in your case?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Julian Wallace"
+        ],
+        "year": 2017,
+        "title": "Modelling Contemporary Gatekeeping",
+        "type": "article",
+        "venue": "Digital Journalism",
+        "doi": "10.1080/21670811.2017.1343648",
+        "openalex_id": "W2734389702",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.zora.uzh.ch/id/eprint/138774/1/138774.pdf"
+      },
+      "chapter": null,
+      "why_read": "Critique and new model.",
+      "reading_question": "Does the classic model fit your platform?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "gatekeeping",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2734389702",
+        "title": "Modelling Contemporary Gatekeeping",
+        "year": 2017,
+        "authors": [
+          "Julian Wallace"
+        ],
+        "cited_by": 278,
+        "oa_url": "https://www.zora.uzh.ch/id/eprint/138774/1/138774.pdf"
+      },
+      {
+        "openalex_id": "W2737729489",
+        "title": "News Values, Cognitive Biases, and Partisan Incivility in Comment Sections",
+        "year": 2017,
+        "authors": [
+          "Ashley Muddiman",
+          "Natalie Jomini Stroud"
+        ],
+        "cited_by": 192,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2853703888",
+        "title": "Social media gatekeeping: An analysis of the gatekeeping influence of newspapers’ public Facebook pages",
+        "year": 2018,
+        "authors": [
+          "Kasper Welbers",
+          "Michaël Opgenhaffen"
+        ],
+        "cited_by": 103,
+        "oa_url": "https://doi.org/10.1177/1461444818784302"
+      },
+      {
+        "openalex_id": "W2587717922",
+        "title": "Partisan Bias in Message Selection: Media Gatekeeping of Party Press Releases",
+        "year": 2017,
+        "authors": [
+          "Martin Haselmayer",
+          "Markus Wagner",
+          "Thomas M. Meyer"
+        ],
+        "cited_by": 101,
+        "oa_url": "https://doi.org/10.1080/10584609.2016.1265619"
+      },
+      {
+        "openalex_id": "W3012299745",
+        "title": "Computational News Discovery: Towards Design Considerations for Editorial Orientation Algorithms in Journalism",
+        "year": 2020,
+        "authors": [
+          "Nicholas A. Diakopoulos"
+        ],
+        "cited_by": 91,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

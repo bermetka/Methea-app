@@ -1,0 +1,326 @@
+{
+  "theory_id": null,
+  "library_name": "Interpretivism",
+  "slug": "interpretivism",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Alfred Schütz"
+    ],
+    "year": 1967,
+    "title": "The phenomenology of the social world",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": "W2058593638",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2058593638",
+  "core_idea": "Social action carries meaning for the people who act. To explain it, the researcher has to understand those meanings from the inside (Verstehen), so the aim is interpretation of particular contexts rather than general laws.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people understand and experience a situation?",
+    "What does a practice mean to those involved?",
+    "Typical designs: interviews, ethnography, case study, thematic analysis."
+  ],
+  "common_mistakes": [
+    "Using 'interpretivist' for any qualitative study without saying how meanings are accessed.",
+    "Presenting participants' accounts with no interpretation by the researcher.",
+    "Judging the study by positivist criteria (sample size, generalisation) instead of interpretive ones."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Weber"
+        ],
+        "year": 1978,
+        "title": "Economy and Society: An Outline of Interpretive Sociology",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780674240827",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1978
+      },
+      "adds": "Verstehen: sociology as the interpretive understanding of social action."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1973,
+        "title": "The Interpretation of Cultures",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787208030275",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1973
+      },
+      "adds": "Thick description: culture as webs of meaning to be interpreted."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Lincoln"
+        ],
+        "year": 1985,
+        "title": "Naturalistic Inquiry",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780803924314",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1985
+      },
+      "adds": "Naturalistic inquiry: a full methodology built on interpretive assumptions."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Phenomenological sociology",
+      "summary": "Schutz: the structures of the lifeworld.",
+      "defining_work": {
+        "authors": [
+          "Alfred Schütz"
+        ],
+        "year": 1967,
+        "title": "The phenomenology of the social world",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2058593638",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Interpretive anthropology",
+      "summary": "Geertz: thick description (own library entry).",
+      "defining_work": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1973,
+        "title": "The Interpretation of Cultures",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787208030275",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1973
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Offers explicit principles for doing and judging interpretive field research.",
+      "source": {
+        "authors": [
+          "Heinz Karl Klein",
+          "Michael David Myers"
+        ],
+        "year": 1999,
+        "title": "A Set of Principles for Conducting and Evaluating Interpretive Field Studies in Information Systems1",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.2307/249410",
+        "openalex_id": "W2148277253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Captures meaning in context, which surveys cannot.",
+      "source": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1973,
+        "title": "The Interpretation of Cultures",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787208030275",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1973
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Underplays power and structures that actors may not perceive.",
+      "source": {
+        "authors": [
+          "Anthony Giddens"
+        ],
+        "year": 1976,
+        "title": "New rules of sociological method",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W3005988779",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Actors' meanings can be wrong about the real mechanisms at work.",
+      "source": {
+        "authors": [
+          "Bhaskar"
+        ],
+        "year": 1979,
+        "title": "The Possibility of Naturalism",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780415198745",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1979
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Alfred Schütz"
+        ],
+        "year": 1967,
+        "title": "The phenomenology of the social world",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W2058593638",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Meaning and the lifeworld.",
+      "reading_question": "Whose meanings does your study interpret?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Geertz"
+        ],
+        "year": 1973,
+        "title": "The Interpretation of Cultures",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9787208030275",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1973
+      },
+      "chapter": null,
+      "why_read": "Read 'Thick Description'.",
+      "reading_question": "What would a thick description of your case contain?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Heinz Karl Klein",
+          "Michael David Myers"
+        ],
+        "year": 1999,
+        "title": "A Set of Principles for Conducting and Evaluating Interpretive Field Studies in Information Systems1",
+        "type": "article",
+        "venue": "MIS Quarterly",
+        "doi": "10.2307/249410",
+        "openalex_id": "W2148277253",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Seven principles for interpretive research.",
+      "reading_question": "Which principles does your design meet?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "interpretivism",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W3188363016",
+        "title": "Communication Art vs Communication Science",
+        "year": 2021,
+        "authors": [
+          "Pavel Slutskiy"
+        ],
+        "cited_by": 1,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Economy and Society: An Outline of Interpretive Sociology; Interpretation and the Sciences of Man; Naturalistic Inquiry; The Interpretation of Cultures; The Possibility of Naturalism. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "theory_id": null,
+  "library_name": "Two-step flow of communication",
+  "slug": "two-step-flow",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Katz"
+    ],
+    "year": 1955,
+    "title": "Personal Influence",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781351500197",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "note": "Book checked in Open Library (/works/OL11375602W, first published 1955). ISBN is one edition's; cite the edition you read.",
+    "first_publish_year": 1955
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Media influence often reaches people indirectly. Opinion leaders pay attention to media and pass on and interpret information to others in their social circles.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do influencers or opinion leaders shape what people know or buy?",
+    "How does information spread in communities?",
+    "Typical data: surveys, social network analysis, interviews."
+  ],
+  "common_mistakes": [
+    "Assuming influencers are the same as opinion leaders.",
+    "Ignoring direct media effects.",
+    "Using the model without network data."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Lazarsfeld"
+        ],
+        "year": 1944,
+        "title": "The People's Choice",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL3915963W, first published 1944). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1944
+      },
+      "adds": "Election study that found the two-step flow."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Elihu Katz"
+        ],
+        "year": 1957,
+        "title": "The Two-Step Flow of Communication: An Up-To-Date Report on an Hypothesis",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/266687",
+        "openalex_id": "W2044037197",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Refines the hypothesis."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "W. Lance Bennett",
+          "Jarol B. Manheim"
+        ],
+        "year": 2006,
+        "title": "The One-Step Flow of Communication",
+        "type": "article",
+        "venue": "The Annals of the American Academy of Political and Social Science",
+        "doi": "10.1177/0002716206292266",
+        "openalex_id": "W2007040657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Argues digital media make flow one-step again."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Opinion leadership research",
+      "summary": "Who leads opinions and why.",
+      "defining_work": {
+        "authors": [
+          "Elihu Katz"
+        ],
+        "year": 1957,
+        "title": "The Two-Step Flow of Communication: An Up-To-Date Report on an Hypothesis",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/266687",
+        "openalex_id": "W2044037197",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Influencer research",
+      "summary": "Networks and influentials online.",
+      "defining_work": {
+        "authors": [
+          "Duncan J. Watts",
+          "Peter Sheridan Dodds"
+        ],
+        "year": 2007,
+        "title": "Influentials, Networks, and Public Opinion Formation",
+        "type": "article",
+        "venue": "Journal of Consumer Research",
+        "doi": "10.1086/518527",
+        "openalex_id": "W2150375325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Put interpersonal networks into media effects research.",
+      "source": {
+        "authors": [
+          "Elihu Katz"
+        ],
+        "year": 1957,
+        "title": "The Two-Step Flow of Communication: An Up-To-Date Report on an Hypothesis",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/266687",
+        "openalex_id": "W2044037197",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Relevant to influencer marketing and social media.",
+      "source": {
+        "authors": [
+          "Duncan J. Watts",
+          "Peter Sheridan Dodds"
+        ],
+        "year": 2007,
+        "title": "Influentials, Networks, and Public Opinion Formation",
+        "type": "article",
+        "venue": "Journal of Consumer Research",
+        "doi": "10.1086/518527",
+        "openalex_id": "W2150375325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Digital targeting makes flow one-step.",
+      "source": {
+        "authors": [
+          "W. Lance Bennett",
+          "Jarol B. Manheim"
+        ],
+        "year": 2006,
+        "title": "The One-Step Flow of Communication",
+        "type": "article",
+        "venue": "The Annals of the American Academy of Political and Social Science",
+        "doi": "10.1177/0002716206292266",
+        "openalex_id": "W2007040657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Easily influenced people, not influentials, drive cascades.",
+      "source": {
+        "authors": [
+          "Duncan J. Watts",
+          "Peter Sheridan Dodds"
+        ],
+        "year": 2007,
+        "title": "Influentials, Networks, and Public Opinion Formation",
+        "type": "article",
+        "venue": "Journal of Consumer Research",
+        "doi": "10.1086/518527",
+        "openalex_id": "W2150375325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Katz"
+        ],
+        "year": 1955,
+        "title": "Personal Influence",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781351500197",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL11375602W, first published 1955). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1955
+      },
+      "chapter": null,
+      "why_read": "Classic study.",
+      "reading_question": "Who are the opinion leaders in your case?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Elihu Katz"
+        ],
+        "year": 1957,
+        "title": "The Two-Step Flow of Communication: An Up-To-Date Report on an Hypothesis",
+        "type": "article",
+        "venue": "Public Opinion Quarterly",
+        "doi": "10.1086/266687",
+        "openalex_id": "W2044037197",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Refinement.",
+      "reading_question": "How will you identify leaders?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "W. Lance Bennett",
+          "Jarol B. Manheim"
+        ],
+        "year": 2006,
+        "title": "The One-Step Flow of Communication",
+        "type": "article",
+        "venue": "The Annals of the American Academy of Political and Social Science",
+        "doi": "10.1177/0002716206292266",
+        "openalex_id": "W2007040657",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Digital critique.",
+      "reading_question": "One step or two in your setting?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "two-step flow",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "theory_id": null,
+  "library_name": "Constructivism (research paradigm)",
+  "slug": "constructivism-paradigm",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Lincoln"
+    ],
+    "year": 1985,
+    "title": "Naturalistic Inquiry",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9780803924314",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 1985
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "There is no single reality to discover: people construct realities through experience and interaction, and researcher and participants create findings together. Quality is judged by trustworthiness (credibility, transferability, dependability, confirmability) rather than validity and reliability.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do participants construct their understanding of an issue?",
+    "Qualitative designs where the researcher's role is acknowledged.",
+    "Typical designs: constructivist grounded theory, case study, naturalistic inquiry."
+  ],
+  "common_mistakes": [
+    "Confusing it with constructivist learning theory (how students learn) or social constructionism (how society builds shared reality).",
+    "Claiming a constructivist stance but reporting findings as objective facts.",
+    "Using trustworthiness criteria as a checklist without doing the work behind them."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Guba"
+        ],
+        "year": 1989,
+        "title": "Fourth Generation Evaluation",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780803932357",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1989
+      },
+      "adds": "Constructivist methodology for evaluation; authenticity criteria."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Kathy Calkins Charmaz"
+        ],
+        "year": 2006,
+        "title": "Constructing grounded theory : a practical guide through qualitative analysis",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1605824561",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.krm.or.kr/krmts/link.html?metaDataId=4b76f6df60e7c3260160f8397c21073b"
+      },
+      "adds": "Constructivist grounded theory."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Michael Crotty"
+        ],
+        "year": 1998,
+        "title": "The Foundations of Social Research: Meaning and Perspective in the Research Process",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1510426010",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Places constructionism among epistemologies, perspectives and methods."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Naturalistic inquiry",
+      "summary": "Lincoln & Guba's methodology.",
+      "defining_work": {
+        "authors": [
+          "Lincoln"
+        ],
+        "year": 1985,
+        "title": "Naturalistic Inquiry",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780803924314",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1985
+      }
+    },
+    {
+      "name": "Constructivist grounded theory",
+      "summary": "Charmaz.",
+      "defining_work": {
+        "authors": [
+          "Kathy Calkins Charmaz"
+        ],
+        "year": 2006,
+        "title": "Constructing grounded theory : a practical guide through qualitative analysis",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1605824561",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.krm.or.kr/krmts/link.html?metaDataId=4b76f6df60e7c3260160f8397c21073b"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Provides widely used quality criteria for qualitative research.",
+      "source": {
+        "authors": [
+          "Yvonna S. Lincoln",
+          "Egon G. Guba"
+        ],
+        "year": 1986,
+        "title": "But is it rigorous? Trustworthiness and authenticity in naturalistic evaluation",
+        "type": "article",
+        "venue": "New Directions for Program Evaluation",
+        "doi": "10.1002/ev.1427",
+        "openalex_id": "W1997084088",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Makes the researcher's part in producing findings explicit.",
+      "source": {
+        "authors": [
+          "Kathy Calkins Charmaz"
+        ],
+        "year": 2006,
+        "title": "Constructing grounded theory : a practical guide through qualitative analysis",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1605824561",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://www.krm.or.kr/krmts/link.html?metaDataId=4b76f6df60e7c3260160f8397c21073b"
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "'Constructivism' covers very different claims, some plausible and some not.",
+      "source": {
+        "authors": [
+          "Denis C. Phillips"
+        ],
+        "year": 1995,
+        "title": "The Good, the Bad, and the Ugly: The Many Faces of Constructivism",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x024007005",
+        "openalex_id": "W2096126412",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "'Social construction' is often asserted without saying what exactly is constructed.",
+      "source": {
+        "authors": [
+          "Ian Hacking"
+        ],
+        "year": 2000,
+        "title": "The Social Construction of What?",
+        "type": "book",
+        "venue": "Harvard University Press eBooks",
+        "doi": "10.2307/j.ctv1bzfp1z",
+        "openalex_id": "W4299955896",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Lincoln"
+        ],
+        "year": 1985,
+        "title": "Naturalistic Inquiry",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780803924314",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 1985
+      },
+      "chapter": null,
+      "why_read": "Axioms and trustworthiness.",
+      "reading_question": "Which trustworthiness criteria will you address?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Michael Crotty"
+        ],
+        "year": 1998,
+        "title": "The Foundations of Social Research: Meaning and Perspective in the Research Process",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": "W1510426010",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "The four-level scaffold from epistemology to methods.",
+      "reading_question": "Can you state your epistemology, perspective, methodology and methods?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Denis C. Phillips"
+        ],
+        "year": 1995,
+        "title": "The Good, the Bad, and the Ugly: The Many Faces of Constructivism",
+        "type": "article",
+        "venue": "Educational Researcher",
+        "doi": "10.3102/0013189x024007005",
+        "openalex_id": "W2096126412",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Sorting the versions.",
+      "reading_question": "Which constructivism do you mean?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "constructivist paradigm qualitative research",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): Fourth Generation Evaluation; Naturalistic Inquiry. 'named_by' check against reviews (protocol step 3) still pending."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-16",
+      "notes": "Developments checked against up to 15 reviews citing the original; statuses in 'check'. Books verified in Open Library."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "theory_id": null,
+  "library_name": "Policy enactment",
+  "slug": "policy-enactment",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Stephen J. Ball",
+      "Meg Maguire",
+      "Annette F. Braun"
+    ],
+    "year": 2011,
+    "title": "How Schools Do Policy",
+    "type": "book",
+    "venue": "Routledge eBooks",
+    "doi": "10.4324/9780203153185",
+    "openalex_id": "W4238596522",
+    "isbn": "9780429228803",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": "https://doaj.org/article/8df4a8e008a64a15bef97b13b17030e2",
+    "first_publish_year": 2011
+  },
+  "citation_anchor_openalex_id": "W4238596522",
+  "core_idea": "Schools do not simply implement policy. People interpret and translate policies through the school's context, resources and history, so the same policy looks different in different schools.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How is a reform or national policy put into practice in schools or universities?",
+    "Which actors interpret and translate policy in a school?",
+    "Typical data: multiple case studies, interviews, document analysis."
+  ],
+  "common_mistakes": [
+    "Using enactment as a synonym for implementation.",
+    "Studying only the policy text and not its interpretation.",
+    "Ignoring the four contexts (situated, professional, material, external)."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Stephen J. Ball"
+        ],
+        "year": 1993,
+        "title": "WHAT IS POLICY? TEXTS, TRAJECTORIES AND TOOLBOXES",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/0159630930130203",
+        "openalex_id": "W1976427288",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Policy as text and as discourse."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Annette F. Braun",
+          "Stephen J. Ball",
+          "Meg Maguire",
+          "Kate Hoskins"
+        ],
+        "year": 2011,
+        "title": "Taking context seriously: towards explaining policy enactments in the secondary school",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/01596306.2011.601555",
+        "openalex_id": "W2017827716",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The four contexts of enactment."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Meg Maguire",
+          "Annette F. Braun",
+          "Stephen J. Ball"
+        ],
+        "year": 2014,
+        "title": "‘Where you stand depends on where you sit’: the social construction of policy enactments in the (English) secondary school",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/01596306.2014.977022",
+        "openalex_id": "W2094921867",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/01596306.2014.977022"
+      },
+      "adds": "Policy actors' positions."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Policy as text and discourse",
+      "summary": "Ball's foundational distinction.",
+      "defining_work": {
+        "authors": [
+          "Stephen J. Ball"
+        ],
+        "year": 1993,
+        "title": "WHAT IS POLICY? TEXTS, TRAJECTORIES AND TOOLBOXES",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/0159630930130203",
+        "openalex_id": "W1976427288",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Policy actors",
+      "summary": "Roles such as narrators, entrepreneurs, translators.",
+      "defining_work": {
+        "authors": [
+          "Meg Maguire",
+          "Annette F. Braun",
+          "Stephen J. Ball"
+        ],
+        "year": 2014,
+        "title": "‘Where you stand depends on where you sit’: the social construction of policy enactments in the (English) secondary school",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/01596306.2014.977022",
+        "openalex_id": "W2094921867",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/01596306.2014.977022"
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Takes context seriously, explaining variation between schools.",
+      "source": {
+        "authors": [
+          "Annette F. Braun",
+          "Stephen J. Ball",
+          "Meg Maguire",
+          "Kate Hoskins"
+        ],
+        "year": 2011,
+        "title": "Taking context seriously: towards explaining policy enactments in the secondary school",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/01596306.2011.601555",
+        "openalex_id": "W2017827716",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Widely used in education policy sociology.",
+      "source": {
+        "authors": [
+          "Stephen J. Ball"
+        ],
+        "year": 1993,
+        "title": "WHAT IS POLICY? TEXTS, TRAJECTORIES AND TOOLBOXES",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/0159630930130203",
+        "openalex_id": "W1976427288",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "A cognitive view of implementation explains interpretation differently.",
+      "source": {
+        "authors": [
+          "James P. Spillane",
+          "Brian J. Reiser",
+          "Todd Reimer"
+        ],
+        "year": 2002,
+        "title": "Policy Implementation and Cognition: Reframing and Refocusing Implementation Research",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.3102/00346543072003387",
+        "openalex_id": "W2148683740",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Enactment studies can underplay performativity pressures.",
+      "source": {
+        "authors": [
+          "Parlo Singh",
+          "Stephen Heimans",
+          "Kathryn Glasswell"
+        ],
+        "year": 2014,
+        "title": "Policy enactment, context and performativity: ontological politics and researching Australian National Partnership policies",
+        "type": "article",
+        "venue": "Journal of Education Policy",
+        "doi": "10.1080/02680939.2014.891763",
+        "openalex_id": "W2025269061",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "http://hdl.handle.net/10072/64040"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Stephen J. Ball",
+          "Meg Maguire",
+          "Annette F. Braun"
+        ],
+        "year": 2011,
+        "title": "How Schools Do Policy",
+        "type": "book",
+        "venue": "Routledge eBooks",
+        "doi": "10.4324/9780203153185",
+        "openalex_id": "W4238596522",
+        "isbn": "9780429228803",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doaj.org/article/8df4a8e008a64a15bef97b13b17030e2",
+        "first_publish_year": 2011
+      },
+      "chapter": null,
+      "why_read": "The main study.",
+      "reading_question": "Which contexts matter in your school?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Stephen J. Ball"
+        ],
+        "year": 1993,
+        "title": "WHAT IS POLICY? TEXTS, TRAJECTORIES AND TOOLBOXES",
+        "type": "article",
+        "venue": "Discourse Studies in the Cultural Politics of Education",
+        "doi": "10.1080/0159630930130203",
+        "openalex_id": "W1976427288",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Foundation.",
+      "reading_question": "Text or discourse: what do you study?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "James P. Spillane",
+          "Brian J. Reiser",
+          "Todd Reimer"
+        ],
+        "year": 2002,
+        "title": "Policy Implementation and Cognition: Reframing and Refocusing Implementation Research",
+        "type": "article",
+        "venue": "Review of Educational Research",
+        "doi": "10.3102/00346543072003387",
+        "openalex_id": "W2148683740",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Alternative view.",
+      "reading_question": "Why enactment rather than implementation?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "policy enactment",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2339001487",
+        "title": "Environmental and sustainability education policy research: a systematic review of methodological and thematic trends",
+        "year": 2016,
+        "authors": [
+          "Kathleen Aikens",
+          "Marcia McKenzie",
+          "Philip Vaughter"
+        ],
+        "cited_by": 198,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2755632814",
+        "title": "Surveillance, Governmentality and moving the goalposts: The influence of Ofsted on the work of schools in a post-panoptic era",
+        "year": 2017,
+        "authors": [
+          "Jane Perryman",
+          "Meg Maguire",
+          "Annette F. Braun",
+          "Stephen J. Ball"
+        ],
+        "cited_by": 130,
+        "oa_url": "https://discovery.ucl.ac.uk/id/eprint/1572303/"
+      },
+      {
+        "openalex_id": "W2962784196",
+        "title": "The ethics of competition: accountability policy enactment in Chilean schools’ everyday life",
+        "year": 2019,
+        "authors": [
+          "Alejandra Falabella"
+        ],
+        "cited_by": 122,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2952157200",
+        "title": "An amalgam of ideals – images of inclusion in the Salamanca Statement",
+        "year": 2019,
+        "authors": [
+          "Gunnlaugur Magnússon"
+        ],
+        "cited_by": 114,
+        "oa_url": "https://doi.org/10.1080/13603116.2019.1622805"
+      },
+      {
+        "openalex_id": "W2896647034",
+        "title": "n. 16 - A ABORDAGEM DO CICLO DE POLÍTICAS: EXPLORANDO ALGUNS DESAFIOS DA SUA UTILIZAÇÃO NO CAMPO DA POLÍTICA EDUCACIONAL",
+        "year": 2018,
+        "authors": [
+          "Jefferson Mainardes"
+        ],
+        "cited_by": 100,
+        "oa_url": "https://doi.org/10.5380/jpe.v12i0.59217"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

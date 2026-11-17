@@ -1,0 +1,330 @@
+{
+  "theory_id": null,
+  "library_name": "Teacher agency (ecological approach)",
+  "slug": "teacher-agency",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Priestley"
+    ],
+    "year": 2015,
+    "title": "Teacher Agency: An Ecological Approach",
+    "type": "book",
+    "venue": null,
+    "doi": null,
+    "openalex_id": null,
+    "isbn": "9781472525871",
+    "verified": true,
+    "verified_in": "openlibrary",
+    "oa_url": null,
+    "first_publish_year": 2015
+  },
+  "citation_anchor_openalex_id": null,
+  "core_idea": "Agency is something teachers achieve in particular situations, not something they have. It emerges from their past experiences, their aims for the future and the resources and constraints of the present.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do teachers respond to curriculum reform?",
+    "What conditions enable or limit teachers' professional judgement?",
+    "Typical data: interviews, case study, observation."
+  ],
+  "common_mistakes": [
+    "Treating agency as a personal trait.",
+    "Ignoring the cultural and structural conditions the approach stresses.",
+    "Equating agency with resistance."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Mustafa Emirbayer",
+          "Ann Mische"
+        ],
+        "year": 1998,
+        "title": "What Is Agency?",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/231294",
+        "openalex_id": "W2232839779",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "The chordal triad of agency (past, future, present)."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Gert Biesta",
+          "Mark Priestley",
+          "Sarah Robinson"
+        ],
+        "year": 2015,
+        "title": "The role of beliefs in teacher agency",
+        "type": "article",
+        "venue": "Teachers and Teaching",
+        "doi": "10.1080/13540602.2015.1044325",
+        "openalex_id": "W1911902575",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/13540602.2015.1044325"
+      },
+      "adds": "Teachers' beliefs and agency."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Anneli Eteläpelto",
+          "Katja Vähäsantanen",
+          "Päivi Kristiina Hökkä",
+          "Susanna Paloniemi"
+        ],
+        "year": 2013,
+        "title": "What is agency? Conceptualizing professional agency at work",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2013.05.001",
+        "openalex_id": "W2056226145",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Reviews agency concepts in professional work."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Ecological approach",
+      "summary": "Agency achieved through the environment.",
+      "defining_work": {
+        "authors": [
+          "Priestley"
+        ],
+        "year": 2015,
+        "title": "Teacher Agency: An Ecological Approach",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781472525871",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2015
+      }
+    },
+    {
+      "name": "Subject-centred sociocultural approach",
+      "summary": "Professional agency at work.",
+      "defining_work": {
+        "authors": [
+          "Anneli Eteläpelto",
+          "Katja Vähäsantanen",
+          "Päivi Kristiina Hökkä",
+          "Susanna Paloniemi"
+        ],
+        "year": 2013,
+        "title": "What is agency? Conceptualizing professional agency at work",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2013.05.001",
+        "openalex_id": "W2056226145",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Useful for studying curriculum reform.",
+      "source": {
+        "authors": [
+          "Gert Biesta",
+          "Mark Priestley",
+          "Sarah Robinson"
+        ],
+        "year": 2015,
+        "title": "The role of beliefs in teacher agency",
+        "type": "article",
+        "venue": "Teachers and Teaching",
+        "doi": "10.1080/13540602.2015.1044325",
+        "openalex_id": "W1911902575",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/13540602.2015.1044325"
+      }
+    },
+    {
+      "point": "Built on a strong sociological account of agency.",
+      "source": {
+        "authors": [
+          "Mustafa Emirbayer",
+          "Ann Mische"
+        ],
+        "year": 1998,
+        "title": "What Is Agency?",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/231294",
+        "openalex_id": "W2232839779",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Underplays the individual subject and identity.",
+      "source": {
+        "authors": [
+          "Anneli Eteläpelto",
+          "Katja Vähäsantanen",
+          "Päivi Kristiina Hökkä",
+          "Susanna Paloniemi"
+        ],
+        "year": 2013,
+        "title": "What is agency? Conceptualizing professional agency at work",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2013.05.001",
+        "openalex_id": "W2056226145",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Agency is hard to observe; studies rely on teachers' accounts.",
+      "source": {
+        "authors": [
+          "Gert Biesta",
+          "Mark Priestley",
+          "Sarah Robinson"
+        ],
+        "year": 2015,
+        "title": "The role of beliefs in teacher agency",
+        "type": "article",
+        "venue": "Teachers and Teaching",
+        "doi": "10.1080/13540602.2015.1044325",
+        "openalex_id": "W1911902575",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": "https://doi.org/10.1080/13540602.2015.1044325"
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Priestley"
+        ],
+        "year": 2015,
+        "title": "Teacher Agency: An Ecological Approach",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9781472525871",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "first_publish_year": 2015
+      },
+      "chapter": null,
+      "why_read": "The model.",
+      "reading_question": "Which dimension of agency is central for your teachers?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Mustafa Emirbayer",
+          "Ann Mische"
+        ],
+        "year": 1998,
+        "title": "What Is Agency?",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/231294",
+        "openalex_id": "W2232839779",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Theoretical base.",
+      "reading_question": "How do past and future enter your data?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Anneli Eteläpelto",
+          "Katja Vähäsantanen",
+          "Päivi Kristiina Hökkä",
+          "Susanna Paloniemi"
+        ],
+        "year": 2013,
+        "title": "What is agency? Conceptualizing professional agency at work",
+        "type": "article",
+        "venue": "Educational Research Review",
+        "doi": "10.1016/j.edurev.2013.05.001",
+        "openalex_id": "W2056226145",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Overview.",
+      "reading_question": "Which approach to agency do you take?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "teacher agency",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": []
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 1 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

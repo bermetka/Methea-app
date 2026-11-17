@@ -1,0 +1,360 @@
+{
+  "theory_id": null,
+  "library_name": "Modernization theory",
+  "slug": "modernization-theory",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Walt W. Rostow"
+    ],
+    "year": 1959,
+    "title": "THE STAGES OF ECONOMIC GROWTH",
+    "type": "book",
+    "venue": "Cambridge University Press eBooks",
+    "doi": "10.1017/cbo9780511625824",
+    "openalex_id": "W1914485124",
+    "isbn": "9780521081009",
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null,
+    "first_publish_year": 1960
+  },
+  "citation_anchor_openalex_id": "W1914485124",
+  "core_idea": "Societies develop by moving through stages from traditional society to take-off and high mass consumption, driven by investment, industrialisation and the spread of modern values.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How has a country's development path unfolded?",
+    "As the contrast case for dependency or post-development views.",
+    "Typical data: historical comparative analysis, case study."
+  ],
+  "common_mistakes": [
+    "Using it uncritically as a universal path.",
+    "Ignoring its Cold War context.",
+    "Confusing economic and sociological modernisation."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "Seymour Martin Lipset"
+        ],
+        "year": 1959,
+        "title": "Some Social Requisites of Democracy: Economic Development and Political Legitimacy",
+        "type": "article",
+        "venue": "American Political Science Review",
+        "doi": "10.2307/1951731",
+        "openalex_id": "W2125353502",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Development and democracy."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Huntington"
+        ],
+        "year": 1968,
+        "title": "Political Order in Changing Societies",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL3289957W, first published 1968). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1968
+      },
+      "adds": "Instability in modernising states."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Economic modernisation",
+      "summary": "Stages of growth.",
+      "defining_work": {
+        "authors": [
+          "Walt W. Rostow"
+        ],
+        "year": 1959,
+        "title": "THE STAGES OF ECONOMIC GROWTH",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511625824",
+        "openalex_id": "W1914485124",
+        "isbn": "9780521081009",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1960
+      }
+    },
+    {
+      "name": "Values modernisation",
+      "summary": "Cultural change.",
+      "defining_work": {
+        "authors": [
+          "Inglehart"
+        ],
+        "year": 2005,
+        "title": "Modernization, Cultural Change, and Democracy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780511790881",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL19596692W, first published 2005). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 2005
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Link between development and democracy has empirical support.",
+      "source": {
+        "authors": [
+          "Seymour Martin Lipset"
+        ],
+        "year": 1959,
+        "title": "Some Social Requisites of Democracy: Economic Development and Political Legitimacy",
+        "type": "article",
+        "venue": "American Political Science Review",
+        "doi": "10.2307/1951731",
+        "openalex_id": "W2125353502",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Revised versions test value change.",
+      "source": {
+        "authors": [
+          "Inglehart"
+        ],
+        "year": 2005,
+        "title": "Modernization, Cultural Change, and Democracy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780511790881",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL19596692W, first published 2005). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 2005
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Ignores external dependency.",
+      "source": {
+        "authors": [
+          "André Gunder Frank"
+        ],
+        "year": 1966,
+        "title": "The Development of Underdevelopment",
+        "type": "article",
+        "venue": "Monthly Review",
+        "doi": "10.14452/mr-018-04-1966-08_3",
+        "openalex_id": "W2040057718",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Modernisation can produce disorder, not progress.",
+      "source": {
+        "authors": [
+          "Huntington"
+        ],
+        "year": 1968,
+        "title": "Political Order in Changing Societies",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL3289957W, first published 1968). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1968
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Walt W. Rostow"
+        ],
+        "year": 1959,
+        "title": "THE STAGES OF ECONOMIC GROWTH",
+        "type": "book",
+        "venue": "Cambridge University Press eBooks",
+        "doi": "10.1017/cbo9780511625824",
+        "openalex_id": "W1914485124",
+        "isbn": "9780521081009",
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null,
+        "first_publish_year": 1960
+      },
+      "chapter": null,
+      "why_read": "Stages.",
+      "reading_question": "Does your case fit stages?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Inglehart"
+        ],
+        "year": 2005,
+        "title": "Modernization, Cultural Change, and Democracy",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780511790881",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL19596692W, first published 2005). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 2005
+      },
+      "chapter": null,
+      "why_read": "Revision.",
+      "reading_question": "Economic or cultural focus?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Huntington"
+        ],
+        "year": 1968,
+        "title": "Political Order in Changing Societies",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL3289957W, first published 1968). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1968
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "What role does instability play?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "modernization theory",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2535388680",
+        "title": "Victory over Chaos? Constantinos A. Doxiadis and Ekistics 1945-1975",
+        "year": 2016,
+        "authors": [
+          "Lefteris Theodosis"
+        ],
+        "cited_by": 10,
+        "oa_url": "https://doi.org/10.5821/dissertation-2117-96362"
+      },
+      {
+        "openalex_id": "W4309717551",
+        "title": "Services as a Determinant of Botswana’s Economic Sustainability",
+        "year": 2022,
+        "authors": [
+          "Joseph Phiri",
+          "Karel Malec",
+          "Aubrey Sakala",
+          "Seth Nana Kwame Appiah-Kubi",
+          "Pavel Cincera",
+          "Mansoor Maitah"
+        ],
+        "cited_by": 7,
+        "oa_url": "https://doi.org/10.3390/ijerph192215401"
+      },
+      {
+        "openalex_id": "W4313181862",
+        "title": "Social Macroevolution and Changes in the Human Value Systems. How has Modernization Affected Human Values?",
+        "year": 2022,
+        "authors": [
+          "Julia V. Zinkina",
+          "Vadim Ustyuzhanin",
+          "Sergey G. Shulgin"
+        ],
+        "cited_by": 7,
+        "oa_url": "https://doi.org/10.30884/seh/2022.02.06"
+      },
+      {
+        "openalex_id": "W4403827762",
+        "title": "Gig Economy: Is It a Trap or Stepping Stone for the Informal Sector?",
+        "year": 2024,
+        "authors": [
+          "Nazurah Abdul Malek"
+        ],
+        "cited_by": 6,
+        "oa_url": "https://doi.org/10.22610/imbr.v16i3s(i)a.4201"
+      },
+      {
+        "openalex_id": "W2610256580",
+        "title": "Modernizing Peasants and “Master Farmers”",
+        "year": 2017,
+        "authors": [
+          "Benjamin Robert Siegel"
+        ],
+        "cited_by": 6,
+        "oa_url": "https://hdl.handle.net/2144/39452"
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 3 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

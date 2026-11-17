@@ -1,0 +1,380 @@
+{
+  "theory_id": null,
+  "library_name": "Strength of weak ties",
+  "slug": "strength-of-weak-ties",
+  "status": "published",
+  "original": {
+    "authors": [
+      "Mark S. Granovetter"
+    ],
+    "year": 1973,
+    "title": "The Strength of Weak Ties",
+    "type": "article",
+    "venue": "American Journal of Sociology",
+    "doi": "10.1086/225469",
+    "openalex_id": "W2109469951",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2109469951",
+  "core_idea": "Acquaintances (weak ties) often bring new information and opportunities that close friends cannot, because weak ties bridge different social circles.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "How do people find jobs, information or opportunities?",
+    "How do migrant networks work?",
+    "Typical data: social network analysis, surveys, interviews."
+  ],
+  "common_mistakes": [
+    "Measuring tie strength with one item.",
+    "Assuming weak ties always help; context matters.",
+    "Ignoring bridging, the mechanism."
+  ],
+  "development": [
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Mark S. Granovetter"
+        ],
+        "year": 1983,
+        "title": "The Strength of Weak Ties: A Network Theory Revisited",
+        "type": "article",
+        "venue": "Sociological Theory",
+        "doi": "10.2307/202051",
+        "openalex_id": "W1987235421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Revisits the thesis."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Burt"
+        ],
+        "year": 1992,
+        "title": "Structural Holes: The Social Structure of Competition",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780674029095",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4120645W, first published 1992). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1992
+      },
+      "adds": "Structural holes as the source of advantage."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "Nan Lin"
+        ],
+        "year": 1999,
+        "title": "SOCIAL NETWORKS AND STATUS ATTAINMENT",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.25.1.467",
+        "openalex_id": "W2158460690",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Review of networks and status."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Structural holes",
+      "summary": "Brokerage.",
+      "defining_work": {
+        "authors": [
+          "Burt"
+        ],
+        "year": 1992,
+        "title": "Structural Holes: The Social Structure of Competition",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780674029095",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4120645W, first published 1992). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1992
+      }
+    },
+    {
+      "name": "Social resources theory",
+      "summary": "Network resources and attainment.",
+      "defining_work": {
+        "authors": [
+          "Nan Lin"
+        ],
+        "year": 1999,
+        "title": "SOCIAL NETWORKS AND STATUS ATTAINMENT",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.25.1.467",
+        "openalex_id": "W2158460690",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Large-scale causal evidence supports weak ties for job mobility.",
+      "source": {
+        "authors": [
+          "Karthik Rajkumar",
+          "Guillaume Saint-Jacques",
+          "Iavor Bojinov",
+          "Erik Brynjolfsson",
+          "Sinan Aral"
+        ],
+        "year": 2022,
+        "title": "A causal test of the strength of weak ties",
+        "type": "article",
+        "venue": "Science",
+        "doi": "10.1126/science.abl4476",
+        "openalex_id": "W4296037511",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Widely replicated.",
+      "source": {
+        "authors": [
+          "Nan Lin"
+        ],
+        "year": 1999,
+        "title": "SOCIAL NETWORKS AND STATUS ATTAINMENT",
+        "type": "article",
+        "venue": "Annual Review of Sociology",
+        "doi": "10.1146/annurev.soc.25.1.467",
+        "openalex_id": "W2158460690",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Strong ties matter more in some contexts, e.g. China.",
+      "source": {
+        "authors": [
+          "Yanjie Bian"
+        ],
+        "year": 1997,
+        "title": "Bringing Strong Ties Back in: Indirect Ties, Network Bridges, and Job Searches in China",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2657311",
+        "openalex_id": "W2331196207",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Tie strength is defined loosely.",
+      "source": {
+        "authors": [
+          "Mark S. Granovetter"
+        ],
+        "year": 1983,
+        "title": "The Strength of Weak Ties: A Network Theory Revisited",
+        "type": "article",
+        "venue": "Sociological Theory",
+        "doi": "10.2307/202051",
+        "openalex_id": "W1987235421",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "Mark S. Granovetter"
+        ],
+        "year": 1973,
+        "title": "The Strength of Weak Ties",
+        "type": "article",
+        "venue": "American Journal of Sociology",
+        "doi": "10.1086/225469",
+        "openalex_id": "W2109469951",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Classic article.",
+      "reading_question": "How will you measure tie strength?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "Burt"
+        ],
+        "year": 1992,
+        "title": "Structural Holes: The Social Structure of Competition",
+        "type": "book",
+        "venue": null,
+        "doi": null,
+        "openalex_id": null,
+        "isbn": "9780674029095",
+        "verified": true,
+        "verified_in": "openlibrary",
+        "oa_url": null,
+        "note": "Book checked in Open Library (/works/OL4120645W, first published 1992). ISBN is one edition's; cite the edition you read.",
+        "first_publish_year": 1992
+      },
+      "chapter": null,
+      "why_read": "Alternative mechanism.",
+      "reading_question": "Weak ties or structural holes?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Yanjie Bian"
+        ],
+        "year": 1997,
+        "title": "Bringing Strong Ties Back in: Indirect Ties, Network Bridges, and Job Searches in China",
+        "type": "article",
+        "venue": "American Sociological Review",
+        "doi": "10.2307/2657311",
+        "openalex_id": "W2331196207",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Context critique.",
+      "reading_question": "Do strong ties matter more in your context?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "weak ties",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W1984744191",
+        "title": "Social Resources and Strength of Ties: Structural Factors in Occupational Status Attainment",
+        "year": 2019,
+        "authors": [
+          "Nan Lin",
+          "Walter M. Ensel",
+          "John C. Vaughn"
+        ],
+        "cited_by": 1012,
+        "oa_url": null
+      },
+      {
+        "openalex_id": "W2772916669",
+        "title": "User-Generated Content Sources in Social Media: A New Approach to Explore Tourist Satisfaction",
+        "year": 2017,
+        "authors": [
+          "Yeamduan Narangajavana",
+          "Luis José Callarisa-Fiol",
+          "Miguel Ángel Moliner Tena",
+          "Rosa María Rodríguez Artola",
+          "Javier Sánchez"
+        ],
+        "cited_by": 297,
+        "oa_url": "https://hdl.handle.net/10550/93265"
+      },
+      {
+        "openalex_id": "W2753242768",
+        "title": "Diplomatic and corporate networks: Bridges to foreign locations",
+        "year": 2017,
+        "authors": [
+          "Jing Li",
+          "Klaus E. Meyer",
+          "Hua Zhang",
+          "Yuan Ding"
+        ],
+        "cited_by": 295,
+        "oa_url": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=ceibs_wosapi&SrcAuth=WosAPI&KeyUT=WOS:000450446300001&DestLinkType=FullRecord&DestApp=WOS"
+      },
+      {
+        "openalex_id": "W2791081941",
+        "title": "The Political Significance of Social Media Activity and Social Networks",
+        "year": 2018,
+        "authors": [
+          "Joseph E. Kahne",
+          "Benjamin T Bowyer"
+        ],
+        "cited_by": 277,
+        "oa_url": "https://doi.org/10.1080/10584609.2018.1426662"
+      },
+      {
+        "openalex_id": "W2782539779",
+        "title": "Mobile Money and Financial Inclusion in Sub-Saharan Africa: the Moderating Role of Social Networks",
+        "year": 2018,
+        "authors": [
+          "George Okello Candiya Bongomin",
+          "Joseph Mpeera Ntayi",
+          "John Chrysostom Kigozi Munene",
+          "Charles Akol Malinga"
+        ],
+        "cited_by": 270,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 7 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}

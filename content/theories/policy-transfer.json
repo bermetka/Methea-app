@@ -1,0 +1,382 @@
+{
+  "theory_id": null,
+  "library_name": "Policy transfer",
+  "slug": "policy-transfer",
+  "status": "published",
+  "original": {
+    "authors": [
+      "David Peter Dolowitz",
+      "David D. Marsh"
+    ],
+    "year": 2000,
+    "title": "Learning from Abroad: The Role of Policy Transfer in Contemporary Policy‐Making",
+    "type": "article",
+    "venue": "Governance",
+    "doi": "10.1111/0952-1895.00121",
+    "openalex_id": "W2131213453",
+    "isbn": null,
+    "verified": true,
+    "verified_in": "openalex",
+    "oa_url": null
+  },
+  "citation_anchor_openalex_id": "W2131213453",
+  "core_idea": "Governments borrow policies, programmes and ideas from abroad, voluntarily or under pressure. Transfer can be partial and fail when context differs.",
+  "key_concepts_note": "Use the concepts already stored for this theory in the library (theories.concepts).",
+  "when_to_use": [
+    "Which reforms were borrowed from abroad or promoted by donors?",
+    "Why did a transferred policy fail?",
+    "Typical data: case study, document analysis, interviews."
+  ],
+  "common_mistakes": [
+    "Assuming similarity means transfer.",
+    "Ignoring translation and adaptation.",
+    "Only voluntary transfer."
+  ],
+  "development": [
+    {
+      "kind": "foundation",
+      "work": {
+        "authors": [
+          "David Peter Dolowitz",
+          "David D. Marsh"
+        ],
+        "year": 1996,
+        "title": "Who Learns What from Whom: A Review of the Policy Transfer Literature",
+        "type": "article",
+        "venue": "Political Studies",
+        "doi": "10.1111/j.1467-9248.1996.tb00334.x",
+        "openalex_id": "W2086995401",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Original review."
+    },
+    {
+      "kind": "synthesis",
+      "work": {
+        "authors": [
+          "David Benson",
+          "Andrew Jordan"
+        ],
+        "year": 2011,
+        "title": "What have we Learned from Policy Transfer Research? Dolowitz and Marsh Revisited",
+        "type": "article",
+        "venue": "Political Studies Review",
+        "doi": "10.1111/j.1478-9302.2011.00240.x",
+        "openalex_id": "W1502199564",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Revisits the framework."
+    },
+    {
+      "kind": "refinement",
+      "work": {
+        "authors": [
+          "Diane Stone"
+        ],
+        "year": 2004,
+        "title": "Transfer agents and global networks in the ‘transnationalization’ of policy",
+        "type": "article",
+        "venue": "Journal of European Public Policy",
+        "doi": "10.1080/13501760410001694291",
+        "openalex_id": "W1998406205",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "adds": "Adds transfer agents and global networks to policy transfer."
+    }
+  ],
+  "strands": [
+    {
+      "name": "Policy transfer",
+      "summary": "Political science.",
+      "defining_work": {
+        "authors": [
+          "David Peter Dolowitz",
+          "David D. Marsh"
+        ],
+        "year": 2000,
+        "title": "Learning from Abroad: The Role of Policy Transfer in Contemporary Policy‐Making",
+        "type": "article",
+        "venue": "Governance",
+        "doi": "10.1111/0952-1895.00121",
+        "openalex_id": "W2131213453",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "name": "Policy mobilities",
+      "summary": "Geography.",
+      "defining_work": {
+        "authors": [
+          "Eugene McCann",
+          "KEVIN G. WARD"
+        ],
+        "year": 2013,
+        "title": "A multi-disciplinary approach to policy transfer research: geographies, assemblages, mobilities and mutations",
+        "type": "article",
+        "venue": "Policy Studies",
+        "doi": "10.1080/01442872.2012.748563",
+        "openalex_id": "W1996982136",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "strengths": [
+    {
+      "point": "Clear framework of questions.",
+      "source": {
+        "authors": [
+          "David Peter Dolowitz",
+          "David D. Marsh"
+        ],
+        "year": 2000,
+        "title": "Learning from Abroad: The Role of Policy Transfer in Contemporary Policy‐Making",
+        "type": "article",
+        "venue": "Governance",
+        "doi": "10.1111/0952-1895.00121",
+        "openalex_id": "W2131213453",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Large literature.",
+      "source": {
+        "authors": [
+          "David Benson",
+          "Andrew Jordan"
+        ],
+        "year": 2011,
+        "title": "What have we Learned from Policy Transfer Research? Dolowitz and Marsh Revisited",
+        "type": "article",
+        "venue": "Political Studies Review",
+        "doi": "10.1111/j.1478-9302.2011.00240.x",
+        "openalex_id": "W1502199564",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "critiques": [
+    {
+      "point": "Concept adds little to existing policy theories.",
+      "source": {
+        "authors": [
+          "Oliver James",
+          "Martín Lodge"
+        ],
+        "year": 2003,
+        "title": "The Limitations of ‘Policy Transfer’ and ‘Lesson Drawing’ for Public Policy Research",
+        "type": "article",
+        "venue": "Political Studies Review",
+        "doi": "10.1111/1478-9299.t01-1-00003",
+        "openalex_id": "W2134336325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    },
+    {
+      "point": "Ignores mutation.",
+      "source": {
+        "authors": [
+          "Eugene McCann",
+          "KEVIN G. WARD"
+        ],
+        "year": 2013,
+        "title": "A multi-disciplinary approach to policy transfer research: geographies, assemblages, mobilities and mutations",
+        "type": "article",
+        "venue": "Policy Studies",
+        "doi": "10.1080/01442872.2012.748563",
+        "openalex_id": "W1996982136",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      }
+    }
+  ],
+  "must_read": [
+    {
+      "role": "original",
+      "work": {
+        "authors": [
+          "David Peter Dolowitz",
+          "David D. Marsh"
+        ],
+        "year": 2000,
+        "title": "Learning from Abroad: The Role of Policy Transfer in Contemporary Policy‐Making",
+        "type": "article",
+        "venue": "Governance",
+        "doi": "10.1111/0952-1895.00121",
+        "openalex_id": "W2131213453",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Framework.",
+      "reading_question": "What was transferred and from where?"
+    },
+    {
+      "role": "refinement",
+      "work": {
+        "authors": [
+          "David Benson",
+          "Andrew Jordan"
+        ],
+        "year": 2011,
+        "title": "What have we Learned from Policy Transfer Research? Dolowitz and Marsh Revisited",
+        "type": "article",
+        "venue": "Political Studies Review",
+        "doi": "10.1111/j.1478-9302.2011.00240.x",
+        "openalex_id": "W1502199564",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Review.",
+      "reading_question": "Voluntary or coercive?"
+    },
+    {
+      "role": "review",
+      "work": {
+        "authors": [
+          "Oliver James",
+          "Martín Lodge"
+        ],
+        "year": 2003,
+        "title": "The Limitations of ‘Policy Transfer’ and ‘Lesson Drawing’ for Public Policy Research",
+        "type": "article",
+        "venue": "Political Studies Review",
+        "doi": "10.1111/1478-9299.t01-1-00003",
+        "openalex_id": "W2134336325",
+        "isbn": null,
+        "verified": true,
+        "verified_in": "openalex",
+        "oa_url": null
+      },
+      "chapter": null,
+      "why_read": "Critique.",
+      "reading_question": "Why transfer framework?"
+    }
+  ],
+  "recent_works": "auto: OpenAlex cites:<citation_anchor_openalex_id> + the student's topic terms, last 10 years, top 5 by citations (protocol §5). Preview below uses the theory name instead of a student topic.",
+  "recent_search_term": "policy transfer",
+  "recent_works_preview": {
+    "fetched": "2026-11-06",
+    "items": [
+      {
+        "openalex_id": "W2976846257",
+        "title": "Transnational policy transfer: the circulation of ideas, power and development models",
+        "year": 2019,
+        "authors": [
+          "Diane Stone",
+          "Osmany Porto de Oliveira",
+          "Leslie A. Pal"
+        ],
+        "cited_by": 247,
+        "oa_url": "https://doi.org/10.1080/14494035.2019.1619325"
+      },
+      {
+        "openalex_id": "W3127681789",
+        "title": "International transfer of vocational education and training: a literature review",
+        "year": 2021,
+        "authors": [
+          "Junmin Li",
+          "Matthias Pilz"
+        ],
+        "cited_by": 239,
+        "oa_url": "https://doi.org/10.1080/13636820.2020.1847566"
+      },
+      {
+        "openalex_id": "W2587066638",
+        "title": "Understanding the transfer of policy failure: bricolage, experimentalism and translation",
+        "year": 2016,
+        "authors": [
+          "Diane Stone"
+        ],
+        "cited_by": 239,
+        "oa_url": "https://zenodo.org/record/345832"
+      },
+      {
+        "openalex_id": "W2786064545",
+        "title": "Is transit-oriented development (TOD) an internationally transferable policy concept?",
+        "year": 2018,
+        "authors": [
+          "Ren Thomas",
+          "Dorina Pojani",
+          "Sander Lenferink",
+          "Luca Bertolini",
+          "Dominic Stead",
+          "Erwin van der Krabben"
+        ],
+        "cited_by": 149,
+        "oa_url": "https://doi.org/10.1080/00343404.2018.1428740"
+      },
+      {
+        "openalex_id": "W4206898382",
+        "title": "Global urban sprawl containment strategies and their implications for rapidly urbanising cities in Ghana",
+        "year": 2022,
+        "authors": [
+          "Owusu Amponsah",
+          "Daniel Kwame Blija",
+          "Raphael Anammasiya Ayambire",
+          "Stephen Appiah Takyi",
+          "Henry Mensah",
+          "Imoro Braimah"
+        ],
+        "cited_by": 104,
+        "oa_url": null
+      }
+    ]
+  },
+  "verification_log": [
+    {
+      "step": "machine",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Articles resolved via Crossref then OpenAlex by DOI; books via OpenAlex book-type records only. Bibliographic fields copied from the matched record. Unverified (? chip): none. Books checked in Open Library / Google Books (ISBN) on 2026-11-06."
+    },
+    {
+      "step": "step3",
+      "by": "Claude",
+      "date": "2026-11-06",
+      "notes": "Developments checked against 8 reviews (in-card reviews + most-cited OpenAlex reviews citing the original). Statuses per development in 'check'."
+    },
+    {
+      "step": "human",
+      "by": "Bermet",
+      "date": null,
+      "notes": "Pending review."
+    },
+    {
+      "step": "human",
+      "by": "Bermet Koshoeva (founder)",
+      "date": "2026-11-17",
+      "notes": "Approved for publishing."
+    }
+  ]
+}
