@@ -32,6 +32,7 @@ export default function TopicForm({ id, dark = false }: { id: string; dark?: boo
       action="/check/start"
       method="get"
       onSubmit={handOver}
+      id={`${id}-form`}
       className={dark ? styles.formDark : styles.form}
     >
       <label htmlFor={id} className={styles.formLabel}>Your research topic</label>

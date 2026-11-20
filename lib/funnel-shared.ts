@@ -6,7 +6,12 @@ export const FUNNEL_EVENTS = [
   'framework_diagram_viewed', 'paywall_view', 'unlock_click', 'purchase',
   'pilot_request', 'monthly_waitlist',
   'check_view', 'check_complete', 'check_cta',
+  'landing_engage',
 ] as const
+
+/** landing_engage steps on the sales pages: how far a visitor got before (not) clicking. */
+export const LANDING_ENGAGE_STEPS = ['scroll_50', 'form_seen', 'topic_focus'] as const
+export type LandingEngageStep = (typeof LANDING_ENGAGE_STEPS)[number]
 export type FunnelEvent = (typeof FUNNEL_EVENTS)[number]
 
 /** Random id for a not-yet-signed-up visitor; set by the sales page. */

@@ -8,6 +8,7 @@ import { priceLabel } from '@/lib/pricing'
 import { StartViewTracker } from '../start/StartForms'
 import TopicForm from './TopicForm'
 import StickyCta from './StickyCta'
+import EngageTracker from './EngageTracker'
 import styles from './proposal.module.css'
 
 const DESCRIPTION =
@@ -177,6 +178,7 @@ export default function ProposalPage() {
       </footer>
 
       <StickyCta target="check" watch={['topic-top', 'check']} />
+      <EngageTracker forms={['topic-top-form', 'check']} />
     </div>
   )
 }

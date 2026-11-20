@@ -2,7 +2,7 @@
 
 import { cookies } from 'next/headers'
 import { trackEvent } from '@/lib/funnel'
-import { ATTRIBUTION_COOKIE, sanitizeAttribution } from '@/lib/funnel-shared'
+import { ANON_ID_COOKIE, ATTRIBUTION_COOKIE, LANDING_ENGAGE_STEPS, sanitizeAnonId, sanitizeAttribution } from '@/lib/funnel-shared'
 import { parsePriceVariant } from '@/lib/pricing'
 import { CHECK_PATHS, CHECK_STAGES } from '@/lib/check'
 
@@ -45,4 +45,17 @@ export async function trackCheck(event: 'check_view' | 'check_complete' | 'check
   const stage = (CHECK_STAGES as readonly string[]).includes(props.stage ?? '') ? props.stage : undefined
   const source = sanitizeAttribution(cookies().get(ATTRIBUTION_COOKIE)?.value)
   await trackEvent(event, { props: { ...source, ...(path && { path }), ...(stage && { stage }) } })
+}
+
+/**
+ * /proposal engagement: scrolled halfway, saw a topic form, started typing a topic.
+ * Once per visitor and step, with this visit's source (angle, utm_*).
+ */
+export async function trackLandingEngage(step: string) {
+  if (!(LANDING_ENGAGE_STEPS as readonly string[]).includes(step)) return
+  const jar = cookies()
+  const visitor = sanitizeAnonId(jar.get(ANON_ID_COOKIE)?.value)
+  if (!visitor) return
+  const source = sanitizeAttribution(jar.get(ATTRIBUTION_COOKIE)?.value)
+  await trackEvent('landing_engage', { props: { ...source, step }, once: `${step}` })
 }
