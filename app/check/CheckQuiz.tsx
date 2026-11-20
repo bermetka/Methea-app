@@ -185,11 +185,17 @@ export default function CheckQuiz({ priceLabel }: { priceLabel: string }) {
   }
 
   // Hand the question over to sign-up (read by /check/start and the auth callback).
-  function handOver() {
+  // Record the click before leaving the page (a fire-and-forget call can be cut off by the navigation).
+  async function handOver(e: React.MouseEvent<HTMLAnchorElement>) {
+    e.preventDefault()
     const value = encodeURIComponent(JSON.stringify({ q: idea.slice(0, CHECK_QUESTION_MAX), path: p, stage }))
     const secure = window.location.protocol === 'https:' ? '; secure' : ''
     document.cookie = `${CHECK_COOKIE}=${value}; path=/; max-age=${7 * 24 * 3600}; samesite=lax${secure}`
-    trackCheck('check_cta', { path: p, stage })
+    await Promise.race([
+      trackCheck('check_cta', { path: p, stage }).catch(() => {}),
+      new Promise(resolve => setTimeout(resolve, 800)),
+    ])
+    window.location.assign('/check/start')
   }
 
   return (

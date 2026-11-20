@@ -1,7 +1,8 @@
 'use server'
 
+import { cookies } from 'next/headers'
 import { trackEvent } from '@/lib/funnel'
-import { sanitizeAttribution } from '@/lib/funnel-shared'
+import { ATTRIBUTION_COOKIE, sanitizeAttribution } from '@/lib/funnel-shared'
 import { parsePriceVariant } from '@/lib/pricing'
 import { CHECK_PATHS, CHECK_STAGES } from '@/lib/check'
 
@@ -33,10 +34,15 @@ export async function trackMonthlyWaitlist() {
   await trackEvent('monthly_waitlist', { once: 'monthly' })
 }
 
-/** The /check: opened, finished (with where the road stops) and the click into Methea. No question text is sent. */
+/**
+ * The /check and /proposal: opened, finished (with where the road stops) and the click into Methea.
+ * Carries this visit's source (angle, utm_*) from the attribution cookie, so clicks can be split by
+ * creative. No question text is sent.
+ */
 export async function trackCheck(event: 'check_view' | 'check_complete' | 'check_cta', props: { path?: string; stage?: string } = {}) {
   if (!['check_view', 'check_complete', 'check_cta'].includes(event)) return
   const path = (CHECK_PATHS as readonly string[]).includes(props.path ?? '') ? props.path : undefined
   const stage = (CHECK_STAGES as readonly string[]).includes(props.stage ?? '') ? props.stage : undefined
-  await trackEvent(event, { props: { ...sanitizeAttribution(props), ...(path && { path }), ...(stage && { stage }) } })
+  const source = sanitizeAttribution(cookies().get(ATTRIBUTION_COOKIE)?.value)
+  await trackEvent(event, { props: { ...source, ...(path && { path }), ...(stage && { stage }) } })
 }

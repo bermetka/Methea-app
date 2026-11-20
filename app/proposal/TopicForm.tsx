@@ -13,11 +13,18 @@ import styles from './proposal.module.css'
 export default function TopicForm({ id, dark = false }: { id: string; dark?: boolean }) {
   const [topic, setTopic] = useState('')
 
-  function handOver() {
+  // Record the click before leaving the page: a fire-and-forget call can be cut
+  // off by the navigation. Never wait more than a moment for it.
+  async function handOver(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
     const value = encodeURIComponent(JSON.stringify({ q: topic.trim().slice(0, CHECK_QUESTION_MAX), path: 'program', stage: 'who' }))
     const secure = window.location.protocol === 'https:' ? '; secure' : ''
     document.cookie = `${CHECK_COOKIE}=${value}; path=/; max-age=${7 * 24 * 3600}; samesite=lax${secure}`
-    void trackCheck('check_cta', { path: 'program', stage: 'who' })
+    await Promise.race([
+      trackCheck('check_cta', { path: 'program', stage: 'who' }).catch(() => {}),
+      new Promise(resolve => setTimeout(resolve, 800)),
+    ])
+    window.location.assign('/check/start')
   }
 
   return (
