@@ -23,6 +23,8 @@ interface Props {
   projectId: string
   /** Their question from /check, to start from (still theirs to edit and submit). */
   initialTopic?: string
+  /** Guests (from ads or the check): topic only; degree and discipline are optional, behind a disclosure. */
+  quick?: boolean
 }
 
 const MAX_FILE_BYTES = 10 * 1024 * 1024
@@ -35,11 +37,12 @@ const SUBMIT_ERROR_MESSAGES: Record<string, string> = {
   DEFAULT: 'Something went wrong — please try again.',
 }
 
-export default function BriefForm({ projectId, initialTopic = '' }: Props) {
+export default function BriefForm({ projectId, initialTopic = '', quick = false }: Props) {
   const [topic, setTopic]             = useState(initialTopic)
   const [degree, setDegree]           = useState('')
   const [discipline, setDiscipline]   = useState('')
   const [showReading, setShowReading] = useState(false)
+  const [showDetails, setShowDetails] = useState(!quick)
   const [showUpload, setShowUpload]   = useState(false)
   const [readingList, setReadingList] = useState('')
   const [file, setFile]               = useState<File | null>(null)
@@ -48,7 +51,7 @@ export default function BriefForm({ projectId, initialTopic = '' }: Props) {
   const [submitError, setSubmitError] = useState('')
   const fileRef = useRef<HTMLInputElement>(null)
 
-  const isValid = topic.trim().length >= 10 && degree !== '' && discipline !== ''
+  const isValid = topic.trim().length >= 10 && (quick || (degree !== '' && discipline !== ''))
 
   function validateFile(f: File): string | null {
     const ext = '.' + f.name.split('.').pop()?.toLowerCase()
@@ -75,9 +78,9 @@ export default function BriefForm({ projectId, initialTopic = '' }: Props) {
     const e: Record<string, string> = {}
     if (topic.trim().length < 10)
       e.topic = "A sentence or two helps me understand what you're after — try adding a bit more."
-    if (!degree)
+    if (!degree && !quick)
       e.degree = 'Please select your degree level so I can tailor the methodology guidance.'
-    if (!discipline)
+    if (!discipline && !quick)
       e.discipline = 'Knowing your discipline helps match the right theoretical traditions.'
     if (file) {
       const fileError = validateFile(file)
@@ -96,7 +99,7 @@ export default function BriefForm({ projectId, initialTopic = '' }: Props) {
     const formData = new FormData()
     formData.append('projectId', projectId)
     formData.append('topic', topic.trim())
-    formData.append('degreeLevel', degree)
+    formData.append('degreeLevel', degree || (quick ? 'masters' : ''))
     formData.append('discipline', discipline)
     if (readingList.trim()) formData.append('readingList', readingList.trim())
     if (file) formData.append('file', file)
@@ -118,12 +121,12 @@ export default function BriefForm({ projectId, initialTopic = '' }: Props) {
       {/* Topic textarea */}
       <div>
         {initialTopic && (
-          <p style={s.seedNote}>From your check: here&apos;s what you wrote. Add anything that matters (your course, your deadline) and pick your degree and discipline below.</p>
+          <p style={s.seedNote}>From your check: here&apos;s what you wrote. Add anything that matters (your course, your deadline){quick ? '.' : ' and pick your degree and discipline below.'}</p>
         )}
         <textarea
           value={topic}
           onChange={e => { setTopic(e.target.value); setErrors(p => ({ ...p, topic: '' })) }}
-          placeholder='e.g. "How do solo founders in Central Asia decide when to raise outside funding?"'
+          placeholder='e.g. "How does remote work affect the wellbeing of junior employees in the UK?"'
           rows={4}
           style={{
             ...s.textarea,
@@ -138,8 +141,16 @@ export default function BriefForm({ projectId, initialTopic = '' }: Props) {
         </p>
       </div>
 
-      {/* Degree + Discipline */}
-      <div style={s.row}>
+      {/* Degree + Discipline — behind a disclosure for guests */}
+      {quick && (
+        <div>
+          <button type="button" onClick={() => setShowDetails(v => !v)} style={s.disclosure}>
+            {showDetails ? '▾' : '▸'} Degree and discipline{' '}
+            <span style={s.optional}>(optional — Methea works it out from your topic)</span>
+          </button>
+        </div>
+      )}
+      {showDetails && <div style={s.row}>
         <div style={s.field}>
           <label style={s.label}>Degree level</label>
           <select
@@ -166,7 +177,7 @@ export default function BriefForm({ projectId, initialTopic = '' }: Props) {
           </select>
           {errors.discipline && <p style={s.errorText}>{errors.discipline}</p>}
         </div>
-      </div>
+      </div>}
 
       {/* Optional: reading list */}
       <div>

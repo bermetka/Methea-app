@@ -73,7 +73,7 @@ export default async function BriefPage({ params }: { params: { id: string } }) 
           <h1 style={styles.heading}>What are you researching?</h1>
           <p style={styles.sub}>A sentence or two is enough. Methea asks three quick questions next and sharpens it into a research question.</p>
         </div>
-        <BriefForm projectId={params.id} initialTopic={p.research_context?.seed?.topic ?? ''} />
+        <BriefForm projectId={params.id} initialTopic={p.research_context?.seed?.topic ?? ''} quick={!!user?.is_anonymous} />
       </div>
     </main>
   )

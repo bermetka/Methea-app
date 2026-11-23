@@ -15,7 +15,8 @@ export const metadata = {
 }
 
 // Copy: docs/landing/start-v2-copy.md. Hero per ?a= angle (the funnel's `angle`).
-const HEROES: Record<StartAngle, { h1: string; sub: string }> = {
+// `direct` (/go/brief) has no landing page of its own; it falls back to the default hero.
+const HEROES: Partial<Record<StartAngle, { h1: string; sub: string }>> = {
   question: {
     h1: 'You’ve rewritten your research question five times. The question isn’t the problem.',
     sub: 'The problem is that your question, your theory and your method don’t line up — and nobody ever showed you how to make them.',
@@ -75,7 +76,7 @@ export default function StartPage({ searchParams }: { searchParams: { a?: string
   // The variant priced and logged here is the one shown: always A while the split is off.
   const variant = effectiveVariant(parsePriceVariant(jar.get(PRICE_VARIANT_COOKIE)?.value) ?? 'B')
   const { label: price } = priceForVariant(variant)
-  const hero = HEROES[angle]
+  const hero = HEROES[angle] ?? HEROES[DEFAULT_ANGLE]!
 
   const startHref = '/login'
 
