@@ -15,7 +15,7 @@ export async function extractBrief(
   const contextParts = [
     `Topic description: ${topic}`,
     `Degree level: ${degreeLevel}`,
-    `Discipline: ${discipline}`,
+    `Discipline: ${discipline || 'not given — infer it from the topic'}`,
     readingList ? `Reading list (optional): ${readingList}` : null,
     fileText ? `Assignment brief / TOR text (optional): ${fileText}` : null,
   ].filter(Boolean).join('\n\n')
@@ -29,7 +29,7 @@ Extract a structured research brief. Return this exact JSON shape:
   "research_type": "exploratory" | "explanatory" | "descriptive",
   "constraints": ["list of implicit constraints from the brief — e.g. geography, time period, population, access"],
   "degree_level": "${degreeLevel}",
-  "discipline": "${discipline}"
+  "discipline": "${discipline || '<the academic discipline this topic belongs to, e.g. Business & Management, Education, Sociology>'}"
 }
 
 Research type guide:
