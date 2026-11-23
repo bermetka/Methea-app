@@ -9,6 +9,7 @@ import { StartViewTracker } from '../start/StartForms'
 import TopicForm from './TopicForm'
 import StickyCta from './StickyCta'
 import EngageTracker from './EngageTracker'
+import ShortCta from './ShortCta'
 import styles from './proposal.module.css'
 
 const DESCRIPTION =
@@ -33,9 +34,61 @@ const FAQ = [
   ['Refunds?', '14-day money-back guarantee on a paid project, even if you’ve already used the paid features.'],
 ]
 
-export default function ProposalPage() {
+export default function ProposalPage({ searchParams }: { searchParams: { v?: string } }) {
   const attribution = sanitizeAttribution(cookies().get(ATTRIBUTION_COOKIE)?.value)
   const price = priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_A) || '$49'
+
+  // ?v=short — the test variant for paid ads: headline, one button straight into
+  // a guest brief, the product demo and the library. Nothing to fill in here.
+  if (searchParams.v === 'short') {
+    return (
+      <div className={styles.root}>
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" />
+        <StartViewTracker props={{ ...attribution, angle: 'proposal' }} />
+        <nav className={styles.nav} aria-label="Main">
+          <Link href="/" className={styles.wordmark}>Methea</Link>
+          <div className={styles.navLinks}>
+            <Link href="/login" className={styles.navCta}>Sign in →</Link>
+          </div>
+        </nav>
+        <main>
+          <section className={`${styles.wrap} ${styles.hero}`}>
+            <div className={styles.stack}>
+              <span className={styles.eyebrow}>For Master’s and PhD students</span>
+              <h1 className={styles.h1}>Your research proposal is due. Your question, theory and method <span className={styles.mark}>still don’t line up.</span></h1>
+              <p className={styles.lede}>Line them up tonight. Methea asks the questions your supervisor would ask. You decide. You write.</p>
+              <ShortCta id="cta-top" />
+            </div>
+            <figure className={styles.screen}>
+              <video
+                src="/landing/methea-demo.mp4" poster="/landing/methea-demo-poster.jpg"
+                autoPlay muted loop playsInline preload="metadata"
+                aria-label="Methea turning a broad topic into a research question, matching theories and a framework diagram"
+                className={styles.video}
+              />
+              <figcaption className={styles.caption}>A broad topic → one researchable question → theories that fit → how they connect.</figcaption>
+            </figure>
+          </section>
+          <section className={`${styles.wrap} ${styles.split}`}>
+            <div className={styles.libraryNum}><span className={styles.mark}>{LIBRARY}</span><small>theories in a curated library</small></div>
+            <div className={styles.stack}>
+              <h2 className={styles.h2}>Real theories. Nothing made up. It won’t write your proposal.</h2>
+              <p className={styles.p}>Methea suggests theories only from its library — real authors, sources you can check — and tells you why each fits your question. You write every line yourself.</p>
+            </div>
+          </section>
+          <section className={styles.wrap} id="check">
+            <div className={styles.cta}>
+              <h2 className={styles.h2}>Check your topic now.</h2>
+              <p>Free. No sign-up to start — you’ll only be asked for an email to save your work.</p>
+              <ShortCta id="cta-bottom" dark />
+            </div>
+          </section>
+        </main>
+        <EngageTracker forms={['cta-top', 'check']} />
+      </div>
+    )
+  }
 
   return (
     <div className={styles.root}>

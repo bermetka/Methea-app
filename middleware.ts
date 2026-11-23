@@ -10,7 +10,7 @@ export async function middleware(request: NextRequest) {
   // anon id / attribution / price-variant cookies so the funnel credits the source.
   // Written to the request too, so the page renders with them on the very first visit.
   const path = request.nextUrl.pathname
-  const landing = path === '/start' || path === '/proposal' || path === '/check' || path === '/blog' || path.startsWith('/blog/')
+  const landing = path === '/start' || path === '/proposal' || path === '/go/brief' || path === '/check' || path === '/blog' || path.startsWith('/blog/')
   const writes = landing
     ? startCookieWrites(startCookies(landingParams(request), {
         anonId: request.cookies.get(ANON_ID_COOKIE)?.value,
@@ -33,15 +33,18 @@ export async function middleware(request: NextRequest) {
 }
 
 /**
- * /proposal is the proposal-angle sales page, so its angle is always `proposal`.
+ * /proposal and /go/brief have a fixed angle (`proposal`, `direct`).
  * Stamped only when this visit carries a source (utm_*) or there's no attribution
  * yet, so a plain revisit doesn't wipe the original source.
  */
+const FIXED_ANGLES: Record<string, string> = { '/proposal': 'proposal', '/go/brief': 'direct' }
+
 function landingParams(request: NextRequest): URLSearchParams {
   const params = new URLSearchParams(request.nextUrl.searchParams)
-  if (request.nextUrl.pathname !== '/proposal' || params.has('a')) return params
+  const angle = FIXED_ANGLES[request.nextUrl.pathname]
+  if (!angle || params.has('a')) return params
   const hasUtm = Array.from(params.keys()).some(k => k.startsWith('utm_'))
-  if (hasUtm || !request.cookies.get(ATTRIBUTION_COOKIE)) params.set('a', 'proposal')
+  if (hasUtm || !request.cookies.get(ATTRIBUTION_COOKIE)) params.set('a', angle)
   return params
 }
 

@@ -114,3 +114,8 @@
 }
 @media (min-width: 900px) { .sticky { display: none; } }
 @media (prefers-reduced-motion: reduce) { .sticky { transition: none; } }
+
+/* Short variant (?v=short): one button, no form */
+.shortCta { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.shortCta a { text-decoration: none; display: inline-flex; align-items: center; }
+.formHintDark { font-size: 0.85rem; color: #B0ADA6; }
