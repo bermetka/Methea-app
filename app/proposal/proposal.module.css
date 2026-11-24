@@ -131,7 +131,7 @@
 .baBeforeLabel { color: var(--error); }
 .baBeforeText { margin: 0; font-size: 1.0625rem; line-height: 1.5; color: var(--graphite); text-decoration: line-through; text-decoration-color: #C8705A; }
 .baArrow { align-self: center; font-size: 0.85rem; font-weight: 600; color: var(--pencil); }
-.baAfter { background: var(--mint); border: 2px solid var(--moss); border-radius: 14px; padding: 1.25rem; display: flex; flex-direction: column; gap: 8px; min-height: 9.5rem; }
+.baAfter { background: var(--mint); border: 2px solid var(--moss); border-radius: 14px; padding: 1.25rem; display: flex; flex-direction: column; gap: 8px; flex: 1; }
 .baAfterLabel { color: var(--moss); }
 .baAfterText { margin: 0; font-size: 1.1875rem; line-height: 1.4; font-weight: 600; color: var(--ink); }
 .baDots { display: flex; gap: 8px; justify-content: center; }
@@ -141,3 +141,6 @@
 @media (min-width: 900px) {
   .baHero { grid-template-columns: 1fr 1fr; grid-template-areas: "text card" "form card"; column-gap: 3rem; row-gap: 1.5rem; align-items: start; padding-top: 2rem; }
 }
+
+.baStack { display: grid; }
+.baPair { grid-area: 1 / 1; display: flex; flex-direction: column; gap: 10px; }

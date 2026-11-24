@@ -37,7 +37,6 @@ export default function BeforeAfter() {
     return () => clearInterval(t)
   }, [paused])
 
-  const pair = PAIRS[i]
   return (
     <figure
       className={styles.ba}
@@ -45,14 +44,22 @@ export default function BeforeAfter() {
       onMouseLeave={() => setPaused(false)}
       aria-label="Example: a broad topic and the research question Methea sharpened it into"
     >
-      <div className={styles.baBefore}>
-        <p className={styles.baBeforeLabel}>Before · too broad to research</p>
-        <p className={styles.baBeforeText}>{pair.before}</p>
-      </div>
-      <span className={styles.baArrow} aria-hidden="true">↓ 3 quick questions</span>
-      <div className={styles.baAfter} aria-live="polite">
-        <p className={styles.baAfterLabel}>After · ready for theories</p>
-        <p className={styles.baAfterText}>{pair.after}</p>
+      {/* All pairs sit in one grid cell, only the current one visible: the card
+          keeps the height of the longest pair, so the form below never jumps. */}
+      <div className={styles.baStack}>
+        {PAIRS.map((p, n) => (
+          <div key={p.before} className={styles.baPair} style={{ visibility: n === i ? 'visible' : 'hidden' }} aria-hidden={n !== i}>
+            <div className={styles.baBefore}>
+              <p className={styles.baBeforeLabel}>Before · too broad to research</p>
+              <p className={styles.baBeforeText}>{p.before}</p>
+            </div>
+            <span className={styles.baArrow} aria-hidden="true">↓ 3 quick questions</span>
+            <div className={styles.baAfter}>
+              <p className={styles.baAfterLabel}>After · ready for theories</p>
+              <p className={styles.baAfterText}>{p.after}</p>
+            </div>
+          </div>
+        ))}
       </div>
       <div className={styles.baDots}>
         {PAIRS.map((p, n) => (

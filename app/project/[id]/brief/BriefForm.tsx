@@ -121,7 +121,7 @@ export default function BriefForm({ projectId, initialTopic = '', quick = false 
       {/* Topic textarea */}
       <div>
         {initialTopic && (
-          <p style={s.seedNote}>From your check: here&apos;s what you wrote. Add anything that matters (your course, your deadline){quick ? '.' : ' and pick your degree and discipline below.'}</p>
+          <p style={s.seedNote}>Here&apos;s what you wrote. Add anything that matters (your course, your deadline){quick ? '.' : ' and pick your degree and discipline below.'}</p>
         )}
         <textarea
           value={topic}
