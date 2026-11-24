@@ -126,7 +126,7 @@ export default function BriefForm({ projectId, initialTopic = '', quick = false 
         <textarea
           value={topic}
           onChange={e => { setTopic(e.target.value); setErrors(p => ({ ...p, topic: '' })) }}
-          placeholder='e.g. "How does remote work affect the wellbeing of junior employees in the UK?"'
+          placeholder={quick ? 'e.g. "social media and body image" — short is fine' : 'e.g. "How does remote work affect the wellbeing of junior employees in the UK?"'}
           rows={4}
           style={{
             ...s.textarea,

@@ -9,7 +9,7 @@ import { StartViewTracker } from '../start/StartForms'
 import TopicForm from './TopicForm'
 import StickyCta from './StickyCta'
 import EngageTracker from './EngageTracker'
-import ShortCta from './ShortCta'
+import BeforeAfter from './BeforeAfter'
 import styles from './proposal.module.css'
 
 const DESCRIPTION =
@@ -38,9 +38,15 @@ export default function ProposalPage({ searchParams }: { searchParams: { v?: str
   const attribution = sanitizeAttribution(cookies().get(ATTRIBUTION_COOKIE)?.value)
   const price = priceLabel(process.env.NEXT_PUBLIC_PRICE_LABEL_A) || '$49'
 
-  // ?v=short — the test variant for paid ads: headline, one button straight into
-  // a guest brief, the product demo and the library. Nothing to fill in here.
+  // ?v=short — the test variant for paid ads (before/after creative): a real
+  // before/after from Gate 1, and a topic field that hands over to a guest brief
+  // pre-filled with what they typed (/check/start). Then the demo and the library.
   if (searchParams.v === 'short') {
+    const formProps = {
+      label: 'Your topic, as it is in your head',
+      placeholder: 'e.g. social media and body image',
+      button: 'Sharpen my topic — free →',
+    }
     return (
       <div className={styles.root}>
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
@@ -53,12 +59,21 @@ export default function ProposalPage({ searchParams }: { searchParams: { v?: str
           </div>
         </nav>
         <main>
+          <section className={`${styles.wrap} ${styles.baHero}`}>
+            <div className={`${styles.stack} ${styles.baText}`}>
+              <span className={styles.eyebrow}>For Master’s and PhD students</span>
+              <h1 className={styles.h1}>Your topic is too broad. <span className={styles.mark}>Fix it tonight.</span></h1>
+              <p className={styles.lede}>Type it the way it is in your head. Methea asks you three quick questions and sharpens it into a research question you can actually study.</p>
+            </div>
+            <div className={styles.baCard}><BeforeAfter /></div>
+            <div className={styles.baForm}>
+              <TopicForm id="topic-top" {...formProps} hint="Messy is fine · no sign-up to start · no card" />
+            </div>
+          </section>
           <section className={`${styles.wrap} ${styles.hero}`}>
             <div className={styles.stack}>
-              <span className={styles.eyebrow}>For Master’s and PhD students</span>
-              <h1 className={styles.h1}>Your research proposal is due. Your question, theory and method <span className={styles.mark}>still don’t line up.</span></h1>
-              <p className={styles.lede}>Line them up tonight. Methea asks the questions your supervisor would ask. You decide. You write.</p>
-              <ShortCta id="cta-top" />
+              <h2 className={styles.h2}>Then: theories that fit, and how they connect.</h2>
+              <p className={styles.p}>From your sharpened question, Methea suggests theories that fit and lays out your framework — every step with the reason why.</p>
             </div>
             <figure className={styles.screen}>
               <video
@@ -67,7 +82,6 @@ export default function ProposalPage({ searchParams }: { searchParams: { v?: str
                 aria-label="Methea turning a broad topic into a research question, matching theories and a framework diagram"
                 className={styles.video}
               />
-              <figcaption className={styles.caption}>A broad topic → one researchable question → theories that fit → how they connect.</figcaption>
             </figure>
           </section>
           <section className={`${styles.wrap} ${styles.split}`}>
@@ -79,13 +93,13 @@ export default function ProposalPage({ searchParams }: { searchParams: { v?: str
           </section>
           <section className={styles.wrap} id="check">
             <div className={styles.cta}>
-              <h2 className={styles.h2}>Check your topic now.</h2>
+              <h2 className={styles.h2}>What’s your topic?</h2>
               <p>Free. No sign-up to start — you’ll only be asked for an email to save your work.</p>
-              <ShortCta id="cta-bottom" dark />
+              <TopicForm id="topic-bottom" dark {...formProps} hint="Messy is fine · three quick questions next" />
             </div>
           </section>
         </main>
-        <EngageTracker forms={['cta-top', 'check']} />
+        <EngageTracker forms={['topic-top-form', 'check']} />
       </div>
     )
   }
