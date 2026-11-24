@@ -10,7 +10,14 @@ import styles from './proposal.module.css'
  * read by /check/start and the auth callback — so after sign-in they land on a
  * new project's brief (Gate 1), pre-filled with what they typed.
  */
-export default function TopicForm({ id, dark = false }: { id: string; dark?: boolean }) {
+export default function TopicForm({
+  id,
+  dark = false,
+  label = 'Your research topic',
+  placeholder = 'e.g. How remote work affects the wellbeing of IT specialists in Bishkek',
+  button = 'Check my topic — free →',
+  hint = 'One sentence is enough · no card needed',
+}: { id: string; dark?: boolean; label?: string; placeholder?: string; button?: string; hint?: string }) {
   const [topic, setTopic] = useState('')
 
   // Record the click before leaving the page: a fire-and-forget call can be cut
@@ -35,18 +42,20 @@ export default function TopicForm({ id, dark = false }: { id: string; dark?: boo
       id={`${id}-form`}
       className={dark ? styles.formDark : styles.form}
     >
-      <label htmlFor={id} className={styles.formLabel}>Your research topic</label>
+      <label htmlFor={id} className={styles.formLabel}>{label}</label>
       <textarea
         id={id}
         value={topic}
         onChange={e => setTopic(e.target.value)}
         maxLength={CHECK_QUESTION_MAX}
         rows={3}
-        placeholder="e.g. How remote work affects the wellbeing of IT specialists in Bishkek"
+        required
+        minLength={3}
+        placeholder={placeholder}
         className={styles.textarea}
       />
-      <button type="submit" className={dark ? styles.btnLime : styles.btn}>Check my topic — free →</button>
-      <span className={styles.formHint}>One sentence is enough · no card needed</span>
+      <button type="submit" className={dark ? styles.btnLime : styles.btn}>{button}</button>
+      <span className={styles.formHint}>{hint}</span>
     </form>
   )
 }

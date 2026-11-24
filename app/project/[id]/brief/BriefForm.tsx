@@ -121,12 +121,12 @@ export default function BriefForm({ projectId, initialTopic = '', quick = false 
       {/* Topic textarea */}
       <div>
         {initialTopic && (
-          <p style={s.seedNote}>From your check: here&apos;s what you wrote. Add anything that matters (your course, your deadline){quick ? '.' : ' and pick your degree and discipline below.'}</p>
+          <p style={s.seedNote}>Here&apos;s what you wrote. Add anything that matters (your course, your deadline){quick ? '.' : ' and pick your degree and discipline below.'}</p>
         )}
         <textarea
           value={topic}
           onChange={e => { setTopic(e.target.value); setErrors(p => ({ ...p, topic: '' })) }}
-          placeholder='e.g. "How does remote work affect the wellbeing of junior employees in the UK?"'
+          placeholder={quick ? 'e.g. "social media and body image" — short is fine' : 'e.g. "How does remote work affect the wellbeing of junior employees in the UK?"'}
           rows={4}
           style={{
             ...s.textarea,

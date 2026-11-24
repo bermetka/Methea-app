@@ -119,3 +119,28 @@
 .shortCta { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .shortCta a { text-decoration: none; display: inline-flex; align-items: center; }
 .formHintDark { font-size: 0.85rem; color: #B0ADA6; }
+
+/* Short variant hero: before/after card (same look as the "question refined" screen) */
+.baHero { display: grid; gap: 1.5rem; padding-top: 1rem; grid-template-areas: "text" "card" "form"; }
+.baText { grid-area: text; }
+.baCard { grid-area: card; min-width: 0; }
+.baForm { grid-area: form; min-width: 0; }
+.ba { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.baBefore { background: var(--error-bg); border: 1px solid #EDBBA8; border-radius: 14px; padding: 1rem 1.25rem; display: flex; flex-direction: column; gap: 6px; }
+.baBeforeLabel, .baAfterLabel { margin: 0; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+.baBeforeLabel { color: var(--error); }
+.baBeforeText { margin: 0; font-size: 1.0625rem; line-height: 1.5; color: var(--graphite); text-decoration: line-through; text-decoration-color: #C8705A; }
+.baArrow { align-self: center; font-size: 0.85rem; font-weight: 600; color: var(--pencil); }
+.baAfter { background: var(--mint); border: 2px solid var(--moss); border-radius: 14px; padding: 1.25rem; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.baAfterLabel { color: var(--moss); }
+.baAfterText { margin: 0; font-size: 1.1875rem; line-height: 1.4; font-weight: 600; color: var(--ink); }
+.baDots { display: flex; gap: 8px; justify-content: center; }
+.baDot, .baDotOn { width: 10px; height: 10px; border-radius: 999px; border: 0; padding: 0; cursor: pointer; background: var(--c-rule); }
+.baDotOn { background: var(--ink); }
+.baDot:focus-visible, .baDotOn:focus-visible { outline: 3px solid var(--ink-blue); outline-offset: 2px; }
+@media (min-width: 900px) {
+  .baHero { grid-template-columns: 1fr 1fr; grid-template-areas: "text card" "form card"; column-gap: 3rem; row-gap: 1.5rem; align-items: start; padding-top: 2rem; }
+}
+
+.baStack { display: grid; }
+.baPair { grid-area: 1 / 1; display: flex; flex-direction: column; gap: 10px; }
