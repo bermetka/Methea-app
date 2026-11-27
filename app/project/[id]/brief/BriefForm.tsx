@@ -20,7 +20,8 @@ const DISCIPLINES = [
 ]
 
 interface Props {
-  projectId: string
+  /** Absent on /go/topic: the guest and the project are created when the brief is submitted. */
+  projectId?: string
   /** Their question from /check, to start from (still theirs to edit and submit). */
   initialTopic?: string
   /** Guests (from ads or the check): topic only; degree and discipline are optional, behind a disclosure. */
@@ -34,10 +35,11 @@ const SUBMIT_ERROR_MESSAGES: Record<string, string> = {
   FILE_PARSE_FAILED: "We couldn't read that file — it may be corrupted. Try a different file, or continue without it.",
   AI_GENERATION_FAILED: "We couldn't process your brief just now — nothing was lost. Please try submitting again.",
   GUEST_LIMIT: "You've rewritten this brief a few times already. Save your project with your email to keep going.",
+  GUEST_START_FAILED: "We couldn't start your project just now — nothing was lost. Please try again in a moment.",
   DEFAULT: 'Something went wrong — please try again.',
 }
 
-export default function BriefForm({ projectId, initialTopic = '', quick = false }: Props) {
+export default function BriefForm({ projectId = '', initialTopic = '', quick = false }: Props) {
   const [topic, setTopic]             = useState(initialTopic)
   const [degree, setDegree]           = useState('')
   const [discipline, setDiscipline]   = useState('')

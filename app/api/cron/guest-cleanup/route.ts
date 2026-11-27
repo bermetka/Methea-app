@@ -8,6 +8,10 @@ import { GUEST_TTL_DAYS, PENDING_GUEST_TTL_DAYS } from '@/lib/guest'
 // Runs only with Vercel's cron header: Authorization: Bearer $CRON_SECRET.
 export const maxDuration = 60
 
+const PER_PAGE = 1000
+const MAX_PAGES = 100 // up to 100,000 users per run
+const TIME_BUDGET_MS = 50_000
+
 export async function GET(request: Request) {
   const secret = process.env.CRON_SECRET
   if (!secret || request.headers.get('authorization') !== `Bearer ${secret}`) {
@@ -22,24 +26,32 @@ export async function GET(request: Request) {
   let deleted = 0
   let failed = 0
 
-  // Newest users first; stop at the end of the list or after 20 pages (2,000 users) per run.
-  for (let page = 1; page <= 20; page++) {
-    const { data, error } = await admin.auth.admin.listUsers({ page, perPage: 100 })
+  // listUsers returns newest first, so stale guests sit at the end of the list:
+  // read every page (a flood of new guests must not hide the old ones), then delete.
+  // Stop deleting before the function's time limit; the next run picks up the rest.
+  const started = Date.now()
+  const staleIds: string[] = []
+  for (let page = 1; page <= MAX_PAGES; page++) {
+    const { data, error } = await admin.auth.admin.listUsers({ page, perPage: PER_PAGE })
     if (error) {
       console.error('[guest-cleanup] listUsers failed:', error.message)
       break
     }
-    const stale = data.users.filter(u =>
-      u.is_anonymous && !u.email && Date.parse(u.created_at) < (u.new_email ? pendingCutoff : cutoff))
-    for (const u of stale) {
-      const { error: delError } = await admin.auth.admin.deleteUser(u.id)
-      if (delError) {
-        failed++
-        console.error(`[guest-cleanup] delete ${u.id} failed:`, delError.message)
-      } else deleted++
+    for (const u of data.users) {
+      if (u.is_anonymous && !u.email && Date.parse(u.created_at) < (u.new_email ? pendingCutoff : cutoff)) staleIds.push(u.id)
     }
-    if (data.users.length < 100) break
+    if (data.users.length < PER_PAGE) break
   }
 
-  return NextResponse.json({ deleted, failed })
+  let skipped = 0
+  for (const id of staleIds) {
+    if (Date.now() - started > TIME_BUDGET_MS) { skipped = staleIds.length - deleted - failed; break }
+    const { error: delError } = await admin.auth.admin.deleteUser(id)
+    if (delError) {
+      failed++
+      console.error(`[guest-cleanup] delete ${id} failed:`, delError.message)
+    } else deleted++
+  }
+
+  return NextResponse.json({ deleted, failed, skipped })
 }
