@@ -1,18 +1,18 @@
 'use server'
 
 import { redirect } from 'next/navigation'
-import { trackEvent } from '@/lib/funnel'
+import { linkAnonEvents, trackEvent } from '@/lib/funnel'
 import { createClient } from '@/lib/supabase/server'
 import { updateResearchContext } from '@/lib/research-context'
 import { extractBrief, generateSocraticQuestions } from '@/lib/prompts/brief'
-import { GUEST_RUN_LIMIT, guestRunsUsed } from '@/lib/guest'
+import { GUEST_RUN_LIMIT, findGuestProject, guestRunsUsed } from '@/lib/guest'
+import { startProjectFromCheck } from '@/lib/check-project'
 
 export async function submitBrief(formData: FormData): Promise<{ error: string } | void> {
   const supabase = createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect('/login')
+  let { data: { user } } = await supabase.auth.getUser()
 
-  const projectId   = formData.get('projectId') as string
+  let projectId     = (formData.get('projectId') as string | null) ?? ''
   const topic       = formData.get('topic') as string
   const degreeLevel = formData.get('degreeLevel') as string
   const discipline  = formData.get('discipline') as string
@@ -34,6 +34,30 @@ export async function submitBrief(formData: FormData): Promise<{ error: string }
       throw err
     }
   }
+
+  // No project yet: a visitor from an ad (/go/topic). Their guest account and
+  // project are made only now, when they submit a topic — opening the page
+  // creates nothing, so link previews, prefetches and bounced clicks leave no rows.
+  if (!projectId) {
+    if (!user) {
+      const { data, error } = await supabase.auth.signInAnonymously()
+      if (error || !data.user) {
+        console.error('[brief] guest sign-in failed:', error?.message ?? 'no user')
+        return { error: 'GUEST_START_FAILED' }
+      }
+      user = data.user
+      await linkAnonEvents(user.id)
+    }
+    // A guest has one project: reuse it if they already have one.
+    if (user.is_anonymous) projectId = (await findGuestProject(supabase, user.id))?.id ?? ''
+    if (!projectId) {
+      const next = await startProjectFromCheck(supabase, user.id, { q: topic ?? '', path: 'program', stage: 'who' })
+      const made = next.match(/^\/project\/([^/]+)\/brief$/)
+      if (!made) redirect(next)
+      projectId = made[1]
+    }
+  }
+  if (!user) redirect('/login')
 
   // Verify project belongs to this user
   const { data: project } = await supabase
